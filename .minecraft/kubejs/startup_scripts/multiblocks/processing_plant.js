@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('processing_plant', 'multiblock')
         .rotationState(RotationState.ALL)
         .recipeType('processing_plant')
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.PARALLEL_HATCH])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:high_power_casing'))
         .pattern(definition => FactoryBlockPattern.start()      
         .aisle('#C#C#', '#C#C#', '#CCC#', 'CCCCC', '#CCC#')
