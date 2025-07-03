@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('chemical_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('chemical_plant')
+        .recipeTypes(['chemical_plant', 'large_chemical_reactor'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK])
         .appearanceBlock(() => Block.getBlock('gtceu:inert_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
