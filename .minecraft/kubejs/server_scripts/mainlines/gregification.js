@@ -669,14 +669,14 @@ ServerEvents.recipes(sog => {
           .itemOutputs("gtceu:ruthenium_dust")
           .duration(400)
           .EUt(32)
-      sog.shaped(
-            'gtceu:fluid_filter',
-            ['AAA', 'AWA', 'AAA'],
-            {
-                A: 'gtceu:steel_foil',
-                W: 'minecraft:water_bucket'
-            }
-          ).id('gtceu:filterfluid')
+      const gems = ["lapis", "sodalite", "lazurite"]
+      gems.forEach(gem => {
+        sog.recipes.gtceu.compressor(`${gem}_plate`)
+          .itemInputs(`gtceu:${gem}_dust`)
+          .itemOutputs(`gtceu:${gem}_plate`)
+          .duration(20 * 15)
+          .EUt(2)
+      })
       sog.recipes.gtceu.arc_furnace('platinumsludge')
           .itemInputs('gtceu:platinum_dust')
           .inputFluids('gtceu:nitric_acid 1000')

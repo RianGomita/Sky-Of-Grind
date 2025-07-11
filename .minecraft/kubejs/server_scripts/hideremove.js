@@ -133,7 +133,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'ae2:molecular_assembler'})
     event.remove({ id: 'solarflux:photovoltaic_cell_1' })
     event.remove({ output: 'solarflux:mirror'})
-    event.remove({ output: 'gtceu:fluid_filter'})
     event.remove({ output: 'fluxnetworks:flux_dust'})
     event.remove({ output: 'bloodmagic:blankrune'})
     event.remove({ output: 'bloodmagic:altar'})
