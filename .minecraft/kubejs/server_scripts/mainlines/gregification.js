@@ -241,7 +241,7 @@ ServerEvents.recipes(sog => {
         .itemInputs('16x kubejs:space_time_heavy_plating')
         .itemOutputs('kubejs:trascendental_space_time_casing')
         .EUt(32)
-        .circuit(8)
+        .circuit(6)
         sog.recipes.gtceu.assembler('high_power_casing_plant')
         .itemInputs('8x gtceu:osmiridium_plate', 'gtceu:secure_maceration_casing')
         .itemOutputs('kubejs:high_power_casing')
