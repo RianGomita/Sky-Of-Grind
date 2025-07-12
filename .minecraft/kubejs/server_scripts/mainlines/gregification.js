@@ -236,7 +236,7 @@ ServerEvents.recipes(sog => {
         .itemInputs('8x kubejs:space_time_heavy_plating', 'gtceu:uiv_fluid_regulator')
         .itemOutputs('kubejs:dimensional_pump_module')
         .EUt(32)
-        .circuit(8)
+        .circuit(6)
         sog.recipes.gtceu.assembler('trascendental_space_time_casing')
         .itemInputs('16x kubejs:space_time_heavy_plating')
         .itemOutputs('kubejs:trascendental_space_time_casing')
