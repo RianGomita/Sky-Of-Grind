@@ -919,7 +919,7 @@ ServerEvents.recipes(sog => {
             .duration(160)
             .EUt(GTValues.VA[GTValues.UHV]);
 sog.recipes.gtceu.implosion_compressor('ae2:quantumsingularity')
-            .itemInputs('gtceu:industrial_tnt', 'ae2:singularity', 'gtceu:ender_pearl_dust')
+            .itemInputs('gtceu:industrial_tnt', 'ae2:singularity', 'minecraft:ender_pearl')
             .itemOutputs('2x ae2:quantum_entangled_singularity')
             .duration(160)
             .EUt(GTValues.VA[GTValues.UHV]);
