@@ -1162,6 +1162,12 @@ sog.recipes.gtceu.bender('ostrum_plate')
 .circuit(1)
 .duration(40)
 .EUt(128)
+sog.recipes.gtceu.bender('saturlyte_plate')
+.itemInputs('ad_extendra:saturlyte_ingot')
+.itemOutputs('ad_extendra:saturlyte_plate')
+.circuit(1)
+.duration(40)
+.EUt(128)
 sog.shaped(
     'ad_astra:rocket_fin',
     [' A ', 'ABA', 'ABA'],
