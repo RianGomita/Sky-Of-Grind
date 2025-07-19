@@ -1052,6 +1052,21 @@ sog.shaped(
     }
 )
 sog.shaped(
+    'gtceu:robust_extractinator',
+    ['ABC', 'DEF', 'GHA'],
+    {
+        A: 'gtceu:iv_robot_arm',
+        B: 'gtceu:iv_voltage_coil',
+        C: 'gtceu:osmiridium_gear',
+        D: 'gtceu:iv_conveyor_module',
+        E: 'gtceu:iv_electric_extractinator',
+        F: 'gtceu:iv_sensor',
+        G: 'gtceu:quantum_star',
+        H: '#gtceu:circuits/luv',
+
+    }
+)
+sog.shaped(
     'gtceu:atomicompressor',
     ['ABA', 'CDC', 'AEA'],
     {

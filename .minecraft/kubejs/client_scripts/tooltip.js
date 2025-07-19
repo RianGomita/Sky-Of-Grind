@@ -31,6 +31,9 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('gtceu:atmospheric_collector', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
     })
+    event.addAdvanced('gtceu:robust_extractinator', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+    })
     event.addAdvanced('gtceu:nebular_plasma_nexus', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
     })
