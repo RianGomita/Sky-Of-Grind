@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "rich"
 	group: "2EEB0DA0474AC3B2"
-	icon: "gtmutils:neutronium_credit"
+	icon: "gtceu:neutronium_credit"
 	id: "465D387578354039"
 	images: [{
 		height: 10.0d
@@ -21,7 +21,7 @@
 			id: "4119D33BDAF6DC1F"
 			tasks: [{
 				id: "7BFC919F16E043C9"
-				item: "gtmutils:copper_credit"
+				item: "gtceu:copper_credit"
 				type: "item"
 			}]
 			x: 0.0d
@@ -38,7 +38,7 @@
 			id: "792CA960CA776F9B"
 			tasks: [{
 				id: "1515EEB099CFAA6D"
-				item: "gtmutils:cupronickel_credit"
+				item: "gtceu:cupronickel_credit"
 				type: "item"
 			}]
 			title: "Credit system!"
@@ -50,7 +50,7 @@
 			id: "1CA316B993A3A462"
 			tasks: [{
 				id: "1BD6CF65E983DACA"
-				item: "gtmutils:silver_credit"
+				item: "gtceu:silver_credit"
 				type: "item"
 			}]
 			x: 2.0d
@@ -61,7 +61,7 @@
 			id: "68E325B1B6636BBF"
 			tasks: [{
 				id: "3B0D56FC6833E90C"
-				item: "gtmutils:gold_credit"
+				item: "gtceu:gold_credit"
 				type: "item"
 			}]
 			x: 3.0d
@@ -72,7 +72,7 @@
 			id: "6F8EE1F6815E131A"
 			tasks: [{
 				id: "45621B2C3EB9BE10"
-				item: "gtmutils:platinum_credit"
+				item: "gtceu:platinum_credit"
 				type: "item"
 			}]
 			x: 4.0d
@@ -83,7 +83,7 @@
 			id: "32D8ADA235EBA4DF"
 			tasks: [{
 				id: "1CD05B9245137071"
-				item: "gtmutils:osmium_credit"
+				item: "gtceu:osmium_credit"
 				type: "item"
 			}]
 			x: 5.0d
@@ -94,7 +94,7 @@
 			id: "53A4CD46869067F7"
 			tasks: [{
 				id: "08FF5484B01F613D"
-				item: "gtmutils:naquadah_credit"
+				item: "gtceu:naquadah_credit"
 				type: "item"
 			}]
 			x: 6.0d
@@ -105,7 +105,7 @@
 			id: "5FD2556C5F529202"
 			tasks: [{
 				id: "24AF48EC701E45C4"
-				item: "gtmutils:neutronium_credit"
+				item: "gtceu:neutronium_credit"
 				type: "item"
 			}]
 			x: 7.0d
@@ -219,7 +219,7 @@
 			tasks: [{
 				consume_items: true
 				id: "75AD24C305100500"
-				item: "gtmutils:silver_credit"
+				item: "gtceu:silver_credit"
 				type: "item"
 			}]
 			title: "Dyes!"
@@ -338,7 +338,7 @@
 			tasks: [{
 				consume_items: true
 				id: "72AEC336DA652482"
-				item: "gtmutils:gold_credit"
+				item: "gtceu:gold_credit"
 				type: "item"
 			}]
 			title: "Saplings!"
@@ -361,7 +361,7 @@
 			tasks: [{
 				consume_items: true
 				id: "12F2614A0379CFE5"
-				item: "gtmutils:platinum_credit"
+				item: "gtceu:platinum_credit"
 				type: "item"
 			}]
 			title: "Building"
@@ -379,6 +379,7 @@
 				id: "hostilenetworks:data_model"
 				tag: {
 					data_model: {
+						data: 6
 						id: "hostilenetworks:ender_dragon"
 					}
 				}
@@ -407,7 +408,7 @@
 				}
 				{
 					id: "4E41EF8EBCDC7A12"
-					item: "gtmutils:neutronium_credit"
+					item: "gtceu:neutronium_credit"
 					type: "item"
 				}
 			]
@@ -447,7 +448,7 @@
 				consume_items: true
 				count: 4L
 				id: "7E734EA211FDA7C9"
-				item: "gtmutils:osmium_credit"
+				item: "gtceu:osmium_credit"
 				type: "item"
 			}]
 			title: "Elder Guardian Data Model"
@@ -485,7 +486,7 @@
 			tasks: [{
 				consume_items: true
 				id: "1434DBC656C922B7"
-				item: "gtmutils:naquadah_credit"
+				item: "gtceu:naquadah_credit"
 				type: "item"
 			}]
 			title: "Warden Data Model"
@@ -524,7 +525,7 @@
 				consume_items: true
 				count: 2L
 				id: "4B7A95DD6AD50013"
-				item: "gtmutils:platinum_credit"
+				item: "gtceu:platinum_credit"
 				type: "item"
 			}]
 			title: "Sheep Data Model"

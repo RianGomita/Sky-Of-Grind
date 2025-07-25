@@ -19,7 +19,7 @@
 			dependencies: ["5C47B681BACC22D4"]
 			id: "62CD542A8E01830A"
 			rewards: [{
-				id: "76EF723B4046F9D2"
+				id: "6EB357BFF06F6C02"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -44,11 +44,32 @@
 				"These need to heat up every time you change the recipe, so make sure you have those running passively, not on-demand."
 			]
 			id: "387BFDB3C6162B0B"
-			rewards: [{
-				id: "31F31F47264BF20C"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1B6C3CE66337D24D"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "7EA4C0B7D5315FCA"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "ae2:smooth_sky_stone_slab"
+							Name: "Fusion Reactor"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "gtceu:luv_fusion_reactor"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "The Donut age"
 			tasks: [{
 				id: "366002194E9947D5"
@@ -62,7 +83,7 @@
 		{
 			id: "7D6D36D09A293882"
 			rewards: [{
-				id: "23E475CB70BB115E"
+				id: "2ECF4CD553D7F23A"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -81,7 +102,7 @@
 			]
 			id: "7E9A45F1598B0197"
 			rewards: [{
-				id: "3381721AC331E6CE"
+				id: "7345B48E85FA82E1"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -98,7 +119,7 @@
 			icon: "gtceu:zpm_conveyor_module"
 			id: "146B5BFAD44A9A2A"
 			rewards: [{
-				id: "265816DCC825F896"
+				id: "5CE98FB5881D1A59"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -137,7 +158,7 @@
 			dependencies: ["146B5BFAD44A9A2A"]
 			id: "2FE4D2EEAB0EB265"
 			rewards: [{
-				id: "72719261F13DBDDD"
+				id: "3C44953E8B2745C1"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -156,7 +177,8 @@
 			]
 			id: "60E68576221A5CB2"
 			rewards: [{
-				id: "1EA6D101B2F5006A"
+				count: 3
+				id: "03C1B6AA89C52D63"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -176,7 +198,7 @@
 			description: ["\"Naquadria is a heavier, less stable isotope than naquadah, and it does not occur in nature. It was discovered on Kelowna, where ancient writings revealed that Thanos, the Goa'uld who had occupied the planet thousands of years ago, had been experimenting with the mineral.\""]
 			id: "3D1BD4696D35F79C"
 			rewards: [{
-				id: "4739300F0255D73B"
+				id: "1B99088A16553953"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -195,7 +217,7 @@
 			]
 			id: "5CE62A179F6FE234"
 			rewards: [{
-				id: "59D9A68C89A92FE7"
+				id: "7495874753A66B15"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -219,7 +241,7 @@
 			dependencies: ["146B5BFAD44A9A2A"]
 			id: "70DACCB6AFDEEF3B"
 			rewards: [{
-				id: "659739CD682AFE59"
+				id: "43FDA7EAA4088CA5"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -255,7 +277,8 @@
 			]
 			id: "552AA21A1848CEDF"
 			rewards: [{
-				id: "76AB412C2C84D0AE"
+				count: 5
+				id: "5B4997CEC3A1EAB1"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -271,7 +294,7 @@
 			dependencies: ["7E9A45F1598B0197"]
 			id: "5FF3073210029001"
 			rewards: [{
-				id: "0B3EAEAF37B82ED5"
+				id: "060CE55DAA8D42B4"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -291,7 +314,7 @@
 			]
 			id: "6857988F5DAFE376"
 			rewards: [{
-				id: "47F7602BE92BB3B1"
+				id: "6BFE1E811FC815A4"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -313,7 +336,7 @@
 			]
 			id: "39093B7DECDA3626"
 			rewards: [{
-				id: "7278AF85DDCB7B89"
+				id: "1646C60B6379D881"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -331,7 +354,7 @@
 			icon: "gtceu:raw_crystal_chip_parts"
 			id: "30FF5BC7A001CB23"
 			rewards: [{
-				id: "5E0CDD9356BBE7EB"
+				id: "14B34D99F346C2B3"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -359,7 +382,7 @@
 			]
 			id: "3B363F32B70E87C9"
 			rewards: [{
-				id: "7426F27361EA9E6B"
+				id: "4C596D75F9D26C3C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -377,7 +400,7 @@
 			description: ["EBF it, emerald plates are probably your best bet with the blood altar overworld vein."]
 			id: "7C0DA50CD6B347C9"
 			rewards: [{
-				id: "2BADB7D4E770F0F5"
+				id: "31840C4A6100415F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -393,7 +416,7 @@
 			dependencies: ["7C0DA50CD6B347C9"]
 			id: "539A0A7FE8D6D6A3"
 			rewards: [{
-				id: "07F628DA535EF259"
+				id: "3D2170E98D8352AC"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -410,7 +433,7 @@
 			dependencies: ["539A0A7FE8D6D6A3"]
 			id: "4E60CA1366584190"
 			rewards: [{
-				id: "37F693CD4DA897A7"
+				id: "4E1FC3137145273F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -427,7 +450,7 @@
 			dependencies: ["4E60CA1366584190"]
 			id: "0242C066E396C5DE"
 			rewards: [{
-				id: "7574558B859C20C6"
+				id: "73DB37797C0102AD"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -444,7 +467,7 @@
 			dependencies: ["0242C066E396C5DE"]
 			id: "633EB480B1D7E8F8"
 			rewards: [{
-				id: "71050C3D1BD33538"
+				id: "774622E5230117AB"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -460,7 +483,7 @@
 			dependencies: ["633EB480B1D7E8F8"]
 			id: "376A70FE2EC5B841"
 			rewards: [{
-				id: "0C81960F9916E984"
+				id: "13120C51ECBCE079"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -477,7 +500,8 @@
 			description: ["These are gonna be really slow and painful to get right now, so work towards getting the next UV circuits, which won't need an entire assembly line to craft!"]
 			id: "5145593BA83D0FDF"
 			rewards: [{
-				id: "472A8F1CCE6E5854"
+				count: 5
+				id: "1B5F0EF06D8E6A5F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -497,7 +521,7 @@
 			description: ["If you are struggling with the power, you should consider using the naquadria plasma to get a lot more, as you will also need resonant naquadah later on."]
 			id: "4A0B6FB47A53A91D"
 			rewards: [{
-				id: "0E514E3AD35E062D"
+				id: "4976A58EBFDFD855"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -515,7 +539,7 @@
 			description: ["Make uranium by mixing gold and aluminum on a fusion reactor! so funny! (Make more fusion)"]
 			id: "1FE96CB97C493D92"
 			rewards: [{
-				id: "5844E6107752C00A"
+				id: "7D724D08D2824FE8"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -531,7 +555,7 @@
 			dependencies: ["1FE96CB97C493D92"]
 			id: "12C61C76849B0A00"
 			rewards: [{
-				id: "3E0B1C84DB884561"
+				id: "3FBEB7CF99F035C4"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -548,7 +572,7 @@
 			dependencies: ["3D1BD4696D35F79C"]
 			id: "5621B771EF98931F"
 			rewards: [{
-				id: "62C5BB2C161A8649"
+				id: "76C5183D38349F34"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -564,7 +588,7 @@
 			dependencies: ["5621B771EF98931F"]
 			id: "4E3543CFABFF7C11"
 			rewards: [{
-				id: "5B96BC91641D912B"
+				id: "6ACDF555BDA091AC"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -580,7 +604,7 @@
 			dependencies: ["4E3543CFABFF7C11"]
 			id: "315DB98F7E5517BF"
 			rewards: [{
-				id: "392FDBC2329BF3DB"
+				id: "15C2B27136F36D3C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -596,7 +620,7 @@
 			dependencies: ["315DB98F7E5517BF"]
 			id: "1DA4A8607DC42E1A"
 			rewards: [{
-				id: "21652D5B52380C31"
+				id: "273DAFB66CBAF5FB"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -612,7 +636,7 @@
 			dependencies: ["1DA4A8607DC42E1A"]
 			id: "0FAF7B573AC28CFF"
 			rewards: [{
-				id: "64F6A0968A229678"
+				id: "29E5774ECD4B1478"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -639,7 +663,7 @@
 			description: ["Time to get naquadria plasma!"]
 			id: "7801AD2F7D0B75C1"
 			rewards: [{
-				id: "6971C3F5DD1A5F71"
+				id: "084CE65AE3FDD169"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -660,7 +684,7 @@
 			]
 			id: "456BBD4581EB2949"
 			rewards: [{
-				id: "26CB13056E4573F2"
+				id: "0CF136B71E71E056"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -680,7 +704,7 @@
 			description: ["Main UV material."]
 			id: "0ED02B931F00C2D7"
 			rewards: [{
-				id: "57400EE32D7A6517"
+				id: "3538D01B303EA56B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -700,7 +724,8 @@
 			description: [""]
 			id: "125789E676E22B37"
 			rewards: [{
-				id: "00ADB98C99692A0B"
+				count: 6
+				id: "6F12C34B3FF172D9"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -721,7 +746,7 @@
 			description: ["This is the main material for UV components."]
 			id: "37F010478E9F6D44"
 			rewards: [{
-				id: "3EAD5F3975074828"
+				id: "45CEDCD74C067E75"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -740,7 +765,8 @@
 			icon: "gtceu:creative_data_access_hatch"
 			id: "1DA514DF999B91D1"
 			rewards: [{
-				id: "6A7422D41EEB0BF8"
+				count: 10
+				id: "452A0917B417798B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -757,11 +783,6 @@
 		{
 			dependencies: ["4E60CA1366584190"]
 			id: "672241DB845FECC4"
-			rewards: [{
-				id: "1D447190BBB4D737"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			subtitle: "ZPM Tier Superconductor"
 			tasks: [{
 				id: "24CDC2C035401A67"
@@ -774,11 +795,6 @@
 		{
 			dependencies: ["0FAF7B573AC28CFF"]
 			id: "1FE109A9B4D86C2D"
-			rewards: [{
-				id: "52FB73A95EC430D8"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			subtitle: "UV Tier Superconductor"
 			tasks: [{
 				id: "54BD559F902E384A"
@@ -791,11 +807,6 @@
 		{
 			dependencies: ["5CE62A179F6FE234"]
 			id: "0C4DAB1723BF62BA"
-			rewards: [{
-				id: "76D6A94C2030D100"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			subtitle: "That is a lot of recipes at once"
 			tasks: [{
 				id: "7D4B33FF7CCD59DA"
@@ -807,11 +818,6 @@
 		}
 		{
 			id: "5E0A20CE6CF0CCFC"
-			rewards: [{
-				id: "0CF1CC53DC022FF2"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			tasks: [{
 				id: "2AFAEDE40653755A"
 				item: "gtceu:xl_plasma_turbine"

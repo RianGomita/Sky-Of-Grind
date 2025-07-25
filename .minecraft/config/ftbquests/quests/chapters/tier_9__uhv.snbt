@@ -31,7 +31,8 @@
 			]
 			id: "1ECBFC16CA338458"
 			rewards: [{
-				id: "710A39AA8093D930"
+				count: 2
+				id: "2D75976A884704F0"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -48,7 +49,8 @@
 			description: ["Yipii, the start of the singularity line. Which ironically stars with a singularity."]
 			id: "18812DC1665ACB5C"
 			rewards: [{
-				id: "1830A6506B5DCED0"
+				count: 2
+				id: "7CC1446C2E9E920B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -65,7 +67,8 @@
 			description: ["Now you are probably wondering how does this requiere UHV right?. Just wait."]
 			id: "5CA644465CF0DC97"
 			rewards: [{
-				id: "6E4A2E4D803BDE26"
+				count: 2
+				id: "10905DA47FECA2BA"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -80,11 +83,19 @@
 		{
 			dependencies: ["02FB67793FFB1B16"]
 			id: "54696AD3E7A21F00"
-			rewards: [{
-				id: "4654C2CA90B92837"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "73D89EC75F09804A"
+					item: "gtceu:wetware_processor_mainframe"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3D479FE8745CF2CD"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Don't try seeing the EMI tree..."
 			tasks: [{
 				id: "2555049AF3B694A7"
@@ -99,7 +110,8 @@
 			description: ["This is quantum energy... contained in a cell."]
 			id: "164DE1203C8BEE1B"
 			rewards: [{
-				id: "24918C4680D3637D"
+				count: 2
+				id: "402EC4B7D90416CD"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -116,7 +128,8 @@
 			description: ["This uses a hell ton of radon, so I'd recommend getting the atmospheric collector to gather lots of end air "]
 			id: "0608F68656DC2B06"
 			rewards: [{
-				id: "2299DCDD49E47C36"
+				count: 2
+				id: "27D1BE39AD318EB8"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -133,7 +146,8 @@
 			description: ["What a crazy recipe isn't it? This is actually the most expensive item from vanilla GregTech."]
 			id: "54747FBD8456EE8A"
 			rewards: [{
-				id: "4DE350C1E5CD2164"
+				count: 2
+				id: "7919828305EF4BAA"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -151,7 +165,8 @@
 			dependencies: ["0608F68656DC2B06"]
 			id: "3BCC5333E39DCDB5"
 			rewards: [{
-				id: "28DA9BD77C4A6CDB"
+				count: 2
+				id: "612A75E8DA301936"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -167,11 +182,45 @@
 			dependencies: ["3BCC5333E39DCDB5"]
 			description: ["What? You can get draconium dust by killing the ender dragon."]
 			id: "4FF7EFE37A9BD3AE"
-			rewards: [{
-				id: "6D8791497C04E483"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "5E4DA792EED3FDA1"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "3D7A0554B1AA7D1E"
+					item: {
+						Count: 1
+						id: "gtceu:neutronium_scythe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								AoEColumn: 2
+								AoELayer: 2
+								AoERow: 2
+								MaxAoEColumn: 2
+								MaxAoELayer: 2
+								MaxAoERow: 2
+								RelocateMinedBlocks: 1b
+								RelocateMobDrops: 1b
+							}
+							GT.Tool: {
+								AttackDamage: 105.0f
+								AttackSpeed: -2.5f
+								Damage: 0
+								HarvestLevel: 6
+								MaxDamage: 196604
+								ToolSpeed: 184.0f
+							}
+							HideFlags: 2
+							Unbreakable: 1b
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7B1ABC1957380766"
 				item: "draconicevolution:draconium_core"
@@ -184,7 +233,8 @@
 			dependencies: ["4FF7EFE37A9BD3AE"]
 			id: "0379F0315FC8B73F"
 			rewards: [{
-				id: "6C8EE0CE5DD72698"
+				count: 2
+				id: "7573C46AB97ADDC1"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -200,7 +250,8 @@
 			dependencies: ["4FF7EFE37A9BD3AE"]
 			id: "49C64FFB6F5EABFC"
 			rewards: [{
-				id: "615AFE844617D161"
+				count: 2
+				id: "532320EDE54A0857"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -222,11 +273,19 @@
 			]
 			description: ["Expensive multiblock? Well... try to run this passively."]
 			id: "294190B6FB4C75D9"
-			rewards: [{
-				id: "5DFBDDF0D21E2C01"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "34C3E7282C506305"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "1DC193AE5CC715C1"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 2.0d
 			tasks: [{
@@ -241,7 +300,8 @@
 			dependencies: ["294190B6FB4C75D9"]
 			id: "66C76E2ED346F471"
 			rewards: [{
-				id: "19F57E5B4C1D1E5E"
+				count: 2
+				id: "175984C0AC53A1D2"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -257,7 +317,8 @@
 			dependencies: ["294190B6FB4C75D9"]
 			id: "56EE14CC857B60B3"
 			rewards: [{
-				id: "0FBB34D0ED3962D0"
+				count: 2
+				id: "75F1A12284024846"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -276,7 +337,8 @@
 			]
 			id: "4592FBF524AFDCBF"
 			rewards: [{
-				id: "786F6361EDB8B49A"
+				count: 2
+				id: "0B858658EE54DB9D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -303,7 +365,8 @@
 			]
 			id: "251FBD9F0A55D451"
 			rewards: [{
-				id: "3CBAC12E1A15D32B"
+				count: 6
+				id: "6FA9CD5BD3352762"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -325,7 +388,8 @@
 			description: ["You better passive most of the materials for this, believe me."]
 			id: "680A4BAD1F1289C3"
 			rewards: [{
-				id: "2BF38C413339AF8C"
+				count: 2
+				id: "4CB469EE470C4C0B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -342,7 +406,8 @@
 			dependencies: ["680A4BAD1F1289C3"]
 			id: "695308CFB8D4505C"
 			rewards: [{
-				id: "51DB73218BBC6627"
+				count: 2
+				id: "3FCB2085E5E388F7"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -361,7 +426,8 @@
 			]
 			id: "0032181B1C8FC0C2"
 			rewards: [{
-				id: "32DCE7EA99177128"
+				count: 2
+				id: "3E6E310773695E1F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -377,7 +443,8 @@
 			dependencies: ["0032181B1C8FC0C2"]
 			id: "27F6A813D963DDF4"
 			rewards: [{
-				id: "18CD282AD685B5B5"
+				count: 6
+				id: "677B31DA76F2F40D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -396,7 +463,8 @@
 			icon: "extendedcrafting:ultimate_singularity"
 			id: "5FBA0D688D633430"
 			rewards: [{
-				id: "204BE5CC979A5F0C"
+				count: 2
+				id: "51050707B82D68F8"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -525,7 +593,7 @@
 			]
 			id: "263D6635CA60A036"
 			rewards: [{
-				id: "17280620558B0EAC"
+				id: "6931D02FA73E7D11"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -548,11 +616,33 @@
 				"&7&oand for a lot of other things..&r"
 			]
 			id: "687F155B59B5FC1C"
-			rewards: [{
-				id: "6E61507289EFAD3C"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "7E4AAF285036A1D2"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "26EF829AB9342C3C"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "ad_astra:polished_permafrost_slab"
+							Name: "Eternal Singularity Trophy"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "avaritia:eternal_singularity"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "none"
 			size: 2.0d
 			subtitle: "What is this power.."
@@ -568,7 +658,8 @@
 			dependencies: ["687F155B59B5FC1C"]
 			id: "6463C37333165A07"
 			rewards: [{
-				id: "1B1F7F5C13C7D7C1"
+				count: 2
+				id: "6FF529872FC24A7E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -607,7 +698,8 @@
 			dependencies: ["6463C37333165A07"]
 			id: "3935F91B104E894B"
 			rewards: [{
-				id: "380B8EEEACAEB257"
+				count: 2
+				id: "1237AA0136FE2033"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -629,7 +721,8 @@
 			]
 			id: "519D47C7E8E2B4D2"
 			rewards: [{
-				id: "29FCE4CD687F05B5"
+				count: 2
+				id: "131C1D0E50D0B511"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -654,7 +747,8 @@
 			}
 			id: "59EB0032735E66F6"
 			rewards: [{
-				id: "671B2FC570971F28"
+				count: 2
+				id: "0911B37C576637D1"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -716,7 +810,8 @@
 			]
 			id: "67555843799DBDD7"
 			rewards: [{
-				id: "71D6FBF2DA59B573"
+				count: 16
+				id: "0A56DB25D39331D4"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -739,7 +834,8 @@
 			icon: "ad_astra:venus_globe"
 			id: "24E55FA9B85C8F5E"
 			rewards: [{
-				id: "2B13BF45884866E1"
+				count: 2
+				id: "781B999DC2461ACC"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -757,7 +853,8 @@
 			icon: "ad_astra:mercury_globe"
 			id: "09C67452DFDDA7FD"
 			rewards: [{
-				id: "5190132044C2D36A"
+				count: 2
+				id: "343EA7011AF3A433"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -774,7 +871,8 @@
 			dependencies: ["09C67452DFDDA7FD"]
 			id: "4D28528655B1AF54"
 			rewards: [{
-				id: "1EA7EFDFB1A830C7"
+				count: 2
+				id: "3B542A3C645FD207"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -792,7 +890,8 @@
 			description: ["&1Kaemite&r appears as a fluid vein on Mercury. Place some miners!"]
 			id: "31381DE18B522428"
 			rewards: [{
-				id: "79FA7AE01B0A7627"
+				count: 2
+				id: "14C27E9C2F3740F1"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -808,7 +907,8 @@
 			dependencies: ["24E55FA9B85C8F5E"]
 			id: "44ECE182566B19C6"
 			rewards: [{
-				id: "313B1A8E97352301"
+				count: 2
+				id: "1E86379723898C36"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -825,7 +925,8 @@
 			dependencies: ["4D28528655B1AF54"]
 			id: "686884CB55C62494"
 			rewards: [{
-				id: "765A001172BF4B0C"
+				count: 2
+				id: "1502EBD50140BEEB"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -844,7 +945,8 @@
 			]
 			id: "1817E22F002CB954"
 			rewards: [{
-				id: "624285092C57CDCE"
+				count: 2
+				id: "011DC11099DB7E50"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -865,7 +967,8 @@
 			]
 			id: "197C85F8DEFB91AE"
 			rewards: [{
-				id: "26D97DE690A9B275"
+				count: 2
+				id: "28FA55207E749B1B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -886,7 +989,8 @@
 			]
 			id: "06100AEBEB6F9616"
 			rewards: [{
-				id: "10823652CBAB472F"
+				count: 2
+				id: "30EDEEF1014864DF"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -902,7 +1006,8 @@
 			dependencies: ["31381DE18B522428"]
 			id: "3ADFF25145B40563"
 			rewards: [{
-				id: "6A154E4728B65ED0"
+				count: 2
+				id: "5480E5DF1680A278"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -920,11 +1025,18 @@
 				"3ADFF25145B40563"
 			]
 			id: "4AD46A58DA77BD53"
-			rewards: [{
-				id: "707766EBBF9961F0"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4CDBBC8F2CFFA626"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "3C0480AACCACBC42"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1D3EA51B102E8C21"
 				item: "kubejs:quantum_casing"
@@ -940,11 +1052,33 @@
 			]
 			description: ["Requires &b27&r eternal singularities."]
 			id: "57AE0E9F60EE1824"
-			rewards: [{
-				id: "032F8AF7E117AA86"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 26
+					id: "71171ADAC6EB633D"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "6579D96D880921CA"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "antiblocksrechiseled:slab_black"
+							Name: "Quantum Space Projector"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "gtceu:quantum_space_projector"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "Quantum Space Projector"
@@ -967,7 +1101,8 @@
 			]
 			id: "6C81DC0AF93DC884"
 			rewards: [{
-				id: "382EA203A23D6D9D"
+				count: 2
+				id: "629D751279EAF241"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -991,7 +1126,8 @@
 			]
 			id: "3EF119D2D7764D6D"
 			rewards: [{
-				id: "600EC8E8D06CF3BF"
+				count: 2
+				id: "4E8E44D18B864C1B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1013,7 +1149,8 @@
 			]
 			id: "2C8CCBB849A085C1"
 			rewards: [{
-				id: "6A9471CDC472D821"
+				count: 2
+				id: "7F37D915B1FAD3AC"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1035,7 +1172,8 @@
 			]
 			id: "0947210E8A69DB84"
 			rewards: [{
-				id: "4DC0953123CD6ABF"
+				count: 2
+				id: "5C40AF07BC23CDBD"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1055,7 +1193,8 @@
 			]
 			id: "253E0D6D2F38DB28"
 			rewards: [{
-				id: "6AACE77D0AB7F2D0"
+				count: 2
+				id: "7BBCD44E6B644C38"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1075,7 +1214,8 @@
 			]
 			id: "79325F05275A6041"
 			rewards: [{
-				id: "015CB7441EE74682"
+				count: 2
+				id: "636AAA5CC54A9C8E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1103,11 +1243,6 @@
 				"Note: from here and above you will not get any more doge coins. Sorry!"
 			]
 			id: "571D6E7449ED876B"
-			rewards: [{
-				id: "3B3A9FAFF0431817"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "Woah."
@@ -1123,7 +1258,8 @@
 			dependencies: ["687F155B59B5FC1C"]
 			id: "195B7677D3E2F874"
 			rewards: [{
-				id: "4713A3FB5523118F"
+				count: 2
+				id: "5BC1D5245F605433"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1142,7 +1278,8 @@
 			]
 			id: "1F87E3C3B7E7B86F"
 			rewards: [{
-				id: "0AF123F8F82FBA0A"
+				count: 2
+				id: "2EC7B960CFE945DD"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1158,7 +1295,8 @@
 			dependencies: ["1F87E3C3B7E7B86F"]
 			id: "10390BE89A74376A"
 			rewards: [{
-				id: "055F71AD01DF4304"
+				count: 2
+				id: "0895819316FDE3F5"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1176,7 +1314,8 @@
 			dependencies: ["10390BE89A74376A"]
 			id: "77C63918DA40DB6D"
 			rewards: [{
-				id: "1D514E8800692DF1"
+				count: 2
+				id: "40F847A2F852178C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1193,7 +1332,8 @@
 			dependencies: ["77C63918DA40DB6D"]
 			id: "0000EB23A4DB32DF"
 			rewards: [{
-				id: "5BB0392A7AAB61E3"
+				count: 2
+				id: "387ED5E93761C9F6"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1210,7 +1350,8 @@
 			dependencies: ["0000EB23A4DB32DF"]
 			id: "49CC37DA397CA3B3"
 			rewards: [{
-				id: "3FB20264BF88B475"
+				count: 2
+				id: "3CBE748AAF5D671A"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1231,7 +1372,8 @@
 			]
 			id: "1F43AADC6C229EAF"
 			rewards: [{
-				id: "4F931ABAB077CB30"
+				count: 16
+				id: "6F6E30D8729BA085"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1250,7 +1392,8 @@
 			dependencies: ["2C8CCBB849A085C1"]
 			id: "5DBF28E106095546"
 			rewards: [{
-				id: "32B6EDF0ECBAD83F"
+				count: 2
+				id: "7FF624291EBA38AC"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1267,7 +1410,8 @@
 			dependencies: ["0608F68656DC2B06"]
 			id: "1E4509569E3F85B0"
 			rewards: [{
-				id: "7D0BD986AEC82F49"
+				count: 2
+				id: "10F391FA3F7962EF"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1288,7 +1432,8 @@
 			]
 			id: "7104D17C80C2DF74"
 			rewards: [{
-				id: "2CC041B7E87E9262"
+				count: 2
+				id: "6EE49623E5953F89"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1322,7 +1467,8 @@
 			icon: "packagedavaritia:extreme_crafter"
 			id: "07978106CFD0D70C"
 			rewards: [{
-				id: "0EB069B067195856"
+				count: 10
+				id: "04DE43BFB068B83A"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1360,11 +1506,6 @@
 		{
 			dependencies: ["0608F68656DC2B06"]
 			id: "6AE3536AC3819B85"
-			rewards: [{
-				id: "7FA75CC275217446"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			tasks: [{
 				id: "604624B671ECE61F"
 				item: "gtceu:crystal_matrix_single_wire"
@@ -1372,25 +1513,6 @@
 			}]
 			x: 3.5d
 			y: 3.5d
-		}
-		{
-			description: ["With the new and unlocked power cells you can now create hatches that defy physics, I mean, wireless energy? Basically type 7."]
-			id: "274185FF00BD23BF"
-			subtitle: "WIRELESS!"
-			tasks: [
-				{
-					id: "1035FB34E7897060"
-					item: "gtmthings:uv_2a_wireless_energy_input_hatch"
-					type: "item"
-				}
-				{
-					id: "1C942B25728E178F"
-					item: "gtmthings:uv_2a_wireless_energy_output_hatch"
-					type: "item"
-				}
-			]
-			x: 10.5d
-			y: 0.0d
 		}
 	]
 	subtitle: ["Ultra High Voltage"]

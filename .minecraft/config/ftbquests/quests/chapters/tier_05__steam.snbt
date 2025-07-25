@@ -27,7 +27,7 @@
 			dependencies: ["68357F7109A5645C"]
 			id: "001955464B84E2C3"
 			rewards: [{
-				id: "48DCEA12A326DDB2"
+				id: "73BBA5F59F39FEB4"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -46,7 +46,7 @@
 			description: ["Right know i would recommend you filling the boiler &cmanually,&r but, &lwater sources&r are gonna be cheap soon so its not gonna be for long."]
 			id: "08B73C58F9BADB29"
 			rewards: [{
-				id: "3FA89A1ECC06153B"
+				id: "0C86002F9919AD21"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -66,7 +66,7 @@
 			hide_dependent_lines: true
 			id: "3C6DF7CC50CD1592"
 			rewards: [{
-				id: "209A54675AB4C91E"
+				id: "12F908984F10647E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -83,7 +83,7 @@
 			description: ["3x2 Plate ratio, very nice isnt it?"]
 			id: "3A8A7FC9A7F0814B"
 			rewards: [{
-				id: "69AD8C294E62395B"
+				id: "3A70B7CDFE749EE7"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -102,11 +102,33 @@
 				"3A8A7FC9A7F0814B"
 			]
 			id: "46EEB11B27AF0BBC"
-			rewards: [{
-				id: "1C9D49BE765BF6A4"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "1BF2248B3E5FD876"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "36DD7218AAB56419"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "minecraft:smooth_stone_slab"
+							Name: "First Diamond Trophy"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "minecraft:diamond"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "144 Coal = Diamond"
 			tasks: [{
 				id: "5E7A6E47B9A32E5E"
@@ -120,7 +142,7 @@
 			dependencies: ["46EEB11B27AF0BBC"]
 			id: "446DCAFC4449AF56"
 			rewards: [{
-				id: "1D8612A3276B2F4B"
+				id: "3214805494E8818F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -142,11 +164,24 @@
 			]
 			icon: "gtceu:coke_oven"
 			id: "41F3D8A51709C22B"
-			rewards: [{
-				id: "3BDCAE1B4F958A82"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "497432BBF7400B1A"
+					item: "gtceu:coke_block"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "382CF5841F14FF2D"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "7357F29474C92BD5"
+					item: "gtceu:terminal"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "Sidequests"
@@ -177,7 +212,8 @@
 			icon: "gtceu:primitive_blast_furnace"
 			id: "6B67E665F9D2B062"
 			rewards: [{
-				id: "5FDD5962776A71DA"
+				count: 5
+				id: "26ACFA7F2E88AD1B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -208,7 +244,8 @@
 			description: ["You have multiple PBFs, right? :D"]
 			id: "31E750DDB33FE642"
 			rewards: [{
-				id: "11AD72CF7C1D21C8"
+				count: 5
+				id: "06340B813C8BE414"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -229,7 +266,7 @@
 			description: ["The recipe is cheap, but to really use it you will need steel to make molds."]
 			id: "38CA5A0A1225A57C"
 			rewards: [{
-				id: "5AED38842EA3E146"
+				id: "295EE73A61F85FE7"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -249,7 +286,7 @@
 			]
 			id: "6A5E7ED7DE1593E3"
 			rewards: [{
-				id: "6784AABD50E22697"
+				id: "0A3F113333ACEF7A"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -274,7 +311,8 @@
 			icon: "watersources:water_source_tier_1"
 			id: "0291490F6A1806BF"
 			rewards: [{
-				id: "6CE24D37FB0901E8"
+				count: 3
+				id: "21E2CD57D03D04C2"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -293,7 +331,7 @@
 			icon: "gtceu:lp_steam_extractor"
 			id: "638536B9F620C8FC"
 			rewards: [{
-				id: "61A3A6CBAAF55588"
+				id: "1DCCEF0D2D410568"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -319,11 +357,6 @@
 			description: ["With this you will be able to automate basic stones and even things like obsidian later on."]
 			icon: "itemfilters:not"
 			id: "1ACE605475C5F2C5"
-			rewards: [{
-				id: "65EEA478A0676C76"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			size: 0.5d
 			tasks: [{
 				id: "7547E44CE05FE386"
@@ -343,7 +376,7 @@
 			hide_dependent_lines: true
 			id: "6038F6B4D714C153"
 			rewards: [{
-				id: "6894E80775D0C0F4"
+				id: "00C0DD0AD3BB3943"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -365,7 +398,7 @@
 			description: [""]
 			id: "45F24F0CB8CCBB69"
 			rewards: [{
-				id: "084D2C1E8430F045"
+				id: "50D2A0C021368F15"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -392,7 +425,7 @@
 			]
 			id: "794CADF7CC86C821"
 			rewards: [{
-				id: "2A39CCD9751525BE"
+				id: "35B4336EBE60FB4E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -415,7 +448,7 @@
 			icon: "gtceu:wood_plate"
 			id: "59F425FF00B25D6C"
 			rewards: [{
-				id: "1D80D3F3CF682C02"
+				id: "58F8FDF76384D75E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -438,7 +471,7 @@
 			dependencies: ["59F425FF00B25D6C"]
 			id: "4DB2D82E82C03F4E"
 			rewards: [{
-				id: "24460D1C114EABE9"
+				id: "64A1373560C3AFDA"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -455,7 +488,7 @@
 			dependencies: ["6A5E7ED7DE1593E3"]
 			id: "7709031428DCE9A0"
 			rewards: [{
-				id: "57E934BF8D793DEC"
+				id: "4396E683D708C409"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -471,7 +504,7 @@
 			dependencies: ["446DCAFC4449AF56"]
 			id: "25DE555094C380F9"
 			rewards: [{
-				id: "4C9571173ACC6D7B"
+				id: "1A835CCC3F4B9BAC"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -493,11 +526,19 @@
 			]
 			description: ["I sure hope you're batch crafting everything, else it's not looking good for you."]
 			id: "47F08B64D8FA018F"
-			rewards: [{
-				id: "4010DD360EDDB6D6"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2446F9A4F74150A4"
+					item: "jecalculation:item_calculator_craft"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "27EEDEA8F8F1C364"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -518,7 +559,7 @@
 			]
 			id: "2DA0003222D48B72"
 			rewards: [{
-				id: "457BA02637AC8E49"
+				id: "64C76D124E780174"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -540,7 +581,7 @@
 			]
 			id: "17956BCCD994D647"
 			rewards: [{
-				id: "43545AC9B1F7EBCE"
+				id: "050AD2F52864CB36"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -561,7 +602,7 @@
 			]
 			id: "34505E178B1E2560"
 			rewards: [{
-				id: "21D444370A2EE828"
+				id: "73DA3DE9AEA3002C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -580,7 +621,8 @@
 			id: "71A1EDA69A1E26F8"
 			optional: true
 			rewards: [{
-				id: "615607CD3B349EA4"
+				count: 3
+				id: "1069ED823E90F5BE"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -598,7 +640,7 @@
 			description: ["You can use liquid boilers with rock crushers and crucibles to get lava for a different way to make steam."]
 			id: "1904613EF69350E3"
 			rewards: [{
-				id: "28DF44B636A883DF"
+				id: "1198BF5D23241911"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -621,7 +663,7 @@
 			]
 			id: "6559C153909F6520"
 			rewards: [{
-				id: "141C2FA7641205CF"
+				id: "68EAAD1DB4B3AC3D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
