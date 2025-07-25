@@ -53,7 +53,7 @@
 				consume_items: true
 				count: 5L
 				id: "0672248277A7FBED"
-				item: "gtmutils:doge_coin"
+				item: { Count: 5, id: "gtmutils:doge_coin" }
 				type: "item"
 			}]
 			title: "Data Stick"
@@ -377,7 +377,7 @@
 				consume_items: true
 				count: 22L
 				id: "59E7D11554AD5A5B"
-				item: "gtmutils:doge_coin"
+				item: { Count: 12, id: "gtmutils:doge_coin" }
 				type: "item"
 			}]
 			title: "Circuit: IV"
@@ -398,7 +398,7 @@
 				consume_items: true
 				count: 24L
 				id: "78528B1E7B53DEBE"
-				item: "gtmutils:doge_coin"
+				item: { Count: 14, id: "gtmutils:doge_coin" }
 				type: "item"
 			}]
 			title: "Circuit: IV"
@@ -419,7 +419,7 @@
 				consume_items: true
 				count: 26L
 				id: "79EB43CC52A52F75"
-				item: "gtmutils:doge_coin"
+				item: { Count: 16, id: "gtmutils:doge_coin" }
 				type: "item"
 			}]
 			title: "Circuit: ZPM"
@@ -440,7 +440,7 @@
 				consume_items: true
 				count: 28L
 				id: "4858C504FC169CBA"
-				item: "gtmutils:doge_coin"
+				item: { Count: 18, id: "gtmutils:doge_coin" }
 				type: "item"
 			}]
 			title: "Circuit: UV"
@@ -461,7 +461,7 @@
 				consume_items: true
 				count: 30L
 				id: "43D88E2B08334053"
-				item: "gtmutils:doge_coin"
+				item: { Count: 20, id: "gtmutils:doge_coin" }
 				type: "item"
 			}]
 			title: "Circuit: UHV"

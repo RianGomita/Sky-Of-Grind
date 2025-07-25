@@ -20,7 +20,7 @@
 			description: ["Hulls = casing + cables + some extra plates"]
 			id: "16AF5E167963CD5E"
 			rewards: [{
-				id: "44DD63552DE2C869"
+				id: "496C2BDBD139BC6D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -36,7 +36,8 @@
 			dependencies: ["16AF5E167963CD5E"]
 			id: "600C9FE63DAFB132"
 			rewards: [{
-				id: "0F6C8181CB7835C5"
+				count: 3
+				id: "3BACB6C9B9DEF466"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -55,7 +56,7 @@
 			dependencies: ["600C9FE63DAFB132"]
 			id: "6E94AF58326AAA04"
 			rewards: [{
-				id: "24B19426C8A4942F"
+				id: "08784129FBDA85E1"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -72,7 +73,7 @@
 			dependencies: ["600C9FE63DAFB132"]
 			id: "0CF36E87847B173E"
 			rewards: [{
-				id: "2C72EFB7F00AD976"
+				id: "6026D21C7BDC0F36"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -102,7 +103,7 @@
 			id: "3BE98091F78DA8F5"
 			optional: true
 			rewards: [{
-				id: "16863939B8615E54"
+				id: "32FB62408AF927AA"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -139,7 +140,7 @@
 			dependencies: ["600C9FE63DAFB132"]
 			id: "780137604FB5DEC9"
 			rewards: [{
-				id: "6F4B330B019521AD"
+				id: "6BE47C9D9BC79CE2"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -180,7 +181,7 @@
 			description: ["Very important machine, unlocks coils and a LOT of cheaper recipes!"]
 			id: "62F9642692D0B556"
 			rewards: [{
-				id: "686FBF540EFF5634"
+				id: "77529765B3DA9738"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -197,7 +198,7 @@
 			description: ["Get graphite by placing raw coal in a coke oven."]
 			id: "4E9536B853DD60C3"
 			rewards: [{
-				id: "0D0109BC677A8922"
+				id: "66CAABCF0F21209A"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -215,7 +216,7 @@
 			description: ["Collect some air!"]
 			id: "204D8FAA756928C4"
 			rewards: [{
-				id: "4176296A5AF320C3"
+				id: "17A36A3ACC1D420F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -231,7 +232,7 @@
 			dependencies: ["780137604FB5DEC9"]
 			id: "0125B5F913B6C59A"
 			rewards: [{
-				id: "0FC50F02AF73D5E5"
+				id: "059688C0F70624C6"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -265,7 +266,7 @@
 			]
 			id: "445F7A65CE2C862C"
 			rewards: [{
-				id: "40C7A19DB31D4068"
+				id: "39389109D06A3F23"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -293,7 +294,8 @@
 			icon: "gtceu:raw_diamond"
 			id: "11F178FE7717ACD2"
 			rewards: [{
-				id: "011D8051C2C235D6"
+				count: 3
+				id: "7A60190598AF288C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -345,7 +347,7 @@
 			dependencies: ["204D8FAA756928C4"]
 			id: "00BC9AD9CBE396BA"
 			rewards: [{
-				id: "39A13F81DB8FC2C3"
+				id: "6460FCEA133E4F52"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -365,7 +367,7 @@
 			icon: "gtceu:sapphire_gem"
 			id: "3FD3DAFB0B6EB3ED"
 			rewards: [{
-				id: "7CC2881AD723DFB2"
+				id: "19859781788BAB3D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -397,7 +399,7 @@
 			]
 			id: "1A52FCAE5F1AB7A8"
 			rewards: [{
-				id: "76D531276C3DBB4C"
+				id: "4137C83EA35A8B0F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -421,7 +423,7 @@
 			dependencies: ["780137604FB5DEC9"]
 			id: "5E616BF4128429D8"
 			rewards: [{
-				id: "22A1B10B964B4FF3"
+				id: "161D477658DDD00D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -437,7 +439,7 @@
 			dependencies: ["5E616BF4128429D8"]
 			id: "46E3805ECF59FA5A"
 			rewards: [{
-				id: "75B8298989C53E43"
+				id: "78DD890C995DE9E8"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -455,7 +457,7 @@
 			description: ["2 iron for every nickel ingot in an alloy smelter and you get invar."]
 			id: "0DC1C7A1BA3CD3AB"
 			rewards: [{
-				id: "10A83BF5445DDEF8"
+				id: "633A7A231078084D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -475,11 +477,33 @@
 			description: ["Cool multiblock, you might wanna make even 2 or more of those as you're also gonna need it for the circuit, not only the aluminium."]
 			icon: "gtceu:electric_blast_furnace"
 			id: "507C474A64173290"
-			rewards: [{
-				id: "3AE42DD900668DA3"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "146AB42085F20077"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "4F3A850440AD3B78"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "minecraft:smooth_stone_slab"
+							Name: "First EBF"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "gtceu:electric_blast_furnace"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "Big milestone go brrrr"
@@ -510,7 +534,7 @@
 			description: ["Another alloy smelter ingot! This uses nickel too just like invar."]
 			id: "27F6D28FC22CF47D"
 			rewards: [{
-				id: "5EF465B6F4B773EB"
+				id: "60ADF1B5CE31F06D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -526,7 +550,7 @@
 			dependencies: ["780137604FB5DEC9"]
 			id: "2623D3499562BDA7"
 			rewards: [{
-				id: "6434A2D74D07963A"
+				id: "51898479356C928E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -542,7 +566,7 @@
 			dependencies: ["5E616BF4128429D8"]
 			id: "10A196BA81DCE9FF"
 			rewards: [{
-				id: "11D86916A2DA64B1"
+				id: "78CA63824692422F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -566,7 +590,7 @@
 			]
 			id: "040E4BD75ABC15DD"
 			rewards: [{
-				id: "396F87112864ECD3"
+				id: "2480B37207ADD34C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -593,7 +617,7 @@
 			]
 			id: "1057F8D3CB6DB125"
 			rewards: [{
-				id: "09DF6145A24AD812"
+				id: "2B173679963409D7"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -610,7 +634,7 @@
 			dependencies: ["5E41736C950E9C4F"]
 			id: "3A121AF19BE3A6E4"
 			rewards: [{
-				id: "16066ED2EA129D62"
+				id: "2F0B2C590F7C2AFD"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -630,7 +654,7 @@
 			]
 			id: "3BE5759C7FFEF529"
 			rewards: [{
-				id: "15CCB4822DEEA127"
+				id: "5298FCF562AE7275"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -647,7 +671,7 @@
 			dependencies: ["780137604FB5DEC9"]
 			id: "7CCA83876C2A61BB"
 			rewards: [{
-				id: "3485084EB33F8204"
+				id: "443DB3700E493A5B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -664,7 +688,7 @@
 			description: ["You can also get aluminium (as well as some other elements) from clay at MV!"]
 			id: "5A9747B96C3219CC"
 			rewards: [{
-				id: "533D8134C66814AB"
+				id: "7C1804305274FD7F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -688,7 +712,7 @@
 			]
 			id: "56A802215E4A1AC7"
 			rewards: [{
-				id: "1A7A45DAA75DCAC1"
+				id: "764A98F4A675BA42"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -704,7 +728,7 @@
 			dependencies: ["56A802215E4A1AC7"]
 			id: "3E565050BADBB2FD"
 			rewards: [{
-				id: "1652BAC9BF0FE4EA"
+				id: "2728C22BF372DEE8"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -721,7 +745,7 @@
 			description: ["Get cobaltite by centrifuging a little bit of nickel."]
 			id: "6E58B8E2C8BF2E8D"
 			rewards: [{
-				id: "55F5C8307BFC0DA7"
+				id: "03420D337E23514F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -741,7 +765,7 @@
 			]
 			id: "5EC7144AEC633B0F"
 			rewards: [{
-				id: "2BBF04446F4F3C65"
+				id: "72322C215AE7E622"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -759,7 +783,7 @@
 			description: ["Separate materials into periodic table elements!"]
 			id: "4EB49C9582930970"
 			rewards: [{
-				id: "065219D50313018F"
+				id: "247FA55EAFB880F2"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -782,7 +806,7 @@
 			]
 			id: "369FB5AA564903BB"
 			rewards: [{
-				id: "210AFA08BA7E8C9B"
+				id: "560BA2C3FC93EB99"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -800,7 +824,7 @@
 			description: ["Centrifuge some sphalerite!"]
 			id: "4A8CC60709EF0586"
 			rewards: [{
-				id: "3C9281B2F5107AC4"
+				id: "3386968406CD1D6F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -820,7 +844,7 @@
 			]
 			id: "16AD964F16907184"
 			rewards: [{
-				id: "6FC6743D59CD2766"
+				id: "3BDF92ABB8DB2DD2"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -841,7 +865,7 @@
 			]
 			id: "163D91789C3F12E6"
 			rewards: [{
-				id: "34314CB1474A50D2"
+				id: "5AE08B8270203370"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -862,7 +886,8 @@
 			description: ["Did you passive aluminium ingots???"]
 			id: "2F459E86E600C4DD"
 			rewards: [{
-				id: "06022AE3F5D7972D"
+				count: 5
+				id: "10F2933BA383982C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -881,7 +906,7 @@
 			description: ["Welcome to MV!"]
 			id: "3E90FC6B797D4D2B"
 			rewards: [{
-				id: "32BC4F0A73345A4A"
+				id: "1E77E7A82BBB6807"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -903,7 +928,7 @@
 			]
 			id: "3F0C71A412C94C98"
 			rewards: [{
-				id: "1DD82C4D24D417EC"
+				id: "1AE9F831B9A9B064"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -926,7 +951,8 @@
 			]
 			id: "66079F4565A6B631"
 			rewards: [{
-				id: "7E07B2CD13CC7D32"
+				count: 5
+				id: "1CC1532C633C5D85"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -965,8 +991,17 @@
 			}
 			id: "4F38FDE69E161339"
 			rewards: [{
-				id: "3FCB443B10A56296"
-				item: "gtmutils:doge_coin"
+				id: "549FB3E610A68F36"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 6
+							id: "hostilenetworks:squid"
+						}
+					}
+				}
 				type: "item"
 			}]
 			subtitle: "Peaceful Friendly"
@@ -1006,7 +1041,7 @@
 			dependencies: ["66079F4565A6B631"]
 			id: "696039828152042F"
 			rewards: [{
-				id: "6A43749BF2A97A44"
+				id: "5B6B272E6A94CFC3"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1024,7 +1059,7 @@
 			description: ["Getting somewhere huh"]
 			id: "306C00A7AC8E6437"
 			rewards: [{
-				id: "64A3AF6475645E15"
+				id: "6423F64514DBBB9F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1046,7 +1081,8 @@
 			]
 			id: "4F312669D4434DF1"
 			rewards: [{
-				id: "6E9ACC1B2CC75713"
+				count: 2
+				id: "11C647B7DF47600C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1062,7 +1098,7 @@
 			dependencies: ["4F312669D4434DF1"]
 			id: "2A06152CD35AEB43"
 			rewards: [{
-				id: "7F3E9376E1FE0050"
+				id: "04E371724192E895"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1078,7 +1114,7 @@
 			dependencies: ["4F312669D4434DF1"]
 			id: "35BEC4D7A3A6B971"
 			rewards: [{
-				id: "1FEC2F511D0DB000"
+				id: "56B668D1894C260D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1094,7 +1130,7 @@
 			dependencies: ["4F312669D4434DF1"]
 			id: "0CC37A2971DEEB69"
 			rewards: [{
-				id: "34533B488DB72A5B"
+				id: "5B790917363F1D54"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1110,7 +1146,8 @@
 			dependencies: ["2A06152CD35AEB43"]
 			id: "400998B80287CE93"
 			rewards: [{
-				id: "39D67D6C8BB4D25C"
+				count: 3
+				id: "5AFDA398AC224F7E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1127,7 +1164,8 @@
 			dependencies: ["35BEC4D7A3A6B971"]
 			id: "1E8BE05E017C47AE"
 			rewards: [{
-				id: "414F0CD7328BE407"
+				count: 3
+				id: "052D377538BF8F6F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1144,7 +1182,8 @@
 			dependencies: ["0CC37A2971DEEB69"]
 			id: "0D91D32DEA66E74B"
 			rewards: [{
-				id: "516E32B4E37E90DE"
+				count: 3
+				id: "3DD889F4F649AF4E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1163,7 +1202,7 @@
 			description: ["AE2 but not digital... and no autocrafting... and no fluid storage... :("]
 			id: "55634ACFE6F9AA5D"
 			rewards: [{
-				id: "269B405AB20D6D31"
+				id: "7063C06DF797BD20"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1181,7 +1220,8 @@
 			description: ["See items that you have right next to the crafting slots!"]
 			id: "34A90C36E9A8A51C"
 			rewards: [{
-				id: "0EE5F4E8F3FEE04E"
+				count: 3
+				id: "43830C4A6D16BB75"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1198,7 +1238,7 @@
 			description: ["You will need to make those cables for simple storage networks"]
 			id: "03F64BDF42BC6BF6"
 			rewards: [{
-				id: "0FA58F3D3B2DD326"
+				id: "554AE83C9B3B417C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1218,7 +1258,7 @@
 			description: ["Connect this to a chest to expose it's storage to the simple storage network."]
 			id: "0E504DAB2E92683D"
 			rewards: [{
-				id: "514EB7976B147F8A"
+				id: "338AB0A176BC378A"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1235,7 +1275,7 @@
 			description: ["Go for it, automate the extractinator!"]
 			id: "561C0A69B8A43CEA"
 			rewards: [{
-				id: "23A91F3170018552"
+				id: "18E1E9F976CE2D09"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1254,7 +1294,7 @@
 			id: "023F2CD0DEEFCC9F"
 			optional: true
 			rewards: [{
-				id: "48A2C2D081824A16"
+				id: "4EB38AABFC7890EC"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1273,7 +1313,7 @@
 			id: "66DBAE910833BF27"
 			optional: true
 			rewards: [{
-				id: "3BC40FE61AEF7EE6"
+				id: "0FBF16D3774BB09E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1292,7 +1332,7 @@
 			id: "71E4376CE22393F9"
 			optional: true
 			rewards: [{
-				id: "3D99B6A1AB8107FE"
+				id: "2DACDC38BC0651E6"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1311,7 +1351,7 @@
 			id: "2CBB2708CA520484"
 			optional: true
 			rewards: [{
-				id: "3E70FF1574A7057B"
+				id: "666795D2EE9F52D8"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1330,7 +1370,7 @@
 			id: "32B7C2E1DDD9D932"
 			optional: true
 			rewards: [{
-				id: "3ED80FED286AA653"
+				id: "4BAF39995EBD75F7"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1359,8 +1399,17 @@
 			id: "0718B686D7E82E27"
 			optional: true
 			rewards: [{
-				id: "08EF196B204C1F48"
-				item: "gtmutils:doge_coin"
+				id: "34701CBF46512118"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 6
+							id: "hostilenetworks:spider"
+						}
+					}
+				}
 				type: "item"
 			}]
 			tasks: [
@@ -1412,11 +1461,6 @@
 				"&2Superconductors&r have &ono&r loss so you can make large cablelines and you will not lose a single EU :D"
 			]
 			id: "0141F3DC5713D52E"
-			rewards: [{
-				id: "1087306BECA8EB43"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			subtitle: "First Superconductor"
 			tasks: [{
 				id: "09567F245E4DB5CD"
@@ -1436,11 +1480,6 @@
 				"Note: you might have been able to obtain them before, but some of them require Invar and Potin."
 			]
 			id: "0DE09F4FDA8E1C86"
-			rewards: [{
-				id: "762EDB63766D1E16"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			size: 0.75d
 			tasks: [
 				{
@@ -1473,11 +1512,6 @@
 			description: ["If you are tired of making LV pumps and conveyors for automations, try those, they require a little bit of lead, but are very cheap in comparison."]
 			icon: "ulvcovm:ulv_electric_pump"
 			id: "752B0E07BBC5F492"
-			rewards: [{
-				id: "6E4C1D2767C58FBD"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			tasks: [
 				{
 					id: "75917B4AEB1EE939"
@@ -1518,7 +1552,7 @@
 			]
 			id: "153EB23F6C6F15A6"
 			rewards: [{
-				id: "63211B44A0A85525"
+				id: "2CB0F69D9BB26CD7"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1537,11 +1571,6 @@
 			description: ["You need voltage coils for every energy hatch."]
 			hide_dependency_lines: true
 			id: "5E41736C950E9C4F"
-			rewards: [{
-				id: "39B661A9EB4F5D0D"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			tasks: [{
 				id: "25DB808D6FD446D6"
 				item: "gtceu:lv_voltage_coil"

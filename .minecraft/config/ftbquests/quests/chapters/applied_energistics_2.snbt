@@ -493,7 +493,7 @@
 			rewards: [{
 				count: 2
 				id: "3A67567179E5BDEC"
-				item: "gtceu:doge_coin"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -509,7 +509,7 @@
 			id: "5483EC9F0EBB1DA0"
 			rewards: [{
 				id: "1047C2AD871F662B"
-				item: "gtceu:doge_coin"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -525,7 +525,7 @@
 			id: "31B491DB9D0C300A"
 			rewards: [{
 				id: "52393BCD1884520D"
-				item: "gtceu:doge_coin"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -541,7 +541,7 @@
 			id: "3E611DBA8EAB465B"
 			rewards: [{
 				id: "73D7724F9C6D226D"
-				item: "gtceu:doge_coin"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -557,7 +557,7 @@
 			id: "62FF9D527D28A04D"
 			rewards: [{
 				id: "05ADEF6CBB2B63A1"
-				item: "gtceu:doge_coin"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -573,7 +573,7 @@
 			id: "05E3BFAF5D4F8302"
 			rewards: [{
 				id: "0FAF9C802804F0CB"
-				item: "gtceu:doge_coin"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -589,7 +589,7 @@
 			id: "42D295B064D98316"
 			rewards: [{
 				id: "105522B6949F8B85"
-				item: "gtceu:doge_coin"
+				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
 			tasks: [

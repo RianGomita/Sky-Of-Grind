@@ -27,7 +27,7 @@
 			dependencies: ["125789E676E22B37"]
 			id: "164F9100DAB09566"
 			rewards: [{
-				id: "4DB392BE7BB4D4AD"
+				id: "09404D9944EEDDFC"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -44,7 +44,7 @@
 			icon: "gtceu:uv_electric_motor"
 			id: "37F84238ECE73317"
 			rewards: [{
-				id: "530FCEAFC2D4D1A8"
+				id: "69778019D6A4F00D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -83,7 +83,7 @@
 			dependencies: ["37F84238ECE73317"]
 			id: "5ED92685D41E8E2A"
 			rewards: [{
-				id: "4BA763267315C5D4"
+				id: "2361099606658067"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -103,7 +103,7 @@
 			icon: "gtceu:mega_vacuum_freezer"
 			id: "5CD5AB5C8F8C8AD0"
 			rewards: [{
-				id: "10A083D192C5570D"
+				id: "287806108C1BF443"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -130,7 +130,7 @@
 			]
 			id: "7D3E81F74BB9E774"
 			rewards: [{
-				id: "6A5B0FBACF5B47A8"
+				id: "33D8B05B71B97C35"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -148,7 +148,7 @@
 			dependencies: ["7D3E81F74BB9E774"]
 			id: "2B6C1EAE34701CC3"
 			rewards: [{
-				id: "2C56BBAF0A3429CF"
+				id: "015C787BFB48EAB7"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -169,7 +169,7 @@
 			description: ["Long chemical line right?, be sure to mass produce this. You are gonna need atomic casings for a lot of multiblocks on the lategame/endgame."]
 			id: "0A2A23F390EC85E8"
 			rewards: [{
-				id: "1103830301C9DA0B"
+				id: "0C890A69B2C0CC27"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -189,7 +189,7 @@
 			description: ["&n&cThis is a long chemical line, so if you have already automated this and don't want to get buckets just hold 16 dusts of cleaned californium to skip the line.&r"]
 			id: "28F815505B60672A"
 			rewards: [{
-				id: "14B80C969629A2E1"
+				id: "1CF7F4B990EB40A9"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -206,7 +206,7 @@
 			dependencies: ["255D6A51593E2097"]
 			id: "6F5C4420119FF2FB"
 			rewards: [{
-				id: "160D7627A6879C5B"
+				id: "2A6F7C033F2E6873"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -229,7 +229,7 @@
 			icon: "gtceu:acetic_acid_bucket"
 			id: "255D6A51593E2097"
 			rewards: [{
-				id: "072B58124B9FBC5C"
+				id: "6D63223137AC85B1"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -249,7 +249,7 @@
 			]
 			id: "79554244A4386BEA"
 			rewards: [{
-				id: "09D3FEAA7CB32FBA"
+				id: "1BC03308514DCC67"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -266,7 +266,7 @@
 			icon: "gtceu:polyphenylene_sulfide_bucket"
 			id: "3A87263C9C43627F"
 			rewards: [{
-				id: "5C435CFDCC516B3C"
+				id: "1531ECCF7263FF29"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -292,7 +292,7 @@
 			]
 			id: "6A35990B7D59F7A4"
 			rewards: [{
-				id: "4FB645EB85F4899B"
+				id: "1A5BCB7F1F681EE5"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -308,7 +308,7 @@
 			dependencies: ["5ED92685D41E8E2A"]
 			id: "02F1AB5B0139897C"
 			rewards: [{
-				id: "2B8B26BD7056FC68"
+				id: "2B59AB20D525E832"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -327,7 +327,7 @@
 			]
 			id: "0978E094DDF9E73B"
 			rewards: [{
-				id: "2F975E4750199DA0"
+				id: "244DFE20C4612215"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -346,7 +346,7 @@
 			]
 			id: "4191CC423AC87150"
 			rewards: [{
-				id: "59E3C607E851D0A1"
+				id: "1145B0AAF7A4C06E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -363,7 +363,7 @@
 			description: ["You probably already made an ore processing setup, you will just need to set it up to make indium concentrate now!"]
 			id: "6D0E0061B175BEE9"
 			rewards: [{
-				id: "5DA2EBBC101B19C4"
+				id: "3E1E3D92085ED812"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -378,7 +378,7 @@
 		{
 			id: "1BF9CF91864BA9B4"
 			rewards: [{
-				id: "67A34E11331C0EDF"
+				id: "55E94D63D2DF9B60"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -399,7 +399,7 @@
 			icon: "gtceu:pure_trisulfate_solution_bucket"
 			id: "31FB563AACC168CA"
 			rewards: [{
-				id: "57266A37548C4191"
+				id: "3FC610571092A309"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -422,7 +422,7 @@
 			dependencies: ["37F84238ECE73317"]
 			id: "79A769C85FBFE8E3"
 			rewards: [{
-				id: "1011AC5C75ACFB3A"
+				id: "1C97630B0442F4CE"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -437,7 +437,7 @@
 		{
 			id: "2549CD748DC09212"
 			rewards: [{
-				id: "46932F3FB48A6B4C"
+				id: "55476F5C67699588"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -457,7 +457,7 @@
 			description: ["You can reprocess this for a little bit of processed triplatirium 235 and sulfide for the start of the line"]
 			id: "1D042CF59EDF5C64"
 			rewards: [{
-				id: "5616DFB89B6F0108"
+				id: "4C5D2501E0DA6F7E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -476,7 +476,7 @@
 			]
 			id: "13D6E79FBA4EB336"
 			rewards: [{
-				id: "0BCE4477A27CDD01"
+				id: "0664C84F9A0F66FA"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -493,7 +493,7 @@
 			icon: "gtceu:processed_californium_sulfate_bucket"
 			id: "51E87E04EBFD719A"
 			rewards: [{
-				id: "5D07D3DA1FA5B20A"
+				id: "076E5A1807208D10"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -520,7 +520,7 @@
 			dependency_requirement: "one_completed"
 			id: "4DA842D406AADCF8"
 			rewards: [{
-				id: "21B9F1CFA1EF8935"
+				id: "7674282D1D80861B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -536,7 +536,8 @@
 			dependencies: ["4DA842D406AADCF8"]
 			id: "3D13A7A4FD812614"
 			rewards: [{
-				id: "6E308989BE590886"
+				count: 5
+				id: "3C2A9C6FDD0195EC"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -552,11 +553,6 @@
 			description: ["You are really lazy right?"]
 			id: "3A6DEA6DADE51FD9"
 			invisible: true
-			rewards: [{
-				id: "1C6ACAAA7687BE94"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			tasks: [{
 				count: 16L
 				id: "1277DDB0D4187FB2"
@@ -572,7 +568,7 @@
 			description: ["MEGA BLAST FURNACEEEE"]
 			id: "71C494C011495483"
 			rewards: [{
-				id: "638DEB6DDAE9873D"
+				id: "507BB3D8729CC817"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -590,7 +586,7 @@
 			dependencies: ["0A2A23F390EC85E8"]
 			id: "2AA3A54B293FEAB0"
 			rewards: [{
-				id: "65230BEE7E06474B"
+				id: "1D26DD03958DF54C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -620,11 +616,33 @@
 			]
 			icon: "gtceu:atomicforge"
 			id: "78AD69A43E7C24D4"
-			rewards: [{
-				id: "76B2CB5C2753F5C3"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 15
+					id: "6D7B58F62CD3DCF1"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "28C9931AA569C698"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "antiblocksrechiseled:slab_black"
+							Name: "Atomic Forge"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "gtceu:atomicforge"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "Very expensive."
@@ -675,7 +693,8 @@
 			]
 			id: "0AD942FF650E56A4"
 			rewards: [{
-				id: "6B5764B3232B35A6"
+				count: 15
+				id: "2D2B7470237AB727"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -694,7 +713,7 @@
 			dependencies: ["78AD69A43E7C24D4"]
 			id: "74177146493E4003"
 			rewards: [{
-				id: "3D75A08C621B2902"
+				id: "4410B0B732217884"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -711,7 +730,7 @@
 			dependencies: ["0AD942FF650E56A4"]
 			id: "6C63C3F090FCA71C"
 			rewards: [{
-				id: "7CA989E0D844E583"
+				id: "29862A777A2C187C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -732,7 +751,8 @@
 			]
 			id: "14DA1644C84FC058"
 			rewards: [{
-				id: "0612F9BE9069006B"
+				count: 5
+				id: "2ABF2AE2EE8D6FAD"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -748,7 +768,7 @@
 			dependencies: ["2B6C1EAE34701CC3"]
 			id: "169EE9113DC61DE8"
 			rewards: [{
-				id: "3AEF5E0FCC7814BF"
+				id: "672203896FEE606E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -764,7 +784,7 @@
 			dependencies: ["169EE9113DC61DE8"]
 			id: "242C540B3A015A3E"
 			rewards: [{
-				id: "058CC1697785A2DE"
+				id: "3DAE5FD554163E25"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -782,7 +802,7 @@
 			dependencies: ["242C540B3A015A3E"]
 			id: "54FB1B0458E516C0"
 			rewards: [{
-				id: "14F55B75AA7478FF"
+				id: "56A9994B0011EB11"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -799,7 +819,7 @@
 			dependencies: ["54FB1B0458E516C0"]
 			id: "3930405A81697D7A"
 			rewards: [{
-				id: "29CBCA97B469EF58"
+				id: "6355BE176A43C86C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -815,7 +835,7 @@
 			dependencies: ["3930405A81697D7A"]
 			id: "721EA3223205828E"
 			rewards: [{
-				id: "23152F2390D8E966"
+				id: "712F688E3A084B6E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -831,7 +851,7 @@
 			dependencies: ["721EA3223205828E"]
 			id: "1E69FEE5BD2238EE"
 			rewards: [{
-				id: "7FA99ECFBAB911D3"
+				id: "57BF848668435390"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -847,7 +867,7 @@
 			dependencies: ["242C540B3A015A3E"]
 			id: "5683F02BBA2A85D6"
 			rewards: [{
-				id: "702C206487286A0D"
+				id: "274279A047FA70E1"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -863,7 +883,7 @@
 			dependencies: ["5683F02BBA2A85D6"]
 			id: "070E566D0143F5FA"
 			rewards: [{
-				id: "60DDF45C91B7C297"
+				id: "4BFA9419EE6B8297"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -879,7 +899,7 @@
 			dependencies: ["5683F02BBA2A85D6"]
 			id: "41598EFF26B74BF5"
 			rewards: [{
-				id: "2412A2220A6ADB3E"
+				id: "6203E47B45BE9C79"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -898,7 +918,7 @@
 			]
 			id: "26A2EF137A309977"
 			rewards: [{
-				id: "44EE64FEF3834D79"
+				id: "719935782E76E964"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -914,7 +934,7 @@
 			dependencies: ["26A2EF137A309977"]
 			id: "749A786CFB7A268F"
 			rewards: [{
-				id: "714F64107CC0E044"
+				id: "0A6584D5BEF3F81B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -930,7 +950,7 @@
 			dependencies: ["749A786CFB7A268F"]
 			id: "22AFA71DD9018A93"
 			rewards: [{
-				id: "04B7A8F69576E0B4"
+				id: "320434594EB6A465"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -951,7 +971,7 @@
 			]
 			id: "09A28D0D0744C996"
 			rewards: [{
-				id: "1C51FBC6682AF0E0"
+				id: "57A93B78ABA7E176"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -967,7 +987,7 @@
 			dependencies: ["09A28D0D0744C996"]
 			id: "0C9E240B28ED1A64"
 			rewards: [{
-				id: "551CD77A26BE2EFF"
+				id: "72312D8EAAE4F037"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -983,7 +1003,7 @@
 			dependencies: ["0C9E240B28ED1A64"]
 			id: "193584811AABC74F"
 			rewards: [{
-				id: "1CD50225435636A1"
+				id: "70D3897AE01997FC"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1001,7 +1021,7 @@
 			dependencies: ["0C9E240B28ED1A64"]
 			id: "561DB7DC68681BCF"
 			rewards: [{
-				id: "325EEFB5159D8484"
+				id: "1AD875512DB76360"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1020,7 +1040,7 @@
 			]
 			id: "5A76031E7DC07646"
 			rewards: [{
-				id: "01D9D79A81A729D4"
+				id: "7F2F86D4D8143CB3"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1037,7 +1057,7 @@
 			dependencies: ["561DB7DC68681BCF"]
 			id: "0FF8D59811787170"
 			rewards: [{
-				id: "454217436C428268"
+				id: "57F27D01963C86A0"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1053,7 +1073,7 @@
 			dependencies: ["5A76031E7DC07646"]
 			id: "410ADEA3D9F388C0"
 			rewards: [{
-				id: "54DCCBB5391B1181"
+				id: "5B3FF173069608AF"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1073,7 +1093,7 @@
 			]
 			id: "41112AF81F34BC7E"
 			rewards: [{
-				id: "19312E9AA282B3BC"
+				id: "293A501135695985"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1089,7 +1109,7 @@
 			dependencies: ["41112AF81F34BC7E"]
 			id: "57195369CBAC3CFA"
 			rewards: [{
-				id: "15F5A0C7322CF357"
+				id: "45E00987A551EA26"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1109,7 +1129,8 @@
 			description: ["The best mainframe, right?..."]
 			id: "63E8F8D63212D1F0"
 			rewards: [{
-				id: "3A68B65AAE136165"
+				count: 10
+				id: "4E12181F9F708E0D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1129,7 +1150,7 @@
 			dependencies: ["63E8F8D63212D1F0"]
 			id: "45DBF42294A81525"
 			rewards: [{
-				id: "5CF6F4691AE7BDB0"
+				id: "1387EC0A9644B9BB"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1148,7 +1169,7 @@
 			dependencies: ["45DBF42294A81525"]
 			id: "4C15C82E0E38B70A"
 			rewards: [{
-				id: "6D1E34FA78D6F3BA"
+				id: "1846329DAFEE8A6E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1170,7 +1191,8 @@
 			description: ["Get prepared, you are gonna need a lot of singularities."]
 			id: "02FB67793FFB1B16"
 			rewards: [{
-				id: "54E20817A0744A20"
+				count: 3
+				id: "0349F68E2E333DAF"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1190,7 +1212,7 @@
 			description: ["You will need this to overclock the atomic forge."]
 			id: "2E58036ADD4C2F76"
 			rewards: [{
-				id: "0C38F904F1EE9868"
+				id: "065000F73E7380FB"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1206,7 +1228,7 @@
 			dependencies: ["4C15C82E0E38B70A"]
 			id: "549EE5EB3AC023BC"
 			rewards: [{
-				id: "242110CEF03D3A11"
+				id: "41565D13ADB68DB8"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1222,7 +1244,7 @@
 			dependencies: ["549EE5EB3AC023BC"]
 			id: "6DF933A3D392AD2A"
 			rewards: [{
-				id: "186CEF616457DB48"
+				id: "19678380D6B97D6C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1239,7 +1261,7 @@
 			dependencies: ["549EE5EB3AC023BC"]
 			id: "4F6CD39DEC31B5CE"
 			rewards: [{
-				id: "3FD845EACE16C491"
+				id: "650007CF9E1FF565"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1256,7 +1278,7 @@
 			dependencies: ["549EE5EB3AC023BC"]
 			id: "151ACD75154051EB"
 			rewards: [{
-				id: "3EBBE61995C799EC"
+				id: "7A699832A265EA86"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1276,7 +1298,7 @@
 			]
 			id: "3113CBAED41480B0"
 			rewards: [{
-				id: "1A8A09C42F79BA1B"
+				id: "0BD4F9E7CCD0A059"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1301,7 +1323,8 @@
 			]
 			id: "3EB096642664FBB1"
 			rewards: [{
-				id: "359E180263E460E2"
+				count: 20
+				id: "5974591E2144B8B4"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1321,7 +1344,8 @@
 			dependencies: ["4C15C82E0E38B70A"]
 			id: "3C17416E9BA5BFEC"
 			rewards: [{
-				id: "01AB0F69FC1A9BDE"
+				count: 5
+				id: "3DD3A87BFD1D33BB"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1344,11 +1368,6 @@
 				"You will also need it for bio-chemical lines on &aUEV&r."
 			]
 			id: "5C917BB538C98991"
-			rewards: [{
-				id: "11DCCA3DE8793BE3"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
 			tasks: [{
 				id: "06036A223E03E394"
 				item: "gtceu:large_bacterial_bat"

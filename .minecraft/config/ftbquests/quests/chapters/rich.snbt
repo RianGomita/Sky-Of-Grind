@@ -379,6 +379,7 @@
 				id: "hostilenetworks:data_model"
 				tag: {
 					data_model: {
+						data: 6
 						id: "hostilenetworks:ender_dragon"
 					}
 				}
