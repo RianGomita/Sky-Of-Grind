@@ -150,4 +150,11 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(GTValues.VA[GTValues.UHV]);
 
+        event.recipes.gtceu.chemical_plant('biological_carrot_goop')
+        .notConsumable('kubejs:chemical_tier_one')
+        .inputFluids('gtceu:glutamic_acid 100', 'gtceu:chlorogenic_acid 300')
+        .outputFluids('gtceu:biological_carrot_goop 50')
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
 });

@@ -99,8 +99,8 @@ event.recipes.gtceu.biolab('rawdna')
     .EUt(GTValues.VA[GTValues.UEV]);
     event.recipes.gtceu.large_bacterial_vat('bacteria')
     .itemInputs('16x gtceu:bio_chaff')
-    .outputFluids('gtceu:bacteria 500', 'gtceu:sterilized_growth_medium 500')
     .inputFluids('gtceu:distilled_water 750')
+    .outputFluids('gtceu:bacteria 500', 'gtceu:sterilized_growth_medium 500')
     .duration(100)
     .EUt(GTValues.VA[GTValues.UV]);
     event.recipes.gtceu.large_bacterial_vat('hypoxylon')
@@ -110,4 +110,18 @@ event.recipes.gtceu.biolab('rawdna')
     .outputFluids('gtceu:hypoxylon 144')
     .duration(100)
     .EUt(GTValues.VA[GTValues.UEV]);
+    event.recipes.gtceu.biolab('living_biological_carrot_goop')
+    .circuit(1)
+    .inputFluids('gtceu:biological_carrot_goop 5000', 'gtceu:sterilized_growth_medium 500')
+    .outputFluids('gtceu:living_biological_carrot_goop 100')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.UEV]);
+    event.recipes.gtceu.biolab('purified_biological_vegtable_goop')
+    .circuit(1)
+    .inputFluids('gtceu:living_biological_carrot_goop 1000', 'gtceu:ferulic_acid 250')
+    .outputFluids('gtceu:purified_biological_vegtable_goop 1000')
+    .duration(200)
+    .EUt(GTValues.VA[GTValues.UEV]);
+
+
 })

@@ -273,15 +273,21 @@ event.recipes.gtceu.extractinator('c2melonslice')
   .duration(160)
   .EUt(GTValues.VA[GTValues.IV]);
 event.recipes.gtceu.extractinator('c1wheat')
-  .circuit(2)
+  .circuit(1)
   .itemInputs('32x minecraft:wheat')
   .outputFluids('gtceu:ferulic_acid 5')
   .duration(80)
   .EUt(GTValues.VA[GTValues.HV]);
   event.recipes.gtceu.extractinator('c1carrot')
-  .circuit(2)
+  .circuit(1)
   .itemInputs('32x minecraft:carrot')
   .outputFluids('gtceu:glutamic_acid 5')
+  .duration(240)
+  .EUt(GTValues.VA[GTValues.IV]);
+  event.recipes.gtceu.extractinator('c2carrot')
+  .circuit(2)
+  .itemInputs('32x minecraft:carrot')
+  .outputFluids('gtceu:chlorogenic_acid 15')
   .duration(240)
   .EUt(GTValues.VA[GTValues.IV]);
 

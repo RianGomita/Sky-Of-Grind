@@ -1679,4 +1679,14 @@ const ebfHeavyAlloyRecipe = (tier, fluidInput, temperature, voltage, durationInS
 ebfHeavyAlloyRecipe(1, "gtceu:nitrogen 1000", 3500, "HV", 45)
 ebfHeavyAlloyRecipe(2, "gtceu:argon 50", 5100, "LuV", 60)
 ebfHeavyAlloyRecipe(3, "gtceu:krypton 10", 9600, "UHV", 65)
+
+
+sog.recipes.gtceu.assembler('sterile_cleaning_maintenance_hatch')
+    .itemInputs('gtceu:cleaning_maintenance_hatch')
+    .inputFluids(Fluid.of('gtceu:purified_biological_vegtable_goop', 2500))
+    .circuit(9)
+    .itemOutputs('gtmutils:sterile_cleaning_maintenance_hatch')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LV]);
+
 })
