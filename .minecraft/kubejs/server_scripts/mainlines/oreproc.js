@@ -36,7 +36,7 @@ const oreProcessableTiers = {
 	    { material: 'hematite', secondary: 'magnetite', tertiary: 'calcium', quaternary:'magnesium'},
 	    { material: 'oilsands', secondary: 'oilsands', tertiary: 'oilsands'},
 	    { material: 'diamond', secondary: 'diamond', tertiary: 'graphite', quaternary:'carbon'},
-	    { material: 'emerald', secondary: 'beryllium', tertiary: 'aluminium'},
+	    { material: 'emerald', secondary: 'beryllium', tertiary: 'thorium'},
 	    { material: 'certus_quartz', secondary: 'nether_quartz', tertiary: 'barite'},
 	    { material: 'nether_quartz', secondary: 'quartzite', tertiary: 'certus_quartz'}
     ],
@@ -51,7 +51,7 @@ const oreProcessableTiers = {
 	    { material: 'platinum', secondary: 'nickel', tertiary: 'palladium', quaternary:'cobalt'},
 	    { material: 'tricalcium_phosphate', secondary: 'apatite', tertiary: 'phosphate', quaternary:'pyrochlore'},
 	    { material: 'plutonium', secondary: 'uraninite', tertiary: 'lead'},
-    	{ material: 'uraninite', secondary: 'uraninite', tertiary: 'lead', quaternary:'silver'},
+    	{ material: 'uraninite', secondary: 'thorium', tertiary: 'thorium', quaternary:'silver'},
     	{ material: 'mica', secondary: 'potassium', tertiary: 'aluminium'},
     	{ material: 'green_sapphire', secondary: 'beryllium', tertiary: 'iron', quaternary:'vanadium'}
     ],
