@@ -159,8 +159,12 @@
     "material.gtceu.oxalic_acid": "Oxalic Acid",
     "material.gtceu.pentadecanoic_acid": "Pentadecanoic Acid",
     "material.gtceu.ferulic_acid": "Ferulic Acid",
-    "material.gtceu.glutamic_acid": "Glutamic Acid",
-
+    "material.gtceu.glutamic_acid": "Glutamic Acid",	
+    "material.gtceu.chlorogenic_acid": "Chlorogenic Acid",
+    "material.gtceu.biological_carrot_goop": "Biological Carrot Goop",
+    "material.gtceu.living_biological_carrot_goop": "Living Biological Carrot Goop",
+    "material.gtceu.purified_biological_vegtable_goop": "Purified Biological Vegatable Goop",
+	
     "block.gtceu.atomicompressor":"§5Sub-Atomical Compressor§f",
     "gtceu.atomiccompressor":"§5Sub-Atomical Compressor§f",
     "block.gtceu.atomicforge":"§5Atomic Forge§f",

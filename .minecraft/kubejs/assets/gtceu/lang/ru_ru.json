@@ -159,6 +159,10 @@
   "material.gtceu.pentadecanoic_acid": "Пентадеканоиновая кислота",
   "material.gtceu.ferulic_acid": "Феруловая кислота",
   "material.gtceu.glutamic_acid": "Глютаминовая кислота",
+  "material.gtceu.chlorogenic_acid": "Хлорогеновая кислота",
+  "material.gtceu.biological_carrot_goop": "Биологическая морковная масса",
+  "material.gtceu.living_biological_carrot_goop": "Живая биологическая морковная масса",
+  "material.gtceu.purified_biological_vegtable_goop": "Очищенная биологическая овощная масса",
 
   "block.gtceu.atomicompressor": "§5Субатомический компрессор§f",
   "gtceu.atomiccompressor": "§5Субатомический компрессор§f",
