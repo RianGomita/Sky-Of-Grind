@@ -201,7 +201,49 @@ event.recipes.gtceu.altart5('altart5recipe')
     .itemOutputs('gtceu:altart6')
     .duration(30000)
     .EUt(GTValues.VA[GTValues.LuV]);
+    // Rock Crusher recreation
+event.recipes.gtceu.rock_crusher('diorite')
+    .notConsumable('minecraft:diorite')
+    .itemOutputs('minecraft:diorite')
+    .duration(16)
+    .EUt(GTValues.VA[GTValues.MV]);
 
+event.recipes.gtceu.rock_crusher('blackstone')
+    .notConsumable('minecraft:blackstone')
+    .itemOutputs('minecraft:blackstone')
+    .duration(16)
+    .EUt(GTValues.VA[GTValues.HV]);
+
+event.recipes.gtceu.rock_crusher('obsidian')
+    .notConsumable('minecraft:redstone')
+    .itemOutputs('minecraft:obsidian')
+    .duration(16)
+    .EUt(GTValues.VA[GTValues.HV]);
+
+event.recipes.gtceu.rock_crusher('red_granite')
+    .notConsumable('gtceu:red_granite')
+    .itemOutputs('gtceu:red_granite')
+    .duration(16)
+    .EUt(GTValues.VA[GTValues.EV]);
+
+event.recipes.gtceu.rock_crusher('marble')
+    .notConsumable('gtceu:marble')
+    .itemOutputs('gtceu:marblee')
+    .duration(16)
+    .EUt(GTValues.VA[GTValues.HV]);
+
+event.shaped(
+    'gtceu:tectonic_plate_accelerator',
+    ['GRG', 'ACA', 'PBD'],
+    {
+        G: 'gtceu:laminated_glass',
+        R: 'gtceu:red_granite',
+        A: 'gtceu:luv_electric_piston',
+        C: 'gtceu:iv_rock_crusher',
+        P: 'gtceu:luv_electric_pump',
+        B: 'gtceu:tungsten_grinding_head',
+        D: 'gtceu:luv_conveyor_module'
+    })    
 
     // ATOMIC FORGE
 event.recipes.gtceu.atomicforge('condensed_star_forge')
