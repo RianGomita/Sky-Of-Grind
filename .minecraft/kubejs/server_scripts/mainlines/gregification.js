@@ -1603,6 +1603,15 @@ sog.shaped(
         C: 'gtceu:luv_machine_hull'
 })
 sog.shaped(
+    'gtceu:particle_implosion_chamber',
+    ['ABA', 'YCY', 'ABA'],
+    {
+        A: 'gtceu:uhv_robot_arm',
+        B: 'gtceu:atomic_casing',
+        Y: '#gtceu:circuits/uhv',
+        C: 'gtceu:uhv_machine_hull'
+})
+sog.shaped(
     'ae2:energy_acceptor',
     ['ABA', 'BYB', 'ABA'],
     {
