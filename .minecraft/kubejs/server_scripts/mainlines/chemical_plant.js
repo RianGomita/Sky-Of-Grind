@@ -157,4 +157,15 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV]);
 
+        event.recipes.gtceu.chemical_plant('Uraninite_processing')
+        .notConsumable('kubejs:chemical_tier_four')
+        .itemInputs('30x gtceu:uraninite_dust')
+        .inputFluids('gtceu:fluorine 60000', 'gtceu:hydrogen 40000')
+        .itemOutputsRanged('gtceu:uranium_235_dust',1,3)
+        .itemOutputsRanged('gtceu:uranium_dust',9,11)
+        .outputFluids('gtceu:fluorine 50000', 'gtceu:hydrogen 20000')
+        .duration(500)
+        .EUt(GTValues.VA[GTValues.UHV]);
+
+
 });
