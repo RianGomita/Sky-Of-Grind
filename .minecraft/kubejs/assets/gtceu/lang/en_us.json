@@ -73,6 +73,13 @@
     "material.gtceu.resonant_naquadah": "Resonant Naquadah",
     "material.gtceu.infinity": "Infinity",
     "material.gtceu.crystal_matrix": "Crystal Matrix",
+	
+	"block.gtceu.large_dehydration_unit":"Large Dehydration Unit",
+    "gtceu.large_dehydration_unit":"Large Dehydration Unit",
+    "gtceu.dehydration_unit": "Dehydration Unit",
+	"block.gtceu.large_polymerization_chamber":"Large Polymerization Chamber",
+    "gtceu.large_polymerization_chamber":"Large Polymerization Chamber",
+    "gtceu.polymerization_chamber": "Polymerization Chamber",
 
     "material.gtceu.triplatirium_235": "Triplatirium 235",
     "material.gtceu.atomic_alloy": "Atomic Alloy",

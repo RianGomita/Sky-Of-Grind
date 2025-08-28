@@ -70,6 +70,13 @@
   "material.gtceu.resonant_naquadah": "Резонансный наквад",
   "material.gtceu.infinity": "Бесконечность",
   "material.gtceu.crystal_matrix": "Кристаллическая матрица",
+  
+  "block.gtceu.large_dehydration_unit":"Большой дегидратор",
+  "gtceu.large_dehydration_unit":"Большой дегидратор",
+  "gtceu.dehydration_unit":"Дегидратор",
+  "block.gtceu.large_polymerization_chamber":"Большая камера полимеризации",
+  "gtceu.large_polymerization_chamber":"Большая камера полимеризации",
+  "gtceu.polymerization_chamber":"Камера полимеризации",
 
   "material.gtceu.triplatirium_235": "Триплатириум 235",
   "material.gtceu.atomic_alloy": "Атомный сплав",
