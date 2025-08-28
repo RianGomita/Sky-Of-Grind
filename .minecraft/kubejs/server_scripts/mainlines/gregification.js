@@ -1697,4 +1697,10 @@ sog.recipes.gtceu.assembler('sterile_cleaning_maintenance_hatch')
     .duration(50)
     .EUt(GTValues.VA[GTValues.LV]);
 
+
+
 })
+
+ServerEvents.recipes(event => {
+    event.smelting('draconicevolution:awakened_draconium_ingot', 'gtceu:awakened_draconium_ore')
+}) 
