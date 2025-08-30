@@ -17,6 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .generator(true)
         .recipeType('xl_plasma_turbine')
         .noRecipeModifier()
+        .regressWhenWaiting(false)
         .appearanceBlock(() => Block.getBlock('kubejs:naquadria_turbine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('#CCC#', '#CCC#', '#CLC#', '#CCC#', '#COC#', '#CCC#', '#CCC#')

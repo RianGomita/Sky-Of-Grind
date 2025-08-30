@@ -17,6 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .generator(true)
         .recipeType('csr')
         .noRecipeModifier()
+        .regressWhenWaiting(false)
         .appearanceBlock(() => Block.getBlock('kubejs:highly_reinforced_radioactive_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('####CCC####', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '####CCC####', )

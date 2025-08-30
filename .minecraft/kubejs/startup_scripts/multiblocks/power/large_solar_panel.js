@@ -17,6 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .generator(true)
         .recipeType('large_solar_panel')
         .noRecipeModifier()
+        .regressWhenWaiting(false)
         .appearanceBlock(GTBlocks.MACHINE_CASING_HV)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('#CCC#', '#BBB#', '#CCC#', '#####')
