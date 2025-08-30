@@ -66,5 +66,34 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .abilities(PartAbility.PARALLEL_HATCH)
                 .workableTieredHullModel(GTCEu.id("block/machines/parallel_hatch_opv"))
     })
+const $WorldAcceleratorMachine = Java.loadClass('com.gregtechceu.gtceu.common.machine.electric.WorldAcceleratorMachine')
+const $GTMachineModelProperties = Java.loadClass('com.gregtechceu.gtceu.api.machine.property.GTMachineModelProperties')
+const $FormattingUtil = Java.loadClass('com.gregtechceu.gtceu.utils.FormattingUtil')
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create("world_accelerator", "simple")
+        .tiers(GTValues.UHV, GTValues.UEV, GTValues.UIV)
+        .machine((holder) => new $WorldAcceleratorMachine(holder))
+        .definition((tier, builder) =>
+            builder
+                .langValue(GTValues.VLVH[tier] + " Advanced World Accelerator")
+                .modelPropertyBool($GTMachineModelProperties.IS_RANDOM_TICK_MODE, true)
+                .modelPropertyBool($GTMachineModelProperties.IS_WORKING_ENABLED, true)
+                .modelPropertyBool($GTMachineModelProperties.IS_ACTIVE, false)
+                .rotationState(RotationState.NONE)
+                .tooltipBuilder((stack, tooltip) => {
+                            let randTickWorkingArea = 3 + (tier - 1) * 2;
+                            tooltip.add(Component.translatable("gtceu.machine.world_accelerator.description"));
 
+                            tooltip.add(Component.translatable("gtceu.universal.tooltip.voltage_in",
+                                    $FormattingUtil.formatNumbers(GTValues.V[tier]),
+                                    GTValues.VNF[tier]));
+                            tooltip.add(Component.translatable("gtceu.universal.tooltip.energy_storage_capacity",
+                                    $FormattingUtil.formatNumbers(GTValues.V[tier] * 64)));
+
+                            tooltip.add(Component.translatable("gtceu.machine.world_accelerator.working_area"));
+                            tooltip.add(Component.translatable("gtceu.machine.world_accelerator.working_area_tile"));
+                            tooltip.add(Component.translatable("gtceu.machine.world_accelerator.working_area_random",
+                                    randTickWorkingArea, randTickWorkingArea));
+                        })
+        )
 })
