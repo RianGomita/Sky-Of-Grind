@@ -133,6 +133,25 @@ const data = ["cosmic", "elementary", "eternity", "plasma", "singularity", "spac
                 .textureJson({ layer0: `kubejs:item/data/${data}_data` })
         })
 
+sog.create('watch_of_flowing_time')
+    .displayName("Watch of Flowing Time")
+    .texture('kubejs:item/watch_of_flowing_time')
+    .tooltip("§5A tool to count every second in eternity")
+
+sog.create('ultra_stable_cosmic_strings')
+    .displayName("Ultra-Stable Cosmic Strings")
+    .texture('kubejs:item/ultra_stable_cosmic_strings')
+    .tooltip('Turns out string theory might be a bit more correct than we though')
+
+sog.create('woven_space_time')
+    .displayName("The Very Fabric of Reality")
+    .texture('kubejs:item/woven_space_time')
+    .tooltip('The line between sufficiently advanced science and magic is non-existant')
+
+sog.create('entropic_cosmic_mesh')
+    .displayName("Disordered Cosmic Strings")
+    .texture('kubejs:item/entropic_cosmic_mesh')
+
 })
 
 StartupEvents.registry('block', sog => {
@@ -547,12 +566,12 @@ StartupEvents.registry('block', sog => {
         .tagBlock('forge:mineable/wrench')
 
 
-        // C O I L S
+    // C O I L S
     sog.create('atomic_alloy_coil_block', 'gtceu:coil')
         .temperature(12500)
-        .level(9)
-        .energyDiscount(16) // 
-        .tier(9)
+        .level(32) //this is the multismelter parallel amount. The math is parallel = (level * 32)
+        .energyDiscount(32) // this is the energy discount theres some esoteric math behind it but if you match it with level it will be fine
+        .tier(9) //This is the cracker and pyrolyse oven stat. pyrolyse is 50% * (tier + 1). Cracker is -10% * (tier + 1)
         .textureAll('kubejs:block/atomic/coil')
         .hardness(5)
         .requiresTool(true)
@@ -560,9 +579,9 @@ StartupEvents.registry('block', sog => {
         .tagBlock('forge:mineable/wrench')
     sog.create('resonant_essence_coil_block', 'gtceu:coil')
         .temperature(13500)
-        .level(15)
+        .level(64)
         .energyDiscount(250) // 
-        .tier(9.5)
+        .tier(10)
         .textureAll('kubejs:block/coils/machine_coil_resonant_essence')
         .hardness(5)
         .requiresTool(true)
@@ -570,26 +589,26 @@ StartupEvents.registry('block', sog => {
         .tagBlock('forge:mineable/wrench')
     sog.create('awakened_draconium_coil_block', 'gtceu:coil')
         .temperature(15500)
-        .level(16)
+        .level(128)
         .energyDiscount(300) // 
-        .tier(10)
+        .tier(11)
         .coilMaterial(() => GTMaterials.get('awakened_draconium'))
         .textureAll('kubejs:block/coils/machine_coil_awakened_draconium')
         .hardness(5)
         .requiresTool(true)
         .soundType('metal')
         .tagBlock('forge:mineable/wrench')
-        sog.create('infinity_coil_block', 'gtceu:coil')
+    sog.create('infinity_coil_block', 'gtceu:coil')
         .temperature(19950)
-        .level(99)
+        .level(2048)
         .energyDiscount(999) // 
-        .tier(99)
+        .tier(12)
         .coilMaterial(() => GTMaterials.get('infinity'))
         .textureAll('kubejs:block/coils/machine_coil_infinity')
         .hardness(5)
         .requiresTool(true)
         .soundType('metal')
-        .tagBlock('forge:mineable/wrench')
+        .tagBlock('forge:mineable/wrench')    
     // Compressed TNT
     sog.create('compressed_industrial_tnt')
         .displayName('Compressed Industrial TNT')

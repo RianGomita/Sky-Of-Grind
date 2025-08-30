@@ -817,7 +817,12 @@ event.create("hypercharged_oganesson")
 event.create("hypercharged_nihonium") 
 .plasma()
 .color(0x84a1e8)
-
+event.create("quark_gluon")
+    .plasma()
+    .color(0xc7cdcdd)
+event.create("degenerate_gluon_condensate")
+    .liquid()
+    .color(0xf7d0ed)
 
 
 
