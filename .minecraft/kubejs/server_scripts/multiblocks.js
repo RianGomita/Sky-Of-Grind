@@ -389,6 +389,12 @@ event.recipes.gtceu.atomiccompressor('atomically_compressed_neutronium_credit')
     .itemOutputs('kubejs:atomically_compressed_neutronium_credit')
     .duration(20)
     .EUt(GTValues.VA[GTValues.UEV]);
+event.recipes.gtceu.atomiccompressor('neutronium_credit')
+    .itemInputs('65536x gtceu:cupronickel_ingot')
+    .inputFluids('gtceu:neutronium 9216')
+    .itemOutputs('gtmutils:neutronium_credit')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.UHV]);
 
 event.recipes.gtceu.svs('singularitysteel')
     .itemInputs('1024x gtceu:steel_ingot')
