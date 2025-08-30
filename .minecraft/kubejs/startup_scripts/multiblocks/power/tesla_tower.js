@@ -17,6 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .generator(true)
         .recipeType('tesla_tower')
         .noRecipeModifier()
+        .regressWhenWaiting(false)
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('###CRC###', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', '#########', )
