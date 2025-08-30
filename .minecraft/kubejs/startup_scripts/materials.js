@@ -819,6 +819,8 @@ event.create("hypercharged_nihonium")
 .color(0x84a1e8)
 
 
+event.create("astral_space_time_plasma")
+.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
 
 

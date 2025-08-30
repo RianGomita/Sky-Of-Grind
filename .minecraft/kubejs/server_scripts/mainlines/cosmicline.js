@@ -99,6 +99,7 @@ sog.recipes.gtceu.large_synchrotron_switcher("hyper_dense_cosmic_matter_base")
 .dimension('ad_extendra:saturn_orbit')
 .EUt(GTValues.VA[GTValues.UIV])
 sog.recipes.gtceu.plasma_nexus('refined_cosmic_matter_plasma')
+.circuit(3)
 .notConsumable('kubejs:plasma_data')
 .inputFluids('gtceu:hypercharged_nebular_plasma 200', 'gtceu:hyper_dense_cosmic_matter_base_plasma 576')
 .itemInputs('2x avaritia:eternal_singularity')
@@ -156,5 +157,13 @@ sog.recipes.gtceu.plasma_nexus('supercritical_californium')
 .duration(35)
 .EUt(GTValues.VA[GTValues.UXV]);
 
+sog.recipes.gtceu.plasma_nexus('advanced_refined_cosmic_matter_plasma')
+    .circuit(4)
+    .notConsumable('kubejs:plasma_data')
+    .inputFluids('gtceu:hypercharged_nebular_plasma 200', 'gtceu:hyper_dense_cosmic_matter_base_plasma 576', 'gtceu:astral_space_time_plasma 144')
+    .itemInputs('2x avaritia:eternal_singularity')
+    .outputFluids('gtceu:refined_cosmic_matter_plasma 2304')
+    .duration(10*20)
+    .EUt(GTValues.VA[GTValues.OpV]);
 
 })
