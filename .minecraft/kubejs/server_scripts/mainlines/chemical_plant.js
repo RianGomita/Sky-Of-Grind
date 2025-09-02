@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.LuV]);
 
-        event.recipes.gtceu.chemical_plant('Uraninite_processing')
+        event.recipes.gtceu.chemical_plant('uraninite_processing')
         .notConsumable('kubejs:chemical_tier_four')
         .itemInputs('30x gtceu:uraninite_dust')
         .inputFluids('gtceu:fluorine 60000', 'gtceu:hydrogen 40000')
@@ -167,5 +167,27 @@ ServerEvents.recipes(event => {
         .duration(500)
         .EUt(GTValues.VA[GTValues.UHV]);
 
+        event.recipes.gtceu.chemical_plant('hog')
+        .notConsumable('kubejs:chemical_tier_three')
+        .inputFluids('gtceu:naphtha 8000','gtceu:refinery_gas 1000','gtceu:octane 1000','gtceu:toluene 1000','gtceu:hydrogen 16000','gtceu:nitrogen 2000','gtceu:oxygen 8000')
+        .itemInputs('gtceu:phosphorus_dust')
+        .outputFluids('gtceu:high_octane_gasoline 32000')
+        .duration(20*20)
+        .EUt(GTValues.VA[GTValues.UHV]);
 
-});
+        event.recipes.gtceu.chemical_plant('sbr')
+        .notConsumable('kubejs:chemical_tier_two')
+        .inputFluids('gtceu:hydrogen 6000','gtceu:oxygen 22000','gtceu:benzene 2000','gtceu:butadiene 4500','gtceu:ethylene 1500')
+        .itemInputs('10x gtceu:sulfur_dust')
+        .outputFluids('gtceu:styrene_butadiene_rubber 16000')   
+        .duration(20*20)
+        .EUt(GTValues.VA[GTValues.UV]);
+
+        event.recipes.gtceu.chemical_plant('silicone_rubber')
+        .notConsumable('kubejs:chemical_tier_two')
+        .inputFluids('gtceu:hydrogen 150000','gtceu:chlorine 75000')
+        .itemInputs('10x gtceu:sulfur_dust','20x gtceu:silicon_dust', '50x gtceu:carbon_dust')
+        .outputFluids('gtceu:silicone_rubber 16000')
+        .duration(20*20)
+        .EUt(GTValues.VA[GTValues.UV]);
+})
