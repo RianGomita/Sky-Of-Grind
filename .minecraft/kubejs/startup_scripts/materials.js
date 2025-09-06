@@ -822,7 +822,12 @@ event.create("hypercharged_nihonium")
 event.create("astral_space_time_plasma")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 
-
+event.create("quark_gluon")
+    .plasma()
+    .color(0xc7cdcdd)
+event.create("degenerate_gluon_condensate")
+    .liquid()
+    .color(0xf7d0ed)
 
     })
 
