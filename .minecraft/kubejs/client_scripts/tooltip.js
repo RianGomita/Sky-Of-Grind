@@ -107,7 +107,10 @@ ItemEvents.tooltip(event => {
         text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
         text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
     })
-
+	event.addAdvanced('gtceu:pocket_universe_destroyer', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.pocket_universe_destroyer.description'))
+        text.add(2, Text.translatable('gtceu.multiblock.needed_laser_input.description'))
+    })
 
 })
 

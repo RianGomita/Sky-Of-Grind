@@ -132,6 +132,27 @@ const data = ["cosmic", "elementary", "eternity", "plasma", "singularity", "spac
                 .tooltip("§7Encrypted Data")
                 .textureJson({ layer0: `kubejs:item/data/${data}_data` })
         })
+
+//Pocket Universe Destroyer
+sog.create('watch_of_flowing_time')
+    .displayName("Watch of Flowing Time")
+    .texture('kubejs:item/watch_of_flowing_time')
+    .tooltip("§5A tool to count every second in eternity")
+
+sog.create('ultra_stable_cosmic_strings')
+    .displayName("Ultra-Stable Cosmic Strings")
+    .texture('kubejs:item/ultra_stable_cosmic_strings')
+    .tooltip('Turns out string theory might be a bit more correct than we though')
+
+sog.create('woven_space_time')
+    .displayName("The Very Fabric of Reality")
+    .texture('kubejs:item/woven_space_time')
+    .tooltip('The line between sufficiently advanced science and magic is non-existant')
+
+sog.create('entropic_cosmic_mesh')
+    .displayName("Disordered Cosmic Strings")
+    .texture('kubejs:item/entropic_cosmic_mesh')
+    
 //PPF stuff
 sog.create('lv_circuit_etching_pattern')
     .displayName("LV processor pattern")
