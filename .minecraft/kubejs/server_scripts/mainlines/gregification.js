@@ -1700,4 +1700,11 @@ sog.recipes.gtceu.assembler('sterile_cleaning_maintenance_hatch')
 sog.recipes.smelting('draconicevolution:draconium_ingot','gtceu:raw_draconium');
 sog.recipes.smelting('draconicevolution:awakened_draconium_ingot','gtceu:raw_awakened_draconium');
 
+sog.recipes.gtceu.electromagnetic_separator('rare_earth')
+    .itemInputs('6x gtceu:rare_earth_dust')
+    .itemOutputs('gtceu:cadmium_dust', 'gtceu:neodymium_dust', 'gtceu:samarium_dust' ,'gtceu:cerium_dust', 'gtceu:yttrium_dust', 'gtceu:lanthanum_dust', 'gtceu:small_europium_dust')
+    .duration(20)
+    .EUt(GTValues.VA[GTValues.UHV]);
+
+
 })
