@@ -24,11 +24,22 @@
 				"And you will produce life essence on gregtech machines aswell as altar tiers as multiblock machines."
 			]
 			id: "70DAF76189CCF436"
-			rewards: [{
-				id: "641089D06632AF2E"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "610F584F5BA9C0CC"
+					item: {
+						Count: 1
+						id: "bloodmagic:sacrificialdagger"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "641089D06632AF2E"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Kinda"
 			tasks: [{
 				id: "574E18E668E81408"
@@ -183,6 +194,7 @@
 			]
 			id: "545751E4174E83B7"
 			rewards: [{
+				count: 2
 				id: "32EEBB746E93CBB5"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -277,6 +289,7 @@
 			dependencies: ["4E7E9E3C0D2E77B3"]
 			id: "60993AD55C1FE256"
 			rewards: [{
+				count: 3
 				id: "1588F2DA4BAE430D"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -329,6 +342,7 @@
 			dependencies: ["02888AAD173AEED0"]
 			id: "282CE68698C0C23B"
 			rewards: [{
+				count: 4
 				id: "2989193858DF63A0"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -369,6 +383,7 @@
 			]
 			id: "0FFD1907A9ADF583"
 			rewards: [{
+				count: 5
 				id: "401909E8B46A9BC4"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1007,6 +1022,7 @@
 			dependencies: ["52D8C84D4C6E60AA"]
 			id: "7DBE783F04F59ABB"
 			rewards: [{
+				count: 3
 				id: "5805EF04C63AF128"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1030,11 +1046,33 @@
 				"Now go mine for some ostrum to get the globe."
 			]
 			id: "5DFB4F932F44C748"
-			rewards: [{
-				id: "7C1C4D2BEC996FF1"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "7C1C4D2BEC996FF1"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "223C6BE6CBA02C7F"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "ae2:smooth_sky_stone_slab"
+							Name: "Tier 2 Rocket"
+							OffsetY: 0.75d
+							Scale: 3
+							TrophyItem: {
+								Count: 1.0d
+								id: "ad_astra:tier_2_rocket"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "none"
 			size: 3.0d
 			tasks: [{
@@ -1344,6 +1382,7 @@
 			]
 			id: "5C47B681BACC22D4"
 			rewards: [{
+				count: 2
 				id: "615789D2898F7297"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1466,6 +1505,7 @@
 			dependencies: ["13FF0019F6DE6AFE"]
 			id: "49EC7260E8AACB05"
 			rewards: [{
+				count: 5
 				id: "0F7B6315C954245A"
 				item: "gtmutils:doge_coin"
 				type: "item"

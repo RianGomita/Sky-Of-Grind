@@ -70,11 +70,32 @@
 				"7642FE788D211940"
 			]
 			id: "6307A99BEC83D5B8"
-			rewards: [{
-				id: "11F0049BD13C20C5"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "11F0049BD13C20C5"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "7AD6E867A01DBA92"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "ae2:smooth_sky_stone_slab"
+							Name: "First Rocket"
+							OffsetY: 0.75d
+							Scale: 3
+							TrophyItem: {
+								Count: 1.0d
+								id: "ad_astra:tier_1_rocket"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "none"
 			size: 3.0d
 			tasks: [{
@@ -99,11 +120,18 @@
 				}
 			}
 			id: "1A53D93C7BAAA472"
-			rewards: [{
-				id: "4FEDED61A50799E0"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0316DBF0ABF68D6B"
+					item: "ad_astra:white_flag"
+					type: "item"
+				}
+				{
+					id: "4FEDED61A50799E0"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "064FF7450B9DFB9E"
@@ -1231,6 +1259,7 @@
 			dependencies: ["228D20DB0820F303"]
 			id: "33DA634B88A5EEE2"
 			rewards: [{
+				count: 5
 				id: "0B4B510E1A05873C"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1255,6 +1284,7 @@
 			]
 			id: "56A354EB0D7C0ACE"
 			rewards: [{
+				count: 2
 				id: "61657DE5DAB9F8FA"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1691,6 +1721,7 @@
 		{
 			id: "69D2657F779DFFE6"
 			rewards: [{
+				count: 2
 				id: "27A5BD9DAD915539"
 				item: "gtmutils:doge_coin"
 				type: "item"

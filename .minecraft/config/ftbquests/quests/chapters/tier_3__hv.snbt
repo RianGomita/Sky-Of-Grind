@@ -209,11 +209,6 @@
 			optional: true
 			rewards: [
 				{
-					id: "403C2EC28DDC3F27"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-				{
 					id: "57D9F2973FF09FED"
 					item: {
 						Count: 1
@@ -225,6 +220,17 @@
 							}
 						}
 					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "32AA8D537EA47A72"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "403C2EC28DDC3F27"
+					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 			]
@@ -340,6 +346,7 @@
 			icon: "gtceu:cleanroom"
 			id: "63367A2F12D66CC4"
 			rewards: [{
+				count: 5
 				id: "6ED84EAD843B310D"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -416,11 +423,6 @@
 			optional: true
 			rewards: [
 				{
-					id: "5F8B4543A90F666F"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-				{
 					id: "5134251DDB1F574E"
 					item: {
 						Count: 1
@@ -432,6 +434,11 @@
 							}
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "5F8B4543A90F666F"
+					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 			]
@@ -542,11 +549,41 @@
 		{
 			dependencies: ["10F5CE8D2BFA4A96"]
 			id: "51EB75969C2A340E"
-			rewards: [{
-				id: "1216475D0DB87CCC"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "61513285AB6236EA"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:infinity"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7859E23742A28E87"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:power"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1216475D0DB87CCC"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "2863231A715876B8"
 				item: "exdeorum:end_cake"
@@ -812,6 +849,7 @@
 			]
 			id: "0AA191C4D0B6682D"
 			rewards: [{
+				count: 5
 				id: "0F798ECAB57E137E"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1001,6 +1039,7 @@
 			]
 			id: "2A476DB7A53D97B2"
 			rewards: [{
+				count: 5
 				id: "6A40B0A997E28EAF"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1026,11 +1065,33 @@
 			]
 			icon: "ae2:controller"
 			id: "7CC9AEC1E514D0DE"
-			rewards: [{
-				id: "2D0C3496966FE849"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "2D0C3496966FE849"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "2CBA1C59B076C73F"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "ae2:smooth_sky_stone_slab"
+							Name: "Applied Energistics 2"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "ae2:controller"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "00D7707155874136"
@@ -1248,6 +1309,7 @@
 			description: ["LETS GOOOOOOOOOOOOOOOOOO"]
 			id: "0A81DBA4F2D33338"
 			rewards: [{
+				count: 5
 				id: "7E6A912808D45657"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1274,11 +1336,41 @@
 				}
 			}
 			id: "22E32E4A8A6A927E"
-			rewards: [{
-				id: "1830FD1421E050F3"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "37477A3E699A61DF"
+					item: {
+						Count: 1
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								data: 6
+								id: "hostilenetworks:ender_dragon"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "67B2F8AB3B728D77"
+					item: {
+						Count: 1
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								data: 6
+								id: "hostilenetworks:ender_dragon"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1830FD1421E050F3"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "6BBCC8F5F9E57007"

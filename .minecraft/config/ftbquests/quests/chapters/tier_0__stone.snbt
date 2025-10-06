@@ -66,11 +66,19 @@
 		{
 			dependencies: ["2E3BA53EE6679354"]
 			id: "451B35D595D41780"
-			rewards: [{
-				id: "6BF228699EF86494"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "647EE68F7DD6DC47"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "6BF228699EF86494"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Expand your little island plz"
 			tasks: [{
 				id: "3C4E570743F1CEB0"
@@ -89,11 +97,18 @@
 		{
 			dependencies: ["451B35D595D41780"]
 			id: "14FFC5F39A9A2285"
-			rewards: [{
-				id: "498F90CD17693C65"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4E06CA25171379F8"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					id: "498F90CD17693C65"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Mine the gravel"
 			tasks: [{
 				count: 5L
@@ -151,6 +166,7 @@
 			]
 			id: "3539E7FC4963D6BD"
 			rewards: [{
+				count: 5
 				id: "575C10CAB3F11A99"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -173,11 +189,18 @@
 			]
 			icon: "minecraft:string"
 			id: "2611ADAFB9634874"
-			rewards: [{
-				id: "2FA743D16715970A"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7B257DFD24E72770"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					id: "2FA743D16715970A"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "36A1282FA2217307"
@@ -204,6 +227,7 @@
 			icon: "minecraft:white_bed"
 			id: "5F13A8C4D2D642B0"
 			rewards: [{
+				count: 2
 				id: "24142B3CCE3CC0A3"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -321,11 +345,19 @@
 			}
 			id: "5F05388789A2A4B8"
 			progression_mode: "flexible"
-			rewards: [{
-				id: "16B1471A64BD1CC5"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "788318C34708217F"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "16B1471A64BD1CC5"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			subtitle: "Any tool?"
 			tasks: [
 				{
@@ -617,11 +649,18 @@
 				"This is a linked quest to the steam age chapter, so when you complete this you will automatically start the Tier 0.5-"
 			]
 			id: "68357F7109A5645C"
-			rewards: [{
-				id: "7906A6B5078203CA"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2D52191B54F4619B"
+					item: "usclb:clipboard"
+					type: "item"
+				}
+				{
+					id: "7906A6B5078203CA"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "We steamin' with this one"

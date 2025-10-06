@@ -151,6 +151,7 @@
 			dependencies: ["5D5FA5429F87E942"]
 			id: "7CFBD6D6165E827D"
 			rewards: [{
+				count: 2
 				id: "1A41BD7CEB4DDDA8"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -296,6 +297,7 @@
 			description: ["The main LuV material."]
 			id: "3373B55C96DFFC1C"
 			rewards: [{
+				count: 3
 				id: "573D0351A179E378"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -679,6 +681,7 @@
 			description: ["Another big milestone, this incredibly strong synthetic fiber is gonna be used for almost everything from now on, so I hope you made it sustainable to mass produce! :D"]
 			id: "62704CC3038F1B20"
 			rewards: [{
+				count: 3
 				id: "75DD08D5DDA48CC4"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1332,6 +1335,7 @@
 			dependencies: ["1AEEFC47BF7F67C8"]
 			id: "69ACAFA6A0D18671"
 			rewards: [{
+				count: 5
 				id: "47EB761BD9F5EC37"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1355,6 +1359,7 @@
 			description: ["Welcome to LuV"]
 			id: "34112DEEBBD82652"
 			rewards: [{
+				count: 6
 				id: "3840534A095BB0E7"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1587,11 +1592,33 @@
 				"You make this by placing some star matter in a crystalization chamber with an extruder mold of star, but the reason to why you use this big boi instead of an autoclave, is because of the overclocking."
 			]
 			id: "3F0D5B357A418240"
-			rewards: [{
-				id: "1BCAC2A0DC5B6874"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "1BCAC2A0DC5B6874"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "4E7812CD82DA1943"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "ae2:smooth_sky_stone_slab"
+							Name: "Nether Stars!"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "minecraft:nether_star"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.5d
 			tasks: [{
