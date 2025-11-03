@@ -73,6 +73,14 @@ ServerEvents.recipes(event => {
     }
   })
 
+  event.shapeless("gtmthings:wireless_computation_receiver_hatch", [
+    "gtceu:computation_receiver_hatch",
+    "fluxnetworks:flux_point"
+  ])
+  event.shapeless("gtmthings:wireless_computation_transmitter_hatch", [
+    "gtceu:computation_transmitter_hatch",
+    "fluxnetworks:flux_plug"
+  ])
   event.shapeless("gtmthings:wireless_energy_binding_tool", [
     "gtceu:data_stick",
     "gtceu:machine_controller_cover"
