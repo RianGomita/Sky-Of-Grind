@@ -102,11 +102,33 @@
 				"3A8A7FC9A7F0814B"
 			]
 			id: "46EEB11B27AF0BBC"
-			rewards: [{
-				id: "1C9D49BE765BF6A4"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "1C9D49BE765BF6A4"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "36DD7218AAB56419"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "minecraft:smooth_stone_slab"
+							Name: "First Diamond Trophy"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "minecraft:diamond"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "144 Coal = Diamond"
 			tasks: [{
 				id: "5E7A6E47B9A32E5E"
@@ -142,11 +164,24 @@
 			]
 			icon: "gtceu:coke_oven"
 			id: "41F3D8A51709C22B"
-			rewards: [{
-				id: "3BDCAE1B4F958A82"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "497432BBF7400B1A"
+					item: "gtceu:coke_block"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "5FDD5962776A71DA"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "7357F29474C92BD5"
+					item: "gtceu:terminal"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "Sidequests"
@@ -177,6 +212,7 @@
 			icon: "gtceu:primitive_blast_furnace"
 			id: "6B67E665F9D2B062"
 			rewards: [{
+				count: 5
 				id: "5FDD5962776A71DA"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -208,6 +244,7 @@
 			description: ["You have multiple PBFs, right? :D"]
 			id: "31E750DDB33FE642"
 			rewards: [{
+				count: 5
 				id: "11AD72CF7C1D21C8"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -274,6 +311,7 @@
 			icon: "watersources:water_source_tier_1"
 			id: "0291490F6A1806BF"
 			rewards: [{
+				count: 3
 				id: "6CE24D37FB0901E8"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -493,11 +531,19 @@
 			]
 			description: ["I sure hope you're batch crafting everything, else it's not looking good for you."]
 			id: "47F08B64D8FA018F"
-			rewards: [{
-				id: "4010DD360EDDB6D6"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2446F9A4F74150A4"
+					item: "jecalculation:item_calculator_craft"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4010DD360EDDB6D6"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -580,6 +626,7 @@
 			id: "71A1EDA69A1E26F8"
 			optional: true
 			rewards: [{
+				count: 3
 				id: "615607CD3B349EA4"
 				item: "gtmutils:doge_coin"
 				type: "item"

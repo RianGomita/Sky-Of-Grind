@@ -44,11 +44,32 @@
 				"These need to heat up every time you change the recipe, so make sure you have those running passively, not on-demand."
 			]
 			id: "387BFDB3C6162B0B"
-			rewards: [{
-				id: "31F31F47264BF20C"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "31F31F47264BF20C"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "7EA4C0B7D5315FCA"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "ae2:smooth_sky_stone_slab"
+							Name: "Fusion Reactor"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "gtceu:luv_fusion_reactor"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "The Donut age"
 			tasks: [{
 				id: "366002194E9947D5"
@@ -156,6 +177,7 @@
 			]
 			id: "60E68576221A5CB2"
 			rewards: [{
+				count: 3
 				id: "1EA6D101B2F5006A"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -255,6 +277,7 @@
 			]
 			id: "552AA21A1848CEDF"
 			rewards: [{
+				count: 5
 				id: "76AB412C2C84D0AE"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -477,6 +500,7 @@
 			description: ["These are gonna be really slow and painful to get right now, so work towards getting the next UV circuits, which won't need an entire assembly line to craft!"]
 			id: "5145593BA83D0FDF"
 			rewards: [{
+				count: 5
 				id: "472A8F1CCE6E5854"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -704,6 +728,7 @@
 			description: [""]
 			id: "125789E676E22B37"
 			rewards: [{
+				count: 6
 				id: "00ADB98C99692A0B"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -744,6 +769,7 @@
 			icon: "gtceu:creative_data_access_hatch"
 			id: "1DA514DF999B91D1"
 			rewards: [{
+				count: 10
 				id: "6A7422D41EEB0BF8"
 				item: "gtmutils:doge_coin"
 				type: "item"

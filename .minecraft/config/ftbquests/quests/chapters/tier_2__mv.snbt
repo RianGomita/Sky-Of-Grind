@@ -202,27 +202,20 @@
 				}
 			}
 			id: "53E330337358D8DC"
-			rewards: [
-				{
-					id: "4BB3EFF05A2E3292"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-				{
-					id: "5FF87D61A3CDB454"
-					item: {
-						Count: 1
-						id: "hostilenetworks:data_model"
-						tag: {
-							data_model: {
-								data: 6
-								id: "hostilenetworks:witch"
-							}
+			rewards: [{
+				id: "12E0E9CD8A8A734F"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 6
+							id: "hostilenetworks:witch"
 						}
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			tasks: [
 				{
 					consume_items: true
@@ -781,11 +774,18 @@
 				"You get an orange lens as a gift since you can't craft the ones that don't have an ore counterpart yet!"
 			]
 			id: "47F6AD489D5C7003"
-			rewards: [{
-				id: "3333C3A61E4D0C49"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "03F563B018534E52"
+					item: "gtceu:orange_glass_lens"
+					type: "item"
+				}
+				{
+					id: "3333C3A61E4D0C49"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "1D23C9D2EDAFF976"
@@ -947,6 +947,7 @@
 			]
 			id: "1AD136F25B306F75"
 			rewards: [{
+				count: 5
 				id: "251B4AC4AEA4FF10"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1047,12 +1048,7 @@
 			optional: true
 			rewards: [
 				{
-					id: "5532941BCB9F7563"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-				{
-					id: "2C97F3020C21D43F"
+					id: "7E4FE85146C00A89"
 					item: {
 						Count: 1
 						id: "gtceu:prospector.luv"
@@ -1060,6 +1056,12 @@
 							Charge: 1000000000L
 						}
 					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "5532941BCB9F7563"
+					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 			]
@@ -1092,11 +1094,33 @@
 				"What route did you use?"
 			]
 			id: "26C62836B41D0095"
-			rewards: [{
-				id: "03EDBEB68F72C4CD"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "03EDBEB68F72C4CD"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "64FB6F55FF9BAF2E"
+					item: {
+						Count: 1
+						id: "trophymanager:trophy"
+						tag: {
+							BaseBlock: "minecraft:smooth_stone_slab"
+							Name: "Polyethylene!"
+							OffsetY: 0.55d
+							Scale: 0.75d
+							TrophyItem: {
+								Count: 1.0d
+								id: "gtceu:polyethylene_foil"
+							}
+							TrophyType: "item"
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "AKA go to hell v.alpha"
 			tasks: [{
 				id: "7AEEE37CC3A64D6C"
@@ -1166,6 +1190,7 @@
 			]
 			id: "41D39163C8154F7C"
 			rewards: [{
+				count: 5
 				id: "38ABC2EA42ED13AA"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1189,6 +1214,7 @@
 			description: ["Welcome to HV"]
 			id: "331055377E5032C8"
 			rewards: [{
+				count: 2
 				id: "06AE87EC7C86B220"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1218,27 +1244,20 @@
 			}
 			id: "733971C42894950A"
 			optional: true
-			rewards: [
-				{
-					id: "6B3EE059B9EA81FB"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-				{
-					id: "47EFCFA41B8E16E0"
-					item: {
-						Count: 1
-						id: "hostilenetworks:data_model"
-						tag: {
-							data_model: {
-								data: 6
-								id: "hostilenetworks:slime"
-							}
+			rewards: [{
+				id: "6F82D29A18DDD0B8"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 6
+							id: "hostilenetworks:slime"
 						}
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			tasks: [
 				{
 					consume_items: true
@@ -1303,6 +1322,7 @@
 			]
 			id: "5DD037064DB51B4D"
 			rewards: [{
+				count: 2
 				id: "058A03EA631F5F36"
 				item: "gtmutils:doge_coin"
 				type: "item"
