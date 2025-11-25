@@ -8,7 +8,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     GTRecipeTypes.BLAST_RECIPES.setMaxIOSize(3, 3, 4, 1)
     })
 
-
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    GTRecipeTypes.ELECTROMAGNETIC_SEPARATOR_RECIPES.setMaxIOSize(1, 7, 0, 0)
+    })
 
 
 
