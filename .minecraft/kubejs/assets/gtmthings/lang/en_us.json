@@ -1,4 +1,6 @@
 {
+  "block.gtmthings.wireless_computation_transmitter_hatch": "Wireless Computation Data Transmission Hatch",
+  "block.gtmthings.wireless_computation_receiver_hatch": "Wireless Computation Data Reception Hatch",
   "block.gtmthings.ev_16a_wireless_energy_input_hatch": "§5EV 16A Wireless Energy Hatch",
   "block.gtmthings.ev_16a_wireless_energy_output_hatch": "§5EV 16A Wireless Dynamo Hatch",
   "block.gtmthings.ev_2a_wireless_energy_input_hatch": "§5EV Wireless Energy Hatch",
