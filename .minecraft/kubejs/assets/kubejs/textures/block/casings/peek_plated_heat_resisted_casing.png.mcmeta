@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/peek_plated_heat_resisted_casing_ctm"
+    }
+}
