@@ -176,17 +176,16 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.chemical_plant('sbr')
         .notConsumable('kubejs:chemical_tier_two')
-        .inputFluids('gtceu:hydrogen 6000','gtceu:oxygen 22000','gtceu:benzene 2000','gtceu:butadiene 4500','gtceu:ethylene 1500')
-        .itemInputs('10x gtceu:sulfur_dust')
-        .outputFluids('gtceu:styrene_butadiene_rubber 16000')   
+        .inputFluids('gtceu:hydrogen 6000','gtceu:oxygen 22000',"gtceu:ethylbenzene 2000",'gtceu:butadiene 4500','gtceu:ethylene 500')
+        .itemOutputs("110x gtceu:raw_styrene_butadiene_rubber_dust")   
         .duration(20*20)
         .EUt(GTValues.VA[GTValues.UV]);
 
         event.recipes.gtceu.chemical_plant('silicone_rubber')
         .notConsumable('kubejs:chemical_tier_two')
         .inputFluids('gtceu:hydrogen 150000','gtceu:chlorine 75000')
-        .itemInputs('10x gtceu:sulfur_dust','20x gtceu:silicon_dust', '50x gtceu:carbon_dust')
-        .outputFluids('gtceu:silicone_rubber 16000')
+        .itemInputs('20x gtceu:silicon_dust', '50x gtceu:carbon_dust')
+        .itemOutputs("110x gtceu:polydimethylsiloxane_dust")
         .duration(20*20)
         .EUt(GTValues.VA[GTValues.UV]);
 
