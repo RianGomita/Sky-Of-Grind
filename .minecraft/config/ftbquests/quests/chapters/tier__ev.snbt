@@ -5,13 +5,13 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:titanium_ingot"
 	id: "5AD133D5F35C46C9"
-	order_index: 6
+	order_index: 7
 	quest_links: [{
 		id: "4802D5F59F8E7B71"
 		linked_quest: "2A476DB7A53D97B2"
 		shape: "octagon"
 		size: 2.0d
-		x: 2.0d
+		x: 3.5d
 		y: 1.0d
 	}]
 	quests: [
@@ -39,8 +39,8 @@
 				}
 			]
 			title: "Freezing Machinery"
-			x: 4.0d
-			y: 5.5d
+			x: 6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2A476DB7A53D97B2"]
@@ -58,7 +58,7 @@
 				type: "item"
 			}]
 			title: "Going to space!"
-			x: 0.0d
+			x: 2.0d
 			y: 3.0d
 		}
 		{
@@ -72,12 +72,13 @@
 			id: "6307A99BEC83D5B8"
 			rewards: [
 				{
+					count: 5
 					id: "11F0049BD13C20C5"
 					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "7AD6E867A01DBA92"
+					id: "16B357D71B80B7D8"
 					item: {
 						Count: 1
 						id: "trophymanager:trophy"
@@ -107,7 +108,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.0d
 			y: 5.25d
 		}
 		{
@@ -120,18 +121,11 @@
 				}
 			}
 			id: "1A53D93C7BAAA472"
-			rewards: [
-				{
-					id: "0316DBF0ABF68D6B"
-					item: "ad_astra:white_flag"
-					type: "item"
-				}
-				{
-					id: "4FEDED61A50799E0"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4FEDED61A50799E0"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "064FF7450B9DFB9E"
@@ -179,7 +173,7 @@
 				}
 			]
 			title: "Space Suit"
-			x: -2.0d
+			x: 0.0d
 			y: 5.0d
 		}
 		{
@@ -201,7 +195,7 @@
 				item: "ad_astra:oxygen_loader"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 3.5d
 			y: 3.5d
 		}
 		{
@@ -225,7 +219,7 @@
 				}
 			]
 			title: "&6Fuel for the fuel god!"
-			x: -1.5d
+			x: 0.5d
 			y: 3.5d
 		}
 		{
@@ -263,8 +257,8 @@
 				}
 			]
 			title: "Land on the Moon"
-			x: 0.0d
-			y: 7.0d
+			x: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["69620FAFB77E56F2"]
@@ -311,8 +305,8 @@
 				}
 			]
 			title: "&lThe destroyer of moons "
-			x: 2.0d
-			y: 7.0d
+			x: 4.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -333,8 +327,8 @@
 				type: "item"
 			}]
 			title: "Titanium, Finally!"
-			x: 4.0d
-			y: 7.0d
+			x: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3BB539619E06A099"]
@@ -350,7 +344,7 @@
 				item: "gtceu:ev_machine_casing"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.5d
 			y: 9.5d
 		}
 		{
@@ -373,8 +367,8 @@
 				type: "item"
 			}]
 			title: "Oil distillation"
-			x: -1.5d
-			y: 1.0d
+			x: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -392,8 +386,8 @@
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 9.5d
+			x: 6.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6840081D7D2DCBEE"]
@@ -432,8 +426,8 @@
 				}
 			]
 			title: "I dont think you hate this anymore."
-			x: 7.0d
-			y: 9.5d
+			x: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["2A476DB7A53D97B2"]
@@ -448,7 +442,7 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
@@ -471,11 +465,11 @@
 				type: "item"
 			}]
 			title: "IV circuits, already?"
-			x: 7.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["50B880443FF71E21"]
+			dependencies: ["57180CBEE148C5C6"]
 			description: ["There's actually only one wiremill recipe that requires voltage above LV, which is string from polycaprolactam, but wires get stronger and take longer to make, and you don't like waiting, do you?"]
 			id: "434868CD779CD49B"
 			optional: true
@@ -491,10 +485,10 @@
 			}]
 			title: "More wires? OMG"
 			x: 6.0d
-			y: 11.0d
+			y: 12.5d
 		}
 		{
-			dependencies: ["50B880443FF71E21"]
+			dependencies: ["57180CBEE148C5C6"]
 			description: ["Most expensive energy-wise recipe is MV, but these recipes are also, like wiremill, gonna start taking a while if you don't upgrade!"]
 			id: "1B78EE6D1100DFB4"
 			optional: true
@@ -509,8 +503,8 @@
 				type: "item"
 			}]
 			title: "Bender, typic."
-			x: 8.0d
-			y: 11.0d
+			x: 6.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["50B880443FF71E21"]
@@ -533,11 +527,11 @@
 				type: "item"
 			}]
 			title: "EV Assembler"
-			x: 7.0d
-			y: 8.0d
+			x: 8.0d
+			y: 10.5d
 		}
 		{
-			dependencies: ["3BB539619E06A099"]
+			dependencies: ["5EC36D437BC5B586"]
 			id: "0F3EE3D20B708612"
 			rewards: [{
 				id: "2C3DA5C22F5FAF07"
@@ -549,8 +543,8 @@
 				item: "ae2:crafting_accelerator"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.5d
+			x: 2.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0F3EE3D20B708612"]
@@ -565,11 +559,11 @@
 				item: "mae2:4x_crafting_accelerator"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.5d
+			x: 1.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["0F3EE3D20B708612"]
+			dependencies: ["030CB923DDF88635"]
 			id: "66189DD3A7DDAC3F"
 			rewards: [{
 				id: "39F79EBB9229B721"
@@ -581,11 +575,11 @@
 				item: "mae2:16x_crafting_accelerator"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 3.5d
+			x: 0.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["0F3EE3D20B708612"]
+			dependencies: ["66189DD3A7DDAC3F"]
 			id: "376B7E4DC9D637D1"
 			rewards: [{
 				id: "2295A686DE5DAFDF"
@@ -597,11 +591,11 @@
 				item: "mae2:64x_crafting_accelerator"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.5d
+			x: -1.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["0F3EE3D20B708612"]
+			dependencies: ["376B7E4DC9D637D1"]
 			id: "776034EDD615B6BA"
 			rewards: [{
 				id: "2E2AA2403BE88BB2"
@@ -613,11 +607,11 @@
 				item: "mae2:256x_crafting_accelerator"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.5d
+			x: -2.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["3BB539619E06A099"]
+			dependencies: ["0FF0AB0CB40371AF"]
 			description: [
 				"Probably the most useful ME device."
 				""
@@ -634,11 +628,14 @@
 				item: "ae2:pattern_provider"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 2.0d
+			y: 10.0d
 		}
 		{
-			dependencies: ["3BB539619E06A099"]
+			dependencies: [
+				"0FF0AB0CB40371AF"
+				"65AECCF83CDB662B"
+			]
 			description: ["This is a pretty useful device. You can autocraft with it by surrounding it with ME Pattern Providers. Or you can insert an already encoded pattern and pipe items in to craft them repeatedly. ME Molecular Assemblers will push the results to nearby inventories (such as ME Pattern Providers, ME Interfaces, or a Minecraft barrel)."]
 			id: "180700BC4249F0BB"
 			rewards: [{
@@ -651,13 +648,13 @@
 				item: "ae2:molecular_assembler"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.0d
+			x: 2.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
 				"30A814E7C57E284A"
-				"3BB539619E06A099"
+				"5EC36D437BC5B586"
 			]
 			description: [
 				"Encode any recipe inside of an ME Pattern Encoding Terminal!"
@@ -678,11 +675,11 @@
 				type: "item"
 			}]
 			title: "Autocrafting, finally!"
-			x: 5.0d
-			y: 8.0d
+			x: 4.5d
+			y: 10.5d
 		}
 		{
-			dependencies: ["3BB539619E06A099"]
+			dependencies: ["5EC36D437BC5B586"]
 			icon: "ae2:crafting_unit"
 			id: "3FD7C5E54029ED5B"
 			rewards: [{
@@ -704,8 +701,8 @@
 				}
 			]
 			title: "Crafting Unit"
-			x: 6.0d
-			y: 5.5d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3FD7C5E54029ED5B"]
@@ -720,11 +717,11 @@
 				item: "ae2:4k_crafting_storage"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.5d
+			x: 1.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["3FD7C5E54029ED5B"]
+			dependencies: ["67440A5B863CC9BF"]
 			id: "577BEAC71D0A479A"
 			rewards: [{
 				id: "54980098079348C6"
@@ -736,11 +733,11 @@
 				item: "ae2:16k_crafting_storage"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.5d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["3FD7C5E54029ED5B"]
+			dependencies: ["577BEAC71D0A479A"]
 			id: "53A509B85CA51BDA"
 			rewards: [{
 				id: "7FD330342345F99C"
@@ -752,11 +749,11 @@
 				item: "ae2:64k_crafting_storage"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.5d
+			x: -1.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["3FD7C5E54029ED5B"]
+			dependencies: ["53A509B85CA51BDA"]
 			id: "5BFB1C8CFAEAD059"
 			rewards: [{
 				id: "5BDC5EEFDB264A6B"
@@ -768,8 +765,8 @@
 				item: "ae2:256k_crafting_storage"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.5d
+			x: -2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2A476DB7A53D97B2"]
@@ -789,8 +786,8 @@
 				title: "Polytetrafluoroethylene"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: 1.0d
+			x: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["448F247F9BCD871C"]
@@ -810,8 +807,8 @@
 				item: "gtceu:hydrogen_bucket"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.5d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["50B880443FF71E21"]
@@ -826,8 +823,8 @@
 				item: "gtceu:ev_mixer"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 6.5d
+			x: 10.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["448F247F9BCD871C"]
@@ -847,8 +844,8 @@
 				item: "gtceu:fluorine_bucket"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 2.5d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -868,8 +865,8 @@
 				item: "gtceu:hydrofluoric_acid_bucket"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 3.5d
+			x: -3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["448F247F9BCD871C"]
@@ -885,8 +882,8 @@
 				item: "gtceu:rock_salt_dust"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 1.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["118E1ECFA72C5329"]
@@ -906,10 +903,11 @@
 				item: "gtceu:chlorine_bucket"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 5.0d
+			x: -5.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["0003740F226E6E62"]
 			description: ["Get methane by distilling some severely cracked oils or by doing the natural route."]
 			id: "3917F3EB03C1EBD0"
 			rewards: [{
@@ -922,8 +920,8 @@
 				item: "gtceu:methane_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 5.0d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -941,8 +939,8 @@
 				item: "gtceu:chloroform_bucket"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 5.0d
+			x: -5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -962,9 +960,10 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 6.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["448F247F9BCD871C"]
 			description: [
 				"There is multiple ways to get oxygen."
 				""
@@ -986,8 +985,8 @@
 				type: "checkmark"
 			}]
 			title: "Oxygen"
-			x: -7.0d
-			y: 8.5d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1011,11 +1010,11 @@
 				item: "gtceu:polytetrafluoroethylene_bucket"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 8.5d
+			x: -3.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["50B880443FF71E21"]
+			dependencies: ["57180CBEE148C5C6"]
 			id: "1FCC6FB18BA2159E"
 			optional: true
 			rewards: [{
@@ -1029,7 +1028,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 10.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["1F0CBC118A025669"]
@@ -1064,13 +1063,13 @@
 				item: "gtceu:large_chemical_reactor"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 11.0d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
-				"3917F3EB03C1EBD0"
 				"4F4EA00A88BD951A"
+				"784CB1FC3B0CE014"
 			]
 			id: "012C03ED5DBADBBD"
 			rewards: [{
@@ -1078,24 +1077,21 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Decently easy to make, and very useful"
+			subtitle: "The start of Silicone Rubber production"
 			tasks: [{
-				id: "48C62E45E2FCF1E4"
-				item: "gtceu:polydimethylsiloxane_dust"
+				id: "28342C084BE8E15A"
+				item: "gtceu:trichlorosilane_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 8.5d
+			x: -5.5d
+			y: -0.5d
 		}
 		{
-			dependencies: [
-				"6FD55D694E7D6D1C"
-				"012C03ED5DBADBBD"
-			]
+			dependencies: ["31598E9996BD0A0A"]
 			description: [
 				"Silicone rubber is used to cover higher tier cables, typical rubber will not last enough."
 				""
-				"Silicone rubber is capable of covering all tiers of cables, but as an alternative you can also use styrene-butadiene rubber, which is also capable of covering all types of cables, however, it does require some petrochem stuff that you might have not done yet. I recommend you checking out the oil distillation quest too."
+				"Silicone rubber is capable of covering cables till LuV, but as an alternative you can also use styrene-butadiene rubber, which is capable of covering all types of cables till ZPM, however, it does require some petrochem stuff that you might have not done yet. I recommend you checking out the oil distillation quest too."
 				""
 				"Also, it's &lrequired&r for LuV+ electric pumps."
 			]
@@ -1110,8 +1106,8 @@
 				item: "gtceu:silicone_rubber_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 11.0d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0003740F226E6E62"]
@@ -1127,32 +1123,15 @@
 				item: "gtceu:butadiene_bucket"
 				type: "item"
 			}]
-			x: -1.5d
+			x: 1.5d
 			y: -1.0d
-		}
-		{
-			dependencies: ["0003740F226E6E62"]
-			description: ["Ethylene + benzene. Are you ready?"]
-			id: "56DFEF515D038DE6"
-			rewards: [{
-				id: "5B36ADF3A8448F5E"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "14A3277E5193C283"
-				item: "gtceu:styrene_bucket"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 0.0d
 		}
 		{
 			dependencies: [
 				"0F068CABFD8E8B7F"
-				"56DFEF515D038DE6"
+				"3598869F7039D197"
 			]
-			description: ["Styrene the butadiene together (don't forget oxygen tho) (I hope you're not using air for these)!"]
+			description: ["Styrene + Butadiene + Water "]
 			id: "4CA53F9E7ADC3B37"
 			rewards: [{
 				id: "3076E63B1E0D2D6E"
@@ -1160,17 +1139,16 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "1174FC9956574C31"
-				item: "gtceu:raw_styrene_butadiene_rubber_dust"
+				id: "4629F77058DBFEF9"
+				item: "gtceu:sbr_emulsion_bucket"
 				type: "item"
 			}]
-			title: "Styrene Butadiene"
-			x: -2.5d
-			y: 0.0d
+			x: 3.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["4CA53F9E7ADC3B37"]
-			description: ["Chemical react the new rubber with sulfur dust to make it into a liquid form. This is the strongest rubber, congrats!"]
+			dependencies: ["6D40BEABE51E76BB"]
+			description: ["Chemical react the new rubber with sulfur dust to make it into a liquid form.That rubber can be used to wrap cables up to ZPM"]
 			id: "46356F11079CEC2E"
 			rewards: [{
 				id: "05C1FB5C887B7613"
@@ -1182,8 +1160,8 @@
 				item: "gtceu:styrene_butadiene_rubber_bucket"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.5d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1204,8 +1182,8 @@
 				type: "item"
 			}]
 			title: "Nichrome Coil Block"
-			x: 9.0d
-			y: 5.5d
+			x: 8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1230,13 +1208,14 @@
 				item: "gtceu:rtm_alloy_dust"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.5d
 			y: 6.5d
 		}
 		{
 			dependencies: [
 				"2461BCC7EDFAD930"
 				"228D20DB0820F303"
+				"30A814E7C57E284A"
 			]
 			id: "4E5C2F3A272FE423"
 			rewards: [{
@@ -1252,8 +1231,8 @@
 				type: "item"
 			}]
 			title: "RTM Alloy Coil Block"
-			x: 10.5d
-			y: 4.5d
+			x: 8.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["228D20DB0820F303"]
@@ -1269,8 +1248,8 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 4.0d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1296,10 +1275,11 @@
 				item: "gtceu:iv_machine_casing"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["2BC4420A43D04904"]
 			id: "2B2F37A02EE520AB"
 			rewards: [{
 				id: "3DD3844E3557D68D"
@@ -1311,10 +1291,11 @@
 				item: "gtceu:mpic_chip"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 11.0d
+			x: 13.5d
+			y: 8.5d
 		}
 		{
+			dependencies: ["30A814E7C57E284A"]
 			id: "3F6D45800AF7EF0F"
 			rewards: [{
 				id: "60A3743982A4E454"
@@ -1326,8 +1307,8 @@
 				item: "gtceu:ev_voltage_coil"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 13.5d
+			x: 15.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1348,11 +1329,11 @@
 				item: "gtceu:ev_energy_input_hatch"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 12.5d
+			x: 15.0d
+			y: 8.25d
 		}
 		{
-			dependencies: ["50B880443FF71E21"]
+			dependencies: ["65B415B6FF037504"]
 			id: "7D061C1E8930F0F9"
 			rewards: [{
 				id: "1DD0CE57B6827551"
@@ -1365,11 +1346,14 @@
 				item: "gtceu:ultimet_dust"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 9.5d
+			x: 12.5d
+			y: 7.5d
 		}
 		{
-			dependencies: ["6FD55D694E7D6D1C"]
+			dependencies: [
+				"6FD55D694E7D6D1C"
+				"71DAA436F8FCBC38"
+			]
 			description: ["The start of something, right?"]
 			id: "473DDA77A96437BD"
 			rewards: [{
@@ -1382,8 +1366,8 @@
 				item: "gtceu:butyraldehyde_bucket"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 12.5d
+			x: -0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6FD55D694E7D6D1C"]
@@ -1398,8 +1382,8 @@
 				item: "gtceu:acetic_acid_bucket"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 13.5d
+			x: -3.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["62C09C8F416308C8"]
@@ -1415,8 +1399,8 @@
 				item: "gtceu:vinyl_acetate_bucket"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 13.5d
+			x: -3.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["572B1F7A4EBFBDD1"]
@@ -1432,8 +1416,8 @@
 				item: "gtceu:polyvinyl_acetate_bucket"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 13.5d
+			x: -0.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -1452,11 +1436,14 @@
 				item: "gtceu:polyvinyl_butyral_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 12.5d
+			x: 5.5d
+			y: -6.5d
 		}
 		{
-			dependencies: ["0BAF086EB15F694F"]
+			dependencies: [
+				"0BAF086EB15F694F"
+				"46C53F8CAF05AA43"
+			]
 			description: [
 				"Now you can get IV hatches."
 				""
@@ -1473,8 +1460,8 @@
 				item: "gtceu:laminated_glass"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 15.0d
+			x: 15.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1499,8 +1486,8 @@
 				item: "gtceu:iv_input_hatch"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 15.0d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1523,8 +1510,8 @@
 				item: "gtceu:radon_bucket"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 15.0d
+			x: 15.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["27C70F756C875E96"]
@@ -1540,8 +1527,8 @@
 				item: "gtceu:quantum_eye"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 16.0d
+			x: 13.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["10FAD89C71AB39A4"]
@@ -1565,8 +1552,8 @@
 				}
 			]
 			title: "You sure hate those."
-			x: 13.0d
-			y: 16.0d
+			x: 13.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0837650965A6148A"]
@@ -1582,8 +1569,8 @@
 				type: "item"
 			}]
 			title: "Better machinery!"
-			x: 13.0d
-			y: 12.5d
+			x: 13.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["62C09C8F416308C8"]
@@ -1593,7 +1580,6 @@
 				"- or distill wood vinegar!"
 			]
 			id: "581425B3F165BFCF"
-			optional: true
 			rewards: [{
 				id: "5B02849FC86B7BB3"
 				item: "gtmutils:doge_coin"
@@ -1604,30 +1590,8 @@
 				item: "gtceu:acetone_bucket"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 15.0d
-		}
-		{
-			dependencies: ["581425B3F165BFCF"]
-			description: [
-				"This is a part of the epoxy line that you will need to make epoxy boards (for LuV circuits, so definitely try to passive this)."
-				""
-				"You can skip this part with an LCR though."
-			]
-			id: "2738CB2721C4E4A6"
-			optional: true
-			rewards: [{
-				id: "09E847948D52ED8B"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "2CDDF4C7D2B14BD3"
-				item: "gtceu:bisphenol_a_bucket"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 15.0d
+			x: -5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["4F4EA00A88BD951A"]
@@ -1644,8 +1608,8 @@
 				item: "gtceu:vinyl_chloride_bucket"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 6.5d
+			x: -7.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["77FB89A525267AAA"]
@@ -1667,14 +1631,14 @@
 				item: "gtceu:polyvinyl_chloride_bucket"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 9.5d
+			x: -7.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
 				"2B2F37A02EE520AB"
 				"3F6D45800AF7EF0F"
-				"50B880443FF71E21"
+				"7D061C1E8930F0F9"
 			]
 			description: ["Even better ores!"]
 			id: "142BB029494C7A06"
@@ -1688,7 +1652,7 @@
 				item: "gtceu:ev_electric_extractinator"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 12.5d
 			y: 9.5d
 		}
 		{
@@ -1715,14 +1679,14 @@
 				item: "advanced_ae:adv_pattern_provider"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: 1.0d
+			y: 10.0d
 		}
 		{
 			id: "69D2657F779DFFE6"
 			rewards: [{
 				count: 2
-				id: "27A5BD9DAD915539"
+				id: "38BED667D4BF9740"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1732,7 +1696,7 @@
 				item: "gtceu:implosion_compressor"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.0d
 			y: 6.5d
 		}
 		{
@@ -1749,7 +1713,7 @@
 				item: "gtceu:heavy_duty_alloy_t1_ingot"
 				type: "item"
 			}]
-			x: -1.5d
+			x: 0.5d
 			y: 6.5d
 		}
 		{
@@ -1784,8 +1748,8 @@
 				type: "item"
 			}]
 			title: "Tungsten ores"
-			x: 2.0d
-			y: 8.5d
+			x: 5.0d
+			y: 6.5d
 		}
 		{
 			id: "304BB732CC20D567"
@@ -1800,8 +1764,8 @@
 				item: "kubejs:end_miner_module"
 				type: "item"
 			}]
-			x: 2.75d
-			y: 7.75d
+			x: 5.25d
+			y: 5.75d
 		}
 		{
 			dependencies: ["65B415B6FF037504"]
@@ -1817,8 +1781,496 @@
 				item: "gtceu:tilrunum_superconductor_single_wire"
 				type: "item"
 			}]
+			x: 9.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"07F3EBD47BAB59E2"
+				"6854B14E447D63F9"
+			]
+			description: [
+				"Behold! &3Dehydration chamber&r  is needed for further polymer production"
+				"Better coil you'll use on that bad boy the faster it gets, it's using &6Pyrolise Oven Overclocks&r and also support it's recipes"
+				"Later you can use &9Parallel Control Hatch&r on it to make it even more efficent!"
+			]
+			id: "39B7C7F00417F05E"
+			rewards: [{
+				id: "11B97203DD20439C"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Cable coating 101"
+			tasks: [{
+				id: "062303619F6F1588"
+				item: "gtceu:large_dehydration_unit"
+				type: "item"
+			}]
+			title: "Dehydration chamber"
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["50B880443FF71E21"]
+			id: "4ED461380B92EE89"
+			rewards: [{
+				id: "13EDD248D24A43F5"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "619148E0AEA10986"
+				item: "gtceu:ev_centrifuge"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"4ED461380B92EE89"
+				"5CA650927D3334BD"
+			]
+			id: "0E6778CA3151A3A2"
+			rewards: [{
+				id: "6655FDC59DB38A49"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "The beggining of tantalum line"
+			tasks: [{
+				id: "765EC4131D9C5176"
+				item: "gtceu:tantalite_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0E6778CA3151A3A2"]
+			id: "7142CA2D502F2FFE"
+			rewards: [{
+				id: "557EC08D0CB102A2"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "It's slow process, isn't it?"
+			tasks: [{
+				id: "5ADF918C5D4B299C"
+				item: "gtceu:tantalum_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"62EEF563F2064667"
+				"05129073AADF0902"
+				"4E5C2F3A272FE423"
+			]
+			id: "07F3EBD47BAB59E2"
+			rewards: [{
+				id: "6F02259DDAD51896"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "It's getting hot in here"
+			tasks: [{
+				id: "31203A72E8CDBB24"
+				item: "gtceu:heat_vent"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			id: "5CA650927D3334BD"
+			rewards: [{
+				id: "2A5D71C65CE73C07"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C8DEDA80DCC3066"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 14.5d
+		}
+		{
+			dependencies: [
+				"7142CA2D502F2FFE"
+				"65B415B6FF037504"
+			]
+			id: "05129073AADF0902"
+			rewards: [{
+				id: "015B33E65BA54C7B"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Tantalum + Carbon"
+			tasks: [{
+				id: "5C9FA24735329BC7"
+				item: "gtceu:tantalum_carbide_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["65B415B6FF037504"]
+			id: "62EEF563F2064667"
+			rewards: [{
+				id: "365827E239551792"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Molybdenum + Silicon"
+			tasks: [{
+				id: "59FF722AC90713D8"
+				item: "gtceu:molybdenum_disilicide_dust"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3BB539619E06A099"]
+			id: "5EC36D437BC5B586"
+			tasks: [{
+				id: "087593CBAFC92566"
+				type: "checkmark"
+			}]
+			title: "Autocraft goes brrrr"
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7D061C1E8930F0F9"]
+			id: "2BC4420A43D04904"
+			rewards: [{
+				id: "385F5D0DB43F2178"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BEC8DC497F3D35C"
+				item: "gtceu:ev_cutter"
+				type: "item"
+			}]
+			title: "Better cutter!"
+			x: 13.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"4CA53F9E7ADC3B37"
+				"39B7C7F00417F05E"
+				"6BDC3AC75CEACD12"
+			]
+			description: ["Don't confuse with Stell Ball Run!"]
+			id: "6D40BEABE51E76BB"
+			rewards: [{
+				id: "147796B8AA69E6DB"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54D8568342ECF90D"
+				item: "gtceu:raw_styrene_butadiene_rubber_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"39B7C7F00417F05E"
+				"7693208887770FFC"
+				"432338069C1A7272"
+			]
+			id: "31598E9996BD0A0A"
+			rewards: [{
+				id: "0B228E7B87CCCD84"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "57646877AFDDCE56"
+				item: "gtceu:polydimethylsiloxane_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			id: "784CB1FC3B0CE014"
+			tasks: [{
+				id: "5BBF3B8B43DB6DF7"
+				item: "gtceu:silicon_dust"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["50B880443FF71E21"]
+			description: ["That's is last upgrade for single blocks, after that more &apowerful&r &6multiblocks&r can be used for these types of machinery"]
+			id: "57180CBEE148C5C6"
+			subtitle: "Speed it up!"
+			tasks: [{
+				id: "414DC17389F64482"
+				title: "Got it!"
+				type: "checkmark"
+			}]
+			title: "Better Machinery"
 			x: 8.0d
-			y: 7.5d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"0837650965A6148A"
+				"6854B14E447D63F9"
+			]
+			description: ["This circuit assembler is needed to make newer &bcircuits&r on &6epoxy&r PCBs"]
+			id: "7FC8E4C4DB3801D3"
+			rewards: [{
+				id: "755AA6722FD3B020"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Better Circuit Assembler!"
+			tasks: [{
+				id: "5B17442590BAEEB0"
+				item: "gtceu:ev_circuit_assembler"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["012C03ED5DBADBBD"]
+			id: "6B338D169D68C4C3"
+			rewards: [{
+				id: "40ABEED0FB713C30"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "16FFB78607EAD4DA"
+				item: "gtceu:pure_trichlorosilane_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6B338D169D68C4C3"
+				"6FD55D694E7D6D1C"
+				"3917F3EB03C1EBD0"
+			]
+			id: "7F2C25647896D190"
+			rewards: [{
+				id: "3B429D9AB962A8D8"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Don't confuse with pilk"
+			tasks: [{
+				id: "7F095699C2FF8E38"
+				item: "gtceu:dimethyldichlorosilane_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0003740F226E6E62"]
+			id: "71DAA436F8FCBC38"
+			rewards: [{
+				id: "5E3CABAC9EBADEE1"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Useful for lot of things!"
+			tasks: [{
+				id: "71800EFB6933B5EE"
+				item: "gtceu:propene_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"62C09C8F416308C8"
+				"27053CCEEC11CAC2"
+			]
+			id: "7693208887770FFC"
+			rewards: [{
+				id: "5FD3A1A99229086C"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "273FBBB505686E18"
+				item: "gtceu:methyl_acetate_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7F2C25647896D190"]
+			id: "432338069C1A7272"
+			rewards: [{
+				id: "4D92C647A3120BAF"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "634B0CFFE0CAC099"
+				item: "gtceu:silicone_prepolymer_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11F3FD9A17D0D0F0"]
+			id: "27053CCEEC11CAC2"
+			rewards: [{
+				id: "1D0DF0D9B983182C"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "51C0206ADF42196D"
+				item: "gtceu:methanol_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["070C15232E795543"]
+			id: "7529FD28AE629AFD"
+			rewards: [{
+				id: "64997B705883AA4A"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "No more Ethylene + Benzene "
+			tasks: [{
+				id: "796653851CDB0CDD"
+				item: "gtceu:ethylbenzene_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["39B7C7F00417F05E"]
+			id: "070C15232E795543"
+			rewards: [{
+				id: "3143218713BF111E"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "The start of Styrene"
+			tasks: [{
+				id: "2F1E2371FF421697"
+				item: "gtceu:coal_gas_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["11F3FD9A17D0D0F0"]
+			id: "4ADAF8400CE9C377"
+			rewards: [{
+				id: "6CAEC97280900E2A"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Don't get drunk yet"
+			tasks: [{
+				id: "3A6D52E2DC988B84"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"4ADAF8400CE9C377"
+				"473DDA77A96437BD"
+				"39B7C7F00417F05E"
+			]
+			id: "46C53F8CAF05AA43"
+			rewards: [{
+				id: "6BC27B34AB971F5E"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "So sticky!"
+			tasks: [{
+				id: "03D8005B44728EFB"
+				item: "gtceu:plasticizer_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			id: "11F3FD9A17D0D0F0"
+			tasks: [{
+				id: "6AC92D6FFA8CAD60"
+				title: "Biomass Production"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7529FD28AE629AFD"]
+			id: "3598869F7039D197"
+			rewards: [{
+				id: "70B0488543C10EE4"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "670CC812906A1ABE"
+				item: "gtceu:styrene_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			id: "6BDC3AC75CEACD12"
+			rewards: [{
+				id: "69CE17B89690D84D"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "Quicklime + Ammonium Chloride"
+			tasks: [{
+				id: "2368587DE129C400"
+				item: "gtceu:calcium_chloride_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
 		}
 	]
 	subtitle: ["Extreme Voltage"]

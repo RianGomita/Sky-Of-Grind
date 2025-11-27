@@ -5,14 +5,14 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:tungsten_steel_ingot"
 	id: "4F8B3DE65B4109B1"
-	order_index: 7
+	order_index: 8
 	quest_links: [{
 		id: "2C5174F99E7FE1EA"
 		linked_quest: "56A354EB0D7C0ACE"
 		shape: "octagon"
 		size: 2.0d
-		x: 0.0d
-		y: 0.0d
+		x: -2.0d
+		y: 2.0d
 	}]
 	quests: [
 		{
@@ -70,7 +70,7 @@
 			]
 			title: "Do you?"
 			x: 0.0d
-			y: 3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["700D75AB04659866"]
@@ -104,7 +104,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5E484465F0D041C0"]
@@ -120,7 +120,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5D5FA5429F87E942"]
@@ -145,7 +145,7 @@
 				}
 			]
 			x: -6.5d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5D5FA5429F87E942"]
@@ -163,7 +163,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -198,8 +198,8 @@
 				item: "gtceu:palladium_raw_dust"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 2.0d
+			x: -8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["019E64E5032F29C1"]
@@ -215,7 +215,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["154DA8F1EBCE6B4B"]
@@ -230,8 +230,8 @@
 				item: "gtceu:iridium_metal_residue_dust"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 6.0d
+			x: -8.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3AA1B4F62E1E25CB"]
@@ -254,8 +254,8 @@
 					type: "item"
 				}
 			]
-			x: -6.5d
-			y: 0.0d
+			x: -9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4B2A6E64F43D7252"]
@@ -270,8 +270,8 @@
 				item: "gtceu:palladium_dust"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: -9.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -289,8 +289,8 @@
 				item: "gtceu:rhodium_plated_palladium_dust"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -1.5d
+			x: -12.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1DB87EE3B42E5404"]
@@ -309,8 +309,8 @@
 				item: "gtceu:rhodium_plated_palladium_ingot"
 				type: "item"
 			}]
-			x: -18.0d
-			y: -1.5d
+			x: -15.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7711788430376EFA"]
@@ -325,8 +325,8 @@
 				item: "gtceu:iridium_chloride_dust"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 6.0d
+			x: -6.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1345C0E1DDC79F5E"]
@@ -341,8 +341,8 @@
 				item: "gtceu:iridium_dust"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 8.0d
+			x: -6.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6355CA76C9C38FE5"]
@@ -357,13 +357,12 @@
 				item: "gtceu:iridium_ingot"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -4.5d
 			y: 9.5d
 		}
 		{
-			dependencies: ["700D75AB04659866"]
+			dependencies: ["3158F541E708945F"]
 			description: ["Yes, this looks like a dumb multiblock, but believe me that distilling coal tar or wood is very useful for polybenzimidazole."]
-			icon: "gtceu:pyrolyse_oven"
 			id: "7D056C61FBF5FB14"
 			rewards: [{
 				id: "744083362E29857B"
@@ -371,23 +370,32 @@
 				type: "item"
 			}]
 			subtitle: "What?"
-			tasks: [
-				{
-					id: "4C605AC9D11A21DF"
-					item: "gtceu:pyrolyse_oven"
-					type: "item"
+			tasks: [{
+				id: "4CAE5067E859E21F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:pyrolyse_oven"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_dehydration_unit"
+							}
+						]
+					}
 				}
-				{
-					id: "04A760665A61C16F"
-					item: "gtceu:ulv_machine_casing"
-					type: "item"
-				}
-			]
-			x: 1.0d
-			y: 4.5d
+				type: "item"
+			}]
+			title: "Wood Proc 101"
+			x: 3.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["3158F541E708945F"]
+			dependencies: ["7D056C61FBF5FB14"]
 			description: [
 				"Damn, that's a lot of benzene."
 				"Did you use this in MV?"
@@ -405,11 +413,11 @@
 				item: "gtceu:wood_tar_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.5d
+			x: 4.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["3158F541E708945F"]
+			dependencies: ["7D056C61FBF5FB14"]
 			description: ["Creosote, naphthalene, phenol."]
 			id: "7C8DE25CEB012D1B"
 			rewards: [{
@@ -422,8 +430,8 @@
 				item: "gtceu:coal_tar_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: 2.0d
+			y: 5.5d
 		}
 		{
 			description: ["Another random catalyst."]
@@ -433,18 +441,21 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
+			size: 0.75d
 			tasks: [{
 				id: "43132FE2EA122778"
 				item: "gtceu:potassium_dust"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 6.0d
+			x: 1.125d
+			y: 7.25d
 		}
 		{
 			dependencies: [
 				"3EC6FC25E1BC7385"
-				"7C8DE25CEB012D1B"
+				"2B6BD2D89DED13FB"
+				"5D95418B8EA90D6C"
+				"16B123D52B8680DA"
 			]
 			description: ["Please use the potassium recipe, it yields so much more and the ingredients are all really easy to get."]
 			id: "538B3E0A963EE919"
@@ -458,8 +469,8 @@
 				item: "gtceu:phthalic_acid_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 6.0d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -478,10 +489,14 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 8.0d
+			y: 11.0d
 		}
 		{
-			dependencies: ["4828548537B14DA8"]
+			dependencies: [
+				"4828548537B14DA8"
+				"7C8DE25CEB012D1B"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Another product from distilling wood tar."
 				""
@@ -498,8 +513,8 @@
 				item: "gtceu:phenol_bucket"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.5d
+			x: 3.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5D5FA5429F87E942"]
@@ -516,26 +531,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"50C30617DE1EB08C"
-				"439E332B15BE5708"
-			]
-			id: "022B3784F81C37B3"
-			rewards: [{
-				id: "78FC132DCAC61449"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3881437E68D8A1A1"
-				item: "gtceu:nitrochlorobenzene_bucket"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["4828548537B14DA8"]
@@ -550,11 +546,11 @@
 				item: "gtceu:benzene_bucket"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.0d
+			x: 4.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["7D056C61FBF5FB14"]
+			dependencies: ["700D75AB04659866"]
 			id: "3158F541E708945F"
 			rewards: [{
 				id: "3ED3A4DA485CF362"
@@ -568,96 +564,13 @@
 				type: "checkmark"
 			}]
 			title: "Polybenzimidazole line"
-			x: 2.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["72B9DA06E31AA7E5"]
-			id: "439E332B15BE5708"
-			rewards: [{
-				id: "111BF4DC72230468"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "02E957A3725FA428"
-				item: "gtceu:chlorobenzene_bucket"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -0.5d
+			x: 1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
-				"022B3784F81C37B3"
-				"0C797ACBD2DA00E9"
-			]
-			description: ["Add hydrogen and a little bit of copper."]
-			id: "5C55E392BBFA8223"
-			rewards: [{
-				id: "7103F6E1F3084E25"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6E912A4E1ECA2AAB"
-				item: "gtceu:dichlorobenzidine_bucket"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -0.5d
-		}
-		{
-			id: "0C797ACBD2DA00E9"
-			rewards: [{
-				id: "0AFB7FBF22267D59"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "54CE6688EC445DF2"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:copper_dust"
-							}
-							{
-								Count: 1b
-								id: "gtceu:tiny_copper_dust"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "Copper Dusts"
-			x: 7.0d
-			y: -0.5d
-		}
-		{
-			description: ["Easy to make at this point right?"]
-			id: "318D6B27C8D197DD"
-			rewards: [{
-				id: "79530A463FEFF16C"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "68E5756B67789AF0"
-				item: "gtceu:ammonia_bucket"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 8.0d
-		}
-		{
-			dependencies: [
-				"318D6B27C8D197DD"
-				"5C55E392BBFA8223"
+				"4A46E01BDBD1955F"
+				"16B123D52B8680DA"
 			]
 			id: "0D05BFB2F9EB5B3A"
 			rewards: [{
@@ -665,13 +578,14 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
+			subtitle: "Add some Hydrochloric Acid + Iron dust"
 			tasks: [{
 				id: "031474CC7BC5FA07"
 				item: "gtceu:diaminobenzidine_bucket"
 				type: "item"
 			}]
 			x: 5.5d
-			y: 8.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -694,8 +608,8 @@
 				item: "gtceu:polybenzimidazole_bucket"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 14.5d
+			x: 5.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -752,7 +666,7 @@
 			]
 			title: "&9&lStar Extractor"
 			x: 0.0d
-			y: 9.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["700D75AB04659866"]
@@ -783,7 +697,7 @@
 				item: "gtceu:marble"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: 6.0d
 		}
 		{
@@ -799,8 +713,8 @@
 				item: "gtceu:magnesium_dust"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 7.5d
+			x: -1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["4D876F9D284F5590"]
@@ -815,8 +729,8 @@
 				item: "gtceu:magnalium_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 8.5d
+			x: -1.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7B6D059D211A42FC"]
@@ -831,8 +745,8 @@
 				item: "gtceu:star_matter_nugget"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 9.5d
+			x: 7.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1B775F924C581DB0"]
@@ -847,8 +761,8 @@
 				item: "gtceu:iv_centrifuge"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 9.5d
+			x: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["2D20B06AA89E2F17"]
@@ -897,8 +811,8 @@
 				}
 			]
 			title: "Star's Ore generation!"
-			x: 7.0d
-			y: 9.5d
+			x: 7.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["286AC73CCBD26965"]
@@ -913,8 +827,8 @@
 				item: "gtceu:phosphoric_acid_bucket"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 6.5d
+			x: 7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -933,11 +847,16 @@
 				item: "gtceu:cumene_bucket"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 1.0d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
-			description: ["Add Propene + chlorine + 3 sodium hydroxide to the mix."]
+			dependencies: [
+				"7BB7B8508E6F488B"
+				"6CB656900AE4BBEC"
+			]
+			dependency_requirement: "one_completed"
+			description: ["One step closer to Epoxy"]
 			id: "04A2F84F6044BE9E"
 			rewards: [{
 				id: "2C8E33DC5B90C5B7"
@@ -949,12 +868,16 @@
 				item: "gtceu:epichlorohydrin_bucket"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 18.5d
+			x: 0.0d
+			y: 13.5d
 		}
 		{
-			dependencies: ["04A2F84F6044BE9E"]
-			description: ["You get bisphenol A on the EV questline."]
+			dependencies: [
+				"04A2F84F6044BE9E"
+				"1262DA8D323435B5"
+				"16B123D52B8680DA"
+			]
+			description: ["You'll need a LOT of epoxy!"]
 			id: "2D4D18C80841EB7B"
 			rewards: [{
 				id: "4F0E8489CEF0189E"
@@ -963,11 +886,11 @@
 			}]
 			tasks: [{
 				id: "793158D4ADC6249F"
-				item: "gtceu:epoxy_bucket"
+				item: "gtceu:epoxy_dust"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 18.5d
+			x: 3.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["2D4D18C80841EB7B"]
@@ -982,8 +905,8 @@
 				item: "gtceu:epoxy_circuit_board"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 18.5d
+			x: 3.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6997FC5CBBEBE98B"]
@@ -998,8 +921,8 @@
 				item: "gtceu:epoxy_printed_circuit_board"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 18.5d
+			x: -1.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["154DA8F1EBCE6B4B"]
@@ -1014,8 +937,8 @@
 				item: "gtceu:acidic_osmium_solution_bucket"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 4.0d
+			x: -9.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1B7F935C0521CB99"]
@@ -1030,8 +953,8 @@
 				item: "gtceu:osmium_tetroxide_dust"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 4.0d
+			x: -9.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6EA9EC8136807D73"]
@@ -1046,14 +969,11 @@
 				item: "gtceu:osmium_dust"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -9.5d
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"69E2C15FD2F7965F"
-				"49CAD094813CC3F6"
-			]
+			dependencies: ["69E2C15FD2F7965F"]
 			id: "1BD8EA12EB5D5E2E"
 			rewards: [{
 				id: "294D3A983C735F95"
@@ -1065,14 +985,11 @@
 				item: "gtceu:hssg_dust"
 				type: "item"
 			}]
-			x: -14.0d
-			y: 8.0d
+			x: -11.0d
+			y: 11.0d
 		}
 		{
-			dependencies: [
-				"69E2C15FD2F7965F"
-				"49CAD094813CC3F6"
-			]
+			dependencies: ["69E2C15FD2F7965F"]
 			id: "31610DF7D0850C14"
 			rewards: [{
 				id: "1000EFC1C9F7519E"
@@ -1084,13 +1001,13 @@
 				item: "gtceu:hsse_dust"
 				type: "item"
 			}]
-			x: -14.0d
-			y: 9.5d
+			x: -9.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
 				"69E2C15FD2F7965F"
-				"49CAD094813CC3F6"
+				"6355CA76C9C38FE5"
 			]
 			id: "0C424932A8819822"
 			rewards: [{
@@ -1103,7 +1020,7 @@
 				item: "gtceu:hsss_dust"
 				type: "item"
 			}]
-			x: -14.0d
+			x: -8.0d
 			y: 11.0d
 		}
 		{
@@ -1123,8 +1040,8 @@
 				type: "item"
 			}]
 			title: "HSS-G Coil Block"
-			x: -16.5d
-			y: 8.5d
+			x: -11.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -1142,8 +1059,8 @@
 				item: "gtceu:hsse_ingot"
 				type: "item"
 			}]
-			x: -16.5d
-			y: 9.5d
+			x: -9.5d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -1161,8 +1078,8 @@
 				item: "gtceu:hsss_ingot"
 				type: "item"
 			}]
-			x: -16.5d
-			y: 10.5d
+			x: -8.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["62704CC3038F1B20"]
@@ -1178,8 +1095,8 @@
 				title: "SMD upgrades!"
 				type: "checkmark"
 			}]
-			x: 4.0d
-			y: 16.5d
+			x: -5.5d
+			y: 16.0d
 		}
 		{
 			dependencies: ["165BA28A8FBA4556"]
@@ -1194,8 +1111,8 @@
 				item: "gtceu:advanced_smd_transistor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 17.5d
+			x: -7.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["165BA28A8FBA4556"]
@@ -1210,8 +1127,8 @@
 				item: "gtceu:advanced_smd_resistor"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 17.5d
+			x: -5.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["165BA28A8FBA4556"]
@@ -1226,8 +1143,8 @@
 				item: "gtceu:advanced_smd_capacitor"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 18.5d
+			x: -6.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["165BA28A8FBA4556"]
@@ -1243,8 +1160,8 @@
 				item: "gtceu:advanced_smd_diode"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 18.5d
+			x: -4.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["165BA28A8FBA4556"]
@@ -1259,11 +1176,11 @@
 				item: "gtceu:advanced_smd_inductor"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 19.0d
+			x: -3.5d
+			y: 15.0d
 		}
 		{
-			dependencies: ["62704CC3038F1B20"]
+			dependencies: ["48E481BA1662E0F6"]
 			description: ["Do you still only have 1 cleanroom???"]
 			id: "4DF9D36F7C82C455"
 			rewards: [{
@@ -1276,8 +1193,8 @@
 				item: "gtceu:nano_cpu_wafer"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 14.5d
+			x: -8.5d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -1296,8 +1213,8 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 16.5d
+			x: -8.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["5080DC298EE66D18"]
@@ -1312,8 +1229,8 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 16.5d
+			x: -11.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["1D1FD67F2D891538"]
@@ -1328,8 +1245,8 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			x: -14.0d
-			y: 16.5d
+			x: -12.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1AEEFC47BF7F67C8"]
@@ -1348,8 +1265,8 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			x: -18.0d
-			y: 16.5d
+			x: -15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1372,11 +1289,14 @@
 				item: "gtceu:luv_machine_casing"
 				type: "item"
 			}]
-			x: -22.0d
-			y: 9.5d
+			x: -15.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["7243EE3F57F3A31A"]
+			dependencies: [
+				"7243EE3F57F3A31A"
+				"78A8A5FABB94743B"
+			]
 			description: [
 				"Now you can make a big multiblock of every machine."
 				"Except the circuit assembler, as u need an IV circuit assembler for that."
@@ -1393,8 +1313,8 @@
 				type: "item"
 			}]
 			title: "Big multiblocks"
-			x: 8.0d
-			y: 12.5d
+			x: 13.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["49CAD094813CC3F6"]
@@ -1410,8 +1330,8 @@
 				item: "gtceu:iv_voltage_coil"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 8.5d
+			x: -4.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["72F76285E8D91857"]
@@ -1426,8 +1346,8 @@
 				item: "gtceu:iv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 12.0d
+			x: 10.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["286AC73CCBD26965"]
@@ -1442,8 +1362,8 @@
 				item: "gtceu:hpic_wafer"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 12.0d
+			x: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["286AC73CCBD26965"]
@@ -1461,7 +1381,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 11.5d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -1493,8 +1413,8 @@
 				item: "gtceu:alloy_blast_smelter"
 				type: "item"
 			}]
-			x: 9.75d
-			y: 13.5d
+			x: 12.0d
+			y: 8.0d
 		}
 		{
 			description: ["Titanium + carbon dust on a mixer, then EBF it and cool it down."]
@@ -1510,7 +1430,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 12.5d
+			y: 6.5d
 		}
 		{
 			description: ["A lot of diferent dusts on a mixer!"]
@@ -1526,8 +1446,8 @@
 				item: "gtceu:hsla_steel_ingot"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 13.5d
+			x: 13.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7243EE3F57F3A31A"]
@@ -1543,8 +1463,8 @@
 				item: "gtceu:watertight_steel_ingot"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 13.5d
+			x: 12.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1565,8 +1485,8 @@
 				type: "item"
 			}]
 			title: "Overclocking big Multiblocks"
-			x: 5.5d
-			y: 13.5d
+			x: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1B775F924C581DB0"]
@@ -1581,8 +1501,8 @@
 				item: "kubejs:star_extruder_mold"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 13.5d
+			x: 9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1514A260777E6B32"]
@@ -1600,7 +1520,7 @@
 					type: "item"
 				}
 				{
-					id: "4E7812CD82DA1943"
+					id: "3C35177728ADAD1E"
 					item: {
 						Count: 1
 						id: "trophymanager:trophy"
@@ -1626,8 +1546,8 @@
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 15.0d
+			x: 10.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["3F0D5B357A418240"]
@@ -1642,8 +1562,8 @@
 				item: "gtceu:quantum_star"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 16.0d
+			x: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["137868B8B24F436D"]
@@ -1665,7 +1585,7 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
+			x: 12.0d
 			y: 15.0d
 		}
 		{
@@ -1691,28 +1611,28 @@
 				item: "gtceu:iv_parallel_hatch"
 				type: "item"
 			}]
-			x: 9.75d
+			x: 13.5d
 			y: 15.0d
 		}
 		{
-			dependencies: [
-				"69E2C15FD2F7965F"
-				"49CAD094813CC3F6"
-			]
+			dependencies: ["32E62C0FB51F8271"]
+			hide_dependency_lines: false
 			id: "0E0E981276937653"
+			progression_mode: "flexible"
 			rewards: [{
 				id: "561451CA3314529D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "Is this overkill"
 			tasks: [{
 				id: "7B217E501F56ACEA"
 				item: "gtceu:iv_electric_extractinator"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 11.0d
+			x: -3.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1B775F924C581DB0"]
@@ -1728,8 +1648,8 @@
 				type: "item"
 			}]
 			title: "&9IV Superconductor"
-			x: 1.5d
-			y: 8.0d
+			x: 7.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["73AB9D7E04840A3C"]
@@ -1745,8 +1665,318 @@
 				item: "gtmutils:omnibreaker"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 12.0d
 			y: 16.5d
+		}
+		{
+			dependencies: ["700D75AB04659866"]
+			description: [
+				"Another multi for  your chemical needs!"
+				"Supports &3Parallel Control Hatch&r"
+			]
+			id: "16B123D52B8680DA"
+			rewards: [{
+				id: "60DBDA1CAE82C242"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68DCB6453E3E54D9"
+				item: "gtceu:large_evaporation_pool"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["7A886EC5250E59CC"]
+			id: "1262DA8D323435B5"
+			rewards: [{
+				id: "14B2D16F6E072371"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Hydrochloric Acid + Phenol + Acetone"
+			tasks: [{
+				id: "44A15C356A3824FF"
+				item: "gtceu:bisphenol_a_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["7C8DE25CEB012D1B"]
+			id: "5D95418B8EA90D6C"
+			rewards: [{
+				id: "3CAAB239E708EA94"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E8D98FB9E44036C"
+				item: "gtceu:naphthalene_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4828548537B14DA8"]
+			id: "2B6BD2D89DED13FB"
+			rewards: [{
+				id: "5B0D95FC3A18213E"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61C17DCA41022CDA"
+				item: "gtceu:dimethylbenzene_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["62704CC3038F1B20"]
+			id: "48E481BA1662E0F6"
+			rewards: [{
+				id: "2EEBBD13DF2B7483"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "37ACB2017DA2EDB1"
+				item: "gtceu:carbon_fibers"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["7B6D059D211A42FC"]
+			id: "0540B5F9B83518AD"
+			rewards: [{
+				id: "1AB766247A8034B9"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Just for the love of god don't drink it"
+			tasks: [{
+				id: "0D781D1109672B4E"
+				item: "gtceu:mercury_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0540B5F9B83518AD"]
+			id: "74B39BBB36601CED"
+			rewards: [{
+				id: "6C7F698DFC6A32F7"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Water + Chlorine  + Mercury "
+			tasks: [{
+				id: "440D7E827EF3B660"
+				item: "gtceu:hypochlorous_acid_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6CD3D17DDDDA9068"]
+			id: "7BB7B8508E6F488B"
+			rewards: [{
+				id: "6FCDA5E90C05E2DC"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Yummi Biodiesel Byproduct"
+			tasks: [{
+				id: "002C394FFA99DEBD"
+				item: "gtceu:glycerol_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"74B39BBB36601CED"
+				"6CD3D17DDDDA9068"
+			]
+			id: "6CB656900AE4BBEC"
+			rewards: [{
+				id: "4EB3C3E5AC19E57D"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Propene  + Chlorine"
+			tasks: [{
+				id: "0C85C73302188935"
+				item: "gtceu:allyl_chloride_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 13.5d
+		}
+		{
+			description: ["You can use either Hypochlorous Acid + Allyl Chloride or Hydrochloric Acid + Glycerol from Biodiesel production"]
+			id: "6CD3D17DDDDA9068"
+			tasks: [{
+				id: "7D74069888294BD0"
+				type: "checkmark"
+			}]
+			title: "Epichlorohydrin production"
+			x: -1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"72B9DA06E31AA7E5"
+				"50C30617DE1EB08C"
+			]
+			description: ["Nitrobenze is a great energy dense fuel, you'll it to produce PBI"]
+			id: "3893E8517CE86078"
+			rewards: [{
+				id: "60BB0D729129C9DB"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2ED2A262F6E7042B"
+				item: "gtceu:nitrobenzene_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"3893E8517CE86078"
+				"4CB012CB67DB5B3B"
+			]
+			id: "6D869373556A8B95"
+			rewards: [{
+				id: "6B279AA8B03CB7D4"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Also known as Benzidine"
+			tasks: [{
+				id: "518FD55E156DC8C0"
+				item: "gtceu:hydrazobenzene_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			id: "4CB012CB67DB5B3B"
+			rewards: [{
+				id: "3ABB60553AEBD0AC"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Rock salt + Water"
+			tasks: [{
+				id: "031E50A99FBC8DC0"
+				item: "gtceu:potassium_hydroxide_dust"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1A09FCBE12BCD61F"
+				"6D869373556A8B95"
+			]
+			id: "2308C65A6B9455EA"
+			rewards: [{
+				id: "33BE26DC9ACC3CC6"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D9DDBA337EAF463"
+				item: "gtceu:diacetyl_benzidine_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["77BE59B67D136E90"]
+			id: "1A09FCBE12BCD61F"
+			rewards: [{
+				id: "169D29770849ADF6"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Add some Acetic Acid"
+			tasks: [{
+				id: "33A19D18EEE127A0"
+				item: "gtceu:acetic_anhydride_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["581425B3F165BFCF"]
+			id: "77BE59B67D136E90"
+			rewards: [{
+				id: "6CF5A58623CD9DD3"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Distill some Acetone"
+			tasks: [{
+				id: "1FF10E049CEED6B9"
+				item: "gtceu:ethenone_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6A6E2D2B84A09DE3"]
+			id: "4A46E01BDBD1955F"
+			rewards: [{
+				id: "0C0DF04B6259C90D"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Add some Sodium Hydroxide"
+			tasks: [{
+				id: "3099A12EE4B99B2D"
+				item: "gtceu:dinitro_benzidine_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2308C65A6B9455EA"]
+			id: "6A6E2D2B84A09DE3"
+			rewards: [{
+				id: "679D3958C74FF75F"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Add some Nitric Acid"
+			tasks: [{
+				id: "273B71AA70206A49"
+				item: "gtceu:dinitro_diacetyl_benzidine_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
 		}
 	]
 	subtitle: ["Insane Voltage"]

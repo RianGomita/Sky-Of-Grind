@@ -5,21 +5,21 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:atomic_alloy_ingot"
 	id: "545556F059EEEF1D"
-	order_index: 10
+	order_index: 11
 	quest_links: [
 		{
 			id: "5D903749EAA9ACE9"
 			linked_quest: "125789E676E22B37"
 			shape: "octagon"
 			size: 2.0d
-			x: 0.0d
+			x: -0.5d
 			y: 0.0d
 		}
 		{
 			id: "7634DBE6BE34CFA2"
 			linked_quest: "7CFBD6D6165E827D"
-			x: 9.0d
-			y: 6.0d
+			x: 11.5d
+			y: 7.0d
 		}
 	]
 	quests: [
@@ -36,8 +36,8 @@
 				item: "gtceu:uv_machine_hull"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: -0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["164F9100DAB09566"]
@@ -76,8 +76,8 @@
 				}
 			]
 			title: "You love this"
-			x: 0.0d
-			y: 3.5d
+			x: -0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["37F84238ECE73317"]
@@ -120,7 +120,7 @@
 				}
 			]
 			title: "Careful!"
-			x: -1.5d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
@@ -141,7 +141,7 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: 1.5d
 		}
 		{
@@ -157,7 +157,7 @@
 				item: "gtceu:triplatirium_235_ingot"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: 1.5d
 		}
 		{
@@ -199,8 +199,8 @@
 				item: "gtceu:triplatirium_sulfate_bucket"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 5.5d
+			x: 6.5d
+			y: 2.75d
 		}
 		{
 			dependencies: ["255D6A51593E2097"]
@@ -215,8 +215,8 @@
 				item: "gtceu:diluted_sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 7.0d
+			x: 5.0d
+			y: 4.75d
 		}
 		{
 			description: [
@@ -240,7 +240,7 @@
 			}]
 			title: "Acetic Acid Bucket"
 			x: 3.0d
-			y: 5.5d
+			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -258,7 +258,7 @@
 				item: "gtceu:processed_triplatirium_sulfate_bucket"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.5d
 			y: 7.0d
 		}
 		{
@@ -282,7 +282,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 5.0d
 			y: 7.0d
 		}
 		{
@@ -301,11 +301,11 @@
 				item: "gtceu:trisulfate_slurry_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.5d
+			x: 10.0d
+			y: 7.0d
 		}
 		{
-			dependencies: ["5ED92685D41E8E2A"]
+			dependencies: ["37F84238ECE73317"]
 			id: "02F1AB5B0139897C"
 			rewards: [{
 				id: "2B8B26BD7056FC68"
@@ -317,8 +317,8 @@
 				item: "gtceu:uv_fluid_heater"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 3.5d
+			x: -0.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -336,8 +336,8 @@
 				item: "gtceu:cleaned_trisulfate_slurry_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.5d
+			x: 10.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -355,8 +355,8 @@
 				item: "gtceu:trisulfate_solution_bucket"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.5d
+			x: 10.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["1BF9CF91864BA9B4"]
@@ -372,8 +372,8 @@
 				item: "gtceu:indium_concentrate_bucket"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -0.5d
+			x: 8.5d
+			y: 3.0d
 		}
 		{
 			id: "1BF9CF91864BA9B4"
@@ -388,8 +388,8 @@
 				item: "gtceu:raw_galena"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -0.5d
+			x: 8.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -415,8 +415,8 @@
 					type: "item"
 				}
 			]
-			x: 11.0d
-			y: 0.5d
+			x: 11.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["37F84238ECE73317"]
@@ -431,8 +431,8 @@
 				item: "gtceu:uv_chemical_bath"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 3.5d
+			x: 11.5d
+			y: 4.0d
 		}
 		{
 			id: "2549CD748DC09212"
@@ -446,8 +446,8 @@
 				item: "gtceu:uv_centrifuge"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -1.5d
+			x: 11.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -467,7 +467,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -485,8 +485,8 @@
 				item: "gtceu:californium_sulfate_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -2.0d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["13D6E79FBA4EB336"]
@@ -509,8 +509,8 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: -3.0d
+			x: 9.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -529,8 +529,8 @@
 				item: "gtceu:cleaned_californium_dust"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.0d
+			x: 7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4DA842D406AADCF8"]
@@ -565,11 +565,14 @@
 				type: "item"
 			}]
 			title: "Cleaned Californium SKIP"
-			x: 8.0d
-			y: -1.5d
+			x: 7.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["0A2A23F390EC85E8"]
+			dependencies: [
+				"0A2A23F390EC85E8"
+				"7D3E81F74BB9E774"
+			]
 			description: ["MEGA BLAST FURNACEEEE"]
 			id: "71C494C011495483"
 			rewards: [{
@@ -584,7 +587,7 @@
 				type: "item"
 			}]
 			title: "MEGA BLAST FURNACEEEE"
-			x: 2.0d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -602,7 +605,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -629,7 +632,7 @@
 					type: "item"
 				}
 				{
-					id: "28C9931AA569C698"
+					id: "70FA5920F14DE64B"
 					item: {
 						Count: 1
 						id: "trophymanager:trophy"
@@ -688,8 +691,8 @@
 					type: "item"
 				}
 			]
-			x: 0.75d
-			y: -3.5d
+			x: 1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -711,8 +714,8 @@
 				item: "gtceu:starcondenser"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 4.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["78AD69A43E7C24D4"]
@@ -728,8 +731,8 @@
 				item: "kubejs:condensed_star_matter"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.0d
+			x: 6.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["0AD942FF650E56A4"]
@@ -745,8 +748,8 @@
 				item: "gtceu:condensed_star_matter_bucket"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.5d
+			x: 4.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -766,8 +769,8 @@
 				item: "kubejs:atomic_alloy_coil_block"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -6.5d
+			x: 1.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["2B6C1EAE34701CC3"]
@@ -782,7 +785,7 @@
 				item: "gtceu:blacklight"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 1.5d
 		}
 		{
@@ -800,8 +803,8 @@
 				type: "item"
 			}]
 			title: "Sterilized Cleanroom"
-			x: 13.5d
-			y: 1.5d
+			x: 16.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["242C540B3A015A3E"]
@@ -817,8 +820,8 @@
 				item: "gtceu:collagen_dust"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 2.5d
+			x: 17.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["54FB1B0458E516C0"]
@@ -833,8 +836,8 @@
 				item: "gtceu:gelatin_mixture_bucket"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 2.5d
+			x: 17.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3930405A81697D7A"]
@@ -850,7 +853,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["721EA3223205828E"]
@@ -865,8 +868,8 @@
 				item: "gtceu:agar_dust"
 				type: "item"
 			}]
-			x: 19.0d
-			y: 2.5d
+			x: 17.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["242C540B3A015A3E"]
@@ -881,8 +884,8 @@
 				item: "gtceu:uv_brewery"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: 15.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5683F02BBA2A85D6"]
@@ -897,8 +900,8 @@
 				item: "gtceu:bacteria_bucket"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -0.5d
+			x: 15.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5683F02BBA2A85D6"]
@@ -913,7 +916,7 @@
 				item: "gtceu:biomass_bucket"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 16.0d
 			y: 0.5d
 		}
 		{
@@ -932,8 +935,8 @@
 				item: "gtceu:bacterial_sludge_bucket"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 0.5d
+			x: 15.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["26A2EF137A309977"]
@@ -948,8 +951,8 @@
 				item: "gtceu:enriched_bacterial_sludge_bucket"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 0.5d
+			x: 15.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["749A786CFB7A268F"]
@@ -965,8 +968,8 @@
 				item: "gtceu:mutagen_bucket"
 				type: "item"
 			}]
-			x: 19.0d
-			y: 0.5d
+			x: 15.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -985,8 +988,8 @@
 				item: "gtceu:raw_growth_medium_bucket"
 				type: "item"
 			}]
-			x: 20.5d
-			y: 1.5d
+			x: 16.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["09A28D0D0744C996"]
@@ -1001,8 +1004,8 @@
 				item: "gtceu:sterilized_growth_medium_bucket"
 				type: "item"
 			}]
-			x: 20.5d
-			y: -8.5d
+			x: 14.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0C9E240B28ED1A64"]
@@ -1019,8 +1022,8 @@
 				item: "gtceu:stem_cells"
 				type: "item"
 			}]
-			x: 19.0d
-			y: -10.0d
+			x: 14.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["0C9E240B28ED1A64"]
@@ -1035,8 +1038,8 @@
 				item: "gtceu:wetware_circuit_board"
 				type: "item"
 			}]
-			x: 19.0d
-			y: -7.0d
+			x: 12.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1055,11 +1058,14 @@
 				item: "gtceu:neuro_processing_unit"
 				type: "item"
 			}]
-			x: 17.5d
-			y: -8.5d
+			x: 12.5d
+			y: -7.0d
 		}
 		{
-			dependencies: ["561DB7DC68681BCF"]
+			dependencies: [
+				"561DB7DC68681BCF"
+				"479E4C946E70DBA6"
+			]
 			id: "0FF8D59811787170"
 			rewards: [{
 				id: "454217436C428268"
@@ -1071,8 +1077,8 @@
 				item: "gtceu:wetware_printed_circuit_board"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -7.0d
+			x: 10.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5A76031E7DC07646"]
@@ -1088,8 +1094,8 @@
 				item: "gtceu:wetware_processor"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -8.5d
+			x: 10.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1107,8 +1113,8 @@
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -8.5d
+			x: 10.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["41112AF81F34BC7E"]
@@ -1123,8 +1129,8 @@
 				item: "gtceu:wetware_processor_computer"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -8.5d
+			x: 8.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -1148,8 +1154,8 @@
 				type: "item"
 			}]
 			title: "The first UHV Circuit"
-			x: 9.0d
-			y: -8.5d
+			x: 8.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["63E8F8D63212D1F0"]
@@ -1167,8 +1173,8 @@
 				item: "gtceu:uv_fusion_reactor"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -7.0d
+			x: 9.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["45DBF42294A81525"]
@@ -1185,8 +1191,8 @@
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -5.0d
+			x: 10.5d
+			y: -13.0d
 		}
 		{
 			dependencies: [
@@ -1209,8 +1215,8 @@
 				type: "item"
 			}]
 			title: "Welcome to UHV!"
-			x: 9.0d
-			y: -5.0d
+			x: 7.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["5ED92685D41E8E2A"]
@@ -1227,7 +1233,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 2.5d
+			y: 2.75d
 		}
 		{
 			dependencies: ["4C15C82E0E38B70A"]
@@ -1242,8 +1248,8 @@
 				item: "gtceu:gravi_star"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -5.0d
+			x: 12.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["549EE5EB3AC023BC"]
@@ -1259,8 +1265,8 @@
 				item: "gtceu:uv_field_generator"
 				type: "item"
 			}]
-			x: 13.0d
-			y: -3.5d
+			x: 11.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["549EE5EB3AC023BC"]
@@ -1276,8 +1282,8 @@
 				item: "gtceu:uv_emitter"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -3.0d
+			x: 12.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["549EE5EB3AC023BC"]
@@ -1293,8 +1299,8 @@
 				item: "gtceu:uv_sensor"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -3.5d
+			x: 13.5d
+			y: -11.5d
 		}
 		{
 			dependencies: [
@@ -1313,8 +1319,8 @@
 				item: "gtceu:highly_advanced_soc"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -8.5d
+			x: 6.5d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -1342,8 +1348,8 @@
 				type: "item"
 			}]
 			title: "&d&nCreative Energy Cell"
-			x: 16.625d
-			y: -5.25d
+			x: 11.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4C15C82E0E38B70A"]
@@ -1360,8 +1366,8 @@
 				item: "gtceu:atomic_moonminer"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -3.5d
+			x: 10.5d
+			y: -14.5d
 		}
 		{
 			dependencies: ["193584811AABC74F"]
@@ -1384,7 +1390,129 @@
 				type: "item"
 			}]
 			x: 16.5d
-			y: -10.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2AA3A54B293FEAB0"]
+			id: "5C82E12EB82D3797"
+			rewards: [{
+				count: 5
+				id: "0329DBABBFEED0DB"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "0E59873F562ACDB1"
+				item: "gtceu:xl_radiation_chamber"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5C82E12EB82D3797"
+				"16F9E2A7BA2DC2D8"
+			]
+			id: "479E4C946E70DBA6"
+			rewards: [{
+				id: "34A89A4E7E888AEE"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "297069D54E982602"
+				item: "gtceu:xlpe_plate"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["446655321FEBF3B7"]
+			id: "16F9E2A7BA2DC2D8"
+			rewards: [{
+				id: "576063CA4A0FA77B"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "094E44D4FC0711E5"
+				item: "gtceu:thermal_treated_xlpe_plate"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["343A341F8A6384E4"]
+			id: "446655321FEBF3B7"
+			rewards: [{
+				id: "6C713F77A6859982"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Mix it with Polyethylene"
+			tasks: [{
+				id: "6B378801084CA745"
+				item: "gtceu:pe_peroxide_mixture_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5C9989822D8DF446"]
+			id: "3B18F1CD1AA2FF4F"
+			rewards: [{
+				id: "0D2E410AC4FFAE88"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Add some Oxygen"
+			tasks: [{
+				id: "198D9E35F30E3A89"
+				item: "gtceu:cumene_hydroperoxide_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3B18F1CD1AA2FF4F"]
+			id: "343A341F8A6384E4"
+			rewards: [{
+				id: "46B83EED073828CD"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Let it dehydrate"
+			tasks: [{
+				id: "6620C8BF20F0A15B"
+				item: "gtceu:dicumyl_peroxide_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6363956FABDABA66"]
+			id: "5C9989822D8DF446"
+			rewards: [{
+				id: "6EA76D62B40E8436"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Do you still producing it?"
+			tasks: [{
+				id: "2480B7569C11EADF"
+				item: "gtceu:cumene_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["Ultimate Voltage"]

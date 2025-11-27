@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:naquadah_alloy_ingot"
 	id: "5D7E352F3A1D08E4"
-	order_index: 9
+	order_index: 10
 	quest_links: [{
 		id: "20A4086025C39A4A"
 		linked_quest: "5C47B681BACC22D4"
@@ -46,12 +46,12 @@
 			id: "387BFDB3C6162B0B"
 			rewards: [
 				{
-					id: "31F31F47264BF20C"
+					id: "31F31F47264BF20C"
 					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "7EA4C0B7D5315FCA"
+					id: "5FB55A40A98B67B3"
 					item: {
 						Count: 1
 						id: "trophymanager:trophy"
@@ -92,8 +92,8 @@
 				item: "gtceu:neodymium_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.5d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -112,7 +112,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7E9A45F1598B0197"]
@@ -152,7 +152,7 @@
 			]
 			title: "Finally, ZPM"
 			x: 2.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["146B5BFAD44A9A2A"]
@@ -177,7 +177,6 @@
 			]
 			id: "60E68576221A5CB2"
 			rewards: [{
-				count: 3
 				id: "1EA6D101B2F5006A"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -208,7 +207,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -235,7 +234,7 @@
 			]
 			title: "ZPM Sensor \\& Emitter"
 			x: 2.0d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["146B5BFAD44A9A2A"]
@@ -256,7 +255,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["70DACCB6AFDEEF3B"]
@@ -288,7 +287,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7E9A45F1598B0197"]
@@ -305,7 +304,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -325,7 +324,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7E9A45F1598B0197"]
@@ -346,7 +345,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["39093B7DECDA3626"]
@@ -371,7 +370,7 @@
 				}
 			]
 			x: -2.0d
-			y: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["30FF5BC7A001CB23"]
@@ -393,7 +392,7 @@
 			}]
 			title: "Crystal chip duping!"
 			x: -2.0d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3B363F32B70E87C9"]
@@ -409,8 +408,8 @@
 				item: "gtceu:engraved_crystal_chip"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 8.0d
+			x: -4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7C0DA50CD6B347C9"]
@@ -426,8 +425,8 @@
 				item: "gtceu:crystal_cpu"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 6.5d
+			x: -4.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["539A0A7FE8D6D6A3"]
@@ -443,11 +442,14 @@
 				item: "gtceu:crystal_soc"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 5.0d
+			x: -4.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["4E60CA1366584190"]
+			dependencies: [
+				"4E60CA1366584190"
+				"63C85B6A23DA1EDE"
+			]
 			id: "0242C066E396C5DE"
 			rewards: [{
 				id: "7574558B859C20C6"
@@ -460,8 +462,8 @@
 				item: "gtceu:crystal_processor"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 3.0d
+			x: -5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0242C066E396C5DE"]
@@ -476,8 +478,8 @@
 				item: "gtceu:crystal_processor_assembly"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 3.0d
+			x: -7.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["633EB480B1D7E8F8"]
@@ -492,8 +494,8 @@
 				item: "gtceu:crystal_processor_computer"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 5.0d
+			x: -7.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["376A70FE2EC5B841"]
@@ -513,8 +515,8 @@
 				item: "gtceu:crystal_processor_mainframe"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 8.0d
+			x: -7.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5145593BA83D0FDF"]
@@ -531,8 +533,8 @@
 				type: "item"
 			}]
 			title: "Fusion at MK II"
-			x: -8.0d
-			y: 9.5d
+			x: -8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["387BFDB3C6162B0B"]
@@ -582,7 +584,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["5621B771EF98931F"]
@@ -598,7 +600,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4E3543CFABFF7C11"]
@@ -614,7 +616,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["315DB98F7E5517BF"]
@@ -630,7 +632,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1DA4A8607DC42E1A"]
@@ -653,7 +655,7 @@
 				}
 			]
 			x: -4.0d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -674,8 +676,8 @@
 				type: "item"
 			}]
 			title: "&2&nNaquadah Reactor &rMK I"
-			x: -6.5d
-			y: 13.5d
+			x: -7.0d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -698,7 +700,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 13.5d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -717,13 +719,14 @@
 				item: "gtceu:darmstadtium_ingot"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 11.0d
+			x: -10.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
 				"0ED02B931F00C2D7"
 				"5145593BA83D0FDF"
+				"16AB83AA1EB1CF1F"
 			]
 			description: [""]
 			id: "125789E676E22B37"
@@ -742,8 +745,8 @@
 				type: "item"
 			}]
 			title: "Welcome to UV"
-			x: -9.5d
-			y: 8.0d
+			x: -10.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["4A0B6FB47A53A91D"]
@@ -760,8 +763,8 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			x: -11.0d
-			y: 9.5d
+			x: -11.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["5145593BA83D0FDF"]
@@ -769,7 +772,6 @@
 			icon: "gtceu:creative_data_access_hatch"
 			id: "1DA514DF999B91D1"
 			rewards: [{
-				count: 10
 				id: "6A7422D41EEB0BF8"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -781,8 +783,8 @@
 				type: "item"
 			}]
 			title: "No one likes research, anyways."
-			x: -8.0d
-			y: 6.5d
+			x: -5.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["4E60CA1366584190"]
@@ -798,7 +800,7 @@
 				item: "gtceu:crystal_superconductor_single_wire"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.5d
 			y: 4.0d
 		}
 		{
@@ -816,7 +818,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 12.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["5CE62A179F6FE234"]
@@ -833,7 +835,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			id: "5E0A20CE6CF0CCFC"
@@ -848,7 +850,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 13.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["5145593BA83D0FDF"]
@@ -864,8 +866,283 @@
 				item: "gtceu:extreme_cracking_unit"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 13.5d
+			x: -8.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["186DAECA0C2D1A32"]
+			description: [
+				"A brand new rubber type, yey!"
+				"It's needed for coating UV-UXV tier cables, also cheaper coating for previous types of cables"
+			]
+			id: "16AB83AA1EB1CF1F"
+			rewards: [{
+				id: "4E8DAEBA5A24C58A"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Vulcanize it with some sulfur"
+			tasks: [{
+				id: "5A226C34A8B2FDAC"
+				item: "gtceu:neoprene_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5A46B628E9750597"]
+			id: "3FB3C61B4239A139"
+			rewards: [{
+				id: "27E64B32525A107B"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "The start of Neoprene Line"
+			tasks: [{
+				id: "2B262D9C08F261EA"
+				title: "Neoprene Line"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3FB3C61B4239A139"
+				"6154D19BC57DE1B1"
+				"4DC41FF522D786AC"
+			]
+			id: "3053FF7F0E9775DA"
+			rewards: [{
+				id: "7F611B7EE6DADAC4"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "130EA805A37FECDB"
+				item: "gtceu:calcium_carbide_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			id: "6154D19BC57DE1B1"
+			rewards: [{
+				id: "6AACAF802998F204"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A4DD511D71088E5"
+				item: "gtceu:coke_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			id: "4DC41FF522D786AC"
+			rewards: [{
+				id: "636799432D0C24E1"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BD5F3DED080F034"
+				item: "gtceu:quicklime_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3053FF7F0E9775DA"]
+			id: "6676F7C810C0B15E"
+			rewards: [{
+				id: "421C0CBA65FB967B"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Just add water"
+			tasks: [{
+				id: "235865BF5B3489BF"
+				item: "gtceu:acetylene_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6676F7C810C0B15E"
+				"4B01272672CD9CD6"
+			]
+			id: "0648D4DB35DD44AC"
+			rewards: [{
+				id: "2DCE98F0E1587587"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Let it cook"
+			tasks: [{
+				id: "3F2C606CE1EEFC4F"
+				item: "gtceu:vinylacetylene_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0648D4DB35DD44AC"
+				"5999852CE6B2A14A"
+			]
+			id: "74D199E0230F4F8E"
+			rewards: [{
+				id: "20CDFE6380775A60"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Add some Hydrochloric Acid"
+			tasks: [{
+				id: "0F22B3B4ACA1DFCE"
+				item: "gtceu:chloroprene_bucket"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"3298C09BC3780391"
+				"0C784D39FCE84C20"
+			]
+			id: "186DAECA0C2D1A32"
+			rewards: [{
+				id: "4436300FBA9CE854"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Add some Calcium Chloride"
+			tasks: [{
+				id: "3B59A63AC10F0996"
+				item: "gtceu:raw_neoprene_dust"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["74D199E0230F4F8E"]
+			id: "3298C09BC3780391"
+			rewards: [{
+				id: "61845A616B3D4DFD"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Water + Hydrochloric Acid"
+			tasks: [{
+				id: "70C288C29D27BD1E"
+				item: "gtceu:neoprene_latex_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["006BFAEEB6B1A0B7"]
+			id: "63C85B6A23DA1EDE"
+			rewards: [{
+				id: "05B4E01B21D46C61"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "175C3739D7B2D806"
+				item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["16AB83AA1EB1CF1F"]
+			id: "006BFAEEB6B1A0B7"
+			rewards: [{
+				id: "645188C49A9EE728"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "79FAE8DC2EAD66DD"
+				item: "gtceu:multilayer_fiber_reinforced_circuit_board"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["62CD542A8E01830A"]
+			id: "5A46B628E9750597"
+			rewards: [{
+				id: "6947468FC3F7526E"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32FC16D35AD2CCA7"
+				item: "gtceu:zpm_chemical_reactor"
+				type: "item"
+			}]
+			x: -1.25d
+			y: 2.0d
+		}
+		{
+			id: "4B01272672CD9CD6"
+			rewards: [{
+				id: "0E4F35E343BA47F7"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Catalyst"
+			tasks: [{
+				id: "756FCBB18724DC78"
+				item: "gtceu:cuprous_chloride_dust"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			id: "5999852CE6B2A14A"
+			rewards: [{
+				id: "1D47657C4EDB2D3E"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "06CE93069F30E292"
+				item: "gtceu:ammonium_chloride_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5999852CE6B2A14A"
+				"4DC41FF522D786AC"
+			]
+			id: "0C784D39FCE84C20"
+			tasks: [{
+				id: "33210BBF99641FCC"
+				item: "gtceu:calcium_chloride_dust"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 2.5d
 		}
 	]
 	subtitle: ["Zero Point Module"]
