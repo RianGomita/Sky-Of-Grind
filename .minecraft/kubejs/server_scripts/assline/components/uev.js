@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
   .duration(600)
   .EUt(GTValues.VA[GTValues.UIV])
   event.recipes.gtceu.component_assembly_line('uev_electric_pump')
-  .itemInputs('gtceu:uev_electric_motor', 'gtceu:crystal_matrix_huge_fluid_pipe', '2x gtceu:cosmic_neutronium_plate', '8x gtceu:draconium_screw', '16x gtceu:draconium_ring', 'avaritia:neutron_gear', '2x gtceu:draconium_single_cable', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
+  .itemInputs('gtceu:uev_electric_motor', 'gtceu:crystal_matrix_huge_fluid_pipe', '2x gtceu:cosmic_neutronium_plate', '8x gtceu:draconium_screw', '16x gtceu:draconium_ring', '16x gtceu:peek_ring', 'avaritia:neutron_gear', '2x gtceu:draconium_single_cable', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
   .itemOutputs('gtceu:uev_electric_pump')
   .inputFluids(
     Fluid.of('gtceu:lubricant', 1000),
@@ -39,6 +39,7 @@ ServerEvents.recipes(event => {
     Fluid.of('gtceu:lubricant', 1000),
     Fluid.of('gtceu:soldering_alloy', 576),
     Fluid.of('gtceu:draconium', 576),
+    Fluid.of('gtceu:neoprene', 3456)
   )
   .duration(600)
   .EUt(GTValues.VA[GTValues.UIV])

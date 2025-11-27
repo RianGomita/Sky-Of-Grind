@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
   .duration(600)
   .EUt(GTValues.VA[GTValues.UXV])
   event.recipes.gtceu.component_assembly_line('uxv_electric_pump')
-  .itemInputs('gtceu:uxv_electric_motor', 'gtceu:crystal_matrix_huge_fluid_pipe', '2x gtceu:pure_cosmic_matter_plate', '8x gtceu:pure_cosmic_matter_screw', '16x gtceu:pure_cosmic_matter_ring', 'gtceu:pure_cosmic_matter_gear', '2x gtceu:chaos_single_wire', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
+  .itemInputs('gtceu:uxv_electric_motor', 'gtceu:crystal_matrix_huge_fluid_pipe', '2x gtceu:pure_cosmic_matter_plate', '8x gtceu:pure_cosmic_matter_screw', '16x gtceu:pure_cosmic_matter_ring', '16x gtceu:peek_ring', 'gtceu:pure_cosmic_matter_gear', '2x gtceu:chaos_single_wire', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
   .itemOutputs('gtceu:uxv_electric_pump')
   .inputFluids(
     Fluid.of('gtceu:eternity', 576),
