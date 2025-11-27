@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('2x kubejs:resonant_processor')
     .inputFluids(
     Fluid.of('gtceu:soldering_alloy', 1152),
-    Fluid.of('gtceu:polybenzimidazole', 1152),
+    Fluid.of('gtceu:peek', 1152),
     Fluid.of('gtceu:condensed_star_matter', 8124)
     )
     .duration(200)
@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('1x kubejs:resonant_processor_assembly')
     .inputFluids(
     Fluid.of('gtceu:soldering_alloy', 1152),
-    Fluid.of('gtceu:polybenzimidazole', 1152),
+    Fluid.of('gtceu:peek', 1152),
     Fluid.of('gtceu:condensed_star_matter', 8124)
     )
     .duration(400)
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('1x kubejs:resonant_processor_computer')
     .inputFluids(
     Fluid.of('gtceu:soldering_alloy', 1152),
-    Fluid.of('gtceu:polybenzimidazole', 1152),
+    Fluid.of('gtceu:peek', 1152),
     Fluid.of('gtceu:condensed_star_matter', 8124)
     )
     .duration(800)
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     .itemOutputs('1x kubejs:resonant_processor_mainframe')
     .inputFluids(
     Fluid.of('gtceu:soldering_alloy', 1152),
-    Fluid.of('gtceu:polybenzimidazole', 1152),
+    Fluid.of('gtceu:peek', 1152),
     Fluid.of('gtceu:condensed_star_matter', 8124)
     )
     .duration(1600)
@@ -100,7 +100,7 @@ event.recipes.gtceu.circuit_assembly_line('dragon_processor')
 .itemOutputs('2x kubejs:dragon_processor')
 .inputFluids(
     Fluid.of('gtceu:neutronium', 1152),
-    Fluid.of('gtceu:polybenzimidazole', 1152),
+    Fluid.of('gtceu:hypoxylon', 1152),
     Fluid.of('gtceu:condensed_star_matter', 8124),
     Fluid.of('gtceu:naquadria', 8124)
 )
@@ -111,7 +111,7 @@ event.recipes.gtceu.circuit_assembly_line('dragon_processor_assembly')
 .itemOutputs('2x kubejs:dragon_processor_assembly')
 .inputFluids(
     Fluid.of('gtceu:neutronium', 1152),
-    Fluid.of('gtceu:polybenzimidazole', 1152),
+    Fluid.of('gtceu:hypoxylon', 1152),
     Fluid.of('gtceu:condensed_star_matter', 8124),
     Fluid.of('gtceu:naquadria', 8124)
 )
@@ -122,7 +122,7 @@ event.recipes.gtceu.circuit_assembly_line('dragon_processor_computer')
 .itemOutputs('1x kubejs:dragon_processor_computer')
 .inputFluids(
     Fluid.of('gtceu:neutronium', 1152),
-    Fluid.of('gtceu:polybenzimidazole', 1152),
+    Fluid.of('gtceu:hypoxylon', 1152),
     Fluid.of('gtceu:condensed_star_matter', 8124),
     Fluid.of('gtceu:naquadria', 8124)
 )
@@ -133,7 +133,7 @@ event.recipes.gtceu.circuit_assembly_line('dragon_processor_mainframe')
 .itemOutputs('1x kubejs:dragon_processor_mainframe')
 .inputFluids(
     Fluid.of('gtceu:neutronium', 1152),
-    Fluid.of('gtceu:polybenzimidazole', 1152),
+    Fluid.of('gtceu:hypoxylon', 1152),
     Fluid.of('gtceu:condensed_star_matter', 8124),
     Fluid.of('gtceu:naquadria', 8124)
 )
@@ -151,7 +151,7 @@ event.recipes.gtceu.circuit_assembly_line('cosmic_processor')
     Fluid.of('gtceu:eternity', 10),
     Fluid.of('gtceu:cosmic_matter', 100),
     Fluid.of('gtceu:antimatter', 8124),
-    Fluid.of('gtceu:hypoxylon', 8124)
+    Fluid.of('gtceu:meta_stable_molten_kevlar', 8124)
 )
 .duration(200)
 .EUt(GTValues.VA[GTValues.UXV])     
@@ -162,7 +162,7 @@ event.recipes.gtceu.circuit_assembly_line('cosmic_processor_assembly')
     Fluid.of('gtceu:eternity', 10),
     Fluid.of('gtceu:cosmic_matter', 100),
     Fluid.of('gtceu:antimatter', 8124),
-    Fluid.of('gtceu:hypoxylon', 8124)
+    Fluid.of('gtceu:meta_stable_molten_kevlar', 8124)
 )
 .duration(400)
 .EUt(GTValues.VA[GTValues.UXV])     
@@ -173,7 +173,7 @@ event.recipes.gtceu.circuit_assembly_line('cosmic_processor_computer')
     Fluid.of('gtceu:eternity', 10),
     Fluid.of('gtceu:cosmic_matter', 100),
     Fluid.of('gtceu:antimatter', 8124),
-    Fluid.of('gtceu:hypoxylon', 8124)
+    Fluid.of('gtceu:meta_stable_molten_kevlar', 8124)
 )
 .duration(800)
 .EUt(GTValues.VA[GTValues.UXV])   
@@ -184,7 +184,7 @@ event.recipes.gtceu.circuit_assembly_line('cosmic_processor_mainframe')
     Fluid.of('gtceu:eternity', 100),
     Fluid.of('gtceu:cosmic_matter', 1000),
     Fluid.of('gtceu:antimatter', 8124),
-    Fluid.of('gtceu:hypoxylon', 8124)
+    Fluid.of('gtceu:meta_stable_molten_kevlar', 8124)
 )
 .duration(1600)
 .EUt(GTValues.VA[GTValues.UXV])  
