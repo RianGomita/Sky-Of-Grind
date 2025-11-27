@@ -617,7 +617,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid()
         .color(0x7a64f5)
         event.create("hypoxylon")
-        .liquid().dust()
+        .liquid().ingot()
         .color(0x7c65fc)
         .element('hypoxylon')
         .iconSet('bright')
