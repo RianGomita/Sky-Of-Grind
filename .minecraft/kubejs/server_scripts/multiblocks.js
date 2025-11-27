@@ -228,7 +228,7 @@ event.recipes.gtceu.rock_crusher('red_granite')
 
 event.recipes.gtceu.rock_crusher('marble')
     .notConsumable('gtceu:marble')
-    .itemOutputs('gtceu:marblee')
+    .itemOutputs('gtceu:marble')
     .duration(16)
     .EUt(GTValues.VA[GTValues.HV]);
 
@@ -267,13 +267,13 @@ event.recipes.gtceu.atomicforge('fallen_singularity')
     .EUt(GTValues.VA[GTValues.UHV]);
 event.recipes.gtceu.atomicforge('gravitation')
     .inputFluids([Fluid.of('gtceu:condensed_star_matter', 1700)])
-    .itemInputs('64x gtceu:gravitation_engine_unit', 'gtceu:tungstensteel_fluid_cell', 'gtceu:uhv_machine_casing')
+    .itemInputs('64x gtceu:gravitation_engine_unit', 'gtceu:tungsten_steel_fluid_cell', 'gtceu:uhv_machine_casing')
     .itemOutputs('kubejs:gravitational_containment_cell')
     .duration(100)
     .EUt(GTValues.VA[GTValues.UHV]);
 event.recipes.gtceu.atomicforge('quantumeneergycapsule')
     .inputFluids([Fluid.of('gtceu:condensed_star_matter', 1700)])
-    .itemInputs('1x gtceu:gravitation_engine_unit', 'gtceu:tungstensteel_fluid_cell', 'ae2:quantum_entangled_singularity')
+    .itemInputs('1x gtceu:gravitation_engine_unit', 'gtceu:tungsten_steel_fluid_cell', 'ae2:quantum_entangled_singularity')
     .itemOutputs('kubejs:quantum_energy_capsule')
     .duration(100)
     .EUt(GTValues.VA[GTValues.UHV]);
@@ -620,6 +620,10 @@ Greenhouse('red_mushroom_boosted', 'minecraft:red_mushroom', 1000, '24x minecraf
 Greenhouse('brown_mushroom', 'minecraft:brown_mushroom', 1000, '12x minecraft:brown_mushroom', false)
 Greenhouse('brown_mushroom_boosted', 'minecraft:brown_mushroom', 1000, '24x minecraft:brown_mushroom', true)
 
+// Cocoa
+
+Greenhouse('cocoa', 'minecraft:cocoa_beans', 1000, '12x minecraft:cocoa_beans', false)
+Greenhouse('cocoa_beans_boosted', 'minecraft:cocoa_beans', 1000, '24x minecraft:cocoa_beans', true)
 
 
 
