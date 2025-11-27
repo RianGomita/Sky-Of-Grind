@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
         )
         .where('B', Predicates.blocks('gtceu:titanium_firebox_casing'))
-        .where('C', Predicates.blocks('kubejs:fusion_glass_mk2'))
+        .where('C', Predicates.blocks('kubejs:atomic_alloy_plated_glass'))
         .where('#', Predicates.any())
         .build()
     )
