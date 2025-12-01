@@ -4,21 +4,21 @@ ServerEvents.recipes(sog => {
 
 sog.recipes.gtceu.assembler('fusion_glass_mk2')
 .itemInputs('8x gtceu:resonant_essence_plate', 'gtceu:fusion_glass', '8x gtceu:draconium_plate', '16x gtceu:neutron_reflector', '256x gtceu:neutronium_foil')
-.inputFluids('gtceu:polybenzimidazole 1000')
+.inputFluids('gtceu:peek 1000')
 .itemOutputs('2x kubejs:fusion_glass_mk2')
 .cleanroom(CleanroomType.STERILE_CLEANROOM)
 .duration(400)
 .EUt(GTValues.VA[GTValues.UEV]);
 sog.recipes.gtceu.assembler('fusion_coil_mk2')
 .itemInputs('8x gtceu:resonant_essence_plate', '2x gtceu:superconducting_coil', '2x gtceu:uv_field_generator', '4x gtceu:uv_electric_pump', '8x gtceu:neutron_reflector', '4x #gtceu:circuits/uhv', '4x gtceu:crystal_matrix_huge_fluid_pipe', '4x gtceu:draconium_plate')
-.inputFluids('gtceu:polybenzimidazole 1000')
+.inputFluids('gtceu:peek 1000')
 .itemOutputs('2x kubejs:fusion_coil_mk2')
 .cleanroom(CleanroomType.STERILE_CLEANROOM)
 .duration(100)
 .EUt(GTValues.VA[GTValues.UEV]);
 sog.recipes.gtceu.assembler('fusion_casing_mk4')
 .itemInputs('2x gtceu:uev_machine_casing', 'kubejs:fusion_coil_mk2', '4x kubejs:uev_voltage_coil', '2x gtceu:uv_field_generator', '8x gtceu:neutron_reflector', '1x #gtceu:circuits/uev', '4x gtceu:crystal_matrix_huge_fluid_pipe', '12x gtceu:draconium_plate')
-.inputFluids('gtceu:polybenzimidazole 1000')
+.inputFluids('gtceu:peek 1000')
 .itemOutputs('2x kubejs:fusion_casing_mk4')
 .cleanroom(CleanroomType.STERILE_CLEANROOM)
 .duration(100)
@@ -29,8 +29,8 @@ sog.recipes.gtceu.assembly_line('fusion_reactor_mk4')
 .itemOutputs('gtceu:uev_fusion_reactor')
 .inputFluids(
   Fluid.of('gtceu:condensed_star_matter', 5950),
-  Fluid.of('gtceu:silicone_rubber', 1152),
-  Fluid.of('gtceu:styrene_butadiene_rubber', 1152),
+  Fluid.of('gtceu:peek', 1152),
+  Fluid.of('gtceu:neoprene', 1152),
   Fluid.of('gtceu:crystal_matrix', 10152),
 )
 .stationResearch(b => b.researchStack(Item.of('gtceu:uv_fusion_reactor')).EUt(GTValues.VA[GTValues.UEV]).CWUt(256)) // 

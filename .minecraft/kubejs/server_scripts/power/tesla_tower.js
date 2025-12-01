@@ -40,7 +40,7 @@ ServerEvents.recipes(sog => {
     .EUt(GTValues.VA[GTValues.ZPM]);
 
     sog.shaped(
-        'kubejs:osmiridium_pipe_casing',
+        '2x kubejs:osmiridium_pipe_casing',
         ['ABA', 'BYB', 'ABA'],
         {
             A: 'gtceu:osmiridium_plate',

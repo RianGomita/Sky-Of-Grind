@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:neutronium_ingot"
 	id: "5BDBF9992074CC3A"
-	order_index: 11
+	order_index: 12
 	quest_links: [
 		{
 			id: "35A4E45F1F9D5129"
@@ -32,7 +32,7 @@
 			id: "1ECBFC16CA338458"
 			rewards: [{
 				count: 2
-				id: "710A39AA8093D930"
+				id: "5A697AEA2B15A04B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -50,7 +50,7 @@
 			id: "18812DC1665ACB5C"
 			rewards: [{
 				count: 2
-				id: "1830A6506B5DCED0"
+				id: "73D6BC601A74C80D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -68,7 +68,7 @@
 			id: "5CA644465CF0DC97"
 			rewards: [{
 				count: 2
-				id: "6E4A2E4D803BDE26"
+				id: "18AF9ECD79987F44"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -85,13 +85,13 @@
 			id: "54696AD3E7A21F00"
 			rewards: [
 				{
-					id: "73D89EC75F09804A"
+					id: "4654C2CA90B92837"
 					item: "gtceu:wetware_processor_mainframe"
 					type: "item"
 				}
 				{
 					count: 2
-					id: "4654C2CA90B92837"
+					id: "39642337BDADBF6D"
 					item: "gtmutils:doge_coin"
 					type: "item"
 				}
@@ -129,7 +129,7 @@
 			id: "0608F68656DC2B06"
 			rewards: [{
 				count: 2
-				id: "2299DCDD49E47C36"
+				id: "19B3FE2BA36FA7CE"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -166,7 +166,7 @@
 			id: "3BCC5333E39DCDB5"
 			rewards: [{
 				count: 2
-				id: "28DA9BD77C4A6CDB"
+				id: "12F30141D2EFCFEF"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -185,16 +185,17 @@
 			rewards: [
 				{
 					count: 2
-					id: "6D8791497C04E483"
+					id: "2042EB1BF5E5993A"
 					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "3D7A0554B1AA7D1E"
+					id: "145B75444362B9D8"
 					item: {
 						Count: 1
 						id: "gtceu:neutronium_scythe"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								AoEColumn: 2
@@ -209,7 +210,7 @@
 							GT.Tool: {
 								AttackDamage: 105.0f
 								AttackSpeed: -2.5f
-								Damage: 0
+								DefaultEnchantments: [ ]
 								HarvestLevel: 6
 								MaxDamage: 196604
 								ToolSpeed: 184.0f
@@ -234,7 +235,7 @@
 			id: "0379F0315FC8B73F"
 			rewards: [{
 				count: 2
-				id: "6C8EE0CE5DD72698"
+				id: "36E4CB30B4D6D726"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -251,7 +252,7 @@
 			id: "49C64FFB6F5EABFC"
 			rewards: [{
 				count: 2
-				id: "615AFE844617D161"
+				id: "3C1F44FD064CF268"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -273,19 +274,12 @@
 			]
 			description: ["Expensive multiblock? Well... try to run this passively."]
 			id: "294190B6FB4C75D9"
-			rewards: [
-				{
-					count: 5
-					id: "5DFBDDF0D21E2C01"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-				{
-					id: "1DC193AE5CC715C1"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 6
+				id: "5DFBDDF0D21E2C01"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 2.0d
 			tasks: [{
@@ -301,7 +295,7 @@
 			id: "66C76E2ED346F471"
 			rewards: [{
 				count: 2
-				id: "19F57E5B4C1D1E5E"
+				id: "4EF4E6BA85EF9AED"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -318,7 +312,7 @@
 			id: "56EE14CC857B60B3"
 			rewards: [{
 				count: 2
-				id: "0FBB34D0ED3962D0"
+				id: "3F395B35B632E926"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -338,7 +332,7 @@
 			id: "4592FBF524AFDCBF"
 			rewards: [{
 				count: 2
-				id: "786F6361EDB8B49A"
+				id: "0BFBA04876E9FF8D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -389,7 +383,7 @@
 			id: "680A4BAD1F1289C3"
 			rewards: [{
 				count: 2
-				id: "2BF38C413339AF8C"
+				id: "26A99BA06EA28724"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -407,7 +401,7 @@
 			id: "695308CFB8D4505C"
 			rewards: [{
 				count: 2
-				id: "51DB73218BBC6627"
+				id: "5603DAFE9D50E4B2"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -427,7 +421,7 @@
 			id: "0032181B1C8FC0C2"
 			rewards: [{
 				count: 2
-				id: "32DCE7EA99177128"
+				id: "452ABA1FDC5C6B4E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -464,7 +458,7 @@
 			id: "5FBA0D688D633430"
 			rewards: [{
 				count: 2
-				id: "204BE5CC979A5F0C"
+				id: "2FDEA76DFAD2A3D0"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -624,7 +618,7 @@
 					type: "item"
 				}
 				{
-					id: "26EF829AB9342C3C"
+					id: "7A34F3F504B48E5D"
 					item: {
 						Count: 1
 						id: "trophymanager:trophy"
@@ -659,7 +653,7 @@
 			id: "6463C37333165A07"
 			rewards: [{
 				count: 2
-				id: "1B1F7F5C13C7D7C1"
+				id: "79E1CDE9F901E6F9"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -699,7 +693,7 @@
 			id: "3935F91B104E894B"
 			rewards: [{
 				count: 2
-				id: "380B8EEEACAEB257"
+				id: "0DAAA7025B28AAE7"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -709,8 +703,8 @@
 				item: "gtceu:uhv_assembler"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 9.0d
+			x: 13.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["3935F91B104E894B"]
@@ -722,7 +716,7 @@
 			id: "519D47C7E8E2B4D2"
 			rewards: [{
 				count: 2
-				id: "29FCE4CD687F05B5"
+				id: "19F37A2EB6A9615A"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -733,8 +727,8 @@
 				type: "item"
 			}]
 			title: "&4UHV Overclocking!"
-			x: 11.0d
-			y: 6.0d
+			x: 15.0d
+			y: 11.5d
 		}
 		{
 			description: ["You need the netherite space suit to survive on the new planets."]
@@ -748,7 +742,7 @@
 			id: "59EB0032735E66F6"
 			rewards: [{
 				count: 2
-				id: "671B2FC570971F28"
+				id: "3F0EB681CD2A586D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -800,8 +794,8 @@
 				}
 			]
 			title: "Netherite Space Suit"
-			x: 12.5d
-			y: 10.0d
+			x: 12.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -826,8 +820,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.75d
-			y: 8.25d
+			x: 13.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["67555843799DBDD7"]
@@ -835,7 +829,7 @@
 			id: "24E55FA9B85C8F5E"
 			rewards: [{
 				count: 2
-				id: "2B13BF45884866E1"
+				id: "27D566FA9E668D02"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -854,7 +848,7 @@
 			id: "09C67452DFDDA7FD"
 			rewards: [{
 				count: 2
-				id: "5190132044C2D36A"
+				id: "3FDBA04AA87D05BE"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -872,7 +866,7 @@
 			id: "4D28528655B1AF54"
 			rewards: [{
 				count: 2
-				id: "1EA7EFDFB1A830C7"
+				id: "2330A3D3DC37002C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -891,7 +885,7 @@
 			id: "31381DE18B522428"
 			rewards: [{
 				count: 2
-				id: "79FA7AE01B0A7627"
+				id: "06C6D89B1C31314E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -908,7 +902,7 @@
 			id: "44ECE182566B19C6"
 			rewards: [{
 				count: 2
-				id: "313B1A8E97352301"
+				id: "5C5780C97FDC2B5F"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -926,7 +920,7 @@
 			id: "686884CB55C62494"
 			rewards: [{
 				count: 2
-				id: "765A001172BF4B0C"
+				id: "20C7D62C1BB7E174"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -946,7 +940,7 @@
 			id: "1817E22F002CB954"
 			rewards: [{
 				count: 2
-				id: "624285092C57CDCE"
+				id: "42FDE081F26CE1B0"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -968,7 +962,7 @@
 			id: "197C85F8DEFB91AE"
 			rewards: [{
 				count: 2
-				id: "26D97DE690A9B275"
+				id: "78FBDE22F1C42509"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -990,7 +984,7 @@
 			id: "06100AEBEB6F9616"
 			rewards: [{
 				count: 2
-				id: "10823652CBAB472F"
+				id: "2B51B185477852C3"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1007,7 +1001,7 @@
 			id: "3ADFF25145B40563"
 			rewards: [{
 				count: 2
-				id: "6A154E4728B65ED0"
+				id: "42A65E4B0BE0E711"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1025,18 +1019,12 @@
 				"3ADFF25145B40563"
 			]
 			id: "4AD46A58DA77BD53"
-			rewards: [
-				{
-					id: "707766EBBF9961F0"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-				{
-					id: "3C0480AACCACBC42"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "2CC86DCFDBA99111"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1D3EA51B102E8C21"
 				item: "kubejs:quantum_casing"
@@ -1060,7 +1048,7 @@
 					type: "item"
 				}
 				{
-					id: "6579D96D880921CA"
+					id: "77BF641A94F196DC"
 					item: {
 						Count: 1
 						id: "trophymanager:trophy"
@@ -1087,8 +1075,8 @@
 				item: "gtceu:quantum_space_projector"
 				type: "item"
 			}]
-			x: 19.5d
-			y: 1.5d
+			x: 20.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["57AE0E9F60EE1824"]
@@ -1102,7 +1090,7 @@
 			id: "6C81DC0AF93DC884"
 			rewards: [{
 				count: 2
-				id: "382EA203A23D6D9D"
+				id: "5897FBD2E67F64D0"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1112,8 +1100,8 @@
 				item: "kubejs:drilling_projector_module"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 4.0d
+			x: 18.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["57AE0E9F60EE1824"]
@@ -1127,7 +1115,7 @@
 			id: "3EF119D2D7764D6D"
 			rewards: [{
 				count: 2
-				id: "600EC8E8D06CF3BF"
+				id: "30277F530F9FFAEA"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1137,8 +1125,8 @@
 				item: "kubejs:pumping_projector_module"
 				type: "item"
 			}]
-			x: 19.5d
-			y: 4.5d
+			x: 21.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["57AE0E9F60EE1824"]
@@ -1150,7 +1138,7 @@
 			id: "2C8CCBB849A085C1"
 			rewards: [{
 				count: 2
-				id: "6A9471CDC472D821"
+				id: "3C41DF7DD4EA72FF"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1160,8 +1148,8 @@
 				item: "kubejs:cosmic_projector_module"
 				type: "item"
 			}]
-			x: 21.0d
-			y: 4.0d
+			x: 20.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["57AE0E9F60EE1824"]
@@ -1173,7 +1161,7 @@
 			id: "0947210E8A69DB84"
 			rewards: [{
 				count: 2
-				id: "4DC0953123CD6ABF"
+				id: "2FBA8E5FC1A72B29"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1183,8 +1171,8 @@
 				item: "kubejs:fusion_projector_module"
 				type: "item"
 			}]
-			x: 22.0d
-			y: 1.5d
+			x: 20.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1193,7 +1181,6 @@
 			]
 			id: "253E0D6D2F38DB28"
 			rewards: [{
-				count: 2
 				id: "6AACE77D0AB7F2D0"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1204,8 +1191,8 @@
 				item: "avaritia:neutron_ingot"
 				type: "item"
 			}]
-			x: 23.5d
-			y: 4.0d
+			x: 23.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1215,7 +1202,7 @@
 			id: "79325F05275A6041"
 			rewards: [{
 				count: 2
-				id: "015CB7441EE74682"
+				id: "561A4185C278EE0E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1224,7 +1211,7 @@
 				item: "kubejs:resonant_essence_coil_block"
 				type: "item"
 			}]
-			x: 23.5d
+			x: 23.0d
 			y: -1.5d
 		}
 		{
@@ -1251,15 +1238,15 @@
 				item: "gtceu:uev_machine_casing"
 				type: "item"
 			}]
-			x: 23.5d
-			y: 8.5d
+			x: 23.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["687F155B59B5FC1C"]
 			id: "195B7677D3E2F874"
 			rewards: [{
 				count: 2
-				id: "4713A3FB5523118F"
+				id: "3C64A75D8B2C9121"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1279,7 +1266,7 @@
 			id: "1F87E3C3B7E7B86F"
 			rewards: [{
 				count: 2
-				id: "0AF123F8F82FBA0A"
+				id: "36DA7808F19B3AD6"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1296,7 +1283,7 @@
 			id: "10390BE89A74376A"
 			rewards: [{
 				count: 2
-				id: "055F71AD01DF4304"
+				id: "2090F87C48788DDE"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1307,15 +1294,18 @@
 				item: "kubejs:highly_resonative_printed_circuit_board"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 15.25d
 			y: 14.5d
 		}
 		{
-			dependencies: ["10390BE89A74376A"]
+			dependencies: [
+				"10390BE89A74376A"
+				"7037B688BF03D15D"
+			]
 			id: "77C63918DA40DB6D"
 			rewards: [{
 				count: 2
-				id: "1D514E8800692DF1"
+				id: "186AB5CA08F3C697"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1325,7 +1315,7 @@
 				item: "kubejs:resonant_processor"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 16.5d
 			y: 13.5d
 		}
 		{
@@ -1333,7 +1323,7 @@
 			id: "0000EB23A4DB32DF"
 			rewards: [{
 				count: 2
-				id: "5BB0392A7AAB61E3"
+				id: "3F23B7BDB5EB5BE0"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1343,7 +1333,7 @@
 				item: "kubejs:resonant_processor_assembly"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 18.0d
 			y: 13.5d
 		}
 		{
@@ -1351,7 +1341,7 @@
 			id: "49CC37DA397CA3B3"
 			rewards: [{
 				count: 2
-				id: "3FB20264BF88B475"
+				id: "2CE8876A3D3D45A7"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1362,7 +1352,7 @@
 				item: "kubejs:resonant_processor_computer"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 20.0d
 			y: 13.5d
 		}
 		{
@@ -1384,15 +1374,14 @@
 				item: "kubejs:resonant_processor_mainframe"
 				type: "item"
 			}]
-			x: 23.5d
-			y: 13.5d
+			x: 20.0d
+			y: 10.0d
 		}
 		{
 			can_repeat: false
 			dependencies: ["2C8CCBB849A085C1"]
 			id: "5DBF28E106095546"
 			rewards: [{
-				count: 2
 				id: "32B6EDF0ECBAD83F"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1403,15 +1392,15 @@
 				type: "item"
 			}]
 			title: "Highly-Resonative SoC"
-			x: 21.0d
-			y: 11.0d
+			x: 20.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["0608F68656DC2B06"]
 			id: "1E4509569E3F85B0"
 			rewards: [{
 				count: 2
-				id: "7D0BD986AEC82F49"
+				id: "797A8D491E85504C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1433,7 +1422,7 @@
 			id: "7104D17C80C2DF74"
 			rewards: [{
 				count: 2
-				id: "2CC041B7E87E9262"
+				id: "55D2CAAD1563900C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1468,7 +1457,7 @@
 			id: "07978106CFD0D70C"
 			rewards: [{
 				count: 10
-				id: "0EB069B067195856"
+				id: "7C8CDEDFECB545B2"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
@@ -1526,6 +1515,11 @@
 			]
 			description: ["With the new and unlocked power cells you can now create hatches that defy physics, I mean, wireless energy? Basically type 7."]
 			id: "274185FF00BD23BF"
+			rewards: [{
+				id: "1CECFA902980BD38"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
 			subtitle: "WIRELESS!"
 			tasks: [
 				{
@@ -1557,6 +1551,77 @@
 			}]
 			x: 8.5d
 			y: 7.0d
+		}
+		{
+			dependencies: [
+				"174D849A1E84B0F7"
+				"2D6D6398EC8C4C3D"
+				"519D47C7E8E2B4D2"
+			]
+			id: "18EBF47D7929D5B0"
+			rewards: [{
+				count: 5
+				id: "514C8E87B16FF1A7"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "74C12A14F55A0AA2"
+				item: "gtceu:carbon_nanotubes_dust"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 10.0d
+		}
+		{
+			id: "2D6D6398EC8C4C3D"
+			tasks: [{
+				id: "6AB548F5AF5B2E69"
+				title: "Check \"Chemical Lines\" tab"
+				type: "checkmark"
+			}]
+			x: 16.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"519D47C7E8E2B4D2"
+				"2D6D6398EC8C4C3D"
+			]
+			id: "7037B688BF03D15D"
+			rewards: [{
+				count: 5
+				id: "2F71D3F1E5B14133"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "362C08D795B1F5DC"
+				item: "gtceu:peek_bucket"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"7037B688BF03D15D"
+				"1F43AADC6C229EAF"
+			]
+			id: "34CFD449A160E968"
+			rewards: [{
+				count: 16
+				id: "0A3734BC7BC1A11F"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "05FBBC0086FBCF54"
+				item: "gtceu:large_polymerization_chamber"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 11.5d
 		}
 	]
 	subtitle: ["Ultra High Voltage"]

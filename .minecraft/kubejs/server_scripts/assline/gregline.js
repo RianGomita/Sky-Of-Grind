@@ -103,7 +103,7 @@ event.recipes.gtceu.assembly_line('component_assembly_line')
 .itemOutputs('gtceu:component_assembly_line')
 .inputFluids(
 Fluid.of('gtceu:soldering_alloy', 1152),
-Fluid.of('gtceu:polybenzimidazole', 1152),
+Fluid.of('gtceu:peek', 1152),
 Fluid.of('gtceu:condensed_star_matter', 8124)
 )
 .duration(500)
@@ -113,7 +113,7 @@ event.recipes.gtceu.assembly_line('circuit_assembly_line')
 .itemOutputs('gtceu:circuit_assembly_line')
 .inputFluids(
 Fluid.of('gtceu:soldering_alloy', 1152),
-Fluid.of('gtceu:polybenzimidazole', 1152),
+Fluid.of('gtceu:peek', 1152),
 Fluid.of('gtceu:condensed_star_matter', 8124)
 )
 .duration(500)
@@ -125,7 +125,7 @@ event.recipes.gtceu.assembly_line('quantum_station')
 .itemOutputs('gtceu:quantum_station')
 .inputFluids(
 Fluid.of('gtceu:soldering_alloy', 1152),
-Fluid.of('gtceu:polybenzimidazole', 1152),
+Fluid.of('gtceu:peek', 1152),
 Fluid.of('gtceu:condensed_star_matter', 8124)
 )
 .duration(500)

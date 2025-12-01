@@ -17,12 +17,13 @@ ServerEvents.recipes(event => {
   .duration(600)
   .EUt(GTValues.VA[GTValues.UIV])
   event.recipes.gtceu.component_assembly_line('uiv_electric_pump')
-  .itemInputs('gtceu:uiv_electric_motor', 'gtceu:crystal_matrix_huge_fluid_pipe', '2x gtceu:awakened_draconium_plate', '8x gtceu:awakened_draconium_screw', '16x gtceu:awakened_draconium_ring', 'gtceu:awakened_draconium_gear', '2x gtceu:awakened_draconium_single_cable', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
+  .itemInputs('gtceu:uiv_electric_motor', 'gtceu:crystal_matrix_huge_fluid_pipe', '2x gtceu:awakened_draconium_plate', '8x gtceu:awakened_draconium_screw', '16x gtceu:awakened_draconium_ring', '16x gtceu:peek_ring', 'gtceu:awakened_draconium_gear', '2x gtceu:awakened_draconium_single_cable', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
   .itemOutputs('gtceu:uiv_electric_pump')
   .inputFluids(
     Fluid.of('gtceu:stropharic_hypoxylon', 576),
     Fluid.of('gtceu:antimatter', 576),
     Fluid.of('gtceu:draconium', 576),
+    
   )
   .duration(600)
   .EUt(GTValues.VA[GTValues.UIV])
@@ -39,6 +40,7 @@ ServerEvents.recipes(event => {
     Fluid.of('gtceu:stropharic_hypoxylon', 576),
     Fluid.of('gtceu:antimatter', 576),
     Fluid.of('gtceu:draconium', 576),
+    Fluid.of('gtceu:neoprene', 3456)
   )
   .duration(600)
   .EUt(GTValues.VA[GTValues.UIV])

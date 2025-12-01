@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('evaporation_pool')
         .category('drack')
         .setEUIO('in')
-        .setMaxIOSize(1, 2, 1, 2)
+        .setMaxIOSize(1, 2, 2, 2)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
 })

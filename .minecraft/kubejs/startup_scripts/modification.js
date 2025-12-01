@@ -6,14 +6,9 @@
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     GTRecipeTypes.BLAST_RECIPES.setMaxIOSize(3, 3, 4, 1)
-    })
-
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    GTRecipeTypes.CHEMICAL_BATH_RECIPES.setMaxIOSize(2, 6, 1, 1)
     GTRecipeTypes.ELECTROMAGNETIC_SEPARATOR_RECIPES.setMaxIOSize(1, 7, 0, 0)
     })
-
-
-
 
 // Create New Begginings Code
 

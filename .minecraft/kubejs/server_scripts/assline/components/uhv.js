@@ -20,7 +20,7 @@ Fluid.of('gtceu:naquadria', 576),
 .duration(600)
 .EUt(GTValues.VA[GTValues.UV])
 event.recipes.gtceu.assembly_line('uhv_pump')
-.itemInputs('gtceu:uhv_electric_motor', 'gtceu:crystal_matrix_large_fluid_pipe', '2x gtceu:neutronium_plate', '8x gtceu:neutronium_screw', '16x gtceu:silicone_rubber_ring', 'gtceu:neutronium_gear', '2x gtceu:europium_single_cable', 'avaritia:eternal_singularity')
+.itemInputs('gtceu:uhv_electric_motor', 'gtceu:crystal_matrix_large_fluid_pipe', '2x gtceu:neutronium_plate', '8x gtceu:neutronium_screw', '16x gtceu:neoprene_ring', 'gtceu:neutronium_gear', '2x gtceu:europium_single_cable', 'avaritia:eternal_singularity')
 .itemOutputs('gtceu:uhv_electric_pump')
 .inputFluids(
 Fluid.of('gtceu:lubricant', 1000),
@@ -43,6 +43,7 @@ event.recipes.gtceu.assembly_line('uhv_conveyor')
 Fluid.of('gtceu:lubricant', 1000),
 Fluid.of('gtceu:soldering_alloy', 576),
 Fluid.of('gtceu:naquadria', 576),
+Fluid.of('gtceu:neoprene', 3456)
 )
 .stationResearch(b => b.researchStack(Item.of('gtceu:uv_conveyor_module')).EUt(GTValues.VA[GTValues.UHV]).CWUt(64)) // 
 .duration(600)
