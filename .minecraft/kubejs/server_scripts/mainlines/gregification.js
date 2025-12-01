@@ -225,14 +225,14 @@ ServerEvents.recipes(sog => {
     sog.recipes.gtceu.assembler('uivmachinecasing')
         .itemInputs('8x gtceu:draconium_plate', '1x kubejs:draconium_heavy_plating')
         .itemOutputs('gtceu:uiv_machine_casing')
-        .duration(100)
         .EUt(32)
+        .duration(100)
         .circuit(8)
         sog.recipes.gtceu.assembler('uxvmachinecasing')
         .itemInputs('8x gtceu:chaos_plate', 'kubejs:awakened_draconium_heavy_plating')
         .itemOutputs('gtceu:uxv_machine_casing')
-        .duration(100)
         .EUt(32)
+        .duration(100)
         .circuit(8)
         sog.recipes.gtceu.assembler('dimensional_pumping_module')
         .itemInputs('8x kubejs:space_time_heavy_plating', 'gtceu:uiv_fluid_regulator')
@@ -242,20 +242,44 @@ ServerEvents.recipes(sog => {
         sog.recipes.gtceu.assembler('trascendental_space_time_casing')
         .itemInputs('16x kubejs:space_time_heavy_plating')
         .itemOutputs('kubejs:trascendental_space_time_casing')
-        .duration(100)
         .EUt(32)
+        .duration(100)
         .circuit(6)
         sog.recipes.gtceu.assembler('high_power_casing_plant')
         .itemInputs('8x gtceu:osmiridium_plate', 'gtceu:secure_maceration_casing')
         .itemOutputs('kubejs:high_power_casing')
-        .duration(100)
         .EUt((GTValues.VA[GTValues.IV]))
+        .duration(100)
         .circuit(8)
         sog.recipes.gtceu.assembler('high_power_crushing_wheels')
         .itemInputs('8x gtceu:rhodium_plated_palladium_plate', 'kubejs:high_power_casing', 'gtceu:iv_electric_motor')
         .itemOutputs('kubejs:high_power_crushing_wheels')
-        .duration(100)
         .EUt((GTValues.VA[GTValues.IV]))
+        .duration(100)
+        .circuit(8)
+        sog.recipes.gtceu.assembler('semi_stable_casing')
+        .itemInputs('8x gtceu:pure_cosmic_matter_plate', '8x #gtceu:circuits/uev', '2x #gtceu:circuits/uiv')
+        .itemOutputs('kubejs:semi_stable_casing')
+        .EUt((GTValues.VA[GTValues.UIV]))
+        .duration(100)
+        .circuit(8)
+        sog.recipes.gtceu.assembler('cryogenic_casing')
+        .itemInputs('8x gtceu:cosmic_iridium_plate', '8x #gtceu:circuits/uv', '2x #gtceu:circuits/uhv')
+        .itemOutputs('kubejs:cryogenic_casing')
+        .EUt((GTValues.VA[GTValues.UEV]))
+        .duration(100)
+        .circuit(8)
+        sog.recipes.gtceu.assembler('kevlar_casing')
+        .itemInputs('8x gtceu:kevlar_plate', '8x #gtceu:circuits/uhv', '2x #gtceu:circuits/uev')
+        .itemOutputs('kubejs:kevlar_casing')
+        .EUt((GTValues.VA[GTValues.UEV]))
+        .duration(100)
+        .circuit(8)
+        sog.recipes.gtceu.assembler('intake_kevlar_hatch')
+        .itemInputs('8x gtceu:kevlar_plate', 'kubejs:ultimate_engine_intake_casing', 'gtceu:uiv_electric_motor')
+        .itemOutputs('kubejs:advanced_air_intake_hatch')
+        .EUt((GTValues.VA[GTValues.UEV]))
+        .duration(100)
         .circuit(8)
     sog.recipes.gtceu.alloy_smelter('soulsand')
         .itemInputs('8x minecraft:ink_sac', '16x minecraft:sand')
@@ -917,7 +941,7 @@ ServerEvents.recipes(sog => {
                 'gtceu:reinforced_atomicforge',
                 ['ABA', 'CZC', 'CHC'],
                 {
-                    A: 'gtceu:dense_infinity_plate',
+                    A: 'gtceu:dense_zylon_plate',
                     B: 'gtceu:atomicforge',
                     Z: '#gtceu:circuits/uxv',
                     C: 'gtceu:infinity_screw',
@@ -1706,15 +1730,13 @@ sog.recipes.gtceu.assembler('sterile_cleaning_maintenance_hatch')
 sog.recipes.smelting('draconicevolution:draconium_ingot','gtceu:raw_draconium');
 sog.recipes.smelting('draconicevolution:awakened_draconium_ingot','gtceu:raw_awakened_draconium');
 
-    
 sog.recipes.gtceu.electromagnetic_separator('rare_earth')
     .itemInputs('6x gtceu:rare_earth_dust')
     .itemOutputs('gtceu:cadmium_dust', 'gtceu:neodymium_dust', 'gtceu:samarium_dust' ,'gtceu:cerium_dust', 'gtceu:yttrium_dust', 'gtceu:lanthanum_dust', 'gtceu:small_europium_dust')
     .duration(20)
     .EUt(GTValues.VA[GTValues.UHV]);
 
-    
-sog.recipes.gtceu.large_chemical_reactor('multilayer_fiber_reinforced_circuit_board_neoprene')
+    sog.recipes.gtceu.large_chemical_reactor('multilayer_fiber_reinforced_circuit_board_neoprene')
     .itemInputs('2x gtceu:fiber_reinforced_circuit_board', '8x gtceu:palladium_foil', '4x gtceu:neoprene_foil')
     .inputFluids('gtceu:sulfuric_acid 500')
     .itemOutputs('gtceu:multilayer_fiber_reinforced_circuit_board')

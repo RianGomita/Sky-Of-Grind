@@ -744,7 +744,6 @@
 			]
 			icon_scale: 2.0d
 			id: "721022894AAF65E9"
-			min_required_dependencies: 1
 			rewards: [
 				{
 					count: 2
@@ -768,7 +767,7 @@
 				type: "item"
 			}]
 			title: "The Door to Heaven"
-			x: 0.0d
+			x: 1.0d
 			y: 19.5d
 		}
 		{
@@ -1341,8 +1340,8 @@
 			dependencies: ["217A679A9D94A330"]
 			id: "543C51F4F4FE91C8"
 			tasks: [{
-				id: "75DACA3F441567B5"
-				item: "kubejs:space_time_processor_mainframe"
+				id: "6B36C040F992DC18"
+				item: "kubejs:chrono_infinity_processor_mainframe"
 				type: "item"
 			}]
 			x: 18.0d
@@ -1352,8 +1351,8 @@
 			dependencies: ["54E63DCC9E5E1003"]
 			id: "217A679A9D94A330"
 			tasks: [{
-				id: "3A3876AFC08C240B"
-				item: "kubejs:space_time_processor_computer"
+				id: "6945A730CD82EAA3"
+				item: "kubejs:chrono_infinity_processor_computer"
 				type: "item"
 			}]
 			x: 18.0d
@@ -1363,8 +1362,8 @@
 			dependencies: ["53887076018E20EB"]
 			id: "54E63DCC9E5E1003"
 			tasks: [{
-				id: "2A0577DE3BB5C3D0"
-				item: "kubejs:space_time_processor_assembly"
+				id: "4D8A78A065CBFC73"
+				item: "kubejs:chrono_infinity_processor_assembly"
 				type: "item"
 			}]
 			x: 18.0d
@@ -1374,8 +1373,8 @@
 			dependencies: ["2A0B2D9208AA3F3D"]
 			id: "53887076018E20EB"
 			tasks: [{
-				id: "38271EA95CD9793A"
-				item: "kubejs:space_time_processor"
+				id: "5C57AFAC148EBD53"
+				item: "kubejs:chrono_infinity_processor"
 				type: "item"
 			}]
 			x: 18.0d

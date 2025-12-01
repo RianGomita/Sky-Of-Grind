@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:aluminium_ingot"
 	id: "3E116EB5F1FFCA1D"
-	order_index: 4
+	order_index: 5
 	quest_links: [{
 		id: "7ECFCA5F342015CD"
 		linked_quest: "3E90FC6B797D4D2B"
@@ -203,7 +203,7 @@
 			}
 			id: "53E330337358D8DC"
 			rewards: [{
-				id: "12E0E9CD8A8A734F"
+				id: "5FF87D61A3CDB454"
 				item: {
 					Count: 1
 					id: "hostilenetworks:data_model"
@@ -776,13 +776,13 @@
 			id: "47F6AD489D5C7003"
 			rewards: [
 				{
-					id: "03F563B018534E52"
-					item: "gtceu:orange_glass_lens"
+					id: "3333C3A61E4D0C49"
+					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "3333C3A61E4D0C49"
-					item: "gtmutils:doge_coin"
+					id: "16C9DACF794301C9"
+					item: "gtceu:orange_glass_lens"
 					type: "item"
 				}
 			]
@@ -947,7 +947,6 @@
 			]
 			id: "1AD136F25B306F75"
 			rewards: [{
-				count: 5
 				id: "251B4AC4AEA4FF10"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1048,7 +1047,12 @@
 			optional: true
 			rewards: [
 				{
-					id: "7E4FE85146C00A89"
+					id: "5532941BCB9F7563"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "2C97F3020C21D43F"
 					item: {
 						Count: 1
 						id: "gtceu:prospector.luv"
@@ -1056,12 +1060,6 @@
 							Charge: 1000000000L
 						}
 					}
-					type: "item"
-				}
-				{
-					count: 5
-					id: "5532941BCB9F7563"
-					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 			]
@@ -1096,21 +1094,17 @@
 			id: "26C62836B41D0095"
 			rewards: [
 				{
-					count: 5
 					id: "03EDBEB68F72C4CD"
 					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "64FB6F55FF9BAF2E"
+					id: "6B34996D24436031"
 					item: {
 						Count: 1
 						id: "trophymanager:trophy"
 						tag: {
-							BaseBlock: "minecraft:smooth_stone_slab"
-							Name: "Polyethylene!"
-							OffsetY: 0.55d
-							Scale: 0.75d
+							Name: "Polyethylene Trophy"
 							TrophyItem: {
 								Count: 1.0d
 								id: "gtceu:polyethylene_foil"
@@ -1190,7 +1184,6 @@
 			]
 			id: "41D39163C8154F7C"
 			rewards: [{
-				count: 5
 				id: "38ABC2EA42ED13AA"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1214,7 +1207,6 @@
 			description: ["Welcome to HV"]
 			id: "331055377E5032C8"
 			rewards: [{
-				count: 2
 				id: "06AE87EC7C86B220"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1244,20 +1236,27 @@
 			}
 			id: "733971C42894950A"
 			optional: true
-			rewards: [{
-				id: "6F82D29A18DDD0B8"
-				item: {
-					Count: 1
-					id: "hostilenetworks:data_model"
-					tag: {
-						data_model: {
-							data: 6
-							id: "hostilenetworks:slime"
+			rewards: [
+				{
+					id: "6B3EE059B9EA81FB"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					id: "47EFCFA41B8E16E0"
+					item: {
+						Count: 1
+						id: "hostilenetworks:data_model"
+						tag: {
+							data_model: {
+								data: 6
+								id: "hostilenetworks:slime"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -1322,7 +1321,6 @@
 			]
 			id: "5DD037064DB51B4D"
 			rewards: [{
-				count: 2
 				id: "058A03EA631F5F36"
 				item: "gtmutils:doge_coin"
 				type: "item"

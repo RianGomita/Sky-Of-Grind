@@ -122,8 +122,8 @@ event.recipes.gtceu.circuit_assembly_line('dragon_processor_computer')
 .itemOutputs('1x kubejs:dragon_processor_computer')
 .inputFluids(
     Fluid.of('gtceu:neutronium', 1152),
-    Fluid.of('gtceu:hypoxylon', 1152),
-    Fluid.of('gtceu:condensed_star_matter', 8124),
+    Fluid.of('gtceu:polybenzimidazole', 1152),
+    Fluid.of('gtceu:hypoxylon', 8124),
     Fluid.of('gtceu:naquadria', 8124)
 )
 .duration(800)
@@ -189,51 +189,5 @@ event.recipes.gtceu.circuit_assembly_line('cosmic_processor_mainframe')
 .duration(1600)
 .EUt(GTValues.VA[GTValues.UXV])  
 
-// M A X CIRCUITS
-
-event.recipes.gtceu.circuit_assembly_line('dimensional_processor')
-.itemInputs('2x kubejs:cosmic_processor', '64x gtceu:fine_pure_cosmic_matter_wire', '64x kubejs:complex_smd_capacitor', '64x gtceu:fine_pure_cosmic_matter_wire', '2x gtceu:dense_infinity_plate', 'kubejs:extremely_advanced_soc', 'kubejs:quantum_data_module', '32x avaritia:eternal_singularity')
-.itemOutputs('1x kubejs:dimensional_processor')
-.inputFluids(
-    Fluid.of('gtceu:eternity', 64000),
-    Fluid.of('gtceu:cosmic_matter', 800),
-    Fluid.of('gtceu:universium', 16248),
-    Fluid.of('gtceu:stellar_matter_plasma', 16248)
-)
-.duration(200)
-.EUt(GTValues.VA[GTValues.OpV])     
-event.recipes.gtceu.circuit_assembly_line('dimensional_processor_assembly')
-.itemInputs('2x kubejs:dimensional_printed_circuit_board', '4x kubejs:dimensional_processor', '64x gtceu:fine_pure_cosmic_matter_wire', '64x gtceu:infinity_bolt', '64x kubejs:complex_smd_capacitor', '16x gtceu:fine_pure_cosmic_matter_wire', 'kubejs:extremely_advanced_soc', 'kubejs:eternity_heavy_plating', 'kubejs:quantum_data_module')
-.itemOutputs('1x kubejs:dimensional_processor_assembly')
-.inputFluids(
-    Fluid.of('gtceu:eternity', 64000),
-    Fluid.of('gtceu:cosmic_matter', 800),
-    Fluid.of('gtceu:universium', 16248),
-    Fluid.of('gtceu:stellar_matter_plasma', 16248)
-)
-.duration(400)
-.EUt(GTValues.VA[GTValues.OpV])     
-event.recipes.gtceu.circuit_assembly_line('dimensional_processor_computer')
-.itemInputs('2x kubejs:dimensional_processor_assembly', 'kubejs:dimensional_printed_circuit_board', '64x gtceu:fine_pure_cosmic_matter_wire', '64x gtceu:infinity_bolt', '64x gtceu:infinity_bolt', '64x kubejs:complex_smd_capacitor', '24x gtceu:fine_pure_cosmic_matter_wire', 'kubejs:extremely_advanced_soc', '7x gtceu:dense_infinity_plate', '4x kubejs:eternity_heavy_plating', 'kubejs:quantum_data_module')
-.itemOutputs('1x kubejs:dimensional_processor_computer')
-.inputFluids(
-    Fluid.of('gtceu:eternity', 64000),
-    Fluid.of('gtceu:cosmic_matter', 800),
-    Fluid.of('gtceu:universium', 16248),
-    Fluid.of('gtceu:stellar_matter_plasma', 16248)
-)
-.duration(800)
-.EUt(GTValues.VA[GTValues.OpV])   
-event.recipes.gtceu.circuit_assembly_line('dimensional_processor_mainframe')
-.itemInputs('4x gtceu:infinity_frame', '2x kubejs:dimensional_processor_computer', '16x kubejs:infinity_heavy_plating', '64x gtceu:infinity_bolt', '64x gtceu:infinity_bolt', '64x gtceu:infinity_bolt', '64x kubejs:complex_smd_capacitor', 'kubejs:extremely_advanced_soc', '4x kubejs:dimensional_printed_circuit_board', '4x kubejs:eternity_heavy_plating', '4x avaritia:eternal_singularity', '2x gtceu:infinity_gear', '64x gtceu:infinity_screw', 'kubejs:quantum_data_module')
-.itemOutputs('1x kubejs:dimensional_processor_mainframe')
-.inputFluids(
-    Fluid.of('gtceu:eternity', 64000),
-    Fluid.of('gtceu:cosmic_matter', 16000),
-    Fluid.of('gtceu:universium', 16248),
-    Fluid.of('gtceu:stellar_matter_plasma', 16248)
-)
-.duration(1600)
-.EUt(GTValues.VA[GTValues.OpV])  
 
 })

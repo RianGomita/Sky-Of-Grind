@@ -1,20 +1,100 @@
 
 #Crazy AE2 Addons - Config
 [general]
-	#Enables The functionality of pattern providers to set the circuit of the GregTech's machine its pushing to
-	enableCPP = true
-	#Enables Spawner Controller to work also on peacefull mode
-	enablePeacefullSpawner = false
-	#Enables/disables the entity ticker
-	enableEntityTicker = false
-	#You can set the power cost multiplayer for the entity ticker here
-	#Range: 0 ~ 4096
-	EntityTickerCost = 256
-	#Blocks on which entity ticker should not work
-	EntityTickerBlackList = []
-	#If it should be possible to route p2p tunnels through a wormhole tunnel
-	nestedP2Pwormhole = false
-	#Amount of rows for patterns stored by the Pattern management unit
-	#Range: 8 ~ 1024
-	PUnitCapacity = 216
+
+	[general.Features]
+		#Enable Pattern Providers to set GregTech machine circuit when pushing
+		enableCPP = true
+		#Allow Spawner Controller to work in Peaceful mode
+		enablePeacefullSpawner = true
+		#Enable/disable Entity Ticker
+		enableEntityTicker = true
+		#Power cost multiplier for Entity Ticker
+		#Range: > 0
+		EntityTickerCost = 512
+		#Blocks on which Entity Ticker should not work
+		EntityTickerBlackList = []
+		#Allow routing P2P tunnels through a Wormhole tunnel
+		nestedP2Pwormhole = false
+
+	[general.Machines]
+		#XP cost multiplier for Auto Enchanter
+		#Range: 0 ~ 100
+		autoEnchanterCost = 10
+		#Allow Energy Exporter part to export EU if a GregTech battery is inserted
+		energyExporterGT = false
+
+	[general.Autobuilder]
+		#FE cost multiplier for Autobuilder
+		#Range: 0 ~ 100
+		autobuilderCost = 5
+		#Ticks to wait after each broken block
+		#Range: 0 ~ 10
+		autobuilderMineDelay = 2
+		#Operations per tick Autobuilder can perform
+		#Range: > 0
+		autobuilderSpeed = 128
+		#How many preview blocks Autobuilder can show at once
+		#Range: > 0
+		autobuilderPreviewLimit = 8192
+
+	[general.CrazyPatternProvider]
+		#How many times player can upgrade the provider; -1 to disable limit
+		#Range: > -1
+		crazyProviderMaxAddRows = -1
+
+	[general.EntropyCradle]
+		#How much FE Entropy Cradle can store
+		#Range: > 0
+		cradleCapacity = 600000000
+		#How much FE the cradle uses per operation
+		#Range: > 0
+		cradleCost = 600000000
+		#How much FE per second the cradle can receive
+		#Range: > 0
+		cradleChargingSpeed = 50000000
+
+	[general.PenroseSphere]
+		#Max FE production when capped (tier 0)
+		#Range: > 0
+		penroseGenT0 = 262144
+		#Max FE production when capped (tier 1)
+		#Range: > 0
+		penroseGenT1 = 1048576
+		#Max FE production when capped (tier 2)
+		#Range: > 0
+		penroseGenT2 = 4194304
+		#Max FE production when capped (tier 3)
+		#Range: > 0
+		penroseGenT3 = 16777216
+		#Fuel boosting production x4
+		penroseGoodFuel = ["ae2:matter_ball"]
+		#Fuel boosting production x64
+		penroseBestFuel = ["ae2:singularity"]
+
+	[general.Research]
+		#Enable research mechanic (if false: Recipe Fabricator works without data drive)
+		researchEnabled = true
+
+	[general.Nokia]
+		#FE cost multiplier for Nokia 3310
+		#Range: 0 ~ 100
+		nokiaCost = 5
+
+	[general.EnergyParts]
+		#Enable Energy Exporter
+		energyExporterEnabled = true
+		#Enable Energy Interface
+		energyInterfaceEnabled = true
+
+	[general.P2PSpeeds]
+		#Extract speed for FE P2P (FE/t)
+		#Range: > 0
+		fep2pSpeed = 1048576
+		#Extract speed for Fluid P2P (mB/t)
+		#Range: > 0
+		fluidp2pSpeed = 1024
+		#Extract speed for Item P2P (items/t)
+		#Range: > 0
+		itemp2pSpeed = 16
 

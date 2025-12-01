@@ -58,7 +58,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .protons(1000)
         .neutrons(1000)
         .symbol('A');
-    event.create('cosmic_neutronium')
+        event.create('cosmic_neutronium')
         .neutrons(1000)
         .symbol('Ntᶜˢ');
     event.create('cosmic_tungsten')
@@ -104,7 +104,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('teslarium')
         .protons(24)
         .neutrons(48)
-        .symbol('Ts'); 
+        .symbol('Ts');  
     event.create('awakened_draconium')
         .protons(61)
         .neutrons(82)
@@ -203,8 +203,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('[C₁₄H₆N₂O₂]ₙ')
     event.create('pyridine_sulfate_solution')
         .symbol('C₅H₅N·H₂SO₄')
-
-        //  ₁₂₃₄₅₆₇₈₉₀
+        //  ₂₃₄₅₆₇₈₉₀
 })
 
 
@@ -234,7 +233,6 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('mercury_vapor')
         .liquid()
         .color(0xd7d7db)
-        .element(GTElements.Hg)
     event.create('inert_life_essence')
         .liquid()
         .color(0xe0bcc3)
@@ -292,14 +290,14 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x6daa7a)
 	event.create('super_dense_naquadria_fuel')
         .liquid()
-        .color(0x224e2c)
+        .color(0x224e2c)	
 	event.create('treated_super_dense_naquadria_fuel')
         .liquid()
         .color(0x2d703c)
+        .element(GTElements.N)
 	event.create('liquid_nitrogen')
         .liquid()
         .color(0x42d0d0)
-        .element(GTElements.N)
 	event.create('super_dense_hog')
         .liquid()
         .color(0x9b792f)
@@ -309,7 +307,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 	event.create('unstable_enriched_thorium_fuel')
         .liquid()
         .color(0x2c4022)
-    event.create('lightly_plasmacracked_unstable_enriched_thorium_fuel')
+	event.create('lightly_plasmacracked_unstable_enriched_thorium_fuel')
         .liquid()
         .color(0x2d5519)
 	event.create('severly_plasmacracked_unstable_enriched_thorium_fuel')
@@ -372,7 +370,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid()
         .color(0x769377)
     event.create('resonant_naquadah')
-        .ingot().liquid()
+        .ingot().liquid().dust()
         .ore(1, 1,)
         .color(0x2b3d2d)
         .element('resonant_naquadah')
@@ -406,10 +404,11 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD,  GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
     event.create('infinity_catalyst')
         .dust()
-        .element(GTElements.get("infinity"))
+        .element(GTElements.get("infinity_catalyst"))
         .color(0xffffff)
-        .iconSet('infinity_catalyst')
+        .iconSet('infinity')
         .ore(1, 1,)
+
     event.create("triplatirium_235")
         .ingot().liquid()
         .element('triplatirium_235')
@@ -417,6 +416,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x47ffaf)
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.NO_SMELTING);
+
     event.create("atomic_alloy")
         .ingot()
         .blastTemp(10800)
@@ -424,6 +424,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x513499)
         .iconSet('bright')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.NO_SMELTING);
+
     event.create("triplatirium_sulfate")
         .liquid()
         .color(0xbff52a)
@@ -441,7 +442,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0xa9ccc7)
     event.create("pure_trisulfate_solution")
         .liquid()
-        .color(0xc3e3de)
+        .color(0xc8dedb)
     event.create("trisulfate_waste")
         .liquid()
         .color(0x303635)
@@ -564,17 +565,17 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0xd1dced)
         .iconSet('bright')
         .cableProperties(GTValues.V[GTValues.EV], 32, 0, true)
-    event.create('crystal_superconductor')
+        event.create('crystal_superconductor')
         .ingot()
         .color(0x6200ff)
         .iconSet('bright')
         .cableProperties(GTValues.V[GTValues.ZPM], 32, 0, true)
-    event.create('teslarium')
+        event.create('teslarium')
         .ingot()
         .color(0x4800bd)
         .iconSet('shiny')
-        .element('teslarium')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
+
         // B A C T E R I A L   S T U F F
 
         event.create("raw_bacterial_dna")
@@ -714,7 +715,6 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x010005)
         .iconSet('dull')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.GENERATE_DENSE)
- 
 /// P O L Y M E R   S T U F F
 
     event.create('neoprene')
@@ -754,7 +754,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .element('zylon')
         .iconSet('bright')
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE)
-        
+
 	event.create('sbr_emulsion')
 		.liquid(353)
 		.color(0xFFECB3)
@@ -1484,16 +1484,16 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x585163)
         .element('thalium_doped_sodium_iodine')
         .flags(GTMaterialFlags.GENERATE_LENS)
-        
-        
-
-
-        
-   
 
 
 
-        
+
+
+
+
+
+
+
 /// C O S M I C   M A T E R I A L S   F U S I O N
     
 event.create('cosmic_tungsten')
@@ -1619,7 +1619,6 @@ event.create("eternity")
 event.create("molten_space_time")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 .color(0xffffff)
-.element('space_time')
 event.create('space_time')
 .ingot()
 .element('space_time')
@@ -1756,7 +1755,7 @@ event.create("chrono_infinity")
 .ingot()
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 .cableProperties(8589934592, 9999, 0, true)
-.blastTemp(13000, 'highest', 536870912, 900)
+.blastTemp(17000, 'highest', 536870912, 900)
 .element(GTElements.get("chrono_infinity"))
 .color(0xffffff)
 .iconSet('chrono-infinity_alloy')
@@ -1778,6 +1777,104 @@ event.create("chrono_infinity")
     GTMaterialFlags.GENERATE_FRAME
 )
 
+ // Kerosene Line
 
+ 	event.create('high_purity_kerosene')
+        .liquid()
+        .color(0xe6daba)
+ 	event.create('aromatic_byproduct')//byproduct
+        .dust()
+        .color(0x4d047a)
+    event.create('wax_free_high_purity_kerosene')
+        .liquid()
+        .color(0xe8e0cc)
+    event.create('paraffin_wax')//byproduct
+        .dust()
+        .color(0xf7dc99)
+    event.create('supercritical_carbon_dioxide')
+        .liquid()
+        .color(0xaed6d6)
+    event.create('fluoropolymer_solution')
+        .dust()
+        .color(0x646969)
+    event.create('thermal_conductivity_additive')
+        .dust()
+        .color(0x878701)
+    event.create('antioxidant_complex')
+        .liquid()
+        .color(0x96473b)
+    event.create('precursor_suspension')
+        .liquid()
+        .color(0x995f56)
+    event.create('precursor_thermal_blend')
+        .liquid()
+        .color(0x998756)
+    event.create('refined_thermal_blend')
+        .dust()
+        .color(0x9c6e41)
+    event.create('heavy_benzene')
+        .liquid()
+        .color(0x0f0f0f)
+    event.create('quantum_activated_thermal_blend')
+        .dust()
+        .color(0xb8821f)
+    event.create('kerosene_based_heating_fluid')
+        .liquid()
+        .color(0xf5e967)
+    event.create('hydrogen_plasma')
+        .plasma()
+        .color(0x0a1afa)
+    event.create('neon_plasma')
+        .plasma()
+        .color(0xffc7cb)
 
+    event.create('neutron_flux')
+        .plasma()
+        .color(0xdefff7)
+    event.create('exotic_particle_suspension')
+        .liquid()
+        .color(0xad9eff)
+
+    event.create('iridium_plasma')
+        .plasma()
+        .color(0x45f7e0)
+    event.create('osmium_plasma')
+        .plasma()
+        .color(0x132ec2)
+    event.create('annihiltation_residue')
+        .dust()
+        .color(0x4b0794)
+    event.create('plutonium_239_plasma')
+        .plasma()
+        .color(0xff0000)
+    event.create('tungsten_plasma')
+        .plasma()
+        .color(0x1f1d1d)
+    event.create('temporally_charged_silicon')
+        .ingot()
+        .blastTemp(17000, 'highest', 134217728, 900)
+        .element('temporally_charged_silicon')
+        .color(0xbdbbbb)
+        .flags(
+        GTMaterialFlags.GENERATE_PLATE, 
+        GTMaterialFlags.GENERATE_ROD, 
+        GTMaterialFlags.GENERATE_GEAR, 
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_DENSE, 
+        GTMaterialFlags.GENERATE_ROTOR, 
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_SMALL_GEAR,
+        GTMaterialFlags.GENERATE_ROUND,
+        GTMaterialFlags.GENERATE_SPRING,
+        GTMaterialFlags.GENERATE_FRAME
+        )
+    event.create('exotic_condensate')
+        .dust()
+        .color(0x3b0aff)
+    event.create('refined_exotic_condensate')
+        .dust()
+        .color(0x3503fc)
+        event.create('decay_stabilized')
+        .plasma()
+        .color(0x23195e)
     })

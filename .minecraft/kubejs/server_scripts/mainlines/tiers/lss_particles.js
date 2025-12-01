@@ -14,7 +14,7 @@ ServerEvents.recipes(sog => {
     .chancedOutput('kubejs:tau_neutrino', 300, 100)
     .chancedOutput('kubejs:graviton', 100, 100)
     .chancedOutput('kubejs:quantum_anomaly', 10, 10)
-    .outputFluids('gtceu:antimatter 10')
+    .outputFluids('gtceu:hydrogen_plasma_plasma 144')
     .EUt((GTValues.VA[GTValues.UIV]))
     .duration(20*5)
 

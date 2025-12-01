@@ -1,0 +1,79 @@
+features:
+  # Whether the Blazing Maintence Hatch is enabled
+  blazingHatchEnabled: true
+
+  # Whether the Blazing Cleanroom is enabled (This just disables the casings, you can have the hatch on with this off just fine)
+  blazingCleanroomEnabled: true
+
+  # Whether the Custom HPCA componets are enabled
+  HPCAComponetsEnabled: true
+
+  # Whether the Custom Phoenix HPCA multiblock is enabled
+  PHPCAEnabled: true
+
+  # Whether recipes for the machines are enabled
+  recipesEnabled: true
+
+  # How powerful the normal Phoenix Computation Unit is (CWU/t)
+  BasicPCUStrength: 32
+
+  # How powerful the Advanced Phoenix Computation Unit is (CWU/t)
+  PCUStrength: 64
+
+  # How much coolant the basic Phoenix Computation Unit uses
+  BasicPCUCoolantUsed: 4
+
+  # How much coolant the Advanced Phoenix Computation Unit uses
+  PCUCoolantUsed: 8
+
+  # How powerful the normal Phoenix Computation Unit is (CWU/t) when damaged
+  damagedBasicPCUStrength: 16
+
+  # How powerful the advanced Phoenix Computation Unit is (CWU/t) when damaged
+  damagedPCUStrength: 32
+
+  # How much EU the normal Phoenix Computation uses per tick while not providing CWU/t (Goes off GTValues, ULV is 0, LV is 1, MV is 2, etc)
+  basicPCUEutUpkeep: 8
+
+  # How much EU the normal Phoenix Computation can use at max (Goes off GTValues, ULV is 0, LV is 1, MV is 2, etc)
+  basicPCUMaxEUt: 10
+
+  # How much EU the advanced Phoenix Computation uses per tick while not providing CWU/t (Goes off GTValues, ULV is 0, LV is 1, MV is 2, etc)
+  PCUEutUpkeep: 8
+
+  # How much EU the advanced Phoenix Computation can use at max (Goes off GTValues, ULV is 0, LV is 1, MV is 2, etc)
+  PCUMaxEUt: 10
+
+  # How powerful the Phoenix Heat Sink is (Cooling Provided)
+  HeatSinkStrength: 4
+
+  # How powerful the Phoenix Active Cooler is (Cooling Provided)
+  ActiveCoolerStrength: 8
+
+  # How much EU the Phoenix Heat Sink uses per tick (Goes off GTValues, ULV is 0, LV is 1, MV is 2, etc)
+  HeatSinkEutUpkeep: 0
+
+  # How much EU the Active Phoenix Cooler uses per tick (Goes off GTValues, ULV is 0, LV is 1, MV is 2, etc)
+  ActiveCoolerEutUpkeep: 8
+
+  # How much coolant the Active Phoenix Cooler can use at max in milibuckets
+  ActiveCoolerCoolantUse: 10
+
+  # What Base Coolant the Active Phoenix Cooler uses while in the PHPCA (Gt or GT Kubejs Material)
+  ActiveCoolerCoolantBase: pcb_coolant
+
+  # What Stronger Coolant the Active Phoenix Cooler uses while in the PHPCA  (Gt or GT Kubejs Material)
+  ActiveCoolerCoolant1: molten_space_time
+
+  # What Strongest Coolant the Active Phoenix Cooler uses when in the PHPCA (Gt or GT Kubejs Material)
+  ActiveCoolerCoolant2: sodium_potassium
+
+  # How much ActiveCoolerCoolant1 boosts base CWU/t ()
+  BaseCoolantBoost: 1.0
+
+  # How much ActiveCoolerCoolant1 boosts base CWU/t ()
+  CoolantBoost1: 1.1
+
+  # What Strongest Coolant the Active Phoenix Cooler uses when in the PHPCA (Gt or GT Kubejs Material)
+  CoolantBoost2: 1.2
+

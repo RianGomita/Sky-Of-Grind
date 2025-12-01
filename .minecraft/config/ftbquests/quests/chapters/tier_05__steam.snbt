@@ -13,7 +13,7 @@
 		x: 2.0d
 		y: 6.5d
 	}]
-	order_index: 2
+	order_index: 3
 	quest_links: [{
 		id: "5B218F613000E5AC"
 		linked_quest: "68357F7109A5645C"
@@ -104,21 +104,17 @@
 			id: "46EEB11B27AF0BBC"
 			rewards: [
 				{
-					count: 3
 					id: "1C9D49BE765BF6A4"
 					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "36DD7218AAB56419"
+					id: "27349406BD8398C2"
 					item: {
 						Count: 1
 						id: "trophymanager:trophy"
 						tag: {
-							BaseBlock: "minecraft:smooth_stone_slab"
-							Name: "First Diamond Trophy"
-							OffsetY: 0.55d
-							Scale: 0.75d
+							Name: "Diamond Trophy"
 							TrophyItem: {
 								Count: 1.0d
 								id: "minecraft:diamond"
@@ -166,18 +162,17 @@
 			id: "41F3D8A51709C22B"
 			rewards: [
 				{
-					id: "497432BBF7400B1A"
-					item: "gtceu:coke_block"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "5FDD5962776A71DA"
+					id: "3BDCAE1B4F958A82"
 					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "7357F29474C92BD5"
+					id: "2DBEBADD6782F4D6"
+					item: "gtceu:coke_block"
+					type: "item"
+				}
+				{
+					id: "19FA81C7EA43B340"
 					item: "gtceu:terminal"
 					type: "item"
 				}
@@ -244,7 +239,6 @@
 			description: ["You have multiple PBFs, right? :D"]
 			id: "31E750DDB33FE642"
 			rewards: [{
-				count: 5
 				id: "11AD72CF7C1D21C8"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -311,7 +305,6 @@
 			icon: "watersources:water_source_tier_1"
 			id: "0291490F6A1806BF"
 			rewards: [{
-				count: 3
 				id: "6CE24D37FB0901E8"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -533,14 +526,13 @@
 			id: "47F08B64D8FA018F"
 			rewards: [
 				{
-					id: "2446F9A4F74150A4"
-					item: "jecalculation:item_calculator_craft"
+					id: "4010DD360EDDB6D6"
+					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					count: 5
-					id: "4010DD360EDDB6D6"
-					item: "gtmutils:doge_coin"
+					id: "00220588DCB44C25"
+					item: "jecalculation:item_calculator_craft"
 					type: "item"
 				}
 			]
@@ -626,7 +618,6 @@
 			id: "71A1EDA69A1E26F8"
 			optional: true
 			rewards: [{
-				count: 3
 				id: "615607CD3B349EA4"
 				item: "gtmutils:doge_coin"
 				type: "item"

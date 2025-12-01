@@ -32,6 +32,10 @@
 			#Specifies the base brightness of dust clouds and nebulae
 			#Range: 0 ~ 100
 			dust_cloud_brightness = 100
+			#Renders stars and dust clouds using instancing
+			instancing = true
+			#Changes the order in which vertices used in static_sky are built
+			alt_vertex_build_order = false
 
 	["Stellar View Client Config"."Overworld Config"]
 

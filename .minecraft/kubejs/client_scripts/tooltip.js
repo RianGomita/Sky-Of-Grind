@@ -111,7 +111,36 @@ ItemEvents.tooltip(event => {
         text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
         text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
     })
+    event.addAdvanced('gtceu:reinforced_atomicforge', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.reinforced_atomic_forge.description'))
+        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
+        text.add(3, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        text.add(4, Text.translatable('gtceu.multiblock.perfect_OC.description'))
+        text.add(5, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
+    })
+        event.addAdvanced('gtceu:cryogenic_centrifuge', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        text.add(2, Text.translatable('gtceu.multiblock.cryogenic_centrifuge.description'))
+        })
+        event.addAdvanced('gtceu:large_dehydration_unit', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        text.add(2, Text.translatable('gtceu.multiblock.polymerization_unit.description'))
+        text.add(3, Text.translatable('gtceu.multiblock.coil_bonus'))
+        })
+        event.addAdvanced('gtceu:plasma_mixer', (item, adv, text) => {
+            if (!event.shift) {
+            text.add(1, Text.translatable('gtceu.multiblock.plasma_mixer.description'))
+            text.add(2, Text.translatable('gtceu.multiblock.no_overclock.description'))
+            text.add(3, Text.translatable('gtceu.multiblock.plasma_mixer_shift_info.description'))
+            } else {
+            text.add(1, [Text.aqua('1 ').bold(true), Text.white('100mb/t Helium & Oxygen Plasma')])
+            text.add(2, [Text.aqua('2 ').bold(true), Text.white('100mb/t Argon & Nitrogen Plasma')])
+            text.add(3, [Text.aqua('3 ').bold(true), Text.white('100mb/t Iron & Nickel Plasma')])
+            text.add(4, [Text.aqua('4 ').bold(true), Text.white('10mb/t NaquadriaMKII & Thorium Plasma')])
+            text.add(5, [Text.aqua('5 ').bold(true), Text.white('10mb/t Stellar Matter & Astral SpaceTime Plasma')])
+            }
 
+        })
 })
 
 

@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:chrono_infinity_gear"
 	id: "39DA69025F92C7E6"
-	order_index: 16
+	order_index: 17
 	quest_links: [
 		{
 			id: "41DE32D7B1243557"
@@ -110,65 +110,6 @@
 			}]
 			x: 1.5d
 			y: 1.0d
-		}
-		{
-			dependencies: ["04F7D3ACF20599F7"]
-			icon: "avaritia:infinity_sword"
-			id: "0EEC8806D9B7E7D4"
-			tasks: [
-				{
-					id: "16C2DDC8DB2F3CB0"
-					item: "avaritia:infinity_helmet"
-					type: "item"
-				}
-				{
-					id: "658B92015BEC9603"
-					item: "avaritia:infinity_chestplate"
-					type: "item"
-				}
-				{
-					id: "136FCAED631FB078"
-					item: "avaritia:infinity_pants"
-					type: "item"
-				}
-				{
-					id: "1F122BDEA1A62051"
-					item: "avaritia:infinity_boots"
-					type: "item"
-				}
-				{
-					id: "0EE8E5A335D8DE35"
-					item: "avaritia:infinity_sword"
-					type: "item"
-				}
-				{
-					id: "461E93EE961A9BE6"
-					item: "avaritia:infinity_bow"
-					type: "item"
-				}
-				{
-					id: "61AEF21215E6154B"
-					item: "avaritia:infinity_crossbow"
-					type: "item"
-				}
-			]
-			title: "The Suit to Heaven"
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"4E8E8EA3099ED38C"
-				"1724853A35EE60D9"
-			]
-			id: "0D0F01942BEE582F"
-			tasks: [{
-				id: "0740C6D4D7C92D17"
-				item: "avaritia:extreme_anvil"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.0d
 		}
 	]
 	title: "&#FFFFFF&lT&#F2FDFA&li&#E4FAF5&le&#D7F8F1&lr &#BCF3E7&l1&#AFF1E2&l4 &#94ECD8&l- &#7AE7CF&lM&#6CE4CA&lA&#5FE2C5&lX"

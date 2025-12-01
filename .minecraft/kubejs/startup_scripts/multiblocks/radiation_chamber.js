@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
    		.or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
 		.or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
 		.or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.INPUT_ENERGY, PartAbility.IMPORT_FLUIDS, PartAbility.IMPORT_ITEMS)))
-   .where("C", Predicates.blocks("kubejs:atomic_alloy_plated_glass"))
+   .where('C', Predicates.blocks('kubejs:atomic_alloy_plated_glass'))
    .where("D", Predicates.blocks("gtceu:plutonium_241_block"))
    .where("E", Predicates.blocks("gtceu:atomic_alloy_frame"))
    .where("K", Predicates.controller(Predicates.blocks(definition.get())))

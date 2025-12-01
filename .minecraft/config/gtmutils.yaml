@@ -29,3 +29,21 @@ features:
   # Whether the coins/credits are enabled.
   coinsEnabled: true
 
+  # Whether the custom MV tools are enabled.
+  customMVToolsEnabled: false
+
+  # Whether the custom HV tools are enabled.
+  customHVToolsEnabled: false
+
+  # Whether the custom EV tools are enabled.
+  customEVToolsEnabled: false
+
+  # Whether the custom IV tools are enabled.
+  customIVToolsEnabled: false
+
+  # Whether the custom LuV tools are enabled.
+  customLuVToolsEnabled: false
+
+  # Whether the custom ZPM tools are enabled.
+  customZPMToolsEnabled: false
+

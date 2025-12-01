@@ -13,7 +13,7 @@
 		x: 0.5d
 		y: -2.5d
 	}]
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -68,14 +68,14 @@
 			id: "451B35D595D41780"
 			rewards: [
 				{
-					count: 8
-					id: "647EE68F7DD6DC47"
-					item: "minecraft:gravel"
+					id: "6BF228699EF86494"
+					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "6BF228699EF86494"
-					item: "gtmutils:doge_coin"
+					count: 8
+					id: "781B36C8C977EE00"
+					item: "minecraft:gravel"
 					type: "item"
 				}
 			]
@@ -99,13 +99,13 @@
 			id: "14FFC5F39A9A2285"
 			rewards: [
 				{
-					id: "4E06CA25171379F8"
-					item: "minecraft:flint"
+					id: "498F90CD17693C65"
+					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "498F90CD17693C65"
-					item: "gtmutils:doge_coin"
+					id: "72F99BAB9311FA7C"
+					item: "minecraft:flint"
 					type: "item"
 				}
 			]
@@ -166,7 +166,6 @@
 			]
 			id: "3539E7FC4963D6BD"
 			rewards: [{
-				count: 5
 				id: "575C10CAB3F11A99"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -191,13 +190,13 @@
 			id: "2611ADAFB9634874"
 			rewards: [
 				{
-					id: "7B257DFD24E72770"
-					item: "minecraft:string"
+					id: "2FA743D16715970A"
+					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "2FA743D16715970A"
-					item: "gtmutils:doge_coin"
+					id: "22BC2CB2B56837AC"
+					item: "minecraft:string"
 					type: "item"
 				}
 			]
@@ -227,7 +226,6 @@
 			icon: "minecraft:white_bed"
 			id: "5F13A8C4D2D642B0"
 			rewards: [{
-				count: 2
 				id: "24142B3CCE3CC0A3"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -245,10 +243,10 @@
 						Count: 1
 						id: "gtceu:wood_mallet"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 127
 							}
 							HideFlags: 2
@@ -330,12 +328,12 @@
 				Count: 1
 				id: "gtceu:iron_hammer"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
 					GT.Tool: {
 						AttackDamage: 3.0f
 						AttackSpeed: -2.8f
-						Damage: 0
 						HarvestLevel: 2
 						MaxDamage: 255
 						ToolSpeed: 6.0f
@@ -345,19 +343,11 @@
 			}
 			id: "5F05388789A2A4B8"
 			progression_mode: "flexible"
-			rewards: [
-				{
-					count: 8
-					id: "788318C34708217F"
-					item: "gtceu:wrought_iron_ingot"
-					type: "item"
-				}
-				{
-					id: "16B1471A64BD1CC5"
-					item: "gtmutils:doge_coin"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "16B1471A64BD1CC5"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
 			subtitle: "Any tool?"
 			tasks: [
 				{
@@ -371,12 +361,12 @@
 						Count: 1
 						id: "gtceu:iron_hammer"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
 								AttackDamage: 3.0f
 								AttackSpeed: -2.8f
-								Damage: 0
 								HarvestLevel: 2
 								MaxDamage: 255
 								ToolSpeed: 6.0f
@@ -393,10 +383,10 @@
 						Count: 1
 						id: "gtceu:iron_mortar"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 255
 							}
 							HideFlags: 2
@@ -411,10 +401,10 @@
 						Count: 1
 						id: "gtceu:iron_wire_cutter"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 2
 								MaxDamage: 255
 								ToolSpeed: 6.0f
@@ -431,12 +421,12 @@
 						Count: 1
 						id: "gtceu:iron_wrench"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								Mode: 2b
 							}
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 2
 								MaxDamage: 255
 								ToolSpeed: 6.0f
@@ -453,10 +443,10 @@
 						Count: 1
 						id: "gtceu:iron_crowbar"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 2
 								MaxDamage: 255
 								ToolSpeed: 6.0f
@@ -473,10 +463,10 @@
 						Count: 1
 						id: "gtceu:wood_mallet"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 127
 							}
 							HideFlags: 2
@@ -491,10 +481,10 @@
 						Count: 1
 						id: "gtceu:iron_file"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 255
 							}
 							HideFlags: 2
@@ -509,10 +499,10 @@
 						Count: 1
 						id: "gtceu:iron_screwdriver"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 255
 							}
 							HideFlags: 2
@@ -527,12 +517,12 @@
 						Count: 1
 						id: "gtceu:iron_saw"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								HarvestIce: 1b
 							}
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 255
 							}
 							HideFlags: 2
@@ -547,12 +537,12 @@
 						Count: 1
 						id: "gtceu:iron_knife"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
 								AttackDamage: 2.0f
 								AttackSpeed: 3.0f
-								Damage: 0
 								MaxDamage: 255
 							}
 							HideFlags: 2
@@ -651,13 +641,13 @@
 			id: "68357F7109A5645C"
 			rewards: [
 				{
-					id: "2D52191B54F4619B"
-					item: "usclb:clipboard"
+					id: "7906A6B5078203CA"
+					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "7906A6B5078203CA"
-					item: "gtmutils:doge_coin"
+					id: "33FFC12CB8C8EBDF"
+					item: "usclb:clipboard"
 					type: "item"
 				}
 			]
@@ -718,11 +708,19 @@
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "47F815400C7B249D"
-			rewards: [{
-				id: "093ADD75989F5597"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "093ADD75989F5597"
+					item: "gtmutils:doge_coin"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3D6E2059FFBFBF2E"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					count: 8L

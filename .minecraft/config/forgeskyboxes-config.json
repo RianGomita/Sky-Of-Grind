@@ -4,6 +4,6 @@
     "unexpectedTransitionDuration": 20,
     "keepVanillaBehaviour": true,
     "debugMode": false,
-    "debugHud": false
+    "debugHud": true
   }
 }

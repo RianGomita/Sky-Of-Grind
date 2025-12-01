@@ -30,7 +30,7 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletionChance(100)
         vein.depletedYield(15)
     });
-    event.add('gtceu:deep_water_glacio', vein => {
+        event.add('gtceu:deep_water_glacio', vein => {
         vein.dimensions('ad_extendra:glacio')
 
 

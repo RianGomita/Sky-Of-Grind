@@ -6,8 +6,8 @@ ServerEvents.recipes(sog => {
     .inputFluids(
     Fluid.of('gtceu:stropharic_hypoxylon', 9152),
     Fluid.of('gtceu:antimatter', 1152),
-    Fluid.of('gtceu:peek', 1152),
-    Fluid.of('gtceu:crystal_matrix', 1152)
+    Fluid.of('gtceu:crystal_matrix', 1152),
+    Fluid.of('gtceu:peek', 1152)
     )
     .duration(20*300)
     .EUt(GTValues.VA[GTValues.UV])   
@@ -28,7 +28,7 @@ ServerEvents.recipes(sog => {
     .inputFluids(
     Fluid.of('gtceu:stropharic_hypoxylon', 9152),
     Fluid.of('gtceu:antimatter', 5000),
-    Fluid.of('gtceu:peek', 5000),
+    Fluid.of('gtceu:peek', 1152),
     Fluid.of('gtceu:crystal_matrix', 5000)
     )
     .duration(20*300)
@@ -39,7 +39,7 @@ ServerEvents.recipes(sog => {
     .inputFluids(
     Fluid.of('gtceu:stropharic_hypoxylon', 9152),
     Fluid.of('gtceu:antimatter', 5000),
-     Fluid.of('gtceu:meta_stable_molten_kevlar', 5000),
+    Fluid.of('gtceu:meta_stable_molten_kevlar', 5000),
     Fluid.of('gtceu:crystal_matrix', 5000)
     )
     .duration(20*300)

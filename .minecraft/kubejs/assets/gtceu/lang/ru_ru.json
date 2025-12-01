@@ -93,7 +93,7 @@
   "gtceu.collosal_laser_beam_containment_chamber":"Коллосальная камера захвата лазерных лучей",
   "gtceu.laser_beam_containment_chamber":"Камера захвата лазерных лучей",
 
-  "material.gtceu.neoprene": "Полихлоропрен", 
+   "material.gtceu.neoprene": "Полихлоропрен", 
   "material.gtceu.xlpe": "Сшитый полиэтилен(XLPE)",
   "material.gtceu.peek": "Полиэфирэфиркетон(PEEK)",
   "material.gtceu.carbon_nanotubes": "Углеродные нанотрубки",
@@ -272,6 +272,7 @@
   "material.gtceu.meta_stable_molten_kevlar": "Мета-стабильный расплавленный кевлар",
   "material.gtceu.meta_stable_molten_zylon": "Мета-стабильный расплавленный зилон",
 
+
   "material.gtceu.triplatirium_235": "Триплатириум 235",
   "material.gtceu.atomic_alloy": "Атомный сплав",
   "material.gtceu.triplatirium_sulfate": "Сульфат триплатирия",
@@ -316,7 +317,7 @@
   "material.gtceu.cosmic_osmium": "Космический осмий",
   "material.gtceu.space_time": "Пространство-время",
   "material.gtceu.molten_space_time": "Расплавленное пространство-время",
-  "material.gtceu.astral_space_time_plasma": "Астральная плазма пространства-времени",
+    "material.gtceu.astral_space_time_plasma": "Астральная плазма пространства-времени",
   "material.gtceu.universium": "Вселенниум",
   "material.gtceu.teslarium": "Тесларий",
   "material.gtceu.stellar_matter_plasma": "Плазма звездной материи",
@@ -476,7 +477,7 @@
 
   "gtceu.jei.ore_vein.glacio_chaos": "Хаотичная жила Глацио",
   "gtceu.jei.ore_vein.glacio_pitchblend": "Уранитовая жила Глацио",
-  "gtceu.jei.ore_vein.glacio_rutile": "Рутиловая жила Глацио",
+ "gtceu.jei.ore_vein.glacio_rutile": "Рутиловая жила Глацио",
 
 
   "gtmutils.gui.pterb.wireless_configurator.title": "Беспроводная частота",

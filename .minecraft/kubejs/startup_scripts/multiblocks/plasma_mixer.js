@@ -1,0 +1,41 @@
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('plasma_mixer')
+        .category('multiblocks')
+        .setEUIO('in')
+        .setMaxIOSize(2, 4, 2, 4)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.MIXER)
+})
+
+
+
+
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('plasma_mixer', 'multiblock')
+        .rotationState(RotationState.ALL)
+        .recipeType('plasma_mixer')
+        .noRecipeModifier()
+        .appearanceBlock(() => Block.getBlock('kubejs:semi_stable_casing'))
+        .pattern(definition => FactoryBlockPattern.start()      
+        .aisle('#CCC#', '#####', '#####', '#####', '#####', '#####', '#####', '#####', '#####', '#####', '#CCC#', '#PPP#', '#CCC#')
+        .aisle('#CCC#', '#CCC#', '#C#C#', '#C#C#', '#C#C#', '#C#C#', '#C#C#', '#C#C#', '#C#C#', '#CCC#', 'COOOC', 'PAAAP', 'CCCCC')
+        .aisle('#CCC#', 'CCCCC', 'PCECP', 'PCECP', 'PCECP', 'PCECP', 'PCECP', 'PCECP', 'PCECP', 'CCCCC', 'COOOC', 'PAJAP', 'CCHCC')
+        .aisle('#CCC#', '#CCC#', '#C#C#', '#C#C#', '#C#C#', '#C#C#', '#C#C#', '#C#C#', '#C#C#', '#CCC#', 'COOOC', 'PAAAP', 'CCCCC')
+        .aisle('#CKC#', '#####', '#####', '#####', '#####', '#####', '#####', '#####', '#####', '#####', '#CCC#', '#PPP#', '#CCC#')
+            .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+            .where("P", Predicates.blocks('gtceu:neutronium_frame'))
+            .where("H", Predicates.blocks('gtceu:tempered_glass'))
+            .where("A", Predicates.blocks('antiblocksrechiseled:bright_white'))
+            .where("E", Predicates.blocks('gtceu:electrolytic_cell'))
+            .where("J", Predicates.blocks('minecraft:beacon'))
+            .where("O", Predicates.blocks('minecraft:iron_block'))
+            .where("C", Predicates.blocks('kubejs:semi_stable_casing')
+            .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+            .or(Predicates.abilities(PartAbility.MAINTENANCE))
+            )
+            .where('#', Predicates.any())
+            .build()
+        )
+        .workableCasingModel("kubejs:block/casings/semi_stable_casing", 'gtceu:block/machines/replicator')
+})

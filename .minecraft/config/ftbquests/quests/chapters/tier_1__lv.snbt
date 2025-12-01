@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:steel_ingot"
 	id: "6E7CD50F36B93B23"
-	order_index: 3
+	order_index: 4
 	quest_links: [{
 		id: "58F436B0F7715D16"
 		linked_quest: "2DA0003222D48B72"
@@ -36,7 +36,6 @@
 			dependencies: ["16AF5E167963CD5E"]
 			id: "600C9FE63DAFB132"
 			rewards: [{
-				count: 3
 				id: "0F6C8181CB7835C5"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -294,7 +293,6 @@
 			icon: "gtceu:raw_diamond"
 			id: "11F178FE7717ACD2"
 			rewards: [{
-				count: 3
 				id: "011D8051C2C235D6"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -479,21 +477,17 @@
 			id: "507C474A64173290"
 			rewards: [
 				{
-					count: 5
 					id: "3AE42DD900668DA3"
 					item: "gtmutils:doge_coin"
 					type: "item"
 				}
 				{
-					id: "4F3A850440AD3B78"
+					id: "164ACB249B9202EA"
 					item: {
 						Count: 1
 						id: "trophymanager:trophy"
 						tag: {
-							BaseBlock: "minecraft:smooth_stone_slab"
-							Name: "First EBF"
-							OffsetY: 0.55d
-							Scale: 0.75d
+							Name: "EBF Trophy"
 							TrophyItem: {
 								Count: 1.0d
 								id: "gtceu:electric_blast_furnace"
@@ -886,7 +880,6 @@
 			description: ["Did you passive aluminium ingots???"]
 			id: "2F459E86E600C4DD"
 			rewards: [{
-				count: 5
 				id: "06022AE3F5D7972D"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -951,7 +944,6 @@
 			]
 			id: "66079F4565A6B631"
 			rewards: [{
-				count: 5
 				id: "7E07B2CD13CC7D32"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -991,7 +983,7 @@
 			}
 			id: "4F38FDE69E161339"
 			rewards: [{
-				id: "549FB3E610A68F36"
+				id: "4324EC7BBDD2D1A4"
 				item: {
 					Count: 1
 					id: "hostilenetworks:data_model"
@@ -1081,7 +1073,6 @@
 			]
 			id: "4F312669D4434DF1"
 			rewards: [{
-				count: 2
 				id: "6E9ACC1B2CC75713"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1146,7 +1137,6 @@
 			dependencies: ["2A06152CD35AEB43"]
 			id: "400998B80287CE93"
 			rewards: [{
-				count: 3
 				id: "39D67D6C8BB4D25C"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1164,7 +1154,6 @@
 			dependencies: ["35BEC4D7A3A6B971"]
 			id: "1E8BE05E017C47AE"
 			rewards: [{
-				count: 3
 				id: "414F0CD7328BE407"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1182,7 +1171,6 @@
 			dependencies: ["0CC37A2971DEEB69"]
 			id: "0D91D32DEA66E74B"
 			rewards: [{
-				count: 3
 				id: "516E32B4E37E90DE"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1220,7 +1208,6 @@
 			description: ["See items that you have right next to the crafting slots!"]
 			id: "34A90C36E9A8A51C"
 			rewards: [{
-				count: 3
 				id: "0EE5F4E8F3FEE04E"
 				item: "gtmutils:doge_coin"
 				type: "item"
@@ -1399,7 +1386,7 @@
 			id: "0718B686D7E82E27"
 			optional: true
 			rewards: [{
-				id: "34701CBF46512118"
+				id: "37D9F5F8EE0FCCF8"
 				item: {
 					Count: 1
 					id: "hostilenetworks:data_model"

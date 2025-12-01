@@ -11,6 +11,7 @@
 	emergency_items: [{ Count: 1, id: "minecraft:oak_sapling" }]
 	emergency_items_cooldown: 20
 	grid_scale: 0.5d
+	hide_excluded_quests: false
 	icon: "gtceu:terminal"
 	lock_message: ""
 	loot_crate_no_drop: {

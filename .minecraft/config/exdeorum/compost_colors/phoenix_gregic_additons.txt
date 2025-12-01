@@ -1,0 +1,2 @@
+// Compost colors for phoenix_gregic_additons. You may add your own colors, change existing ones, or remove colors that aren't needed.
+basic_fuel_rod, #556e55

@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:pure_cosmic_matter_ingot"
 	id: "004423CBAE120A16"
-	order_index: 14
+	order_index: 15
 	quest_links: [
 		{
 			id: "058F3102B6CC55C1"
@@ -67,7 +67,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["19D1E837A7CA3313"]
+			dependencies: [
+				"19D1E837A7CA3313"
+				"5D9C1427B7C18408"
+			]
+			description: [
+				"This is a huge milestone, since apart from doing normal atomic forge and ebf recipes it also has a forge module."
+				""
+				"The new forge recipes allow for an easier way of getting molten space time  and unlocks a new step for progression, cosmic matter residue."
+			]
 			id: "1724853A35EE60D9"
 			subtitle: "Finally a better EBF."
 			tasks: [{
@@ -186,7 +194,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4E8E8EA3099ED38C"]
@@ -252,6 +260,288 @@
 			]
 			x: 9.0d
 			y: 1.0d
+		}
+		{
+			dependencies: [
+				"385C1BA6214FCD03"
+				"2F204AFE30D95B53"
+			]
+			id: "5D9C1427B7C18408"
+			shape: "hexagon"
+			tasks: [{
+				id: "1A14330DF4B37A74"
+				item: "gtceu:kerosene_based_heating_fluid_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19D1E837A7CA3313"]
+			id: "385C1BA6214FCD03"
+			tasks: [{
+				id: "1B098333645DBCE0"
+				item: "gtceu:catalyst_reactor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1DDC4F506B27025F"]
+			id: "2F204AFE30D95B53"
+			shape: "hexagon"
+			tasks: [{
+				id: "55CFD8E52BDDDA52"
+				item: { Count: 64, id: "gtceu:quantum_activated_thermal_blend_dust" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"385C1BA6214FCD03"
+				"389438A131FDA095"
+				"709FDEF305AE6188"
+				"093403FC151A81AA"
+			]
+			id: "1DDC4F506B27025F"
+			shape: "hexagon"
+			tasks: [{
+				id: "44723ECDAA18C369"
+				item: { Count: 64, id: "gtceu:refined_thermal_blend_dust" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4E8E8EA3099ED38C"]
+			description: [
+				"The plasma mixer is a complex multiblock. It &ccan't overclock&r and it needs a plasma pair to run."
+				"The better the plasma is the faster recipes will be. Exactly, each pair after &aHelium and Oxygen&r decreases &arecipe duration&r by &l100 seconds&r and &amultiplies output&r by &l2&r."
+				""
+				"Plasmas pairs available are:"
+				""
+				"&l1&r &b100mb/t&r of Helium and Oxygen Plasma"
+				"&l2&r &b100mb/t&r of Argon and Nitrogen Plasma"
+				"&l3&r &b100mb/t&r of Iron and Nickel Plasma"
+				"&l4&r &b10mb/t&r  of Naquadria MK2 and Thorium Plasma"
+				"&l5&r &b10mb/t&r of Astral Space Time and Stellar Matter Plasma"
+			]
+			hide_dependency_lines: true
+			id: "53C188344796ECB0"
+			tasks: [{
+				id: "4E9FCF419036B978"
+				item: "gtceu:plasma_mixer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"53C188344796ECB0"
+				"238E4D48911D2F71"
+			]
+			id: "389438A131FDA095"
+			shape: "hexagon"
+			tasks: [{
+				id: "075E4C095BC73C7B"
+				item: "gtceu:thermal_conductivity_additive_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4E8926070DC8D8ED"]
+			id: "238E4D48911D2F71"
+			shape: "hexagon"
+			tasks: [{
+				id: "5B12D7C7BA58497B"
+				item: "gtceu:fluoropolymer_solution_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"2C401B9027071F2F"
+				"7FFE48CBA79FF355"
+			]
+			icon: "gtceu:precursor_thermal_blend_bucket"
+			id: "709FDEF305AE6188"
+			shape: "hexagon"
+			tasks: [{
+				id: "0DBBE3848A12C221"
+				item: "gtceu:precursor_thermal_blend_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5BD353891C2342B4"
+				"6F04BF371F988100"
+			]
+			id: "2C401B9027071F2F"
+			shape: "hexagon"
+			tasks: [{
+				id: "18B33D4E61E54E6D"
+				item: "gtceu:wax_free_high_purity_kerosene_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1003E1C8F237AFAA"]
+			id: "5BD353891C2342B4"
+			shape: "hexagon"
+			tasks: [{
+				id: "070324CE3CE99DD0"
+				item: "gtceu:high_purity_kerosene_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Multiblock useful for chemical lines. Not as simple as a common centrifuge."
+				""
+				"Consumes &l64x&r &bcrushed ice&r per tick while running."
+			]
+			id: "6F04BF371F988100"
+			tasks: [{
+				id: "22B69A8BE2623008"
+				item: "gtceu:cryogenic_centrifuge"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			id: "1003E1C8F237AFAA"
+			tasks: [{
+				id: "68EC3D886E9B40ED"
+				item: "gtceu:large_dehydration_unit"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"1003E1C8F237AFAA"
+				"5BD353891C2342B4"
+			]
+			description: ["Save this for later. You'll need it for Chrono-Infinity alloy."]
+			id: "504A04F7A04EAE2C"
+			shape: "hexagon"
+			tasks: [{
+				id: "30E9A80AA46D6655"
+				item: "gtceu:aromatic_byproduct_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2C401B9027071F2F"]
+			id: "093403FC151A81AA"
+			shape: "hexagon"
+			tasks: [{
+				id: "1D173BC3F587A2E6"
+				item: "gtceu:paraffin_wax_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["27F6A813D963DDF4"]
+			id: "4E8926070DC8D8ED"
+			shape: "hexagon"
+			tasks: [{
+				id: "1BC2C45C5B857CCB"
+				item: "gtceu:supercritical_carbon_dioxide_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5AB3B63A4C5933C2"]
+			id: "7FFE48CBA79FF355"
+			shape: "hexagon"
+			tasks: [{
+				id: "5A3B14DD24D7A478"
+				item: "gtceu:precursor_suspension_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			id: "5AB3B63A4C5933C2"
+			shape: "hexagon"
+			tasks: [{
+				id: "62ADFA142A28E3D2"
+				item: "gtceu:antioxidant_complex_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["04F7D3ACF20599F7"]
+			icon: "avaritia:infinity_sword"
+			id: "0EEC8806D9B7E7D4"
+			tasks: [
+				{
+					id: "16C2DDC8DB2F3CB0"
+					item: "avaritia:infinity_helmet"
+					type: "item"
+				}
+				{
+					id: "658B92015BEC9603"
+					item: "avaritia:infinity_chestplate"
+					type: "item"
+				}
+				{
+					id: "136FCAED631FB078"
+					item: "avaritia:infinity_pants"
+					type: "item"
+				}
+				{
+					id: "1F122BDEA1A62051"
+					item: "avaritia:infinity_boots"
+					type: "item"
+				}
+				{
+					id: "0EE8E5A335D8DE35"
+					item: "avaritia:infinity_sword"
+					type: "item"
+				}
+				{
+					id: "461E93EE961A9BE6"
+					item: "avaritia:infinity_bow"
+					type: "item"
+				}
+				{
+					id: "61AEF21215E6154B"
+					item: "avaritia:infinity_crossbow"
+					type: "item"
+				}
+			]
+			title: "The Suit to Heaven"
+			x: 13.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Ultra Extreme Voltage"]
