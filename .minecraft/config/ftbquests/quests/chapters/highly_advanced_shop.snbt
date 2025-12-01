@@ -587,6 +587,32 @@
 			x: 20.5d
 			y: 1.5d
 		}
+		{
+			can_repeat: true
+			icon: "advancedperipherals:computer_tool"
+			id: "4F4ADA7BF250073B"
+			ignore_reward_blocking: true
+			rewards: [{
+				command: "/summon minecraft:villager ~ ~ ~ {VillagerData:{profession:\"advancedperipherals:computer_scientist\",level:2,type:\"plains\"}}"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				id: "583C57EA71346218"
+				ignore_reward_blocking: true
+				title: "Computer Scientist"
+				type: "command"
+			}]
+			subtitle: "Computer go BRRRR"
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "39591CE17D049A22"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			title: "Computer Scientist"
+			x: 22.0d
+			y: 0.0d
+		}
 	]
 	subtitle: ["wow much coin how monyey so cwypto pwz minye v wich vewy cuwwency wow"]
 	title: "Highly Advanced Shop"
