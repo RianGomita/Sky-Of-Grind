@@ -518,7 +518,7 @@
     "gtceu.multiblock.lss.description": "The Large Synchrotron Switcher is a very tall, but simple multiblock that acts as a particle accelerator. It can't overclock and will only accept one laser target hatch.",
     "gtceu.multiblock.atomic_forge.description": "Huge multiblock that uses lots of energy to modify and transmute items",
     "gtceu.multiblock.reinforced_atomic_forge.description": "§7An upgraded version of the previous atomic forge. Can run 3 types of recipes: §rAtomic Forge, EBF, Atomic Melting Module§7. | All Atomic Melting Module recipes will use §b200mb/t§r of §6Kerosene-Based Heating Fluid§r.",
-    "gtceu.multiblock.polymerization_unit.description": "§7Can run 2 types of recipes: §rPyrolyse Oven, Polymerization Unit§7.",
+    "gtceu.multiblock.dehydration_unit.description": "§7Can run 2 types of recipes: §rPyrolyse Oven, Dehydration Unit§7.",
     "gtceu.multiblock.cryogenic_centrifuge.description": "§7Consumes §r64x§b Crushed Ice§7 per §rtick§7 while running.",
     "gtceu.multiblock.laser_input.description": "This multiblock can be powered by Laser Target Hatches",
     "gtceu.multiblock.coil_bonus": "§6Cupronickel§7 coils are §r25%§7 slower. Every coil after §bKanthal§7 increases speed by §r50%§7.",
