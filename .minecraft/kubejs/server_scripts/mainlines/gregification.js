@@ -1759,7 +1759,7 @@ sog.recipes.gtceu.large_chemical_reactor('wetware_printed_circuit_board_xlpe_ic'
     .EUt(GTValues.VA[GTValues.HV]);
 
 sog.recipes.gtceu.alloy_smelter('netherite')
-    .itemInputs('2x minecraft:netherite_scrap', '2x minecraft:gold_ingot')
+    .itemInputs('4x minecraft:netherite_scrap', '4x minecraft:gold_ingot')
     .itemOutputs('minecraft:netherite_ingot')
     .duration(20*5)
     .EUt(GTValues.VA[GTValues.HV]);
