@@ -738,7 +738,6 @@ ServerEvents.recipes(event => {
 		.itemInputs('2x gtceu:naquadria_rod')
 		.notConsumable('kubejs:chemical_tier_four')
 		.inputFluids("gtceu:polyethylene 10000", 'gtceu:cumene 1000', 'gtceu:oxygen 2000')
-		.itemOutputs('40x gtceu:calcium_hydroxide_dust')
 		.outputFluids('gtceu:xlpe 7500')
 		.duration(20*60)
 		.EUt((GTValues.VA[GTValues.UEV]))
@@ -1777,4 +1776,5 @@ ServerEvents.recipes(event => {
 		.EUt((GTValues.VA[GTValues.OpV]))
 
 })
+
 
