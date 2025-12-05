@@ -1199,7 +1199,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('triethylaluminium')
         .liquid(390)
         .color(0x807745)
-        .components('1xx aluminium', '6x carbon', '15x hydrogen')
+        .components('1x aluminium', '6x carbon', '15x hydrogen')
         .formula('Al(C₂H₅)₃', true)
     event.create('carbon_sulfide')
         .liquid(318)
