@@ -773,7 +773,7 @@ StartupEvents.registry('block', sog => {
         .lightLevel(0)
         .tagBlock('forge:mineable/axe')
     sog.create('adv_high_power_crushing_wheels')
-        .displayName('Advanched High Power Crushing Wheels')
+        .displayName('Advanced High Power Crushing Wheels')
         .textureAll('kubejs:block/casings/adv_high_power_crushing_wheels')
         .soundType('metal')
         .resistance(1)
