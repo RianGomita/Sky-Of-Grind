@@ -41,7 +41,6 @@
 		}
 		{
 			dependencies: ["3388F162BE5A4280"]
-			icon: "gtceu:hv_electric_motor"
 			id: "2F889EB9AB0A817D"
 			rewards: [{
 				id: "7CE6D7B15E11A9BF"
@@ -57,21 +56,25 @@
 				{
 					id: "462E324B7309A64B"
 					item: "gtceu:hv_electric_pump"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2DF3CC63B11364F9"
 					item: "gtceu:hv_electric_piston"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "5C3B07A13D56FBBD"
 					item: "gtceu:hv_robot_arm"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7F82EFBB216B7BF3"
 					item: "gtceu:hv_conveyor_module"
+					optional_task: true
 					type: "item"
 				}
 			]
