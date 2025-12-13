@@ -41,7 +41,6 @@
 		}
 		{
 			dependencies: ["164F9100DAB09566"]
-			icon: "gtceu:uv_electric_motor"
 			id: "37F84238ECE73317"
 			rewards: [{
 				id: "530FCEAFC2D4D1A8"
@@ -57,21 +56,25 @@
 				{
 					id: "4384D174551311CF"
 					item: "gtceu:uv_electric_pump"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "19B8B861EA67B9DF"
 					item: "gtceu:uv_conveyor_module"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6EFBD438114F52E2"
 					item: "gtceu:uv_robot_arm"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "58B8006624DC9615"
 					item: "gtceu:uv_electric_piston"
+					optional_task: true
 					type: "item"
 				}
 			]

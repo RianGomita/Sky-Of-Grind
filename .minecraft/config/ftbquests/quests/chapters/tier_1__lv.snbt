@@ -153,21 +153,25 @@
 				{
 					id: "5E64F124B62DC25D"
 					item: "gtceu:lv_electric_pump"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "12C287765290C8AD"
 					item: "gtceu:lv_conveyor_module"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "63178F82EDF2464E"
 					item: "gtceu:lv_electric_piston"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "11D7677025B56638"
 					item: "gtceu:lv_robot_arm"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -219,6 +223,7 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
+			subtitle: "Collect some air! To get your first oxygen for Lapis, try electrolyzing some water."
 			tasks: [{
 				id: "52A5BCFCB3EE611A"
 				item: "gtceu:lv_gas_collector"
@@ -1026,11 +1031,16 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
+			title: "Squid Data Model"
+			x: -4.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["66079F4565A6B631"]
+			dependencies: [
+				"4F38FDE69E161339"
+				"2417824221561352"
+			]
+			dependency_requirement: "one_completed"
 			id: "696039828152042F"
 			rewards: [{
 				id: "6A43749BF2A97A44"
@@ -1436,7 +1446,7 @@
 				}
 			]
 			title: "Spider Data Model"
-			x: -4.5d
+			x: -3.0d
 			y: 1.5d
 		}
 		{
@@ -1545,6 +1555,17 @@
 			}]
 			x: 11.5d
 			y: 6.5d
+		}
+		{
+			id: "2417824221561352"
+			subtitle: "You can also get ink sacs through the extractinator. You'll lose your bucket(s)!"
+			tasks: [{
+				id: "60EBBE4C90F5F74F"
+				title: "Extractinator Method"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Low Voltage"]

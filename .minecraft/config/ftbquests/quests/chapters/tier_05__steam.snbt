@@ -304,6 +304,7 @@
 			]
 			icon: "watersources:water_source_tier_1"
 			id: "0291490F6A1806BF"
+			optional: true
 			rewards: [{
 				id: "6CE24D37FB0901E8"
 				item: "gtmutils:doge_coin"
@@ -577,6 +578,7 @@
 				"You will need a lot of alloys, like red alloy for cables  and rubber dust, consider even making 2 of those."
 			]
 			id: "17956BCCD994D647"
+			optional: true
 			rewards: [{
 				id: "43545AC9B1F7EBCE"
 				item: "gtmutils:doge_coin"
@@ -598,6 +600,7 @@
 				"You will a lot of dusts so this is a must on my list."
 			]
 			id: "34505E178B1E2560"
+			optional: true
 			rewards: [{
 				id: "21D444370A2EE828"
 				item: "gtmutils:doge_coin"
@@ -635,6 +638,7 @@
 			dependencies: ["001955464B84E2C3"]
 			description: ["You can use liquid boilers with rock crushers and crucibles to get lava for a different way to make steam."]
 			id: "1904613EF69350E3"
+			optional: true
 			rewards: [{
 				id: "28DF44B636A883DF"
 				item: "gtmutils:doge_coin"
@@ -658,6 +662,7 @@
 				"Consider having both of them at the same time if u need materials like wood and flowers."
 			]
 			id: "6559C153909F6520"
+			optional: true
 			rewards: [{
 				id: "141C2FA7641205CF"
 				item: "gtmutils:doge_coin"
@@ -670,6 +675,19 @@
 			}]
 			x: 4.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["38CA5A0A1225A57C"]
+			id: "658FD2831D0EF031"
+			optional: true
+			subtitle: "The Steam Foundry is a multi-block alloy  smelter capable of 16 parallel recipes."
+			tasks: [{
+				id: "3E3B58AB409EAF08"
+				item: "steamadditions:steam_foundry"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 5.5d
 		}
 	]
 	title: "&#f7bc57Tier 0.5 - Steam"
