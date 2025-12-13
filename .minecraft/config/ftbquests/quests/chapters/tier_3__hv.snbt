@@ -784,10 +784,6 @@
 			y: 14.5d
 		}
 		{
-			dependencies: [
-				"63367A2F12D66CC4"
-				"259C1DD19C9D3DBA"
-			]
 			description: ["Remember that orange lens we gave you?"]
 			id: "75AF3E9D764EFFBB"
 			rewards: [{
