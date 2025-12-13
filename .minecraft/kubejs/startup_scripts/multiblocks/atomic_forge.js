@@ -80,7 +80,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         event.create('reinforced_atomicforge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['atomic_melting_module', 'atomicforge', 'electric_blast_furnace'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.MACHINE_CASING_HV)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('########BBBBBBB########', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '#######################', '########BBBBBBB########', '#######################', '#######################', '#######################')

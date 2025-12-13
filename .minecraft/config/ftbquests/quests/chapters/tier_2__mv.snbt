@@ -708,7 +708,6 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["62F0AC69281C7C29"]
 			description: ["Silicon Boules, those are kinda annoying to craft early game. You could consider passiving them, but remember that the will get replaced later by other boules like the phosphorus ones."]
 			id: "2CEF142F1347E4B7"
 			rewards: [{
