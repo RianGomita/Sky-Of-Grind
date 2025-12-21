@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where("G", Predicates.blocks('gtceu:superconducting_coil'))
 			.where("M", Predicates.abilities(PartAbility.MUFFLER).setExactLimit(1))
 			.where("A", Predicates.blocks('kubejs:naquadria_turbine_casing')
-                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.INPUT_ENERGY, PartAbility.IMPORT_FLUIDS))
+                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.INPUT_ENERGY, PartAbility.IMPORT_FLUIDS, PartAbility.IMPORT_ITEMS))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
 				.or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
 		)
