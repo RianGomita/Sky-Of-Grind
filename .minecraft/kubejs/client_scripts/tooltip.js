@@ -118,16 +118,29 @@ ItemEvents.tooltip(event => {
         text.add(4, Text.translatable('gtceu.multiblock.perfect_OC.description'))
         text.add(5, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
     })
-        event.addAdvanced('gtceu:cryogenic_centrifuge', (item, adv, text) => {
+    event.addAdvanced('gtceu:cryogenic_centrifuge', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
         text.add(2, Text.translatable('gtceu.multiblock.cryogenic_centrifuge.description'))
         })
-        event.addAdvanced('gtceu:large_dehydration_unit', (item, adv, text) => {
+    event.addAdvanced('gtceu:large_dehydration_unit', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        text.add(2, Text.translatable('gtceu.multiblock.polymerization_unit.description'))
+        text.add(2, Text.translatable('gtceu.multiblock.dehydration_unit.description'))
         text.add(3, Text.translatable('gtceu.multiblock.coil_bonus'))
         })
-        event.addAdvanced('gtceu:plasma_mixer', (item, adv, text) => {
+    event.addAdvanced('gtceu:large_polymerization_chamber', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        text.add(3, Text.translatable('gtceu.multiblock.coil_bonus'))
+        })
+    event.addAdvanced('gtceu:xl_radiation_chamber', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        })
+    event.addAdvanced('gtceu:large_evaporation_pool', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        })
+    event.addAdvanced('gtceu:large_high_pressure_reactor', (item, adv, text) => {
+        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
+        })
+    event.addAdvanced('gtceu:plasma_mixer', (item, adv, text) => {
             if (!event.shift) {
             text.add(1, Text.translatable('gtceu.multiblock.plasma_mixer.description'))
             text.add(2, Text.translatable('gtceu.multiblock.no_overclock.description'))

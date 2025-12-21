@@ -21,7 +21,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.ALL)
         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.recipeTypes([(GTRecipeTypes.PYROLYSE_RECIPES), 'dehydration_unit'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE, (machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.BATCH_MODE, (machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe)])
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("BBBBBBBBB", "BGGGGGGGB", "BGGGGGGGB", "BGGGGGGGB", "BBBBBBBBB")
@@ -47,7 +47,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.ALL)
         .machine((holder) => new CoilWorkableElectricMultiblockMachine(holder))
 		.recipeType('polymerization_chamber')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE, (machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe)])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.BATCH_MODE, (machine, recipe) => GTRecipeModifiers.pyrolyseOvenOverclock(machine, recipe)])
         .appearanceBlock(() => Block.getBlock('kubejs:machine_casing_inert_peek'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("WWW##BBBBBBB##AAAAA","WGW##BGGGGGB##AGGGA","WGW##BGGGGGB##AGGGA","WGW##BGGGGGB##AGGGA","WWW##BBBBBBB##AAAAA","################A##","################A##","###################")
@@ -73,4 +73,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where('#', Predicates.any())
             .build())
         .workableCasingModel("kubejs:block/casings/machine_casing_inert_peek", 'gtceu:block/machines/replicator')
+
 })

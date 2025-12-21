@@ -1758,6 +1758,12 @@ sog.recipes.gtceu.large_chemical_reactor('wetware_printed_circuit_board_xlpe_ic'
     .duration(25*90)
     .EUt(GTValues.VA[GTValues.HV]);
 
+sog.recipes.gtceu.alloy_smelter('netherite')
+    .itemInputs('4x minecraft:netherite_scrap', '4x minecraft:gold_ingot')
+    .itemOutputs('minecraft:netherite_ingot')
+    .duration(20*5)
+    .EUt(GTValues.VA[GTValues.HV]);
+
 sog.replaceInput( {id: 'gtceu:assembly_line/electric_pump_uv'}, 'gtceu:silicone_rubber_ring', 'gtceu:neoprene_ring' )
 sog.replaceInput( {id: 'gtceu:assembly_line/conveyor_module_uv'}, 'gtceu:styrene_butadiene_rubber', 'gtceu:neoprene' )
 
