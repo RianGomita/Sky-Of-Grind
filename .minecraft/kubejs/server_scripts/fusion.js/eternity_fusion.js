@@ -1,4 +1,38 @@
 ServerEvents.recipes(event => {
+    event.recipes.gtceu.assembler('fusion_coil_mk3')
+        .itemInputs(
+            'kubejs:cosmic_processor',
+            '64x gtceu:neutron_reflector',
+            'kubejs:cosmic_processor',
+            '4x gtceu:uxv_electric_pump',
+            '16x gtceu:superconducting_coil',
+            '2x gtceu:uxv_field_generator',
+            'kubejs:cosmic_processor',
+            '64x gtceu:neutron_reflector',
+            'kubejs:cosmic_processor'
+        )
+        .inputFluids('gtceu:peek 14400')
+        .itemOutputs('16x kubejs:fusion_coil_mk3')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+    event.recipes.gtceu.assembler('fusion_machine_casing_mk_v')
+        .itemInputs(
+            'kubejs:cosmic_processor',
+            'gtceu:uxv_machine_casing',
+            'kubejs:cosmic_processor',
+            '2x gtceu:uxv_field_generator',
+            '2x kubejs:fusion_coil_mk3',
+            '4x kubejs:uxv_voltage_coil',
+            'kubejs:cosmic_processor',
+            'gtceu:uxv_machine_casing',
+            'kubejs:cosmic_processor'
+        )
+        .inputFluids('gtceu:peek 14400')
+        .itemOutputs('8x kubejs:fusion_casing_mk5')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UIV])
+
     event.recipes.gtceu.eternity_fusion('eternity_fusion_1')
         .inputFluids('gtceu:neodymium 1000', 'gtceu:hydrogen 375')
         .outputFluids('gtceu:europium 50112')
