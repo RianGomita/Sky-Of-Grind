@@ -2,14 +2,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('large_bacterial_vat')
         .category('drack')
         .setEUIO('in')
-        .setMaxIOSize(3, 2, 3, 2)
+        .setMaxIOSize(3, 2, 3, 2) // Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
 })
-
-
-
-
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_bacterial_bat', 'multiblock')
@@ -24,16 +20,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('ATTTTTA', 'C#####C', 'C#####C', 'C#####C', 'ATTTTTA')
             .aisle('AAAKAAA', 'CCCCCCC', 'CCCCCCC', 'CCCCCCC', 'AAAAAAA')
             .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.air())
             .where('T', Predicates.blocks('gtceu:sterilizing_filter_casing'))
             .where('C', Predicates.blocks('gtceu:cleanroom_glass'))
-            .where(
-                "A",
-                Predicates.blocks('gtceu:plascrete')
+            .where("A", Predicates.blocks('gtceu:plascrete')
                   .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                   .or(Predicates.abilities(PartAbility.MAINTENANCE))
                   .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
             )
-            .where('#', Predicates.air())
             .build()
         )
         .workableCasingModel("gtceu:block/casings/cleanroom/plascrete", 'gtceu:block/machines/replicator')
