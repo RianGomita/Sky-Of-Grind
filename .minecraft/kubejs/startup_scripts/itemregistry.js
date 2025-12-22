@@ -105,9 +105,9 @@ StartupEvents.registry('item', sog => {
     sog.create('space_time_heavy_plating').displayName('SpaceTime Heavy Plating').texture('kubejs:item/heavy_plating/space_time_heavy_plating')
     sog.create('eternity_heavy_plating').displayName('Eternity Heavy Plating').texture('kubejs:item/heavy_plating/eternity_heavy_plating')
     // Power
-    sog.create('tesla_coil_mk1').displayName('Tesla Coil MKI').texture('kubejs:item/power/tesla_coil_mk1').tooltip('Produces 1 ZPM amp when used on the Tesla Tower')
-    sog.create('tesla_coil_mk2').displayName('Tesla Coil MKII').texture('kubejs:item/power/tesla_coil_mk2').tooltip('Produces 1 UEV amp when used on the Tesla Tower')
-    sog.create('tesla_coil_mk3').displayName('Tesla Coil MKIII').texture('kubejs:item/power/tesla_coil_mk3').tooltip('Produces 1 UXV amp when used on the Tesla Tower')
+    sog.create('tesla_coil_mk1').displayName('Tesla Coil MKI').texture('kubejs:item/power/tesla_coil_mk1').tooltip('Will produce 1A ZPM with the Tesla Tower')
+    sog.create('tesla_coil_mk2').displayName('Tesla Coil MKII').texture('kubejs:item/power/tesla_coil_mk2').tooltip('Will produce 1A UEV with the Tesla Tower')
+    sog.create('tesla_coil_mk3').displayName('Tesla Coil MKIII').texture('kubejs:item/power/tesla_coil_mk3').tooltip('Will produce 1A UXV with the Tesla Tower')
     // Particles
     sog.create('graviton').displayName('Graviton').texture('kubejs:item/particles/graviton')   
     sog.create('quarks').displayName('Quarks').texture('kubejs:item/particles/quarks')   
