@@ -7,10 +7,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.TURBINE)
 })
 
-
-
-
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('xl_plasma_turbine', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -25,19 +21,19 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('CCCCC', 'CTTTC', 'CTTTC', 'CTTTC', 'CTTTC', 'CTTTC', 'CCYCC')
             .aisle('CCCCC', 'CTTTC', 'CTTTC', 'CTTTC', 'CTTTC', 'CTTTC', 'CCCCC')
             .aisle('#CKC#', '#CCC#', '#CCC#', '#CCC#', '#CCC#', '#CCC#', '#CCC#')
-            .where('K', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('Y', Predicates.abilities(PartAbility.OUTPUT_ENERGY)
-            .or(Predicates.abilities(PartAbility.SUBSTATION_OUTPUT_ENERGY))
-            .or(Predicates.abilities(PartAbility.OUTPUT_LASER))
-            )
-            .where('T', Predicates.blocks('gtceu:naquadah_coil_block'))
-            .where('L', Predicates.abilities(PartAbility.MAINTENANCE))
-            .where('O', Predicates.abilities(PartAbility.MUFFLER))
-            .where("C", Predicates.blocks('kubejs:naquadria_turbine_casing')
-            .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_FLUIDS, PartAbility.IMPORT_ITEMS))
-            )
-            .where('#', Predicates.any())
+                .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+                .where('#', Predicates.any())
+                .where('T', Predicates.blocks('gtceu:naquadah_coil_block'))
+                .where('L', Predicates.abilities(PartAbility.MAINTENANCE))
+                .where('O', Predicates.abilities(PartAbility.MUFFLER))
+                .where("C", Predicates.blocks('kubejs:naquadria_turbine_casing')
+                    .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_FLUIDS, PartAbility.IMPORT_ITEMS))
+                )
+                .where('Y', Predicates.abilities(PartAbility.OUTPUT_ENERGY)
+                    .or(Predicates.abilities(PartAbility.SUBSTATION_OUTPUT_ENERGY))
+                    .or(Predicates.abilities(PartAbility.OUTPUT_LASER))
+                )
             .build()
         )
         .workableCasingModel("kubejs:block/casings/machine_casing_turbine_naquadria", 'gtceu:block/multiblock/generator/large_plasma_turbine')
-    })
+})

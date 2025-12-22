@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-        event.create('hyper_assembler', 'multiblock')
+    event.create('hyper_assembly_line', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType("assembler")
+        .recipeType("assembly_line")
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:eternity_casing'))
         .pattern(definition => FactoryBlockPattern.start()
@@ -29,5 +29,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                     )
             .build()
         )
-        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/assembler')
+        .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/replicator')
 })

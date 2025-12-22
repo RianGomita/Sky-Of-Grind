@@ -28,10 +28,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.COMPUTATION)
 })
 
-
-
-
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('basic_fusion_injector', 'multiblock')
         .rotationState(RotationState.ALL)
@@ -47,6 +43,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('CCCCCCC', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', 'CCCCCCC')
             .aisle('#CCKCC#', '###C###', '###C###', '###C###', '###C###', '###C###', '###C###', '#CCCCC#')
             .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.any())
             .where('Y', Predicates.blocks('gtceu:cosmic_tungsten_frame'))
             .where('E', Predicates.blocks('kubejs:stellar_powered_casing'))
             .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing')
@@ -54,7 +51,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE, PartAbility.MUFFLER))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1))
             )
-            .where('#', Predicates.any())
             .build()
         )
         .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation')
@@ -73,6 +69,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('CCCCCCC', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', 'CCCCCCC')
             .aisle('#CCKCC#', '###C###', '###C###', '###C###', '###C###', '###C###', '###C###', '#CCCCC#')
             .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.any())
             .where('Y', Predicates.blocks('gtceu:draconium_frame'))
             .where('E', Predicates.blocks('kubejs:stellar_powered_casing'))
             .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing')
@@ -80,7 +77,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE, PartAbility.MUFFLER))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1))
             )
-            .where('#', Predicates.any())
             .build()
         )
         .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation')
@@ -99,6 +95,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('CCCCCCC', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', 'CCCCCCC')
             .aisle('#CCKCC#', '###C###', '###C###', '###C###', '###C###', '###C###', '###C###', '#CCCCC#')
             .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.any())
             .where('Y', Predicates.blocks('gtceu:awakened_draconium_frame'))
             .where('E', Predicates.blocks('kubejs:stellar_powered_casing'))
             .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing')
@@ -106,7 +103,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE, PartAbility.MUFFLER))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1))
             )
-            .where('#', Predicates.any())
             .build()
         )
         .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation')
@@ -125,6 +121,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('CCCCCCC', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', '#Y#E#Y#', 'CCCCCCC')
             .aisle('#CCKCC#', '###C###', '###C###', '###C###', '###C###', '###C###', '###C###', '#CCCCC#')
             .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.any())
             .where('Y', Predicates.blocks('gtceu:chaos_block'))
             .where('E', Predicates.blocks('kubejs:stellar_powered_casing'))
             .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing')
@@ -132,7 +129,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE, PartAbility.MUFFLER))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1))
             )
-            .where('#', Predicates.any())
             .build()
         )
         .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/power_substation')

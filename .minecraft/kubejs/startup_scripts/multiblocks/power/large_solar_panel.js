@@ -7,10 +7,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.COOLING)
 })
 
-
-
-
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_solar_panel', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -26,14 +22,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('CCCCC', 'B###B', 'CTTTC', '#TOT#')
             .aisle('#CKC#', '#CCC#', '#CCC#', '#####')
             .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.any())
             .where('B', Predicates.blocks('gtceu:cleanroom_glass'))
             .where('O', Predicates.blocks('minecraft:blue_stained_glass'))
             .where('T', Predicates.blocks('minecraft:light_blue_stained_glass'))
             .where("C", Predicates.blocks('gtceu:clean_machine_casing')
-            .or(Predicates.abilities(PartAbility.OUTPUT_ENERGY))
-            .or(Predicates.blocks('gtceu:ulv_input_bus'))
+                .or(Predicates.abilities(PartAbility.OUTPUT_ENERGY))
+                .or(Predicates.blocks('gtceu:ulv_input_bus'))
             )
-            .where('#', Predicates.any())
             .build()
         )
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_clean_stainless_steel", 'gtceu:block/multiblock/hpca')

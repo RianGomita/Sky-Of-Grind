@@ -1,6 +1,5 @@
 const FusionReactorMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.electric.FusionReactorMachine")
 
-
 ItemEvents.tooltip(event => {
 
     event.add('gtceu:uhv_uhv_parallel_hatch', Text.translatable('gtceu.uhv_parallel_hatch.desc'))
@@ -9,153 +8,10 @@ ItemEvents.tooltip(event => {
     event.add('gtceu:uxv_uxv_parallel_hatch', Text.translatable('gtceu.uxv_parallel_hatch.desc'))
     event.add('gtceu:opv_opv_parallel_hatch', Text.translatable('gtceu.opv_parallel_hatch.desc'))
 
-    event.addAdvanced('gtceu:quantum_space_projector', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
-    })
-    event.addAdvanced('gtceu:atomic_moonminer', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-    })
     event.addAdvanced('gtmutils:doge_coin', (item, adv, text) => {
         text.add(1, Text.translatable('gtceu.doge.coin.tooltip'))
     })
-    event.addAdvanced('gtceu:atomicompressor', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-    })
-    event.addAdvanced('gtceu:bio_lab', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-    })
-    event.addAdvanced('gtceu:large_bacterial_bat', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-    })
-    event.addAdvanced('gtceu:greenhouse', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-    })
-    event.addAdvanced('gtceu:atmospheric_collector', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-    })
-        event.addAdvanced('gtceu:particle_implosion_chamber', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-    })
-    event.addAdvanced('gtceu:robust_extractinator', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-    })
-    event.addAdvanced('gtceu:nebular_plasma_nexus', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-    })
-    event.addAdvanced('gtceu:processing_plant', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
-    })
-    event.addAdvanced('gtceu:uev_fusion_reactor', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.machine.fusion_reactor.capacity', Math.trunc(FusionReactorMachine.calculateEnergyStorageFactor(GTValues.UEV, 16) / 1000000)))
-        text.add(2, Text.translatable('gtceu.multiblock.uev_fusion_reactor.description'))
-    })
-    event.addAdvanced('gtceu:atomicforge', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.atomic_forge.description'))
-        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
-    })
-    event.addAdvanced('gtceu:gravitational_implosion_machine', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.needed_laser_input.description'))
-    })
-    event.addAdvanced('gtceu:tesla_tower', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.laser_output.description'))
-    })
-    event.addAdvanced('gtceu:xl_plasma_turbine', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.laser_output.description'))
-    })
-    event.addAdvanced('gtceu:large_synchrotron_switcher', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.needed_laser_input.description'))
-        text.add(2, Text.translatable('gtceu.multiblock.lss.description'))
-    })
-    event.addAdvanced('gtceu:singularity_data_confinement', (item, adv, text) => {
-        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
-    })
-	event.addAdvanced('gtceu:processor_printing_factory_lv', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
-        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
-    })
-    event.addAdvanced('gtceu:processor_printing_factory_mv', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
-        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
-    })
-    event.addAdvanced('gtceu:processor_printing_factory_hv', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
-        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
-    })
-    event.addAdvanced('gtceu:processor_printing_factory_ev', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
-        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
-    })
-    event.addAdvanced('gtceu:processor_printing_factory_iv', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
-        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
-    })
-    event.addAdvanced('gtceu:processor_printing_factory_luv', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
-        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
-    })
-    event.addAdvanced('gtceu:processor_printing_factory_zpm', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
-        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
-    })
-    event.addAdvanced('gtceu:processor_printing_factory_uv', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
-        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
-    })
-    event.addAdvanced('gtceu:processor_printing_factory_uhv', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.perfect_OC.description'))
-        text.add(1, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
-    })
-    event.addAdvanced('gtceu:adv_processing_plant', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
-    })
-    event.addAdvanced('gtceu:reinforced_atomicforge', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.reinforced_atomic_forge.description'))
-        text.add(2, Text.translatable('gtceu.multiblock.laser_input.description'))
-        text.add(3, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        text.add(4, Text.translatable('gtceu.multiblock.perfect_OC.description'))
-        text.add(5, Text.translatable('gtceu.multiblock.subtick_parallel.description'))
-    })
-    event.addAdvanced('gtceu:cryogenic_centrifuge', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        text.add(2, Text.translatable('gtceu.multiblock.cryogenic_centrifuge.description'))
-        })
-    event.addAdvanced('gtceu:large_dehydration_unit', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        text.add(2, Text.translatable('gtceu.multiblock.dehydration_unit.description'))
-        text.add(3, Text.translatable('gtceu.multiblock.coil_bonus'))
-        })
-    event.addAdvanced('gtceu:large_polymerization_chamber', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        text.add(3, Text.translatable('gtceu.multiblock.coil_bonus'))
-        })
-    event.addAdvanced('gtceu:xl_radiation_chamber', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        })
-    event.addAdvanced('gtceu:large_evaporation_pool', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        })
-    event.addAdvanced('gtceu:large_high_pressure_reactor', (item, adv, text) => {
-        text.add(1, Text.translatable('gtceu.multiblock.parallelizable.tooltip'))
-        })
-    event.addAdvanced('gtceu:plasma_mixer', (item, adv, text) => {
-            if (!event.shift) {
-            text.add(1, Text.translatable('gtceu.multiblock.plasma_mixer.description'))
-            text.add(2, Text.translatable('gtceu.multiblock.no_overclock.description'))
-            text.add(3, Text.translatable('gtceu.multiblock.plasma_mixer_shift_info.description'))
-            } else {
-            text.add(1, [Text.aqua('1 ').bold(true), Text.white('100mb/t Helium & Oxygen Plasma')])
-            text.add(2, [Text.aqua('2 ').bold(true), Text.white('100mb/t Argon & Nitrogen Plasma')])
-            text.add(3, [Text.aqua('3 ').bold(true), Text.white('100mb/t Iron & Nickel Plasma')])
-            text.add(4, [Text.aqua('4 ').bold(true), Text.white('10mb/t NaquadriaMKII & Thorium Plasma')])
-            text.add(5, [Text.aqua('5 ').bold(true), Text.white('10mb/t Stellar Matter & Astral SpaceTime Plasma')])
-            }
-
-        })
 })
-
 
 ClientEvents.lang("en_us", e => {
     e.renameItem('avaritia:crystal_matrix_ingot', 'Resonant Crystal Matrix Ingot')
@@ -182,4 +38,4 @@ ClientEvents.lang("en_us", e => {
 	e.renameItem('ae2additions:cell_component_4096', '4M MEGA DISK Storage Component')
 	e.renameItem('ae2additions:cell_component_16384', '16M MEGA DISK Storage Component')
 	e.renameItem('ae2additions:cell_component_65536', '64M MEGA DISK Storage Component')
-    })
+})

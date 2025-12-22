@@ -1,4 +1,3 @@
-
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('quantum_station')
         .category('multiblock')
@@ -8,10 +7,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)
 })
-
-
-
-
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('quantum_station', 'multiblock')
@@ -23,17 +18,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('##CCC##', 'CCCBCCC', 'CBBBBBC', 'CCCBCCC', '##CCC##', '#######', '#######', '#######', '#######', '#######', '#######', )
             .aisle('##CCC##', 'CCCACCC', 'BAAAAAC', 'CCCACCC', 'C#CCC#C', '#CBBBC#', 'CBBBBBC', 'CBBBBBC', 'CBBBBBC', '#CBBBC#', '##CCC##', )
             .aisle('##CKC##', 'CCCBCCC', 'CBBBBBC', 'CCCBCCC', '##CCC##', '#######', '#######', '#######', '#######', '#######', '#######', )
-            .where('K', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('B', Predicates.blocks('gtceu:fusion_glass'))
-            .where('A', Predicates.blocks('kubejs:large_precision_casing'))
-            .where(
-                "C",
-                Predicates.blocks('kubejs:reinforced_computation_casing')
-                  .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-                  .or(Predicates.abilities(PartAbility.MAINTENANCE))
-                  .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1))
-            )
-            .where('#', Predicates.any())
+                .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+                .where('#', Predicates.any())
+                .where('B', Predicates.blocks('gtceu:fusion_glass'))
+                .where('A', Predicates.blocks('kubejs:large_precision_casing'))
+                .where("C", Predicates.blocks('kubejs:reinforced_computation_casing')
+                      .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                      .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                      .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1))
+                )
             .build()
         )
         .workableCasingModel("kubejs:block/casings/reinforced_computation_casing", 'gtceu:block/multiblock/research_station')

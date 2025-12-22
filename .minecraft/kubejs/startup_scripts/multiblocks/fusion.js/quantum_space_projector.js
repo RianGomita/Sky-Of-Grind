@@ -7,10 +7,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.COMPUTATION)
 })
 
-
-
-
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('quantum_space_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -51,20 +47,19 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('########AARRRGGGGGGGRRRAA########', '#############AAAKAAA#############', '##############A###A##############', '##############A###A##############', '##############A###A##############', '##############A###A##############', '##############A###A##############', '##############A###A##############', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', )
             .aisle('##########AARRRRRRRRRAA##########', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', )
             .aisle('############AAAAAAAAA############', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', '#################################', )
-            .where('K', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('R', Predicates.blocks('gtceu:electrolytic_cell'))
-            .where('A', Predicates.blocks('kubejs:quantum_casing').setMinGlobalLimited(1200)
-            .or(Predicates.abilities(PartAbility.MAINTENANCE))
-            .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY))
-            .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
-            .where('G', Predicates.blocks('gtceu:high_power_casing'))
-            .where('F', Predicates.blocks('gtceu:fusion_glass'))
-            .where('I', Predicates.blocks('minecraft:netherite_block'))
-            .where('P', Predicates.blocks('minecraft:beacon'))
-            .where("B", Predicates.blocks('kubejs:kaemite_casing'))
-            .where('#', Predicates.any())
+                .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+                .where('#', Predicates.any())
+                .where('R', Predicates.blocks('gtceu:electrolytic_cell'))
+                .where('G', Predicates.blocks('gtceu:high_power_casing'))
+                .where('F', Predicates.blocks('gtceu:fusion_glass'))
+                .where('I', Predicates.blocks('minecraft:netherite_block'))
+                .where('P', Predicates.blocks('minecraft:beacon'))
+                .where("B", Predicates.blocks('kubejs:kaemite_casing'))
+                .where('A', Predicates.blocks('kubejs:quantum_casing').setMinGlobalLimited(1200)
+                    .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                    .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY))
+                    .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .build()
         )
         .workableCasingModel("kubejs:block/casings/quantum_casing", 'gtceu:block/multiblock/fusion_reactor')
 })
-

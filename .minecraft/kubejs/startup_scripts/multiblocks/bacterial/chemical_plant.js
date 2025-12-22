@@ -3,14 +3,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('chemical_plant')
         .category('drack')
         .setEUIO('in')
-        .setMaxIOSize(8, 7, 8, 4)
+        .setMaxIOSize(8, 7, 8, 4) // Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
 })
-
-
-
-
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('chemical_plant', 'multiblock')
@@ -27,18 +23,24 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('#AAAAA#', '#CDDDC#', '#CFFFC#', '#CDDDC#', '#CFFFC#', '#CDDDC#', '#AAAAA#')
             .aisle('##AKA##', '##CCC##', '##CCC##', '##CCC##', '##CCC##', '##CCC##', '##AAA##')
             .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('#', Predicates.any())
             .where("C", Predicates.blocks("gtceu:fusion_glass"))
             .where("D", Predicates.blocks("gtceu:heat_vent"))
             .where("E", Predicates.blocks("gtceu:superconducting_coil"))
             .where("F", Predicates.blocks("gtceu:assembly_line_grating"))
             .where("A",Predicates.blocks('gtceu:inert_machine_casing')
-            .or(Predicates.autoAbilities(definition.getRecipeTypes()))
-            .or(Predicates.abilities(PartAbility.MAINTENANCE))
-            .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY, PartAbility.PARALLEL_HATCH))
+                .or(Predicates.autoAbilities(definition.getRecipeTypes()))
+                .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                .or(Predicates.abilities(
+                    PartAbility.IMPORT_ITEMS, 
+                    PartAbility.IMPORT_FLUIDS, 
+                    PartAbility.EXPORT_ITEMS, 
+                    PartAbility.EXPORT_FLUIDS, 
+                    PartAbility.INPUT_ENERGY, 
+                    PartAbility.INPUT_LASER, 
+                    PartAbility.PARALLEL_HATCH))
             )
-            .where('#', Predicates.any())
             .build()
         )
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_inert_ptfe", 'gtceu:block/machines/replicator')
 })
-
