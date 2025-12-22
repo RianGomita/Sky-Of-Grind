@@ -33,7 +33,6 @@
 		}
 		{
 			dependencies: ["7D6C30089B9F8938"]
-			icon: "gtceu:mv_electric_motor"
 			id: "089AB7F6D2A6E393"
 			rewards: [{
 				id: "5A1689FA73444C5F"
@@ -49,21 +48,25 @@
 				{
 					id: "5A844197E86D2F49"
 					item: "gtceu:mv_electric_pump"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "791833A980E4E5F6"
 					item: "gtceu:mv_conveyor_module"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "51AEB98944ADB9D8"
 					item: "gtceu:mv_electric_piston"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6D604F1B92DED539"
 					item: "gtceu:mv_robot_arm"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -367,8 +370,14 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "23970349ED58E513"
-				item: "gtceu:mv_distillery"
+				id: "7A267E751F8DE471"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_distillery)item(gtceu:mv_distillery))"
+					}
+				}
 				type: "item"
 			}]
 			title: "Faster Cutter"
@@ -534,11 +543,17 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "676CC64871355A29"
-				item: "gtceu:mv_rock_crusher"
+				id: "676F5B9E88B24ED4"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(gtceu:lv_rock_crusher)item(gtceu:mv_rock_crusher))"
+					}
+				}
 				type: "item"
 			}]
-			title: "Passiving everything!"
+			title: "Everything passified!"
 			x: -4.0d
 			y: -0.5d
 		}
