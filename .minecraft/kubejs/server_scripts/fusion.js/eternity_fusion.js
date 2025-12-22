@@ -224,4 +224,10 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:americium_plasma 50112')
         .duration(64)
         .EUt(GTValues.VA[GTValues.ZPM]);
+
+    event.recipes.gtceu.eternity_fusion('eternity_fusion_33')
+        .inputFluids('gtceu:molten_space_time 144', 'gtceu:stellar_matter_plasma 1152')
+        .outputFluids('gtceu:astral_space_time_plasma 1440')
+        .duration(64)
+        .EUt(GTValues.VA[GTValues.UIV]);
 });
