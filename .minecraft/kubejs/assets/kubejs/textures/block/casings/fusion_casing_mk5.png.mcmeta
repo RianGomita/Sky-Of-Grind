@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/fusion_casing_mk5_ctm"
+    }
+}
