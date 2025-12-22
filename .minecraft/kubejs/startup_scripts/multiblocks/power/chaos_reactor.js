@@ -7,10 +7,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.REPLICATOR)
 })
 
-
-
-
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('chaotic_singularity_reactor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -31,17 +27,17 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('#CCCCCCCCC#', '##B#####B##', '##B#####B##', '##B#####B##', '##B#####B##', '##B#BBB#B##', '##B#####B##', '##B#####B##', '##B#####B##', '##B#####B##', '#CCCCCCCCC#', )
             .aisle('##CCCCCCC##', '####B#B####', '####B#B####', '###########', '###########', '###########', '###########', '###########', '####B#B####', '####B#B####', '##CCCCCCC##', )
             .aisle('####CKC####', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '###########', '####CCC####', )
-            .where('K', Predicates.controller(Predicates.blocks(definition.get())))
-            .where('Y', Predicates.abilities(PartAbility.OUTPUT_ENERGY)
-            .or(Predicates.abilities(PartAbility.SUBSTATION_OUTPUT_ENERGY))
-            .or(Predicates.abilities(PartAbility.OUTPUT_LASER))
-            )
-            .where('A', Predicates.blocks('gtceu:chaos_block'))
-            .where('B', Predicates.blocks('kubejs:stellar_powered_casing'))
-            .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing')
-            .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.IMPORT_ITEMS))
-            )
-            .where('#', Predicates.any())
+                .where('K', Predicates.controller(Predicates.blocks(definition.get())))
+                .where('#', Predicates.any())
+                .where('A', Predicates.blocks('gtceu:chaos_block'))
+                .where('B', Predicates.blocks('kubejs:stellar_powered_casing'))
+                .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing')
+                    .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.IMPORT_ITEMS))
+                )
+                .where('Y', Predicates.abilities(PartAbility.OUTPUT_ENERGY)
+                    .or(Predicates.abilities(PartAbility.SUBSTATION_OUTPUT_ENERGY))
+                    .or(Predicates.abilities(PartAbility.OUTPUT_LASER))
+                )
             .build()
         )
         .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/generator/large_plasma_turbine')
