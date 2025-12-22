@@ -2,14 +2,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('biolab')
         .category('drack')
         .setEUIO('in')
-        .setMaxIOSize(4, 4, 4, 4)
+        .setMaxIOSize(4, 4, 4, 4) // Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
 })
-
-
-
-
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('bio_lab', 'multiblock')
@@ -29,9 +25,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('L', Predicates.blocks('gtceu:electrolytic_cell'))
             .where('T', Predicates.blocks('gtceu:sterilizing_filter_casing'))
             .where('C', Predicates.blocks('gtceu:cleanroom_glass'))
-            .where(
-                "A",
-                Predicates.blocks('gtceu:plascrete')
+            .where("A", Predicates.blocks('gtceu:plascrete')
                   .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                   .or(Predicates.abilities(PartAbility.MAINTENANCE))
                   .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
