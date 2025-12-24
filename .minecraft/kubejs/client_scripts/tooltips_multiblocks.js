@@ -1052,8 +1052,7 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:cryogenic_centrifuge",
             "gtceu:extreme_cracking_unit",
             "gtceu:particle_implosion_chamber",
-            "gtceu:xl_radiation_chamber",
-            "gtceu:large_dehydration_unit"
+            "gtceu:xl_radiation_chamber"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1137,7 +1136,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     },
     'PCH_SUBTICK_SOG': {
         multiblockIds: [
-            "gtceu:tectonic_plate_accelerator"
+            "gtceu:tectonic_plate_accelerator",
+            "gtceu:large_dehydration_unit"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
