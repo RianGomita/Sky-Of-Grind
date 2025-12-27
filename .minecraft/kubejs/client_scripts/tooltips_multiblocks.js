@@ -1044,7 +1044,7 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:atomic_moonminer",
             "gtceu:atmospheric_collector",
             "gtceu:robust_extractinator",
-            "gtceu:large_bacterial_vat",
+            "gtceu:large_bacterial_bat",
             "gtceu:greenhouse",
             "gtceu:large_polymerization_chamber",
             "gtceu:large_high_pressure_reactor",
@@ -3091,4 +3091,5 @@ ItemEvents.tooltip(event => {
             }
         });
     });
+
 });
