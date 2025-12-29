@@ -615,7 +615,41 @@ ServerEvents.recipes(sog => {
           F: 'gtceu:steel_block'
         }
       )
+    
+    sog.shaped('bigger_ae2:advanced_fluid_cell_housing', [
+            'ABA',
+            'B B',
+            'PPP'
+        ], {
+            A: '#gtceu:circuits/luv',
+            B: 'gtceu:certus_quartz_plate',
+            P: 'gtceu:rhodium_plated_palladium_plate'
+        }
+    )
 
+        sog.shaped('bigger_ae2:quantum_cell_component', [
+            'ADA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'gtceu:resonant_naquadah_plate',
+            B: 'ae2:cell_component_256k',
+            C: 'gtceu:duranium_plate',
+            D: '#gtceu:circuits/zpm'
+        }
+    )
+
+        sog.shaped('bigger_ae2:digital_singularity_cell_component', [
+            'ADA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'gtceu:cleaned_californium_plate',
+            B: 'bigger_ae2:quantum_cell_component',
+            C: 'gtceu:neutronium_plate',
+            D: '#gtceu:circuits/uv'
+        }
+    )
     ////// Machine Recipe //////
 
     sog.shaped(
