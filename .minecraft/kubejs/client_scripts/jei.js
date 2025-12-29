@@ -64,6 +64,7 @@ JEIEvents.hideItems(event => {
     //nerfs
   event.hide(['mae2:eu_multi_p2p_tunnel', 'mae2:eu_p2p_tunnel'])
   event.hide(['crazyae2addons:mob_cell_housing', 'crazyae2addons:mob_storage_cell_1k', 'crazyae2addons:mob_storage_cell_4k', 'crazyae2addons:mob_storage_cell_16k', 'crazyae2addons:mob_storage_cell_64k', 'crazyae2addons:mob_storage_cell_256k', 'crazyae2addons:mob_annihilation_plane', 'crazyae2addons:energy_exporter', 'crazyae2addons:entity_ticker', 'crazyae2addons:crazy_calculator', 'crazyae2addons:xp_shard', 'crazyae2addons:mob_export_bus', 'crazyae2addons:mob_farm_wall', 'crazyae2addons:mob_farm_collector', 'crazyae2addons:mob_farm_input', 'crazyae2addons:mob_farm_damage_module', 'crazyae2addons:spawner_controller_wall', 'expatternprovider:silicon_block'])
+  event.hide(['bigger_ae2:advanced_item_cell_housing', 'bigger_ae2:advanced_flux_cell_housing', 'bigger_ae2:quantum_item_storage_cell',  'bigger_ae2:quantum_flux_storage_cell', 'bigger_ae2:digital_singularity_item_storage_cell', 'bigger_ae2:digital_singularity_flux_storage_cell', 'bigger_ae2:4_core_crafting_accelerator', 'bigger_ae2:16_core_crafting_accelerator', 'bigger_ae2:64_core_crafting_accelerator', 'bigger_ae2:256_core_crafting_accelerator', 'bigger_ae2:1024_core_crafting_accelerator'])
 })
 
 
