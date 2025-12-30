@@ -6,7 +6,7 @@
 
  MINIMUM 4 GB; Recommended is 8.
 
- Join the official discord to see current dev work/progress and get support [HERE](https://discord.gg/ECsQ5xkUYw).
+ Join the official discord to see current dev work/progress and get support [HERE](https://discord.gg/D9pNcAWR4H).
  Thanks to other gregtech packs like GTNH, NomifactoryCEu(Monifactory) and a lot of other ones for a lot of ideas and inspiration that made us create this pack. Tysm!
 
 # Credits:
