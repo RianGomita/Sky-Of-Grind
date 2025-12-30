@@ -49,21 +49,25 @@
 				{
 					id: "5A844197E86D2F49"
 					item: "gtceu:mv_electric_pump"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "791833A980E4E5F6"
 					item: "gtceu:mv_conveyor_module"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "51AEB98944ADB9D8"
 					item: "gtceu:mv_electric_piston"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "6D604F1B92DED539"
 					item: "gtceu:mv_robot_arm"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -161,6 +165,7 @@
 				{
 					id: "384EF387955DC15A"
 					item: "gtceu:mv_sensor"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -367,8 +372,23 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "23970349ED58E513"
-				item: "gtceu:mv_distillery"
+				id: "62C63E75EAC2CC4A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_distillery"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_distillery"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Faster Cutter"
@@ -525,7 +545,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["089AB7F6D2A6E393"]
 			description: ["This is the start of infinite clay, aluminium, lithium, etc."]
 			id: "070CEF22C846C7D6"
 			rewards: [{
@@ -534,11 +553,34 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "676CC64871355A29"
-				item: "gtceu:mv_rock_crusher"
+				id: "4024CFB37EAC86D4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lp_steam_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_rock_crusher"
+							}
+							{
+								Count: 1b
+								id: "gtceu:mv_rock_crusher"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
-			title: "Passiving everything!"
+			title: "Passive everything!"
 			x: -4.0d
 			y: -0.5d
 		}
@@ -708,7 +750,11 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["62F0AC69281C7C29"]
+			dependencies: [
+				"62F0AC69281C7C29"
+				"7652DBA6D0CC8406"
+			]
+			dependency_requirement: "one_completed"
 			description: ["Silicon Boules, those are kinda annoying to craft early game. You could consider passiving them, but remember that the will get replaced later by other boules like the phosphorus ones."]
 			id: "2CEF142F1347E4B7"
 			rewards: [{
@@ -1121,7 +1167,7 @@
 				item: "gtceu:polyethylene_bucket"
 				type: "item"
 			}]
-			title: "&bPolyethelene"
+			title: "&bPolyethylene"
 			x: 10.0d
 			y: 13.0d
 		}
@@ -1347,7 +1393,7 @@
 				item: "gtceu:hsc_superconductor_single_wire"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.0d
 			y: 7.0d
 		}
 		{
@@ -1371,6 +1417,21 @@
 			title: "Ouch!"
 			x: 11.5d
 			y: 6.0d
+		}
+		{
+			description: [
+				"You can use the stone/clay line to get silicon but there are other ways too!"
+				""
+				"So now you can use the stone/clay line or find another way - your decision"
+			]
+			id: "7652DBA6D0CC8406"
+			tasks: [{
+				id: "22461F9B25CA4436"
+				title: "Silicon needs"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 7.0d
 		}
 	]
 	subtitle: ["Medium Voltage"]
