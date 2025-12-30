@@ -17,17 +17,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["792CA960CA776F9B"]
-			id: "4119D33BDAF6DC1F"
-			tasks: [{
-				id: "7BFC919F16E043C9"
-				item: "gtmutils:copper_credit"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
 			description: [
 				"This is rich part of the shop."
 				""
@@ -46,7 +35,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4119D33BDAF6DC1F"]
 			id: "1CA316B993A3A462"
 			tasks: [{
 				id: "1BD6CF65E983DACA"
