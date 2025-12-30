@@ -671,6 +671,19 @@
 			x: 4.0d
 			y: 6.5d
 		}
+		{
+			dependencies: ["38CA5A0A1225A57C"]
+			description: ["The Steam Foundry is a multiblock alloy smelter capable of 16 parallel recipes."]
+			id: "106D098AC5C2A887"
+			subtitle: "The Steam Foundry is a multi-block alloy  smelter capable of 16 parallel recipes."
+			tasks: [{
+				id: "61C30DF65427809E"
+				item: "steamadditions:steam_foundry"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
 	]
 	title: "&#f7bc57Tier 0.5 - Steam"
 }
