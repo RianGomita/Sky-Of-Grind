@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:neutronium_ingot"
 	id: "5BDBF9992074CC3A"
-	order_index: 13
+	order_index: 12
 	quest_links: [
 		{
 			id: "35A4E45F1F9D5129"
@@ -657,33 +657,38 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "1234FC8C6807F45A"
-					item: "gtceu:uhv_electric_motor"
-					type: "item"
+			tasks: [{
+				id: "6225C7B1AB751645"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:uhv_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_robot_arm"
+							}
+						]
+					}
 				}
-				{
-					id: "65FE6E9075D72AED"
-					item: "gtceu:uhv_electric_pump"
-					type: "item"
-				}
-				{
-					id: "4DB129468B61860B"
-					item: { Count: 64, id: "gtceu:uhv_conveyor_module" }
-					type: "item"
-				}
-				{
-					id: "03E48C972C035003"
-					item: "gtceu:uhv_electric_piston"
-					type: "item"
-				}
-				{
-					id: "6EDB345805BB74B7"
-					item: "gtceu:uhv_robot_arm"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "You know this, and you like it"
 			x: 11.0d
 			y: 11.5d
