@@ -199,6 +199,7 @@
 			y: 3.5d
 		}
 		{
+			description: ["You can use Fuel or Diesel whatever you like more!"]
 			icon: "ad_astra:fuel_bucket"
 			id: "3BCDF0F1CC18328C"
 			rewards: [{
@@ -208,12 +209,17 @@
 			}]
 			tasks: [
 				{
-					id: "172486CFF8F34250"
-					item: "gtceu:hv_distillery"
+					id: "5D58F379B6076301"
+					type: "checkmark"
+				}
+				{
+					id: "7B817EE6877A0D1F"
+					item: "gtceu:diesel_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "6FD06B2F2DCB881B"
+					id: "55743495A87E80B0"
 					item: "ad_astra:fuel_bucket"
 					type: "item"
 				}
@@ -398,33 +404,38 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "342AAAB7F4DB7C19"
-					item: "gtceu:ev_electric_motor"
-					type: "item"
+			tasks: [{
+				id: "2974AB7915948F68"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:ev_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_robot_arm"
+							}
+						]
+					}
 				}
-				{
-					id: "2C42637FA0C91F7E"
-					item: "gtceu:ev_electric_pump"
-					type: "item"
-				}
-				{
-					id: "2F03C497A4404960"
-					item: "gtceu:ev_conveyor_module"
-					type: "item"
-				}
-				{
-					id: "22DB81CB3CFA2047"
-					item: "gtceu:ev_electric_piston"
-					type: "item"
-				}
-				{
-					id: "17ED483117E5D87D"
-					item: "gtceu:ev_robot_arm"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "I dont think you hate this anymore."
 			x: 10.5d
 			y: 11.5d
@@ -1466,7 +1477,6 @@
 		{
 			dependencies: [
 				"56A354EB0D7C0ACE"
-				"63E6C9DB9DFBCFBD"
 				"700D75AB04659866"
 			]
 			description: [
@@ -1539,18 +1549,26 @@
 				type: "item"
 			}]
 			subtitle: "Don't worry, IV ones are even more annoying"
-			tasks: [
-				{
-					id: "1F41E3853F064491"
-					item: "gtceu:ev_emitter"
-					type: "item"
+			tasks: [{
+				id: "1826663727B067CA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:ev_emitter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ev_sensor"
+							}
+						]
+					}
 				}
-				{
-					id: "1C9C608693F85011"
-					item: "gtceu:ev_sensor"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "You sure hate those."
 			x: 13.5d
 			y: 3.0d
@@ -1728,7 +1746,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "13A2DFDD9A8F9A43"
+				id: "64E6C90E4523A9C3"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -1736,11 +1754,11 @@
 						items: [
 							{
 								Count: 1b
-								id: "gtceu:endstone_tungstate_ore"
+								id: "gtceu:raw_scheelite"
 							}
 							{
 								Count: 1b
-								id: "gtceu:endstone_scheelite_ore"
+								id: "gtceu:raw_tungstate"
 							}
 						]
 					}
