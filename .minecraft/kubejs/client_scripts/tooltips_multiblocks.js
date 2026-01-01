@@ -1062,8 +1062,7 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     'PCH_LASER_SOG': {
         multiblockIds: [
             "gtceu:quantum_space_projector",
-            "gtceu:nebular_plasma_nexus",
-            "gtceu:chemical_plant"
+            "gtceu:nebular_plasma_nexus"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1099,7 +1098,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     },
     'PCH_LASER_SUBTICK_SOG': {
         multiblockIds: [
-            "gtceu:reinforced_atomicforge"
+            "gtceu:reinforced_atomicforge",
+            "gtceu:chemical_plant"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -3092,3 +3092,4 @@ ItemEvents.tooltip(event => {
         });
     });
 });
+
