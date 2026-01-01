@@ -232,6 +232,12 @@ event.recipes.gtceu.rock_crusher('marble')
     .duration(16)
     .EUt(GTValues.VA[GTValues.HV]);
 
+event.recipes.gtceu.rock_crusher('deepslate')
+    .notConsumable('minecraft:deepslate')
+    .itemOutputs('minecraft:deepslate')
+    .duration(16)
+    .EUt(GTValues.VA[GTValues.EV]);
+
 event.shaped(
     'gtceu:tectonic_plate_accelerator',
     ['GRG', 'ACA', 'PBD'],
