@@ -238,6 +238,12 @@ event.recipes.gtceu.rock_crusher('deepslate')
     .duration(16)
     .EUt(GTValues.VA[GTValues.EV]);
 
+event.recipes.gtceu.rock_crusher('netherrackbreaker')
+    .notConsumable('minecraft:netherrack')
+    .itemOutputs('minecraft:netherrack')
+    .duration(16)
+    .EUt(GTValues.VA[GTValues.EV]);
+
 event.shaped(
     'gtceu:tectonic_plate_accelerator',
     ['GRG', 'ACA', 'PBD'],
