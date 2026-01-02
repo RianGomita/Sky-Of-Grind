@@ -1252,7 +1252,8 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
     ],
     "gtceu:large_circuit_assembler": [
         "basegtm.custom.tooltip_descriptions_all",
-        "basegtm.custom.tooltip_large_circuit_assembler_1"
+        "basegtm.custom.tooltip_large_circuit_assembler_1",
+        "basegtm.custom.tooltip_one_energy_hatch"
     ],
     "gtceu:large_cutter": [
         "basegtm.custom.tooltip_descriptions_all",
@@ -3093,3 +3094,4 @@ ItemEvents.tooltip(event => {
     });
 
 });
+
