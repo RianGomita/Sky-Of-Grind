@@ -19,7 +19,7 @@
 			id: "25E4C75523025300"
 			linked_quest: "26C62836B41D0095"
 			x: -7.5d
-			y: 17.0d
+			y: 17.5d
 		}
 	]
 	quests: [
@@ -48,33 +48,38 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "423EDF8F2AB7E967"
-					item: "gtceu:hv_electric_motor"
-					type: "item"
+			tasks: [{
+				id: "1DB5D28132FDA74C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hv_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_robot_arm"
+							}
+						]
+					}
 				}
-				{
-					id: "462E324B7309A64B"
-					item: "gtceu:hv_electric_pump"
-					type: "item"
-				}
-				{
-					id: "2DF3CC63B11364F9"
-					item: "gtceu:hv_electric_piston"
-					type: "item"
-				}
-				{
-					id: "5C3B07A13D56FBBD"
-					item: "gtceu:hv_robot_arm"
-					type: "item"
-				}
-				{
-					id: "7F82EFBB216B7BF3"
-					item: "gtceu:hv_conveyor_module"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "You will hate this on HV #1"
 			x: 0.0d
 			y: 3.5d
@@ -264,7 +269,6 @@
 			y: 8.5d
 		}
 		{
-			dependencies: ["4E2A91E8BAAE3B4F"]
 			id: "52B4917D6B7C521B"
 			rewards: [{
 				id: "3DC891822EC6BBF9"
@@ -301,34 +305,44 @@
 				"2F889EB9AB0A817D"
 				"3C9A91B8BD07C033"
 			]
+			description: ["These new HV machines could be helpful for your journey!"]
 			id: "259C1DD19C9D3DBA"
 			rewards: [{
 				id: "0D7D564A6B630631"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "570686EFF8AA24B1"
-					item: "gtceu:hv_cutter"
-					type: "item"
+			tasks: [{
+				id: "1CCD6779F28322D1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hv_cutter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hv_laser_engraver"
+							}
+						]
+					}
 				}
-				{
-					id: "50BB1C24ABCBB4B1"
-					item: "gtceu:hv_laser_engraver"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "&6New Infrastructure"
 			x: 4.0d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"2F889EB9AB0A817D"
-				"6A6162225FADF88B"
+			dependencies: ["2F889EB9AB0A817D"]
+			description: [
+				"The cleanroom is a multiblock that can be different sizes, ranging from 5x5x5 to 15x15x15. You will need a diode to make energy enter the room safely while maintaining the multiblock clean."
+				""
+				"Pro tip: You can eventually use some energy producers in it (solar in cleanroom is goated)!"
 			]
-			description: ["The cleanroom is a multiblock that can be different sizes, ranging from 5x5x5 to 15x15x15. You will need a diode to make energy enter the room safely while maintaining the multiblock clean."]
 			hide_text_until_complete: false
 			icon: "gtceu:cleanroom"
 			id: "63367A2F12D66CC4"
@@ -351,8 +365,34 @@
 					type: "item"
 				}
 				{
-					id: "56EBD093E2DE658A"
-					item: "gtceu:hv_diode"
+					count: 8L
+					id: "44A32835E57E480B"
+					item: { Count: 8, id: "gtceu:filter_casing" }
+					type: "item"
+				}
+				{
+					id: "3CC8C6A3FD5C198E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_diode"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_diode"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_diode"
+								}
+							]
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -362,9 +402,9 @@
 		}
 		{
 			dependencies: [
-				"078B3FD004417E2B"
 				"7B3FC49BA4E485BC"
 				"3FAB7F4CE25AA8AA"
+				"19C717F4D50C5D76"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -437,9 +477,10 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 4L
 					id: "7CF50EE1C5D46023"
-					item: { Count: 4, id: "gtceu:red_steel_gear" }
+					item: "gtceu:red_steel_gear"
 					type: "item"
 				}
 			]
@@ -622,8 +663,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "35E20FFF4864C873"
-				item: "gtceu:hv_centrifuge"
+				id: "21F37368EBB906A9"
+				item: "gtceu:hv_electrolyzer"
 				type: "item"
 			}]
 			x: 0.0d
@@ -677,7 +718,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 17.0d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -784,10 +825,6 @@
 			y: 14.5d
 		}
 		{
-			dependencies: [
-				"63367A2F12D66CC4"
-				"259C1DD19C9D3DBA"
-			]
 			description: ["Remember that orange lens we gave you?"]
 			id: "75AF3E9D764EFFBB"
 			rewards: [{
@@ -804,7 +841,10 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["75AF3E9D764EFFBB"]
+			dependencies: [
+				"75AF3E9D764EFFBB"
+				"63367A2F12D66CC4"
+			]
 			id: "065E72A43E5B9F63"
 			rewards: [{
 				id: "79DDFCD2349960E1"
@@ -899,10 +939,13 @@
 		{
 			dependencies: [
 				"146DAC8F4E639BE1"
+				"51811E951FAEAC8F"
 				"26C62836B41D0095"
+				"01F2A074F26982C1"
 			]
 			description: ["Polyethylene + copper + sulfuric acid"]
 			id: "2DE4387D5B19D55A"
+			min_required_dependencies: 2
 			rewards: [{
 				id: "27BFF40441B137E7"
 				item: "gtmutils:doge_coin"
@@ -1429,7 +1472,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
 			description: ["Please choose iron(III) chloride."]
@@ -1462,6 +1505,66 @@
 			title: "Dip the board in!"
 			x: -8.5d
 			y: 11.0d
+		}
+		{
+			description: ["You can use the ender air recipe, the endstone one or nickel processing - if you choose nickel processing just check this quest and unlock the platinum ingot quest!"]
+			id: "19C717F4D50C5D76"
+			tasks: [{
+				id: "3AED7451F79C74C9"
+				title: "Nickel Processing"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2F889EB9AB0A817D"]
+			description: ["With this guy you'll never need to worry about maintenance anymore!"]
+			id: "67DD51D78756786E"
+			rewards: [{
+				id: "201509F2B41021DB"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3915B12EA85D714B"
+				item: "gtceu:auto_maintenance_hatch"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			description: [
+				"You can eventually use the Sulfuric Acid skip in the LCR as well so it's your choice to choose!"
+				""
+				"If you check this and the poly checkmark Quest then you'll unlock the Circuit Board Quest aswell!"
+			]
+			id: "51811E951FAEAC8F"
+			tasks: [{
+				id: "18A683C30E7A64F1"
+				title: "The LCR-Way"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 16.5d
+		}
+		{
+			description: [
+				"You don't have to use Polyethylene, you know?"
+				"PVC or PTFE are other options as well - eventually later PBI."
+				""
+				"If you check this and the Sulfuric Acid checkmark Quest then you'll unlock the Circuit Board Quest aswell!"
+			]
+			id: "01F2A074F26982C1"
+			tasks: [{
+				id: "7EA3E3C1BC8359D0"
+				title: "Other polys"
+				type: "checkmark"
+			}]
+			title: "Other Polys"
+			x: -8.5d
+			y: 16.5d
 		}
 	]
 	subtitle: ["High Voltage"]

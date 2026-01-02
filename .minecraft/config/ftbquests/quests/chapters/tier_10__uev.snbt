@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "draconicevolution:draconium_ingot"
 	id: "6390E93A0F02A823"
-	order_index: 12
+	order_index: 13
 	quest_links: [
 		{
 			id: "35C91498B369EDD3"
@@ -48,33 +48,38 @@
 			description: ["Unlike &cUHV&r tier, here you dont need a crazy line to get components. Don't worry."]
 			hide_details_until_startable: false
 			id: "071D143BE842866F"
-			tasks: [
-				{
-					id: "45983AC9ADF06A3D"
-					item: "gtceu:uev_electric_motor"
-					type: "item"
+			tasks: [{
+				id: "1F8A51BCE716307A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:uev_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uev_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uev_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uev_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uev_robot_arm"
+							}
+						]
+					}
 				}
-				{
-					id: "4C9B69BC7B4F2EE8"
-					item: "gtceu:uev_electric_pump"
-					type: "item"
-				}
-				{
-					id: "1C7B1E7F4791E2DF"
-					item: "gtceu:uev_conveyor_module"
-					type: "item"
-				}
-				{
-					id: "552CA65E7A1EB0AC"
-					item: "gtceu:uev_electric_piston"
-					type: "item"
-				}
-				{
-					id: "723DC7A6FD36C2E8"
-					item: "gtceu:uev_robot_arm"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "UEV Parts #1"
 			x: 10.0d
 			y: 3.0d
@@ -87,18 +92,26 @@
 			]
 			description: ["This took long enough, right?"]
 			id: "38B15640E2E9E90E"
-			tasks: [
-				{
-					id: "7E6B245325184EF3"
-					item: "gtceu:uev_emitter"
-					type: "item"
+			tasks: [{
+				id: "24912D240EE355F2"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:uev_sensor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uev_emitter"
+							}
+						]
+					}
 				}
-				{
-					id: "582C6447B29B0C68"
-					item: "gtceu:uev_sensor"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "UEV parts  #2"
 			x: 8.5d
 			y: 4.5d

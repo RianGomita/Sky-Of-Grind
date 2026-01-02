@@ -123,33 +123,38 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "4CC2AEEEC471EC61"
-					item: "gtceu:zpm_conveyor_module"
-					type: "item"
+			tasks: [{
+				id: "6F6A883DC68BCBD2"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:zpm_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_robot_arm"
+							}
+						]
+					}
 				}
-				{
-					id: "1EFCE5867ABDD84C"
-					item: "gtceu:zpm_electric_motor"
-					type: "item"
-				}
-				{
-					id: "394C15520F93B203"
-					item: "gtceu:zpm_electric_piston"
-					type: "item"
-				}
-				{
-					id: "2DED68607D4342B3"
-					item: "gtceu:zpm_electric_pump"
-					type: "item"
-				}
-				{
-					id: "39F98AD4DBD3F070"
-					item: "gtceu:zpm_robot_arm"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Finally, ZPM"
 			x: 2.0d
 			y: 6.0d
@@ -220,18 +225,26 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "482F8F7BAB05E126"
-					item: "gtceu:zpm_sensor"
-					type: "item"
+			tasks: [{
+				id: "3E8A7FB29C3B0B5D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:zpm_sensor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_emitter"
+							}
+						]
+					}
 				}
-				{
-					id: "6726A4E8EEE5A47E"
-					item: "gtceu:zpm_emitter"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "ZPM Sensor \\& Emitter"
 			x: 2.0d
 			y: 8.0d

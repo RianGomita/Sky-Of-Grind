@@ -48,33 +48,38 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "0E347298E2FDE845"
-					item: "gtceu:uv_electric_motor"
-					type: "item"
+			tasks: [{
+				id: "7974B623B3CBA4DA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:uv_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_robot_arm"
+							}
+						]
+					}
 				}
-				{
-					id: "4384D174551311CF"
-					item: "gtceu:uv_electric_pump"
-					type: "item"
-				}
-				{
-					id: "19B8B861EA67B9DF"
-					item: "gtceu:uv_conveyor_module"
-					type: "item"
-				}
-				{
-					id: "6EFBD438114F52E2"
-					item: "gtceu:uv_robot_arm"
-					type: "item"
-				}
-				{
-					id: "58B8006624DC9615"
-					item: "gtceu:uv_electric_piston"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "You love this"
 			x: -0.5d
 			y: 4.0d

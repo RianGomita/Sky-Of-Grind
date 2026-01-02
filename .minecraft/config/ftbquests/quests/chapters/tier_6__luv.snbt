@@ -701,33 +701,38 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "18248DFC2011C39E"
-					item: "gtceu:luv_electric_motor"
-					type: "item"
+			tasks: [{
+				id: "5AF38A57D067F864"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:luv_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_robot_arm"
+							}
+						]
+					}
 				}
-				{
-					id: "5EA69BB06A4B97ED"
-					item: "gtceu:luv_electric_pump"
-					type: "item"
-				}
-				{
-					id: "42C3EC7519E592AA"
-					item: "gtceu:luv_conveyor_module"
-					type: "item"
-				}
-				{
-					id: "74711C660EE06891"
-					item: "gtceu:luv_electric_piston"
-					type: "item"
-				}
-				{
-					id: "5B68E6D0EA004927"
-					item: "gtceu:luv_robot_arm"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Yeah, you like this."
 			x: 9.0d
 			y: 1.5d
@@ -740,18 +745,26 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "49902449E1E4FFF4"
-					item: "gtceu:luv_sensor"
-					type: "item"
+			tasks: [{
+				id: "0A78DD149E53CE57"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:luv_sensor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_emitter"
+							}
+						]
+					}
 				}
-				{
-					id: "316756B5B96FCF64"
-					item: "gtceu:luv_emitter"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Damn, I don't need anything weird?"
 			x: 12.5d
 			y: 1.5d

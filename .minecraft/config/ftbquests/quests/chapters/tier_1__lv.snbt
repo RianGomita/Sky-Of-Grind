@@ -144,33 +144,38 @@
 				type: "item"
 			}]
 			subtitle: "GT:NH reference :o"
-			tasks: [
-				{
-					id: "36E1A5850CCDF01D"
-					item: "gtceu:lv_electric_motor"
-					type: "item"
+			tasks: [{
+				id: "64C10B01738A098C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_robot_arm"
+							}
+						]
+					}
 				}
-				{
-					id: "5E64F124B62DC25D"
-					item: "gtceu:lv_electric_pump"
-					type: "item"
-				}
-				{
-					id: "12C287765290C8AD"
-					item: "gtceu:lv_conveyor_module"
-					type: "item"
-				}
-				{
-					id: "63178F82EDF2464E"
-					item: "gtceu:lv_electric_piston"
-					type: "item"
-				}
-				{
-					id: "11D7677025B56638"
-					item: "gtceu:lv_robot_arm"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "You will hate this on LV #1"
 			x: 0.0d
 			y: 8.0d
@@ -212,7 +217,7 @@
 		}
 		{
 			dependencies: ["600C9FE63DAFB132"]
-			description: ["Collect some air!"]
+			description: ["Collect some air! To get your first oxygen for Lapis, try electrolyzing some water."]
 			id: "204D8FAA756928C4"
 			rewards: [{
 				id: "4176296A5AF320C3"
@@ -401,18 +406,26 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "7BBC8409AC5516F8"
-					item: "gtceu:lv_sensor"
-					type: "item"
+			tasks: [{
+				id: "177C6F3158A287ED"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:lv_sensor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_emitter"
+							}
+						]
+					}
 				}
-				{
-					id: "7850157F45000A05"
-					item: "gtceu:lv_emitter"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "You will hate this on LV #2"
 			x: 6.5d
 			y: 8.0d
@@ -662,7 +675,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["780137604FB5DEC9"]
 			id: "7CCA83876C2A61BB"
 			rewards: [{
 				id: "3485084EB33F8204"
@@ -936,7 +948,11 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["62F9642692D0B556"]
+			dependencies: [
+				"4F38FDE69E161339"
+				"0718B686D7E82E27"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Yes, this is Hostile Neural Networks. Remember, this pack is peaceful, so the way you will get the data models is gonna be buying them with items in the quests."
 				""
@@ -967,11 +983,11 @@
 			]
 			title: "Hostile Neural Networks"
 			x: -3.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			can_repeat: true
-			dependencies: ["66079F4565A6B631"]
+			dependencies: ["62F9642692D0B556"]
 			icon: {
 				Count: 1
 				id: "hostilenetworks:data_model"
@@ -1026,11 +1042,16 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
-			y: 1.5d
+			title: "Squid Data Model"
+			x: -2.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["66079F4565A6B631"]
+			dependencies: [
+				"19B88F40FFC77FBE"
+				"66079F4565A6B631"
+			]
+			dependency_requirement: "one_completed"
 			id: "696039828152042F"
 			rewards: [{
 				id: "6A43749BF2A97A44"
@@ -1372,7 +1393,7 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["66079F4565A6B631"]
+			dependencies: ["62F9642692D0B556"]
 			icon: {
 				Count: 1
 				id: "hostilenetworks:data_model"
@@ -1436,8 +1457,8 @@
 				}
 			]
 			title: "Spider Data Model"
-			x: -4.5d
-			y: 1.5d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7CCA83876C2A61BB"]
@@ -1545,6 +1566,17 @@
 			}]
 			x: 11.5d
 			y: 6.5d
+		}
+		{
+			id: "19B88F40FFC77FBE"
+			subtitle: "You can also get ink sacs through the extractinator. You'll lose your bucket(s)!"
+			tasks: [{
+				id: "3782AD7E23F31ED9"
+				title: "Extractinator Method"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Low Voltage"]

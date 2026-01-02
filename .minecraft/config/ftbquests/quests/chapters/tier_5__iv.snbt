@@ -41,33 +41,38 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "6FDEA489E3F4D806"
-					item: "gtceu:iv_electric_motor"
-					type: "item"
+			tasks: [{
+				id: "269588B81233C5BA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:iv_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_robot_arm"
+							}
+						]
+					}
 				}
-				{
-					id: "4E403D6736AC1353"
-					item: "gtceu:iv_electric_pump"
-					type: "item"
-				}
-				{
-					id: "2FFA400D3BAA7593"
-					item: "gtceu:iv_conveyor_module"
-					type: "item"
-				}
-				{
-					id: "5D4380AA1717A30C"
-					item: "gtceu:iv_robot_arm"
-					type: "item"
-				}
-				{
-					id: "212D12AAF0B0C474"
-					item: "gtceu:iv_electric_piston"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Do you?"
 			x: 0.0d
 			y: 6.0d
@@ -1203,6 +1208,7 @@
 				"165BA28A8FBA4556"
 			]
 			id: "5080DC298EE66D18"
+			min_required_dependencies: 2
 			rewards: [{
 				id: "44FFDBA9E1452C1E"
 				item: "gtmutils:doge_coin"
@@ -1388,6 +1394,7 @@
 				"23F1153372A0B7D6"
 				"15A09F14F12AE9B2"
 				"6071D79FFF8DCE13"
+				"711FD6000148A2CE"
 			]
 			description: [
 				"First big multiblock machine."
@@ -1401,6 +1408,7 @@
 				"This one *can't* parallelize though, unlike the EBF later on."
 			]
 			id: "7243EE3F57F3A31A"
+			min_required_dependencies: 3
 			rewards: [{
 				id: "567A85200C4DCE01"
 				item: "gtmutils:doge_coin"
@@ -1573,18 +1581,26 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "5412A6DF4DDA5656"
-					item: "gtceu:iv_emitter"
-					type: "item"
+			tasks: [{
+				id: "4FC7DB665AAA4BB4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:iv_emitter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_sensor"
+							}
+						]
+					}
 				}
-				{
-					id: "612E94A7DE9AF1CD"
-					item: "gtceu:iv_sensor"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: 12.0d
 			y: 15.0d
 		}
@@ -1738,7 +1754,11 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["62704CC3038F1B20"]
+			dependencies: [
+				"62704CC3038F1B20"
+				"408A7D4D16AE22DF"
+			]
+			dependency_requirement: "one_completed"
 			id: "48E481BA1662E0F6"
 			rewards: [{
 				id: "2EEBBD13DF2B7483"
@@ -1754,7 +1774,11 @@
 			y: 18.5d
 		}
 		{
-			dependencies: ["7B6D059D211A42FC"]
+			dependencies: [
+				"7B6D059D211A42FC"
+				"00BC46C041564109"
+			]
+			dependency_requirement: "one_completed"
 			id: "0540B5F9B83518AD"
 			rewards: [{
 				id: "1AB766247A8034B9"
@@ -1977,6 +2001,39 @@
 			}]
 			x: 5.5d
 			y: 5.5d
+		}
+		{
+			description: ["You can get your Tantalum from lava with Tantalite as well - so if you do this checkmark this Quest to unlock the ABS!"]
+			id: "711FD6000148A2CE"
+			tasks: [{
+				id: "32645EBB35A244BC"
+				title: "Tantalum - the hard way"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 7.0d
+		}
+		{
+			description: ["You could also centrifuge Redstone Dust....if you don't wanna go for the Star Extractor yet"]
+			id: "00BC46C041564109"
+			tasks: [{
+				id: "70BB58B182EEFD19"
+				title: "Mercury from Redstone"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 13.0d
+		}
+		{
+			description: ["If you don't wanna go for PBI (or you're too broke for it) then go for some other ways to obtain Raw Carbon Fibers!"]
+			id: "408A7D4D16AE22DF"
+			tasks: [{
+				id: "3557BF9A70CAFCBB"
+				title: "Other Ways?"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 17.5d
 		}
 	]
 	subtitle: ["Insane Voltage"]
