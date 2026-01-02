@@ -232,4 +232,5 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'gtceu:large_chemical_reactor/phthalic_acid_from_naphthalene'})
     event.remove({ id: 'gtceu:large_chemical_reactor/phenol_from_cumene'})
     event.remove({ id: 'gtceu:chemical_reactor/phenol_from_cumene'})
+    event.remove({ output: ['bigger_ae2:advanced_fluid_cell_housing', 'bigger_ae2:advanced_item_cell_housing', 'bigger_ae2:advanced_flux_cell_housing', 'bigger_ae2:quantum_item_storage_cell', 'bigger_ae2:quantum_cell_component', 'bigger_ae2:digital_singularity_cell_component', 'bigger_ae2:quantum_flux_storage_cell', 'bigger_ae2:digital_singularity_item_storage_cell', 'bigger_ae2:digital_singularity_flux_storage_cell', 'bigger_ae2:4_core_crafting_accelerator', 'bigger_ae2:16_core_crafting_accelerator', 'bigger_ae2:64_core_crafting_accelerator', 'bigger_ae2:256_core_crafting_accelerator', 'bigger_ae2:1024_core_crafting_accelerator']})
   })

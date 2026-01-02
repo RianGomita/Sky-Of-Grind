@@ -378,9 +378,12 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid()
         .color(0x7c8799)
     event.create("cleaned_californium")
-        .dust()
+        .dust().ingot()
         .color(0xa3b2c9)
         .element(GTElements.Cf)
+		.flags(
+            GTMaterialFlags.GENERATE_PLATE
+        )
     event.create("condensed_star_matter")
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .element('condensed_star_matter')
