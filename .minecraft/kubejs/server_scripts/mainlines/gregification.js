@@ -1143,6 +1143,111 @@ sog.shaped(
     }
 )
 sog.shaped(
+    'gtceu:luv_electric_extractinator',
+    ['ABC', 'DEF', 'GHA'],
+    {
+        A: 'gtceu:luv_robot_arm',
+        B: 'gtceu:luv_voltage_coil',
+        C: 'gtceu:osmiridium_gear',
+        D: 'gtceu:luv_conveyor_module',
+        E: 'gtceu:luv_machine_hull',
+        F: 'gtceu:luv_sensor',
+        G: 'gtceu:quantum_star',
+        H: 'extractinator:extractinator',
+
+    }
+)
+sog.shaped(
+    'gtceu:zpm_electric_extractinator',
+    ['ABC', 'DEF', 'GHA'],
+    {
+        A: 'gtceu:zpm_robot_arm',
+        B: 'gtceu:zpm_voltage_coil',
+        C: 'gtceu:naquadah_alloy_gear',
+        D: 'gtceu:zpm_conveyor_module',
+        E: 'gtceu:zpm_machine_hull',
+        F: 'gtceu:zpm_sensor',
+        G: 'gtceu:quantum_star',
+        H: 'extractinator:extractinator',
+
+    }
+)
+sog.shaped(
+    'gtceu:uv_electric_extractinator',
+    ['ABC', 'DEF', 'GHA'],
+    {
+        A: 'gtceu:uv_robot_arm',
+        B: 'gtceu:uv_voltage_coil',
+        C: 'gtceu:small_darmstadtium_gear',
+        D: 'gtceu:uv_conveyor_module',
+        E: 'gtceu:uv_machine_hull',
+        F: 'gtceu:uv_sensor',
+        G: 'gtceu:quantum_star',
+        H: 'extractinator:extractinator',
+
+    }
+)
+sog.shaped(
+    'gtceu:uhv_electric_extractinator',
+    ['ABC', 'DEF', 'GHA'],
+    {
+        A: 'gtceu:uhv_robot_arm',
+        B: 'kubejs:uhv_voltage_coil',
+        C: 'gtceu:neutronium_gear',
+        D: 'gtceu:uhv_conveyor_module',
+        E: 'gtceu:uhv_machine_hull',
+        F: 'gtceu:uhv_sensor',
+        G: 'gtceu:gravi_star',
+        H: 'extractinator:extractinator',
+
+    }
+)
+sog.shaped(
+    'gtceu:uev_electric_extractinator',
+    ['ABC', 'DEF', 'GHA'],
+    {
+        A: 'gtceu:uev_robot_arm',
+        B: 'kubejs:uev_voltage_coil',
+        C: 'gtceu:resonant_essence_gear',
+        D: 'gtceu:uev_conveyor_module',
+        E: 'gtceu:uev_machine_hull',
+        F: 'gtceu:uev_sensor',
+        G: 'gtceu:gravi_star',
+        H: 'extractinator:extractinator',
+
+    }
+)
+sog.shaped(
+    'gtceu:uiv_electric_extractinator',
+    ['ABC', 'DEF', 'GHA'],
+    {
+        A: 'gtceu:uiv_robot_arm',
+        B: 'kubejs:uiv_voltage_coil',
+        C: 'gtceu:draconium_gear',
+        D: 'gtceu:uiv_conveyor_module',
+        E: 'gtceu:uiv_machine_hull',
+        F: 'gtceu:uiv_sensor',
+        G: 'gtceu:gravi_star',
+        H: 'extractinator:extractinator',
+
+    }
+)
+sog.shaped(
+    'gtceu:uxv_electric_extractinator',
+    ['ABC', 'DEF', 'GHA'],
+    {
+        A: 'gtceu:uxv_robot_arm',
+        B: 'kubejs:uxv_voltage_coil',
+        C: 'gtceu:awakened_draconium_gear',
+        D: 'gtceu:uxv_conveyor_module',
+        E: 'gtceu:uxv_machine_hull',
+        F: 'gtceu:uxv_sensor',
+        G: 'gtceu:gravi_star',
+        H: 'extractinator:extractinator',
+
+    }
+)
+sog.shaped(
     'gtceu:robust_extractinator',
     ['ABC', 'DEF', 'GHA'],
     {
