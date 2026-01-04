@@ -1,6 +1,13 @@
 
 ServerEvents.recipes(event => {
 
+event.recipes.gtceu.qsp('fusion_radon_qsp')
+    .notConsumable('kubejs:fusion_projector_module')
+    .inputFluids(Fluid.of('gtceu:gold', 16))
+    .inputFluids(Fluid.of('gtceu:mercury', 16))
+    .outputFluids(Fluid.of('gtceu:radon 1000'))
+    .duration(10)
+    .EUt(GTValues.VA[GTValues.UXV]);
 event.recipes.gtceu.qsp('cosmic_neutronium')
     .notConsumable('kubejs:cosmic_projector_module')
     .itemInputs('gtceu:neutronium_ingot', '8x gtceu:resonant_essence_ingot')
