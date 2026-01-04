@@ -47,3 +47,6 @@ features:
   # Whether the custom ZPM tools are enabled.
   customZPMToolsEnabled: false
 
+  # Whether the Auto Turbo Chargers are enabled.
+  autoChargersEnabled: false
+

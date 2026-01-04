@@ -36,4 +36,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build()
         )
         .workableCasingModel("kubejs:block/casings/machine_casing_turbine_naquadria", 'gtceu:block/multiblock/generator/large_plasma_turbine')
-})
+    })

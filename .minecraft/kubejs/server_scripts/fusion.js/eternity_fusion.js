@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
             '64x gtceu:neutron_reflector',
             'kubejs:cosmic_processor'
         )
-        .inputFluids('gtceu:peek 14400')
+        .inputFluids('gtceu:meta_stable_molten_zylon 14400')
         .itemOutputs('16x kubejs:fusion_coil_mk3')
         .duration(200)
         .EUt(GTValues.VA[GTValues.UIV])
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
             'gtceu:uxv_machine_casing',
             'kubejs:cosmic_processor'
         )
-        .inputFluids('gtceu:peek 14400')
+        .inputFluids('gtceu:meta_stable_molten_zylon 14400')
         .itemOutputs('8x kubejs:fusion_casing_mk5')
         .duration(200)
         .EUt(GTValues.VA[GTValues.UIV])

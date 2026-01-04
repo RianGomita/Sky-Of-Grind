@@ -314,7 +314,7 @@ event.recipes.gtceu.altart6('altart4recipe')
     .itemOutputs('gtceu:altart4')
     .duration(375)
     .EUt(GTValues.VA[GTValues.LuV]);
-    
+
 event.recipes.gtceu.altart4('altart5recipe')
     .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
     .itemInputs('gtceu:altart4')
@@ -392,6 +392,7 @@ event.recipes.gtceu.rock_crusher('netherrackbreaker')
     .itemOutputs('minecraft:netherrack')
     .duration(16)
     .EUt(GTValues.VA[GTValues.EV]);
+
 
 event.shaped(
     'gtceu:tectonic_plate_accelerator',

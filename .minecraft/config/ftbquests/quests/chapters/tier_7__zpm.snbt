@@ -161,17 +161,25 @@
 		}
 		{
 			dependencies: ["146B5BFAD44A9A2A"]
+			icon: "gtceu:zpm_assembler"
 			id: "2FE4D2EEAB0EB265"
 			rewards: [{
 				id: "72719261F13DBDDD"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "3B88CB76D900D676"
-				item: "gtceu:zpm_assembler"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3B88CB76D900D676"
+					item: "gtceu:zpm_assembler"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5228777F09C2C949"
+					type: "checkmark"
+				}
+			]
 			x: 2.0d
 			y: 3.0d
 		}
@@ -1098,17 +1106,25 @@
 		}
 		{
 			dependencies: ["62CD542A8E01830A"]
+			icon: "gtceu:zpm_chemical_reactor"
 			id: "5A46B628E9750597"
 			rewards: [{
 				id: "6947468FC3F7526E"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "32FC16D35AD2CCA7"
-				item: "gtceu:zpm_chemical_reactor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "32FC16D35AD2CCA7"
+					item: "gtceu:zpm_chemical_reactor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "74682FDB854BEDDB"
+					type: "checkmark"
+				}
+			]
 			x: -1.25d
 			y: 2.0d
 		}

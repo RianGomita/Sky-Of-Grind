@@ -2,7 +2,7 @@ Platform.mods.kubejs.name = 'GregTech';
 Platform.mods.bloodmagic.name = 'GregTechBM';
 
 StartupEvents.registry('item', sog => {
-    // Universal circuits
+    //Universal circuits
         const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
         tiers.forEach((universal_circuit) => {
             sog.create(universal_circuit + "_universal_circuit")
@@ -105,7 +105,7 @@ StartupEvents.registry('item', sog => {
     sog.create('space_time_heavy_plating').displayName('SpaceTime Heavy Plating').texture('kubejs:item/heavy_plating/space_time_heavy_plating')
     sog.create('eternity_heavy_plating').displayName('Eternity Heavy Plating').texture('kubejs:item/heavy_plating/eternity_heavy_plating')
     // Power
-    sog.create('tesla_coil_mk1').displayName('Tesla Coil MKI').texture('kubejs:item/power/tesla_coil_mk1').tooltip('Will produce 1A ZPM with the Tesla Tower')
+        sog.create('tesla_coil_mk1').displayName('Tesla Coil MKI').texture('kubejs:item/power/tesla_coil_mk1').tooltip('Will produce 1A ZPM with the Tesla Tower')
     sog.create('tesla_coil_mk2').displayName('Tesla Coil MKII').texture('kubejs:item/power/tesla_coil_mk2').tooltip('Will produce 1A UEV with the Tesla Tower')
     sog.create('tesla_coil_mk3').displayName('Tesla Coil MKIII').texture('kubejs:item/power/tesla_coil_mk3').tooltip('Will produce 1A UXV with the Tesla Tower')
     // Particles
@@ -139,6 +139,7 @@ StartupEvents.registry('item', sog => {
     sog.create('atomically_compressed_neutronium_credit').maxStackSize(64).displayName('Atomically Compressed Neutronium Credit').texture('kubejs:item/atomically_compressed_neutronium_credit')
     // Exotic Condensate
     sog.create('quantum_stretched_lattice').maxStackSize(64).displayName('Quantum Stretched Lattice')
+    sog.create('decay_particles').maxStackSize(64).displayName('Decay Particles')
     // Datas
     const data = ["cosmic", "elementary", "eternity", "plasma", "singularity", "spacetime", "universe"]
         data.forEach((data) => {
@@ -147,6 +148,27 @@ StartupEvents.registry('item', sog => {
                 .tooltip("§7Encrypted Data")
                 .textureJson({ layer0: `kubejs:item/data/${data}_data` })
         })
+
+//ERE
+sog.create('watch_of_flowing_time')
+    .displayName("Watch of Flowing Time")
+    .texture('kubejs:item/watch_of_flowing_time')
+    .tooltip("§5A tool to count every second in eternity")
+
+sog.create('ultra_stable_cosmic_strings')
+    .displayName("Ultra-Stable Cosmic Strings")
+    .texture('kubejs:item/ultra_stable_cosmic_strings')
+    .tooltip('Turns out string theory might be a bit more correct than we though')
+
+sog.create('woven_space_time')
+    .displayName("The Very Fabric of Reality")
+    .texture('kubejs:item/woven_space_time')
+    .tooltip('The line between sufficiently advanced science and magic is non-existant')
+
+sog.create('entropic_cosmic_mesh')
+    .displayName("Disordered Cosmic Strings")
+    .texture('kubejs:item/entropic_cosmic_mesh')
+
     // PPF stuff
     sog.create('lv_circuit_etching_pattern')
         .displayName("LV Processor Pattern")
@@ -180,6 +202,7 @@ StartupEvents.registry('item', sog => {
 StartupEvents.registry('block', sog => {
 
     // C A S I N G S
+
     sog.create('neutronate_enriched_atomic_casing')
         .displayName('Neutronate Enriched Atomic Casing')
         .textureAll('kubejs:block/atomic/casing')
@@ -378,7 +401,7 @@ StartupEvents.registry('block', sog => {
         .defaultCutout()
         .tagBlock('forge:mineable/wrench')
     sog.create('trascendental_space_time_casing')
-        .displayName('Transcendental SpaceTime Casing')
+        .displayName('Trascendental SpaceTime Casing')
         .textureAll('kubejs:block/casings/endgame/trascendental_space_time_casing')
         .soundType('metal')
         .resistance(1)
@@ -608,7 +631,7 @@ StartupEvents.registry('block', sog => {
         .defaultCutout()
         .tagBlock("forge:mineable/wrench")
 
-    // F U S I O N   M K 4
+// F U S I O N   M K 4
     sog.create('fusion_casing_mk4')
         .displayName('Fusion Machine Casing MK IV')
         .textureAll('kubejs:block/fusion/fusion_casing_mk4')
@@ -639,6 +662,7 @@ StartupEvents.registry('block', sog => {
         .tagBlock('forge:mineable/wrench')
 
     // P R O J E C T O R   M O D U L E S
+    
     sog.create('drilling_projector_module')
         .displayName('Space Drill Projector Module')
         .textureAll('kubejs:block/projector/drilling_projector_module')
@@ -683,8 +707,7 @@ StartupEvents.registry('block', sog => {
         .hardness(9)
         .lightLevel(0)
         .tagBlock('forge:mineable/wrench')
-
-    // C O I L S
+        // C O I L S
     sog.create('atomic_alloy_coil_block', 'gtceu:coil')
         .temperature(12500)
         .level(32) //this is the multismelter parallel amount. The math is parallel = (level * 32)
@@ -738,8 +761,7 @@ StartupEvents.registry('block', sog => {
         .requiresTool(true)
         .soundType('metal')
         .tagBlock('forge:mineable/wrench')
-    
-    // Compressed TNT
+          // Compressed TNT
     sog.create('compressed_industrial_tnt')
         .displayName('Compressed Industrial TNT')
         .textureAll('kubejs:block/compressed_tnt/compressed_industrial_tnt')

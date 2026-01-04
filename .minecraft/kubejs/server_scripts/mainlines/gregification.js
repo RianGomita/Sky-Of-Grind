@@ -615,7 +615,7 @@ ServerEvents.recipes(sog => {
           F: 'gtceu:steel_block'
         }
       )
-    
+
     sog.shaped('bigger_ae2:advanced_fluid_cell_housing', [
             'ABA',
             'B B',
@@ -650,6 +650,30 @@ ServerEvents.recipes(sog => {
             D: '#gtceu:circuits/uv'
         }
     )
+
+            sog.shaped('expandedae:artificial_universe_fluid_cell', [
+            'ADA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'gtceu:cosmic_neutronium_plate',
+            B: 'bigger_ae2:digital_singularity_cell_component',
+            D: '#gtceu:circuits/uev',
+            C: 'avaritia:eternal_singularity'
+        }
+    )
+            sog.shaped('expandedae:artificial_universe_item_cell', [
+            'ADA',
+            'BCB',
+            'ABA'
+        ], {
+            A: 'gtceu:cosmic_neutronium_plate',
+            B: 'bigger_ae2:digital_singularity_cell_component',
+            D: '#gtceu:circuits/uev',
+            C: 'avaritia:eternal_singularity'
+        }
+    )
+
     ////// Machine Recipe //////
 
     sog.shaped(
@@ -959,7 +983,18 @@ ServerEvents.recipes(sog => {
                 C: 'gtceu:zpm_field_generator',
                 H: 'gtceu:naquadah_alloy_buzz_saw_blade'
            }
-            ).id('sog:mega_ebf')
+            )
+    sog.shaped(
+            'gtceu:mega_vacuum_freezer',
+            ['ABA', 'CZC', 'HBH'],
+            {
+                A: 'gtceu:dense_triplatirium_235_plate',
+                B: 'gtceu:atomic_casing',
+                Z: 'gtceu:vacuum_freezer',
+                C: 'gtceu:zpm_field_generator',
+                H: 'gtceu:naquadah_alloy_buzz_saw_blade'
+           }
+            )
     sog.shaped(
             'gtceu:atomicforge',
             ['ABA', 'CZC', 'CHC'],

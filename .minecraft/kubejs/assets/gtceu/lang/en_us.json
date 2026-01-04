@@ -321,6 +321,10 @@
     "gtceu.jei.ore_vein.glacio_chaos": "Chaos Vein Glacio",
     "gtceu.jei.ore_vein.glacio_pitchblend": "Pitchblend Vein Glacio",
     "gtceu.jei.ore_vein.glacio_rutile": "Rutile Vein Glacio",
+	"block.gtceu.eternity_recursion_engine": "§1Eternity Recursion Engine",
+    "gtceu.eternity_recursion_engine": "Eternity Recursion Engine",
+    "material.gtceu.quark_gluon": "§6Quark Gluon",
+    "material.gtceu.degenerate_gluon_condensate": "Degenerate Gluon Condensate",
     "gtceu.large_bacterial_vat": "Large Bacterial Vat",
     "gtceu.large_dehydration_unit":"Large Dehydration Unit",
     "gtceu.large_evaporation_pool":"Large Evaporation Pool",
@@ -499,7 +503,7 @@
     "material.gtceu.heavy_duty_alloy_t3": "Highly Advanced Duty Alloy",
     "material.gtceu.heavy_duty_alloy_t4": "Cosmic Duty Alloy",
     "material.gtceu.heavy_salts_waste": "Heavy Salts Waste",
-	"material.gtceu.helium_3": "Helium-3",
+    "material.gtceu.helium_3": "Helium-3",
     "material.gtceu.hexachlorocyclopentadiene": "Hexachlorocyclopentadiene",
     "material.gtceu.high_entropy_neptunium": "High-Entropy Neptunium",
     "material.gtceu.high_purity_kerosene": "High-Purity Kerosene",
@@ -869,5 +873,6 @@
     "skyofgrind.custom.tooltip_xl_plasma_turbine_1": "\u00A0A powerful turbine - you'll need a few of them!",
     "skyofgrind.custom.tooltip_xl_radiation_chamber_1": "\u00A0Bathes materials in intensified radiation fields for transformation or purification.",
     "steamadditions.custom.tooltip_steam_foundry_1": "\u00A0Uses pressurized steam to melt and cast metals with steady, heat-rich output.",
-    "steamadditions.custom.tooltip_steam_separator_1": "\u00A0Uses pressurized steam to centrifuge solid materials, separating items into their refined components."
+    "steamadditions.custom.tooltip_steam_separator_1": "\u00A0Uses pressurized steam to centrifuge solid materials, separating items into their refined components.",
+    "skyofgrind.custom.tooltip_eternity_recursion_engine": "\u00A0Simulates the life of the universe from beginning to end, over and over and over and over again... to capture an infintesimally small fraction of eternity."
 }

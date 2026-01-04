@@ -311,17 +311,25 @@
 		}
 		{
 			dependencies: ["37F84238ECE73317"]
+			icon: "gtceu:uv_fluid_heater"
 			id: "02F1AB5B0139897C"
 			rewards: [{
 				id: "2B8B26BD7056FC68"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "226736A034ADF42D"
-				item: "gtceu:uv_fluid_heater"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "226736A034ADF42D"
+					item: "gtceu:uv_fluid_heater"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "39E2F57A1C86852D"
+					type: "checkmark"
+				}
+			]
 			x: -0.5d
 			y: 5.5d
 		}
@@ -425,32 +433,48 @@
 		}
 		{
 			dependencies: ["37F84238ECE73317"]
+			icon: "gtceu:uv_chemical_bath"
 			id: "79A769C85FBFE8E3"
 			rewards: [{
 				id: "1011AC5C75ACFB3A"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "3D5C4F6931154C91"
-				item: "gtceu:uv_chemical_bath"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3D5C4F6931154C91"
+					item: "gtceu:uv_chemical_bath"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5405E9B120AD7E30"
+					type: "checkmark"
+				}
+			]
 			x: 11.5d
 			y: 4.0d
 		}
 		{
+			icon: "gtceu:uv_centrifuge"
 			id: "2549CD748DC09212"
 			rewards: [{
 				id: "46932F3FB48A6B4C"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "4C3668D90546B155"
-				item: "gtceu:uv_centrifuge"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4C3668D90546B155"
+					item: "gtceu:uv_centrifuge"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "51F8008F74E26848"
+					type: "checkmark"
+				}
+			]
 			x: 11.5d
 			y: -1.0d
 		}
@@ -878,17 +902,25 @@
 		}
 		{
 			dependencies: ["242C540B3A015A3E"]
+			icon: "gtceu:uv_brewery"
 			id: "5683F02BBA2A85D6"
 			rewards: [{
 				id: "702C206487286A0D"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "2A53631B5604C128"
-				item: "gtceu:uv_brewery"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2A53631B5604C128"
+					item: "gtceu:uv_brewery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "736F104531904932"
+					type: "checkmark"
+				}
+			]
 			x: 15.5d
 			y: 1.5d
 		}
@@ -1518,6 +1550,20 @@
 			}]
 			x: 7.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["71C494C011495483"]
+			description: ["MEGA VACUUM FREZEERRR"]
+			id: "086FD236FC720BC9"
+			subtitle: "MEGA VACUUM FREZEERRR"
+			tasks: [{
+				id: "36AE949B66F4AD39"
+				item: "gtceu:mega_vacuum_freezer"
+				type: "item"
+			}]
+			title: "MEGA VACUUM FREZEERRR"
+			x: 0.5d
+			y: -2.0d
 		}
 	]
 	subtitle: ["Ultimate Voltage"]

@@ -1,0 +1,9 @@
+// Compost colors for bigger_ae2. You may add your own colors, change existing ones, or remove colors that aren't needed.
+advanced_fluid_cell_housing, #ff8cff
+advanced_item_cell_housing, #ffff8c
+digital_singularity_cell_component, #dea5f2
+digital_singularity_fluid_storage_cell, #ff90ff
+digital_singularity_item_storage_cell, #fffba1
+quantum_cell_component, #e0e4ff
+quantum_fluid_storage_cell, #f7a1ff
+quantum_item_storage_cell, #ffffab

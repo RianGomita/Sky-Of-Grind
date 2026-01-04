@@ -6,6 +6,7 @@ ServerEvents.recipes( sog => {
     ], {
         L: '#minecraft:logs'
     })
+    
     sog.shapeless('buildinggadgets2:template', [
             'minecraft:paper',
             'minecraft:blue_dye'

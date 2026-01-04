@@ -1,3 +1,4 @@
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('quantum_entanglement_encrypter')
         .category('multiblock')
@@ -33,4 +34,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build()
         )
         .workableCasingModel("kubejs:block/casings/highly_reinforced_radioactive_casing", 'gtceu:block/multiblock/hpca')
+
 })

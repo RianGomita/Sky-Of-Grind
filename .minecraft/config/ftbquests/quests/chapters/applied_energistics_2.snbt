@@ -757,6 +757,82 @@
 			x: 20.5d
 			y: 1.0d
 		}
+		{
+			dependencies: ["302767FC02F7C8B5"]
+			id: "3E8D3A1983B99C50"
+			subtitle: "You got way too many items?"
+			tasks: [{
+				id: "0B373130DD10BF65"
+				title: "Bulk Storage?"
+				type: "checkmark"
+			}]
+			x: 21.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3E8D3A1983B99C50"]
+			id: "4341DCCD92C61FB4"
+			subtitle: "Infinite storage for 1 type."
+			tasks: [{
+				id: "28C083D0DB85E140"
+				item: {
+					Count: 1
+					id: "megacells:bulk_item_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 22.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4341DCCD92C61FB4"]
+			id: "63B7A9DBD6BC1970"
+			subtitle: "Infinite storage for 63 types."
+			tasks: [{
+				id: "178B4AD040A12D61"
+				item: {
+					Count: 1
+					id: "expandedae:artificial_universe_item_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E8D3A1983B99C50"]
+			id: "358DB0EC6E68E485"
+			subtitle: "Infinite storage for 1 type."
+			tasks: [{
+				id: "655C19A37BF16A2D"
+				item: {
+					Count: 1
+					id: "bigger_ae2:digital_singularity_fluid_storage_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 22.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["358DB0EC6E68E485"]
+			id: "1AD197347AC209F4"
+			subtitle: "Infinite storage for 63 types."
+			tasks: [{
+				id: "4A9D00DB1029FFCA"
+				item: {
+					Count: 1
+					id: "expandedae:artificial_universe_fluid_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 24.0d
+			y: 1.0d
+		}
 	]
 	subtitle: ["Singularities"]
 	title: "&#8442f5Applied Energistics 2"

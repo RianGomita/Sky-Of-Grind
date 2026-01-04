@@ -1,0 +1,20 @@
+// Compost colors for expandedae. You may add your own colors, change existing ones, or remove colors that aren't needed.
+artificial_universe_fluid_cell, #1f486c
+artificial_universe_item_cell, #504152
+auto_complete_card, #bbb2ae
+dual_cell_housing, #b88c82
+dual_storage_cell_16k, #c0cfa1
+dual_storage_cell_16m, #118d4e
+dual_storage_cell_1k, #cc9e94
+dual_storage_cell_1m, #365f51
+dual_storage_cell_256k, #eec0d2
+dual_storage_cell_256m, #2d657c
+dual_storage_cell_4k, #e4c996
+dual_storage_cell_4m, #448e4a
+dual_storage_cell_64k, #d6dad4
+dual_storage_cell_64m, #1c7680
+exp_pattern_provider_upgrade, #f8f8f8
+greater_accel_card, #b6aba5
+mega_dual_cell_housing, #155e4e
+pattern_refiller_card, #c3bcb9
+priority_card, #c9ac8a

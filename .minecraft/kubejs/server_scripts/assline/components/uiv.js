@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
   .itemInputs('8x gtceu:heavy_duty_alloy_t3_dust', '5x draconicevolution:awakened_draconium_dust', '4x kubejs:reactive_chaos_dust')
   .circuit(21)
   .outputFluids(Fluid.of("gtceu:heavy_duty_alloy_t4", 288))
-  .duration(20*405)
+  .duration(20*60)
   .EUt(GTValues.VA[GTValues.UXV])
   .blastFurnaceTemp(15000)
 

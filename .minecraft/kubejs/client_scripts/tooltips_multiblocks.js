@@ -1052,8 +1052,7 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:cryogenic_centrifuge",
             "gtceu:extreme_cracking_unit",
             "gtceu:particle_implosion_chamber",
-            "gtceu:xl_radiation_chamber",
-            "gtceu:large_dehydration_unit"
+            "gtceu:xl_radiation_chamber"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1063,8 +1062,7 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     'PCH_LASER_SOG': {
         multiblockIds: [
             "gtceu:quantum_space_projector",
-            "gtceu:nebular_plasma_nexus",
-            "gtceu:chemical_plant"
+            "gtceu:nebular_plasma_nexus"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1100,7 +1098,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     },
     'PCH_LASER_SUBTICK_SOG': {
         multiblockIds: [
-            "gtceu:reinforced_atomicforge"
+            "gtceu:reinforced_atomicforge",
+            "gtceu:chemical_plant"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1137,7 +1136,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     },
     'PCH_SUBTICK_SOG': {
         multiblockIds: [
-            "gtceu:tectonic_plate_accelerator"
+            "gtceu:tectonic_plate_accelerator",
+            "gtceu:large_dehydration_unit"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1254,6 +1254,7 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
         "basegtm.custom.tooltip_descriptions_all",
         "basegtm.custom.tooltip_large_circuit_assembler_1",
         "basegtm.custom.tooltip_one_energy_hatch"
+        
     ],
     "gtceu:large_cutter": [
         "basegtm.custom.tooltip_descriptions_all",
@@ -3092,6 +3093,4 @@ ItemEvents.tooltip(event => {
             }
         });
     });
-
 });
-

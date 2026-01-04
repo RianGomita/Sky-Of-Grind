@@ -7,6 +7,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.COMPUTATION)
 })
 
+
+
+
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('quantum_space_projector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -63,3 +67,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
         .workableCasingModel("kubejs:block/casings/quantum_casing", 'gtceu:block/multiblock/fusion_reactor')
 })
+

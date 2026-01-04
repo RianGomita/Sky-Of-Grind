@@ -654,17 +654,25 @@
 		}
 		{
 			dependencies: ["34112DEEBBD82652"]
+			icon: "gtceu:iv_circuit_assembler"
 			id: "1E845400EBBC973A"
 			rewards: [{
 				id: "1B6AE7E3AAAB3A75"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "70C715E425D38208"
-				item: "gtceu:iv_circuit_assembler"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "70C715E425D38208"
+					item: "gtceu:iv_circuit_assembler"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "469AF55F1A33FB05"
+					type: "checkmark"
+				}
+			]
 			x: 3.0d
 			y: -1.5d
 		}
@@ -771,17 +779,25 @@
 		}
 		{
 			dependencies: ["3172CE3676E125EA"]
+			icon: "gtceu:luv_assembler"
 			id: "4ED00FF67721EC44"
 			rewards: [{
 				id: "52C252FFB7B30600"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "76B3DF3753C86678"
-				item: "gtceu:luv_assembler"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "76B3DF3753C86678"
+					item: "gtceu:luv_assembler"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "01557D5E9A593A6E"
+					type: "checkmark"
+				}
+			]
 			x: 9.0d
 			y: 16.0d
 		}
@@ -837,17 +853,25 @@
 		}
 		{
 			dependencies: ["3172CE3676E125EA"]
+			icon: "gtceu:luv_chemical_bath"
 			id: "3B396807AA6BEA57"
 			rewards: [{
 				id: "682E83D652D928D6"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "0B82B855C6B4F593"
-				item: "gtceu:luv_chemical_bath"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0B82B855C6B4F593"
+					item: "gtceu:luv_chemical_bath"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2E3D47ABBBAC60BA"
+					type: "checkmark"
+				}
+			]
 			x: 10.5d
 			y: 1.5d
 		}
@@ -902,17 +926,25 @@
 		}
 		{
 			dependencies: ["3172CE3676E125EA"]
+			icon: "gtceu:luv_chemical_reactor"
 			id: "323E34C2A51B1D69"
 			rewards: [{
 				id: "526A4F79D1FD0E48"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "25503288C0489C35"
-				item: "gtceu:luv_chemical_reactor"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "25503288C0489C35"
+					item: "gtceu:luv_chemical_reactor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "69167BE5598FB3A3"
+					type: "checkmark"
+				}
+			]
 			x: 9.0d
 			y: -3.0d
 		}
@@ -935,17 +967,25 @@
 		}
 		{
 			dependencies: ["6E6A5778FD8381A1"]
+			icon: "gtceu:luv_laser_engraver"
 			id: "022EAEF191DF65C4"
 			rewards: [{
 				id: "76A92C143AC1C331"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "7C9B94B653B2249C"
-				item: "gtceu:luv_laser_engraver"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "7C9B94B653B2249C"
+					item: "gtceu:luv_laser_engraver"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2295BACF9BA0C849"
+					type: "checkmark"
+				}
+			]
 			x: 12.5d
 			y: -1.5d
 		}
@@ -1205,6 +1245,7 @@
 				"2F41BD52FA527EC1"
 				"703F021AA20886F4"
 			]
+			icon: "gtceu:luv_centrifuge"
 			id: "1554884EF9FACAA4"
 			optional: true
 			rewards: [{
@@ -1212,11 +1253,18 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "0D2A230C057A16BF"
-				item: "gtceu:luv_centrifuge"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0D2A230C057A16BF"
+					item: "gtceu:luv_centrifuge"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "06E92E7222E75D3F"
+					type: "checkmark"
+				}
+			]
 			x: 10.5d
 			y: 21.0d
 		}

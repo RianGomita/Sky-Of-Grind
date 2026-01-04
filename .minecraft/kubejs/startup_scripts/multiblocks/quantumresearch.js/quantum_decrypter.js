@@ -1,3 +1,4 @@
+
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('quantum_entanglement_decrypter')
         .category('multiblock')

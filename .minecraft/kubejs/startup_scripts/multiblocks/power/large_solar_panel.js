@@ -7,6 +7,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.COOLING)
 })
 
+
+
+
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_solar_panel', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)

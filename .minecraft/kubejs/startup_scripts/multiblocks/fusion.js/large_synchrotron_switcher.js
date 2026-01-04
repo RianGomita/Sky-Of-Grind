@@ -7,6 +7,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.REPLICATOR)
 })
 
+
+
+
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_synchrotron_switcher', 'multiblock')
         .rotationState(RotationState.ALL)

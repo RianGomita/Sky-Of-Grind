@@ -31,5 +31,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build()
         )
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_heatproof', 'gtceu:block/machines/rock_crusher')   
-
 })

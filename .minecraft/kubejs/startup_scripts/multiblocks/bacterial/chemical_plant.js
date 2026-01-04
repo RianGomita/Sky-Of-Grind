@@ -8,6 +8,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.BATH)
 })
 
+
+
+
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('chemical_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
@@ -44,3 +48,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
         .workableCasingModel("gtceu:block/casings/solid/machine_casing_inert_ptfe", 'gtceu:block/machines/replicator')
 })
+

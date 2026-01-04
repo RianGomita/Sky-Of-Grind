@@ -25,7 +25,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('L', Predicates.blocks('gtceu:electrolytic_cell'))
             .where('T', Predicates.blocks('gtceu:sterilizing_filter_casing'))
             .where('C', Predicates.blocks('gtceu:cleanroom_glass'))
-            .where("A", Predicates.blocks('gtceu:plascrete')
+            .where("A",Predicates.blocks('gtceu:plascrete')
                   .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                   .or(Predicates.abilities(PartAbility.MAINTENANCE))
                   .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))

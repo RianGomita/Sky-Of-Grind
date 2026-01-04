@@ -80,7 +80,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     event.create('teslarium')
         .protons(24)
         .neutrons(48)
-        .symbol('Ts'); 
+        .symbol('Ts');
     event.create('awakened_draconium')
         .protons(61)
         .neutrons(82)
@@ -127,8 +127,7 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .symbol('*Nq↔*')
     event.create('resonant_thorium_fuel')
         .symbol('*Th↔*')
-
-        //  ₁₃₂₄₅₆₇₈₉₀
+        //  ₂₃₄₅₆₇₈₉₀
 })
 
 
@@ -233,7 +232,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 	event.create('unstable_enriched_thorium_fuel')
         .liquid()
         .color(0x2c4022)
-    event.create('lightly_plasmacracked_unstable_enriched_thorium_fuel')
+	event.create('lightly_plasmacracked_unstable_enriched_thorium_fuel')
         .liquid()
         .color(0x2d5519)
 	event.create('severly_plasmacracked_unstable_enriched_thorium_fuel')
@@ -334,14 +333,17 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0xffffff)
         .iconSet('infinity_catalyst')
         .ore(1, 1,)
+
     event.create("triplatirium_235")
         .ingot().liquid().dust()
         .components('1x uranium-235', '1x uranium', '3x platinum', '1x duranium')
         .formula('(Tr₂₃₅(U₂₃₅UPt₃Dr))', true)
+        .element('triplatirium_235')
         .blastTemp(10800)
         .color(0x47ffaf)
         .iconSet('metallic')
         .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.NO_SMELTING);
+
     event.create("atomic_alloy")
         .ingot().dust()
         .components('14x californium', '1x uranium-235', '1x uranium', '3x platinum', '1x duranium')
@@ -350,6 +352,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x513499)
         .iconSet('bright')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.NO_SMELTING);
+
     event.create("triplatirium_sulfate")
         .liquid()
         .color(0xbff52a)
@@ -380,10 +383,8 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create("cleaned_californium")
         .dust().ingot()
         .color(0xa3b2c9)
+        .flags(GTMaterialFlags.GENERATE_PLATE)
         .element(GTElements.Cf)
-		.flags(
-            GTMaterialFlags.GENERATE_PLATE
-        )
     event.create("condensed_star_matter")
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .element('condensed_star_matter')
@@ -440,7 +441,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.NO_SMELTING)
         event.create('heavy_duty_alloy_t4')
-        .ingot().dust().liquid()
+        .ingot().liquid().dust()
         .color(0x17e0ff)
         .cableProperties(GTValues.V[GTValues.UXV], 24, 0, true)
         .iconSet('metallic')
@@ -451,7 +452,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .iconSet('metallic')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
     event.create('kaemite')
-        .ingot().dust().liquid()
+        .ingot().liquid().dust()
         .color(0x00cfff)
         .ore(1, 1,)
         .element('kaemite')
@@ -465,7 +466,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid()
         .color(0x099409)
     event.create('resonant_essence')
-        .ingot().dust().liquid()
+        .ingot().liquid().dust()
         .color(0x8ceb34)
         .ore(1, 1,)
         .blastTemp(12000)
@@ -504,6 +505,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .iconSet('shiny')
         .element('teslarium')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
+
         // B A C T E R I A L   S T U F F
 
         event.create("raw_bacterial_dna")
@@ -647,15 +649,14 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x010005)
         .iconSet('dull')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.GENERATE_DENSE)
- 
 /// P O L Y M E R   S T U F F
 
     event.create('neoprene')
         .liquid(313).ingot().polymer()
         .color(0xFFECB3)
-        .iconSet('bright')
         .components('4x carbon', '5x hydrogen', '1x chlorine')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.NO_SMELTING)  
+        .iconSet('bright')
     event.create('xlpe')
         .liquid(408).ingot().polymer()
         .color(0xebeae8)
@@ -689,7 +690,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .components('14x carbon', '6x hydrogen', '2x nitrogen', '2x oxygen')
         .iconSet('bright')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE)
-        
+
 	event.create('sbr_emulsion')
 		.liquid(353)
 		.color(0xFFECB3)
@@ -915,7 +916,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('filtered_deep_water')
         .liquid(300)
         .color(0x0e17a1)
-        .element('deep_water')
+        .formula('H₂O?', true)
     event.create('concentrated_heavy_brine')
         .liquid(293)
         .color(0x63230a)
@@ -1033,12 +1034,12 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('crude_tetrapropylammonium_bromide')
         .dust()
         .color(0xFFF59D)
+        .components('12x carbon', '28x hydrogen', '1x nitrogen', '1x bromine')
         .formula('(C₃H₇)₄NBr', true)
     event.create('tetrapropylammonium_bromide')
         .dust()
         .color(0xe0d255)
-        .components('12x carbon', '28x hydrogen', '1x nitrogen', '1x bromine')
-        .formula('(C₃H₇)₄NBr', true)
+        .element('tetrapropylammonium_bromide')
     event.create('diluted_ethanol')
         .liquid(325)
         .color(0xab7055)
@@ -1052,6 +1053,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('zsm_5_solution')
         .liquid(325)
         .color(0x66853e)
+        .element('zsm_5')
         .formula('Na₁₈Al₁₈Si₇₄O₁₉₂·16H₂O', true)
     event.create('zsm_5')
         .dust()
@@ -1188,7 +1190,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(278)
         .color(0x7B1FA2)
         .components('14x carbon', '10x hydrogen', '2x nitrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)   
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
     event.create('degassed_kevlar_solution')
         .liquid(273)
         .color(0x7B1FA2)
@@ -1420,6 +1422,14 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .components('14x carbon', '6x hydrogen', '2x nitrogen', '2x oxygen')
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+
+
+
+
+
+
+
+
 /// P C B Stuff
     event.create('sodium_iodine')
         .dust()
@@ -1431,7 +1441,16 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .components('1x sodium', '1x iodine', '1x thalium')
         .formula('NaI(Tl)', true)
         .flags(GTMaterialFlags.GENERATE_LENS)
-			   
+
+
+
+
+
+
+
+
+
+
 /// C O S M I C   M A T E R I A L S   F U S I O N
     
 event.create('cosmic_tungsten')
@@ -1683,6 +1702,13 @@ event.create("hypercharged_nihonium")
 .plasma()
 .color(0x84a1e8)
 .element(GTElements.Nh)
+
+event.create("quark_gluon")
+    .plasma()
+    .color(0xc7cdcdd)
+event.create("degenerate_gluon_condensate")
+    .liquid()
+    .color(0xf7d0ed)
 
 event.create("astral_space_time_plasma")
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())

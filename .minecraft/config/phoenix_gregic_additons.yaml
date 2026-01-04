@@ -77,3 +77,6 @@ features:
   # What Strongest Coolant the Active Phoenix Cooler uses when in the PHPCA (Gt or GT Kubejs Material)
   CoolantBoost2: 1.2
 
+  # Whether the UHV to MAX solar panels are enabled
+  SolarsEnabled: false
+

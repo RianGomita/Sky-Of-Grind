@@ -544,74 +544,20 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4ECF59E2AA84D7CB"]
-			id: "332FB95A5CB2FF14"
+			dependencies: ["19D1E837A7CA3313"]
+			description: [
+				"Need better Eternity?"
+				"This is the way."
+			]
+			id: "1A9E1AC38776A94C"
+			subtitle: "Simulates the life of the universe from beginning to end, over and over and over and over again... to capture an infintesimally small fraction of eternity."
 			tasks: [{
-				id: "579666EDF61C6726"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:uxv_electric_motor"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uxv_electric_pump"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uxv_conveyor_module"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uxv_electric_piston"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uxv_robot_arm"
-							}
-						]
-					}
-				}
+				id: "000D48A98A258FEB"
+				item: "gtceu:eternity_recursion_engine"
 				type: "item"
 			}]
-			title: "UXV Components"
-			x: 7.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4ECF59E2AA84D7CB"]
-			id: "242D6D4BC9113A7E"
-			tasks: [{
-				id: "110A68EAC5725762"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:uxv_sensor"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uxv_emitter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uxv_field_generator"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "UXV Components #2"
-			x: 8.5d
-			y: -2.0d
+			x: 7.0d
+			y: -2.5d
 		}
 	]
 	subtitle: ["Ultra Extreme Voltage"]
