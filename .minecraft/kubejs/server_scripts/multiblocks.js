@@ -48,7 +48,55 @@ event.recipes.gtceu.altart2('magicianorb')
     .itemOutputs('bloodmagic:magicianbloodorb')
     .duration(3000)
     .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart3('magicianorb2')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
+    .itemInputs('bloodmagic:weakbloodorb')
+    .itemOutputs('bloodmagic:magicianbloodorb')
+    .duration(1500)
+    .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart4('magicianorb3')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
+    .itemInputs('bloodmagic:weakbloodorb')
+    .itemOutputs('bloodmagic:magicianbloodorb')
+    .duration(750)
+    .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart5('magicianorb4')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
+    .itemInputs('bloodmagic:weakbloodorb')
+    .itemOutputs('bloodmagic:magicianbloodorb')
+    .duration(375)
+    .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart6('magicianorb5')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
+    .itemInputs('bloodmagic:weakbloodorb')
+    .itemOutputs('bloodmagic:magicianbloodorb')
+    .duration(187)
+    .EUt(GTValues.VA[GTValues.LuV]);
 event.recipes.gtceu.altart2('largebloodbrick')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
+    .itemInputs('minecraft:stone_bricks')
+    .itemOutputs('4x bloodmagic:largebloodstonebrick')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart3('largebloodbrick')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
+    .itemInputs('minecraft:stone_bricks')
+    .itemOutputs('4x bloodmagic:largebloodstonebrick')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart4('largebloodbrick')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
+    .itemInputs('minecraft:stone_bricks')
+    .itemOutputs('4x bloodmagic:largebloodstonebrick')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart5('largebloodbrick')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
+    .itemInputs('minecraft:stone_bricks')
+    .itemOutputs('4x bloodmagic:largebloodstonebrick')
+    .duration(100)
+    .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart6('largebloodbrick')
     .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
     .itemInputs('minecraft:stone_bricks')
     .itemOutputs('4x bloodmagic:largebloodstonebrick')
@@ -72,11 +120,29 @@ event.recipes.gtceu.altart5('demoniteblock5')
     .itemOutputs('2x bloodmagic:dungeon_metal')
     .duration(100)
     .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart6('demoniteblock6')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 10000)])
+    .itemInputs('extendedcrafting:crystaltine_ingot')
+    .itemOutputs('2x bloodmagic:dungeon_metal')
+    .duration(50)
+    .EUt(GTValues.VA[GTValues.LuV]);
 event.recipes.gtceu.altart4('arcmagebloodorb')
     .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
     .itemInputs('bloodmagic:magicianbloodorb')
     .itemOutputs('bloodmagic:archmagebloodorb')
     .duration(3000)
+    .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart5('arcmagebloodorb2')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
+    .itemInputs('bloodmagic:magicianbloodorb')
+    .itemOutputs('bloodmagic:archmagebloodorb')
+    .duration(1500)
+    .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart6('arcmagebloodorb3')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 20000)])
+    .itemInputs('bloodmagic:magicianbloodorb')
+    .itemOutputs('bloodmagic:archmagebloodorb')
+    .duration(750)
     .EUt(GTValues.VA[GTValues.LuV]);
 event.recipes.gtceu.altart5('pylon')
     .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 40000)])
@@ -84,11 +150,23 @@ event.recipes.gtceu.altart5('pylon')
     .itemOutputs('bloodmagic:demonpylon')
     .duration(1500)
     .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart6('pylon2')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 40000)])
+    .itemInputs('bloodmagic:demoncrystallizer')
+    .itemOutputs('bloodmagic:demonpylon')
+    .duration(750)
+    .EUt(GTValues.VA[GTValues.LuV]);
 event.recipes.gtceu.altart5('photovoltaic')
     .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 40000)])
     .itemInputs('solarflux:photovoltaic_cell_3')
     .itemOutputs('solarflux:photovoltaic_cell_4')
     .duration(1500)
+    .EUt(GTValues.VA[GTValues.LuV]);
+event.recipes.gtceu.altart6('photovoltaicmaxblood')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 40000)])
+    .itemInputs('solarflux:photovoltaic_cell_3')
+    .itemOutputs('solarflux:photovoltaic_cell_4')
+    .duration(750)
     .EUt(GTValues.VA[GTValues.LuV]);
 event.recipes.gtceu.altart6('pyrochlore')
     .notConsumable('ad_astra:earth_globe')
@@ -181,11 +259,60 @@ event.recipes.gtceu.altart2('altart3recipe')
     .duration(3000)
     .EUt(GTValues.VA[GTValues.LuV]);
 
+event.recipes.gtceu.altart3('altart3recipe2')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
+    .itemInputs('gtceu:altart2')
+    .itemOutputs('gtceu:altart3')
+    .duration(1500)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
+event.recipes.gtceu.altart4('altart3recipe3')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
+    .itemInputs('gtceu:altart2')
+    .itemOutputs('gtceu:altart3')
+    .duration(750)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
+event.recipes.gtceu.altart5('altart3recipe4')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
+    .itemInputs('gtceu:altart2')
+    .itemOutputs('gtceu:altart3')
+    .duration(375)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
+event.recipes.gtceu.altart6('altart3recipe5')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
+    .itemInputs('gtceu:altart2')
+    .itemOutputs('gtceu:altart3')
+    .duration(187)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
 event.recipes.gtceu.altart3('altart4recipe')
     .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
     .itemInputs('gtceu:altart3')
     .itemOutputs('gtceu:altart4')
     .duration(3000)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
+event.recipes.gtceu.altart4('altart4recipe2')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
+    .itemInputs('gtceu:altart3')
+    .itemOutputs('gtceu:altart4')
+    .duration(1500)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
+event.recipes.gtceu.altart5('altart4recipe')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
+    .itemInputs('gtceu:altart3')
+    .itemOutputs('gtceu:altart4')
+    .duration(750)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
+event.recipes.gtceu.altart6('altart4recipe')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
+    .itemInputs('gtceu:altart3')
+    .itemOutputs('gtceu:altart4')
+    .duration(375)
     .EUt(GTValues.VA[GTValues.LuV]);
     
 event.recipes.gtceu.altart4('altart5recipe')
@@ -195,12 +322,34 @@ event.recipes.gtceu.altart4('altart5recipe')
     .duration(3000)
     .EUt(GTValues.VA[GTValues.LuV]);
 
+event.recipes.gtceu.altart5('altart5recipe2')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
+    .itemInputs('gtceu:altart4')
+    .itemOutputs('gtceu:altart5')
+    .duration(1500)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
+event.recipes.gtceu.altart6('altart5recipe3')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
+    .itemInputs('gtceu:altart4')
+    .itemOutputs('gtceu:altart5')
+    .duration(750)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
 event.recipes.gtceu.altart5('altart5recipe')
     .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
     .itemInputs('gtceu:altart5')
     .itemOutputs('gtceu:altart6')
     .duration(30000)
     .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.altart6('altart5recipe2')
+    .inputFluids([Fluid.of('bloodmagic:life_essence_fluid', 200000)])
+    .itemInputs('gtceu:altart5')
+    .itemOutputs('gtceu:altart6')
+    .duration(15000)
+    .EUt(GTValues.VA[GTValues.LuV]);
+
 // Rock Crusher recreation
 event.recipes.gtceu.rock_crusher('diorite')
     .notConsumable('minecraft:diorite')
