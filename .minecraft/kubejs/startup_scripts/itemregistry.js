@@ -401,7 +401,7 @@ StartupEvents.registry('block', sog => {
         .defaultCutout()
         .tagBlock('forge:mineable/wrench')
     sog.create('trascendental_space_time_casing')
-        .displayName('Trascendental SpaceTime Casing')
+        .displayName('Transcendental SpaceTime Casing')
         .textureAll('kubejs:block/casings/endgame/trascendental_space_time_casing')
         .soundType('metal')
         .resistance(1)

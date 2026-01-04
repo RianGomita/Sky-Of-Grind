@@ -10,8 +10,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('quantum_cooling_chamber', 'multiblock')
         .rotationState(RotationState.ALL)
-        .recipeType('quantum_cooling_chamber')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
+        .recipeType(['quantum_cooling_chamber', 'vacuum_freezer'])
+        .recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE, GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(() => Block.getBlock('gtceu:frostproof_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()      
             .aisle('###CCC###', '###C#C###', '###C#C###', '###C#C###', '###C#C###', '###C#C###', '###C#C###', '###C#C###', '###CCC###')
@@ -32,6 +32,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where("C", Predicates.blocks('gtceu:frostproof_machine_casing')
                     .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE))
+                    .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY, PartAbility.PARALLEL_HATCH))
                 )
                 .build()
         )

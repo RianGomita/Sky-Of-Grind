@@ -1121,7 +1121,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:hyper_wiremill",
             "gtceu:hyper_lathe",
             "gtceu:hyper_extruder",
-            "gtceu:hyper_mixer"
+            "gtceu:hyper_mixer",
+            "gtceu:quantum_cooling_chamber"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -2158,7 +2159,7 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:quantum_entanglement_decrypter": "§eQuantum Entanglement Decrypter",
     "gtceu:quantum_entanglement_encrypter": "§eQuantum Entanglement Encrypter",
     "gtceu:quantum_station": "§eQuantum Station",
-    "gtceu:quantum_cooling_chamber": "§eQuantum Cooling Chamber",
+    "gtceu:quantum_cooling_chamber": "§eQuantum Cooling Chamber | Vacuum Freezer",
     "gtceu:stasis_phase_shifter": "§eStasis Phase Shifter",
     "gtceu:superconductive_stasis_field": "§eStasis Field",
     "gtceu:chaotic_singularity_reactor": "§eChaotic Singularity Reactor",

@@ -179,33 +179,38 @@
 		{
 			dependencies: ["093B75408D3BEC38"]
 			id: "176C5C21B6EDF8FA"
-			tasks: [
-				{
-					id: "55F7F5A1F0413FC1"
-					item: "gtceu:uiv_electric_motor"
-					type: "item"
+			tasks: [{
+				id: "01D790F72B796F71"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:uiv_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uiv_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uiv_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uiv_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uiv_robot_arm"
+							}
+						]
+					}
 				}
-				{
-					id: "79ADF8645FCD53D8"
-					item: "gtceu:uiv_electric_pump"
-					type: "item"
-				}
-				{
-					id: "6A2F617706E0EBBD"
-					item: "gtceu:uiv_conveyor_module"
-					type: "item"
-				}
-				{
-					id: "6F095ED71AA08387"
-					item: "gtceu:uiv_electric_piston"
-					type: "item"
-				}
-				{
-					id: "2AD312F04666E7CC"
-					item: "gtceu:uiv_robot_arm"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "UIV Components"
 			x: 11.0d
 			y: 4.5d
@@ -271,23 +276,30 @@
 		{
 			dependencies: ["5909F49C7467BCDF"]
 			id: "1EF5F78DFEF2DA1F"
-			tasks: [
-				{
-					id: "5A6EBCBE14E5D689"
-					item: "gtceu:uiv_field_generator"
-					type: "item"
+			tasks: [{
+				id: "7AF8DBE7B78407AF"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:uiv_field_generator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uiv_sensor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uiv_emitter"
+							}
+						]
+					}
 				}
-				{
-					id: "4E0E3007D2EB392F"
-					item: "gtceu:uiv_emitter"
-					type: "item"
-				}
-				{
-					id: "0AB571612ACC1AC7"
-					item: "gtceu:uiv_sensor"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "UIV Components #2"
 			x: 2.5d
 			y: 8.5d

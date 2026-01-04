@@ -559,6 +559,45 @@
 			x: 7.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["3C7786F4A3C00CAE"]
+			id: "6BEB80E3E576F6EF"
+			tasks: [{
+				id: "6D5837C0DD4594AA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:uxv_electric_motor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uxv_electric_pump"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uxv_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uxv_electric_piston"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uxv_robot_arm"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "UXV Components"
+			x: 8.0d
+			y: 5.0d
+		}
 	]
 	subtitle: ["Ultra Extreme Voltage"]
 	title: "&#FFFFFF&lT&#EDEDED&li&#DBDBDB&le&#C9C9C9&lr &#A4A4A4&l1&#929292&l2 &#6E6E6E&l- &#494949&lU&#373737&lX&#252525&lV"
