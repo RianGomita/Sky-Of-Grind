@@ -1098,8 +1098,7 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     },
     'PCH_LASER_SUBTICK_SOG': {
         multiblockIds: [
-            "gtceu:reinforced_atomicforge",
-            "gtceu:chemical_plant"
+            "gtceu:reinforced_atomicforge"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1122,7 +1121,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:hyper_lathe",
             "gtceu:hyper_extruder",
             "gtceu:hyper_mixer",
-            "gtceu:quantum_cooling_chamber"
+            "gtceu:quantum_cooling_chamber",
+            "gtceu:chemical_plant"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1150,7 +1150,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     'LASER_SOG': {
         multiblockIds: [
             "gtceu:atomicforge",
-            "gtceu:singularity_data_confinement"
+            "gtceu:singularity_data_confinement",
+            "gtceu:eternity_recursion_engine"
         ],
         tooltipKeys: [
             "multiblock.laseraccess1",
