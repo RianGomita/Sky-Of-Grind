@@ -580,6 +580,13 @@ const PALLADIUM_SUBSTATION_CASING_TOOLTIP_WIRELESS_AT = {
     energyoutput: "§7Any Palladium Substation Casing"
 };
 // Sky of Grind!
+const FUSION_MACHINE_CASING_MK_V_TOOLTIP_SOG = {
+    controller: "§7Front",
+    fluidinput: "§7Any Fusion Machine Casing MK V",
+    fluidoutput: "§7Any Fusion Machine Casing MK V",
+    energy: "§7Any Fusion Machine Casing MK V",
+    pch: "§7Any Fusion Machine Casing MK V"
+};
 const FUSION_MACHINE_CASING_MKIV_TOOLTIP_FUSION_MKIV = {
     controller: "§7Front",
     fluidinput: "§7Any Fusion Machine Casing MK IV",
@@ -950,6 +957,17 @@ const CRYOGENIC_CASING_TOOLTIP_SOG = {
     muffler: "§7Any Cryogenic Casing",
     pch: "§7Any Cryogenic Casing"
 };
+const ADVANCED_COMPUTER_CASING_TOOLTIP_SOG = {
+    controller: "§7Front",
+    iteminput: "§7Any Advanced Computer Casing",
+    fluidinput: "§7Any Advanced Computer Casing",
+    itemoutput: "§7Any Advanced Computer Casing",
+    fluidoutput: "§7Any Advanced Computer Casing",
+    energy: "§7Any Advanced Computer Casing",
+    maintenance: "§7Any Advanced Computer Casing",
+    muffler: "§7Any Advanced Computer Casing",
+    pch: "§7Any Advanced Computer Casing"
+};
 
 // Const for Tooltip Groups
 
@@ -1138,7 +1156,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     'PCH_SUBTICK_SOG': {
         multiblockIds: [
             "gtceu:tectonic_plate_accelerator",
-            "gtceu:large_dehydration_unit"
+            "gtceu:large_dehydration_unit",
+            "gtceu:fusion_mk5"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1650,6 +1669,15 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
     ],
     // Sky of Grind!
     
+    "gtceu:eternity_recursion_engine": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.tooltip_eternity_recursion_engine_1"
+    ],
+    "gtceu:fusion_mk5": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.tooltip_fusion_mk5_1",
+        "skyofgrind.custom.tooltip_fusion_mk5_2"
+    ],
     "gtceu:eternity_fusion_reactor": [
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.tooltip_eternity_fusion_reactor_1",
@@ -1848,7 +1876,8 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
     ],
     "gtceu:quantum_cooling_chamber": [
         "basegtm.custom.tooltip_descriptions_all",
-        "skyofgrind.custom.tooltip_quantum_cooling_chamber_1"
+        "skyofgrind.custom.tooltip_quantum_cooling_chamber_1",
+        "skyofgrind.custom.tooltip_quantum_cooling_chamber_2"
     ],
     "gtceu:stasis_phase_shifter": [
         "basegtm.custom.tooltip_descriptions_all",
@@ -2101,6 +2130,8 @@ const MACHINE_TYPE_NAMES = {
     // GTMUtils
     "gtmutils:pterb_machine": "§eWireless Active Transformer",
     // Sky of Grind
+    "gtceu:eternity_recursion_engine": "§eEternity Recursion Engine",
+    "gtceu:fusion_mk5": "§eFusion MK V",
     "gtceu:large_dehydration_unit": "§eDehydration Unit | Pyrolyse Oven",
     "gtceu:eternity_fusion_reactor": "§eEternity Fusion",
     "gtceu:xl_radiation_chamber": "§eRadiation Chamber",
@@ -2256,6 +2287,12 @@ const SHIFT_PLACEHOLDER_VALUES = {
         tooltipOrder: ["controller", "fluidinput", "fluidoutput", "energy"],
         values:
             FUSION_MACHINE_CASING_MKIII_TOOLTIP_FUSION_MKIII
+    },
+    // FUSION_MACHINE_CASING_MK_V_TOOLTIP_SOG
+    "gtceu:fusion_mk5": {
+        tooltipOrder: ["controller", "fluidinput", "fluidoutput", "energy", "pch"],
+        values:
+            FUSION_MACHINE_CASING_MK_V_TOOLTIP_SOG
     },
     // WATERTIGHT_CASING_DT_TOOLTIP
     "gtceu:large_distillery": {
@@ -2979,6 +3016,12 @@ const SHIFT_PLACEHOLDER_VALUES = {
         tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy"],
         values:
             CRYOGENIC_CASING_TOOLTIP_SOG
+    },
+    // ADVANCED_COMPUTER_CASING_TOOLTIP_SOG
+    "gtceu:eternity_recursion_engine": {
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance"],
+        values:
+            ADVANCED_COMPUTER_CASING_TOOLTIP_SOG
     },
     // NEUTRONIUM_CASING_TOOLTIP_SOG_PROCESSOR_PRINTING_FACTORIES
     "gtceu:processor_printing_factory_lv": {
