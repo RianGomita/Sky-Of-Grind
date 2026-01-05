@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('quantum_cooling_chamber', 'multiblock')
         .rotationState(RotationState.ALL)
-        .recipeType(['quantum_cooling_chamber', 'vacuum_freezer'])
+        .recipeTypes(['quantum_cooling_chamber', 'vacuum_freezer'])
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE, GTRecipeModifiers.PARALLEL_HATCH])
         .appearanceBlock(() => Block.getBlock('gtceu:frostproof_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()      
