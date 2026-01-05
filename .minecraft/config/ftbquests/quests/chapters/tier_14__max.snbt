@@ -598,6 +598,27 @@
 			x: 8.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["1A9E1AC38776A94C"]
+			description: [
+				"This is your Endgame Source for Fusion including:"
+				"- Even 16x better recipes in compare to the Fusion Reactor Computer MK V"
+				"- 2x faster recipes"
+				"- No PCH anymore sadly...but something way better - PERFECT OC's - never wasting Energy on Fusion anymore!"
+				"- Laser Access for all your needs"
+				""
+				"Eventually you'll need this as well for special recipes like Astral SpaceTime Plasma or other things, that are exclusive in the Master of all Fusion Reactors!"
+			]
+			id: "0838D9CA6A7621C6"
+			tasks: [{
+				id: "50B7BC4A2300C8BB"
+				item: "gtceu:eternity_fusion_reactor"
+				type: "item"
+			}]
+			title: "The ULTIMATE Fusion"
+			x: 8.5d
+			y: -2.5d
+		}
 	]
 	subtitle: ["Ultra Extreme Voltage"]
 	title: "&#FFFFFF&lT&#EDEDED&li&#DBDBDB&le&#C9C9C9&lr &#A4A4A4&l1&#929292&l2 &#6E6E6E&l- &#494949&lU&#373737&lX&#252525&lV"
