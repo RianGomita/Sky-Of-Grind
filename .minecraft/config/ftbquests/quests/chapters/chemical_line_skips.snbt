@@ -1,0 +1,728 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chemical_line_skips"
+	group: "6B3EFCC5BFD49997"
+	icon: "gtceu:chemical_plant"
+	id: "7D643B4F05D131D7"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This Questbook Page is around all the Chemical Plant Skips that you can get throughout the Game!"]
+			id: "00C60E8F26AD5BDD"
+			tasks: [{
+				id: "12D195069D317C99"
+				title: "Chemical Line Skips"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["00C60E8F26AD5BDD"]
+			description: ["Your second Tier of Chemical Line Skips - you know how it works!"]
+			id: "7C19A5E1C7AAB41C"
+			rewards: [{
+				count: 2
+				id: "2349177CBAA0A5D2"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "03B0751DB6764628"
+				item: "kubejs:chemical_tier_two"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["00C60E8F26AD5BDD"]
+			description: ["5th Tier of Chemical Line Skips"]
+			id: "5E2FDA23FE1C3774"
+			rewards: [{
+				count: 5
+				id: "0A54F1636685DC5C"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "596BBCB98654F49A"
+				item: "kubejs:chemical_tier_five"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["00C60E8F26AD5BDD"]
+			description: ["Your first Tier of skipping Chemical Lines - this Machine will be used often in the Future so be prepared!"]
+			id: "0C239A181D5465C0"
+			rewards: [{
+				id: "36B6DAA8F9F66854"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A54DE3732358425"
+				item: "kubejs:chemical_tier_one"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["00C60E8F26AD5BDD"]
+			description: ["3rd Tier of Chemical Line Skips"]
+			id: "3FFDAA030C946465"
+			rewards: [{
+				count: 3
+				id: "67A91791A67EDCC7"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A48E90D70380215"
+				item: "kubejs:chemical_tier_three"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["00C60E8F26AD5BDD"]
+			description: ["4th Tier of Chemical Line Skips"]
+			id: "419130D2A055A6F6"
+			rewards: [{
+				count: 4
+				id: "22A83141AF909FB9"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "217B23F22D60DFCA"
+				item: "kubejs:chemical_tier_four"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["00C60E8F26AD5BDD"]
+			description: ["6th Tier of Chemical Line Skips"]
+			id: "69C379C5171E4941"
+			rewards: [{
+				count: 6
+				id: "590DA5AA5815451C"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26321A9E43717D1A"
+				item: "kubejs:chemical_tier_six"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C239A181D5465C0"]
+			id: "360ABCB2B1D44E16"
+			rewards: [{
+				id: "72977DEF5036CF61"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C2D52D1D27CD94B"
+				item: "gtceu:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0C239A181D5465C0"]
+			id: "7E7CE8296B9C790B"
+			rewards: [{
+				id: "75851D21354D8EC9"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1260F9EC22A4A394"
+				item: "gtceu:epoxy_bucket"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0C239A181D5465C0"]
+			id: "79BAA5C0315F0047"
+			rewards: [{
+				id: "4E7A3E8388F42808"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "37D3D96E7C363B87"
+				item: "gtceu:biological_carrot_goop_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0C239A181D5465C0"]
+			id: "58C7AB3B84C663A9"
+			rewards: [{
+				id: "23E4867A7D00EE4A"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DB329DE9E825F69"
+				item: "gtceu:fluoroantimonic_acid_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0C239A181D5465C0"]
+			id: "3CB674E8EA9DBEBE"
+			rewards: [{
+				id: "756729C6EF458E6F"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "030B436A078459F4"
+				item: "gtceu:industrial_tnt"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7C19A5E1C7AAB41C"]
+			id: "63E94053B553D4DA"
+			rewards: [{
+				count: 2
+				id: "2A21CAADCEC59BFC"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D44B53DC3E250DB"
+				item: "gtceu:tetrafluoroethylene_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7C19A5E1C7AAB41C"]
+			id: "2FC8F8CA242089AC"
+			rewards: [{
+				count: 2
+				id: "70262247F60A3C1A"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "20DF498B0F8904A3"
+				item: "gtceu:platinum_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7C19A5E1C7AAB41C"]
+			id: "2143F93B5B522B1B"
+			rewards: [{
+				count: 2
+				id: "7E59811DEB670507"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "18676D3F4D397FBE"
+				item: "gtceu:tungsten_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7C19A5E1C7AAB41C"]
+			id: "375038847B8804E0"
+			rewards: [{
+				count: 2
+				id: "40363A4E283469C8"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "784AD8A5D6035F3C"
+				item: "gtceu:polydimethylsiloxane_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7C19A5E1C7AAB41C"]
+			id: "25442BFF51C314F5"
+			rewards: [{
+				count: 2
+				id: "0CBEBC0A8199FCF5"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B0B6EED1C0F1A1E"
+				item: "gtceu:raw_styrene_butadiene_rubber_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7C19A5E1C7AAB41C"]
+			id: "633ED9C738ADC0DB"
+			rewards: [{
+				count: 2
+				id: "7A5C633F88868BEE"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "19277C9C0D801E3F"
+				item: "gtceu:polybenzimidazole_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3FFDAA030C946465"]
+			id: "02C503C9FB554C19"
+			rewards: [{
+				count: 3
+				id: "2C06705FB78983ED"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "417DA3496B0323BB"
+				item: "gtceu:polybenzimidazole_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3FFDAA030C946465"]
+			id: "364D15551A9D54B1"
+			rewards: [{
+				count: 3
+				id: "4955B79599B8FB9D"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "604FB2EC5F75BEFF"
+				item: "gtceu:high_octane_gasoline_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3FFDAA030C946465"]
+			id: "2ECCDAE980A4F48A"
+			rewards: [{
+				count: 3
+				id: "3873AFA172028035"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "75DD47216EF186D3"
+				item: "gtceu:naquadria_fuel_mixture_mk2_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3FFDAA030C946465"]
+			id: "3E1717BE1A9DFF28"
+			rewards: [{
+				count: 3
+				id: "6583C65100AC6E3C"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C8D859DAAE10DF2"
+				item: "gtceu:chloroprene_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3FFDAA030C946465"]
+			id: "446E7B518D17131F"
+			rewards: [{
+				count: 3
+				id: "1660F5A7C0A8CADF"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "580EA403D3D5AC18"
+				item: "gtceu:sodium_persulfate_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3FFDAA030C946465"]
+			id: "338E957F079C982A"
+			rewards: [{
+				count: 3
+				id: "46224CF7736AB313"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "41ADA59BDCCB842A"
+					item: "gtceu:enriched_naquadah_dust"
+					type: "item"
+				}
+				{
+					id: "7E61EF17963D5404"
+					item: "gtceu:naquadria_dust"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["419130D2A055A6F6"]
+			id: "7B4145BC3FFB1A53"
+			rewards: [{
+				count: 4
+				id: "608BCA7DC688D252"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4AB7AC46177D6F77"
+				item: "gtceu:thionyl_chloride_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["419130D2A055A6F6"]
+			id: "6429F48D8FE4D086"
+			rewards: [{
+				count: 4
+				id: "1DAF3A9EEA5960F5"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "10491F0AC783DEC7"
+				item: "gtceu:uranium_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["419130D2A055A6F6"]
+			id: "4E51D578C12EA9AD"
+			rewards: [{
+				count: 4
+				id: "7D394D97F12D695C"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "67A6F4D0E69BAFB1"
+				item: "gtceu:resonant_naquadah_dust"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["419130D2A055A6F6"]
+			id: "2669AEF5771A751D"
+			rewards: [{
+				count: 4
+				id: "2303644AAE612B97"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F428CC810ED0911"
+				item: "gtceu:naquadria_fuel_mixture_mk3_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["419130D2A055A6F6"]
+			id: "686030FE72399CA3"
+			rewards: [{
+				count: 4
+				id: "00CD80EB9B8CE1AF"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32D15C82457B2C97"
+				item: "gtceu:hot_meta_stable_hyper_enriched_thorium_fuel_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["419130D2A055A6F6"]
+			id: "559AB8528E17331C"
+			rewards: [{
+				count: 4
+				id: "5D187B41333EFC36"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BAB4012C1B774B5"
+				item: "gtceu:xlpe_bucket"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["419130D2A055A6F6"]
+			id: "4C8D538CD53893F0"
+			rewards: [{
+				count: 4
+				id: "48BAD89C84FF273A"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D2AF3D37148B625"
+				item: "gtceu:processed_californium_sulfate_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E2FDA23FE1C3774"]
+			id: "74D0584632B516F0"
+			rewards: [{
+				count: 5
+				id: "0418790E8954076B"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "07CC958384A65161"
+				item: "gtceu:difluorobenzophenone_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5E2FDA23FE1C3774"]
+			id: "4AF19038986978E9"
+			rewards: [{
+				count: 5
+				id: "43C527B95687A388"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E6E2ADF2F5DF9C8"
+				item: "kubejs:treated_kevlar_fibers"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5E2FDA23FE1C3774"]
+			id: "1BF7C948FF719BA2"
+			rewards: [{
+				count: 5
+				id: "48F43AD22DA8B410"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B59C1B18563C6E1"
+				item: "draconicevolution:chaos_shard"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5E2FDA23FE1C3774"]
+			id: "7C889E06A72FADEA"
+			rewards: [{
+				count: 5
+				id: "353AC34116417EBD"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "472A57293B00BC2A"
+				item: "gtceu:n_methyl_pyrrolidone_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5E2FDA23FE1C3774"]
+			id: "5E99CA42B7FEF5D8"
+			rewards: [{
+				count: 5
+				id: "408135AA99C687C4"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "62F81F0A97D68B27"
+				item: "gtceu:endosulfate_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5E2FDA23FE1C3774"]
+			id: "5BF9C91D8B7FFEF5"
+			rewards: [{
+				count: 5
+				id: "67B181D84FB6FB7D"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0669938D397FF110"
+				item: "gtceu:neptunium_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5E2FDA23FE1C3774"]
+			id: "049EC15A3C67FA04"
+			rewards: [{
+				count: 5
+				id: "2D4E070B08EFD3AD"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5FEB2B856C039745"
+				item: "gtceu:hydroquinone_dust"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E2FDA23FE1C3774"]
+			id: "007A8355D8D319D4"
+			rewards: [{
+				count: 5
+				id: "1F0865CD240BC341"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B21B914990C6FDB"
+				item: "gtceu:carbon_nanotubes_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69C379C5171E4941"]
+			id: "366DCE81C4B2E462"
+			rewards: [{
+				count: 6
+				id: "3E1E4386BF208270"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B7104CBEBAD0ED2"
+				item: "gtceu:zsm_5_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["69C379C5171E4941"]
+			id: "613269139B56BA7A"
+			rewards: [{
+				count: 6
+				id: "14837E7D48FA22C7"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "493D838483AE4CD0"
+				item: "gtceu:treated_zylon_polymer_solution_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["69C379C5171E4941"]
+			id: "2EC94CCC8FF599EC"
+			rewards: [{
+				count: 6
+				id: "0E31DE7777898AC6"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C2511DBE4468534"
+				item: "gtceu:eternity_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+	]
+	title: "Chemical Line Skips"
+}
