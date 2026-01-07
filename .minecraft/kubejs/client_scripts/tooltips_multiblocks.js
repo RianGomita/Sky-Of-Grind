@@ -1069,7 +1069,6 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:large_evaporation_pool",
             "gtceu:cryogenic_centrifuge",
             "gtceu:extreme_cracking_unit",
-            "gtceu:particle_implosion_chamber",
             "gtceu:xl_radiation_chamber"
         ],
         tooltipKeys: [
@@ -1157,7 +1156,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
         multiblockIds: [
             "gtceu:tectonic_plate_accelerator",
             "gtceu:large_dehydration_unit",
-            "gtceu:fusion_mk5"
+            "gtceu:fusion_mk5",
+            "gtceu:particle_implosion_chamber"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
