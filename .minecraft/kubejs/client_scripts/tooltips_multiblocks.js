@@ -2151,7 +2151,7 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:supercriticalvibrationsifter": "§eSupercritical Vibrational Shifting",
     "gtceu:power_substation": "§ePower Substation",
     "gtceu:uev_fusion_reactor": "§eFusion Reactor",
-    "gtceu:hyper_assembly_line": "§eAssembly Line",
+    "gtceu:hyper_assembly_line": "§eComponent Assembler | Assembly Line",
     "gtceu:hyper_assembler": "§eAssembler",
     "gtceu:hyper_cutter": "§eCutter",
     "gtceu:hyper_laser_engraver": "§eLaser Engraver",
@@ -3139,3 +3139,4 @@ ItemEvents.tooltip(event => {
         });
     });
 });
+
