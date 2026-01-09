@@ -1,7 +1,16 @@
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('hyper_component_assembling')
+        .category('multiblocks')
+        .setEUIO('in')
+        .setMaxIOSize(9, 1, 9, 0) // Item Input, Output, Fluid Input, Output
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ASSEMBLER)
+})
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('hyper_assembly_line', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType("assembly_line")
+        .recipeTypes(['hyper_component_assembling', 'assembly_line'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:eternity_casing'))
         .pattern(definition => FactoryBlockPattern.start()
