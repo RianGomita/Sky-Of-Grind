@@ -642,6 +642,7 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .blastTemp(3500, 'highest', 2048, 900)
         .flags(GTMaterialFlags.GENERATE_PLATE)
     event.create('chaos')
+		.liquid()
         .gem()
         .ore(1, 1,)
         .element('chaos')
