@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:rhodium_plated_palladium_ingot"
 	id: "311560F720092C21"
-	order_index: 9
+	order_index: 10
 	quest_links: [{
 		id: "09981C4CF189C241"
 		linked_quest: "34112DEEBBD82652"
@@ -1702,6 +1702,21 @@
 			}]
 			x: 14.0d
 			y: 25.0d
+		}
+		{
+			dependencies: ["3172CE3676E125EA"]
+			description: [
+				"A Multiblock Rock Crusher."
+				"It's there for all your stone-ish needs - even with PCHs and Subtick!"
+			]
+			id: "5C0CE063E93188B4"
+			tasks: [{
+				id: "121554134E4E587E"
+				item: "gtceu:tectonic_plate_accelerator"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.0d
 		}
 	]
 	subtitle: ["Ludicrous Voltage"]

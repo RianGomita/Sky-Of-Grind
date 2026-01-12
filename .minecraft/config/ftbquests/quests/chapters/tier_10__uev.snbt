@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "draconicevolution:draconium_ingot"
 	id: "6390E93A0F02A823"
-	order_index: 13
+	order_index: 14
 	quest_links: [
 		{
 			id: "35C91498B369EDD3"
@@ -320,7 +320,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0E4D8F1BB566B301"]
@@ -705,6 +705,65 @@
 			}]
 			x: 2.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["00D129C33D78FFFE"]
+			description: [
+				"Finally, you unlocked cheaper Circuit Recipes!"
+				"Theoretically you can do all Processor Printers right now but one is enough for the Quest!"
+			]
+			id: "3269EE605ABF2CFD"
+			tasks: [{
+				id: "7AA50EA44F0D3A7D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:processor_printing_factory_lv"
+							}
+							{
+								Count: 1b
+								id: "gtceu:processor_printing_factory_mv"
+							}
+							{
+								Count: 1b
+								id: "gtceu:processor_printing_factory_hv"
+							}
+							{
+								Count: 1b
+								id: "gtceu:processor_printing_factory_ev"
+							}
+							{
+								Count: 1b
+								id: "gtceu:processor_printing_factory_iv"
+							}
+							{
+								Count: 1b
+								id: "gtceu:processor_printing_factory_luv"
+							}
+							{
+								Count: 1b
+								id: "gtceu:processor_printing_factory_zpm"
+							}
+							{
+								Count: 1b
+								id: "gtceu:processor_printing_factory_uv"
+							}
+							{
+								Count: 1b
+								id: "gtceu:processor_printing_factory_uhv"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Processor Printers"
+			x: 6.5d
+			y: 3.0d
 		}
 	]
 	subtitle: ["Ultra Excessive Voltage"]

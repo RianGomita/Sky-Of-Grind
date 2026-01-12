@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:neutronium_ingot"
 	id: "5BDBF9992074CC3A"
-	order_index: 12
+	order_index: 13
 	quest_links: [
 		{
 			id: "35A4E45F1F9D5129"
@@ -1627,6 +1627,18 @@
 			}]
 			x: 18.0d
 			y: 11.5d
+		}
+		{
+			dependencies: ["6463C37333165A07"]
+			description: ["A better Multiblock version from the Implosion Compressor - including SubTick and PCH-Access!"]
+			id: "051D0EE958C29A53"
+			tasks: [{
+				id: "3342993117EB4970"
+				item: "gtceu:particle_implosion_chamber"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 10.0d
 		}
 	]
 	subtitle: ["Ultra High Voltage"]
