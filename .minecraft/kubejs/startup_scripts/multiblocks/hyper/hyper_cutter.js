@@ -23,7 +23,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                     PartAbility.IMPORT_FLUIDS, 
                     PartAbility.INPUT_LASER, 
                     PartAbility.INPUT_ENERGY, 
-                    PartAbility.PARALLEL_HATCH)))
+                    PartAbility.PARALLEL_HATCH,
+                    PartAbility.MAINTENANCE)))
         .build()
         )
         .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/cutter')

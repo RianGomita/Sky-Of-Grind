@@ -31,7 +31,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                         PartAbility.EXPORT_FLUIDS,
                         PartAbility.INPUT_ENERGY,
                         PartAbility.INPUT_LASER,
-                        PartAbility.PARALLEL_HATCH)))
+                        PartAbility.PARALLEL_HATCH,
+                        PartAbility.MAINTENANCE)))
         .build()
         )
         .workableCasingModel("kubejs:block/casings/eternity_casing", 'gtceu:block/machines/laser_engraver')
