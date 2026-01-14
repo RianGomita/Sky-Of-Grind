@@ -7,10 +7,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setSound(GTSoundEntries.REPLICATOR)
 })
 
-
-
-
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('singularity_data_confinement', 'multiblock')
         .rotationState(RotationState.ALL)
@@ -43,10 +39,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("D", Predicates.blocks('gtceu:chaos_block'))
             .where("E", Predicates.blocks('gtceu:antimatter_frame'))
             .where("C", Predicates.blocks('kubejs:highly_reinforced_radioactive_casing')
-                .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_ITEMS, PartAbility.IMPORT_FLUIDS)
-                .or(Predicates.abilities(PartAbility.INPUT_LASER))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE)))
-            )
+                .or(Predicates.abilities(
+                    PartAbility.EXPORT_ITEMS,
+                    PartAbility.EXPORT_FLUIDS,
+                    PartAbility.IMPORT_ITEMS,
+                    PartAbility.IMPORT_FLUIDS,
+                    PartAbility.INPUT_LASER,
+                    PartAbility.MAINTENANCE,
+                    PartAbility.INPUT_ENERGY
+            )))
             .where('#', Predicates.any())
             .build()
         )
