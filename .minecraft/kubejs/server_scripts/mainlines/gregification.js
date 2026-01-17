@@ -1941,4 +1941,15 @@ sog.recipes.gtceu.alloy_smelter('netherite')
 sog.replaceInput( {id: 'gtceu:assembly_line/electric_pump_uv'}, 'gtceu:silicone_rubber_ring', 'gtceu:neoprene_ring' )
 sog.replaceInput( {id: 'gtceu:assembly_line/conveyor_module_uv'}, 'gtceu:styrene_butadiene_rubber', 'gtceu:neoprene' )
 
+sog.recipes.gtceu.mixer('gregification_crystaltine')
+    .itemInputs(
+        '4x gtceu:iron_dust',
+        '10x gtceu:lapis_dust',
+        '2x gtceu:nether_star_dust',
+        '8x gtceu:diamond_dust',
+        '4x gtceu:gold_dust')
+    .itemOutputs('4x extendedcrafting:crystaltine_ingot')
+    .duration(10*20)
+    .EUt(GTValues.VA[GTValues.UHV])
+
 })
