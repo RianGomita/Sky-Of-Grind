@@ -1952,4 +1952,10 @@ sog.recipes.gtceu.mixer('gregification_crystaltine')
     .duration(10*20)
     .EUt(GTValues.VA[GTValues.UHV])
 
+sog.recipes.gtceu.forming_press('neutronium_drill_head')
+    .itemInputs('4x gtceu:neutronium_plate', '4x gtceu:steel_plate')
+    .itemOutputs('gtceu:neutronium_drill_head')
+    .duration(20*5)
+    .EUt(GTValues.VA[GTValues.UHV])
+
 })
