@@ -170,10 +170,10 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UHV]);
 
         event.recipes.gtceu.chemical_plant('advanced_sodium_persulfate')
-            .notConsumable('kubejs:chemical_tier_three')
-            .itemInputs('32x gtceu:sulfur_dust','64x gtceu:salt_dust')
+            .notConsumable('kubejs:chemical_tier_four')
+            .itemInputs('20x gtceu:sulfur_dust','40x gtceu:salt_dust')
             .inputFluids('minecraft:water 256000')
-            .outputFluids('gtceu:sodium_persulfate 16000','gtceu:hydrochloric_acid 32000','gtceu:hydrogen 32000')
+            .outputFluids('gtceu:sodium_persulfate 32000','gtceu:hydrochloric_acid 5000','gtceu:hydrogen 5000')
             .duration(20*10)
             .EUt(GTValues.VA[GTValues.UHV]);
 
