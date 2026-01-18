@@ -185,7 +185,7 @@ ServerEvents.recipes(event => {
 		.perTick(true)
         .inputFluids("gtceu:titanium_tetrachloride 10", "gtceu:triethylaluminium 15", "gtceu:liquid_oxygen 50")
         .perTick(false)
-		.outputFluids("gtceu:polyvinyl_chloride 6318")
+		.outputFluids("gtceu:polyvinyl_chloride 12636")
 		.duration(20*20*5)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
 		.perTick(true)
         .inputFluids("gtceu:titanium_tetrachloride 10", "gtceu:triethylaluminium 15", "gtceu:liquid_oxygen 50")
         .perTick(false)
-		.outputFluids("gtceu:polyethylene 6318")
+		.outputFluids("gtceu:polyethylene 12636")
 		.duration(20*20*5)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
 		.perTick(true)
         .inputFluids("gtceu:titanium_tetrachloride 10", "gtceu:triethylaluminium 15", "gtceu:liquid_oxygen 50")
         .perTick(false)
-		.outputFluids("gtceu:polytetrafluoroethylene 6318")
+		.outputFluids("gtceu:polytetrafluoroethylene 12636")
 		.duration(20*20*5)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
 		.perTick(true)
         .inputFluids("gtceu:titanium_tetrachloride 10", "gtceu:triethylaluminium 15", "gtceu:liquid_oxygen 50")
         .perTick(false)
-		.outputFluids("gtceu:polyvinyl_acetate 6318")
+		.outputFluids("gtceu:polyvinyl_acetate 12636")
 		.duration(20*20*5)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
@@ -224,7 +224,7 @@ ServerEvents.recipes(event => {
 		.perTick(true)
         .inputFluids("gtceu:tetramethylthiuramdisulfide_solution 10")
         .perTick(false)
-		.outputFluids("gtceu:rubber 2592")
+		.outputFluids("gtceu:rubber 5184")
 		.duration(20*10*5)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
@@ -233,7 +233,7 @@ ServerEvents.recipes(event => {
 		.perTick(true) 
         .inputFluids("gtceu:tetramethylthiuramdisulfide_solution 10")
         .perTick(false)
-		.outputFluids("gtceu:styrene_butadiene_rubber 2592")
+		.outputFluids("gtceu:styrene_butadiene_rubber 5184")
 		.duration(20*10*5)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
@@ -242,7 +242,7 @@ ServerEvents.recipes(event => {
 		.perTick(true) 
         .inputFluids("gtceu:tetramethylthiuramdisulfide_solution 10")
         .perTick(false)
-		.outputFluids("gtceu:silicone_rubber 2592")
+		.outputFluids("gtceu:silicone_rubber 5184")
 		.duration(20*10*5)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
 		.perTick(true) 
         .inputFluids("gtceu:tetramethylthiuramdisulfide_solution 10")
         .perTick(false)
-		.outputFluids("gtceu:neoprene 2592")
+		.outputFluids("gtceu:neoprene 5184")
 		.duration(20*10*5)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
@@ -688,6 +688,14 @@ ServerEvents.recipes(event => {
 		.itemOutputs('18x gtceu:raw_neoprene_dust')
 		.duration(20*50*5)
 		.EUt((GTValues.VA[GTValues.UHV]))
+
+	event.recipes.gtceu.chemical_plant('better_calcium_chloride_dust')
+		.notConsumable('kubejs:chemical_tier_first')
+		.itemInputs('3x gtceu:calcium_dust')
+		.inputFluids('gtceu:chlorine 2000')
+		.itemOutputs('6x gtceu:calcium_chloride_dust')
+		.duration(20*30)
+		.EUt((GTValues.VA[GTValues.HV]))
 		
 	// XLPE 
 
