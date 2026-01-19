@@ -641,6 +641,16 @@ StartupEvents.registry('block', sog => {
         .lightLevel(0)
         .defaultCutout()
         .tagBlock("forge:mineable/wrench")
+    sog.create('ultra_reflective_laser_cooling_casing')
+        .displayName('Ultra Reflective Laser Cooling Casing')
+        .textureAll('kubejs:block/casings/ultra_reflective_laser_cooling_casing')
+        .soundType('metal')
+        .resistance(6)
+        .requiresTool(true)
+        .hardness(5)
+        .lightLevel(0)
+        .defaultCutout()
+        .tagBlock("forge:mineable/wrench")
 
 // F U S I O N
     sog.create('fusion_casing_mk4')
