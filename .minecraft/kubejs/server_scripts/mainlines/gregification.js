@@ -1940,5 +1940,11 @@ sog.recipes.gtceu.alloy_smelter('netherite')
 
 sog.replaceInput( {id: 'gtceu:assembly_line/electric_pump_uv'}, 'gtceu:silicone_rubber_ring', 'gtceu:neoprene_ring' )
 sog.replaceInput( {id: 'gtceu:assembly_line/conveyor_module_uv'}, 'gtceu:styrene_butadiene_rubber', 'gtceu:neoprene' )
-
+    
+sog.recipes.gtceu.assembler('blazing_cleaning_maintenance_hatch')
+    .itemInputs("gtmutils:sterile_cleaning_maintenance_hatch", "4x gtceu:uiv_robot_arm", "2x gtceu:uiv_electric_pump", "16x gtceu:pure_cosmic_matter_spring")
+    .inputFluids("gtceu:blaze 3500")
+    .itemOutputs('phoenix_gregic_additons:blazing_cleaning_maintenance_hatch')
+    .duration(20*60)
+    .EUt(GTValues.VA[GTValues.UIV]);
 })
