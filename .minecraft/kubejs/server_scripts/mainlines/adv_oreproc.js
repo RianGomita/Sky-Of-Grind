@@ -126,7 +126,7 @@ const advgem = [
     'topaz', 'lapis', 'green_sapphire', 'amethyst', 'lazurite',
     'almandine', 'diamond', 'rock_salt', 'nether_quartz', 'salt', 'red_garnet',
     'cinnabar', 'grossular', 'emerald', 'realgar', 'yellow_garnet', 'certus_quartz',
-    'olivine'
+    'olivine', 'chronon'
 ];
 
 const advgemraw = (mat, amount) => {
