@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/ultra_reflective_laser_cooling_casing_ctm"
+    }
+}
