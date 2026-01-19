@@ -134,9 +134,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     const $IngotProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.IngotProperty');
     const $DustProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty');
     const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty');
-	const $FluidProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.FluidProperty');
-    const $FluidBuilder = Java.loadClass('com.gregtechceu.gtceu.api.fluids.FluidBuilder');
-    const $FluidStorageKeys = Java.loadClass('com.gregtechceu.gtceu.api.fluids.store.FluidStorageKeys');
 
 GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
 GTMaterials.StainlessSteel.addFlags(GTMaterialFlags.GENERATE_DENSE)
@@ -150,14 +147,6 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 
 GTMaterials.Thallium.setProperty(PropertyKey.DUST, new $DustProperty());
 GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-
-let addFluid = (mat, key) => {
-    let prop = new $FluidProperty();
-    prop.getStorage().enqueueRegistration(key, new $FluidBuilder());
-    mat.setProperty(PropertyKey.FLUID, prop);
-}
-    addFluid(GTMaterials.Cadmium, $FluidStorageKeys.LIQUID); 
-    addFluid(GTMaterials.Thallium, $FluidStorageKeys.LIQUID);
 
     event.create('star_matter')
         .ingot().liquid()
