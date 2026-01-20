@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.chemical_reactor('silver_nitrate_solution')
             .itemInputs("gtceu:silver_dust")
-            .inputFluids("gtceu:ammonia 2000")
+            .inputFluids("gtceu:nitric_acid 2000")
             .outputFluids('gtceu:silver_nitrate_solution 1000', "gtceu:nitrogen_dioxide 1000")
             .duration(20*30)
             .EUt(GTValues.VA[GTValues.IV])
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
             .perTick(true)
             .inputFluids("gtceu:air 250")
             .perTick(false)
-            .itemOutputs('2x kubejs:silver_doped_sapphire_wafer')
+            .itemOutputs('1x kubejs:silver_doped_sapphire_wafer')
             .duration(20*15)
             .EUt((GTValues.VA[GTValues.UIV]))
 
