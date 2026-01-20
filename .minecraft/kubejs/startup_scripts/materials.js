@@ -1489,7 +1489,7 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .dust()
         .color(0xa3a29d)
         .iconSet('shiny')
-        .element('silver')
+        .element(GTElements.Ag)
         .formula('Ag⁺')
     event.create('sodium_iodine')
         .dust()
