@@ -41,8 +41,8 @@ ServerEvents.recipes(event => {
             .itemInputs("32x gtceu:carbon_nanotubes_dust", "64x kubejs:reactive_chaos_dust")
             .inputFluids("gtceu:overheated_blaze 1000", "gtceu:sulfur_trioxide 3000", "gtceu:neutronium 1500")
             .outputFluids('gtceu:excited_blaze_concentate 2000')
-            .duration(20*60)
-            .EUt(GTValues.VA[GTValues.UXV])
+            .duration(20*24)
+            .EUt(GTValues.VA[GTValues.UIV])
 
         event.recipes.gtceu.autoclave('sapphire_boule')
             .itemInputs("gtceu:sapphire_rod", "16x gtceu:exquisite_quartzite_gem")
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
             .itemInputs('kubejs:sapphire_wafer')
             .notConsumable('gtceu:synchronized_chronon_lens')
             .itemOutputs('kubejs:perfectly_polished_sapphire_wafer')
-            .duration(20*20)
+            .duration(20*10)
             .EUt(GTValues.VA[GTValues.UXV])
 
         event.recipes.gtceu.chemical_reactor('silver_nitrate_solution')
