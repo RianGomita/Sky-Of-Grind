@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
     })
 
 	event.recipes.gtceu.assembly_line('large_polymerization_chamber')
-		.itemInputs('16x gtceu:chemical_plant', '16x gtceu:large_dehydration_unit', '16x gtceu:large_solidifier', '16x gtceu:uhv_electric_pump', '8x gtceu:uhv_robot_arm', '16x #gtceu:circuits/uev', '16x gtceu:peek_plate', '16x avaritia:neutron_gear', '64x gtceu:fine_kaemite_wire', '64x gtceu:fine_kaemite_wire', '64x gtceu:antimatter_foil', '64x gtceu:antimatter_foil', '64x gtceu:resonant_essence_screw')
+		.itemInputs('16x gtceu:chemical_plant', '16x gtceu:large_dehydration_unit', '16x gtceu:large_solidifier', '16x gtceu:uhv_electric_pump', '8x gtceu:uhv_robot_arm', '4x #gtceu:circuits/uev', '16x gtceu:peek_plate', '16x avaritia:neutron_gear', '64x gtceu:fine_kaemite_wire', '64x gtceu:fine_kaemite_wire', '64x gtceu:antimatter_foil', '64x gtceu:antimatter_foil', '64x gtceu:resonant_essence_screw')
 		.itemOutputs('gtceu:large_polymerization_chamber')
 		.inputFluids(
 			Fluid.of('gtceu:peek', 32000),
@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
   		.EUt((GTValues.VA[GTValues.LV]))
 
 	event.recipes.gtceu.assembly_line('large_high_pressure_reactor')
-		.itemInputs('16x gtceu:chemical_plant', "16x gtceu:atomicompressor", '16x gtceu:atmospheric_collector', '16x gtceu:uiv_electric_pump', '8x gtceu:uiv_electric_piston', '16x #gtceu:circuits/uiv', '16x kubejs:chaos_heavy_plating', '16x gtceu:awakened_draconium_gear', '64x gtceu:fine_cosmic_osmium_wire', '64x gtceu:fine_cosmic_osmium_wire', '64x gtceu:heavy_duty_alloy_t4_foil', '64x gtceu:heavy_duty_alloy_t4_foil', '64x gtceu:cosmic_tungsten_screw')
+		.itemInputs('16x gtceu:chemical_plant', "16x gtceu:atomicompressor", '16x gtceu:atmospheric_collector', '16x gtceu:uiv_electric_pump', '8x gtceu:uiv_electric_piston', '4x #gtceu:circuits/uiv', '16x kubejs:chaos_heavy_plating', '16x gtceu:awakened_draconium_gear', '64x gtceu:fine_cosmic_osmium_wire', '64x gtceu:fine_cosmic_osmium_wire', '64x gtceu:heavy_duty_alloy_t4_foil', '64x gtceu:heavy_duty_alloy_t4_foil', '64x gtceu:cosmic_tungsten_screw')
 		.itemOutputs('gtceu:large_high_pressure_reactor')
 		.inputFluids(
 			Fluid.of('gtceu:peek', 32000),
@@ -1776,4 +1776,5 @@ ServerEvents.recipes(event => {
 		.EUt((GTValues.VA[GTValues.OpV]))
 
 })
+
 
