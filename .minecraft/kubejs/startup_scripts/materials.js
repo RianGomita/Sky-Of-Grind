@@ -1438,7 +1438,7 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('superfluid_helium')
         .liquid(4)
         .color(0xe9edc2)
-        .element('helium')
+        .element(GTElements.He3)
     event.create('stabilized_naquadria_plasma')
         .plasma(5000)
         .color(0x43b574)
