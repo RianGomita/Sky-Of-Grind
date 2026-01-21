@@ -85,18 +85,18 @@ const adv_processing_plant = (event, materialObj) => {
         .circuit(1)
         .itemInputs(raw_ore(materialObj.material, 10000))
         .inputFluids(advanced_fluids.acid)
-        .itemOutputs(advanced_dust(materialObj.material, 15000))
+        .itemOutputs(advanced_dust(materialObj.material, 40000))
         .duration(20*60)
         .EUt(GTValues.VHA[GTValues.UHV]);
     
     if (materialObj.secondary) {
-        recipe.itemOutputs(advanced_dust(materialObj.secondary, 2000));
+        recipe.itemOutputs(advanced_dust(materialObj.secondary, 8000));
     }
     if (materialObj.tertiary) {
-        recipe.itemOutputs(advanced_dust(materialObj.tertiary, 1000));
+        recipe.itemOutputs(advanced_dust(materialObj.tertiary, 4000));
     }
     if (materialObj.quaternary) {
-        recipe.itemOutputs(advanced_dust(materialObj.quaternary, 1000));
+        recipe.itemOutputs(advanced_dust(materialObj.quaternary, 4000));
     }
 }
 
@@ -109,10 +109,10 @@ const adv_plant_ore_processing = (event, materialObj) => {
         .itemInputs(raw_ore(materialObj.material, 100))
         .inputFluids(advanced_fluids.acidx5)
         .itemOutputs(
-                    advanced_dust(materialObj.material, 120),
-                    advanced_dust(materialObj.secondary, 50),
-                    advanced_dust(materialObj.tertiary, 30),
-                    advanced_dust(materialObj.quaternary, 20),
+                    advanced_dust(materialObj.material, 240),
+                    advanced_dust(materialObj.secondary, 100),
+                    advanced_dust(materialObj.tertiary, 60),
+                    advanced_dust(materialObj.quaternary, 40),
         )
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.UEV]);
@@ -155,10 +155,10 @@ const advgemproc = (event, materialObj) => {
         .itemInputs(advgemraw(materialObj.material, 10000))
         .inputFluids(advanced_fluids.acid)
         .itemOutputs(
-            advgemexquisite(materialObj.material, 500),
-            advgemflawless(materialObj.material, 1500),
-            advgemflawed(materialObj.material, 5000),
-            advgemdust(materialObj.material, 2500)
+            advgemexquisite(materialObj.material, 1000),
+            advgemflawless(materialObj.material, 3000),
+            advgemflawed(materialObj.material, 10000),
+            advgemdust(materialObj.material, 5000)
         )
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.UHV]);
@@ -188,10 +188,10 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .itemInputs('100x gtceu:raw_draconium')
         .inputFluids(advanced_fluids.acid)
-		.itemOutputs('100x draconicevolution:draconium_dust',
-                    '50x draconicevolution:draconium_dust',
-                    '20x draconicevolution:draconium_dust',
-                    '10x draconicevolution:draconium_dust'
+		.itemOutputs('200x draconicevolution:draconium_dust',
+                    '100x draconicevolution:draconium_dust',
+                    '40x draconicevolution:draconium_dust',
+                    '20x draconicevolution:draconium_dust'
         )
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.UEV]);
@@ -200,10 +200,10 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .itemInputs('100x gtceu:raw_awakened_draconium')
         .inputFluids(advanced_fluids.acid)
-		.itemOutputs('100x draconicevolution:awakened_draconium_dust',
-                    '50x draconicevolution:awakened_draconium_dust',
-                    '20x draconicevolution:awakened_draconium_dust',
-                    '10x draconicevolution:awakened_draconium_dust'
+		.itemOutputs('200x draconicevolution:awakened_draconium_dust',
+                    '100x draconicevolution:awakened_draconium_dust',
+                    '40x draconicevolution:awakened_draconium_dust',
+                    '20x draconicevolution:awakened_draconium_dust'
         )
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.UEV]);
@@ -213,10 +213,10 @@ ServerEvents.recipes(event => {
         .itemInputs('100x gtceu:raw_chaos')
         .inputFluids(advanced_fluids.acid)
         .itemOutputs(
-            '3x draconicevolution:chaos_shard',
-            '10x draconicevolution:large_chaos_frag',
-            '35x draconicevolution:medium_chaos_frag',
-            '50x draconicevolution:small_chaos_frag'
+            '6x draconicevolution:chaos_shard',
+            '20x draconicevolution:large_chaos_frag',
+            '70x draconicevolution:medium_chaos_frag',
+            '100x draconicevolution:small_chaos_frag'
         )
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.UHV]);
@@ -224,13 +224,15 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.adv_processing_plant(`raw_redstone`)
         .itemInputs('10000x gtceu:raw_redstone')
         .inputFluids(advanced_fluids.acid)
-		.itemOutputs('15000x minecraft:redstone',
-                    '2000x gtceu:cinnabar_dust',
-                    '1000x gtceu:rare_earth_dust',
-                    '1000x minecraft:glowstone_dust'
+		.itemOutputs('40000x minecraft:redstone',
+                    '8000x gtceu:cinnabar_dust',
+                    '4000x gtceu:rare_earth_dust',
+                    '4000x minecraft:glowstone_dust'
         )
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.UHV]);
+
+//recipes components
 
     event.recipes.gtceu.assembler('adv_high_power_crushing_wheels')
         .itemInputs('kubejs:high_power_crushing_wheels','gtceu:uv_electric_motor','8x gtceu:darmstadtium_plate')

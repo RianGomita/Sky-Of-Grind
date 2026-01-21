@@ -1949,6 +1949,24 @@ sog.recipes.gtceu.assembler('blazing_cleaning_maintenance_hatch')
     .EUt(GTValues.VA[GTValues.UIV]);
 })
 
+sog.recipes.gtceu.mixer('gregification_crystaltine')
+    .itemInputs(
+        '4x gtceu:iron_dust',
+        '10x gtceu:lapis_dust',
+        '2x gtceu:nether_star_dust',
+        '8x gtceu:diamond_dust',
+        '4x gtceu:gold_dust')
+    .itemOutputs('4x extendedcrafting:crystaltine_ingot')
+    .duration(10*20)
+    .EUt(GTValues.VA[GTValues.UHV])
+
+sog.recipes.gtceu.forming_press('neutronium_drill_head')
+    .itemInputs('4x gtceu:neutronium_plate', '4x gtceu:steel_plate')
+    .itemOutputs('gtceu:neutronium_drill_head')
+    .duration(20*5)
+    .EUt(GTValues.VA[GTValues.UHV])
+
+})
 sog.recipes.gtceu.chemical_reactor('better_calcium_chloride')
     .itemInputs('3x gtceu:calcium_dust')
 	.inputFluids('gtceu:chlorine 2000')
