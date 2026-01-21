@@ -1948,3 +1948,12 @@ sog.recipes.gtceu.assembler('blazing_cleaning_maintenance_hatch')
     .duration(20*60)
     .EUt(GTValues.VA[GTValues.UIV]);
 })
+
+sog.recipes.gtceu.chemical_reactor('better_calcium_chloride')
+    .itemInputs('3x gtceu:calcium_dust')
+	.inputFluids('gtceu:chlorine 2000')
+	.itemOutputs('6x gtceu:calcium_chloride_dust')
+	.duration(20*30)
+	.EUt((GTValues.VA[GTValues.HV]))
+
+})
