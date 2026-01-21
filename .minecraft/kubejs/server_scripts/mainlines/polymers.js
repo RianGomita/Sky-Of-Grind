@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
     })
 
 	event.recipes.gtceu.assembly_line('large_polymerization_chamber')
-		.itemInputs('16x gtceu:chemical_plant', '16x gtceu:large_dehydration_unit', '16x gtceu:large_solidifier', '16x gtceu:uhv_electric_pump', '8x gtceu:uhv_robot_arm', '16x #gtceu:circuits/uev', '16x gtceu:peek_plate', '16x avaritia:neutron_gear', '64x gtceu:fine_kaemite_wire', '64x gtceu:fine_kaemite_wire', '64x gtceu:antimatter_foil', '64x gtceu:antimatter_foil', '64x gtceu:resonant_essence_screw')
+		.itemInputs('16x gtceu:chemical_plant', '16x gtceu:large_dehydration_unit', '16x gtceu:large_solidifier', '16x gtceu:uhv_electric_pump', '8x gtceu:uhv_robot_arm', '4x #gtceu:circuits/uev', '16x gtceu:peek_plate', '16x avaritia:neutron_gear', '64x gtceu:fine_kaemite_wire', '64x gtceu:fine_kaemite_wire', '64x gtceu:antimatter_foil', '64x gtceu:antimatter_foil', '64x gtceu:resonant_essence_screw')
 		.itemOutputs('gtceu:large_polymerization_chamber')
 		.inputFluids(
 			Fluid.of('gtceu:peek', 32000),
@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
   		.EUt((GTValues.VA[GTValues.LV]))
 
 	event.recipes.gtceu.assembly_line('large_high_pressure_reactor')
-		.itemInputs('16x gtceu:chemical_plant', "16x gtceu:atomicompressor", '16x gtceu:atmospheric_collector', '16x gtceu:uiv_electric_pump', '8x gtceu:uiv_electric_piston', '16x #gtceu:circuits/uiv', '16x kubejs:chaos_heavy_plating', '16x gtceu:awakened_draconium_gear', '64x gtceu:fine_cosmic_osmium_wire', '64x gtceu:fine_cosmic_osmium_wire', '64x gtceu:heavy_duty_alloy_t4_foil', '64x gtceu:heavy_duty_alloy_t4_foil', '64x gtceu:cosmic_tungsten_screw')
+		.itemInputs('16x gtceu:chemical_plant', "16x gtceu:atomicompressor", '16x gtceu:atmospheric_collector', '16x gtceu:uiv_electric_pump', '8x gtceu:uiv_electric_piston', '4x #gtceu:circuits/uiv', '16x kubejs:chaos_heavy_plating', '16x gtceu:awakened_draconium_gear', '64x gtceu:fine_cosmic_osmium_wire', '64x gtceu:fine_cosmic_osmium_wire', '64x gtceu:heavy_duty_alloy_t4_foil', '64x gtceu:heavy_duty_alloy_t4_foil', '64x gtceu:cosmic_tungsten_screw')
 		.itemOutputs('gtceu:large_high_pressure_reactor')
 		.inputFluids(
 			Fluid.of('gtceu:peek', 32000),
@@ -1775,5 +1775,54 @@ ServerEvents.recipes(event => {
 		.duration(20*25)
 		.EUt((GTValues.VA[GTValues.OpV]))
 
+	event.recipes.gtceu.chemical_plant('better_teslarium')
+        .notConsumable('kubejs:chemical_tier_five')
+        .inputFluids ('gtceu:naquadria 720','gtceu:radon 5000')
+        .itemInputs('4x gtceu:naquadah_alloy_dust','4x minecraft:nether_star')
+        .itemOutputs('4x gtceu:teslarium_dust')
+        .duration(20*25)
+        .EUt(GTValues.VA[GTValues.UIV])
+
+    event.recipes.gtceu.polymerization_chamber('better_stable_for_fuel_2')
+            .inputFluids ('gtceu:benzene 16000', 'gtceu:nitration_mixture 6000', 'gtceu:radon 15000', 'gtceu:nitrogen 20000')
+            .perTick(true)
+            .inputFluids ('gtceu:argon_plasma 50')
+            .perTick(false)
+            .itemInputs('16x gtceu:plutonium_241_dust','64x gtceu:thorium_dust','16x gtceu:neutronium_dust')
+            .outputFluids('gtceu:stabilized_enriched_thorium_fuel 10000')
+            .duration(20*200)
+            .EUt(GTValues.VA[GTValues.UIV])
+
+    event.recipes.gtceu.polymerization_chamber('better_naq_fuel_2')
+        .inputFluids('gtceu:benzene 350000', 'gtceu:nitration_mixture 150000', 'gtceu:chlorine 50000', 'gtceu:cetane_boosted_diesel 60000')
+            .perTick(true)
+            .inputFluids ('gtceu:oxygen_plasma 50')
+            .perTick(false)
+            .itemInputs('50x gtceu:naquadria_dust','96x gtceu:thorium_dust','64x gtceu:neutronium_dust')
+            .outputFluids('gtceu:naquadria_fuel_mixture_mk2 60000')
+            .duration(20*200)
+            .EUt(GTValues.VA[GTValues.UIV])
+
+    event.recipes.gtceu.polymerization_chamber('better_meta_stable_for_fuel_3')
+        .inputFluids('gtceu:benzene 20000', 'gtceu:nitration_mixture 12000', 'gtceu:sodium_potassium 50000', 'gtceu:high_octane_gasoline 20000')
+            .perTick(true)
+            .inputFluids ('gtceu:iron_plasma 50')
+            .perTick(false)
+            .itemInputs('16x gtceu:teslarium_dust','64x gtceu:thorium_dust','64x gtceu:neutronium_dust')
+            .outputFluids('gtceu:meta_stable_hyper_enriched_thorium_fuel 10000')
+            .duration(20*200)
+            .EUt(GTValues.VA[GTValues.UXV])
+
+    event.recipes.gtceu.polymerization_chamber('better_naq_fuel_3')
+        .inputFluids('gtceu:benzene 400000', 'gtceu:nitration_mixture 150000', 'gtceu:chlorine 50000', 'gtceu:cetane_boosted_diesel 120000')
+            .perTick(true)
+            .inputFluids ('gtceu:nickel_plasma 50')
+            .perTick(false)
+            .itemInputs('50x gtceu:naquadria_dust','288x gtceu:thorium_dust','70x gtceu:antimatter_dust')
+            .outputFluids('gtceu:naquadria_fuel_mixture_mk3 150000')
+            .duration(20*200)
+            .EUt(GTValues.VA[GTValues.UXV])
+
 })
+
 

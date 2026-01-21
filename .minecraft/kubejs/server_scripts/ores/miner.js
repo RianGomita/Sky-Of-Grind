@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
     .inputFluids([Fluid.of('gtceu:eternity', 500)])
     .inputFluids([Fluid.of('gtceu:drilling_fluid', 16000)])
     .itemInputs('gtceu:neutronium_drill_head')
-    .itemOutputs('1000000x gtceu:raw_chaos')
+    .itemOutputs('1000000x gtceu:raw_chaos', '1000000x gtceu:raw_chronon')
     .circuit(5)
     .duration(20*40)
     .dimension('sogcore:asteroid_belt')
