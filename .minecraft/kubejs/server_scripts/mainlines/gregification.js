@@ -1941,4 +1941,11 @@ sog.recipes.gtceu.alloy_smelter('netherite')
 sog.replaceInput( {id: 'gtceu:assembly_line/electric_pump_uv'}, 'gtceu:silicone_rubber_ring', 'gtceu:neoprene_ring' )
 sog.replaceInput( {id: 'gtceu:assembly_line/conveyor_module_uv'}, 'gtceu:styrene_butadiene_rubber', 'gtceu:neoprene' )
 
+sog.recipes.gtceu.chemical_reactor('better_calcium_chloride')
+    .itemInputs('3x gtceu:calcium_dust')
+	.inputFluids('gtceu:chlorine 2000')
+	.itemOutputs('6x gtceu:calcium_chloride_dust')
+	.duration(20*30)
+	.EUt((GTValues.VA[GTValues.HV]))
+
 })
