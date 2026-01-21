@@ -8,6 +8,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     addFluid(GTMaterials.Californium, $FluidStorageKeys.LIQUID); // Can be LIQUID, GAS, PLASMA or MOLTEN
     addFluid(GTMaterials.Oganesson, $FluidStorageKeys.GAS);
     addFluid(GTMaterials.Neptunium, $FluidStorageKeys.GAS);
+    addFluid(GTMaterials.Cadmium, $FluidStorageKeys.LIQUID); 
+    addFluid(GTMaterials.Thallium, $FluidStorageKeys.LIQUID);
 })
 
 
