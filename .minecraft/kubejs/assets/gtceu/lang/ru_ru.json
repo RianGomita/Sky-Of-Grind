@@ -271,7 +271,7 @@
   "material.gtceu.treated_zylon_polymer_solution": "Обработанный раствор полимера зилона",
   "material.gtceu.meta_stable_molten_kevlar": "Мета-стабильный расплавленный кевлар",
   "material.gtceu.meta_stable_molten_zylon": "Мета-стабильный расплавленный зилон",
-  
+
   "material.gtceu.pcb_coolant_mk2": "Охлаждающая жидкость для PCB MK2",
   "material.gtceu.pcb_coolant_mk3": "Охлаждающая жидкость для PCB MK3",
   "material.gtceu.nano_diamond": "Нано алмаз",
@@ -299,6 +299,7 @@
   "material.gtceu.stabilized_temporal_flux_mixture": "Стабилизированная смесь временных потоков",
   "material.gtceu.time_looped_flux": "Зацикленный поток времени",
   "material.gtceu.reverse_temporal_flux": "Инвертированный поток времени",
+
 
   "material.gtceu.triplatirium_235": "Триплатириум 235",
   "material.gtceu.atomic_alloy": "Атомный сплав",

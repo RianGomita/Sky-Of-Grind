@@ -21,7 +21,7 @@ sog.recipes.gtceu.atomic_melting_module('molten_space_time')
 .outputFluids('gtceu:molten_space_time 144')
 .duration(20*20)
 .EUt(GTValues.VA[GTValues.OpV]);
-  
+
 sog.recipes.gtceu.atomic_melting_module('better_kevlar_melting')
 .itemInputs('16x gtceu:kevlar_dust')
 .perTick(true)

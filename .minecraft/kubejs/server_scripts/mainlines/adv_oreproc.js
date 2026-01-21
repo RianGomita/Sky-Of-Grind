@@ -125,7 +125,7 @@ const advgem = [
     'sapphire', 'malachite', 'apatite', 'ruby', 'spessartine', 'pyrope',
     'topaz', 'lapis', 'green_sapphire', 'amethyst', 'lazurite',
     'almandine', 'diamond', 'rock_salt', 'nether_quartz', 'salt', 'red_garnet',
-    'cinnabar', 'grossular', 'emerald', 'realgar', 'yellow_garnet', 'certus_quartz',
+    'cinnabar', 'grossular', 'emerald', 'realgar', 'yellow_garnet', 'certus_quartz',   
     'olivine', 'chronon'
 ];
 
@@ -233,6 +233,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV]);
 
 //recipes components
+
 
     event.recipes.gtceu.assembler('adv_high_power_crushing_wheels')
         .itemInputs('kubejs:high_power_crushing_wheels','gtceu:uv_electric_motor','8x gtceu:darmstadtium_plate')

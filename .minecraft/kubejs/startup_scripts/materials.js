@@ -148,6 +148,9 @@ GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 GTMaterials.Thallium.setProperty(PropertyKey.DUST, new $DustProperty());
 GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 
+
+
+
     event.create('star_matter')
         .ingot().liquid()
         .element('star_matter')
@@ -1452,7 +1455,6 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('pcb_coolant_mk2')
         .liquid(2)
         .color(0x400bb3)
-
     event.create('overheated_blaze')
         .liquid(6000)
         .color(0xdbad14)
@@ -1509,7 +1511,7 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x585163)
         .components('1x sodium', '1x iodine', '1x thallium')
         .formula('NaI(Tl)', true)
-        .flags(GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.DISABLE_DECOMPOSITION)   
+        .flags(GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.DISABLE_DECOMPOSITION)  
     event.create('tachyon_condensate')
         .liquid(10)
         .color(0xb519ad)
@@ -1535,7 +1537,15 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('pcb_coolant_mk3')
         .liquid(1)
         .color(0xdb5a96)
-	
+
+
+
+
+
+
+
+
+
 /// C O S M I C   M A T E R I A L S   F U S I O N
     
 event.create('cosmic_tungsten')
@@ -1843,7 +1853,7 @@ event.create("chrono_infinity")
     event.create('supercritical_carbon_dioxide')
         .liquid()
         .color(0xaed6d6)
-		.formula('CO₂↔', true)
+        .formula('CO₂↔', true)
     event.create('fluoropolymer_solution')
         .dust()
         .color(0x646969)

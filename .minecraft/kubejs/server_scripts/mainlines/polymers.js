@@ -1,20 +1,5 @@
 ServerEvents.recipes(event => {
 
-	// Large Dehydration Unit
-
-    event.shaped('gtceu:large_dehydration_unit', [
-            'ABA', 
-            'CDC',
-            'AEA'  
-          ], {
-            A: '#gtceu:circuits/iv', 
-            B: 'gtceu:ev_electric_pump',  
-            C: 'gtceu:rtm_alloy_coil_block',
-			D: 'gtceu:clean_machine_casing',
-			E: 'gtceu:ev_fluid_regulator'
-          }
-		  )
-
 	// Large Evaporation Pool
 
 	event.shaped('gtceu:large_evaporation_pool', [
@@ -110,7 +95,7 @@ ServerEvents.recipes(event => {
     })
 
 	event.recipes.gtceu.assembly_line('large_polymerization_chamber')
-		.itemInputs('16x gtceu:chemical_plant', '16x gtceu:large_dehydration_unit', '16x gtceu:large_solidifier', '16x gtceu:uhv_electric_pump', '8x gtceu:uhv_robot_arm', '4x #gtceu:circuits/uev', '16x gtceu:peek_plate', '16x avaritia:neutron_gear', '64x gtceu:fine_kaemite_wire', '64x gtceu:fine_kaemite_wire', '64x gtceu:antimatter_foil', '64x gtceu:antimatter_foil', '64x gtceu:resonant_essence_screw')
+				.itemInputs('16x gtceu:chemical_plant', '16x gtceu:large_dehydration_unit', '16x gtceu:large_solidifier', '16x gtceu:uhv_electric_pump', '8x gtceu:uhv_robot_arm', '4x #gtceu:circuits/uev', '16x gtceu:peek_plate', '16x avaritia:neutron_gear', '64x gtceu:fine_kaemite_wire', '64x gtceu:fine_kaemite_wire', '64x gtceu:antimatter_foil', '64x gtceu:antimatter_foil', '64x gtceu:resonant_essence_screw')
 		.itemOutputs('gtceu:large_polymerization_chamber')
 		.inputFluids(
 			Fluid.of('gtceu:peek', 32000),
@@ -1775,7 +1760,7 @@ ServerEvents.recipes(event => {
 		.duration(20*25)
 		.EUt((GTValues.VA[GTValues.OpV]))
 
-	event.recipes.gtceu.chemical_plant('better_teslarium')
+event.recipes.gtceu.chemical_plant('better_teslarium')
         .notConsumable('kubejs:chemical_tier_five')
         .inputFluids ('gtceu:naquadria 720','gtceu:radon 5000')
         .itemInputs('4x gtceu:naquadah_alloy_dust','4x minecraft:nether_star')
@@ -1823,6 +1808,6 @@ ServerEvents.recipes(event => {
             .duration(20*200)
             .EUt(GTValues.VA[GTValues.UXV])
 
-})
 
+})
 

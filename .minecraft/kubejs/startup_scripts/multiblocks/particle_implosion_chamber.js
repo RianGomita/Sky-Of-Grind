@@ -18,7 +18,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                     .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 )
-        .build()
+        .build()               
     )
     .workableCasingModel("gtceu:block/casings/gcym/atomic_casing", 'gtceu:block/multiblock/implosion_compressor')
 })

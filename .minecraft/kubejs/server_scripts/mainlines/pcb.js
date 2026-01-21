@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    
+
     //Multiblocks
 
         event.recipes.gtceu.assembler('ultra_reflective_laser_cooling_casing')
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
             .itemOutputs('4x gtceu:exquisite_synchronized_chronon_gem')
             .duration(20*10)
             .EUt(GTValues.VA[GTValues.UXV])
-        
+
         event.recipes.gtceu.laser_engraver('perfectly_polished_sapphire_wafer')
             .itemInputs('kubejs:sapphire_wafer')
             .notConsumable('gtceu:synchronized_chronon_lens')
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
             .itemOutputs('5x gtceu:sodium_iodate_dust', '10x gtceu:sodium_iodine_dust')
             .duration(20*25)
             .EUt(GTValues.VA[GTValues.ZPM])
-        
+
         event.recipes.gtceu.eternity_fusion('thallium_fusion')
             .inputFluids('gtceu:cadmium 144', "gtceu:arsenic 144")
             .outputFluids('gtceu:thallium 144')
@@ -235,7 +235,7 @@ ServerEvents.recipes(event => {
             .chancedItemOutputLogic('xor')
             .duration(20*10)
             .EUt(GTValues.VA[GTValues.OpV])
-            
+
     //PCB MK2
 
          event.recipes.gtceu.implosion_compressor('nano_diamond')
@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("16x gtceu:activated_nano_diamond_dust")
             .duration(20*35)
             .EUt((GTValues.VA[GTValues.UEV]))
-            
+
         event.recipes.gtceu.vacuum_freezer('superfluid_helium')
             .inputFluids('gtceu:helium_3 1000', "gtceu:liquid_nitrogen 500")
             .outputFluids('gtceu:superfluid_helium 250')
@@ -288,7 +288,7 @@ ServerEvents.recipes(event => {
             .outputFluids('gtceu:unprocessed_nanothermal_fluid 1500')
             .duration(20*30)
             .EUt((GTValues.VA[GTValues.UIV]))
-            
+
         event.recipes.gtceu.radiation_chamber('ion_implanted_nanothermal_fluid')
             .inputFluids('gtceu:unprocessed_nanothermal_fluid 2000', "gtceu:tritium 1000")
             .chancedInput('4x gtceu:draconium_bolt', 2500, 0)

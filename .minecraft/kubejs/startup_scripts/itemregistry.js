@@ -124,8 +124,8 @@ StartupEvents.registry('item', sog => {
     sog.create('photon').displayName('Photon').texture('kubejs:item/particles/photon')   
     sog.create('strange_quarks').displayName('Strange Quarks').texture('kubejs:item/particles/strange_quarks')   
     sog.create('tau_neutrino').displayName('Tau Neutrino').texture('kubejs:item/particles/tau_neutrino')   
-    sog.create('condensed_hydrogen_ball').displayName('Condensed Hydrogen Ball').texture('kubejs:item/particles/condensed_hydrogen_ball')
-    sog.create('tachyon').displayName('Tachyon').texture('kubejs:item/particles/tachyon')  
+        sog.create('condensed_hydrogen_ball').displayName('Condensed Hydrogen Ball').texture('kubejs:item/particles/condensed_hydrogen_ball')
+    sog.create('tachyon').displayName('Tachyon').texture('kubejs:item/particles/tachyon') 
     // Chaos
     sog.create('reactive_blend').displayName('Reactive Blend').texture('kubejs:item/chaos/reactive_blend')    
     sog.create('reactive_chaos_dust').displayName('Reactive Chaos Dust').texture('kubejs:item/chaos/reactive_chaos_dust')    

@@ -169,13 +169,6 @@ ServerEvents.recipes(event => {
             .duration(20*20)
             .EUt(GTValues.VA[GTValues.UHV]);
 
-        event.recipes.gtceu.chemical_plant('advanced_sodium_persulfate')
-            .notConsumable('kubejs:chemical_tier_four')
-            .itemInputs('20x gtceu:sulfur_dust','40x gtceu:salt_dust')
-            .inputFluids('minecraft:water 256000')
-            .outputFluids('gtceu:sodium_persulfate 32000','gtceu:hydrochloric_acid 5000','gtceu:hydrogen 5000')
-            .duration(20*10)
-            .EUt(GTValues.VA[GTValues.UHV]);
 
 
     // Line Skips T4
@@ -204,6 +197,14 @@ ServerEvents.recipes(event => {
             .itemOutputs('gtceu:uranium_235_dust', '10x gtceu:uranium_dust')
             .outputFluids('gtceu:fluorine 50000', 'gtceu:hydrogen 20000')
             .duration(500)
+            .EUt(GTValues.VA[GTValues.UHV]);
+
+        event.recipes.gtceu.chemical_plant('advanced_sodium_persulfate')
+            .notConsumable('kubejs:chemical_tier_four')
+            .itemInputs('20x gtceu:sulfur_dust','40x gtceu:salt_dust')
+            .inputFluids('minecraft:water 256000')
+            .outputFluids('gtceu:sodium_persulfate 32000','gtceu:hydrochloric_acid 5000','gtceu:hydrogen 5000')
+            .duration(20*10)
             .EUt(GTValues.VA[GTValues.UHV]);
 
 
