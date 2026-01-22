@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:titanium_tetrachloride 10", "gtceu:triethylaluminium 15", "gtceu:liquid_oxygen 50")
         .perTick(false)
 		.outputFluids("gtceu:polyvinyl_chloride 12636")
-		.duration(20*20*5)
+		.duration(20*20)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
 	event.recipes.gtceu.polymerization_chamber('better_polyethylene')
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:titanium_tetrachloride 10", "gtceu:triethylaluminium 15", "gtceu:liquid_oxygen 50")
         .perTick(false)
 		.outputFluids("gtceu:polyethylene 12636")
-		.duration(20*20*5)
+		.duration(20*20)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
 	event.recipes.gtceu.polymerization_chamber('better_polytetrafluoroethylene')
@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:titanium_tetrachloride 10", "gtceu:triethylaluminium 15", "gtceu:liquid_oxygen 50")
         .perTick(false)
 		.outputFluids("gtceu:polytetrafluoroethylene 12636")
-		.duration(20*20*5)
+		.duration(20*20)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
 	event.recipes.gtceu.polymerization_chamber('better_polyvinyl_acetate')
@@ -216,7 +216,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:titanium_tetrachloride 10", "gtceu:triethylaluminium 15", "gtceu:liquid_oxygen 50")
         .perTick(false)
 		.outputFluids("gtceu:polyvinyl_acetate 12636")
-		.duration(20*20*5)
+		.duration(20*20)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
 	event.recipes.gtceu.polymerization_chamber('better_rubber')
@@ -225,7 +225,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:tetramethylthiuramdisulfide_solution 10")
         .perTick(false)
 		.outputFluids("gtceu:rubber 5184")
-		.duration(20*10*5)
+		.duration(20*10)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
 	event.recipes.gtceu.polymerization_chamber('better_styrene_butadiene_rubber')
@@ -234,7 +234,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:tetramethylthiuramdisulfide_solution 10")
         .perTick(false)
 		.outputFluids("gtceu:styrene_butadiene_rubber 5184")
-		.duration(20*10*5)
+		.duration(20*10)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
 	event.recipes.gtceu.polymerization_chamber('better_silicone_rubber')
@@ -243,7 +243,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:tetramethylthiuramdisulfide_solution 10")
         .perTick(false)
 		.outputFluids("gtceu:silicone_rubber 5184")
-		.duration(20*10*5)
+		.duration(20*10)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
 	event.recipes.gtceu.polymerization_chamber('better_neoprene')
@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:tetramethylthiuramdisulfide_solution 10")
         .perTick(false)
 		.outputFluids("gtceu:neoprene 5184")
-		.duration(20*10*5)
+		.duration(20*10)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
 	// High-Pressure Reactor
@@ -1824,5 +1824,6 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UXV])
 
 })
+
 
 
