@@ -1,0 +1,5 @@
+{
+  "ldlib": {
+    "connection": "kubejs:block/casings/orbital_solar_casing_ctm"
+  }
+}

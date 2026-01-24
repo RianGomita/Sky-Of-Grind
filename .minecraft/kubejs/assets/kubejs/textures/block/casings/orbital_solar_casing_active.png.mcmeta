@@ -1,0 +1,8 @@
+{
+  "animation":{
+    "frametime": 2
+  },
+  "ldlib": {
+    "connection": "kubejs:block/casings/orbital_solar_casing_active_ctm"
+  }
+}
