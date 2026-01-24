@@ -19,6 +19,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('cosmic_matter').parent(GTMaterialIconSet.METALLIC)
     event.create('eternity').parent(GTMaterialIconSet.METALLIC)
     event.create('chrono-infinity_alloy').parent(GTMaterialIconSet.SHINY)
+    event.create('solar_eclipse_alloy').parent(GTMaterialIconSet.METALLIC)
 })
 
 GTCEuStartupEvents.registry('gtceu:element', event => {
@@ -125,6 +126,10 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .protons(238)
         .neutrons(526)
         .symbol('Cn')
+    event.create('solar_eclipse_alloy')
+        .protons(168)
+        .neutrons(316)
+        .symbol('☼');
         //  ₂₃₄₅₆₇₈₉₀
 })
 
@@ -1943,4 +1948,23 @@ event.create("chrono_infinity")
         event.create('decay_stabilized')
         .plasma()
         .color(0x23195e)
+    event.create('solar_eclipse_alloy')
+        .ingot()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .iconSet('solar_eclipse_alloy')
+        .blastTemp(13500, 'highest', 1966080, 3400)
+        .element('solar_eclipse_alloy')
+        .flags(
+        GTMaterialFlags.GENERATE_PLATE, 
+        GTMaterialFlags.GENERATE_ROD, 
+        GTMaterialFlags.GENERATE_GEAR, 
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_DENSE, 
+        GTMaterialFlags.GENERATE_ROTOR, 
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_SMALL_GEAR,
+        GTMaterialFlags.GENERATE_ROUND,
+        GTMaterialFlags.GENERATE_SPRING,
+        GTMaterialFlags.GENERATE_FRAME
+        )
     })
