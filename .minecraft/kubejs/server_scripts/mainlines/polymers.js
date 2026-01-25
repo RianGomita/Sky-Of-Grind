@@ -870,12 +870,12 @@ ServerEvents.recipes(event => {
 
 	event.recipes.gtceu.polymerization_chamber('peek_optimized')
         .circuit(1)
-        .itemInputs('10x gtceu:hydroquinone_dust')
-        .inputFluids('gtceu:difluorobenzophenone 2000')
+        .itemInputs('192x gtceu:hydroquinone_dust')
+        .inputFluids('gtceu:difluorobenzophenone 30000')
         .perTick(true)
-        .inputFluids('gtceu:n_methyl_pyrrolidone 5')
+        .inputFluids('gtceu:n_methyl_pyrrolidone 20')
         .perTick(false)
-        .outputFluids('gtceu:peek 2304')
+        .outputFluids('gtceu:peek 86400')
         .duration(20*50*5)
         .EUt((GTValues.VA[GTValues.UEV]))
 
