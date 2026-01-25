@@ -11,7 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('bio_lab', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['biolab','large_bacterial_vat'])
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.MACHINE_CASING_UV)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('AAAAA', 'ATTTA', 'ATTTA', 'ATTTA', 'AAAAA')
