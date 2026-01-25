@@ -1972,4 +1972,17 @@ sog.recipes.gtceu.chemical_reactor('better_calcium_chloride')
 	.duration(20*30)
 	.EUt((GTValues.VA[GTValues.HV]))
 
+sog.recipes.gtceu.hgim("bettercondensedstarmatter")
+        .itemInputs(
+            "8x gtceu:silicone_rubber_plate"
+        )
+        .inputFluids(
+            "gtceu:star_matter 20736",
+            "gtceu:sodium_potassium 12000"
+        )
+        .itemOutputs(
+            "kubejs:condensed_star_matter"
+        )
+        .EUt(GTValues.VA[GTValues.UEV])
+        .duration(20 * 25)
 })
