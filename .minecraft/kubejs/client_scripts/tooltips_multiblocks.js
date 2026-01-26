@@ -1079,7 +1079,6 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:robust_extractinator",
             "gtceu:large_bacterial_bat",
             "gtceu:greenhouse",
-            "gtceu:large_polymerization_chamber",
             "gtceu:large_high_pressure_reactor",
             "gtceu:large_evaporation_pool",
             "gtceu:cryogenic_centrifuge",
@@ -1251,6 +1250,20 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "multiblock.perfocaccess2"
         ]
     },
+    'LASER_PERFECT_OC_SOG': {
+        multiblockIds: [
+            "gtceu:large_polymerization_chamber"
+        ],
+        tooltipKeys: [
+            "multiblock.laseraccess1",
+            "multiblock.laseraccess2",
+            "multiblock.perfocaccess1",
+            "multiblock.perfocaccess2"
+        ]
+    },
+
+
+
     'LASER_NEEDED_SUBTICK_PERFECT_OC_SOG': {
         multiblockIds: [
             "gtceu:industrial_grade_laser_synchronizer_chiller"
@@ -2012,8 +2025,7 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
     ],
     "gtceu:large_polymerization_chamber": [
         "basegtm.custom.tooltip_descriptions_all",
-        "skyofgrind.custom.tooltip_large_polymerization_chamber_1",
-        "basegtm.custom.tooltip_pyrolyse_oven_2"
+        "skyofgrind.custom.tooltip_large_polymerization_chamber_1"
     ],
     "gtceu:uev_fusion_reactor": [
         "basegtm.custom.tooltip_descriptions_all",
@@ -3011,7 +3023,7 @@ const SHIFT_PLACEHOLDER_VALUES = {
     },
     // INERT_PEEK_CASING_TOOLTIP_SOG
     "gtceu:large_polymerization_chamber": {
-        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "muffler", "pch"],
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "muffler"],
         values:
             INERT_PEEK_CASING_TOOLTIP_SOG
     },

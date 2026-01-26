@@ -11,14 +11,17 @@ features:
   # Whether the Custom Phoenix HPCA multiblock is enabled
   PHPCAEnabled: true
 
-  # Whether recipes for the machines are enabled
+  # Whether recipes for the research machines are enabled
   recipesEnabled: true
+
+  # Whether the ME Tag Input Bus and Hatch are enabled
+  tagInputsEnabled: true
 
   # How powerful the normal Phoenix Computation Unit is (CWU/t)
   BasicPCUStrength: 32
 
   # How powerful the Advanced Phoenix Computation Unit is (CWU/t)
-  PCUStrength: 64
+  PCUStrength: 320
 
   # How much coolant the basic Phoenix Computation Unit uses
   BasicPCUCoolantUsed: 4
@@ -63,20 +66,19 @@ features:
   ActiveCoolerCoolantBase: pcb_coolant
 
   # What Stronger Coolant the Active Phoenix Cooler uses while in the PHPCA  (Gt or GT Kubejs Material)
-  ActiveCoolerCoolant1: molten_space_time
+  ActiveCoolerCoolant1: pcb_coolant_mk2
 
   # What Strongest Coolant the Active Phoenix Cooler uses when in the PHPCA (Gt or GT Kubejs Material)
-  ActiveCoolerCoolant2: sodium_potassium
+  ActiveCoolerCoolant2: pcb_coolant_mk3
 
   # How much ActiveCoolerCoolant1 boosts base CWU/t ()
-  BaseCoolantBoost: 1.0
+  BaseCoolantBoost: 1.1
 
   # How much ActiveCoolerCoolant1 boosts base CWU/t ()
-  CoolantBoost1: 1.1
+  CoolantBoost1: 1.3
 
   # What Strongest Coolant the Active Phoenix Cooler uses when in the PHPCA (Gt or GT Kubejs Material)
-  CoolantBoost2: 1.2
+  CoolantBoost2: 2.0
 
   # Whether the UHV to MAX solar panels are enabled
   SolarsEnabled: false
-
