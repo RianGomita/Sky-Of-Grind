@@ -22,8 +22,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:brass', 72],
                 ['gtceu:steel', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2000,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'mv_sensor',
@@ -36,8 +36,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:brass', 72],
                 ['gtceu:aluminium', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2000,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'hv_sensor',
@@ -50,8 +50,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:chromium', 72],
                 ['gtceu:stainless_steel', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2250,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'ev_sensor',
@@ -64,8 +64,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:platinum', 72],
                 ['gtceu:titanium', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2500,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'iv_sensor',
@@ -78,8 +78,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:iridium', 72],
                 ['gtceu:tungsten_steel', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 2750,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'luv_sensor',
@@ -96,8 +96,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:palladium', 3456],
                 ['gtceu:soldering_alloy', 288]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3000,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'zpm_sensor',
@@ -114,8 +114,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:trinium', 3456],
                 ['gtceu:soldering_alloy', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3250,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uv_sensor',
@@ -131,8 +131,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:naquadria', 4032],
                 ['gtceu:soldering_alloy', 1152]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3500,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uhv_sensor',
@@ -152,14 +152,14 @@ ServerEvents.recipes(event => {
                 ['gtceu:lubricant', 1000],
                 ['gtceu:naquadria', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3750,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uev_sensor',
             outputItem: 'gtceu:uev_sensor',
             items: [
-                ['gtceu:uiv_electric_motor', 1],
+                ['gtceu:uev_electric_motor', 1],
                 ['gtceu:gravi_star', 1],
                 ['#gtceu:circuits/uev', 2],
                 ['avaritia:eternal_singularity', 1],
@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:soldering_alloy', 576],
                 ['gtceu:lubricant', 1000]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.UIV]
         },
         {
@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:antimatter', 576],
                 ['gtceu:draconium', 576]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.UXV]
         },
         {
@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:universium', 576],
                 ['gtceu:stellar_matter_plasma', 576]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.OpV]
         }
     ];

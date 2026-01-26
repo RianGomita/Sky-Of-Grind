@@ -23,8 +23,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:bronze', 432],
                 ['gtceu:tin', 594]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2000,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'mv_electric_pump',
@@ -38,8 +38,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:steel', 432],
                 ['gtceu:bronze', 594]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2000,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'hv_electric_pump',
@@ -53,8 +53,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:stainless_steel', 432],
                 ['gtceu:steel', 594]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2250,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'ev_electric_pump',
@@ -68,8 +68,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:titanium', 432],
                 ['gtceu:stainless_steel', 594]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2500,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'iv_electric_pump',
@@ -82,8 +82,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:styrene_butadiene_rubber', 72],
                 ['gtceu:tungsten_steel', 1026]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 2750,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'luv_electric_pump',
@@ -99,8 +99,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:soldering_alloy', 144],
                 ['gtceu:lubricant', 250]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3000,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'zpm_electric_pump',
@@ -116,8 +116,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:soldering_alloy', 288],
                 ['gtceu:lubricant', 500]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3250,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uv_electric_pump',
@@ -135,8 +135,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:lubricant', 1000],
                 ['gtceu:naquadria', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3500,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uhv_electric_pump',
@@ -154,8 +154,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:lubricant', 1000],
                 ['gtceu:naquadria', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3750,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uev_electric_pump',
@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:soldering_alloy', 576],
                 ['gtceu:lubricant', 1000]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.UIV]
         },
         {
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:antimatter', 576],
                 ['gtceu:draconium', 576]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.UXV]
         },
         {
@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:universium', 576],
                 ['gtceu:stellar_matter_plasma', 576]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.OpV]
         }
     ];
