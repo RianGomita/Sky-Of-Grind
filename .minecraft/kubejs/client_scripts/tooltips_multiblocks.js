@@ -936,6 +936,21 @@ const NEUTRONIUM_CASING_TOOLTIP_SOG_PROCESSOR_PRINTING_FACTORIES = {
     itemoutput: "§7Middle Bottom Layer last slice",
     energy: "§7Any Neutronium Casing"
 };
+const ULTRA_REFLECTIVE_LASER_COOLING_CASING_TOOLTIP_SO_COLLOSAL_LASER_BEAM = {
+    controller: "§7Bottom Front",
+    iteminput: "§7Any Ultra Reflective Laser Cooling Casing",
+    fluidinput: "§7Any Ultra Reflective Laser Cooling Casing",
+    itemoutput: "§7Any Ultra Reflective Laser Cooling Casing",
+    energy: "§7ONLY 2 Lasers on the backside of the High Power Casing Structure",
+    pch: "§7Any Ultra Reflective Laser Cooling Casing"
+};
+const ULTRA_REFLECTIVE_LASER_COOLING_CASING_TOOLTIP_SO_LASER_SYNCHRONIZER_CHILLER = {
+    controller: "§7Middle Front",
+    iteminput: "§7Left side, NEEDS ULV Input Bus!",
+    fluidinput: "§7Any Ultra Reflective Laser Cooling Casing",
+    fluidoutput: "§7Any Ultra Reflective Laser Cooling Casing",
+    energy: "§7Exactly 4 Lasers on the Back!"
+};
 const SEMI_STABLE_CASING_TOOLTIP_SOG = {
     controller: "§7Front",
     iteminput: "§7Any Semi-Stable Casing Casing",
@@ -1064,12 +1079,12 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:robust_extractinator",
             "gtceu:large_bacterial_bat",
             "gtceu:greenhouse",
-            "gtceu:large_polymerization_chamber",
             "gtceu:large_high_pressure_reactor",
             "gtceu:large_evaporation_pool",
             "gtceu:cryogenic_centrifuge",
             "gtceu:extreme_cracking_unit",
-            "gtceu:xl_radiation_chamber"
+            "gtceu:xl_radiation_chamber",
+            "gtceu:chaotic_fusion_injector"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1122,6 +1137,19 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "multiblock.pchaccess2",
             "multiblock.laseraccess1",
             "multiblock.laseraccess2",
+            "multiblock.subtickaccess1",
+            "multiblock.subtickaccess2"
+        ]
+    },
+    'PCH_LASER_NEEDED_SUBTICK_SOG': {
+        multiblockIds: [
+            "gtceu:collosal_laser_beam_containment_chamber"
+        ],
+        tooltipKeys: [
+            "multiblock.pchaccess1",
+            "multiblock.pchaccess2",
+            "multiblock.needlaseraccess1",
+            "multiblock.needlaseraccess2",
             "multiblock.subtickaccess1",
             "multiblock.subtickaccess2"
         ]
@@ -1197,9 +1225,21 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "multiblock.laseroutputaccess2"
         ]
     },
+    'LASER_SUBTICK_SOG': {
+        multiblockIds: [
+            "gtceu:solar_alloy_forge"
+        ],
+        tooltipKeys: [
+            "multiblock.laseraccess1",
+            "multiblock.laseraccess2",
+            "multiblock.subtickaccess1",
+            "multiblock.subtickaccess2"
+        ]
+    },
     'LASER_SUBTICK_PERFECT_OC_SOG': {
         multiblockIds: [
-            "gtceu:eternity_fusion_reactor"
+            "gtceu:eternity_fusion_reactor",
+            "gtceu:orbital_bore",
         ],
         tooltipKeys: [
             "multiblock.laseraccess1",
@@ -1210,8 +1250,36 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "multiblock.perfocaccess2"
         ]
     },
+    'LASER_PERFECT_OC_SOG': {
+        multiblockIds: [
+            "gtceu:large_polymerization_chamber"
+        ],
+        tooltipKeys: [
+            "multiblock.laseraccess1",
+            "multiblock.laseraccess2",
+            "multiblock.perfocaccess1",
+            "multiblock.perfocaccess2"
+        ]
+    },
+
+
+
+    'LASER_NEEDED_SUBTICK_PERFECT_OC_SOG': {
+        multiblockIds: [
+            "gtceu:industrial_grade_laser_synchronizer_chiller"
+        ],
+        tooltipKeys: [
+            "multiblock.needlaseraccess1",
+            "multiblock.needlaseraccess2",
+            "multiblock.subtickaccess1",
+            "multiblock.subtickaccess2",
+            "multiblock.perfocaccess1",
+            "multiblock.perfocaccess2"
+        ]
+    },
     'SUBTICK_PERF_OC_SOG': {
         multiblockIds: [
+            "gtceu:bio_lab",
             "gtceu:processor_printing_factory_lv",
             "gtceu:processor_printing_factory_mv",
             "gtceu:processor_printing_factory_hv",
@@ -1231,7 +1299,6 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     },
     'PERF_OC_SOG': {
         multiblockIds: [
-            "gtceu:bio_lab",
             "gtceu:naquadahreactormk2"
         ],
         tooltipKeys: [
@@ -1958,8 +2025,7 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
     ],
     "gtceu:large_polymerization_chamber": [
         "basegtm.custom.tooltip_descriptions_all",
-        "skyofgrind.custom.tooltip_large_polymerization_chamber_1",
-        "basegtm.custom.tooltip_pyrolyse_oven_2"
+        "skyofgrind.custom.tooltip_large_polymerization_chamber_1"
     ],
     "gtceu:uev_fusion_reactor": [
         "basegtm.custom.tooltip_descriptions_all",
@@ -2049,6 +2115,30 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
     "gtceu:adv_processing_plant": [
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.tooltip_adv_processing_plant_1"
+    ],
+    "gtceu:collosal_laser_beam_containment_chamber": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.laser_beam_containment_chamber_1",
+        "skyofgrind.custom.laser_beam_containment_chamber_2",
+        "skyofgrind.custom.laser_beam_containment_chamber_3",
+        "skyofgrind.custom.laser_beam_containment_chamber_4"
+    ],
+    "gtceu:industrial_grade_laser_synchronizer_chiller": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.laser_synchronizer_chiller_1",
+        "skyofgrind.custom.laser_synchronizer_chiller_2",
+        "skyofgrind.custom.laser_synchronizer_chiller_3",
+        "skyofgrind.custom.laser_synchronizer_chiller_4"
+    ],
+    "gtceu:orbital_bore": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.orbital_bore_1",
+        "skyofgrind.custom.orbital_bore_2"
+    ],
+    "gtceu:solar_alloy_forge": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.solar_alloy_forge_1",
+        "skyofgrind.custom.solar_alloy_forge_2"
     ]
 };
 const MACHINE_TYPE_NAMES = {
@@ -2130,6 +2220,8 @@ const MACHINE_TYPE_NAMES = {
     // GTMUtils
     "gtmutils:pterb_machine": "§eWireless Active Transformer",
     // Sky of Grind
+    "gtceu:collosal_laser_beam_containment_chamber": "§eCollosal Laser Beam Chamber",
+    "gtceu:industrial_grade_laser_synchronizer_chiller": "§eLaser Synchronizer Chiller",
     "gtceu:eternity_recursion_engine": "§eEternity Recursion Engine",
     "gtceu:fusion_mk5": "§eFusion MK V",
     "gtceu:large_dehydration_unit": "§eDehydration Unit | Pyrolyse Oven",
@@ -2177,10 +2269,12 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:atmospheric_collector": "§eGas Collector",
     "gtceu:robust_extractinator": "§eElectric Extractinator",
     "gtceu:xl_plasma_turbine": "§eXL Plasma Turbine",
-    "gtceu:bio_lab": "§eBio-Lab",
+    "gtceu:bio_lab": "§eBio-Lab | Large Bacterial Vat",
     "gtceu:large_bacterial_bat": "§eLarge Bacterial Vat",
     "gtceu:greenhouse": "§eGreenhouse",
     "gtceu:nebular_plasma_nexus": "§ePlasma Nexus",
+    "gtceu:orbital_bore": "§eOrbital Mining | Orbital Pumping",
+    "gtceu:solar_alloy_forge": "§eSolar Forging | Solar Alloy Smelting",
     "gtceu:large_synchrotron_switcher": "§eHyperphased Accelerator",
     "gtceu:singularity_data_confinement": "§eBlack Hole Holder",
     "gtceu:altart2": "§eBlood Altar Tier 2",
@@ -2720,7 +2814,7 @@ const SHIFT_PLACEHOLDER_VALUES = {
             ATOMIC_CASING_TOOLTIP_SPECIAL_MAINTENANCE_MUFFLER_SOG
     },
     "gtceu:dimensional_matter_extractor": {
-        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "muffler", "pch"],
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "muffler"],
         values:
             ATOMIC_CASING_TOOLTIP_SPECIAL_MAINTENANCE_MUFFLER_SOG
     },
@@ -2840,7 +2934,7 @@ const SHIFT_PLACEHOLDER_VALUES = {
             HIGHLY_REINFORCED_RADIOACTIVE_CASING_TOOLTIP_SOG
     },
     "gtceu:chaotic_fusion_injector": {
-        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "energy", "maintenance", "muffler"],
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "energy", "maintenance", "muffler", "pch"],
         values:
             HIGHLY_REINFORCED_RADIOACTIVE_CASING_TOOLTIP_SOG
     },
@@ -2929,7 +3023,7 @@ const SHIFT_PLACEHOLDER_VALUES = {
     },
     // INERT_PEEK_CASING_TOOLTIP_SOG
     "gtceu:large_polymerization_chamber": {
-        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "muffler", "pch"],
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "muffler"],
         values:
             INERT_PEEK_CASING_TOOLTIP_SOG
     },
@@ -3068,6 +3162,18 @@ const SHIFT_PLACEHOLDER_VALUES = {
         tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "energy"],
         values:
             NEUTRONIUM_CASING_TOOLTIP_SOG_PROCESSOR_PRINTING_FACTORIES
+    },
+    // ULTRA_REFLECTIVE_LASER_COOLING_CASING_TOOLTIP_SO_COLLOSAL_LASER_BEAM
+    "gtceu:collosal_laser_beam_containment_chamber": {
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "energy", "pch"],
+        values:
+            ULTRA_REFLECTIVE_LASER_COOLING_CASING_TOOLTIP_SO_COLLOSAL_LASER_BEAM
+    },
+    // ULTRA_REFLECTIVE_LASER_COOLING_CASING_TOOLTIP_SO_LASER_SYNCHRONIZER_CHILLER
+    "gtceu:industrial_grade_laser_synchronizer_chiller": {
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "fluidoutput", "energy"],
+        values:
+            ULTRA_REFLECTIVE_LASER_COOLING_CASING_TOOLTIP_SO_LASER_SYNCHRONIZER_CHILLER
     }
 };
 
