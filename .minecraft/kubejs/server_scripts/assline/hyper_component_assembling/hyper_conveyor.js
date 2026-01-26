@@ -21,8 +21,8 @@ ServerEvents.recipes(event => {
             fluids: [
                 ['gtceu:rubber', 864]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2000,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'mv_conveyor_module',
@@ -34,8 +34,8 @@ ServerEvents.recipes(event => {
             fluids: [
                 ['gtceu:rubber', 864]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2000,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'hv_conveyor_module',
@@ -47,8 +47,8 @@ ServerEvents.recipes(event => {
             fluids: [
                 ['gtceu:rubber', 864]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2250,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'ev_conveyor_module',
@@ -60,8 +60,8 @@ ServerEvents.recipes(event => {
             fluids: [
                 ['gtceu:rubber', 864]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2500,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'iv_conveyor_module',
@@ -73,8 +73,8 @@ ServerEvents.recipes(event => {
             fluids: [
                 ['gtceu:styrene_butadiene_rubber', 864]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 2750,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'luv_conveyor_module',
@@ -89,8 +89,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:lubricant', 250],
                 ['gtceu:styrene_butadiene_rubber', 1152]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3000,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'zpm_conveyor_module',
@@ -105,8 +105,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:lubricant', 500],
                 ['gtceu:styrene_butadiene_rubber', 2304]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3250,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uv_conveyor_module',
@@ -122,8 +122,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:styrene_butadiene_rubber', 3456],
                 ['gtceu:naquadria', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3500,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uhv_conveyor_module',
@@ -140,8 +140,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:neoprene', 3456],
                 ['gtceu:naquadria', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3750,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uev_conveyor_module',
@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:lubricant', 1000],
                 ['gtceu:neoprene', 3456]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.UIV]
         },
         {
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:draconium', 576],
                 ['gtceu:neoprene', 3456]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.UXV]
         },
         {
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:universium', 576],
                 ['gtceu:stellar_matter_plasma', 576]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.OpV]
         }
     ];

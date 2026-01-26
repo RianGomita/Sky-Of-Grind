@@ -22,8 +22,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:tin', 144],
                 ['gtceu:copper', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2000,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'mv_electric_motor',
@@ -37,8 +37,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:copper', 144],
                 ['gtceu:steel', 72]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2000,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'hv_electric_motor',
@@ -52,8 +52,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:silver', 288],
                 ['gtceu:steel', 72]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2250,
+            EUt: GTValues.VA[GTValues.UV]
         },
         {
             recipeIdPrefix: 'ev_electric_motor',
@@ -68,8 +68,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:aluminium', 288],
                 ['gtceu:neodymium', 72]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UEV]
+            duration: 2500,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'iv_electric_motor',
@@ -84,8 +84,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:tungsten', 288],
                 ['gtceu:neodymium', 72]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 2750,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'luv_electric_motor',
@@ -103,8 +103,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:soldering_alloy', 144],
                 ['gtceu:lubricant', 250]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3000,
+            EUt: GTValues.VA[GTValues.UHV]
         },
         {
             recipeIdPrefix: 'zpm_electric_motor',
@@ -122,8 +122,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:soldering_alloy', 288],
                 ['gtceu:lubricant', 500]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3250,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uv_electric_motor',
@@ -141,8 +141,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:lubricant', 1000],
                 ['gtceu:naquadria', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3500,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uhv_electric_motor',
@@ -159,8 +159,8 @@ ServerEvents.recipes(event => {
                 ['gtceu:lubricant', 1000],
                 ['gtceu:naquadria', 576]
             ],
-            duration: 40000,
-            EUt: GTValues.VA[GTValues.UIV]
+            duration: 3750,
+            EUt: GTValues.VA[GTValues.UEV]
         },
         {
             recipeIdPrefix: 'uev_electric_motor',
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:soldering_alloy', 576],
                 ['gtceu:lubricant', 1000]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.UIV]
         },
         {
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:antimatter', 576],
                 ['gtceu:draconium', 576]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.UXV]
         },
         {
@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
                 ['gtceu:universium', 576],
                 ['gtceu:stellar_matter_plasma', 576]
             ],
-            duration: 40000,
+            duration: 4000,
             EUt: GTValues.VA[GTValues.OpV]
         }
     ];
