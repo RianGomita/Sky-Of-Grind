@@ -324,6 +324,9 @@ ServerEvents.recipes(event => {
         .itemOutputsRanged('gtceu:raw_kaemite', 50, 500)
         .itemOutputsRanged('gtceu:raw_resonant_essence', 50, 500)
         .itemOutputsRanged('gtceu:raw_resonant_naquadah', 50, 500)
+        .itemOutputsRanged('kubejs:stable_matter', 50, 500)
+        .itemOutputsRanged('kubejs:exotic_matter', 50, 500)
+        .itemOutputsRanged('kubejs:rad_primary_resonant_particles', 50, 500)
         .duration(20 * 4000)
         .EUt(GTValues.VA[GTValues.UIV])
 
@@ -340,6 +343,9 @@ ServerEvents.recipes(event => {
         .itemOutputsRanged('gtceu:raw_kaemite', 500, 5000)
         .itemOutputsRanged('gtceu:raw_resonant_essence', 500, 5000)
         .itemOutputsRanged('gtceu:raw_resonant_naquadah', 500, 5000)
+        .itemOutputsRanged('kubejs:stable_matter', 500, 5000)
+        .itemOutputsRanged('kubejs:exotic_matter', 500, 5000)
+        .itemOutputsRanged('kubejs:rad_primary_resonant_particles', 500, 5000)
         .duration(20 * 4000)
         .EUt(GTValues.VA[GTValues.UIV])
 
