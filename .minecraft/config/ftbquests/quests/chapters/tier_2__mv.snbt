@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:aluminium_ingot"
 	id: "3E116EB5F1FFCA1D"
-	order_index: 5
+	order_index: 6
 	quest_links: [{
 		id: "7ECFCA5F342015CD"
 		linked_quest: "3E90FC6B797D4D2B"

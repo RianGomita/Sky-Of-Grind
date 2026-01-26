@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:steel_ingot"
 	id: "6E7CD50F36B93B23"
-	order_index: 4
+	order_index: 5
 	quest_links: [{
 		id: "58F436B0F7715D16"
 		linked_quest: "2DA0003222D48B72"

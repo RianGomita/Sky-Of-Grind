@@ -82,3 +82,4 @@ features:
 
   # Whether the UHV to MAX solar panels are enabled
   SolarsEnabled: false
+

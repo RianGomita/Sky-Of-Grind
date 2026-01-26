@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "draconicevolution:awakened_draconium_ingot"
 	id: "29411A93BF152DAF"
-	order_index: 14
+	order_index: 15
 	quest_links: [
 		{
 			id: "7674BEA9453CAE45"

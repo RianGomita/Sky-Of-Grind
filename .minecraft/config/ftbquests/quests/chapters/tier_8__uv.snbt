@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:atomic_alloy_ingot"
 	id: "545556F059EEEF1D"
-	order_index: 11
+	order_index: 12
 	quest_links: [
 		{
 			id: "5D903749EAA9ACE9"

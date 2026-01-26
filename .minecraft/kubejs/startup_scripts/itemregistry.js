@@ -859,7 +859,8 @@ StartupEvents.registry('block', sog => {
         .lightLevel(0)
         .defaultCutout()
         .tagBlock('forge:mineable/wrench')
-    sog.create('orbital_space_containment_casing')
+        
+sog.create('orbital_space_containment_casing')
         .displayName('Orbital Space Containment Casing')
         .textureAll('kubejs:block/casings/orbital_space_containment_casing')
         .soundType('metal')

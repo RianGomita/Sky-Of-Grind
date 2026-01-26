@@ -62,4 +62,3 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         )
         .workableCasingModel("kubejs:block/casings/orbital_space_containment_casing", 'kubejs:block/gui/machine_controller/orbital_bore')
 })
-

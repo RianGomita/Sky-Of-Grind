@@ -2115,7 +2115,7 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
     "gtceu:adv_processing_plant": [
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.tooltip_adv_processing_plant_1"
-    ],
+        ],
     "gtceu:collosal_laser_beam_containment_chamber": [
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.laser_beam_containment_chamber_1",
@@ -3173,7 +3173,7 @@ const SHIFT_PLACEHOLDER_VALUES = {
     "gtceu:industrial_grade_laser_synchronizer_chiller": {
         tooltipOrder: ["controller", "iteminput", "fluidinput", "fluidoutput", "energy"],
         values:
-            ULTRA_REFLECTIVE_LASER_COOLING_CASING_TOOLTIP_SO_LASER_SYNCHRONIZER_CHILLER
+            ULTRA_REFLECTIVE_LASER_COOLING_CASING_TOOLTIP_SO_LASER_SYNCHRONIZER_CHILLER        
     }
 };
 

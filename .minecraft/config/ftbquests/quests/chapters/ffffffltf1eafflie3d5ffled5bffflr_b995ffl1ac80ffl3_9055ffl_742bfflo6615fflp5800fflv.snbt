@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:chrono_infinity_ingot"
 	id: "356B9DBB798C1E75"
-	order_index: 16
+	order_index: 17
 	quest_links: [ ]
 	quests: [{
 		icon_scale: 1.5d
