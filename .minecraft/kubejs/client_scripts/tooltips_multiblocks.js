@@ -1239,7 +1239,7 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     'LASER_SUBTICK_PERFECT_OC_SOG': {
         multiblockIds: [
             "gtceu:eternity_fusion_reactor",
-            "gtceu:orbital_bore",
+            "gtceu:orbital_bore"
         ],
         tooltipKeys: [
             "multiblock.laseraccess1",

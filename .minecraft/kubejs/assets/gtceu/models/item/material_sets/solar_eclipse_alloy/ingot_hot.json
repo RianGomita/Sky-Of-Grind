@@ -1,0 +1,6 @@
+{
+  "parent": "gtceu:item/material_sets/solar_eclipse_alloy/ingot",
+  "textures": {
+    "layer0": "gtceu:item/material_sets/solar_eclipse_alloy/ingot_hot"
+  }
+}

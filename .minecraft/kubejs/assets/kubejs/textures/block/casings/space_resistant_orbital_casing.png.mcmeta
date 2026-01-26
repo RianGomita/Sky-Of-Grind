@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/space_resistant_orbital_casing_ctm"
+    }
+}
