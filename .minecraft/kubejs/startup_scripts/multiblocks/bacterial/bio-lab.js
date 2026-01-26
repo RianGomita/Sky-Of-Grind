@@ -28,7 +28,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("A",Predicates.blocks('gtceu:plascrete')
                   .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                   .or(Predicates.abilities(PartAbility.MAINTENANCE))
-                  .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
             )
             .where('#', Predicates.air())
             .build()
