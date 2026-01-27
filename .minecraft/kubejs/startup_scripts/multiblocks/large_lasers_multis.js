@@ -81,8 +81,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
    .where("D", Predicates.abilities(PartAbility.INPUT_LASER).setExactLimit(2))
    .where("E", Predicates.blocks("gtceu:stellar_matter_plasma_frame"))
-   .where("F", Predicates.blocks("kubejs:fusion_casing_mk5"))
-   .where("G", Predicates.blocks("kubejs:fusion_coil_mk3"))
+   .where("F", Predicates.blocks("kubejs:eternity_fusion_machine_casing"))
+   .where("G", Predicates.blocks("kubejs:eternity_fusion_coil_block"))
    .where("H", Predicates.blocks("minecraft:netherite_block"))
    .where("I", Predicates.blocks("kubejs:fusion_glass_mk2"))
    .where("J", Predicates.blocks("kubejs:stellar_powered_casing"))
@@ -95,4 +95,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
            .build()
         )
         .workableCasingModel("kubejs:block/casings/ultra_reflective_laser_cooling_casing", 'gtceu:block/multiblock/fusion_reactor')
+
 })
