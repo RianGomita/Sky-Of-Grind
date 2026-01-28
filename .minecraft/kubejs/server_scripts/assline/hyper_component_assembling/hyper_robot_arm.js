@@ -219,11 +219,11 @@ ServerEvents.recipes(event => {
                 ['#gtceu:circuits/uiv', 2],
                 ['#gtceu:circuits/uxv', 1],
                 ['avaritia:eternal_singularity', 1],
-                ['kubejs:quantum_data_module', 1]
+                ['kubejs:quantum_data_module', 1],
+                ['gtceu:pure_cosmic_matter_plate', 30]
             ],
             fluids: [
                 ['gtceu:stabilized_iridium', 1152],
-                ['gtceu:cosmic_matter', 4320],
                 ['gtceu:eternity', 576],
                 ['gtceu:universium', 576],
                 ['gtceu:stellar_matter_plasma', 576]
