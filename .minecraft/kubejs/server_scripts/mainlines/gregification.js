@@ -2141,4 +2141,99 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         )
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(20 * 25)
+
+    sog.recipes.gtceu.assembler('draconium_assembly_line')
+        .itemInputs(
+            'gtceu:dense_draconium_plate',
+            '#gtceu:circuits/uiv',
+            'gtceu:dense_draconium_plate',
+            'gtceu:circuit_assembly_line',
+            'gtceu:assembly_line',
+            'gtceu:component_assembly_line',
+            'gtceu:dense_draconium_plate',
+            '#gtceu:circuits/uiv',
+            'gtceu:dense_draconium_plate'
+        )
+        .inputFluids('gtceu:draconium 9216')
+        .itemOutputs('gtceu:draconium_assembly_line')
+        .duration(20*1200)
+        .EUt(GTValues.VA[GTValues.UIV])
+	
+    sog.recipes.gtceu.assembler('eternity_assembly_control_casing')
+        .itemInputs(
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate',
+            '64x gtceu:assembly_line_unit',
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate'
+        )
+        .inputFluids('gtceu:eternity 144')
+        .itemOutputs('kubejs:eternity_assembly_control_casing')
+        .duration(20*60)
+        .EUt(GTValues.VA[GTValues.UIV])
+	
+    sog.recipes.gtceu.assembler('draconic_assembly_control_casing')
+        .itemInputs(
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            '64x gtceu:assembly_line_unit',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate'
+        )
+        .inputFluids('gtceu:draconium 9216')
+        .itemOutputs('kubejs:draconic_assembly_control_casing')
+        .duration(20*60)
+        .EUt(GTValues.VA[GTValues.UIV])
+	
+    sog.recipes.gtceu.assembler('draconic_assembly_line_casing')
+        .itemInputs(
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            '64x gtceu:assembly_line_casing',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate'
+        )
+        .inputFluids('gtceu:draconium 9216')
+        .itemOutputs('kubejs:draconic_assembly_line_casing')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.UIV])
+	
+    sog.recipes.gtceu.assembler('draconium_machine_casing')
+        .itemInputs(
+            '6x gtceu:draconium_plate',
+            'gtceu:draconium_frame'
+        )
+        .circuit(6)
+        .itemOutputs('kubejs:draconium_machine_casing')
+        .duration(20*60)
+        .EUt(GTValues.VA[GTValues.UIV])
+	
+    sog.recipes.gtceu.assembler('draconium_assembly_line_grating')
+        .itemInputs(
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            '64x gtceu:assembly_line_grating',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate'
+        )
+        .inputFluids('gtceu:draconium 9216')
+        .itemOutputs('kubejs:draconic_assembly_line_grating')
+        .duration(20*60)
+        .EUt(GTValues.VA[GTValues.UIV])
 })
