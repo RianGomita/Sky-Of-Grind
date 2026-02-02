@@ -74,9 +74,13 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .where("[", Predicates.blocks("kubejs:highly_superconducting_coil_block"))
                 .where("@", Predicates.blocks("kubejs:orbital_solar_casing"))
                 .where("Z", Predicates.blocks("kubejs:refracting_hastelloy_c276_casing")
-                    .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.IMPORT_ITEMS, PartAbility.INPUT_LASER, PartAbility.INPUT_ENERGY, PartAbility.IMPORT_FLUIDS))
-                    .or(Predicates.abilities(PartAbility.MAINTENANCE, PartAbility.PARALLEL_HATCH))
-                    .or(Predicates.abilities(PartAbility.INPUT_LASER))
+                    .or(Predicates.abilities(
+                        PartAbility.EXPORT_ITEMS,
+                        PartAbility.IMPORT_ITEMS,
+                        PartAbility.INPUT_LASER,
+                        PartAbility.INPUT_ENERGY,
+                        PartAbility.IMPORT_FLUIDS,
+                        PartAbility.EXPORT_FLUIDS))
                 )
             .build()
         )
