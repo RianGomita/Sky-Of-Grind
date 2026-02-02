@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/supercritical_cryo_cooled_casing_ctm"
+    }
+}

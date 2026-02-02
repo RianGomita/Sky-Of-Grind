@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/reinforced_base_casing_ctm"
+    }
+}
