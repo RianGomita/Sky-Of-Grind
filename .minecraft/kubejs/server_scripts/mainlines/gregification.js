@@ -2141,4 +2141,213 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         )
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(20 * 25)
+    sog.recipes.gtceu.assembler('eternity_assembly_control_casing')
+        .itemInputs(
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate',
+            '64x gtceu:assembly_line_unit',
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate',
+            'gtceu:eternity_plate'
+        )
+        .inputFluids('gtceu:eternity 144')
+        .itemOutputs('kubejs:eternity_assembly_control_casing')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.UEV])
+    sog.recipes.gtceu.assembler('draconic_assembly_control_casing')
+        .itemInputs(
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            '64x gtceu:assembly_line_unit',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate'
+        )
+        .inputFluids('gtceu:draconium 9216')
+        .itemOutputs('kubejs:draconic_assembly_control_casing')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.UEV])
+    sog.recipes.gtceu.assembler('draconic_assembly_line_casing')
+        .itemInputs(
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            '64x gtceu:assembly_line_casing',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate'
+        )
+        .inputFluids('gtceu:draconium 9216')
+        .itemOutputs('kubejs:draconic_assembly_line_casing')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.UEV])
+    sog.recipes.gtceu.assembler('draconium_machine_casing')
+        .itemInputs(
+            '6x gtceu:draconium_plate',
+            'gtceu:draconium_frame'
+        )
+        .circuit(6)
+        .itemOutputs('kubejs:draconium_machine_casing')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.UEV])
+    sog.recipes.gtceu.assembler('draconium_assembly_line_grating')
+        .itemInputs(
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            '64x gtceu:assembly_line_grating',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate',
+            'gtceu:dense_draconium_plate'
+        )
+        .inputFluids('gtceu:draconium 9216')
+        .itemOutputs('kubejs:draconic_assembly_line_grating')
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.UEV])
+    sog.recipes.gtceu.assembler('covalent_conducting_casing')
+        .itemInputs(
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            '64x gtceu:nonconducting_casing',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:pure_cosmic_matter_plate'
+        )
+        .inputFluids('gtceu:eternity 100')
+        .itemOutputs('kubejs:covalent_conducting_casing')
+        .duration(20*45)
+        .EUt(GTValues.VA[GTValues.UXV])
+    sog.recipes.gtceu.assembler('refracting_hastelloy_c276_casing')
+        .itemInputs(
+            '16x gtceu:tritanium_coil_block',
+            '16x gtceu:tritanium_coil_block',
+            '16x gtceu:tritanium_coil_block',
+            '16x gtceu:tritanium_coil_block',
+            '64x gtceu:hastelloy_c_276_block',
+            '16x gtceu:tritanium_coil_block',
+            '16x gtceu:tritanium_coil_block',
+            '16x gtceu:tritanium_coil_block',
+            '16x gtceu:tritanium_coil_block'
+        )
+        .inputFluids('gtceu:hastelloy_c_276 9216')
+        .itemOutputs('kubejs:refracting_hastelloy_c276_casing')
+        .duration(20*45)
+        .EUt(GTValues.VA[GTValues.UXV])
+    sog.recipes.gtceu.assembler('temperature_proof_potin_casing')
+        .itemInputs(
+            '64x gtceu:double_rose_gold_plate',
+            '64x gtceu:double_rose_gold_plate',
+            '64x gtceu:double_rose_gold_plate',
+            '64x gtceu:double_rose_gold_plate',
+            '64x gtceu:potin_block',
+            '64x gtceu:double_rose_gold_plate',
+            '64x gtceu:double_rose_gold_plate',
+            '64x gtceu:double_rose_gold_plate',
+            '64x gtceu:double_rose_gold_plate'
+        )
+        .inputFluids('gtceu:potin 92160')
+        .itemOutputs('2x kubejs:temperature_proof_potin_casing')
+        .duration(20*45)
+        .EUt(GTValues.VA[GTValues.UXV])
+    sog.recipes.gtceu.assembler('reinforced_base_casing')
+        .itemInputs(
+            'gtceu:dense_cosmic_neutronium_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:dense_cosmic_neutronium_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'kubejs:highly_reinforced_radioactive_casing',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:dense_cosmic_neutronium_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:dense_cosmic_neutronium_plate'
+        )
+        .inputFluids('gtceu:concrete 1000000')
+        .itemOutputs('kubejs:reinforced_base_casing')
+        .duration(20*45)
+        .EUt(GTValues.VA[GTValues.UXV])
+    sog.recipes.gtceu.assembler('supercritical_cryo_cooled_casing')
+        .itemInputs(
+            'gtceu:double_blue_steel_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:double_blue_steel_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'kubejs:cryogenic_casing',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:double_blue_steel_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:double_blue_steel_plate'
+        )
+        .inputFluids('gtceu:cryogenic_neutron_flow 10000')
+        .itemOutputs('kubejs:supercritical_cryo_cooled_casing')
+        .duration(20*45)
+        .EUt(GTValues.VA[GTValues.UXV])
+    sog.recipes.gtceu.assembly_line('mega_oreproc_facility')
+        .itemInputs(
+            'gtceu:uxv_macerator',
+            'gtceu:uxv_electrolyzer',
+            'gtceu:uxv_centrifuge',
+            'gtceu:uxv_sifter',
+            '16x kubejs:reinforced_base_casing',
+            '64x kubejs:adv_high_power_crushing_wheels',
+            '64x kubejs:adv_high_power_crushing_wheels',
+            '16x kubejs:reinforced_base_casing',
+            '16x kubejs:reinforced_base_casing',
+            '64x gtceu:adv_processing_plant',
+            '64x gtceu:adv_processing_plant',
+            '16x kubejs:reinforced_base_casing',
+            '16x kubejs:reinforced_base_casing',
+            'gtceu:uxv_conveyor_module',
+            'gtceu:uxv_conveyor_module',
+            '16x kubejs:reinforced_base_casing'
+        )
+        .inputFluids(
+            'gtceu:meta_stable_molten_kevlar 2500',
+            'gtceu:cosmic_matter 5000',
+            'gtceu:eternity 10000',
+            'gtceu:hypoxylon 20000'
+        )
+        .itemOutputs('gtceu:mega_oreproc_facility')
+        .duration(20*1200)
+        .EUt(GTValues.VA[GTValues.UXV])
+    sog.recipes.gtceu.assembly_line('distillation_facility_complex')
+        .itemInputs(
+            'gtceu:uxv_distillery',
+            '64x gtceu:extreme_cracking_unit',
+            '64x gtceu:extreme_cracking_unit',
+            'gtceu:uxv_distillery',
+            '16x kubejs:reinforced_base_casing',
+            '64x gtceu:chemical_plant',
+            '64x gtceu:chemical_plant',
+            '16x kubejs:reinforced_base_casing',
+            '16x kubejs:reinforced_base_casing',
+            '4x kubejs:advanced_air_intake_hatch',
+            '4x kubejs:advanced_air_intake_hatch',
+            '16x kubejs:reinforced_base_casing',
+            '16x kubejs:reinforced_base_casing',
+            'gtceu:uxv_electric_pump',
+            'gtceu:uxv_electric_pump',
+            '16x kubejs:reinforced_base_casing'
+        )
+        .inputFluids(
+            'gtceu:meta_stable_molten_kevlar 2500',
+            'gtceu:cosmic_matter 5000',
+            'gtceu:eternity 10000',
+            'gtceu:hypoxylon 20000'
+        )
+        .itemOutputs('gtceu:distillation_facility_complex')
+        .duration(20*1200)
+        .EUt(GTValues.VA[GTValues.UXV])
 })
