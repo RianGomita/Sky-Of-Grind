@@ -2301,7 +2301,7 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:power_substation": "§ePower Substation",
     "gtceu:uev_fusion_reactor": "§eFusion Reactor",
     "gtceu:hyper_assembly_line": "§eComponent Assembler | Assembly Line",
-    "gtceu:hyper_assembler": "§eAssembler",
+    "gtceu:hyper_assembler": "§eAssembler | Hyper Circuit Assembler",
     "gtceu:hyper_cutter": "§eCutter",
     "gtceu:hyper_laser_engraver": "§eLaser Engraver",
     "gtceu:hyper_arc_furnace": "§eArc Furnace",
