@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('distillation_facility')
         .category('multiblocks')
         .setEUIO('in')
-        .setMaxIOSize(2, 0, 3, 18) // Item Input, Output, Fluid Input, Output
+        .setMaxIOSize(6, 3, 6, 18) // Item Input, Output, Fluid Input, Output
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.MACERATOR)
 })
@@ -79,8 +79,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                         PartAbility.IMPORT_ITEMS,
                         PartAbility.INPUT_LASER,
                         PartAbility.INPUT_ENERGY,
-                        PartAbility.IMPORT_FLUIDS,
-                        PartAbility.EXPORT_FLUIDS))
+                        PartAbility.IMPORT_FLUIDS))
                 )
             .build()
         )
