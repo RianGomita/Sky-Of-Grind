@@ -2141,4 +2141,32 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         )
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(20 * 25)
+    sog.recipes.gtceu.assembly_line('hyper_separator')
+        .itemInputs(
+            'gtceu:uxv_centrifuge',
+            'gtceu:uxv_electromagnetic_separator',
+            'gtceu:uxv_electromagnetic_separator',
+            'gtceu:uxv_electrolyzer',
+            '16x kubejs:reinforced_base_casing',
+            '64x gtceu:chemical_plant',
+            '64x gtceu:chemical_plant',
+            '16x kubejs:reinforced_base_casing',
+            '16x kubejs:reinforced_base_casing',
+            '4x kubejs:advanced_air_intake_hatch',
+            '4x kubejs:advanced_air_intake_hatch',
+            '16x kubejs:reinforced_base_casing',
+            '16x kubejs:reinforced_base_casing',
+            'gtceu:uxv_electric_pump',
+            'gtceu:uxv_electric_pump',
+            '16x kubejs:reinforced_base_casing'
+        )
+        .inputFluids(
+            'gtceu:meta_stable_molten_kevlar 2500',
+            'gtceu:cosmic_matter 5000',
+            'gtceu:eternity 10000',
+            'gtceu:hypoxylon 20000'
+        )
+        .itemOutputs('gtceu:hyper_separator')
+        .duration(20*1200)
+        .EUt(GTValues.VA[GTValues.UXV])
 })
