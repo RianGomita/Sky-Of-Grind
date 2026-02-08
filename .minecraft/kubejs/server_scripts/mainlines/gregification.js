@@ -2141,4 +2141,25 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         )
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(20 * 25)
+
+    sog.recipes.gtceu.assembly_line('hyper_bio_lab')    
+        .itemInputs(
+            '64x gtceu:bio_lab',
+            '64x gtceu:large_bacterial_bat',
+            '64x gtceu:uhv_hermetic_casing',
+            '6x gtceu:uxv_electric_pump',
+            '64x gtceu:sterilizing_filter_casing',
+            '64x gtceu:dense_hypoxylon_plate',
+            '4x kubejs:cosmic_processor_mainframe'
+        )
+        .inputFluids(
+            'gtceu:eternity 5000',
+            'gtceu:antimatter 10000',
+            'gtceu:sterilized_growth_medium 15000',
+            'gtceu:stropharic_hypoxylon 10000'
+        )
+        .itemOutputs('gtceu:hyper_bio_lab')
+        .EUt(GTValues.VA[GTValues.UXV])
+        .duration(500)
+        
 })

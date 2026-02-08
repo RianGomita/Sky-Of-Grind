@@ -1167,7 +1167,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:hyper_extruder",
             "gtceu:hyper_mixer",
             "gtceu:quantum_cooling_chamber",
-            "gtceu:chemical_plant"
+            "gtceu:chemical_plant",
+            "gtceu:hyper_bio_lab"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -2139,6 +2140,9 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.solar_alloy_forge_1",
         "skyofgrind.custom.solar_alloy_forge_2"
+    ],
+    "gtceu:hyper_bio_lab":[
+        "skyofgrind.custom.hyper_bio_lab"
     ]
 };
 const MACHINE_TYPE_NAMES = {
@@ -2305,6 +2309,7 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:processor_printing_factory_zpm": "§eZPM Processor Printer",
     "gtceu:processor_printing_factory_uv": "§eUV Processor Printer",
     "gtceu:processor_printing_factory_uhv": "§eUHV Processor Printer",
+    "gtceu:hyper_bio_lab": "§eBio-Lab | Large Bacterial Vat",
 };
 const SHIFT_PLACEHOLDER_VALUES = {
     // PALLADIUM_SUBSTATION_CASING_TOOLTIP_POWER_SUBSTATION
