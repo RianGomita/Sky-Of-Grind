@@ -2161,5 +2161,18 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         .itemOutputs('gtceu:hyper_bio_lab')
         .EUt(GTValues.VA[GTValues.UXV])
         .duration(500)
+
+    sog.recipes.gtceu.assembler('blazing_filter_casing')
+        .itemInputs(
+            'gtceu:uiv_electric_motor',
+            'gtceu:uiv_emitter',
+            '4x gtceu:sterilizing_filter_casing',
+        	'64x minecraft:blaze_rod'
+        )
+        .inputFluids('gtceu:antimatter 200')
+        .itemOutputs('phoenix_gregic_additons:blazing_filter_casing')
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.UIV])
         
 })

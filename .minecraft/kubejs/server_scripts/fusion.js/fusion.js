@@ -13,7 +13,7 @@ sog.recipes.gtceu.assembler('fusion_coil_mk2')
 .itemInputs('8x gtceu:resonant_essence_plate', '2x gtceu:superconducting_coil', '2x gtceu:uv_field_generator', '4x gtceu:uv_electric_pump', '8x gtceu:neutron_reflector', '4x #gtceu:circuits/uhv', '4x gtceu:crystal_matrix_huge_fluid_pipe', '4x gtceu:draconium_plate')
 .inputFluids('gtceu:peek 1000')
 .itemOutputs('2x kubejs:fusion_coil_mk2')
-.cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 .duration(100)
 .EUt(GTValues.VA[GTValues.UEV]);
 sog.recipes.gtceu.assembler('fusion_casing_mk4')
