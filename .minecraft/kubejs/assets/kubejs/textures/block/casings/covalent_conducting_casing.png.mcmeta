@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/covalent_conducting_casing_ctm"
+    }
+}
