@@ -53,6 +53,7 @@ const advoreProcessableTiers = {
         { material: 'scheelite', secondary: 'manganese', tertiary: 'manganese', quaternary: 'molybdenum' },
         { material: 'zeolite', secondary: 'calcium', tertiary: 'aluminium', quaternary: 'silicon' },
         { material: 'naquadah', secondary: 'sulfur', tertiary: 'barite', quaternary: 'enriched_naquadah' },
+        { material: 'lithium'},
     ],
 
     'UEV': [
