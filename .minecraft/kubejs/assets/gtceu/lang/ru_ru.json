@@ -841,6 +841,8 @@
   "item.gtmthings.virtual_item_provider_cell": "Ячейка поставщика виртуальных предметов",
   "item.gtmthings.creative_energy_cover": "Креативное энергетическое покрытие",
   "item.gtmthings.programmable_cover": "Программируемое покрытие",
-  "item.gtmthings.wireless_energy_terminal": "Беспроводной энергетический терминал"
+  "item.gtmthings.wireless_energy_terminal": "Беспроводной энергетический терминал",
+  "block.gtceu.hyper_bio_lab": "Гипер биолаборатория",
+  "skyofgrind.custom.hyper_bio_lab": "\u00A0Высокотехнологичная биолаборатория, способная обрабатывать сложные биологические материалы в беспрецедентных масштабах."
 }
 

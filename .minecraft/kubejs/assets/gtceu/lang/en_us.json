@@ -933,7 +933,9 @@
     "gtceu.solar_alloy_smelting": "Solar Alloy Smelting",
     "skyofgrind.custom.solar_alloy_forge_1": "\u00A0Using the power of the §1§6SUN§r to get access to better recipes!",
     "skyofgrind.custom.solar_alloy_forge_2": "\u00A0You can get Solar-Eclipse Alloy before this - but you definetely will love this Multiblock!",
-	"block.gtceu.hyper_separator": "Hyper Separator",
+    "block.gtceu:hyper_bio_lab": "Hyper Bio Lab",
+    "skyofgrind.custom.hyper_bio_lab": "\u00A0A highly advanced bio-laboratory that can process complex biological materials at an unprecedented scale."
+	  "block.gtceu.hyper_separator": "Hyper Separator",
     "skyofgrind.custom.hyper_separator_1": "This is for all your needs in Separation Processes!"
     "block.gtceu.draconium_assembly_line": "Draconium Assembly Line",
     "material.gtceu.indium_tin_barium_titanium_cuprate": "Tetraindiumditindibariumtitaniumheptacoppertetrakaidekaoxide",

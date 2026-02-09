@@ -1200,6 +1200,7 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:hyper_mixer",
             "gtceu:quantum_cooling_chamber",
             "gtceu:chemical_plant",
+            "gtceu:hyper_bio_lab",
             "gtceu:hyper_separator"
         ],
         tooltipKeys: [
@@ -2183,6 +2184,9 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
         "skyofgrind.custom.solar_alloy_forge_1",
         "skyofgrind.custom.solar_alloy_forge_2"
     ],
+    "gtceu:hyper_bio_lab":[
+        "skyofgrind.custom.hyper_bio_lab"
+    ],
     "gtceu:draconium_assembly_line": [
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.draconium_assembly_line_1",
@@ -2367,6 +2371,7 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:processor_printing_factory_zpm": "§eZPM Processor Printer",
     "gtceu:processor_printing_factory_uv": "§eUV Processor Printer",
     "gtceu:processor_printing_factory_uhv": "§eUHV Processor Printer",
+    "gtceu:hyper_bio_lab": "§eBio-Lab | Large Bacterial Vat",
     "gtceu:draconium_assembly_line": "§eAssembly Line",
     "gtceu:mega_oreproc_facility": "§eUltimate Ore Processor",
     "gtceu:distillation_facility_complex": "§eUltimate Distillation Unit",
