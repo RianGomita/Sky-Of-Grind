@@ -983,6 +983,38 @@ const ADVANCED_COMPUTER_CASING_TOOLTIP_SOG = {
     muffler: "§7Any Advanced Computer Casing",
     pch: "§7Any Advanced Computer Casing"
 };
+const DRACONIC_ASSEMBLY_LINE_GRATING_SOG = {
+    controller: "§7Right side on Top",
+    iteminput: "§7Any Draconic Assembly Line Grating",
+    fluidinput: "§7Any Draconic Assembly Line Grating",
+    itemoutput: "§7Any Draconic Assembly Line Grating",
+    energy: "§7Any Draconic Assembly Line Grating",
+    pch: "§7Any Draconic Assembly Line Grating"
+};
+const DRACONIC_ASSEMBLY_LINE_GRATING_SOG_DRACONIC_ASSLINE = {
+    controller: "§7Right side on Top",
+    iteminput: "§7Any Draconic Assembly Line Grating",
+    fluidinput: "§7Any Draconic Assembly Line Grating",
+    itemoutput: "§7Any Draconic Assembly Line Grating",
+    energy: "§7Any Draconic Assembly Line Grating",
+    pch: "§7Next to the Controller"
+};
+const SUPERCRITICAL_CRYO_COOLED_CASING_SOG = {
+    controller: "§7Right side on Top",
+    iteminput: "§7Any Supercritical Cryo-Cooled Casings",
+    fluidinput: "§7Any Supercritical Cryo-Cooled Casings",
+    itemoutput: "§7Any Supercritical Cryo-Cooled Casings",
+    fluidoutput: "§7Any Supercritical Cryo-Cooled Casings",
+    energy: "§7Any Supercritical Cryo-Cooled Casings"
+};
+const REFRACTING_HASTELLOY_C276_CASING_SOG = {
+    controller: "§7Right side on Top",
+    iteminput: "§7Any Refracting Hastelloy-C276 Casings",
+    fluidinput: "§7Any Refracting Hastelloy-C276 Casings",
+    itemoutput: "§7Any Refracting Hastelloy-C276 Casings",
+    fluidoutput: "§7Any Refracting Hastelloy-C276 Casings",
+    energy: "§7Any Refracting Hastelloy-C276 Casings"
+};
 
 // Const for Tooltip Groups
 
@@ -1185,11 +1217,22 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:tectonic_plate_accelerator",
             "gtceu:large_dehydration_unit",
             "gtceu:fusion_mk5",
-            "gtceu:particle_implosion_chamber"
+            "gtceu:particle_implosion_chamber",
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
             "multiblock.pchaccess2",
+            "multiblock.subtickaccess1",
+            "multiblock.subtickaccess2"
+        ]
+    },
+    'PCH_SUBTICK_SOG': {
+        multiblockIds: [
+            "gtceu:draconium_assembly_line"
+        ],
+        tooltipKeys: [
+            "multiblock.pchaccess1",
+            "multiblock.pchaccess2first3pchs",
             "multiblock.subtickaccess1",
             "multiblock.subtickaccess2"
         ]
@@ -1239,7 +1282,9 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
     'LASER_SUBTICK_PERFECT_OC_SOG': {
         multiblockIds: [
             "gtceu:eternity_fusion_reactor",
-            "gtceu:orbital_bore"
+            "gtceu:orbital_bore",
+            "gtceu:mega_oreproc_facility",
+            "gtceu:distillation_facility_complex"
         ],
         tooltipKeys: [
             "multiblock.laseraccess1",
@@ -1261,9 +1306,6 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "multiblock.perfocaccess2"
         ]
     },
-
-
-
     'LASER_NEEDED_SUBTICK_PERFECT_OC_SOG': {
         multiblockIds: [
             "gtceu:industrial_grade_laser_synchronizer_chiller"
@@ -2115,7 +2157,7 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
     "gtceu:adv_processing_plant": [
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.tooltip_adv_processing_plant_1"
-        ],
+    ],
     "gtceu:collosal_laser_beam_containment_chamber": [
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.laser_beam_containment_chamber_1",
@@ -2139,6 +2181,21 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.solar_alloy_forge_1",
         "skyofgrind.custom.solar_alloy_forge_2"
+    ],
+    "gtceu:draconium_assembly_line": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.draconium_assembly_line_1",
+        "skyofgrind.custom.draconium_assembly_line_2"
+    ],
+    "gtceu:mega_oreproc_facility": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.mega_oreproc_facility_1",
+        "skyofgrind.custom.mega_oreproc_facility_2"
+    ],
+    "gtceu:distillation_facility_complex": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.distillation_facility_complex_1",
+        "skyofgrind.custom.distillation_facility_complex_2"
     ]
 };
 const MACHINE_TYPE_NAMES = {
@@ -2244,7 +2301,7 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:power_substation": "§ePower Substation",
     "gtceu:uev_fusion_reactor": "§eFusion Reactor",
     "gtceu:hyper_assembly_line": "§eComponent Assembler | Assembly Line",
-    "gtceu:hyper_assembler": "§eAssembler",
+    "gtceu:hyper_assembler": "§eAssembler | Hyper Circuit Assembler",
     "gtceu:hyper_cutter": "§eCutter",
     "gtceu:hyper_laser_engraver": "§eLaser Engraver",
     "gtceu:hyper_arc_furnace": "§eArc Furnace",
@@ -2305,6 +2362,9 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:processor_printing_factory_zpm": "§eZPM Processor Printer",
     "gtceu:processor_printing_factory_uv": "§eUV Processor Printer",
     "gtceu:processor_printing_factory_uhv": "§eUHV Processor Printer",
+    "gtceu:draconium_assembly_line": "§eAssembly Line",
+    "gtceu:mega_oreproc_facility": "§eUltimate Ore Processor",
+    "gtceu:distillation_facility_complex": "§eUltimate Distillation Unit"
 };
 const SHIFT_PLACEHOLDER_VALUES = {
     // PALLADIUM_SUBSTATION_CASING_TOOLTIP_POWER_SUBSTATION
@@ -2714,11 +2774,6 @@ const SHIFT_PLACEHOLDER_VALUES = {
             FUSION_MACHINE_CASING_MKIV_TOOLTIP_FUSION_MKIV
     },
     // ETERNITY_CASING_TOOLTIP_SOG
-    "gtceu:hyper_assembly_line": {
-        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "pch"],
-        values:
-            ETERNITY_CASING_TOOLTIP_SOG
-    },
     "gtceu:hyper_assembler": {
         tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "pch"],
         values:
@@ -3173,7 +3228,31 @@ const SHIFT_PLACEHOLDER_VALUES = {
     "gtceu:industrial_grade_laser_synchronizer_chiller": {
         tooltipOrder: ["controller", "iteminput", "fluidinput", "fluidoutput", "energy"],
         values:
-            ULTRA_REFLECTIVE_LASER_COOLING_CASING_TOOLTIP_SO_LASER_SYNCHRONIZER_CHILLER        
+            ULTRA_REFLECTIVE_LASER_COOLING_CASING_TOOLTIP_SO_LASER_SYNCHRONIZER_CHILLER
+    },
+    // DRACONIC_ASSEMBLY_LINE_GRATING_SOG_DRACONIC_ASSLINE
+    "gtceu:draconium_assembly_line": {
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "energy", "pch"],
+        values:
+            DRACONIC_ASSEMBLY_LINE_GRATING_SOG_DRACONIC_ASSLINE
+    },
+    // DRACONIC_ASSEMBLY_LINE_GRATING_SOG
+    "gtceu:hyper_assembly_line": {
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "energy", "pch"],
+        values:
+            DRACONIC_ASSEMBLY_LINE_GRATING_SOG
+    },
+    // SUPERCRITICAL_CRYO_COOLED_CASING_SOG
+    "gtceu:distillation_facility_complex": {
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy"],
+        values:
+            SUPERCRITICAL_CRYO_COOLED_CASING_SOG
+    },
+    // REFRACTING_HASTELLOY_C276_CASING_SOG
+    "gtceu:mega_oreproc_facility": {
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy"],
+        values:
+            REFRACTING_HASTELLOY_C276_CASING_SOG
     }
 };
 
