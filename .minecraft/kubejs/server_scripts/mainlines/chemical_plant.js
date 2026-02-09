@@ -229,7 +229,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.chemical_plant('eternity')
             .notConsumable('kubejs:chemical_tier_six')
             .inputFluids('gtceu:hypercharged_nebular_plasma 256000', 'gtceu:supercritical_californium_plasma 256000', 'gtceu:high_entropy_neptunium_plasma 256000')
-            .chancedFluidOutput('gtceu:eternity 64000', 2500, 0)
+            .outputFluids('gtceu:eternity 32000')
             .duration(500)
             .EUt(GTValues.VA[GTValues.UXV]);
 })

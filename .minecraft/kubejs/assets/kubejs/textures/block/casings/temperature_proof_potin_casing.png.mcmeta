@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/temperature_proof_potin_casing_ctm"
+    }
+}
