@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/refracting_hastelloy_c276_casing_ctm"
+    }
+}

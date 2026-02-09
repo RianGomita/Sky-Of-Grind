@@ -14,8 +14,8 @@
  - Thanks to Diatonius1 for helping us as an artist for the pack.
  - Thanks to WithersChat for helping us with a lot of the textures, materials sets and more!  (All the Infinity Material Set Items.)
  - Thanks to Jamiscus for the heavy plating textures.
- - Thanks to Cosmic Frontiers/Cosmic Core for some textures.
- - Thanks to Gregtech New Beginnings for some textures, like cosmic matter and infinity coils.
+ - Thanks to Cosmic Frontiers/Cosmic Core for some textures and sounds.
+ - Thanks to Gregtech New Beginnings for some textures, like cosmic matter fluid and infinity coils.
  - Thanks to Monifactory for their complex smds textures.
  - Thanks to Star Technology for giving us permission to use some of their code.
  - Thanks to Lopy's More Materials, we use the cell textures.

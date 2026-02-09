@@ -2371,6 +2371,7 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:mega_oreproc_facility": "§eUltimate Ore Processor",
     "gtceu:distillation_facility_complex": "§eUltimate Distillation Unit",
     "gtceu:hyper_separator": "§eElectrolyzer | Centrifuge | Electromagnetic Separator"
+    "gtceu:distillation_facility_complex": "§eUltimate Distillation Unit"
 };
 const SHIFT_PLACEHOLDER_VALUES = {
     // PALLADIUM_SUBSTATION_CASING_TOOLTIP_POWER_SUBSTATION
