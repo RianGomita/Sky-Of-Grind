@@ -2077,6 +2077,12 @@ sog.recipes.gtceu.chemical_reactor('better_calcium_chloride')
         )
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(20 * 25)
+    sog.recipes.gtceu.assembly_line('hyper_separator')
+        .itemInputs(
+            'gtceu:uxv_centrifuge',
+            'gtceu:uxv_electromagnetic_separator',
+            'gtceu:uxv_electromagnetic_separator',
+            'gtceu:uxv_electrolyzer',
     sog.recipes.gtceu.assembler('covalent_conducting_casing')
         .itemInputs(
             'gtceu:pure_cosmic_matter_plate',

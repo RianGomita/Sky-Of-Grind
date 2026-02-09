@@ -1199,7 +1199,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:hyper_extruder",
             "gtceu:hyper_mixer",
             "gtceu:quantum_cooling_chamber",
-            "gtceu:chemical_plant"
+            "gtceu:chemical_plant",
+            "gtceu:hyper_separator"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -2196,6 +2197,10 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.distillation_facility_complex_1",
         "skyofgrind.custom.distillation_facility_complex_2"
+    ],
+    "gtceu:hyper_separator": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.hyper_separator_1"
     ]
 };
 const MACHINE_TYPE_NAMES = {
@@ -2364,6 +2369,8 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:processor_printing_factory_uhv": "§eUHV Processor Printer",
     "gtceu:draconium_assembly_line": "§eAssembly Line",
     "gtceu:mega_oreproc_facility": "§eUltimate Ore Processor",
+    "gtceu:distillation_facility_complex": "§eUltimate Distillation Unit",
+    "gtceu:hyper_separator": "§eElectrolyzer | Centrifuge | Electromagnetic Separator"
     "gtceu:distillation_facility_complex": "§eUltimate Distillation Unit"
 };
 const SHIFT_PLACEHOLDER_VALUES = {
