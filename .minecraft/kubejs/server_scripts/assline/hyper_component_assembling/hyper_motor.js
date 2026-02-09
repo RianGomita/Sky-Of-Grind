@@ -206,10 +206,10 @@ ServerEvents.recipes(event => {
                 ['gtceu:long_magnetic_stabilized_iridium_rod', 1],
                 ['gtceu:chaos_single_wire', 2],
                 ['avaritia:eternal_singularity', 1],
-                ['kubejs:quantum_data_module', 1]
+                ['kubejs:quantum_data_module', 1],
+                ['gtceu:pure_cosmic_matter_plate', 57]
             ],
             fluids: [
-                ['gtceu:cosmic_matter', 8208],
                 ['gtceu:eternity', 576],
                 ['gtceu:universium', 576],
                 ['gtceu:stellar_matter_plasma', 576]
