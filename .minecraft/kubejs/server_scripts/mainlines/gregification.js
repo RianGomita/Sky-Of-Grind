@@ -1972,70 +1972,6 @@ sog.recipes.gtceu.chemical_reactor('better_calcium_chloride')
 	.duration(20*30)
 	.EUt((GTValues.VA[GTValues.HV]))
 
-sog.recipes.gtceu.assembler('draconium_hypoxyloninfused_antimatter_casing')
-        .itemInputs(
-            'gtceu:atomic_casing',
-            '4x gtceu:dense_draconium_plate',
-            '4x gtceu:dense_hypoxylon_plate'
-        )
-        .inputFluids('gtceu:antimatter 10000')
-        .itemOutputs('phoenix_gregic_additons:space_time_cooled_eternity_casing')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.UEV])
-sog.recipes.gtceu.assembler('akashic_computation_casing')
-        .itemInputs(
-            'phoenix_gregic_additons:space_time_cooled_eternity_casing',
-            '9x gtceu:dense_draconium_plate',
-            '16x gtceu:hypoxylon_foil'
-        )
-        .inputFluids('gtceu:antimatter 10000')
-        .itemOutputs('phoenix_gregic_additons:akashic_zeronium_casing')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.UEV])
-sog.recipes.gtceu.assembler('perfected_logic_casing')
-        .itemInputs(
-            '8x #gtceu:circuits/uev',
-            'phoenix_gregic_additons:akashic_zeronium_casing'
-        )
-        .inputFluids('gtceu:antimatter 10000')
-        .itemOutputs('phoenix_gregic_additons:perfected_logic')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.UEV])
-sog.recipes.gtceu.assembler('computation_coil')
-        .itemInputs(
-            'kubejs:resonant_essence_coil_block',
-            'phoenix_gregic_additons:space_time_cooled_eternity_casing'
-        )
-        .inputFluids('gtceu:antimatter 2500')
-        .itemOutputs('phoenix_gregic_additons:akashic_coil_block')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.UEV])
-
-sog.recipes.gtceu.assembler('phoenix_computer_casing')
-        .itemInputs(
-            'gtceu:computer_casing'
-        )
-        .inputFluids('gtceu:antimatter 2500')
-        .itemOutputs('phoenix_gregic_additons:phoenix_computer_casing')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.UEV])
-sog.recipes.gtceu.assembler('advanced_phoenix_computer_casing')
-        .itemInputs(
-            'gtceu:advanced_computer_casing'
-        )
-        .inputFluids('gtceu:antimatter 2500')
-        .itemOutputs('phoenix_gregic_additons:phoenix_advanced_computer_casing')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.UEV])
-sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
-        .itemInputs(
-            'gtceu:computer_heat_vent'
-        )
-        .inputFluids('gtceu:antimatter 2500')
-        .itemOutputs('phoenix_gregic_additons:phoenix_computer_heat_vent')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.UEV])
-
     sog.recipes.gtceu.assembler('draconium_hypoxyloninfused_antimatter_casing')
         .itemInputs(
             'gtceu:atomic_casing',
@@ -2046,6 +1982,7 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         .itemOutputs('phoenix_gregic_additons:space_time_cooled_eternity_casing')
         .duration(100)
         .EUt(GTValues.VA[GTValues.UEV])
+	
     sog.recipes.gtceu.assembler('akashic_computation_casing')
         .itemInputs(
             'phoenix_gregic_additons:space_time_cooled_eternity_casing',
@@ -2056,6 +1993,7 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         .itemOutputs('phoenix_gregic_additons:akashic_zeronium_casing')
         .duration(100)
         .EUt(GTValues.VA[GTValues.UEV])
+	
     sog.recipes.gtceu.assembler('perfected_logic_casing')
         .itemInputs(
             '8x #gtceu:circuits/uev',
@@ -2083,6 +2021,7 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         .itemOutputs('phoenix_gregic_additons:phoenix_computer_casing')
         .duration(100)
         .EUt(GTValues.VA[GTValues.UEV])
+	
     sog.recipes.gtceu.assembler('advanced_phoenix_computer_casing')
         .itemInputs(
             'gtceu:advanced_computer_casing'
@@ -2091,6 +2030,7 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         .itemOutputs('phoenix_gregic_additons:phoenix_advanced_computer_casing')
         .duration(100)
         .EUt(GTValues.VA[GTValues.UEV])
+	
     sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         .itemInputs(
             'gtceu:computer_heat_vent'
@@ -2099,11 +2039,6 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         .itemOutputs('phoenix_gregic_additons:phoenix_computer_heat_vent')
         .duration(100)
         .EUt(GTValues.VA[GTValues.UEV])
-
-    sog.remove({output: 
-        'phoenix_gregic_additons:phoenix_computation_component'})
-    sog.remove({output: 
-        'phoenix_gregic_additons:advanced_phoenix_computation_component'})
 
     sog.recipes.gtceu.assembler('phoenix_computation_component')
         .itemInputs(
@@ -2116,6 +2051,7 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         .duration(1200)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.UHV])
+	
     sog.recipes.gtceu.assembler('advanced_phoenix_computation_component')
         .itemInputs(
             'phoenix_gregic_additons:phoenix_computation_component',
@@ -2236,4 +2172,32 @@ sog.recipes.gtceu.assembler('phoenix_computer_heat_vent')
         .itemOutputs('kubejs:draconic_assembly_line_grating')
         .duration(20*60)
         .EUt(GTValues.VA[GTValues.UIV])
+    sog.recipes.gtceu.mixer('mixed_quantum_infused_dust')
+        .itemInputs('advanced_ae:quantum_infused_dust')
+        .inputFluids('minecraft:water 1000')
+        .outputFluids('advanced_ae:quantum_infusion_source 1000')
+        .duration(20 * 10)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    sog.recipes.gtceu.mixer('mixed_shattered_singularity')
+        .itemInputs('ae2:singularity','2x ae2:sky_dust','2x #forge:dusts/ender_pearl')
+        .inputFluids('minecraft:lava 100')
+        .itemOutputs('2x advanced_ae:shattered_singularity')
+        .duration(20 * 10)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    sog.recipes.gtceu.mixer('mixed_quantum_alloy')
+        .itemInputs('4x gtceu:copper_dust','4x advanced_ae:shattered_singularity','4x ae2:singularity')
+        .inputFluids('advanced_ae:quantum_infusion_source 1000')
+        .itemOutputs('4x advanced_ae:quantum_alloy') 
+        .duration(20 * 10)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    sog.recipes.gtceu.mixer('mixed_quantum_alloy_plate')
+        .itemInputs('8x advanced_ae:quantum_alloy','2x minecraft:netherite_ingot','minecraft:nether_star')
+        .inputFluids('advanced_ae:quantum_infusion_source 1000')
+        .itemOutputs('advanced_ae:quantum_alloy_plate') 
+        .duration(20 * 10)  
+        .EUt(GTValues.VA[GTValues.HV]) 
+
 })
