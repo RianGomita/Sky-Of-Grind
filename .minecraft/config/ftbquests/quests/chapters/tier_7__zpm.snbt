@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:naquadah_alloy_ingot"
 	id: "5D7E352F3A1D08E4"
-	order_index: 11
+	order_index: 9
 	quest_links: [{
 		id: "20A4086025C39A4A"
 		linked_quest: "5C47B681BACC22D4"

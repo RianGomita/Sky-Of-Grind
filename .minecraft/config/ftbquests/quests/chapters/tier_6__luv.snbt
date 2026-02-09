@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:rhodium_plated_palladium_ingot"
 	id: "311560F720092C21"
-	order_index: 10
+	order_index: 8
 	quest_links: [{
 		id: "09981C4CF189C241"
 		linked_quest: "34112DEEBBD82652"

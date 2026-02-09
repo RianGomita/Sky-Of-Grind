@@ -12,8 +12,8 @@ BlockEvents.rightClicked(event => {
         "exdeorum:granite_pebble",
         "exdeorum:deepslate_pebble"
     ]
-    let random = Math.floor(Math.random() * 2 * loot.length)
-    let dropItem = Item.of(loot[random] ?? "exdeorum:stone_pebble")
+    let random = Math.floor(Math.random() * 9 * loot.length)
+    let dropItem = Item.of(loot[random] ?? "4x exdeorum:stone_pebble")
     block.popItemFromFace(dropItem, facing)
     player.swing()
 })

@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "draconicevolution:draconium_ingot"
 	id: "6390E93A0F02A823"
-	order_index: 14
+	order_index: 12
 	quest_links: [
 		{
 			id: "35C91498B369EDD3"

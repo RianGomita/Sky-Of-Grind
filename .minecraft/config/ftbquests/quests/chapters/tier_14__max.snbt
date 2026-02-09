@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:pure_cosmic_matter_ingot"
 	id: "004423CBAE120A16"
-	order_index: 16
+	order_index: 14
 	quest_links: [
 		{
 			id: "058F3102B6CC55C1"

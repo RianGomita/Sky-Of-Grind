@@ -13,7 +13,7 @@
 		x: 2.0d
 		y: 6.5d
 	}]
-	order_index: 4
+	order_index: 2
 	quest_links: [{
 		id: "5B218F613000E5AC"
 		linked_quest: "68357F7109A5645C"

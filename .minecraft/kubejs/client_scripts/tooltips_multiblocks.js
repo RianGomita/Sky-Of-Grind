@@ -1200,8 +1200,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:hyper_mixer",
             "gtceu:quantum_cooling_chamber",
             "gtceu:chemical_plant",
-            "gtceu:hyper_bio_lab",
-            "gtceu:hyper_separator"
+            "gtceu:hyper_separator",
+            "gtceu:hyper_bio_lab"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -1219,11 +1219,22 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:tectonic_plate_accelerator",
             "gtceu:large_dehydration_unit",
             "gtceu:fusion_mk5",
-            "gtceu:particle_implosion_chamber",
+            "gtceu:particle_implosion_chamber"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
             "multiblock.pchaccess2",
+            "multiblock.subtickaccess1",
+            "multiblock.subtickaccess2"
+        ]
+    },
+    'PCH_SUBTICK_SOG': {
+        multiblockIds: [
+            "gtceu:draconium_assembly_line"
+        ],
+        tooltipKeys: [
+            "multiblock.pchaccess1",
+            "multiblock.pchaccess2first3pchs",
             "multiblock.subtickaccess1",
             "multiblock.subtickaccess2"
         ]
@@ -2184,9 +2195,6 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
         "skyofgrind.custom.solar_alloy_forge_1",
         "skyofgrind.custom.solar_alloy_forge_2"
     ],
-    "gtceu:hyper_bio_lab":[
-        "skyofgrind.custom.hyper_bio_lab"
-    ],
     "gtceu:draconium_assembly_line": [
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.draconium_assembly_line_1",
@@ -2205,7 +2213,26 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
     "gtceu:hyper_separator": [
         "basegtm.custom.tooltip_descriptions_all",
         "skyofgrind.custom.hyper_separator_1"
+    ],
+    "gtceu:draconium_assembly_line": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.draconium_assembly_line_1",
+        "skyofgrind.custom.draconium_assembly_line_2"
+    ],
+    "gtceu:mega_oreproc_facility": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.mega_oreproc_facility_1",
+        "skyofgrind.custom.mega_oreproc_facility_2"
+    ],
+    "gtceu:distillation_facility_complex": [
+        "basegtm.custom.tooltip_descriptions_all",
+        "skyofgrind.custom.distillation_facility_complex_1",
+        "skyofgrind.custom.distillation_facility_complex_2"
+    ],
+    "gtceu:hyper_bio_lab":[
+        "skyofgrind.custom.hyper_bio_lab"
     ]
+    
 };
 const MACHINE_TYPE_NAMES = {
     "gtceu:large_arc_smelter": "§eArc Furnace",
@@ -2371,12 +2398,11 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:processor_printing_factory_zpm": "§eZPM Processor Printer",
     "gtceu:processor_printing_factory_uv": "§eUV Processor Printer",
     "gtceu:processor_printing_factory_uhv": "§eUHV Processor Printer",
-    "gtceu:hyper_bio_lab": "§eBio-Lab | Large Bacterial Vat",
     "gtceu:draconium_assembly_line": "§eAssembly Line",
     "gtceu:mega_oreproc_facility": "§eUltimate Ore Processor",
     "gtceu:distillation_facility_complex": "§eUltimate Distillation Unit",
-    "gtceu:hyper_separator": "§eElectrolyzer | Centrifuge | Electromagnetic Separator"
-    "gtceu:distillation_facility_complex": "§eUltimate Distillation Unit"
+    "gtceu:hyper_separator": "§eElectrolyzer | Centrifuge | Electromagnetic Separator",
+    "gtceu:hyper_bio_lab": "§eBio-Lab | Large Bacterial Vat"
 };
 const SHIFT_PLACEHOLDER_VALUES = {
     // PALLADIUM_SUBSTATION_CASING_TOOLTIP_POWER_SUBSTATION

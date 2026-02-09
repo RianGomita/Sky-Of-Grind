@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:neutronium_ingot"
 	id: "5BDBF9992074CC3A"
-	order_index: 13
+	order_index: 11
 	quest_links: [
 		{
 			id: "35A4E45F1F9D5129"

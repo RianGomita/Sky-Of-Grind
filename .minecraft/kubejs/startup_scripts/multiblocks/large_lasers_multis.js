@@ -95,5 +95,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
            .build()
         )
         .workableCasingModel("kubejs:block/casings/ultra_reflective_laser_cooling_casing", 'gtceu:block/multiblock/fusion_reactor')
-
 })

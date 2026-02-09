@@ -20,6 +20,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('eternity').parent(GTMaterialIconSet.METALLIC)
     event.create('chrono-infinity_alloy').parent(GTMaterialIconSet.SHINY)
     event.create('solar_eclipse_alloy').parent(GTMaterialIconSet.METALLIC)
+    event.create('proto_matter').parent(GTMaterialIconSet.SHINY)
 })
 
 GTCEuStartupEvents.registry('gtceu:element', event => {
@@ -130,6 +131,10 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .protons(168)
         .neutrons(316)
         .symbol('☼');
+    event.create('proto_matter')
+        .protons(168)
+        .neutrons(316)
+        .symbol('¤');
         //  ₂₃₄₅₆₇₈₉₀
 })
 
@@ -1899,8 +1904,8 @@ event.create("chrono_infinity")
         .plasma()
         .color(0xdefff7)
     event.create('exotic_particle_suspension')
-        .liquid()
-        .color(0xad9eff)
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create('iridium_plasma')
         .plasma()
@@ -1968,4 +1973,25 @@ event.create("chrono_infinity")
         GTMaterialFlags.GENERATE_SPRING,
         GTMaterialFlags.GENERATE_FRAME
         )
+       
+    event.create('proto_matter')
+        .ingot()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .iconSet('proto_matter')
+        .element('proto_matter')
+        .flags(
+        GTMaterialFlags.GENERATE_PLATE, 
+        GTMaterialFlags.GENERATE_ROD, 
+        GTMaterialFlags.GENERATE_GEAR, 
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_DENSE, 
+        GTMaterialFlags.GENERATE_ROTOR, 
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_SMALL_GEAR,
+        GTMaterialFlags.GENERATE_ROUND,
+        GTMaterialFlags.GENERATE_SPRING,
+        GTMaterialFlags.GENERATE_FRAME
+        )
+        
+
     })

@@ -5,7 +5,7 @@
 	group: "6B3EFCC5BFD49997"
 	icon: "gtceu:titanium_ingot"
 	id: "5AD133D5F35C46C9"
-	order_index: 8
+	order_index: 6
 	quest_links: [{
 		id: "4802D5F59F8E7B71"
 		linked_quest: "2A476DB7A53D97B2"
