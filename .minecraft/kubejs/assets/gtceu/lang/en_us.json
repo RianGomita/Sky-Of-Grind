@@ -236,7 +236,7 @@
     "block.gtceu.hv_electric_extractinator":"§6Advanced Electric Extractinator II§f",
     "block.gtceu.hyper_arc_furnace": "Hyper Arc Furnace",
     "block.gtceu.hyper_assembler": "Hyper Assembler",
-    "block.gtceu.hyper_assembly_line": "Hyper Assembly line",
+    "block.gtceu.hyper_assembly_line": "Hyper Assembly Line",
     "block.gtceu.hyper_bender": "Hyper Bender",
     "block.gtceu.hyper_cutter": "Hyper Cutter",
     "block.gtceu.hyper_extruder": "Hyper Extruder",
@@ -939,5 +939,12 @@
 	"block.gtceu.hyper_separator": "Hyper Separator",
     "skyofgrind.custom.hyper_separator_1": "This is for all your needs in Separation Processes!",
     "block.gtceu:hyper_bio_lab": "Hyper Bio Lab",
-    "skyofgrind.custom.hyper_bio_lab": "\u00A0A highly advanced bio-laboratory that can process complex biological materials at an unprecedented scale."
+    "skyofgrind.custom.hyper_bio_lab": "\u00A0A highly advanced bio-laboratory that can process complex biological materials at an unprecedented scale.",
+	"block.gtceu.distillation_facility_complex": "§eDistillation Facility Complex",
+	"block.gtceu.mega_oreproc_facility": "§bIndustrial OreProc Facilty",
+	"gtceu.distillation_facility": "§eUltimate Distillation Unit",
+	"gtceu.mega_oreproc": "§bUltimate Ore Processor",
+	"block.gtceu.hyper_bio_lab": "Hyper Bio-Lab",
+	"block.gtceu.singularity_reactor": "Singularity Reactor",
+	"gtceu.hyper_circuit_assembling": "§bHyper Circuit Assembler"
 }
