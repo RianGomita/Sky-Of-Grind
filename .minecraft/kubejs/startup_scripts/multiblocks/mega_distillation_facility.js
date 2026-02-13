@@ -80,7 +80,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                         PartAbility.IMPORT_ITEMS,
                         PartAbility.INPUT_LASER,
                         PartAbility.INPUT_ENERGY,
-                        PartAbility.IMPORT_FLUIDS))
+                        PartAbility.IMPORT_FLUIDS,
+                        PartAbility.EXPORT_FLUIDS))
                 )
             .build()
         )
