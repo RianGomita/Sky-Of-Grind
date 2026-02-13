@@ -35,6 +35,12 @@ ServerEvents.recipes(sog => {
                 .EUt(GTValues.VA[GTValues.UEV])
 
 // Fusion MK 4 Recipes
+        sog.recipes.gtceu.fusion_reactor('neon_plasma')
+                .inputFluids('gtceu:neon 144', 'gtceu:argon_plasma 16')
+                .outputFluids('gtceu:neon_plasma 64')
+                .fusionStartEU(640000000)
+                .duration(60*4)
+                .EUt((GTValues.VA[GTValues.UEV]))
         sog.recipes.gtceu.fusion_reactor('crystal_matrix')
                 .inputFluids('gtceu:diamond 4320', 'gtceu:radon 2160')
                 .outputFluids('gtceu:crystal_matrix 2160')
