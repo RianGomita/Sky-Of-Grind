@@ -306,7 +306,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.fusion_mk5('fusion_mk5_33')
         .inputFluids('gtceu:neon 144', 'gtceu:argon_plasma 16')
-        .outputFluids('gtceu:neon_plasma 190')
+        .outputFluids('gtceu:neon_plasma_plasma 190')
         .duration(30)
         .EUt((GTValues.VA[GTValues.UEV]))
         
@@ -511,7 +511,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.eternity_fusion('eternity_fusion_34')
         .inputFluids('gtceu:neon 144', 'gtceu:argon_plasma 16')
-        .outputFluids('gtceu:neon_plasma 3040')
+        .outputFluids('gtceu:neon_plasma_plasma 3040')
         .duration(30)
         .EUt((GTValues.VA[GTValues.UEV]))
 });
