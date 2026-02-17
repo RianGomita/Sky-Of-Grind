@@ -1201,7 +1201,8 @@ const NON_SHIFT_TOOLTIP_GROUPS = {
             "gtceu:quantum_cooling_chamber",
             "gtceu:chemical_plant",
             "gtceu:hyper_separator",
-            "gtceu:hyper_bio_lab"
+            "gtceu:hyper_bio_lab",
+            "gtceu:hyper_crystallization_chamber"
         ],
         tooltipKeys: [
             "multiblock.pchaccess1",
@@ -2232,7 +2233,6 @@ const MULTIBLOCK_DESCRIPTION_TOOLTIPS = {
     "gtceu:hyper_bio_lab":[
         "skyofgrind.custom.hyper_bio_lab"
     ]
-    
 };
 const MACHINE_TYPE_NAMES = {
     "gtceu:large_arc_smelter": "§eArc Furnace",
@@ -2402,7 +2402,8 @@ const MACHINE_TYPE_NAMES = {
     "gtceu:mega_oreproc_facility": "§eUltimate Ore Processor",
     "gtceu:distillation_facility_complex": "§eUltimate Distillation Unit",
     "gtceu:hyper_separator": "§eElectrolyzer | Centrifuge | Electromagnetic Separator",
-    "gtceu:hyper_bio_lab": "§eBio-Lab | Large Bacterial Vat"
+    "gtceu:hyper_bio_lab": "§eBio-Lab | Large Bacterial Vat",
+    "gtceu:hyper_crystallization_chamber": "§eAutoclave"
 };
 const SHIFT_PLACEHOLDER_VALUES = {
     // PALLADIUM_SUBSTATION_CASING_TOOLTIP_POWER_SUBSTATION

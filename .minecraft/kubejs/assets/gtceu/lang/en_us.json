@@ -946,5 +946,6 @@
 	"gtceu.mega_oreproc": "§bUltimate Ore Processor",
 	"block.gtceu.hyper_bio_lab": "Hyper Bio-Lab",
 	"block.gtceu.singularity_reactor": "Singularity Reactor",
-	"gtceu.hyper_circuit_assembling": "§bHyper Circuit Assembler"
+	"gtceu.hyper_circuit_assembling": "§bHyper Circuit Assembler",
+    "block.gtceu.hyper_crystallization_chamber": "§bHyper crystallization chamber"
 }
