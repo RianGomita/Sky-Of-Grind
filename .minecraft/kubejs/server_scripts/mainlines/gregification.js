@@ -2398,7 +2398,7 @@ sog.recipes.gtceu.assembler('covalent_conducting_casing')
 
     sog.recipes.gtceu.assembly_line('hyper_crystallization_chamber')
         .itemInputs(
-            '4x gtceu:uxv_autoclave',
+            '16x gtceu:uiv_autoclave',
             '64x gtceu:large_autoclave',
             '64x gtceu:gravi_star',
             '16x avaritia:eternal_singularity',
