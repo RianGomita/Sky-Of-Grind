@@ -2403,6 +2403,7 @@ sog.recipes.gtceu.assembler('covalent_conducting_casing')
             '64x gtceu:gravi_star',
             '16x avaritia:eternal_singularity',
             '64x kubejs:energized_quantum_anomaly',
+            '2x gtceu:uxv_electric_pump',
             '16x kubejs:space_time_heavy_plating'
         )
         .inputFluids(
