@@ -32,7 +32,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                     PartAbility.EXPORT_FLUIDS, 
                     PartAbility.INPUT_ENERGY, 
                     PartAbility.INPUT_LASER, 
-                    PartAbility.PARALLEL_HATCH)))
+                    PartAbility.PARALLEL_HATCH,
+                    PartAbility.MAINTENANCE)))
                 .where("c", Predicates.blocks("gtceu:pure_cosmic_matter_frame"))
                 .where("d", Predicates.blocks("kubejs:space_resistant_orbital_casing"))
                 .where("e", Predicates.blocks("kubejs:trascendental_space_time_casing"))
