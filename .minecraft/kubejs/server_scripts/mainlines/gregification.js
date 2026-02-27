@@ -2395,4 +2395,24 @@ sog.recipes.gtceu.assembler('covalent_conducting_casing')
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .duration(200)
         .EUt(GTValues.VA[GTValues.UIV])
+
+    sog.recipes.gtceu.assembly_line('hyper_crystallization_chamber')
+        .itemInputs(
+            '16x gtceu:uiv_autoclave',
+            '64x gtceu:large_autoclave',
+            '64x gtceu:gravi_star',
+            '16x avaritia:eternal_singularity',
+            '64x kubejs:energized_quantum_anomaly',
+            '2x gtceu:uxv_electric_pump',
+            '16x kubejs:space_time_heavy_plating'
+        )
+        .inputFluids(
+            'gtceu:eternity 5000',
+            'gtceu:antimatter 10000',
+            'gtceu:radon 100000',
+            'gtceu:europium 100000'
+        )
+        .itemOutputs('gtceu:hyper_crystallization_chamber')
+        .EUt(GTValues.VA[GTValues.UXV])
+        .duration(500)
 })
