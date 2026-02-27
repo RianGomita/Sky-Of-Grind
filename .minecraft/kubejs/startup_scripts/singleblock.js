@@ -58,7 +58,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .abilities(PartAbility.PARALLEL_HATCH)
                 .workableTieredHullModel(GTCEu.id("block/machines/parallel_hatch_uxv"))
     })
-    event.create("opv_parallel_hatch", "custom")
+	event.create("opv_parallel_hatch", "custom")
     .tiers(GTValues.OpV)
     .machine((holder, tier, t) => new $ParallelHatchPartMachine(holder, tier))
     .definition((tier, builder) => {
@@ -76,7 +76,7 @@ const $FormattingUtil = Java.loadClass('com.gregtechceu.gtceu.utils.FormattingUt
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create("world_accelerator", "simple")
         .tiers(GTValues.UHV, GTValues.UEV, GTValues.UIV)
-        .machine((holder) => new $WorldAcceleratorMachine(holder))
+        .machine((holder, tier) => new $WorldAcceleratorMachine(holder, Math.min(tier, GTValues.UV)))
         .definition((tier, builder) =>
             builder
                 .langValue(GTValues.VLVH[tier] + " Advanced World Accelerator")
