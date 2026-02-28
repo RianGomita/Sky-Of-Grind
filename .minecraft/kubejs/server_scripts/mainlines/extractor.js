@@ -1,99 +1,682 @@
 ServerEvents.recipes(event => {
-
-
-
   event.custom({
-        "type": "extractinator:extractinating",
-        "input": {
-          "item": "minecraft:cobblestone"
-        },
-        "drops": [
-          {
-            "drop": "minecraft:raw_iron",
-            "drop_chance": 0.80,
-            "min_drop_count": 1,
-            "max_drop_count": 3
-          },
-          {
-            "drop": "minecraft:raw_gold",
-            "drop_chance": 0.50
-        },
-        {
-          "drop": "minecraft:raw_copper",
-          "drop_chance": 0.75,
-          "min_drop_count": 1,
-          "max_drop_count": 3
-        },
-        {
-          "drop": "gtceu:raw_tin",
-          "drop_chance": 0.70
-        },
-        {
-          "drop": "gtceu:raw_coal",
-          "drop_chance": 0.80,
-          "min_drop_count": 1,
-          "max_drop_count": 5
-        },
-        {
-          "drop": "minecraft:flint",
-          "drop_chance": 0.50
-        },
-        {
-          "drop": "gtceu:crushed_stibnite_ore",
-          "drop_chance": 0.50
-        }
-        ]
-    }).id('skyofgrind:extractor_cobble')
-
-    
-  event.shaped('extractinator:extractinator', [// arg 1: output
-        'AC ', 
-        'BDC', // arg 2: the shape (array of strings)
-        'BEF'  
-      ], {
-        A: 'exdeorum:compressed_cobblestone', 
-        B: 'exdeorum:stone_hammer',  //arg 3: the mapping object
-        C: 'minecraft:oak_stairs',
-        D: 'minecraft:oak_planks',
-        E: 'minecraft:flint',
-        F: 'minecraft:oak_fence_gate'
-      }
-      
-    )
-
-  event.custom({
-      "type": "extractinator:extractinating",
-      "input": {
-        "item": "minecraft:dirt"
-      },
-      "drops": [
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "minecraft:deepslate"
+    },
+    "drops": [
       {
-        "drop": 'gtceu:rubber_sapling',
+        "drop": "minecraft:raw_iron",
         "drop_chance": 0.80,
         "min_drop_count": 1,
         "max_drop_count": 3
       },
       {
-        "drop": "minecraft:grass",
+        "drop": "minecraft:raw_gold",
         "drop_chance": 0.50
       },
       {
-        "drop": "minecraft:oak_sapling",
+        "drop": "minecraft:raw_copper",
         "drop_chance": 0.75,
         "min_drop_count": 1,
         "max_drop_count": 3
       },
       {
-        "drop": 'exdeorum:grass_seeds',
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 5
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50
+      }
+      ]
+    }).id('skyofgrind:extractor_deepslate')
+
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "exdeorum:compressed_deepslate"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 45
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      }
+      ]
+    }).id('skyofgrind:extractor_compressed_deepslate')
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "minecraft:granite"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "minecraft:raw_copper",
         "drop_chance": 0.75,
         "min_drop_count": 1,
         "max_drop_count": 3
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 5
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50
       }
       ]
+    }).id('skyofgrind:extractor_granite')
+
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "exdeorum:compressed_granite"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 45
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      }
+      ]
+    }).id('skyofgrind:extractor_compressed_granite')
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "minecraft:diorite"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 5
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50
+      }
+      ]
+    }).id('skyofgrind:extractor_diorite')
+
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "exdeorum:compressed_diorite"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 45
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      }
+      ]
+    }).id('skyofgrind:extractor_compressed_diorite')
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "minecraft:blackstone"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 5
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50
+      }
+      ]
+    }).id('skyofgrind:extractor_blackstone')
+
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "exdeorum:compressed_blackstone"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 45
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      }
+      ]
+    }).id('skyofgrind:extractor_compressed_blackstone')
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "minecraft:basalt"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 5
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50
+      }
+      ]
+    }).id('skyofgrind:extractor_basalt')
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "minecraft:andesite"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 5
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50
+      }
+      ]
+    }).id('skyofgrind:extractor_andesite')
+
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "exdeorum:compressed_andesite"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 45
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      }
+      ]
+    }).id('skyofgrind:extractor_compressed_andesite')
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "minecraft:cobblestone"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 5
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50
+      }
+      ]
+    }).id('skyofgrind:extractor_cobble')
+
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "exdeorum:compressed_cobblestone"
+    },
+    "drops": [
+      {
+        "drop": "minecraft:raw_iron",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "minecraft:raw_gold",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "minecraft:raw_copper",
+        "drop_chance": 0.75,
+        "min_drop_count": 9,
+        "max_drop_count": 27
+      },
+      {
+        "drop": "gtceu:raw_tin",
+        "drop_chance": 0.70,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:raw_coal",
+        "drop_chance": 0.80,
+        "min_drop_count": 9,
+        "max_drop_count": 45
+      },
+      {
+        "drop": "minecraft:flint",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      },
+      {
+        "drop": "gtceu:crushed_stibnite_ore",
+        "drop_chance": 0.50,
+        "min_drop_count": 9,
+        "max_drop_count": 9
+      }
+      ]
+    }).id('skyofgrind:extractor_compressed_cobble')
+
+  event.shaped('extractinator:extractinator', [
+    'AC ',
+    'BDC',
+    'BEF'], {
+      A: 'exdeorum:compressed_cobblestone', 
+      B: 'exdeorum:stone_hammer',
+      C: 'minecraft:oak_stairs',
+      D: 'minecraft:oak_planks',
+      E: 'minecraft:flint',
+      F: 'minecraft:oak_fence_gate'
+    }
+  )
+
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "minecraft:dirt"
+    },
+    "drops": [
+    {
+      "drop": 'gtceu:rubber_sapling',
+      "drop_chance": 0.80,
+      "min_drop_count": 1,
+      "max_drop_count": 3
+    },
+    {
+      "drop": "minecraft:grass",
+      "drop_chance": 0.50
+    },
+    {
+      "drop": "minecraft:oak_sapling",
+      "drop_chance": 0.75,
+      "min_drop_count": 1,
+      "max_drop_count": 3
+    },
+    {
+      "drop": 'exdeorum:grass_seeds',
+      "drop_chance": 0.75,
+      "min_drop_count": 1,
+      "max_drop_count": 3
+    }
+    ]
   }).id('skyofgrind:extractor_dirt')
+
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "exdeorum:compressed_dirt"
+    },
+    "drops": [
+    {
+      "drop": 'gtceu:rubber_sapling',
+      "drop_chance": 0.80,
+      "min_drop_count": 9,
+      "max_drop_count": 27
+    },
+    {
+      "drop": "minecraft:grass",
+      "drop_chance": 0.50,
+      "min_drop_count": 9,
+      "max_drop_count": 9
+    },
+    {
+      "drop": "minecraft:oak_sapling",
+      "drop_chance": 0.75,
+      "min_drop_count": 9,
+      "max_drop_count": 27
+    },
+    {
+      "drop": 'exdeorum:grass_seeds',
+      "drop_chance": 0.75,
+      "min_drop_count": 9,
+      "max_drop_count": 27
+    }
+    ]
+  }).id('skyofgrind:extractor_compressed_dirt')
   
-
-
   event.custom({
     "type": "extractinator:extractinating",
     "input": {
@@ -141,55 +724,102 @@ ServerEvents.recipes(event => {
       "max_drop_count": 4
     }
     ]
-}).id('skyofgrind:extractor_sand')
+  }).id('skyofgrind:extractor_sand')
 
-
-
-event.custom({
-  "type": "extractinator:extractinating",
-  "input": {
-    "item": 'minecraft:water_bucket'
-  },
-  "drops": [
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": "exdeorum:compressed_sand"
+    },
+    "drops": [
     {
-      "drop": "minecraft:kelp",
+      "drop": "minecraft:bone_meal",
       "drop_chance": 0.80,
-      "min_drop_count": 1,
-      "max_drop_count": 3
-    },
-    {
-      "drop": "minecraft:ink_sac",
-      "drop_chance": 0.50,
-      "min_drop_count": 1,
-      "max_drop_count": 1
-    },
-    {
-      "drop": "gtceu:iron_dust",
-      "drop_chance": 0.70,
-      "min_drop_count": 3,
-      "max_drop_count": 7
-    },
-    {
-      "drop": "gtceu:gold_dust",
-      "drop_chance": 0.60,
-      "min_drop_count": 2,
-      "max_drop_count": 5
-    },
-    {
-      "drop": "gtceu:copper_dust",
-      "drop_chance": 0.70,
-      "min_drop_count": 3,
-      "max_drop_count": 7
+      "min_drop_count": 9,
+      "max_drop_count": 27
     },
     {
       "drop": "minecraft:redstone",
-      "drop_chance": 0.70,
-      "min_drop_count": 3,
-      "max_drop_count": 7
+      "drop_chance": 0.50,
+      "min_drop_count": 9,
+      "max_drop_count": 9
+    },
+    {
+      "drop": "minecraft:rotten_flesh",
+      "drop_chance": 0.75,
+      "min_drop_count": 9,
+      "max_drop_count": 27
+    },
+    {
+      "drop": "gtceu:raw_calcite",
+      "drop_chance": 0.75,
+      "min_drop_count": 9,
+      "max_drop_count": 18
+    },
+    {
+      "drop": "gtceu:stone_dust",
+      "drop_chance": 0.75,
+      "min_drop_count": 27,
+      "max_drop_count": 36
+    },
+    {
+      "drop": "minecraft:sugar_cane",
+      "drop_chance": 0.50,
+      "min_drop_count": 27,
+      "max_drop_count": 36
+    },
+    {
+      "drop": "minecraft:cactus",
+      "drop_chance": 0.50,
+      "min_drop_count": 27,
+      "max_drop_count": 36
     }
+    ]
+  }).id('skyofgrind:extractor_compressed_sand')
 
-  ]
-})
+  event.custom({
+    "type": "extractinator:extractinating",
+    "input": {
+      "item": 'minecraft:water_bucket'
+    },
+    "drops": [
+      {
+        "drop": "minecraft:kelp",
+        "drop_chance": 0.80,
+        "min_drop_count": 1,
+        "max_drop_count": 3
+      },
+      {
+        "drop": "minecraft:ink_sac",
+        "drop_chance": 0.50,
+        "min_drop_count": 1,
+        "max_drop_count": 1
+      },
+      {
+        "drop": "gtceu:iron_dust",
+        "drop_chance": 0.70,
+        "min_drop_count": 3,
+        "max_drop_count": 7
+      },
+      {
+        "drop": "gtceu:gold_dust",
+        "drop_chance": 0.60,
+        "min_drop_count": 2,
+        "max_drop_count": 5
+      },
+      {
+        "drop": "gtceu:copper_dust",
+        "drop_chance": 0.70,
+        "min_drop_count": 3,
+        "max_drop_count": 7
+      },
+      {
+        "drop": "minecraft:redstone",
+        "drop_chance": 0.70,
+        "min_drop_count": 3,
+        "max_drop_count": 7
+      }
+  ]})
 
 event.recipes.gtceu.extractinator('c1cobble')
   .circuit(1)
