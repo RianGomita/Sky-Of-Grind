@@ -193,8 +193,13 @@ ServerEvents.recipes(sog => {
         .itemOutputs('hostilenetworks:sim_chamber')
         .duration(100)
         .EUt(32)
+    sog.recipes.gtceu.assembler('simchamber_2')
+        .itemInputs('4x gtceu:steel_plate', '2x gtceu:cobaltite_dust', '2x gtceu:plastic_printed_circuit_board', '#gtceu:circuits/lv')
+        .itemOutputs('hostilenetworks:sim_chamber')
+        .duration(100)
+        .EUt(32)
     sog.recipes.gtceu.assembler('lootchamber')
-        .itemInputs('4x gtceu:steel_plate', 'gtceu:gallium_arsenide_dust', '2x gtceu:diode', '3x #gtceu:circuits/lv')
+        .itemInputs('4x gtceu:steel_plate', 'gtceu:gallium_arsenide_dust', '2x #gtceu:diodes', '3x #gtceu:circuits/lv')
         .itemOutputs('hostilenetworks:loot_fabricator')
         .duration(100)
         .EUt(32)
@@ -2415,4 +2420,87 @@ sog.recipes.gtceu.assembler('covalent_conducting_casing')
         .itemOutputs('gtceu:hyper_crystallization_chamber')
         .EUt(GTValues.VA[GTValues.UXV])
         .duration(500)
+
+    sog.shaped('gtceu:ulv_input_hatch', [
+            ' A ', 
+            'CBC',
+            ' C '  
+          ], {
+            A: '#forge:glass', 
+            B: 'gtceu:ulv_machine_hull',
+            C: 'gtceu:sticky_resin'
+          }
+        )
+
+    sog.recipes.gtceu.chemical_reactor('ethylbenzene_lcr')
+        .inputFluids(Fluid.of('gtceu:ethylene 1000'))
+        .inputFluids(Fluid.of('gtceu:benzene 1000'))
+        .outputFluids('gtceu:ethylbenzene 1000')
+        .duration(20*20)
+        .EUt((GTValues.VA[GTValues.HV]))
+
+    sog.shaped('gtceu:uev_machine_hull', [
+            'ABA', 
+            'CDC',
+            '   '  
+          ], {
+            A: 'gtceu:peek_plate', 
+            B: 'gtceu:resonant_essence_plate',
+            C: 'gtceu:draconium_single_cable',
+            D: 'gtceu:uev_machine_casing'
+          }
+        )
+    sog.recipes.gtceu.assembler('uev_machine_hull')
+        .itemInputs(
+            'gtceu:uev_machine_casing',
+            '2x gtceu:draconium_single_cable'
+        )
+        .inputFluids('gtceu:peek 288')
+        .itemOutputs('gtceu:uev_machine_hull')
+        .duration(20*2.5)
+        .EUt(GTValues.VA[GTValues.LV])
+    sog.shaped('gtceu:uiv_machine_hull', [
+            'ABA', 
+            'CDC',
+            '   '  
+          ], {
+            A: 'gtceu:hypoxylon_plate', 
+            B: 'gtceu:draconium_plate',
+            C: 'gtceu:awakened_draconium_single_cable',
+            D: 'gtceu:uiv_machine_casing'
+          }
+        )
+    sog.recipes.gtceu.assembler('uiv_machine_hull')
+        .itemInputs(
+            'gtceu:uiv_machine_casing',
+            '2x gtceu:awakened_draconium_single_cable'
+        )
+        .inputFluids('gtceu:hypoxylon 288')
+        .itemOutputs('gtceu:uiv_machine_hull')
+        .duration(20*2.5)
+        .EUt(GTValues.VA[GTValues.LV])
+    sog.shaped('gtceu:uxv_machine_hull', [
+            'ABA', 
+            'CDC',
+            '   '  
+          ], {
+            A: 'gtceu:kevlar_plate', 
+            B: 'gtceu:chaos_plate',
+            C: 'gtceu:chaos_single_wire',
+            D: 'gtceu:uxv_machine_casing'
+          }
+        )
+    sog.recipes.gtceu.assembler('uxv_machine_hull')
+        .itemInputs(
+            'gtceu:uxv_machine_casing',
+            '2x gtceu:chaos_single_wire'
+        )
+        .inputFluids('gtceu:meta_stable_molten_kevlar 288')
+        .itemOutputs('gtceu:uxv_machine_hull')
+        .duration(20*2.5)
+        .EUt(GTValues.VA[GTValues.LV])
+    sog.shapeless('gtmthings:wireless_energy_terminal', [
+            'gtmthings:advanced_terminal',
+            'gtceu:energy_crystal'
+          ])
 })
