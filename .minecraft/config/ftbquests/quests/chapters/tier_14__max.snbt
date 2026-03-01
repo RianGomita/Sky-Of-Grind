@@ -75,9 +75,11 @@
 				"This is a huge milestone, since apart from doing normal atomic forge and ebf recipes it also has a forge module."
 				""
 				"The new forge recipes allow for an easier way of getting molten space time  and unlocks a new step for progression, cosmic matter residue."
+				""
+				"&4&lDO NOT USE THE MELTING MODULE WITH PARALLELS. PER TICK RECIPES MIGHT CONSUME MORE THAN EXPECTED.&r"
 			]
 			id: "1724853A35EE60D9"
-			subtitle: "Finally a better EBF."
+			subtitle: "Finally a better EBF. (Read Description)"
 			tasks: [{
 				id: "1A75E7D3B964B4BE"
 				item: "gtceu:reinforced_atomicforge"
@@ -557,7 +559,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3C7786F4A3C00CAE"]
@@ -599,7 +601,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["1A9E1AC38776A94C"]
+			dependencies: [
+				"1E5371968769C966"
+				"5AF93DB6CC58157C"
+			]
 			description: [
 				"This is your Endgame Source for Fusion including:"
 				"- Even 16x better recipes in compare to the Fusion Reactor Computer MK V"
@@ -616,8 +621,419 @@
 				type: "item"
 			}]
 			title: "The ULTIMATE Fusion"
-			x: 8.5d
+			x: 7.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["19D1E837A7CA3313"]
+			id: "1E5371968769C966"
+			subtitle: "How surprising.."
+			tasks: [{
+				count: 16L
+				id: "31242A2469F4088F"
+				item: { Count: 16, id: "gtceu:solar_radiation_alloy_ingot" }
+				type: "item"
+			}]
+			title: "A new alloy?"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1E5371968769C966"]
+			description: [
+				"Collide. Collapse. Reconstruct."
+				"What survives the impact was never meant to be stable."
+			]
+			id: "033E3525E6CEBEC0"
+			tasks: [{
+				id: "2FB687CAD17F1D01"
+				item: "soggtaddon:high_energy_collider"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["033E3525E6CEBEC0"]
+			id: "49DBFCF8ABA22D76"
+			subtitle: "Prototype Cosmic Matter"
+			tasks: [{
+				id: "265ACD5EEA63A2D5"
+				item: "gtceu:proto_matter_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["033E3525E6CEBEC0"]
+			icon: "gtceu:exotic_particle_suspension_bucket"
+			id: "5A6E4487E7BC11A7"
+			tasks: [{
+				id: "6C3728A7380981D7"
+				type: "checkmark"
+			}]
+			title: "Exotic Particle Suspension"
+			x: 7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["49DBFCF8ABA22D76"]
+			icon: "gtceu:cosmic_matter_bucket"
+			id: "5AF93DB6CC58157C"
+			subtitle: "Passive Cosmic Matter"
+			tasks: [
+				{
+					id: "34065D80E0FC08BD"
+					item: "gtceu:cosmic_matter_bucket"
+					type: "item"
+				}
+				{
+					id: "0F5B14424DC49B31"
+					item: "gtceu:annihiltation_residue_dust"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5A6E4487E7BC11A7"
+				"49DBFCF8ABA22D76"
+			]
+			description: ["This multiblock is capable of producing up to &lone&r &l&4MAX+6&r&r amp, or this number: 8,796,093,022,208 (8.7T)"]
+			icon: "gtceu:singularity_reactor"
+			id: "4F5AAC68A8144584"
+			subtitle: "Insane amounts of power."
+			tasks: [
+				{
+					id: "54BF62D60E0CEA89"
+					item: { Count: 64, id: "gtceu:singularity_reactor" }
+					type: "item"
+				}
+				{
+					id: "7E5EA607ED10EBF9"
+					item: "gtmthings:uxv_65536a_wireless_laser_source_hatch"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0838D9CA6A7621C6"]
+			description: ["With your newly obtained eternity fusion you are now able to synthesize new types of plasmas; culminating in the most stabilized plasma, &oyet."]
+			id: "3DB2DFD57E7805B2"
+			tasks: [{
+				id: "2DF25FD28C61A940"
+				title: "The pinnacle of plasmas."
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3DB2DFD57E7805B2"]
+			icon: "gtceu:neon_plasma_plasma_bucket"
+			id: "744F7F22281E4D80"
+			tasks: [
+				{
+					id: "50CF7F65F1609674"
+					item: "gtceu:neon_plasma_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4D105FAF2D50F270"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3DB2DFD57E7805B2"
+				"744F7F22281E4D80"
+			]
+			icon: "gtceu:neutron_flux_plasma_bucket"
+			id: "308532CE708E3567"
+			tasks: [
+				{
+					id: "06B7912969514971"
+					item: "gtceu:neutron_flux_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "376B7B75B626A63D"
+					type: "checkmark"
+				}
+			]
+			x: 8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"3DB2DFD57E7805B2"
+				"308532CE708E3567"
+			]
+			icon: "gtceu:tungsten_plasma_plasma_bucket"
+			id: "1F6B31C31FAED576"
+			tasks: [
+				{
+					id: "2FAB1EFC5A0F4EAD"
+					item: "gtceu:tungsten_plasma_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1105982D044D8581"
+					type: "checkmark"
+				}
+			]
+			x: 9.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3DB2DFD57E7805B2"
+				"1F6B31C31FAED576"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:plutonium_239_plasma_plasma_bucket"
+			id: "0F53B1BA2F644273"
+			tasks: [
+				{
+					id: "51BEA2E83009B2B4"
+					item: "gtceu:plutonium_239_plasma_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "318CE37E785BA973"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3DB2DFD57E7805B2"
+				"0F53B1BA2F644273"
+			]
+			icon: "gtceu:iridium_plasma_plasma_bucket"
+			id: "3B69C8BAFBBE9602"
+			tasks: [
+				{
+					id: "34E73E095BC06F40"
+					item: "gtceu:iridium_plasma_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4BDE39E79C920591"
+					type: "checkmark"
+				}
+			]
+			x: 12.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"3DB2DFD57E7805B2"
+				"3B69C8BAFBBE9602"
+			]
+			icon: "gtceu:osmium_plasma_plasma_bucket"
+			id: "737AA868D1EDD7A1"
+			tasks: [
+				{
+					id: "3C97B800E559A653"
+					item: "gtceu:osmium_plasma_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4122E4877A595312"
+					type: "checkmark"
+				}
+			]
+			x: 11.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3DB2DFD57E7805B2"
+				"737AA868D1EDD7A1"
+			]
+			icon: "gtceu:decay_stabilized_plasma_bucket"
+			id: "6E1C6DA227D66744"
+			subtitle: "The end?"
+			tasks: [
+				{
+					id: "6C396DBBED1EF547"
+					item: "gtceu:decay_stabilized_plasma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2A200B0C2EE63C71"
+					type: "checkmark"
+				}
+			]
+			x: 10.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"1F6B31C31FAED576"
+				"308532CE708E3567"
+				"744F7F22281E4D80"
+			]
+			id: "7999F030D6949C9F"
+			tasks: [{
+				id: "414F2090DC4E1493"
+				item: "kubejs:quantum_stretched_lattice"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"737AA868D1EDD7A1"
+				"0F53B1BA2F644273"
+				"3B69C8BAFBBE9602"
+			]
+			id: "6933AE0F8A55791B"
+			tasks: [{
+				id: "23395D849FD59FA8"
+				item: "kubejs:temporal_singularity_core"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1E5371968769C966"]
+			id: "4B6FF77A3FDE4ADE"
+			tasks: [{
+				id: "260091A318DB04E1"
+				item: "kubejs:stellar_flux_binder"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"7999F030D6949C9F"
+				"6933AE0F8A55791B"
+				"6E1C6DA227D66744"
+			]
+			id: "62A16936A89BDDEE"
+			subtitle: "A time fragment?"
+			tasks: [{
+				id: "52D9140436DC29EC"
+				item: "kubejs:chronon_shard"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"62A16936A89BDDEE"
+				"4B6FF77A3FDE4ADE"
+			]
+			description: ["An alloy forged under recursive temporal compression. Chrono Infinity exists in every moment simultaneously, stabilized only through absolute energetic control."]
+			id: "51F2AF96A9593CFF"
+			tasks: [{
+				id: "64FBABC294DF9A9A"
+				item: "gtceu:chrono_infinity_ingot"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["51F2AF96A9593CFF"]
+			id: "6FD9B23787E83A23"
+			tasks: [{
+				id: "2DC4EF1166A5D379"
+				item: "kubejs:chrono_infinity_printed_circuit_board"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6FD9B23787E83A23"]
+			id: "7B72D3AF556D9F8E"
+			tasks: [{
+				id: "0E656DCCF28D9582"
+				item: "kubejs:chrono_infinity_processor"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["7B72D3AF556D9F8E"]
+			id: "0232AACAF51F2364"
+			tasks: [{
+				id: "6C7DBC3726DEB208"
+				item: "kubejs:chrono_infinity_processor_assembly"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["0232AACAF51F2364"]
+			id: "015072923B817E08"
+			tasks: [{
+				id: "4CDF6CB981F0E9BA"
+				item: "kubejs:chrono_infinity_processor_computer"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["015072923B817E08"]
+			icon_scale: 2.0d
+			id: "7F4A01FFCB21E6DE"
+			size: 2.0d
+			subtitle: "The beginning of the end?"
+			tasks: [{
+				id: "7A2743307A921C00"
+				item: "kubejs:chrono_infinity_processor_mainframe"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -15.5d
+		}
+		{
+			dependencies: [
+				"51F2AF96A9593CFF"
+				"7F4A01FFCB21E6DE"
+			]
+			icon_scale: 2.0d
+			id: "30B1AB7F29192372"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "6561968F78FF5D03"
+				item: "gtceu:opv_machine_casing"
+				type: "item"
+			}]
+			title: "Welcome to OpV."
+			x: 13.0d
+			y: -12.0d
 		}
 	]
 	subtitle: ["Ultra Extreme Voltage"]

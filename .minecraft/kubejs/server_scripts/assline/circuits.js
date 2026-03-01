@@ -189,5 +189,52 @@ event.recipes.gtceu.circuit_assembly_line('cosmic_processor_mainframe')
 .duration(1600)
 .EUt(GTValues.VA[GTValues.UXV])  
 
+// OpV CIRCUITS 
+
+event.recipes.gtceu.circuit_assembly_line('chrono_infinity_processor')
+.itemInputs('2x kubejs:cosmic_processor', '64x gtceu:fine_chrono_infinity_wire', '64x kubejs:complex_smd_capacitor', '8x gtceu:fine_chrono_infinity_wire', '16x kubejs:extremely_advanced_soc', 'kubejs:quantum_data_module', '32x avaritia:eternal_singularity')
+.itemOutputs('2x kubejs:chrono_infinity_processor')
+.inputFluids(
+    Fluid.of('gtceu:infinity', 72),
+    Fluid.of('gtceu:exotic_particle_suspension', 4608),
+    Fluid.of('gtceu:proto_matter', 2304),
+    Fluid.of('gtceu:meta_stable_molten_zylon', 8124)
+)
+.duration(200)
+.EUt(GTValues.VA[GTValues.UXV])     
+event.recipes.gtceu.circuit_assembly_line('chrono_infinity_processor_assembly')
+.itemInputs('2x kubejs:chrono_infinity_printed_circuit_board', '4x kubejs:chrono_infinity_processor', '64x gtceu:fine_chrono_infinity_wire', '64x kubejs:complex_smd_capacitor', '16x gtceu:fine_chrono_infinity_wire', '16x kubejs:extremely_advanced_soc', 'kubejs:infinity_heavy_plating', 'kubejs:quantum_data_module')
+.itemOutputs('2x kubejs:chrono_infinity_processor_assembly')
+.inputFluids(
+    Fluid.of('gtceu:infinity', 72),
+    Fluid.of('gtceu:exotic_particle_suspension', 4608),
+    Fluid.of('gtceu:proto_matter', 2304),
+    Fluid.of('gtceu:meta_stable_molten_zylon', 8124)
+)
+.duration(400)
+.EUt(GTValues.VA[GTValues.UXV])     
+event.recipes.gtceu.circuit_assembly_line('chrono_infinity_processor_computer')
+.itemInputs('4x kubejs:chrono_infinity_processor_assembly', 'kubejs:chrono_infinity_printed_circuit_board', '64x gtceu:fine_chrono_infinity_wire', '64x kubejs:complex_smd_capacitor', '24x gtceu:fine_chrono_infinity_wire', '16x kubejs:extremely_advanced_soc', '7x gtceu:dense_solar_radiation_alloy_plate', '4x kubejs:infinity_heavy_plating', 'kubejs:quantum_data_module')
+.itemOutputs('1x kubejs:chrono_infinity_processor_computer')
+.inputFluids(
+    Fluid.of('gtceu:infinity', 72),
+    Fluid.of('gtceu:exotic_particle_suspension', 4608),
+    Fluid.of('gtceu:proto_matter', 2304),
+    Fluid.of('gtceu:meta_stable_molten_zylon', 8124)
+)
+.duration(800)
+.EUt(GTValues.VA[GTValues.UXV])   
+event.recipes.gtceu.circuit_assembly_line('chrono_infinity_processor_mainframe')
+.itemInputs('2x kubejs:chrono_infinity_processor_computer', '4x kubejs:infinity_heavy_plating', '64x kubejs:complex_smd_capacitor', '16x kubejs:extremely_advanced_soc', '4x kubejs:chrono_infinity_printed_circuit_board', '32x gtceu:double_solar_radiation_alloy_plate', '4x avaritia:eternal_singularity', '2x gtceu:chrono_infinity_gear', '64x gtceu:chrono_infinity_screw', 'kubejs:quantum_data_module')
+.itemOutputs('1x kubejs:chrono_infinity_processor_mainframe')
+.inputFluids(
+    Fluid.of('gtceu:infinity', 72),
+    Fluid.of('gtceu:exotic_particle_suspension', 4608),
+    Fluid.of('gtceu:proto_matter', 2304),
+    Fluid.of('gtceu:meta_stable_molten_zylon', 8124)
+)
+.duration(1600)
+.EUt(GTValues.VA[GTValues.UXV])  
+
 
 })
