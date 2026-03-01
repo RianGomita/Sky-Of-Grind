@@ -239,6 +239,7 @@ ServerEvents.recipes(sog => {
         .EUt(32)
         .duration(100)
         .circuit(8)
+        .circuit(8)
         sog.recipes.gtceu.assembler('dimensional_pumping_module')
         .itemInputs('8x kubejs:space_time_heavy_plating', 'gtceu:uiv_fluid_regulator')
         .itemOutputs('kubejs:dimensional_pump_module')
@@ -2499,8 +2500,63 @@ sog.recipes.gtceu.assembler('covalent_conducting_casing')
         .itemOutputs('gtceu:uxv_machine_hull')
         .duration(20*2.5)
         .EUt(GTValues.VA[GTValues.LV])
+    sog.recipes.gtceu.assembler('opv_machine_hull')
+        .itemInputs(
+            'gtceu:opv_machine_casing',
+            '2x gtceu:chaos_single_wire'
+        )
+        .inputFluids('gtceu:meta_stable_molten_zylon 288')
+        .itemOutputs('gtceu:opv_machine_hull')
+        .duration(20*2.5)
+        .EUt(GTValues.VA[GTValues.LV])
     sog.shapeless('gtmthings:wireless_energy_terminal', [
             'gtmthings:advanced_terminal',
             'gtceu:energy_crystal'
           ])
+          
+    sog.recipes.gtceu.assembler('quantum_field_stabilization_casing')
+        .itemInputs(
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'soggtaddon:ultra_dense_collider_casing',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:double_solar_radiation_alloy_plate'
+        )
+        .itemOutputs('soggtaddon:quantum_field_stabilization_casing')
+        .duration(20*2)
+        .EUt(GTValues.VA[GTValues.UXV])
+    sog.recipes.gtceu.assembler('ultra_dense_collider_casing')
+        .itemInputs(
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'kubejs:highly_reinforced_radioactive_casing',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:pure_cosmic_matter_plate',
+            'gtceu:double_solar_radiation_alloy_plate'
+        )
+        .itemOutputs('soggtaddon:ultra_dense_collider_casing')
+        .duration(20*2)
+        .EUt(GTValues.VA[GTValues.UXV])
+        sog.recipes.gtceu.assembler('high_energy_collider_casing')
+        .itemInputs(
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:double_solar_radiation_alloy_plate',
+            'soggtaddon:quantum_field_stabilization_casing',
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:double_solar_radiation_alloy_plate',
+            'gtceu:double_solar_radiation_alloy_plate'
+        )
+        .itemOutputs('soggtaddon:high_energy_collider_casing')
+        .duration(20*2)
+        .EUt(GTValues.VA[GTValues.UXV])
 })

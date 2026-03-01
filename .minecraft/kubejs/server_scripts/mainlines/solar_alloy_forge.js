@@ -46,6 +46,24 @@ ServerEvents.recipes(event => {
         .duration(20 * 240)
         .EUt(GTValues.VA[GTValues.UEV])
 
+        event.recipes.gtceu.solar_forging('solar_radiation_alloy')
+        .itemInputs(
+            '64x gtceu:space_time_dust',
+            '64x gtceu:enriched_naquadah_dust',
+            '64x gtceu:californite_dust',
+            '64x gtceu:naquadria_dust',
+            '64x gtceu:cosmic_neutronium_dust'
+        )
+        .inputFluids(
+            'gtceu:infinity 72',
+            'gtceu:solar_eclipse_alloy 22160'
+        )
+        .outputFluids(
+            'gtceu:solar_radiation_alloy 2304'
+        )
+        .duration(20 * 120)
+        .EUt(GTValues.VA[GTValues.OpV])
+
     // Solar Alloy Smelting
     event.recipes.gtceu.solar_alloy_smelting('solar_battery_alloy')
         .itemInputs(

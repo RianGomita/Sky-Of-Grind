@@ -165,5 +165,13 @@ sog.recipes.gtceu.plasma_nexus('advanced_refined_cosmic_matter_plasma')
     .outputFluids('gtceu:refined_cosmic_matter_plasma 2304')
     .duration(20*20)
     .EUt(GTValues.VA[GTValues.UXV]);
-    
+
+sog.recipes.gtceu.large_synchrotron_switcher("cosmic_proto")
+.inputFluids('gtceu:proto_matter 144')
+.outputFluids('gtceu:refined_cosmic_matter_plasma 1440')
+.itemOutputs('2x gtceu:annihiltation_residue_dust')
+.duration(20)
+.EUt(GTValues.VA[GTValues.UXV])
+
+
 })

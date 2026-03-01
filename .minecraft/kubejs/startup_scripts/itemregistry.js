@@ -148,9 +148,12 @@ StartupEvents.registry('item', sog => {
     sog.create('universium_nanites').maxStackSize(64).displayName('Universium Nanites')
     // Credits
     sog.create('atomically_compressed_neutronium_credit').maxStackSize(64).displayName('Atomically Compressed Neutronium Credit').texture('kubejs:item/atomically_compressed_neutronium_credit')
-    // Exotic Condensate
+    // Chrono Infinity
     sog.create('quantum_stretched_lattice').maxStackSize(64).displayName('Quantum Stretched Lattice')
     sog.create('decay_particles').maxStackSize(64).displayName('Decay Particles')
+    sog.create('temporal_singularity_core').maxStackSize(64).displayName('Temporal Singularity Core')
+    sog.create('stellar_flux_binder').maxStackSize(64).displayName('Stellar Flux Binder')
+    sog.create('chronon_shard').maxStackSize(64).displayName('Chronon Shard')
     // Datas
     const data = ["cosmic", "elementary", "eternity", "plasma", "singularity", "spacetime", "universe"]
         data.forEach((data) => {

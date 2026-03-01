@@ -6,20 +6,13 @@
 	icon: "gtceu:chrono_infinity_ingot"
 	id: "356B9DBB798C1E75"
 	order_index: 15
-	quest_links: [ ]
-	quests: [{
-		icon_scale: 1.5d
-		id: "4CB5D274EC597F27"
-		shape: "square"
-		size: 2.0d
-		subtitle: "End of Beginning"
-		tasks: [{
-			id: "497988516354F935"
-			item: "gtceu:opv_machine_casing"
-			type: "item"
-		}]
+	quest_links: [{
+		id: "0FBAB168D36131A8"
+		linked_quest: "30B1AB7F29192372"
 		x: 0.0d
 		y: 0.0d
 	}]
+	quests: [ ]
+	subtitle: ["Overpowered Voltage"]
 	title: "&#FFFFFF&lT&#F1EAFF&li&#E3D5FF&le&#D5BFFF&lr &#B995FF&l1&#AC80FF&l3 &#9055FF&l- &#742BFF&lO&#6615FF&lp&#5800FF&lV"
 }

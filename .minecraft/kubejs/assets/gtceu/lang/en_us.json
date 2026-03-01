@@ -727,6 +727,7 @@
     "material.gtceu.reverse_temporal_flux": "Reverse Temporal Flux",
     "material.gtceu.proto_matter": "Proto Matter",
     "material.gtceu.sodium_iodide_solution": "Sodium Iodide Solution",
+    "material.gtceu.solar_radiation_alloy": "Solar Radiation Alloy",
     "multiblock.laseraccess1": "\u00A0\u00A0\u00A0§aLaser Target Access: ✓",
     "multiblock.laseraccess2": "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0§7This multiblock can be powered with Laser Target Hatches.",
     "multiblock.laseroutputaccess1": "\u00A0\u00A0\u00A0§aLaser Source Access: ✓",
@@ -947,6 +948,7 @@
 	"gtceu.mega_oreproc": "§bUltimate Ore Processor",
 	"block.gtceu.hyper_bio_lab": "Hyper Bio-Lab",
 	"block.gtceu.singularity_reactor": "Singularity Reactor",
+    "gtceu.singularity_reactor": "Singularity Reactor",
 	"gtceu.hyper_circuit_assembling": "§bHyper Circuit Assembler",
     "block.gtceu.hyper_crystallization_chamber": "§bHyper crystallization chamber"
 }

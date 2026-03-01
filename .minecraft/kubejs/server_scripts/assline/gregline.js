@@ -281,6 +281,21 @@ event.recipes.gtceu.quantum_station('qed')
 .totalCWU(1000*12000)
 .CWUt(1000)
 
+event.recipes.gtceu.assembly_line("uxv_ultimate_battery")
+.itemInputs("16x gtceu:uhv_ultimate_battery")
+.itemInputs("2x #gtceu:circuits/uxv", "4x kubejs:eternity_heavy_plating", "1x kubejs:infinity_heavy_plating", "2x gtceu:uxv_field_generator", "8x soggtaddon:high_energy_collider_casing", "32x gtceu:double_solar_radiation_alloy_plate", "32x gtceu:double_solar_radiation_alloy_plate", "2x gtceu:uxv_electric_motor", "16x #gtceu:circuits/uiv", "64x #gtceu:circuits/uev", "64x gtceu:solar_radiation_alloy_bolt", "64x gtceu:eternity_foil", "gtceu:max_battery", "64x kubejs:quantum_anomaly", "64x kubejs:energized_quantum_anomaly")
+.inputFluids("gtceu:nihonium 144*16", "gtceu:oganesson 144*16")
+.itemOutputs("soggtaddon:uxv_ultimate_battery")
+.EUt(GTValues.VA[GTValues.UXV])
+.duration(20*240)
+
+event.recipes.gtceu.assembly_line("high_energy_collider")
+.itemInputs("1x gtceu:fusion_mk5")
+.itemInputs("4x #gtceu:circuits/uxv", "16x kubejs:eternity_heavy_plating", "4x kubejs:infinity_heavy_plating", "2x gtceu:uxv_field_generator", "16x soggtaddon:high_energy_collider_casing", "32x gtceu:double_solar_radiation_alloy_plate", "32x gtceu:double_solar_radiation_alloy_plate", "2x gtceu:uxv_emitter", "16x #gtceu:circuits/uiv", "64x #gtceu:circuits/uev", "64x gtceu:double_solar_radiation_alloy_plate", "64x gtceu:eternity_foil", "32x gtceu:double_solar_radiation_alloy_plate", "64x kubejs:quantum_anomaly", "64x kubejs:energized_quantum_anomaly")
+.inputFluids("gtceu:nihonium 144*16", "gtceu:oganesson 144*16")
+.itemOutputs("soggtaddon:high_energy_collider")
+.EUt(GTValues.VA[GTValues.UXV])
+.duration(20*240)
 
 
 

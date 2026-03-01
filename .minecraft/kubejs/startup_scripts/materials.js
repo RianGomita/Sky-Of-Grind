@@ -20,6 +20,7 @@ GTCEuStartupEvents.registry('gtceu:material_icon_set', event => {
     event.create('eternity').parent(GTMaterialIconSet.METALLIC)
     event.create('chrono-infinity_alloy').parent(GTMaterialIconSet.SHINY)
     event.create('solar_eclipse_alloy').parent(GTMaterialIconSet.METALLIC)
+    event.create('solar_radiation_alloy').parent(GTMaterialIconSet.METALLIC)
     event.create('proto_matter').parent(GTMaterialIconSet.SHINY)
 })
 
@@ -135,6 +136,10 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
         .protons(168)
         .neutrons(316)
         .symbol('¤');
+    event.create('solar_radiation_alloy')
+        .protons(168)
+        .neutrons(316)
+        .symbol('☼*');
         //  ₂₃₄₅₆₇₈₉₀
 })
 
@@ -336,6 +341,7 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('infinity')
         .ingot()
         .element(GTElements.get("infinity"))
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .color(0xffffff)
         .iconSet('infinity')
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD,  GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
@@ -1824,7 +1830,7 @@ event.create("chrono_infinity")
 .ingot()
 .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
 .cableProperties(8589934592, 9999, 0, true)
-.blastTemp(17000, 'highest', 536870912, 900)
+.blastTemp(17000, 'highest', 536870912, 1800)
 .element(GTElements.get("chrono_infinity"))
 .color(0xffffff)
 .iconSet('chrono-infinity_alloy')
@@ -1965,6 +1971,24 @@ event.create("chrono_infinity")
         GTMaterialFlags.GENERATE_ROD, 
         GTMaterialFlags.GENERATE_GEAR, 
         GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_DENSE, 
+        GTMaterialFlags.GENERATE_ROTOR, 
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_SMALL_GEAR,
+        GTMaterialFlags.GENERATE_ROUND,
+        GTMaterialFlags.GENERATE_SPRING,
+        GTMaterialFlags.GENERATE_FRAME
+        )
+
+    event.create('solar_radiation_alloy')
+        .ingot()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .iconSet('solar_radiation_alloy')
+        .element('solar_radiation_alloy')
+        .flags(
+        GTMaterialFlags.GENERATE_PLATE, 
+        GTMaterialFlags.GENERATE_ROD, 
+        GTMaterialFlags.GENERATE_GEAR, 
         GTMaterialFlags.GENERATE_DENSE, 
         GTMaterialFlags.GENERATE_ROTOR, 
         GTMaterialFlags.GENERATE_BOLT_SCREW,
