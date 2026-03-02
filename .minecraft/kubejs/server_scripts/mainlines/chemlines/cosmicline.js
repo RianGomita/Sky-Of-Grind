@@ -169,7 +169,7 @@ sog.recipes.gtceu.plasma_nexus('advanced_refined_cosmic_matter_plasma')
 sog.recipes.gtceu.large_synchrotron_switcher("cosmic_proto")
 .inputFluids('gtceu:proto_matter 144')
 .outputFluids('gtceu:refined_cosmic_matter_plasma 1440')
-.itemOutputs('2x gtceu:annihiltation_residue_dust')
+.itemOutputs('2x gtceu:annihilation_residue_dust')
 .duration(20)
 .EUt(GTValues.VA[GTValues.UXV])
 
