@@ -30,7 +30,8 @@ ServerEvents.recipes(event => {
             '8x gtceu:uiv_field_generator',
             '64x kubejs:extremely_advanced_soc',
             '32x gtceu:fine_universium_wire',
-            '32x gtceu:space_time_spring')
+            '32x gtceu:space_time_spring',
+            '32x gtceu:annihiltation_residue')
         .itemOutputs('gtceu:eternity_fusion_reactor')
         .inputFluids(
             Fluid.of('gtceu:meta_stable_molten_kevlar', 5950),

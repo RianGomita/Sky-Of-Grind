@@ -283,7 +283,7 @@ event.recipes.gtceu.quantum_station('qed')
 
 event.recipes.gtceu.assembly_line("uxv_ultimate_battery")
 .itemInputs("16x gtceu:uhv_ultimate_battery")
-.itemInputs("2x #gtceu:circuits/uxv", "4x kubejs:eternity_heavy_plating", "1x kubejs:infinity_heavy_plating", "2x gtceu:uxv_field_generator", "8x soggtaddon:high_energy_collider_casing", "32x gtceu:double_solar_radiation_alloy_plate", "32x gtceu:double_solar_radiation_alloy_plate", "2x gtceu:uxv_electric_motor", "16x #gtceu:circuits/uiv", "64x #gtceu:circuits/uev", "64x gtceu:solar_radiation_alloy_bolt", "64x gtceu:eternity_foil", "gtceu:max_battery", "64x kubejs:quantum_anomaly", "64x kubejs:energized_quantum_anomaly")
+.itemInputs("2x #gtceu:circuits/uxv", "16x kubejs:eternity_heavy_plating", "2x kubejs:infinity_heavy_plating", "2x gtceu:uxv_field_generator", "8x soggtaddon:high_energy_collider_casing", "32x gtceu:double_solar_radiation_alloy_plate", "32x gtceu:double_solar_radiation_alloy_plate", "2x gtceu:uxv_electric_motor", "16x #gtceu:circuits/uiv", "64x #gtceu:circuits/uev", "64x gtceu:solar_radiation_alloy_bolt", "64x gtceu:eternity_foil", "gtceu:max_battery", "64x kubejs:quantum_anomaly", "64x kubejs:energized_quantum_anomaly")
 .inputFluids("gtceu:nihonium 144*16", "gtceu:oganesson 144*16")
 .itemOutputs("soggtaddon:uxv_ultimate_battery")
 .EUt(GTValues.VA[GTValues.UXV])
@@ -296,6 +296,17 @@ event.recipes.gtceu.assembly_line("high_energy_collider")
 .itemOutputs("soggtaddon:high_energy_collider")
 .EUt(GTValues.VA[GTValues.UXV])
 .duration(20*240)
+
+event.recipes.gtceu.assembly_line('singularity_reactor')
+.itemInputs('16x gtceu:proto_matter_plate', 'draconicevolution:chaotic_core', 'gtceu:opv_machine_hull', '4x soggtaddon:uxv_ultimate_battery', '4x #gtceu:circuits/uxv', '4x gtceu:uxv_robot_arm', '8x gtceu:uxv_electric_piston', '4x gtceu:uxv_field_generator')
+.itemOutputs('gtceu:singularity_reactor')
+.inputFluids(
+  Fluid.of('gtceu:exotic_particle_suspension', 9152),
+  Fluid.of('gtceu:proto_matter', 5000),
+  Fluid.of('gtceu:infinity', 5000)
+  )
+.duration(1000)
+.EUt(GTValues.VA[GTValues.OpV])   
 
 
 
