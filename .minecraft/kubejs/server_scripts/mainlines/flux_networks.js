@@ -14,11 +14,13 @@ ServerEvents.recipes(sog => {
     sog.recipes.gtceu.assembler('flux_plug')
         .itemInputs('4x fluxnetworks:flux_core', 'kubejs:gravitational_containment_cell')
         .itemOutputs('4x fluxnetworks:flux_plug')
+        .circuit(2)
         .duration(500)
         .EUt(GTValues.VA[GTValues.UV]);
     sog.recipes.gtceu.assembler('flux_point')
-        .itemInputs('4x fluxnetworks:flux_core', 'kubejs:quantum_energy_capsule')
-        .itemOutputs('1x fluxnetworks:flux_point')
+        .itemInputs('64x fluxnetworks:flux_core', 'kubejs:gravitational_containment_cell')
+        .itemOutputs('16x fluxnetworks:flux_point')
+        .circuit(1)
         .duration(500)
         .EUt(GTValues.VA[GTValues.UV]);
     sog.recipes.gtceu.compressor('flux_block')
