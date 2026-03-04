@@ -723,7 +723,7 @@
     "material.gtceu.spatial_flux": "Spatial Flux",
     "material.gtceu.stabilized_spatial_flux": "Stabilized Spatial Flux",
     "material.gtceu.temporal_flux_mixture": "Temporal Flux Mixture",
-    "material.gtceu.stabilized_temporal_flux_mixture": "StabilizedTemporal Flux Mixture",
+    "material.gtceu.stabilized_temporal_flux_mixture": "Stabilized Temporal Flux Mixture",
     "material.gtceu.time_looped_flux": "Time Looped Flux",
     "material.gtceu.reverse_temporal_flux": "Reverse Temporal Flux",
     "material.gtceu.proto_matter": "Proto Matter",
