@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                   .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
                   .or(Predicates.abilities(PartAbility.EXPORT_ITEMS, PartAbility.IMPORT_ITEMS, PartAbility.EXPORT_FLUIDS, PartAbility.IMPORT_FLUIDS))
                   .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                  .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1))
+                  .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
             )
             .where('#', Predicates.any())
             .build()
