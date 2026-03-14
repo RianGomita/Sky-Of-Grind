@@ -309,7 +309,7 @@ ServerEvents.recipes(event => {
             .itemInputs('64x kubejs:ultra_stable_cosmic_strings')
             .outputFluids('gtceu:spatial_flux 100')
             .duration(20*25)
-            .EUt(GTValues.VA[GTValues.OpV])
+            .EUt(GTValues.VA[GTValues.UXV])
 
         event.recipes.gtceu.stasis_phase_shifter('stabilized_spatial_flux')
             .inputFluids('gtceu:spatial_flux 10000', "advanced_ae:quantum_infusion_source 2500")
