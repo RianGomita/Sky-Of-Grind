@@ -88,6 +88,7 @@ event.recipes.gtceu.biolab('rawdna')
     .notConsumable('ad_astra:strophar_mushroom')
     .inputFluids('gtceu:bacteria 500', 'gtceu:sterilized_growth_medium 250')
     .itemOutputs('16x ad_astra:strophar_mushroom')
+    .circuit(1)
     .duration(790)
     .EUt(GTValues.VA[GTValues.UEV]);
     event.recipes.gtceu.large_bacterial_vat('stropharic_hypoxylon')
