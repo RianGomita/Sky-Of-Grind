@@ -2449,7 +2449,7 @@ const SHIFT_PLACEHOLDER_VALUES = {
             WATERTIGHT_CASING_TOOLTIP
     },
     "gtceu:large_chemical_bath": {
-        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "muffler", "pch"],
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "pch"],
         values:
             WATERTIGHT_CASING_TOOLTIP
     },
@@ -2489,7 +2489,7 @@ const SHIFT_PLACEHOLDER_VALUES = {
     },
     // WATERTIGHT_CASING_DT_TOOLTIP
     "gtceu:large_distillery": {
-        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "muffler", "pch"],
+        tooltipOrder: ["controller", "iteminput", "fluidinput", "itemoutput", "fluidoutput", "energy", "maintenance", "pch"],
         values:
             WATERTIGHT_CASING_DT_TOOLTIP
     },
