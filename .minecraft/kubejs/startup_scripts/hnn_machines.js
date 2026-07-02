@@ -1,0 +1,48 @@
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+    event.create('electric_simulation_chamber')
+        .category('extractor')
+        .setEUIO('in')
+        .setMaxIOSize(2, 9, 0, 0) // Item Input, Output, Fluid Input, Output
+        .setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ELECTROLYZER)
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('electric_simulation_chamber', 'simple') 
+        .tiers(GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV, GTValues.UIV, GTValues.UXV)
+        .definition((tier, builder) =>
+            builder
+        .langValue(GTValues.VLVH[tier] + " Electric Simulation Chamber")
+        .recipeType("electric_simulation_chamber")
+        .workableTieredHullModel("gtceu:block/machines/electric_simulation_chamber")
+        )
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('simulation_cube', 'multiblock')
+        .rotationState(RotationState.ALL)
+        .recipeType("electric_simulation_chamber")
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
+        .appearanceBlock(() => Block.getBlock('kubejs:soul_infused_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle("BBAAABB", "BBBBBBB", "ABBBBBA", "ABBBBBA", "ABBBBBA", "BBBBBBB", "BBAAABB")
+            .aisle("BBBBBBB", "BAAAAAB", "BAAAAAB", "BAAAAAB", "BAAAAAB", "BAAAAAB", "BBBBBBB")
+            .aisle("ABCCCBA", "BAAAAAB", "CAAAAAC", "CAAAAAC", "CAAAAAC", "BAAAAAB", "ABCCCBA")
+            .aisle("ABCCCBA", "BAAAAAB", "CAAAAAC", "CAAAAAC", "CAAAAAC", "BAAAAAB", "ABCCCBA")
+            .aisle("ABCCCBA", "BAAAAAB", "CAAAAAC", "CAAAAAC", "CAAAAAC", "BAAAAAB", "ABCCCBA")
+            .aisle("BBBBBBB", "BAAAAAB", "BAAAAAB", "BAAAAAB", "BAAAAAB", "BAAAAAB", "BBBBBBB")
+            .aisle("BBAAABB", "BBBBBBB", "ABBBBBA", "ABBDBBA", "ABBBBBA", "BBBBBBB", "BBAAABB")
+                .where("D", Predicates.controller(Predicates.blocks(definition.get())))
+                .where("A", Predicates.any())
+                .where("C", Predicates.blocks("gtceu:fusion_glass"))
+                .where("B", Predicates.blocks("kubejs:soul_infused_casing")
+                    .or(Predicates.abilities(PartAbility.IMPORT_ITEMS))
+                    .or(Predicates.abilities(PartAbility.EXPORT_ITEMS))
+                    .or(Predicates.abilities(PartAbility.INPUT_ENERGY))
+                    .or(Predicates.abilities(PartAbility.PARALLEL_HATCH))
+                    )
+            .build()
+        )
+        .workableCasingModel("kubejs:block/casings/soul_infused_casing", 'kubejs:block/gui/machine_controller/simulation_cube')
+})
