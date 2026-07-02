@@ -3,7 +3,7 @@ Platform.mods.bloodmagic.name = 'GregTechBM';
 
 StartupEvents.registry('item', sog => {
     //Universal circuits
-        const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"]
+        const tiers = ["ulv", "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv", "uxv", "opv"]
         tiers.forEach((universal_circuit) => {
             sog.create(universal_circuit + "_universal_circuit")
                 .tag("gtceu:circuits/" + universal_circuit)
@@ -1039,6 +1039,15 @@ sog.create('orbital_space_containment_casing')
     sog.create('temperature_proof_potin_casing')
         .displayName('Temperature-Proof Potin Casing')
         .textureAll('kubejs:block/casings/temperature_proof_potin_casing')
+        .soundType('metal')
+        .resistance(1)
+        .requiresTool(true)
+        .hardness(9)
+        .lightLevel(0)
+        .tagBlock('forge:mineable/wrench')
+    sog.create('soul_infused_casing')
+        .displayName('Soul-Infused Casing')
+        .textureAll('kubejs:block/casings/soul_infused_casing')
         .soundType('metal')
         .resistance(1)
         .requiresTool(true)
