@@ -1,4 +1,3 @@
-
 const $OreProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.OreProperty');
 Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.Material'); // This line is generally not needed
 
@@ -150,19 +149,37 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     const $DustProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.DustProperty');
     const $BlastProperty = Java.loadClass('com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty');
 
-GTMaterials.Neutronium.addFlags(GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_DENSE)
-GTMaterials.StainlessSteel.addFlags(GTMaterialFlags.GENERATE_DENSE)
-
-GTMaterials.PolyvinylButyral.addFlags(GTMaterialFlags.GENERATE_FOIL)
-
-GTMaterials.Californium.setProperty(PropertyKey.DUST, new $DustProperty());
-
-GTMaterials.Nihonium.setProperty(PropertyKey.DUST, new $DustProperty());
-GTMaterials.Nihonium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-
-GTMaterials.Thallium.setProperty(PropertyKey.DUST, new $DustProperty());
-GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
-
+    GTMaterials.Neutronium.addFlags(
+        GTMaterialFlags.GENERATE_FINE_WIRE,
+        GTMaterialFlags.GENERATE_FOIL,
+        GTMaterialFlags.GENERATE_RING,
+        GTMaterialFlags.GENERATE_ROUND,
+        GTMaterialFlags.GENERATE_GEAR,
+        GTMaterialFlags.GENERATE_SMALL_GEAR,
+        GTMaterialFlags.GENERATE_BOLT_SCREW,
+        GTMaterialFlags.GENERATE_DENSE
+    );
+    GTMaterials.StainlessSteel.addFlags(
+        GTMaterialFlags.GENERATE_DENSE
+    );
+    GTMaterials.PolyvinylButyral.addFlags(
+        GTMaterialFlags.GENERATE_FOIL
+    );
+    GTMaterials.Californium.setProperty(
+        PropertyKey.DUST, new $DustProperty()
+    );
+    GTMaterials.Nihonium.setProperty(
+        PropertyKey.DUST, new $DustProperty()
+    );
+    GTMaterials.Nihonium.setProperty(
+        PropertyKey.INGOT, new $IngotProperty()
+    );
+    GTMaterials.Thallium.setProperty(
+        PropertyKey.DUST, new $DustProperty()
+    );
+    GTMaterials.Thallium.setProperty(
+        PropertyKey.INGOT, new $IngotProperty()
+    );
 
 
 
@@ -317,7 +334,7 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x2b3d2d)
         .element('resonant_naquadah')
         .blastTemp(9100) 
-        .cableProperties(GTValues.V[GTValues.UV], 128, 2, true)
+        .cableProperties(GTValues.V[GTValues.UV], 256, 0, true)
         .iconSet(GTMaterialIconSet.SHINY)
         .flags(
             GTMaterialFlags.GENERATE_PLATE,
@@ -328,8 +345,7 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
             GTMaterialFlags.GENERATE_FOIL,
             GTMaterialFlags.NO_SMELTING,
             GTMaterialFlags.NO_ORE_SMELTING
-
-        )
+        );
     event.create('crystal_matrix')
         .ingot().liquid()
         .element('crystal_matrix')
@@ -337,21 +353,39 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .iconSet('shiny')
         .cableProperties(GTValues.V[GTValues.UHV], 256, 0, true)
         .fluidPipeProperties(100000, 64000, true, true, true, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_DENSE);
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_DENSE
+        );
     event.create('infinity')
         .ingot()
         .element(GTElements.get("infinity"))
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .color(0xffffff)
         .iconSet('infinity')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD,  GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_ROUND, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_SMALL_GEAR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE);
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_DENSE
+        );
     event.create('infinity_catalyst')
         .dust()
         .element(GTElements.get("infinity"))
         .color(0xffffff)
         .iconSet('infinity_catalyst')
         .ore(1, 1,)
-
     event.create("triplatirium_235")
         .ingot().liquid()
         .components('1x uranium-235', '1x uranium', '3x platinum', '1x duranium')
@@ -360,8 +394,15 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .blastTemp(10800)
         .color(0x47ffaf)
         .iconSet('metallic')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.NO_SMELTING);
-
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_DENSE,
+            GTMaterialFlags.NO_SMELTING
+        );
     event.create("atomic_alloy")
         .ingot()
         .components('14x californium', '1x uranium-235', '1x uranium', '3x platinum', '1x duranium')
@@ -369,8 +410,17 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .blastTemp(10800)
         .color(0x513499)
         .iconSet('bright')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.NO_SMELTING);
-
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_DENSE,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.NO_SMELTING
+        );
     event.create("triplatirium_sulfate")
         .liquid()
         .color(0xbff52a)
@@ -412,18 +462,27 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x8f34eb)
         .element('antimatter')
         .iconSet('metallic')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.NO_SMELTING);
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_DENSE,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.NO_SMELTING
+        );
     event.create('reactable_fissioned_matter')
         .plasma()
         .color(0x270a4d)
-        event.create('cosmic_neutronium')
+    event.create('cosmic_neutronium')
         .ingot()
         .color(0x161616)
         .ore(1, 1,)
         .element('cosmic_neutronium')
         .iconSet('radioactive')
         .blastTemp(13000, 'highest', 2097152, 2400)
-        .cableProperties(GTValues.V[GTValues.OpV], 999, 0, true)
+        .cableProperties(GTValues.V[GTValues.OpV], 256, 0, true)
         .flags(
             GTMaterialFlags.GENERATE_PLATE, 
             GTMaterialFlags.GENERATE_ROD, 
@@ -435,40 +494,72 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_SMALL_GEAR,
             GTMaterialFlags.GENERATE_ROUND,
-            GTMaterialFlags.GENERATE_SPRING
-        )
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL
+        );
     event.create('heavy_duty_alloy_t1')
         .ingot()
         .color(0x333e47)
         .blastTemp(10000)
         .cableProperties(GTValues.V[GTValues.EV], 32, 0, true)
         .iconSet('metallic')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.NO_SMELTING)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING
+        );
     event.create('heavy_duty_alloy_t2')
         .ingot()
         .color(0xfbff00)
         .blastTemp(10000)
         .iconSet('metallic')
-        .cableProperties(GTValues.V[GTValues.LuV], 64, 0, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.NO_SMELTING)
+        .cableProperties(GTValues.V[GTValues.LuV], 256, 0, true)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING
+        );
     event.create('heavy_duty_alloy_t3')
         .ingot()
         .color(0xb2a7d4)
         .blastTemp(10000)
         .cableProperties(GTValues.V[GTValues.UHV], 1024, 0, true)
         .iconSet('metallic')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.NO_SMELTING)
-        event.create('heavy_duty_alloy_t4')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.NO_SMELTING
+        );
+    event.create('heavy_duty_alloy_t4')
         .ingot().liquid()
         .color(0x17e0ff)
         .cableProperties(GTValues.V[GTValues.UXV], 24, 0, true)
         .iconSet('metallic')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_ROTOR
+        );
     event.create('mixed_alloy')
         .ingot()
         .color(0xe8c492)
         .iconSet('metallic')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        );
     event.create('kaemite')
         .ingot().liquid()
         .color(0x00cfff)
@@ -476,7 +567,13 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .element('kaemite')
         .iconSet('metallic')
         .cableProperties(GTValues.V[GTValues.UEV], 32, 0, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_FRAME)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FRAME
+        );
     event.create('acidic_venus_residue')
         .liquid()
         .color(0x944e09)
@@ -491,7 +588,16 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .element('resonant_essence')
         .iconSet('bright')
         .cableProperties(GTValues.V[GTValues.UEV], 256, 0, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_BOLT_SCREW)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_DENSE,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_BOLT_SCREW
+        );
     event.create('energized_superconductor')
         .ingot()
         .color(0xffa600)
@@ -516,63 +622,79 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .ingot()
         .color(0x6200ff)
         .iconSet('bright')
-        .cableProperties(GTValues.V[GTValues.ZPM], 32, 0, true)
+        .cableProperties(GTValues.V[GTValues.ZPM], 256, 0, true)
     event.create('teslarium')
         .ingot()
         .color(0x4800bd)
         .iconSet('shiny')
         .element('teslarium')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        );
 
-        // B A C T E R I A L   S T U F F
 
-        event.create("raw_bacterial_dna")
+    // B A C T E R I A L   S T U F F
+
+    event.create("raw_bacterial_dna")
         .liquid()
         .color(0xf595eb)
-        event.create("overgrown_bacterial_dna")
+    event.create("overgrown_bacterial_dna")
         .liquid()
         .color(0x95f5d0)
-        event.create("panaeolus_cyanescens")
+    event.create("panaeolus_cyanescens")
         .liquid()
         .color(0x3a5963)
-        event.create("streptomyces_coelicolor")
+    event.create("streptomyces_coelicolor")
         .liquid()
         .color(0x3a6353)
-        event.create("pcr_its1_its2")
+    event.create("pcr_its1_its2")
         .liquid()
         .color(0xdb393e)
-        event.create("streptomyces_peucetius")
+    event.create("streptomyces_peucetius")
         .liquid()
         .color(0xdb3962)
-        event.create("taq_polymerase")
+    event.create("taq_polymerase")
         .liquid()
         .color(0x082b06)
-        event.create("doxorubicin")
+    event.create("doxorubicin")
         .liquid()
         .color(0x062b18)
-        event.create("phage")
+    event.create("phage")
         .liquid()
         .color(0x148f50)
-        event.create("bacterium")
+    event.create("bacterium")
         .liquid()
         .color(0xe310b9)
-        event.create("bacterial_dna")
+    event.create("bacterial_dna")
         .liquid()
         .color(0xff0066)
-        event.create("mycena_hypsizyga")
+    event.create("mycena_hypsizyga")
         .liquid()
         .color(0x00ff11)
-        event.create("stropharic_hypoxylon")
+    event.create("stropharic_hypoxylon")
         .liquid()
         .color(0x7a64f5)
-        event.create("hypoxylon")
+    event.create("hypoxylon")
         .liquid().ingot()
         .color(0x7c65fc)
         .element('hypoxylon')
         .iconSet('bright')
-        .cableProperties(GTValues.V[GTValues.UXV], 64, 2, true)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.GENERATE_BOLT_SCREW, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_ORE_SMELTING)
-    
+        .cableProperties(GTValues.V[GTValues.UXV], 256, 0, true)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_DENSE,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.NO_ORE_SMELTING
+        );
     event.create('draconium')
         .ingot().liquid()
         .ore(1, 1,)
@@ -591,11 +713,10 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
             GTMaterialFlags.GENERATE_SMALL_GEAR,
             GTMaterialFlags.GENERATE_LONG_ROD,
             GTMaterialFlags.GENERATE_LENS,
-            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_ROUND
         )
         .blastTemp(13000, 'highest', 2097152, 200)
         .cableProperties(GTValues.V[GTValues.UEV], 8, 4, false)
-    
     event.create('awakened_draconium')
         .ingot().liquid()
         .ore(1, 1,)
@@ -613,7 +734,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
             GTMaterialFlags.GENERATE_BOLT_SCREW,
             GTMaterialFlags.GENERATE_SMALL_GEAR,
             GTMaterialFlags.GENERATE_LONG_ROD,
-            GTMaterialFlags.GENERATE_ROUND
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL
         )
         .blastTemp(15000, 'highest', 134217728, 3400)
         .cableProperties(GTValues.V[GTValues.UIV], 32, 4, false)
@@ -624,7 +747,10 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .formula('Cf₁₉(Si(Ir₁₉Os₈(Nc(Cr₇Nt₄)₈)(PbR(Pb₆Pt₂Rn₁))₁)₈)', true)
         .color(0xa0b0bd).secondaryColor(0x232020)
         .iconSet('radioactive')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_DENSE)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.GENERATE_DENSE
+        );
     event.create('stabilized_iridium')
         .ingot().liquid()
         .components('19x iridium', '8x osmium', '56x chromium', '36x neutronium', '6x lead', '2x platinum', '1x radon')
@@ -632,7 +758,12 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x9deafa).secondaryColor(0x232020)
         .iconSet('radioactive')
         .blastTemp(13000, 'highest', 2097152, 200)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_GEAR
+        );
     event.create('magnetic_stabilized_iridium')
         .ingot()
         .formula('Ir₁₉Os₈(Nc(Cr₇Nt₄)₈)(PbR(Pb₆Pt₂Rn))₁)', true)
@@ -641,8 +772,10 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .ingotSmeltInto(GTMaterials.get('stabilized_iridium'))
         .arcSmeltInto(GTMaterials.get('stabilized_iridium'))
         .macerateInto(GTMaterials.get('stabilized_iridium'))
-        .flags(GTMaterialFlags.GENERATE_LONG_ROD, GTMaterialFlags.IS_MAGNETIC)
-
+        .flags(
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.IS_MAGNETIC
+        );
     event.create('neutronic_chromite')
         .ingot()
         .components('7x chromium', '4x neutronium')
@@ -650,7 +783,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0xf5c6da).secondaryColor(0x232020)
         .iconSet('radioactive')
         .blastTemp(10500, 'highest', 524288, 900)
-        .flags(GTMaterialFlags.GENERATE_PLATE)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE
+        );
     event.create('radium_infused_lead')
         .ingot()
         .components('6x lead', '2x platinum', '1x radon')
@@ -658,22 +793,37 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x52303e)
         .iconSet('shiny')
         .blastTemp(3500, 'highest', 2048, 900)
-        .flags(GTMaterialFlags.GENERATE_PLATE)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE
+        );
     event.create('chaos')
         .gem().liquid()
         .ore(1, 1,)
         .element('chaos')
-        .cableProperties(GTValues.V[GTValues.UIV], 512, 0, true)
+        .cableProperties(GTValues.V[GTValues.UIV], 256, 0, true)
         .color(0x010005)
         .iconSet('dull')
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.GENERATE_DENSE)
-/// P O L Y M E R   S T U F F
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_LENS,
+            GTMaterialFlags.GENERATE_DENSE
+        );
+
+
+    /// P O L Y M E R   S T U F F
 
     event.create('neoprene')
         .liquid(313).ingot().polymer()
         .color(0xFFECB3)
         .components('4x carbon', '5x hydrogen', '1x chlorine')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.NO_SMELTING)  
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.NO_SMELTING
+        )
         .iconSet('bright')
     event.create('xlpe')
         .liquid(408).ingot().polymer()
@@ -681,34 +831,71 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .components('2x carbon', '4x hydrogen')
         .formula("(C₂H₄)↔", true)
         .iconSet('bright')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_RING)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_RING
+        );
     event.create('peek')
         .liquid(408).ingot().polymer()
         .color(0x382e27)
         .components('19x carbon', '12x hydrogen', '3x oxygen')
         .iconSet('bright')
         .fluidPipeProperties(616, 50000, true, true, true, false)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_FRAME)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_FRAME
+        );
     event.create('carbon_nanotubes')
         .ingot()
         .color(0x050505)
         .components('64x carbon')
         .formula("C⁺", true)
         .iconSet('bright')
-        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .flags(
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        );
     event.create('kevlar')
         .ingot()
         .color(0xd7d952)
         .components('14x carbon', '10x hydrogen', '2x nitrogen', '2x oxygen')
         .iconSet('dull')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_DENSE,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        );
     event.create('zylon')
         .ingot()
         .color(0xd1a72a)
         .components('14x carbon', '6x hydrogen', '2x nitrogen', '2x oxygen')
         .iconSet('bright')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.GENERATE_RING, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FINE_WIRE)
-
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.NO_SMELTING,
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_FRAME,
+            GTMaterialFlags.GENERATE_DENSE,
+            GTMaterialFlags.GENERATE_FINE_WIRE
+        );
 	event.create('sbr_emulsion')
 		.liquid(353)
 		.color(0xFFECB3)
@@ -717,7 +904,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
 		.liquid(305) 
 		.color(0xF5F5F5)
 		.components('1x silicon', '1x hydrogen', '3x chlorine')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
 	event.create('pure_trichlorosilane')
 		.liquid(305) 
 		.color(0xFFFFFF)
@@ -750,32 +939,44 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .dust()
         .color(0xDEDEDE)
         .components('2x carbon', '3x hydrogen', '1x sodium', '2x oxygen')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('calcium_carbide')
         .dust()
         .color(0x6b6a66)
         .components('1x calcium', '2x carbon')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('acetylene')
         .gas(467)
         .color(0xabaaa7)
         .components('2x carbon', '2x hydrogen')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('cuprous_chloride')
         .dust()
         .color(0x4A3C78)
         .components('1x copper', '1x chlorine')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('vinylacetylene')
         .liquid(273)
         .color(0xFFAB91)
         .components('4x carbon', '4x hydrogen')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('chloroprene')
         .liquid(332)
         .color(0xFFCC80)
         .components('4x carbon', '5x hydrogen', '1x chlorine')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('neoprene_latex')
         .liquid(313) 
         .color(0xc2b17e)
@@ -788,12 +989,16 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(388)
         .color(0xFFF59D)
         .components('9x carbon', '12x hydrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('dicumyl_peroxide')
         .liquid(353)
         .color(0xF5F5F5)
         .components('18x carbon', '22x hydrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('pe_peroxide_mixture')
         .liquid(473)
         .color(0xE0E0E0)
@@ -802,17 +1007,24 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .ingot()
         .color(0xE0E0E0)
         .components('4x carbon', '2x hydrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION,
+            GTMaterialFlags.GENERATE_PLATE
+        );
     event.create('antimony_pentafluoride')
         .dust()
         .color(0xE6E6FA)
         .components('1x antimony', '5x fluorine')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('aluminium_chloride')
         .dust()
         .color(0xE6E6FA)
         .components('1x aluminium', '3x chlorine')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('fluorobenzene')
         .liquid(358)
         .color(0xFFFF00)
@@ -825,17 +1037,23 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(349)
         .color(0xFFFFE0)
         .components('1x sulfur', '1x oxygen', '2x chlorine')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('benzenesulfonic_acid')
         .dust()
         .color(0xE6E6FA)
         .components('6x carbon', '6x hydrogen', '3x oxygen', '1x sulfur')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('benzenesulfonyl_chloride')
         .liquid(291)
         .color(0xffff7a)
         .components('6x carbon', '5x hydrogen', '1x chlorine', '2x oxygen', '1x sulfur')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('diphenyl_sulfone')
         .liquid(428) 
         .color(0xF5F5F5)
@@ -849,12 +1067,16 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(593)
         .color(0xFFFF00)
         .components('13x carbon', '8x hydrogen', '2x fluorine', '1x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('purified_difluorobenzophenone')
         .dust()
         .color(0xFFEB3B)
         .components('13x carbon', '8x hydrogen', '2x fluorine', '1x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('iron_sulfate')
         .dust()
         .color(0x94d490)
@@ -896,17 +1118,23 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(249)
         .color(0xc0c299)
         .components('5x carbon', '9x hydrogen', '1x nitrogen', '1x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('raw_peek_solution')
         .liquid(593)
         .color(0x382a1f)
         .components('19x carbon', '12x hydrogen', '3x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('raw_peek')
         .dust()
         .color(0x382a1f)
         .components('19x carbon', '12x hydrogen', '3x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('enriched_carbon_slurry')
         .liquid(4600)
         .color(0x050505)
@@ -926,7 +1154,11 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
     event.create('wet_carbon_nanotubes')
         .dust()
         .color(0x0f0f0f)
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_MATERIAL_RECIPES)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_FOIL,
+            GTMaterialFlags.DISABLE_MATERIAL_RECIPES
+        );
     event.create('deep_water')
         .liquid(300)
         .color(0x01076e)
@@ -972,7 +1204,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x1152a8)
         .components('2x aluminium', '4x oxygen', '1x cobalt')
         .formula('CoO·Al₂O₃', true)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('activated_cobalt_alumina_catalyst')
         .dust()
         .color(0x4a7f96)
@@ -998,17 +1232,23 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(322) 
         .color(0xFFECB3)
         .components('3x carbon', '6x hydrogen', '1x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('propionic_acid')
         .liquid(414) 
         .color(0xF5F5F5)
         .components('3x carbon', '6x hydrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('propylamine')
         .liquid(321)
         .color(0xE1F5FE)
         .components('3x carbon', '9x hydrogen', '1x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('sodium_cyanide')
         .dust()
         .color(0xe8e8e8)
@@ -1030,12 +1270,16 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .dust()
         .color(0xd0d1cd)
         .components('8x carbon', '12x hydrogen', '4x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION) 
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        ); 
     event.create('tripropylamine')
         .liquid(403) 
         .color(0xF3E5F5)
         .components('9x carbon', '21x hydrogen', '1x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('hydrogen_bromide')
         .gas(206)
         .color(0xeb823d)
@@ -1044,7 +1288,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(344)
         .color(0xFFCC80)
         .components('3x carbon', '7x hydrogen', '1x bromine')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('tetrapropylammonium_bromide_solution')
         .liquid(344)
         .color(0x99914e)
@@ -1062,12 +1308,16 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(325)
         .color(0xab7055)
         .components('2x carbon', '6x hydrogen', '1x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('sodium_aluminate')
         .dust()
         .color(0xf7f5bc)
         .components('1x sodium', '1x aluminium', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('zsm_5_solution')
         .liquid(325)
         .color(0x66853e)
@@ -1090,7 +1340,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(312)
         .color(0xFFF8DC)
         .components('5x carbon', '6x hydrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('sodium_hypochlorite')
         .dust()
         .color(0xdedad1)
@@ -1099,12 +1351,16 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(305)
         .color(0x804541)
         .components('5x carbon', '2x hydrogen', '8x chlorine')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('hexachlorocyclopentadiene')
         .liquid(305)
         .color(0xe9eb7f)
         .components('5x carbon', '6x chlorine')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('endosulfate')
         .dust()
         .color(0x4a391d)
@@ -1162,7 +1418,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .dust()
         .color(0xecf5e6)
         .components('8x carbon', '6x hydrogen', '4x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('terephthalic_acid')
         .dust()
         .color(0xF5F5F5)
@@ -1171,7 +1429,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(536) 
         .color(0xFFF59D)
         .components('8x carbon', '4x hydrogen', '2x chlorine', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('copper_sulfate')
         .dust() 
         .color(0x2828d1)
@@ -1193,32 +1453,44 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .dust() 
         .color(0xd4af5f)
         .components('6x carbon', '6x hydrogen', '2x nitrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)    
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );    
     event.create('p_phenylenediamine_solution')
         .liquid(413)
         .color(0x4A148C)
         .components('6x carbon', '8x hydrogen', '2x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)   
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );   
     event.create('p_phenylenediamine')
         .liquid(413)
         .color(0x5409b0)
         .components('6x carbon', '8x hydrogen', '2x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)   
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );   
     event.create('kevlar_polymer_solution')
         .liquid(278)
         .color(0x7B1FA2)
         .components('14x carbon', '10x hydrogen', '2x nitrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('degassed_kevlar_solution')
         .liquid(273)
         .color(0x7B1FA2)
         .components('14x carbon', '10x hydrogen', '2x nitrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)   
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );   
     event.create('meta_stable_molten_kevlar')
         .liquid(666)
         .color(0xd6d93d)
         .components('14x carbon', '10x hydrogen', '2x nitrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)   
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );   
     event.create('triethylaluminium')
         .liquid(390)
         .color(0x807745)
@@ -1249,12 +1521,16 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .dust()
         .color(0xdbce9c)
         .components('18x carbon', '36x hydrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)  
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );  
     event.create('oleic_acid')
         .liquid()
         .color(0xb8c991)
         .components('18x carbon', '34x hydrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('plasmacracked_coal_tar')
         .liquid(323)
         .color(0x1f1f1f)
@@ -1269,12 +1545,16 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(383)
         .color(0xE0E0E0)
         .components('5x carbon', '5x hydrogen', '1x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('acetaldehyde')
         .gas(297)
         .color(0x9e4c4c)
         .components('2x carbon', '4x hydrogen', '1x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('synthetic_pyridine_mixture')
         .liquid(354)
         .color(0xbf8d49)
@@ -1282,17 +1562,23 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(383)
         .color(0xcfc7bc)
         .components('5x carbon', '5x hydrogen', '1x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
      event.create('technical_pyridine_mixture')
         .liquid(473)
         .color(0xFFECB3)
         .components('5x carbon', '5x hydrogen', '1x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('dry_technical_pyridine')
         .liquid(393)
         .color(0xBCAAA4)
         .components('5x carbon', '5x hydrogen', '1x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('water_toluene_azeotrope')
         .liquid(393)
         .color(0x5e2b2b)
@@ -1300,7 +1586,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(388)
         .color(0x9E9E9E)
         .components('5x carbon', '5x hydrogen', '1x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('picoline')
         .dust()
         .color(0xa8d15c)
@@ -1320,22 +1608,30 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid()
         .color(0xb8420b)
         .components('4x carbon', '10x hydrogen', '1x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('dichloropyridine')
         .dust()
         .color(0xbdafa6)
         .components('5x carbon', '3x hydrogen', '2x chlorine', '1x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('2-6_bischloromagnesiopyridine')
         .liquid()
         .color(0xF0E68C)
         .components('5x carbon', '3x hydrogen', '2x chlorine', '2x magnesium', '1x nitrogen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('magnesium_pyridine_2-6_dicarboxylate')
         .dust()
         .color(0xc7c4a9)
         .components('7x carbon', '3x hydrogen', '1x magnesium', '1x nitrogen', '4x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('picolinic_acid_slurry')
         .liquid()
         .color(0x8e5999)
@@ -1371,7 +1667,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid()
         .color(0xbf9c71)
         .components('6x carbon', '3x hydrogen', '2x chlorine', '1x nitrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('dipicolinyl_dichloride')
         .dust()
         .color(0xdbbf9c)
@@ -1423,24 +1721,33 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(453)
         .color(0x7B1FA2)
         .components('14x carbon', '6x hydrogen', '2x nitrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('degassed_zylon_solution')
         .liquid(429)
         .color(0xc96ef0)
         .components('14x carbon', '6x hydrogen', '2x nitrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('treated_zylon_polymer_solution')
         .liquid(444)
         .color(0xc2a634)
         .components('14x carbon', '6x hydrogen', '2x nitrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('meta_stable_molten_zylon')
         .liquid(666)
         .color(0xd1af24)
         .components('14x carbon', '6x hydrogen', '2x nitrogen', '2x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
 
-/// P C B Stuff
+
+    /// P C B Stuff
 
     event.create('nano_diamond')
         .gem()
@@ -1489,7 +1796,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .formula('Cn⇄')
         .iconSet('opal')
         .color(0x4de8de)
-        .flags(GTMaterialFlags.GENERATE_LENS)
+        .flags(
+            GTMaterialFlags.GENERATE_LENS
+        );
     event.create('silicon_tetrachloride')
         .liquid(330)
         .color(0x9d82b8)
@@ -1502,7 +1811,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .liquid(483)
         .color(0xc1ced6)
         .components('1x silver', '1x nitrogen', '3x oxygen')
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('nanoreinforced_silver')
         .dust()
         .color(0xa3a29d)
@@ -1517,7 +1828,9 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .dust()
         .color(0x857999)
         .components('1x sodium', '1x iodine', '3x oxygen')
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING)
+        .flags(
+            GTMaterialFlags.DECOMPOSITION_BY_ELECTROLYZING
+        );
     event.create('thallium_iodine')
         .dust()
         .color(0xfcf03d)
@@ -1527,7 +1840,10 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0x585163)
         .components('1x sodium', '1x iodine', '1x thallium')
         .formula('NaI(Tl)', true)
-        .flags(GTMaterialFlags.GENERATE_LENS, GTMaterialFlags.DISABLE_DECOMPOSITION)  
+        .flags(
+            GTMaterialFlags.GENERATE_LENS,
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );  
     event.create('tachyon_condensate')
         .liquid(10)
         .color(0xb519ad)
@@ -1555,304 +1871,293 @@ GTMaterials.Thallium.setProperty(PropertyKey.INGOT, new $IngotProperty());
         .color(0xdb5a96)
 
 
-
-
-
-
-
-
-
-/// C O S M I C   M A T E R I A L S   F U S I O N
+    /// C O S M I C   M A T E R I A L S   F U S I O N
     
-event.create('cosmic_tungsten')
-.ingot().liquid()
-.ore(1, 1,)
-.element('cosmic_tungsten')
-.color(0x04011c)
-.iconSet('radioactive')
-.blastTemp(13000, 'highest', 8388608, 900)
-.flags(
-    GTMaterialFlags.GENERATE_PLATE, 
-    GTMaterialFlags.GENERATE_ROD, 
-    GTMaterialFlags.GENERATE_GEAR, 
-    GTMaterialFlags.GENERATE_FINE_WIRE,
-    GTMaterialFlags.GENERATE_FRAME, 
-    GTMaterialFlags.GENERATE_DENSE, 
-    GTMaterialFlags.GENERATE_ROTOR, 
-    GTMaterialFlags.GENERATE_BOLT_SCREW,
-    GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_LONG_ROD,
-    GTMaterialFlags.GENERATE_ROUND
-)
-event.create('cosmic_titanium')
-.ingot().liquid()
-.ore(1, 1,)
-.element('cosmic_titanium')
-.color(0x3d0245)
-.iconSet('radioactive')
-.blastTemp(13000, 'highest', 8388608, 900)
-.flags(
-    GTMaterialFlags.GENERATE_PLATE, 
-    GTMaterialFlags.GENERATE_ROD, 
-    GTMaterialFlags.GENERATE_GEAR, 
-    GTMaterialFlags.GENERATE_FINE_WIRE,
-    GTMaterialFlags.GENERATE_FRAME, 
-    GTMaterialFlags.GENERATE_DENSE, 
-    GTMaterialFlags.GENERATE_ROTOR, 
-    GTMaterialFlags.GENERATE_BOLT_SCREW,
-    GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_LONG_ROD
-)
-event.create('cosmic_iridium')
-.ingot().liquid()
-.ore(1, 1,)
-.element('cosmic_iridium')
-.color(0x016646)
-.iconSet('radioactive')
-.blastTemp(13000, 'highest', 33554432, 900)
-.flags(
-    GTMaterialFlags.GENERATE_PLATE, 
-    GTMaterialFlags.GENERATE_ROD, 
-    GTMaterialFlags.GENERATE_GEAR, 
-    GTMaterialFlags.GENERATE_FINE_WIRE,
-    GTMaterialFlags.GENERATE_FRAME, 
-    GTMaterialFlags.GENERATE_DENSE, 
-    GTMaterialFlags.GENERATE_ROTOR, 
-    GTMaterialFlags.GENERATE_BOLT_SCREW,
-    GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_LONG_ROD
-)
-event.create('cosmic_osmium')
-.ingot().liquid()
-.ore(1, 1,)
-.element('cosmic_osmium')
-.color(0x023e45)
-.iconSet('radioactive')
-.blastTemp(13000, 'highest', 8388608, 900)
-.flags(
-    GTMaterialFlags.GENERATE_PLATE, 
-    GTMaterialFlags.GENERATE_ROD, 
-    GTMaterialFlags.GENERATE_GEAR, 
-    GTMaterialFlags.GENERATE_FINE_WIRE,
-    GTMaterialFlags.GENERATE_FRAME, 
-    GTMaterialFlags.GENERATE_DENSE, 
-    GTMaterialFlags.GENERATE_ROTOR, 
-    GTMaterialFlags.GENERATE_BOLT_SCREW,
-    GTMaterialFlags.GENERATE_LONG_ROD,
-    GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_ROUND
-)
+    event.create('cosmic_tungsten')
+        .ingot().liquid()
+        .ore(1, 1,)
+        .element('cosmic_tungsten')
+        .color(0x04011c)
+        .iconSet('radioactive')
+        .blastTemp(13000, 'highest', 8388608, 900)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FRAME, 
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_ROUND
+        );
+    event.create('cosmic_titanium')
+        .ingot().liquid()
+        .ore(1, 1,)
+        .element('cosmic_titanium')
+        .color(0x3d0245)
+        .iconSet('radioactive')
+        .blastTemp(13000, 'highest', 8388608, 900)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FRAME, 
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_LONG_ROD
+        );
+    event.create('cosmic_iridium')
+        .ingot().liquid()
+        .ore(1, 1,)
+        .element('cosmic_iridium')
+        .color(0x016646)
+        .iconSet('radioactive')
+        .blastTemp(13000, 'highest', 33554432, 900)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FRAME, 
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_LONG_ROD
+        );
+    event.create('cosmic_osmium')
+        .ingot().liquid()
+        .ore(1, 1,)
+        .element('cosmic_osmium')
+        .color(0x023e45)
+        .iconSet('radioactive')
+        .blastTemp(13000, 'highest', 8388608, 900)
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FRAME, 
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND
+        );
+    event.create("universium")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .ingot()
+        .element(GTElements.get("universium"))
+        .color(0xffffff)
+        .iconSet('universium')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_FRAME
+        );
+    event.create("eternity")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .ingot()
+        .element(GTElements.get("eternity"))
+        .color(0xffffff)
+        .iconSet('eternity')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_FRAME
+        );
+    event.create("molten_space_time")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .color(0xffffff)
+    event.create('space_time')
+        .ingot()
+        .element('space_time')
+        .color(0xffffff)
+        .iconSet('space_time')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_RING,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_SPRING, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW, 
+            GTMaterialFlags.PHOSPHORESCENT
+        );
+    event.create("stellar_matter_plasma")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .ingot()
+        .element(GTElements.get("stellar_matter_plasma"))
+        .color(0xffffff)
+        .iconSet('stellar_matter')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_FRAME
+        );
 
 
-event.create("universium")
-.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-.ingot()
-.element(GTElements.get("universium"))
-.color(0xffffff)
-.iconSet('universium')
-.flags(
-    GTMaterialFlags.GENERATE_PLATE, 
-    GTMaterialFlags.GENERATE_ROD, 
-    GTMaterialFlags.GENERATE_GEAR, 
-    GTMaterialFlags.GENERATE_FINE_WIRE,
-    GTMaterialFlags.GENERATE_DENSE, 
-    GTMaterialFlags.GENERATE_ROTOR, 
-    GTMaterialFlags.GENERATE_BOLT_SCREW,
-    GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_SPRING,
-    GTMaterialFlags.GENERATE_FRAME
-)
-event.create("eternity")
-.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-.ingot()
-.element(GTElements.get("eternity"))
-.color(0xffffff)
-.iconSet('eternity')
-.flags(
-    GTMaterialFlags.GENERATE_PLATE, 
-    GTMaterialFlags.GENERATE_ROD, 
-    GTMaterialFlags.GENERATE_GEAR, 
-    GTMaterialFlags.GENERATE_FINE_WIRE,
-    GTMaterialFlags.GENERATE_DENSE, 
-    GTMaterialFlags.GENERATE_ROTOR, 
-    GTMaterialFlags.GENERATE_BOLT_SCREW,
-    GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_SPRING,
-    GTMaterialFlags.GENERATE_FRAME
-)
-event.create("molten_space_time")
-.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-.color(0xffffff)
-event.create('space_time')
-.ingot()
-.element('space_time')
-.color(0xffffff)
-.iconSet('space_time')
-.flags(
-    GTMaterialFlags.GENERATE_PLATE,
-    GTMaterialFlags.GENERATE_ROD,
-    GTMaterialFlags.GENERATE_LONG_ROD,
-    GTMaterialFlags.GENERATE_RING,
-    GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_GEAR, 
-    GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_SPRING, 
-    GTMaterialFlags.GENERATE_BOLT_SCREW, 
-    GTMaterialFlags.PHOSPHORESCENT
-)
+    // COSMIC LINE
 
-event.create("stellar_matter_plasma")
-.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-.ingot()
-.element(GTElements.get("stellar_matter_plasma"))
-.color(0xffffff)
-.iconSet('stellar_matter')
-.flags(
-    GTMaterialFlags.GENERATE_PLATE, 
-    GTMaterialFlags.GENERATE_ROD, 
-    GTMaterialFlags.GENERATE_GEAR, 
-    GTMaterialFlags.GENERATE_FINE_WIRE,
-    GTMaterialFlags.GENERATE_DENSE, 
-    GTMaterialFlags.GENERATE_ROTOR, 
-    GTMaterialFlags.GENERATE_BOLT_SCREW,
-    GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_SPRING,
-    GTMaterialFlags.GENERATE_FRAME
-
-)
+    event.create("raw_cosmic_matter")
+        .gas()
+        .color(0x000000)
+    event.create("crude_astral_flux")
+        .plasma()
+        .color(0x2c00ad)
+    event.create("astral_flux") 
+        .plasma()
+        .color(0x4000ff)
+        .element('astral_flux')
+    event.create("hyper_ionized_helium")
+        .plasma()
+        .color(0xfff2ab)
+        .formula('He⁺', true)
+    event.create("infused_cosmic_matter")
+        .gas()
+        .color(0xaeabff)
+    event.create("stabilized_raw_cosmic_matter")
+        .gas()
+        .color(0x14004f)
+    event.create("cryo_compressed_raw_cosmic_matter")
+        .gas()
+        .color(0x00224f)
+    event.create("cryogenic_neutron_flow")
+        .liquid()
+        .color(0x00fff7)
+    event.create("shifted_cosmic_matter_base")
+        .gas()
+        .color(0x020078)
+    event.create("plasma_tempered_cosmic_matter_base")
+        .plasma()
+        .color(0x060040)
+    event.create("hyper_dense_cosmic_matter_base")
+        .plasma()
+        .color(0x020012)
+    event.create("refined_cosmic_matter")
+        .plasma()
+        .color(0x1c00ff)
+    event.create("cosmic_matter")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .element(GTElements.get("cosmic_matter"))
+        .color(0xffffff)
+    event.create("pure_cosmic_matter")
+        .ingot()
+        .element(GTElements.get("cosmic_matter"))
+        .color(0xffffff)
+        .iconSet('cosmic_matter')
+        .flags(
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_FRAME
+        );
 
 
+    // PLASMAS NEBULA
 
-// COSMIC LINE
+    event.create("hypercharged_nebular") 
+        .plasma()
+        .color(0x1c03fc)
+        .element('nebular_matter')
+    event.create("high_entropy_neptunium") 
+        .plasma()
+        .color(0x03a1fc)
+        .element(GTElements.Np)
+    event.create("supercritical_californium") 
+        .plasma()
+        .color(0xffffff)
+        .element(GTElements.Cf)
+    event.create("hypercharged_oganesson") 
+        .plasma()
+        .color(0xa39672)
+        .element(GTElements.Og)
+    event.create("hypercharged_nihonium") 
+        .plasma()
+        .color(0x84a1e8)
+        .element(GTElements.Nh)
+    event.create("quark_gluon")
+        .plasma()
+        .color(0xc7cdcdd)
+    event.create("degenerate_gluon_condensate")
+        .liquid()
+        .color(0xf7d0ed)
+    event.create("astral_space_time_plasma")
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .components('1x astral_flux', '1x space_time')
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
+    event.create("chrono_infinity")
+        .ingot()
+        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
+        .cableProperties(8589934592, 9001, 0, true)
+        .blastTemp(17000, 'highest', 536870912, 1800)
+        .element(GTElements.get("chrono_infinity"))
+        .color(0xffffff)
+        .iconSet('chrono-infinity_alloy')
+        .flags( 
+            GTMaterialFlags.GENERATE_FOIL, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_RING, 
+            GTMaterialFlags.GENERATE_PLATE,
+            GTMaterialFlags.GENERATE_ROD,
+            GTMaterialFlags.GENERATE_LONG_ROD,
+            GTMaterialFlags.GENERATE_ROTOR,
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_SPRING_SMALL,
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_FRAME
+        );
 
-event.create("raw_cosmic_matter")
-.gas()
-.color(0x000000)
-event.create("crude_astral_flux")
-.plasma()
-.color(0x2c00ad)
-event.create("astral_flux") 
-.plasma()
-.color(0x4000ff)
-.element('astral_flux')
-event.create("hyper_ionized_helium")
-.plasma()
-.color(0xfff2ab)
-.formula('He⁺', true)
-event.create("infused_cosmic_matter")
-.gas()
-.color(0xaeabff)
-event.create("stabilized_raw_cosmic_matter")
-.gas()
-.color(0x14004f)
-event.create("cryo_compressed_raw_cosmic_matter")
-.gas()
-.color(0x00224f)
-event.create("cryogenic_neutron_flow")
-.liquid()
-.color(0x00fff7)
-event.create("shifted_cosmic_matter_base")
-.gas()
-.color(0x020078)
-event.create("plasma_tempered_cosmic_matter_base")
-.plasma()
-.color(0x060040)
-event.create("hyper_dense_cosmic_matter_base")
-.plasma()
-.color(0x020012)
-event.create("refined_cosmic_matter")
-.plasma()
-.color(0x1c00ff)
-event.create("cosmic_matter")
-.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-.element(GTElements.get("cosmic_matter"))
-.color(0xffffff)
-event.create("pure_cosmic_matter")
-.ingot()
-.element(GTElements.get("cosmic_matter"))
-.color(0xffffff)
-.iconSet('cosmic_matter')
-.flags(
-    GTMaterialFlags.GENERATE_PLATE, 
-    GTMaterialFlags.GENERATE_ROD, 
-    GTMaterialFlags.GENERATE_GEAR, 
-    GTMaterialFlags.GENERATE_FINE_WIRE,
-    GTMaterialFlags.GENERATE_DENSE, 
-    GTMaterialFlags.GENERATE_ROTOR, 
-    GTMaterialFlags.GENERATE_BOLT_SCREW,
-    GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_SPRING,
-    GTMaterialFlags.GENERATE_FRAME
-)
- 
-// PLASMAS NEBULA
 
-event.create("hypercharged_nebular") 
-.plasma()
-.color(0x1c03fc)
-.element('nebular_matter')
-event.create("high_entropy_neptunium") 
-.plasma()
-.color(0x03a1fc)
-.element(GTElements.Np)
-event.create("supercritical_californium") 
-.plasma()
-.color(0xffffff)
-.element(GTElements.Cf)
-event.create("hypercharged_oganesson") 
-.plasma()
-.color(0xa39672)
-.element(GTElements.Og)
-event.create("hypercharged_nihonium") 
-.plasma()
-.color(0x84a1e8)
-.element(GTElements.Nh)
-
-event.create("quark_gluon")
-    .plasma()
-    .color(0xc7cdcdd)
-event.create("degenerate_gluon_condensate")
-    .liquid()
-    .color(0xf7d0ed)
-
-event.create("astral_space_time_plasma")
-.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-.components('1x astral_flux', '1x space_time')
-.flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-event.create("chrono_infinity")
-.ingot()
-.liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-.cableProperties(8589934592, 9999, 0, true)
-.blastTemp(17000, 'highest', 536870912, 1800)
-.element(GTElements.get("chrono_infinity"))
-.color(0xffffff)
-.iconSet('chrono-infinity_alloy')
-.flags( 
-    GTMaterialFlags.GENERATE_FOIL, 
-    GTMaterialFlags.GENERATE_GEAR, 
-    GTMaterialFlags.GENERATE_SMALL_GEAR,
-    GTMaterialFlags.GENERATE_DENSE, 
-    GTMaterialFlags.GENERATE_RING, 
-    GTMaterialFlags.GENERATE_PLATE,
-    GTMaterialFlags.GENERATE_ROD,
-    GTMaterialFlags.GENERATE_LONG_ROD,
-    GTMaterialFlags.GENERATE_ROTOR,
-    GTMaterialFlags.GENERATE_BOLT_SCREW,
-    GTMaterialFlags.GENERATE_ROUND,
-    GTMaterialFlags.GENERATE_SPRING,
-    GTMaterialFlags.GENERATE_SPRING_SMALL,
-    GTMaterialFlags.GENERATE_FINE_WIRE,
-    GTMaterialFlags.GENERATE_FRAME
-)
-
- // Kerosene Line
+    // Kerosene Line
 
  	event.create('high_purity_kerosene')
         .liquid()
@@ -1905,14 +2210,14 @@ event.create("chrono_infinity")
         .plasma()
         .color(0xffc7cb)
         .element(GTElements.Ne)
-
     event.create('neutron_flux')
         .plasma()
         .color(0xdefff7)
     event.create('exotic_particle_suspension')
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
+        .flags(
+            GTMaterialFlags.DISABLE_DECOMPOSITION
+        );
     event.create('iridium_plasma')
         .plasma()
         .color(0x45f7e0)
@@ -1938,18 +2243,18 @@ event.create("chrono_infinity")
         .element('temporally_charged_silicon')
         .color(0xbdbbbb)
         .flags(
-        GTMaterialFlags.GENERATE_PLATE, 
-        GTMaterialFlags.GENERATE_ROD, 
-        GTMaterialFlags.GENERATE_GEAR, 
-        GTMaterialFlags.GENERATE_FINE_WIRE,
-        GTMaterialFlags.GENERATE_DENSE, 
-        GTMaterialFlags.GENERATE_ROTOR, 
-        GTMaterialFlags.GENERATE_BOLT_SCREW,
-        GTMaterialFlags.GENERATE_SMALL_GEAR,
-        GTMaterialFlags.GENERATE_ROUND,
-        GTMaterialFlags.GENERATE_SPRING,
-        GTMaterialFlags.GENERATE_FRAME
-        )
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_FRAME
+        );
     event.create('exotic_condensate')
         .dust()
         .color(0x3b0aff)
@@ -1959,7 +2264,6 @@ event.create("chrono_infinity")
     event.create('decay_stabilized')
         .plasma()
         .color(0x23195e)
-
     event.create('solar_eclipse_alloy')
         .ingot()
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
@@ -1967,55 +2271,51 @@ event.create("chrono_infinity")
         .blastTemp(13500, 'highest', 1966080, 3400)
         .element('solar_eclipse_alloy')
         .flags(
-        GTMaterialFlags.GENERATE_PLATE, 
-        GTMaterialFlags.GENERATE_ROD, 
-        GTMaterialFlags.GENERATE_GEAR, 
-        GTMaterialFlags.GENERATE_FINE_WIRE,
-        GTMaterialFlags.GENERATE_DENSE, 
-        GTMaterialFlags.GENERATE_ROTOR, 
-        GTMaterialFlags.GENERATE_BOLT_SCREW,
-        GTMaterialFlags.GENERATE_SMALL_GEAR,
-        GTMaterialFlags.GENERATE_ROUND,
-        GTMaterialFlags.GENERATE_SPRING,
-        GTMaterialFlags.GENERATE_FRAME
-        )
-
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_FRAME
+        );
     event.create('solar_radiation_alloy')
         .ingot()
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .iconSet('solar_radiation_alloy')
         .element('solar_radiation_alloy')
         .flags(
-        GTMaterialFlags.GENERATE_PLATE, 
-        GTMaterialFlags.GENERATE_ROD, 
-        GTMaterialFlags.GENERATE_GEAR, 
-        GTMaterialFlags.GENERATE_DENSE, 
-        GTMaterialFlags.GENERATE_ROTOR, 
-        GTMaterialFlags.GENERATE_BOLT_SCREW,
-        GTMaterialFlags.GENERATE_SMALL_GEAR,
-        GTMaterialFlags.GENERATE_ROUND,
-        GTMaterialFlags.GENERATE_SPRING,
-        GTMaterialFlags.GENERATE_FRAME
-        )
-       
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_FRAME
+        );
     event.create('proto_matter')
         .ingot()
         .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
         .iconSet('proto_matter')
         .element('proto_matter')
         .flags(
-        GTMaterialFlags.GENERATE_PLATE, 
-        GTMaterialFlags.GENERATE_ROD, 
-        GTMaterialFlags.GENERATE_GEAR, 
-        GTMaterialFlags.GENERATE_FINE_WIRE,
-        GTMaterialFlags.GENERATE_DENSE, 
-        GTMaterialFlags.GENERATE_ROTOR, 
-        GTMaterialFlags.GENERATE_BOLT_SCREW,
-        GTMaterialFlags.GENERATE_SMALL_GEAR,
-        GTMaterialFlags.GENERATE_ROUND,
-        GTMaterialFlags.GENERATE_SPRING,
-        GTMaterialFlags.GENERATE_FRAME
-        )
-        
-
-    })
+            GTMaterialFlags.GENERATE_PLATE, 
+            GTMaterialFlags.GENERATE_ROD, 
+            GTMaterialFlags.GENERATE_GEAR, 
+            GTMaterialFlags.GENERATE_FINE_WIRE,
+            GTMaterialFlags.GENERATE_DENSE, 
+            GTMaterialFlags.GENERATE_ROTOR, 
+            GTMaterialFlags.GENERATE_BOLT_SCREW,
+            GTMaterialFlags.GENERATE_SMALL_GEAR,
+            GTMaterialFlags.GENERATE_ROUND,
+            GTMaterialFlags.GENERATE_SPRING,
+            GTMaterialFlags.GENERATE_FRAME
+        );
+})
