@@ -69,11 +69,11 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.assembler("soul_infused_casing")
-        .circuit(6)
         .itemInputs(
             "4x enderio:soularium_pressure_plate",
             "4x minecraft:soul_sand"
         )
+        .circuit(6)
         .itemOutputs("kubejs:soul_infused_casing")
         .duration(5*45)
         .EUt(GTValues.VA[GTValues.IV]);
@@ -81,11 +81,11 @@ ServerEvents.recipes(event => {
 // Recipe Type Recipes
 
 event.recipes.gtceu.electric_simulation_chamber("spidersim")
-    .circuit(1)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:spider"}}').weakNBT())
+    .circuit(1)
 	.itemOutputs(
         "128x minecraft:string",
         "64x minecraft:spider_eye",
@@ -94,11 +94,11 @@ event.recipes.gtceu.electric_simulation_chamber("spidersim")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("spidersim2")
-    .circuit(10)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:spider"}}').weakNBT())
+    .circuit(10)
     .itemOutputs(Item.of(
         "4x hostilenetworks:prediction",
         '{data_model:{id:"hostilenetworks:spider"}}').strongNBT())
@@ -106,11 +106,11 @@ event.recipes.gtceu.electric_simulation_chamber("spidersim2")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("witchsim")
-    .circuit(1)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:witch"}}').weakNBT())
+    .circuit(1)
 	.itemOutputs(
         "32x minecraft:redstone",
         "32x minecraft:glowstone_dust",
@@ -122,11 +122,11 @@ event.recipes.gtceu.electric_simulation_chamber("witchsim")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("witchsim2")
-    .circuit(10)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:witch"}}').weakNBT())
+    .circuit(10)
     .itemOutputs(Item.of(
         "2x hostilenetworks:prediction",
         '{data_model:{id:"hostilenetworks:witch"}}').strongNBT())
@@ -134,22 +134,22 @@ event.recipes.gtceu.electric_simulation_chamber("witchsim2")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("wardensim")
-    .circuit(1)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:warden"}}').weakNBT())
+    .circuit(1)
 	.itemOutputs(
         "2x minecraft:echo_shard")
     .duration(20*75)
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("wardensim2")
-    .circuit(10)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:warden"}}').weakNBT())
+    .circuit(10)
     .itemOutputs(Item.of(
         "hostilenetworks:prediction",
         '{data_model:{id:"hostilenetworks:warden"}}').strongNBT())
@@ -157,22 +157,22 @@ event.recipes.gtceu.electric_simulation_chamber("wardensim2")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("squidsim")
-    .circuit(1)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:squid"}}').weakNBT())
+    .circuit(1)
 	.itemOutputs(
         "512x minecraft:ink_sac")
     .duration(20*15)
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("squidsim2")
-    .circuit(10)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:squid"}}').weakNBT())
+    .circuit(10)
     .itemOutputs(Item.of(
         "16x hostilenetworks:prediction",
         '{data_model:{id:"hostilenetworks:squid"}}').strongNBT())
@@ -180,11 +180,11 @@ event.recipes.gtceu.electric_simulation_chamber("squidsim2")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("slimesim")
-    .circuit(1)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:slime"}}').weakNBT())
+    .circuit(1)
 	.itemOutputs(
         "128x minecraft:slime_ball",
         "32x minecraft:slime_block")
@@ -192,11 +192,11 @@ event.recipes.gtceu.electric_simulation_chamber("slimesim")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("slimesim2")
-    .circuit(10)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:slime"}}').weakNBT())
+    .circuit(10)
     .itemOutputs(Item.of(
         "4x hostilenetworks:prediction",
         '{data_model:{id:"hostilenetworks:slime"}}').strongNBT())
@@ -204,11 +204,11 @@ event.recipes.gtceu.electric_simulation_chamber("slimesim2")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("sheepsim")
-    .circuit(1)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:sheep"}}').weakNBT())
+    .circuit(1)
 	.itemOutputs(
         "64x minecraft:white_wool",
         "64x minecraft:orange_wool",
@@ -223,11 +223,11 @@ event.recipes.gtceu.electric_simulation_chamber("sheepsim")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("sheepsim2")
-    .circuit(2)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:sheep"}}').weakNBT())
+    .circuit(2)
 	.itemOutputs(
         "64x minecraft:cyan_wool",
         "64x minecraft:purple_wool",
@@ -241,11 +241,11 @@ event.recipes.gtceu.electric_simulation_chamber("sheepsim2")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("sheepsim3")
-    .circuit(10)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:sheep"}}').weakNBT())
+    .circuit(10)
     .itemOutputs(Item.of(
         "8x hostilenetworks:prediction",
         '{data_model:{id:"hostilenetworks:sheep"}}').strongNBT())
@@ -253,11 +253,11 @@ event.recipes.gtceu.electric_simulation_chamber("sheepsim3")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("endermansim")
-    .circuit(1)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:enderman"}}').weakNBT())
+    .circuit(1)
 	.itemOutputs(
         "16x minecraft:ender_pearl",
         "1x minecraft:end_crystal")
@@ -265,11 +265,11 @@ event.recipes.gtceu.electric_simulation_chamber("endermansim")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("endermansim2")
-    .circuit(10)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:enderman"}}').weakNBT())
+    .circuit(10)
     .itemOutputs(Item.of(
         "hostilenetworks:prediction",
         '{data_model:{id:"hostilenetworks:enderman"}}').strongNBT())
@@ -277,11 +277,11 @@ event.recipes.gtceu.electric_simulation_chamber("endermansim2")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("enderdragonsim")
-    .circuit(1)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:ender_dragon"}}').weakNBT())
+    .circuit(1)
 	.itemOutputs(
         "16x minecraft:dragon_breath",
         "1x minecraft:dragon_egg")
@@ -289,11 +289,11 @@ event.recipes.gtceu.electric_simulation_chamber("enderdragonsim")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("enderdragonsim2")
-    .circuit(10)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:ender_dragon"}}').weakNBT())
+    .circuit(10)
     .itemOutputs(Item.of(
         "hostilenetworks:prediction",
         '{data_model:{id:"hostilenetworks:ender_dragon"}}').strongNBT())
@@ -301,11 +301,11 @@ event.recipes.gtceu.electric_simulation_chamber("enderdragonsim2")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("elderguardiansim")
-    .circuit(1)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:elder_guardian"}}').weakNBT())
+    .circuit(1)
 	.itemOutputs(
         "16x minecraft:cod",
         "2x minecraft:salmon",
@@ -318,11 +318,11 @@ event.recipes.gtceu.electric_simulation_chamber("elderguardiansim")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("elderguardiansim2")
-    .circuit(10)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:elder_guardian"}}').weakNBT())
+    .circuit(10)
     .itemOutputs(Item.of(
         "hostilenetworks:prediction",
         '{data_model:{id:"hostilenetworks:elder_guardian"}}').strongNBT())
@@ -330,22 +330,22 @@ event.recipes.gtceu.electric_simulation_chamber("elderguardiansim2")
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("blazesim")
-    .circuit(1)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:blaze"}}').weakNBT())
+    .circuit(1)
 	.itemOutputs(
         "32x minecraft:blaze_rod")
     .duration(20*15)
     .EUt(GTValues.VA[GTValues.MV]);
 
 event.recipes.gtceu.electric_simulation_chamber("blazesim2")
-    .circuit(10)
     .notConsumable(
         Item.of(
             "hostilenetworks:data_model",
             '{data_model:{id:"hostilenetworks:blaze"}}').weakNBT())
+    .circuit(10)
     .itemOutputs(Item.of(
         "2x hostilenetworks:prediction",
         '{data_model:{id:"hostilenetworks:blaze"}}').strongNBT())
