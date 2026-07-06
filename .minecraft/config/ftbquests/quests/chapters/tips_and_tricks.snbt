@@ -8,20 +8,21 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["It's possible to upgrade your Furnaces early on before you start using GT Machines!"]
 			id: "13E8D5B8203CC9A1"
 			tasks: [{
 				id: "5510ABB56C1EB6A3"
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			title: "The furnace line!"
+			title: "The Furnace-Line!"
 			x: 0.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["13E8D5B8203CC9A1"]
+			description: ["~11% faster than regular Furnaces!"]
 			id: "6C2B1F2B41C7A963"
-			subtitle: "Locked on Tier 0"
 			tasks: [{
 				id: "1F3E5F304DE846FF"
 				item: "ironfurnaces:copper_furnace"
@@ -32,8 +33,8 @@
 		}
 		{
 			dependencies: ["6C2B1F2B41C7A963"]
+			description: ["25% faster than regular Furnaces!"]
 			id: "0E794E3639C54895"
-			subtitle: "Locked on Tier 0"
 			tasks: [{
 				id: "347ADB240A960F76"
 				item: "ironfurnaces:iron_furnace"
@@ -44,8 +45,9 @@
 		}
 		{
 			dependencies: ["0E794E3639C54895"]
+			description: ["~67% faster than regular Furnaces!"]
 			id: "00A61C3384CB79A6"
-			subtitle: "Locked in Steam"
+			subtitle: "Steam Age required"
 			tasks: [{
 				id: "2731F97CAA9E1DE5"
 				item: "ironfurnaces:gold_furnace"
@@ -56,8 +58,9 @@
 		}
 		{
 			dependencies: ["00A61C3384CB79A6"]
+			description: ["150% faster than regular Furnaces!"]
 			id: "3C639C4822111A6C"
-			subtitle: "Locked in LV"
+			subtitle: "LV-Tier required"
 			tasks: [{
 				id: "06A359FF99A06061"
 				item: "ironfurnaces:diamond_furnace"
@@ -68,8 +71,9 @@
 		}
 		{
 			dependencies: ["3C639C4822111A6C"]
+			description: ["400% faster than regular Furnaces!"]
 			id: "7F5D769F0CBBDD4C"
-			subtitle: "Locked in MV"
+			subtitle: "MV-Tier required"
 			tasks: [{
 				id: "3C378E279FE1F9E2"
 				item: "ironfurnaces:emerald_furnace"
@@ -80,8 +84,9 @@
 		}
 		{
 			dependencies: ["7F5D769F0CBBDD4C"]
+			description: ["900% faster than regular Furnaces!"]
 			id: "704824856E11E933"
-			subtitle: "Locked in HV"
+			subtitle: "HV-Tier required"
 			tasks: [{
 				id: "58C1593F46864A51"
 				item: "ironfurnaces:obsidian_furnace"
@@ -92,19 +97,32 @@
 		}
 		{
 			dependencies: ["3C639C4822111A6C"]
+			description: ["400% faster than regular Furnaces!"]
 			id: "33730B667A4E692F"
-			subtitle: "Locked in HV"
+			subtitle: "HV-Tier required"
 			tasks: [{
 				id: "05F47F44E9A8C589"
 				item: "ironfurnaces:crystal_furnace"
 				type: "item"
 			}]
-			x: -1.0d
+			x: 1.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["704824856E11E933"]
+			description: [
+				"3900% faster than regular Furnaces!"
+				""
+				"You probably never need it - but if you do you'll get 10 Coins :D"
+			]
 			id: "6AD42186AB9E16B2"
+			rewards: [{
+				count: 10
+				id: "609C563519C4EDA5"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "LuV-Tier required"
 			tasks: [{
 				id: "3E90E2F955E1B697"
 				item: "ironfurnaces:netherite_furnace"
@@ -114,19 +132,20 @@
 			y: 7.5d
 		}
 		{
-			description: ["Locked behind LV superconductor on HV"]
+			description: ["LV Superconductors are required - which is HV Tier"]
 			id: "5D6515B6A5E474F8"
-			subtitle: "Classic Angel Ring!"
+			subtitle: "Some oldschool classic!"
 			tasks: [{
 				id: "641098388D4DB6EC"
 				item: "angelring:angel_ring"
 				type: "item"
 			}]
-			x: 1.5d
+			title: "Some funny flight ring"
+			x: 4.5d
 			y: 0.5d
 		}
 		{
-			description: ["Compressed hammers are a way to make gravel, sand and dust more efficiently by hammering down the compressed versions of the blocks."]
+			description: ["Compressed Hammers are a faster way to crush Cobble, Gravel and Sand by hammering down their compressed versions"]
 			id: "5A5A47493815DA32"
 			tasks: [{
 				id: "4F69CCBCBBB760D9"
@@ -139,14 +158,14 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
+			x: 4.5d
 			y: 3.5d
 		}
 		{
 			description: [
-				"Welcome to Gregtech, pipes dont work like other mods, and you will need a conveyor/pump if u want to extract something without an auto output machine."
+				"Welcome to GregTech - Pipes don't work like other mods and you'll need a GT Cover (Conveyor/Electric Pump) if you want to extract something without something pushing into the Pipe!"
 				""
-				"To make it work without auto output you will need a Screwdriver to configure the covers."
+				"If you wanna get access to the settings of the Cover, Shift+Right-Click the side where the cover is attached!"
 			]
 			id: "0B69BCBC3426AE61"
 			rewards: [
@@ -173,9 +192,9 @@
 					type: "item"
 				}
 			]
-			title: "Piping away!"
-			x: 1.5d
-			y: 5.0d
+			title: "Pipe-licious!"
+			x: 6.0d
+			y: 3.5d
 		}
 		{
 			id: "68FCD613E96B8706"
@@ -185,8 +204,8 @@
 				item: "torchmaster:feral_flare_lantern"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 6.5d
+			x: 6.0d
+			y: 5.0d
 		}
 		{
 			id: "7257CAF0D8019072"
@@ -195,15 +214,16 @@
 				item: "bonsaitrees3:bonsaipot"
 				type: "item"
 			}]
-			title: "Automated wood!"
-			x: 1.5d
+			title: "Automated Wood!"
+			x: 4.5d
 			y: 2.0d
 		}
 		{
 			description: [
-				"The melting rate of the lava on the crucible is 80x if theres a lightning rod below it."
-				"1 cobblestone = 250 lava."
-				"which is huge for 80x melting rate"
+				"The Crucible's melting rate is 80 with this one."
+				"You can look up other Heat Sources in EMI as well!"
+				""
+				"1 Cobblestone = 250mb Lava"
 			]
 			id: "4C57947B377079A2"
 			tasks: [{
@@ -211,28 +231,12 @@
 				item: "minecraft:lightning_rod"
 				type: "item"
 			}]
-			title: "Lightning rod is op"
-			x: 3.0d
+			title: "Overpowered Lightning Rods"
+			x: 6.0d
 			y: 0.5d
 		}
 		{
-			description: [
-				"The energy conduits adapt through the block they're connected to."
-				""
-				"So if a solar panel transfers 16k/t  they gonna transfer 16k/t too."
-			]
-			id: "7C28E00A55A4E1E1"
-			subtitle: "Op conduits"
-			tasks: [{
-				id: "2C18C95523164C48"
-				item: "enderio:energy_conduit"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 2.0d
-		}
-		{
-			description: ["Very handy!"]
+			description: ["Very handy for Tools!"]
 			id: "72327B8E9FF70DFE"
 			tasks: [{
 				id: "5AECD306DFDFCB2E"
@@ -243,10 +247,11 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.5d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
+			description: ["Some Tools for your building needs - using it with GT Machines, Buses, Hatches etc. is at your own risk!"]
 			id: "2C0A0CBF4A12140C"
 			tasks: [
 				{
@@ -286,19 +291,21 @@
 				}
 			]
 			title: "Building Gadgets"
-			x: 3.0d
-			y: 5.0d
+			x: 4.5d
+			y: 6.5d
 		}
 		{
 			description: [
-				"3 iron plates and the block"
-				"something like"
+				"1 Iron Plate + the appearance Block"
 				""
-				"\"OOO\""
-				"\"#G#\""
+				"Something like:"
+				""
+				"\"IA#\""
+				"\"###\""
 				"\"###\""
 			]
 			id: "356C951108817B7C"
+			subtitle: "If you want it"
 			tasks: [{
 				count: 6L
 				id: "5A5EB96A0957148B"
@@ -314,10 +321,248 @@
 				}
 				type: "item"
 			}]
-			title: "Cover your pipes!"
-			x: 3.0d
+			title: "Cover your Pipes!"
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			description: [
+				"The better version of Building Gadgets!"
+				"Probably Building Gadgets will be removed at some point cause SpatialTools are better in basically everything so try to look at these."
+				""
+				"GT-Compability is there - you'll love it!"
+			]
+			id: "748AE112A5BF3F6D"
+			tasks: [
+				{
+					id: "2BC5B4B8CF38F06F"
+					item: "spatialtoolscmp:portable_spatial_storage"
+					type: "item"
+				}
+				{
+					id: "368988FCB3F24941"
+					item: "spatialtoolscmp:portable_spatial_cloner"
+					type: "item"
+				}
+				{
+					id: "6346D43474D0EDD0"
+					item: "spatialtoolscmp:portable_spatial_replacer"
+					type: "item"
+				}
+			]
+			title: "Spatial Tools"
+			x: 6.0d
 			y: 6.5d
 		}
+		{
+			dependencies: ["147FF010F52F8750"]
+			description: ["~67% bigger than a normal Chest!"]
+			id: "1A35540507928BD8"
+			tasks: [{
+				id: "50EFCBA4B70FD61F"
+				item: "ironchest:copper_chest"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1A35540507928BD8"]
+			description: ["100% bigger than a normal Chest!"]
+			id: "4DD26E03DAA4F484"
+			tasks: [{
+				id: "69FC86C14455361C"
+				item: "ironchest:iron_chest"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4DD26E03DAA4F484"]
+			description: ["200% bigger than a normal Chest!"]
+			id: "7B69669CFC999C1A"
+			tasks: [{
+				id: "5A95BADAC581065C"
+				item: "ironchest:gold_chest"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7B69669CFC999C1A"]
+			description: ["300% bigger than a normal Chest!"]
+			id: "2F306466BADC9F90"
+			tasks: [{
+				id: "117FB3B8200C6280"
+				item: "ironchest:diamond_chest"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2F306466BADC9F90"]
+			description: ["300% bigger than a normal Chest!"]
+			id: "799FD7C986542884"
+			tasks: [{
+				id: "1460033372F9C31F"
+				item: "ironchest:obsidian_chest"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			id: "147FF010F52F8750"
+			tasks: [{
+				id: "5E00F8514BF6E937"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			title: "The Chest-Line!"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2F306466BADC9F90"]
+			description: ["300% bigger than a normal Chest!"]
+			id: "4E2FE9ED292E172A"
+			tasks: [{
+				id: "2759021DE5DDB826"
+				item: "ironchest:crystal_chest"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			icon: "minecraft:sunflower"
+			id: "249EC77863FCED19"
+			rewards: [
+				{
+					command: "/weather clear"
+					id: "1AD7E5E091F67118"
+					title: "Clear the Weather"
+					type: "command"
+				}
+				{
+					command: "/gamerule doWeatherCycle false"
+					id: "4EE6753420FD30EC"
+					title: "Turn off the WeatherCycle"
+					type: "command"
+				}
+			]
+			subtitle: "Rain can be annoying"
+			tasks: [{
+				id: "46D5774B9F110A02"
+				title: "Turn off Weather"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			icon: "minecraft:wandering_trader_spawn_egg"
+			id: "1C646BBBF38EAEA1"
+			rewards: [{
+				command: "/gamerule doTraderSpawning false"
+				id: "6D4428433372BCE7"
+				title: "Bye bye Trader"
+				type: "command"
+			}]
+			tasks: [{
+				id: "769039DF6948E810"
+				title: "Turn off Wandering Traders"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"Yes, we got some nice ways to improve your speed, look at it if you can achieve it!"
+				""
+				"Also gives you +1 Step Height"
+			]
+			id: "4712198485850E0B"
+			rewards: [{
+				id: "196FEAA326DF5F70"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68EEAEFB3D1BAA10"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtexolegs:lv_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "gtexolegs:mv_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "gtexolegs:hv_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "gtexolegs:ev_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "gtexolegs:iv_exoskeleton_legs"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Exoskeleton Legs?"
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			description: ["You wanna void some outputs early on? Eventually this could help!"]
+			id: "4F7B7FCD998DF657"
+			tasks: [{
+				id: "60C8392BA9C545E3"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "trashcans:item_trash_can"
+							}
+							{
+								Count: 1b
+								id: "trashcans:liquid_trash_can"
+							}
+							{
+								Count: 1b
+								id: "trashcans:energy_trash_can"
+							}
+							{
+								Count: 1b
+								id: "trashcans:ultimate_trash_can"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Trash Cans"
+			x: 7.5d
+			y: 2.0d
+		}
 	]
-	title: "Tips and Tricks"
+	title: "Tips \\& Tricks"
 }

@@ -30,23 +30,24 @@
 					type: "item"
 				}
 			]
-			subtitle: "Welcome to the pack"
+			subtitle: "Welcome to the Grind"
 			tasks: [{
 				count: 16L
 				id: "7EDC56CD138F5800"
 				item: { Count: 16, id: "minecraft:oak_log" }
 				type: "item"
 			}]
-			title: "Chop some trees!"
+			title: "Chop some Trees!"
 			x: -2.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3997514573BA3204"]
 			description: [
-				"Get some pebbles by right clicking the dirt block that is on your little little island. (You might get other pebbles appart from the stone so try to not get your inventory clogged up)"
+				"Get some Pebbles by right-clicking the Dirt that is on your little little Island. "
+				"You'll get different types of Pebbles, so don't try to clog up your inventory!"
 				""
-				"You can press \"K\" to auto compress a stack of blocks, if they are 3x3 you need a crafting table, and \"Shift + K\" to compress all of the blocks"
+				"You can press \"K\" while hovering over the Pebbles to auto-compress them to solid blocks or \"Shift+K\" to compress all of the same type at once!"
 			]
 			id: "2E3BA53EE6679354"
 			rewards: [{
@@ -79,7 +80,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Expand your little island plz"
+			subtitle: "Expand your little Island please"
 			tasks: [{
 				id: "3C4E570743F1CEB0"
 				item: {
@@ -109,13 +110,14 @@
 					type: "item"
 				}
 			]
-			subtitle: "Mine the gravel"
+			subtitle: "Mine the Gravel"
 			tasks: [{
 				count: 5L
 				id: "012C182E09D5D789"
 				item: "minecraft:flint"
 				type: "item"
 			}]
+			title: "Flint Gatherer"
 			x: 1.5d
 			y: -1.0d
 		}
@@ -130,7 +132,7 @@
 			}]
 			shape: "gear"
 			size: 1.25d
-			subtitle: "Finally "
+			subtitle: "Finally"
 			tasks: [
 				{
 					id: "639F1E94AEC4FA96"
@@ -143,26 +145,27 @@
 					type: "item"
 				}
 			]
+			title: "Early processing"
 			x: 4.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3E51F11030134663"]
 			description: [
-				"First ores! "
-				"Note: You can &bautomate&r this with a rock crusher and a hopper :D "
+				"First Ores! "
+				"Note: You can &bautomate&r this with a Rock Crusher and a Hopper :D "
 				""
 				"Extractinator guide on the second page:"
 				""
 				"{@pagebreak}"
 				""
-				"To use the machine you need to right click with the input material, the items will drop floating to the sky."
+				"To use the Extractinator you need to right-click with the input material, the outputs will drop out of the top!"
 				" "
-				"You can place a block above the machine to make the items go inside the block and you can extract them with a hopper."
+				"You can place a Block above the Machine to make the Items go inside it and you can extract them with a Hopper."
 				""
 				"You can also automate the process by placing a hopper with the cobblestone."
 				""
-				"I wouldn't recommend making a massive automation, as you're gonna unlock better ways of getting resources later on, like HNN or the extractinator as a GregTech machine that doesn't send items flying. Good luck!"
+				"I wouldn't recommend making a massive automation, as you're gonna unlock better ways of getting resources later on, like HNN or the Extractinator as a GregTech machine that doesn't send items flying. Good luck!"
 			]
 			id: "3539E7FC4963D6BD"
 			rewards: [{
@@ -183,8 +186,8 @@
 		{
 			dependencies: ["3E51F11030134663"]
 			description: [
-				"Break leaves with a crook to get silkworks."
-				"Right click the silkworms on more leaves to infest 'em. Get string by breaking a fully infested one."
+				"Break &aLeaves&r with a Crook to get Silk Worms."
+				"Right-click the Silk Worms on &aLeaves&r to infest 'em. Get Strings by breaking a fully infested one with a Crook again!"
 			]
 			icon: "minecraft:string"
 			id: "2611ADAFB9634874"
@@ -260,6 +263,7 @@
 		}
 		{
 			dependencies: ["3E51F11030134663"]
+			description: ["Want some Dirt?"]
 			id: "65227B6C862A9584"
 			rewards: [{
 				id: "2051DA19B702846A"
@@ -279,7 +283,7 @@
 				"65227B6C862A9584"
 				"451B35D595D41780"
 			]
-			description: ["Get clay by right clicking a barrel full of water with dust from Ex Deorum."]
+			description: ["Get Clay by right-clicking a Barrel full of Water with Dust from Ex Deorum."]
 			id: "746C7C0274CEDDFB"
 			rewards: [{
 				id: "5B2FC554E1400322"
@@ -318,11 +322,9 @@
 		{
 			dependencies: ["3539E7FC4963D6BD"]
 			description: [
-				"This quest only asks for 1 wrought iron, but you can also see the tools as an optional quest."
+				"This Quest only asks for 1 Wrought Iron, but you can also see the Tools as an &boptional Quest&r."
 				""
-				"It's asking for iron tools but you can get wrought iron ones and 1 ingot and complete the quest."
-				""
-				"Wrought iron tools are technically cheaper (due to one nugget smelting into three) and are more durable, so I wouldn't use iron for tools right now if I were you."
+				"Wrought Iron Tools are technically cheaper (due to one Nugget smelting into three) and are more durable, so I wouldn't use Iron for Tools right now if I were you."
 			]
 			icon: {
 				Count: 1
@@ -552,7 +554,7 @@
 					type: "item"
 				}
 			]
-			title: "Basic tools"
+			title: "Basic Tools"
 			x: 9.0d
 			y: -1.0d
 		}
@@ -568,7 +570,7 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "A test?"
+			subtitle: "It's gettin' hot in here"
 			tasks: [{
 				id: "17D0B22F7B5C47A8"
 				item: "minecraft:lava_bucket"
@@ -579,13 +581,14 @@
 		}
 		{
 			dependencies: ["3E51F11030134663"]
+			description: ["\"Organic Matter\" can be placed in the Crucible like the Barrel to generate Wata'."]
 			id: "3B08F88F69DF2BC1"
 			rewards: [{
 				id: "07065DD00588BBB9"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "watha'"
+			subtitle: "Wata'"
 			tasks: [{
 				id: "0023BDB9E5178BD2"
 				item: "exdeorum:oak_crucible"
@@ -616,6 +619,7 @@
 		}
 		{
 			dependencies: ["5F05388789A2A4B8"]
+			description: ["Be prepared - you'll need definetely more than this but it's at least a start!"]
 			id: "1F26FBEDAEE6AAA2"
 			rewards: [{
 				id: "17DC6C0F0BA56412"
@@ -628,15 +632,16 @@
 				item: { Count: 32, id: "gtceu:bronze_dust" }
 				type: "item"
 			}]
+			title: "You'll need a lot of this"
 			x: 11.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1F26FBEDAEE6AAA2"]
 			description: [
-				"Welcome to the Steam age!"
+				"Welcome to the Steam Age!"
 				""
-				"This is a linked quest to the steam age chapter, so when you complete this you will automatically start the Tier 0.5-"
+				"This Quest is linked to the Steam Tier Chapter Quest,  so when you complete this you will automatically start the first Tutorial Tier."
 			]
 			id: "68357F7109A5645C"
 			rewards: [
@@ -659,24 +664,29 @@
 				item: "gtceu:bronze_machine_casing"
 				type: "item"
 			}]
+			title: "First Casing"
 			x: 11.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["65227B6C862A9584"]
-			description: ["Get dirt by placing \"organic matter\" on the oak barrel, it will convert into dirt. IMO, leaves are the best option for this."]
+			description: [
+				"\"Organic Matter\" can be placed in the Oak Barrel and will be converted into Dirt."
+				"{@pagebreak}"
+				"Some secret...I would say &aLeaves&r are a good way - if you know how to get them!"
+			]
 			id: "3C68907579CD8558"
 			rewards: [{
 				id: "3BBD61B5F8F2F7E6"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Infinite dirt"
 			tasks: [{
 				id: "131D77448FF07344"
 				item: "minecraft:dirt"
 				type: "item"
 			}]
+			title: "Infinite Dirt"
 			x: 7.0d
 			y: 2.5d
 		}
@@ -692,6 +702,7 @@
 				type: "item"
 			}]
 			shape: "gear"
+			subtitle: "Needed for Rubber"
 			tasks: [{
 				id: "4AA70CC3B8327112"
 				item: "gtceu:rubber_sapling"
@@ -703,8 +714,8 @@
 		{
 			dependencies: ["3E51F11030134663"]
 			description: [
-				"Wrought iron is gonna be very useful on LV and for making tools."
-				"You make by smelting iron nuggets in a ratio of 1x3, so 1 stack of nuggets is 3 stacks of wrought iron nuggets."
+				"Wrought Iron is very useful at LV for making Tools."
+				"You get it from smelting Iron Nuggets in a ratio from 1 to 3."
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "47F815400C7B249D"
@@ -742,8 +753,8 @@
 		{
 			dependencies: ["746C7C0274CEDDFB"]
 			description: [
-				"Free crops!"
-				"Does not work with trees."
+				"Free Crops!"
+				"Doesn't work with Trees."
 			]
 			id: "194E922557E71DB8"
 			rewards: [{
@@ -760,7 +771,7 @@
 			y: 4.0d
 		}
 		{
-			description: ["This pack has FTB Ultimine, which allows you to mine up to 64 blocks of the same (or similar) type at once if they're all close together. Check for the keybind in settings."]
+			description: ["This pack includes FTB Ultimine, allowing you to mine up to 64 connected blocks of the same (or similar) type at once. Simply hold the Ultimine key while mining. You can check or change the keybind in the Controls menu."]
 			id: "48C35CFE8DFEF467"
 			optional: true
 			rewards: [{

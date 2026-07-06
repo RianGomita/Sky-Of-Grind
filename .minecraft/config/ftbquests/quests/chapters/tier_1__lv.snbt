@@ -17,7 +17,7 @@
 	quests: [
 		{
 			dependencies: ["2DA0003222D48B72"]
-			description: ["Hulls = casing + cables + some extra plates"]
+			description: ["The basics for making Machines!"]
 			id: "16AF5E167963CD5E"
 			rewards: [{
 				id: "44DD63552DE2C869"
@@ -42,12 +42,13 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "Electricity... FINALLY"
+			subtitle: "Electricity..finally"
 			tasks: [{
 				id: "4E3E6856088293C7"
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
+			title: "LV Steam-Power"
 			x: 0.0d
 			y: 3.5d
 		}
@@ -88,15 +89,11 @@
 		{
 			dependencies: ["600C9FE63DAFB132"]
 			description: [
-				"This is the large bronze boiler."
+				"This is the first Multiblock Version of a Boiler which uses Fuel + Water to make huge amounts of Steam!"
 				""
-				"A multiblock that uses fuel + water to make huge amounts of steam."
+				"Be sure to have a steady &9Water&r supply, otherwise it will explode!"
 				""
-				"But beware, this boiler might explode if heated before putting water, so make sure you have a good water source."
-				""
-				"You could even wait before making it and get the tier 2 water source block beforehand."
-				""
-				"Don't worry about the excess steam, the boiler will keep running and will void any steam if the outputs are full."
+				"Don't worry about the excess Steam, the Boiler will keep running will void any Steam if the outputs are full."
 			]
 			icon: "gtceu:bronze_large_boiler"
 			id: "3BE98091F78DA8F5"
@@ -132,6 +129,7 @@
 					type: "item"
 				}
 			]
+			title: "Big Boiler"
 			x: 1.5d
 			y: 2.0d
 		}
@@ -229,6 +227,7 @@
 				item: "gtceu:lv_gas_collector"
 				type: "item"
 			}]
+			title: "Gas collecting"
 			x: 2.0d
 			y: 3.5d
 		}

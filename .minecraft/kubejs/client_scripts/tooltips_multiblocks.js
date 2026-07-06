@@ -77,7 +77,7 @@ const translationKeysToRemove = [
     "gtceu.multiblock.luv_fusion_reactor.description",
     "gtceu.multiblock.zpm_fusion_reactor.description",
     "gtceu.multiblock.uv_fusion_reactor.description",
-    "gtceu.fluid_pipe.max_temperature",
+    //"gtceu.fluid_pipe.max_temperature",
     "gtceu.machine.large_combustion_engine.tooltip.boost_regular",
     "gtceu.multiblock.large_boiler.max_temperature",
     "gtceu.machine.large_combustion_engine.tooltip.boost_extreme",
