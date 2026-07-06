@@ -74,21 +74,16 @@
 			x: 13.5d
 			y: 0.0d
 		}
+		{
+			id: "54C8C864BB6D5728"
+			linked_quest: "47F08B64D8FA018F"
+			x: 1.5d
+			y: 1.5d
+		}
 	]
 	quests: [
 		{
-			id: "06082DA35D8F4562"
-			tasks: [{
-				id: "688E4559B62DFA9B"
-				item: "gtceu:basic_electronic_circuit"
-				type: "item"
-			}]
-			title: "LV"
-			x: 0.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["06082DA35D8F4562"]
+			dependencies: ["47F08B64D8FA018F"]
 			id: "51862918D4B4B13B"
 			tasks: [{
 				id: "3622D8CA2BDE7E25"
@@ -882,7 +877,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["06082DA35D8F4562"]
+			dependencies: ["47F08B64D8FA018F"]
 			id: "498B0310496EF945"
 			tasks: [{
 				id: "33F7E4B83787450B"

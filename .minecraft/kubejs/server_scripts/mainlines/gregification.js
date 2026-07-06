@@ -2,7 +2,8 @@ ServerEvents.recipes(sog => {
     // Random Stuff
 
     exdeorum.setCrucibleHeatValueForState("minecraft:lightning_rod", 80);
-
+    
+    sog.remove({ id: "gtceu:shaped/white_carpet" })
     
     // Replacings
 

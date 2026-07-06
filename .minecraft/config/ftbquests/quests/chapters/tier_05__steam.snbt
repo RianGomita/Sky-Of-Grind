@@ -11,7 +11,7 @@
 		rotation: 50.0d
 		width: 2.0d
 		x: 2.0d
-		y: 6.5d
+		y: 7.0d
 	}]
 	order_index: 2
 	quest_links: [{
@@ -31,19 +31,20 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Gregification"
+			subtitle: "Gregificated recipe of course"
 			tasks: [{
 				count: 2L
 				id: "059B4C7FC8D63876"
 				item: { Count: 2, id: "minecraft:bricks" }
 				type: "item"
 			}]
+			title: "Some Bricks to start"
 			x: -0.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["001955464B84E2C3"]
-			description: ["Right know i would recommend you filling the boiler &cmanually,&r but, &lwater sources&r are gonna be cheap soon so its not gonna be for long."]
+			description: ["At the moment I would recommend you filling the Boiler &cmanually&r, but &9Water Sources&r are gonna be cheap soon - so it's not gonna be manually for a long time!"]
 			id: "08B73C58F9BADB29"
 			rewards: [{
 				id: "3FA89A1ECC06153B"
@@ -51,19 +52,19 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "Manual labor"
+			subtitle: "Manually for now"
 			tasks: [{
 				id: "4C151618FAD7A8E9"
 				item: "gtceu:lp_steam_solid_boiler"
 				type: "item"
 			}]
+			title: "Some Steam"
 			x: -0.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["08B73C58F9BADB29"]
-			description: ["If u are new to gregtech you should consider playing a pack like Gregtech Community Edition. This is not really a beginner friendly pack as we will suppose that you know how to transfer the steam, energy, etc."]
-			hide_dependent_lines: true
+			description: ["If you are new to GregTech you should just know that this modpack isn't \"beginner-friendly\" as we will suppose that you know how to do most basic GT things...but eventually you'll get some tips in some Quests."]
 			id: "3C6DF7CC50CD1592"
 			rewards: [{
 				id: "209A54675AB4C91E"
@@ -80,14 +81,18 @@
 		}
 		{
 			dependencies: ["08B73C58F9BADB29"]
-			description: ["3x2 Plate ratio, very nice isnt it?"]
+			description: [
+				"3:1 Plate ratio, very nice isn't it?"
+				""
+				"Eventually you need it for something better too"
+			]
 			id: "3A8A7FC9A7F0814B"
 			rewards: [{
 				id: "69AD8C294E62395B"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Yup, important here"
+			subtitle: "Yup, it's important"
 			tasks: [{
 				id: "53A7E2385A89E040"
 				item: "gtceu:lp_steam_forge_hammer"
@@ -142,21 +147,23 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Thats 576 coal"
+			subtitle: "That's 288 Coal"
 			tasks: [{
 				id: "5217F0A4BF92E4D8"
 				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
+			title: "First Macerator"
 			x: 3.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["001955464B84E2C3"]
 			description: [
-				"The coke oven is gonna be your first multiblock, it transforms stone dust into sulfur and coal into coke, which is 100% recommended for steel ingots, as 30 seconds per steel ingot is something that you should definitely take advantage of before you waste too much time waiting for the coal recipe."
+				"The Coke Oven will be one of your first Multiblocks!"
+				"It can process Stone Dust into Sulfur to make Rubber or Coal into Coke for boosting your PBF's Steel production!"
 				""
-				"Consider making more than 1, since they're pretty slow."
+				"Consider making more than 1, since they are pretty slow if you wanna use them for Coke."
 			]
 			icon: "gtceu:coke_oven"
 			id: "41F3D8A51709C22B"
@@ -179,7 +186,7 @@
 			]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "Sidequests"
+			subtitle: "A Multiblock?"
 			tasks: [
 				{
 					count: 25L
@@ -193,16 +200,16 @@
 					type: "item"
 				}
 			]
+			title: "Coke Oven"
 			x: 3.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["446DCAFC4449AF56"]
 			description: [
-				"To get gypsum you will need to macerate 4 dust from exdeorum."
-				"Same for the sand dust."
-				""
-				"For all the other things you can get them on the extractinator."
+				"A little tip?"
+				"- Gypsum? Dust."
+				"- Steel? PBF!"
 			]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "6B67E665F9D2B062"
@@ -227,7 +234,7 @@
 					type: "item"
 				}
 			]
-			title: "The PBF - Steel"
+			title: "The PBF - your first Steel!"
 			x: 3.0d
 			y: 5.5d
 		}
@@ -236,7 +243,7 @@
 				"41F3D8A51709C22B"
 				"6B67E665F9D2B062"
 			]
-			description: ["You have multiple PBFs, right? :D"]
+			description: ["You eventually wanna wallshare PBF's to make a quad for Steel!"]
 			id: "31E750DDB33FE642"
 			rewards: [{
 				id: "11AD72CF7C1D21C8"
@@ -249,6 +256,7 @@
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
+			title: "Steel!"
 			x: 3.0d
 			y: 4.5d
 		}
@@ -257,7 +265,7 @@
 				"08B73C58F9BADB29"
 				"46EEB11B27AF0BBC"
 			]
-			description: ["The recipe is cheap, but to really use it you will need steel to make molds."]
+			description: ["The recipe is cheap, but to really use it you will need Steel to make Molds."]
 			id: "38CA5A0A1225A57C"
 			rewards: [{
 				id: "5AED38842EA3E146"
@@ -270,6 +278,7 @@
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
+			title: "Alloyin'"
 			x: -5.5d
 			y: 5.5d
 		}
@@ -284,6 +293,7 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
+			subtitle: "Finally"
 			tasks: [{
 				id: "13CB196A20C562B0"
 				item: "minecraft:glass"
@@ -295,12 +305,12 @@
 		{
 			dependencies: ["6A5E7ED7DE1593E3"]
 			description: [
-				"This block is gonna make your life a lot easier when putting water into boilers!"
+				"This will make your life a lot easier for Water inside your Boilders!"
 				""
-				"Just put it below the machine, it has auto output. "
-				"If u place it sideways or far from the machine, you will need a GT Pump Cover to actually extract the water."
+				"It has Auto-Output as well if you place it below the Machine."
 				""
-				"[ \"Check this \", { \"text\": \"quest\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0B69BCBC3426AE61\" } }, \"!\" ]"
+				""
+				"[ \"Eventually check this \", { \"text\": \"Quest\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0B69BCBC3426AE61\" } }, \" as well!\" ]"
 			]
 			icon: "watersources:water_source_tier_1"
 			id: "0291490F6A1806BF"
@@ -314,13 +324,14 @@
 				item: "watersources:water_source_tier_1"
 				type: "item"
 			}]
-			x: -5.0d
+			title: "Some Water for your Machines!"
+			x: -5.5d
 			y: 3.0d
 		}
 		{
 			can_repeat: false
 			dependencies: ["46EEB11B27AF0BBC"]
-			description: ["Get the steam extractor and extract some sticky resin to get rubber pulp"]
+			description: ["Get the Steam Extractor to extract some Sticky Resin for Rubber!"]
 			icon: "gtceu:lp_steam_extractor"
 			id: "638536B9F620C8FC"
 			rewards: [{
@@ -328,7 +339,7 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "we extracting out of tha steam age"
+			subtitle: "Extracting in the Steam-Age"
 			tasks: [
 				{
 					id: "1033D53E86DEA0C8"
@@ -342,12 +353,13 @@
 					type: "item"
 				}
 			]
+			title: "Some extracting"
 			x: -3.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["46EEB11B27AF0BBC"]
-			description: ["With this you will be able to automate basic stones and even things like obsidian later on."]
+			description: ["With this Machine you can automate basic Stone-Types and even Obsidian later on."]
 			icon: "itemfilters:not"
 			id: "1ACE605475C5F2C5"
 			rewards: [{
@@ -361,15 +373,15 @@
 				item: "gtceu:lp_steam_rock_crusher"
 				type: "item"
 			}]
-			title: "Automated extractinator"
+			title: "Extractinator Automation?"
 			x: -0.5d
 			y: 6.25d
 		}
 		{
 			dependencies: ["41F3D8A51709C22B"]
 			description: [
-				"Yes this might look crazy but u can transform stone dust into a bit of witch water and sulfur dust by leaving it a few seconds on a coke oven."
-				"Was it really a side quest.."
+				"Yes this looks a bit weird but you can transform Stone Dust into a bit of Witch Water + Sulfur Dust by leaving it in a Coke Oven."
+				"In a Skyblock you need some ways to get things, didn't you?"
 			]
 			hide_dependent_lines: true
 			id: "6038F6B4D714C153"
@@ -378,12 +390,13 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Thats a weird thing."
+			subtitle: "Weird recipes."
 			tasks: [{
 				id: "4EAF16893669F482"
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
+			title: "Sulfur"
 			x: 5.5d
 			y: 3.0d
 		}
@@ -400,7 +413,7 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Alloying for the win"
+			subtitle: "It's get's easier..soon"
 			tasks: [
 				{
 					id: "3F7B64C63BC39418"
@@ -413,8 +426,9 @@
 					type: "item"
 				}
 			]
+			title: "Rubber"
 			x: -5.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -427,16 +441,16 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Basic circuit when"
+			subtitle: "First Circuit - when?"
 			tasks: [{
 				count: 3L
 				id: "02BB0A92FD10C98C"
 				item: { Count: 3, id: "gtceu:red_alloy_single_cable" }
 				type: "item"
 			}]
-			title: "First cables"
+			title: "First Cables"
 			x: -6.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -450,6 +464,7 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
+			subtitle: "Compress it!"
 			tasks: [
 				{
 					id: "1E1F3173B907C8E0"
@@ -462,6 +477,7 @@
 					type: "item"
 				}
 			]
+			title: "Circuit Board preparations"
 			x: 3.0d
 			y: 10.0d
 		}
@@ -473,12 +489,13 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Its.. Sticky"
+			subtitle: "It's...sticky"
 			tasks: [{
 				id: "60F0E5C835A7865D"
 				item: "gtceu:resin_printed_circuit_board"
 				type: "item"
 			}]
+			title: "First Circuit Board"
 			x: -5.0d
 			y: 10.0d
 		}
@@ -495,7 +512,8 @@
 				item: "gtceu:vacuum_tube"
 				type: "item"
 			}]
-			x: -6.0d
+			title: "Some Tubes"
+			x: -6.5d
 			y: 4.5d
 		}
 		{
@@ -512,8 +530,9 @@
 				item: "gtceu:resistor"
 				type: "item"
 			}]
+			title: "Resistors"
 			x: -5.0d
-			y: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -522,7 +541,7 @@
 				"794CADF7CC86C821"
 				"4DB2D82E82C03F4E"
 			]
-			description: ["I sure hope you're batch crafting everything, else it's not looking good for you."]
+			description: ["I hope you batchcraft a lot...you'll need it"]
 			id: "47F08B64D8FA018F"
 			rewards: [
 				{
@@ -543,16 +562,16 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			title: "Electricity incoming!"
+			title: "LV"
 			x: -9.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["47F08B64D8FA018F"]
 			description: [
-				"Welcome to LV!"
+				"Welcome to LV - one of many Tiers!"
 				""
-				"Rev up those PBFs, you're about to start eating through steel like it's candy (don't try this at home though)."
+				"Let your PBF's run the whole time cause you start eating through Steel like it's candy - don't try this at Home though!"
 			]
 			id: "2DA0003222D48B72"
 			rewards: [{
@@ -567,14 +586,15 @@
 				item: "gtceu:lv_machine_casing"
 				type: "item"
 			}]
+			title: "Some steps into LV"
 			x: -9.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["31E750DDB33FE642"]
 			description: [
-				"An upgraded version of the Low Pressure Alloy Smelter."
-				"You will need a lot of alloys, like red alloy for cables  and rubber dust, consider even making 2 of those."
+				"An upgrade Verison of the Low Pressure Alloy Smelter."
+				"You'll need a lot of Alloys  like Red Alloy for Cables or Rubber Dust, consider making one of these!"
 			]
 			id: "17956BCCD994D647"
 			rewards: [{
@@ -582,20 +602,21 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Nice "
+			subtitle: "Upgrades"
 			tasks: [{
 				id: "2AC25B02842E76EF"
 				item: "gtceu:hp_steam_alloy_smelter"
 				type: "item"
 			}]
+			title: "A better Alloy Smelter"
 			x: 4.0d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["31E750DDB33FE642"]
 			description: [
-				"An upgraded version of the Low Pressure Macerator."
-				"You will a lot of dusts so this is a must on my list."
+				"An upgraded Version of the Low Pressure Macerator"
+				"You'll need a lot of Dusts as well, so this one is pretty handy"
 			]
 			id: "34505E178B1E2560"
 			rewards: [{
@@ -603,18 +624,19 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Nice"
+			subtitle: "Upgrades"
 			tasks: [{
 				id: "20CAFA4BA732EFFC"
 				item: "gtceu:hp_steam_macerator"
 				type: "item"
 			}]
+			title: "A better Macerator"
 			x: 4.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["41F3D8A51709C22B"]
-			description: ["While yes, there is the water source mod the primitive pump might be an alternative if u wanna rush infinite water... or like to stay faithful to GregTech =)"]
+			description: ["While yes, there is the Water Source Mod...but eventually you wanna stay faithful to GregTech and use this here!"]
 			id: "71A1EDA69A1E26F8"
 			optional: true
 			rewards: [{
@@ -622,18 +644,19 @@
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "Primitive.. water?"
+			subtitle: "Primitive.. Water?"
 			tasks: [{
 				id: "67E02704F3DC5F5A"
 				item: "gtceu:primitive_pump"
 				type: "item"
 			}]
-			x: 3.0d
+			title: "Water Multiblocks?"
+			x: 2.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["001955464B84E2C3"]
-			description: ["You can use liquid boilers with rock crushers and crucibles to get lava for a different way to make steam."]
+			dependencies: ["6A5E7ED7DE1593E3"]
+			description: ["You can use &dLiquid Boilers&r with &dRock Crushers&r and &dCrucibles&r to use Lava as another way to produce Steam!"]
 			id: "1904613EF69350E3"
 			rewards: [{
 				id: "28DF44B636A883DF"
@@ -645,17 +668,17 @@
 				item: "gtceu:lp_steam_liquid_boiler"
 				type: "item"
 			}]
-			title: "An Alternative"
-			x: -2.0d
+			title: "Alternatives"
+			x: -4.5d
 			y: 3.0d
 		}
 		{
-			dependencies: ["6B67E665F9D2B062"]
+			dependencies: ["3C6DF7CC50CD1592"]
 			description: [
-				"Bonsai pots are an alternative to chopping down trees. "
+				"Bonsai Pots are are an alternative to chopping down Trees."
 				""
-				"Compared to Botany Pots, the bonsai ones are able to produce logs and other materials. "
-				"Consider having both of them at the same time if u need materials like wood and flowers."
+				"Compared the Botany Pots, these are able to produce Logs and other Tree-Materials."
+				"They are not the fastest once but you can eventually use them until you're able to make the &aGreenhouse&r."
 			]
 			id: "6559C153909F6520"
 			rewards: [{
@@ -668,21 +691,39 @@
 				item: "bonsaitrees3:bonsaipot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.5d
+			title: "Bonsai Trees?"
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["38CA5A0A1225A57C"]
-			description: ["The Steam Foundry is a multiblock alloy smelter capable of 16 parallel recipes."]
+			description: ["The Steam Foundry is a Multiblock Alloy Smelter capable of using 16 Parallels at once!"]
 			id: "106D098AC5C2A887"
-			subtitle: "The Steam Foundry is a multi-block alloy  smelter capable of 16 parallel recipes."
 			tasks: [{
 				id: "61C30DF65427809E"
 				item: "steamadditions:steam_foundry"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 5.0d
+			title: "Multiblock Alloy Smelter?"
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["41F3D8A51709C22B"]
+			id: "6585DA206740D230"
+			rewards: [{
+				id: "0992B7AF0394B3BC"
+				item: "gtmutils:doge_coin"
+				type: "item"
+			}]
+			subtitle: "Automate the Coke Oven"
+			tasks: [{
+				id: "69231FC0CB1BD80A"
+				item: "gtceu:coke_oven_hatch"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
 		}
 	]
 	title: "&#f7bc57Tier 0.5 - Steam"

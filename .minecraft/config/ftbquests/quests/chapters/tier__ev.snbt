@@ -1847,17 +1847,14 @@
 			y: 13.5d
 		}
 		{
-			dependencies: [
-				"4ED461380B92EE89"
-				"5CA650927D3334BD"
-			]
+			dependencies: ["4ED461380B92EE89"]
+			description: ["You tried to look at Lava centrifuging?"]
 			id: "0E6778CA3151A3A2"
 			rewards: [{
 				id: "6655FDC59DB38A49"
 				item: "gtmutils:doge_coin"
 				type: "item"
 			}]
-			subtitle: "The beggining of tantalum line"
 			tasks: [{
 				id: "765EC4131D9C5176"
 				item: "gtceu:tantalite_dust"
@@ -1903,21 +1900,6 @@
 			}]
 			x: 10.5d
 			y: 4.5d
-		}
-		{
-			id: "5CA650927D3334BD"
-			rewards: [{
-				id: "2A5D71C65CE73C07"
-				item: "gtmutils:doge_coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6C8DEDA80DCC3066"
-				item: "minecraft:lava_bucket"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 14.5d
 		}
 		{
 			dependencies: [
