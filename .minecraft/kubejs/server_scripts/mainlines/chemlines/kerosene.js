@@ -15,28 +15,13 @@ ServerEvents.recipes(sog => {
         .itemOutputs('4x gtceu:paraffin_wax_dust')
         .duration(20*10)
         .EUt(GTValues.VA[GTValues.UV]);
-        sog.recipes.gtceu.large_chemical_reactor('fluoropolymer')
-        .inputFluids('gtceu:fluoroantimonic_acid 3000', 'gtceu:supercritical_carbon_dioxide 250')
-        .itemOutputs('9x gtceu:fluoropolymer_solution_dust')
-        .itemInputs('16x gtceu:polytetrafluoroethylene_dust')
-        .duration(20*60)
-        .EUt(GTValues.VA[GTValues.UV]);
+
         sog.recipes.gtceu.svs('supercriticalco2')
         .inputFluids('gtceu:carbon_dioxide 3000')
         .outputFluids('gtceu:supercritical_carbon_dioxide 100')
         .duration(20*8)
         .EUt(GTValues.VA[GTValues.UV]);
-        sog.recipes.gtceu.large_chemical_reactor('aoc')
-        .inputFluids('gtceu:phenol 3000', 'gtceu:toluene 2500', 'gtceu:nitric_acid 8000')
-        .outputFluids('gtceu:antioxidant_complex 160')
-        .duration(20*60)
-        .EUt(GTValues.VA[GTValues.IV]);
-        sog.recipes.gtceu.large_chemical_reactor('ps')
-        .inputFluids('gtceu:antioxidant_complex 3000', 'gtceu:hyper_ionized_helium_plasma 64')
-        .itemInputs('64x gtceu:graphene_dust', '64x gtceu:graphene_dust', '64x gtceu:graphene_dust')
-        .outputFluids('gtceu:precursor_suspension 1800')
-        .duration(20*60)
-        .EUt(GTValues.VA[GTValues.UV]);
+
         sog.recipes.gtceu.extreme_cracking_unit('ptb')
         .inputFluids('gtceu:wax_free_high_purity_kerosene 30000', 'gtceu:precursor_suspension 1900')
 	    .chancedInput('2x gtceu:neutron_reflector', 3333, 0)
@@ -52,14 +37,7 @@ ServerEvents.recipes(sog => {
         .itemOutputs('16x gtceu:refined_thermal_blend_dust')
         .duration(20*1)
         .EUt(GTValues.VA[GTValues.UXV]);
-        sog.recipes.gtceu.large_chemical_reactor('qatb')
-        .inputFluids('gtceu:neon_plasma_plasma 1500')
-	    .chancedInput('2x gtceu:quantum_star', 3333, 0)
-        .chancedInput('2x gtceu:quantum_star', 2500, 0)
-        .itemInputs('8x gtceu:refined_thermal_blend_dust')
-        .itemOutputs('8x gtceu:quantum_activated_thermal_blend_dust')
-        .duration(20*60)
-        .EUt(GTValues.VA[GTValues.UV]);
+
         sog.recipes.gtceu.catalyst_reactor('kbhf')
         .inputFluids('gtceu:hyper_ionized_helium_plasma 32', 'gtceu:californite 576')
 	    .chancedInput('2x gtceu:neutron_reflector', 3333, 0)
@@ -116,38 +94,7 @@ ServerEvents.recipes(sog => {
         .duration(20*5)
         .EUt(GTValues.VA[GTValues.UIV]);
 
-sog.recipes.gtceu.assembly_line('plasma_mixer')
-.itemInputs('8x gtceu:pure_cosmic_matter_plate', '4x gtceu:uxv_electric_motor', 'kubejs:semi_stable_casing', '1x #gtceu:circuits/uxv', '4x gtceu:uiv_field_generator', 'gtceu:uxv_mixer')
-.itemOutputs('gtceu:plasma_mixer')
-.inputFluids(
-  Fluid.of('gtceu:awakened_draconium', 9152),
-  Fluid.of('gtceu:antimatter', 5000),
-  Fluid.of('gtceu:crystal_matrix', 5000)
-)
-.duration(200)
-.EUt(GTValues.VA[GTValues.UXV])
 
-sog.recipes.gtceu.assembly_line('cryogenic_centrifuge')
-.itemInputs('8x gtceu:cosmic_iridium_plate', '4x gtceu:uev_electric_motor', 'kubejs:cryogenic_casing', '8x #gtceu:circuits/uiv', '8x gtceu:cosmic_iridium_plate', 'gtceu:uev_centrifuge')
-.itemOutputs('gtceu:cryogenic_centrifuge')
-.inputFluids(
-  Fluid.of('gtceu:condensed_star_matter', 9152),
-  Fluid.of('gtceu:antimatter', 5000),
-  Fluid.of('gtceu:crystal_matrix', 5000)
-)
-.duration(200)
-.EUt(GTValues.VA[GTValues.UXV])
-
-sog.recipes.gtceu.assembly_line('catalyst_reactor')
-.itemInputs('8x gtceu:infinity_plate', '4x gtceu:uxv_electric_motor', 'kubejs:kevlar_casing', '2x #gtceu:circuits/uxv', '8x gtceu:infinity_gear', 'gtceu:uxv_chemical_reactor')
-.itemOutputs('gtceu:catalyst_reactor')
-.inputFluids(
-  Fluid.of('gtceu:awakened_draconium', 9152),
-  Fluid.of('gtceu:antimatter', 5000),
-  Fluid.of('gtceu:crystal_matrix', 5000)
-)
-.duration(200)
-.EUt(GTValues.VA[GTValues.UXV])
 
 
 

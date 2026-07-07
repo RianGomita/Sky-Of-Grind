@@ -104,11 +104,7 @@ ServerEvents.recipes(event => {
         .duration(4800)
         .EUt(504658656)
 
-    event.recipes.gtceu.assembler('watch_of_flowing_time')
-        .itemInputs('minecraft:clock', '4x kubejs:woven_space_time', '3x gtceu:small_eternity_gear', '2x gtceu:eternity_gear', 'gtceu:chaos_lens', 'gtceu:pure_cosmic_matter_rod', 'gtceu:long_pure_cosmic_matter_rod', '12x gtceu:exquisite_echo_shard_gem', '64x kubejs:dragon_processor_mainframe')
-        .itemOutputs('kubejs:watch_of_flowing_time')
-        .duration(100)
-        .EUt(126164664)
+
 
     event.recipes.gtceu.atomiccompressor('disordered_cosmic_string_sheet')
         .itemInputs('kubejs:gravitational_fluctuation_module', '2048x kubejs:ultra_stable_cosmic_strings')
@@ -132,12 +128,7 @@ ServerEvents.recipes(event => {
 
     // Controller Recipe:
 
-    event.recipes.gtceu.assembly_line('eternity_recursion_engine')
-        .itemInputs('gtceu:large_synchrotron_switcher', 'gtceu:uxv_field_generator', '16x kubejs:energized_quantum_anomaly', '32x kubejs:highly_superconducting_coil_block', '2x gtceu:infinity_frame', '2x kubejs:uxv_voltage_coil', '16x gtceu:pure_cosmic_matter_gear', 'kubejs:watch_of_flowing_time')
-        .inputFluids('gtceu:quark_gluon_plasma 1440', 'gtceu:heavy_duty_alloy_t4 576', 'gtceu:hypoxylon 9216')
-        .itemOutputs('gtceu:eternity_recursion_engine')
-        .duration(3000)
-        .EUt(504658656)
+
 
     event.shaped(
         'gtceu:uhv_world_accelerator',

@@ -16,22 +16,9 @@ ServerEvents.recipes(event => {
 
 	// Radiation Chamber
 
-	event.recipes.gtceu.assembler('atomic_alloy_plated_glass_package')
-		.itemInputs('2x gtceu:fusion_glass','4x gtceu:atomic_alloy_plate')
-  		.inputFluids('gtceu:plasticizer 576')
-  		.itemOutputs('2x kubejs:atomic_alloy_plated_glass')
-		.duration(200)
-  		.EUt((GTValues.VA[GTValues.UV]))
+
 		
-	event.recipes.gtceu.assembly_line('radiation_chamber')
-		.itemInputs('7x gtceu:dense_atomic_alloy_plate', '7x gtceu:dense_atomic_alloy_plate',  '4x gtceu:uv_electric_pump', '4x gtceu:uv_robot_arm', '8x #gtceu:circuits/uv', '16x gtceu:uv_autoclave')
-		.itemOutputs('gtceu:xl_radiation_chamber')
-		.inputFluids(
-			Fluid.of('gtceu:polybenzimidazole', 32000),
-			Fluid.of('gtceu:neoprene', 2304),
-			Fluid.of('gtceu:soldering_alloy', 1152))
-		.duration(20*100)
-  		.EUt((GTValues.VA[GTValues.UHV]))
+
 
 	event.recipes.gtceu.radiation_chamber('reinforced_epoxy_crosslinking_carbon_fibers')
 		.itemInputs('2x gtceu:carbon_fibers')
@@ -62,28 +49,7 @@ ServerEvents.recipes(event => {
 		
 	// Polymerization Chamber
 
-	event.recipes.gtceu.assembler('peek_reinforced_glass_package')
-		.itemInputs('2x gtceu:laminated_glass','6x gtceu:peek_plate')
-  		.inputFluids('gtceu:plasticizer 576')
-  		.itemOutputs('2x kubejs:peek_reinforced_glass')
-		.duration(20*10)
-  		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.assembler('machine_casing_inert_peek')
-		.itemInputs('gtceu:inert_machine_casing')
-  		.inputFluids('gtceu:peek 216')
-		.circuit(6)
-  		.itemOutputs('kubejs:machine_casing_inert_peek')
-		.duration(20*5)
-  		.EUt((GTValues.VA[GTValues.LV]))
-	
-	event.recipes.gtceu.assembler('peek_plated_heat_resisted_casing')
-		.itemInputs('4x gtceu:titanium_carbide_plate', '2x gtceu:kaemite_plate', 'gtceu:peek_frame')
-  		.inputFluids('gtceu:peek 216')
-		.circuit(6)
-  		.itemOutputs('2x kubejs:peek_plated_heat_resisted_casing')
-		.duration(20*5)
-  		.EUt((GTValues.VA[GTValues.LV]))
 	
 	event.shaped(
         '2x kubejs:machine_casing_pipe_peek',
@@ -94,56 +60,11 @@ ServerEvents.recipes(event => {
             Y: 'gtceu:peek_frame',
     })
 
-	event.recipes.gtceu.assembly_line('large_polymerization_chamber')
-				.itemInputs('16x gtceu:chemical_plant', '16x gtceu:large_dehydration_unit', '16x gtceu:large_solidifier', '16x gtceu:uhv_electric_pump', '8x gtceu:uhv_robot_arm', '4x #gtceu:circuits/uev', '16x gtceu:peek_plate', '16x avaritia:neutron_gear', '64x gtceu:fine_kaemite_wire', '64x gtceu:fine_kaemite_wire', '64x gtceu:antimatter_foil', '64x gtceu:antimatter_foil', '64x gtceu:resonant_essence_screw')
-		.itemOutputs('gtceu:large_polymerization_chamber')
-		.inputFluids(
-			Fluid.of('gtceu:peek', 32000),
-			Fluid.of('gtceu:neoprene', 2304),
-			Fluid.of('gtceu:soldering_alloy', 1152)
-		)
-		.duration(20*100)
-  		.EUt((GTValues.VA[GTValues.UEV]))
+
 
 	// Better Polymerilization/Vulcanization
 
-	event.recipes.gtceu.large_chemical_reactor('triethylaluminium')
-		.inputFluids('gtceu:hydrogen 6000', "gtceu:ethylene 6000")
-		.circuit(3)
-		.itemInputs('1x gtceu:aluminium_dust')
-  		.outputFluids("gtceu:triethylaluminium 2000")
-  		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.UV]))
-		
-	event.recipes.gtceu.chemical_reactor('carbon_sulfide')
-		.inputFluids('gtceu:methane 2000')
-		.notConsumable("gtceu:silicon_dioxide_dust")
-		.itemInputs('8x gtceu:sulfur_dust')
-  		.outputFluids("gtceu:carbon_sulfide 2000", "gtceu:hydrogen_sulfide 4000")
-  		.duration(20*40)
-		.EUt((GTValues.VA[GTValues.LuV]))
 
-	event.recipes.gtceu.chemical_reactor('sodium_dimethyldithiocarbamate')
-		.inputFluids("gtceu:dimethylamine 2000", "gtceu:carbon_sulfide 1000")
-		.itemInputs('3x gtceu:sodium_hydroxide_dust')
-  		.outputFluids("minecraft:water 1000")
-		.itemOutputs('5x gtceu:sodium_dimethyldithiocarbamate_dust')
-  		.duration(20*55)
-		.EUt((GTValues.VA[GTValues.UV]))
-
-	event.recipes.gtceu.large_chemical_reactor('tetramethylthiuramdisulfide')
-		.inputFluids("gtceu:hydrogen_peroxide 1000")
-		.itemInputs('10x gtceu:sodium_dimethyldithiocarbamate_dust')
-		.itemOutputs('5x gtceu:tetramethylthiuramdisulfide_dust', '6x gtceu:sodium_hydroxide_dust')
-  		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.UV]))
-
-	event.recipes.gtceu.mixer('tetramethylthiuramdisulfide')
-		.inputFluids("minecraft:water 1000")
-		.itemInputs('10x gtceu:tetramethylthiuramdisulfide_dust')
-		.outputFluids("gtceu:tetramethylthiuramdisulfide_solution 1500")
-  		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.UV]))
 
 	event.recipes.gtceu.extractor('cocoa_oil_extraction')
 		.itemInputs("gtceu:cocoa_dust")
@@ -158,11 +79,7 @@ ServerEvents.recipes(event => {
   		.duration(20*30)
 		.EUt((GTValues.VA[GTValues.EV]))
 
-	event.recipes.gtceu.chemical_reactor('stearic_acid')
-		.inputFluids("gtceu:oleic_acid 1000", "gtceu:hydrogen 2000")
-		.itemOutputs('10x gtceu:stearic_acid_dust')
-  		.duration(20*50)
-		.EUt((GTValues.VA[GTValues.IV]))
+
 
 	event.recipes.gtceu.polymerization_chamber('better_polyvinyl_chloride')
 		.inputFluids("gtceu:vinyl_chloride 2160")
@@ -242,202 +159,21 @@ ServerEvents.recipes(event => {
 
 	// High-Pressure Reactor
 
-	event.recipes.gtceu.assembler('ultimate_engine_intake_casing')
-		.itemInputs('4x gtceu:neutronium_normal_fluid_pipe', '1x kubejs:neutronium_casing', '16x gtceu:neutronium_turbine_blade', '2x gtceu:neutronium_gear')
-  		.itemOutputs('2x kubejs:ultimate_engine_intake_casing')
-		.duration(20*5)
-  		.EUt((GTValues.VA[GTValues.LV]))
 
-	event.recipes.gtceu.assembly_line('large_high_pressure_reactor')
-		.itemInputs('16x gtceu:chemical_plant', "16x gtceu:atomicompressor", '16x gtceu:atmospheric_collector', '16x gtceu:uiv_electric_pump', '8x gtceu:uiv_electric_piston', '4x #gtceu:circuits/uiv', '16x kubejs:chaos_heavy_plating', '16x gtceu:awakened_draconium_gear', '64x gtceu:fine_cosmic_osmium_wire', '64x gtceu:fine_cosmic_osmium_wire', '64x gtceu:heavy_duty_alloy_t4_foil', '64x gtceu:heavy_duty_alloy_t4_foil', '64x gtceu:cosmic_tungsten_screw')
-		.itemOutputs('gtceu:large_high_pressure_reactor')
-		.inputFluids(
-			Fluid.of('gtceu:peek', 32000),
-			Fluid.of('gtceu:neoprene', 2304),
-			Fluid.of('gtceu:soldering_alloy', 1152),
-			Fluid.of("gtceu:astral_flux_plasma", 5000)
-		)
-		.duration(20*150)
-  		.EUt((GTValues.VA[GTValues.UXV]))
+
+
 
 	// Catalysts and byproducts
 	
-	event.recipes.gtceu.large_chemical_reactor('sodium_acetate')
-		.inputFluids('gtceu:hydrochloric_acid 1000')
-		.itemInputs('1x gtceu:sodium_acetate_dust')
-  		.outputFluids("gtceu:acetic_acid 1000")
-		.itemOutputs('1x gtceu:salt_dust')
-  		.duration(20*5)
-		.EUt((GTValues.VA[GTValues.EV]))
 
-	event.recipes.gtceu.chemical_reactor('cuprous_chloride')
-		.itemInputs('2x gtceu:copper_dust')
-		.inputFluids('gtceu:chlorine 2000')
-		.itemOutputs('2x gtceu:cuprous_chloride_dust')
-		.duration(20*5)
-		.EUt((GTValues.VA[GTValues.MV]))
 
-	event.recipes.gtceu.chemical_reactor('antimony_pentafluoride')
-		.itemInputs('4x gtceu:antimony_trifluoride_dust')
-		.inputFluids('gtceu:fluorine 4000')
-		.itemOutputs('2x gtceu:antimony_pentafluoride_dust')
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.IV]))
+
 	
-	event.recipes.gtceu.chemical_reactor('aluminium_chloride')
-		.itemInputs('2x gtceu:aluminium_dust')
-		.inputFluids('gtceu:chlorine 6000')
-		.itemOutputs('8x gtceu:aluminium_chloride_dust')
-		.duration(20*15)
-		.EUt((GTValues.VA[GTValues.HV]))
 
-	event.recipes.gtceu.chemical_reactor('iron_sulfate')
-		.itemInputs('1x gtceu:iron_dust')
-		.inputFluids('gtceu:sulfuric_acid 1000')
-		.itemOutputs('6x gtceu:iron_sulfate_dust')
-		.outputFluids("gtceu:hydrogen 1000")
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.EV]))
 
-	event.recipes.gtceu.chemical_reactor('alumina')
-		.itemInputs('2x gtceu:aluminium_dust')
-		.inputFluids('gtceu:oxygen 3000')
-		.itemOutputs('5x gtceu:alumina_dust')
-		.duration(20*15)
-		.EUt((GTValues.VA[GTValues.MV]))
 
-	event.recipes.gtceu.large_chemical_reactor('cobalt_alumina_catalyst')
-		.itemInputs('2x gtceu:alumina_dust', "3x gtceu:cobalt_oxide_dust")
-		.notConsumable("gtceu:platinum_dust")
-		.itemOutputs('5x gtceu:cobalt_alumina_catalyst_dust')
-		.duration(20*32)
-		.EUt((GTValues.VA[GTValues.LuV]))
-			
-	event.recipes.gtceu.chemical_reactor('activated_cobalt_alumina_catalyst')
-		.itemInputs('5x gtceu:cobalt_alumina_catalyst_dust')
-		.inputFluids('gtceu:hydrogen 2000')
-		.itemOutputs('2x gtceu:activated_cobalt_alumina_catalyst_dust')
-		.outputFluids("minecraft:water 1000")
-		.duration(20*16)
-		.EUt((GTValues.VA[GTValues.LuV]))
 
-	event.recipes.gtceu.chemical_reactor('manganese_sulfate')
-		.itemInputs('3x gtceu:pyrolusite_dust')
-		.inputFluids('gtceu:sulfuric_acid 2000')
-		.itemOutputs('6x gtceu:manganese_sulfate_dust')
-		.outputFluids("minecraft:water 2000")
-		.duration(20*15)
-		.EUt((GTValues.VA[GTValues.ZPM]))
 
-	event.recipes.gtceu.chemical_reactor('manganese_carbonate')
-		.itemInputs('6x gtceu:manganese_sulfate_dust', "4x gtceu:soda_ash_dust")
-		.itemOutputs('5x gtceu:manganese_carbonate_dust')
-		.duration(20*200)
-		.EUt((GTValues.VA[GTValues.HV]))
-	
-	event.recipes.gtceu.chemical_reactor('manganese_acetate')
-		.itemInputs('5x gtceu:manganese_carbonate_dust')
-		.inputFluids('gtceu:acetic_acid 2000')
-		.itemOutputs('19x gtceu:manganese_acetate_dust')
-		.outputFluids("minecraft:water 1000", "gtceu:carbon_dioxide 1000")
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.ZPM]))
-
-	event.recipes.gtceu.large_chemical_reactor('nickel_bromide')
-		.itemInputs('5x gtceu:nickel_dust', '2x gtceu:boron_dust')
-		.notConsumable("gtceu:platinum_dust")
-		.itemOutputs('7x gtceu:nickel_bromide_dust')
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.EV]))
-
-	event.recipes.gtceu.chemical_reactor('sodium_cyanide')
-		.itemInputs('3x gtceu:sodium_hydroxide_dust')
-		.inputFluids("gtceu:hydrogen_cyanide 1000")
-		.outputFluids("minecraft:water 1000")
-		.itemOutputs('3x gtceu:sodium_cyanide_dust')
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.EV]))
-
-	event.recipes.gtceu.chemical_reactor('hydrazine_sulfate')
-		.inputFluids("gtceu:dinitrogen_tetroxide 1000", "gtceu:sulfuric_acid 1000")
-		.itemOutputs('13x gtceu:hydrazine_sulfate_dust')
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.IV]))
-
-	event.recipes.gtceu.chemical_reactor('acetone_cyanohydrin')
-		.itemInputs('3x gtceu:sodium_cyanide_dust', '13x gtceu:hydrazine_sulfate_dust')
-		.inputFluids("gtceu:acetone 1000")
-		.itemOutputs("7x gtceu:sodium_bisulfate_dust")
-		.outputFluids("gtceu:acetone_cyanohydrin 1500", "gtceu:ammonia 1000")
-		.duration(20*15)
-		.EUt((GTValues.VA[GTValues.IV]))
-
-	event.recipes.gtceu.chemical_reactor('isobutyramide')
-		.inputFluids("gtceu:acetone_cyanohydrin 1000", "gtceu:dinitrogen_tetroxide 1000")
-		.outputFluids("gtceu:isobutyramide 1000", "minecraft:water 2000")
-		.duration(20*23)
-		.EUt((GTValues.VA[GTValues.IV]))
-	
-	event.recipes.gtceu.chemical_reactor('azo_isobutyronitrile')
-		.inputFluids("gtceu:isobutyramide 1000", "gtceu:chlorine 2000")
-		.outputFluids("gtceu:hydrochloric_acid 2000")
-		.itemOutputs('6x gtceu:azo_isobutyronitrile_dust')
-		.duration(20*41)
-		.EUt((GTValues.VA[GTValues.LuV]))
-		
-	event.recipes.gtceu.chemical_reactor('barium_chloride')
-		.inputFluids("gtceu:hydrochloric_acid 2000")
-		.itemInputs("2x gtceu:barium_sulfide_dust")
-		.outputFluids("gtceu:hydrogen_sulfide")
-		.itemOutputs('3x gtceu:barium_chloride_dust')
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.IV]))
-
-	event.recipes.gtceu.chemical_reactor('potassium_manganate')
-		.inputFluids("gtceu:oxygen 1000")
-		.itemInputs("6x gtceu:pyrolusite_dust", "12x gtceu:potassium_hydroxide_dust")
-		.outputFluids("minecraft:water 2000")
-		.itemOutputs('14x gtceu:potassium_manganate_dust')
-		.duration(20*45)
-		.EUt((GTValues.VA[GTValues.ZPM]))
-
-	event.recipes.gtceu.chemical_reactor('barium_manganate')
-		.inputFluids("minecraft:water 1000")
-		.itemInputs("3x gtceu:barium_chloride_dust", "7x gtceu:potassium_manganate_dust")
-		.itemOutputs('6x gtceu:barium_manganate_dust', "4x gtceu:rock_salt_dust")
-		.duration(20*60)
-		.EUt((GTValues.VA[GTValues.UV]))
-
-	event.recipes.gtceu.chemical_reactor('barium_permanganate')
-		.inputFluids("gtceu:sulfuric_acid 2000")
-		.itemInputs("18x gtceu:barium_manganate_dust")
-		.itemOutputs('11x gtceu:barium_permanganate_dust', "12x gtceu:barium_sulfate_dust", "3x gtceu:pyrolusite_dust")
-		.outputFluids("minecraft:water 2000")
-		.duration(20*45)
-		.EUt((GTValues.VA[GTValues.UV]))
-
-	event.recipes.gtceu.chemical_reactor('cobalt_sulfate')
-		.inputFluids("gtceu:sulfuric_acid 1000")
-		.itemInputs("2x gtceu:cobalt_oxide_dust")
-		.itemOutputs('6x gtceu:cobalt_sulfate_dust')
-		.outputFluids("minecraft:water 1000")
-		.duration(20*120)
-		.EUt((GTValues.VA[GTValues.LuV]))
-
-	event.recipes.gtceu.chemical_reactor('cobalt_permanganate_solution')
-		.inputFluids("minecraft:water 1000")
-		.itemInputs("2x gtceu:cobalt_oxide_dust", "11x gtceu:barium_permanganate_dust")
-		.itemOutputs('6x gtceu:barium_sulfate_dust')
-		.outputFluids("gtceu:cobalt_permanganate_solution 1000")
-		.duration(20*210)
-		.EUt((GTValues.VA[GTValues.UHV]))
-
-	event.recipes.gtceu.centrifuge('cobalt_permanganate')
-		.inputFluids("gtceu:cobalt_permanganate_solution 1000")
-		.itemOutputs('11x gtceu:cobalt_permanganate_dust')
-		.outputFluids("minecraft:water 1000")
-		.duration(20*85)
-		.EUt((GTValues.VA[GTValues.UEV]))
 
 	event.recipes.gtceu.electrolyzer('copper_sulfate')
 		.inputFluids("gtceu:sulfuric_acid 1000")
@@ -447,12 +183,7 @@ ServerEvents.recipes(event => {
 		.duration(20*67)
 		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.chemical_reactor('hydro_ammonia_copper_chromate')
-		.inputFluids("minecraft:water 3000", "gtceu:ammonia 4000")
-		.itemInputs("12x gtceu:copper_sulfate_dust", "7x gtceu:potassium_dichromate_dust")
-		.itemOutputs('6x gtceu:hydro_ammonia_copper_chromate_dust', '7x gtceu:potassium_sulfate_dust', '15x gtceu:ammonium_sulfate_dust')
-		.duration(20*150)
-		.EUt((GTValues.VA[GTValues.UHV]))
+
 
 	event.recipes.gtceu.dehydration_unit('copper_chromite')
 		.itemInputs("6x gtceu:hydro_ammonia_copper_chromate_dust")
@@ -464,12 +195,7 @@ ServerEvents.recipes(event => {
 
 	// Silicone Rubber Rework	 
 	
-	event.recipes.gtceu.chemical_reactor('trichlorosilane_synthesis')
-		.itemInputs('3x gtceu:silicon_dust')
-		.inputFluids('gtceu:hydrochloric_acid 3000')
-		.outputFluids('gtceu:trichlorosilane 2000', 'gtceu:hydrogen 500')
-		.duration(20*20)
-		.EUt((GTValues.VA[GTValues.MV]))
+
 
 	event.recipes.gtceu.distillation_tower('purify_trichlorosilane')
 		.inputFluids('gtceu:trichlorosilane 1000')
@@ -477,18 +203,7 @@ ServerEvents.recipes(event => {
 		.duration(20*15)
 		.EUt((GTValues.VA[GTValues.HV]))
 
-	event.recipes.gtceu.large_chemical_reactor('dimethyldichlorosilane')
-		.inputFluids('gtceu:pure_trichlorosilane 1000', 'gtceu:methane 2000')
-		.notConsumable('gtceu:copper_dust') 
-		.outputFluids('gtceu:dimethyldichlorosilane 1500', 'gtceu:hydrochloric_acid 500')
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.HV]))
-	 
-	event.recipes.gtceu.large_chemical_reactor('silicone_prepolymer')
-		.inputFluids('gtceu:dimethyldichlorosilane 1000', 'minecraft:water 2000')
-		.outputFluids('gtceu:silicone_prepolymer 1500', 'gtceu:hydrochloric_acid 1000')
-		.duration(20*20)
-		.EUt((GTValues.VA[GTValues.HV]))
+
 
 	event.recipes.gtceu.dehydration_unit('silicone_vulcanization')
 		.inputFluids('gtceu:silicone_prepolymer 1000', 'gtceu:methyl_acetate 500')
@@ -504,11 +219,7 @@ ServerEvents.recipes(event => {
 	 	.duration(20*4*5)
 		.EUt((GTValues.VA[GTValues.HV]))
 
-	event.recipes.gtceu.large_chemical_reactor('sbr_emulsion')
-  		.inputFluids('gtceu:butadiene 750', 'gtceu:styrene 250', 'minecraft:water 1000')
-  		.outputFluids('gtceu:sbr_emulsion 2000')
-  		.duration(20*15)
-		.EUt((GTValues.VA[GTValues.HV]))
+
 
 	event.recipes.gtceu.dehydration_unit('sbr_coagulation')
   		.inputFluids('gtceu:sbr_emulsion 2000')
@@ -525,12 +236,7 @@ ServerEvents.recipes(event => {
 		.duration(20*10*4)
 	  	.EUt((GTValues.VA[GTValues.MV]))
 
-	event.recipes.gtceu.assembler('glass_lamination_package')
-		.itemInputs('2x gtceu:tempered_glass','4x gtceu:polyvinyl_butyral_foil')
-  		.inputFluids('gtceu:plasticizer 144')
-  		.itemOutputs('1x gtceu:laminated_glass')
-		.duration(200)
-  		.EUt((GTValues.VA[GTValues.HV]))
+
 
 	// Epoxy Rework
 
@@ -557,34 +263,7 @@ ServerEvents.recipes(event => {
 
 	// PBI Rework
 
-	event.recipes.gtceu.large_chemical_reactor('hydrazobenzene')
-  		.inputFluids("gtceu:nitrobenzene 2000")
-		.notConsumable('gtceu:zinc_dust') 
-		.itemInputs("2x gtceu:potassium_hydroxide_dust", "2x gtceu:carbon_dust")
-  		.outputFluids('gtceu:hydrazobenzene 1000', "gtceu:carbon_monoxide 1000")
-		.itemOutputs('6x gtceu:potassium_carbonate_dust')
-  		.duration(20*15)
-		.EUt((GTValues.VA[GTValues.HV]))
-	
-	event.recipes.gtceu.large_chemical_reactor('diacetyl_benzidine')
-  		.inputFluids("gtceu:hydrazobenzene 1000", "gtceu:acetic_anhydride 2000")
-  		.outputFluids('gtceu:diacetyl_benzidine 1000', "gtceu:acetic_acid 2000")
-  		.duration(20*30)
-		.EUt((GTValues.VA[GTValues.EV]))
 
-	event.recipes.gtceu.large_chemical_reactor('dinitro_diacetyl_benzidine')
-  		.inputFluids("gtceu:diacetyl_benzidine 1000", "gtceu:nitric_acid 2000")
-  		.outputFluids('gtceu:dinitro_diacetyl_benzidine 1000', "minecraft:water 2000")
-  		.duration(20*5)
-		.EUt((GTValues.VA[GTValues.EV]))
-
-	event.recipes.gtceu.large_chemical_reactor('dinitro_benzidine')
-  		.inputFluids("gtceu:dinitro_diacetyl_benzidine 3000")
-		.itemInputs('6x gtceu:sodium_hydroxide_dust')
-  		.outputFluids('gtceu:dinitro_benzidine 3000')
-		.itemOutputs('6x gtceu:sodium_acetate_dust')
-  		.duration(20*7)
-		.EUt((GTValues.VA[GTValues.IV]))
 		
 	event.recipes.gtceu.evaporation_pool('diaminobenzidine')
   		.inputFluids('gtceu:dinitro_benzidine 10000', "gtceu:hydrochloric_acid 120000")
@@ -609,20 +288,7 @@ ServerEvents.recipes(event => {
 
 	// Neoprene
 
-	event.recipes.gtceu.chemical_reactor('calcium_carbide_production')
-		.itemInputs('3x gtceu:quicklime_dust', '2x gtceu:coke_dust')
-  		.itemOutputs('3x gtceu:calcium_carbide_dust')
-		.outputFluids('gtceu:carbon_monoxide 1000')
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.HV]))
 
-	event.recipes.gtceu.chemical_reactor('acetylene_generation')
-		.itemInputs('3x gtceu:calcium_carbide_dust')
-		.inputFluids('minecraft:water 2000')
-		.outputFluids('gtceu:acetylene 1000')
-		.itemOutputs('5x gtceu:calcium_hydroxide_dust')
-		.duration(20*1)
-		.EUt((GTValues.VA[GTValues.ZPM]))
 	
 	event.recipes.gtceu.dehydration_unit('vinylacetylene_synthesis')
 		.inputFluids('gtceu:acetylene 2000')
@@ -638,11 +304,7 @@ ServerEvents.recipes(event => {
 		.duration(20*3*5)
 		.EUt((GTValues.VA[GTValues.LuV]))
 	
-	event.recipes.gtceu.large_chemical_reactor('neoprene_emulsion')
-		.inputFluids('gtceu:chloroprene 1000', 'minecraft:water 2000', 'gtceu:sodium_persulfate 500')
-		.outputFluids('gtceu:neoprene_latex 2500')
-		.duration(20*20)
-		.EUt((GTValues.VA[GTValues.LuV]))
+
 
 	event.recipes.gtceu.evaporation_pool('neoprene_coagulation')
   		.inputFluids('gtceu:neoprene_latex 10000')
@@ -651,11 +313,7 @@ ServerEvents.recipes(event => {
   		.duration(20*100)
 		.EUt((GTValues.VA[GTValues.ZPM]))
 
-	event.recipes.gtceu.chemical_reactor('neoprene_vulcanization')
-		.itemInputs('9x gtceu:raw_neoprene_dust', 'gtceu:sulfur_dust')
-		.outputFluids('gtceu:neoprene 1296')
-		.duration(20*30)
-		.EUt((GTValues.VA[GTValues.LV]))
+
 
 	event.recipes.gtceu.chemical_plant('chloroprene_shortcut')
 		.notConsumable('kubejs:chemical_tier_three')
@@ -676,19 +334,7 @@ ServerEvents.recipes(event => {
 		
 	// XLPE 
 
-	event.recipes.gtceu.chemical_reactor('cumene_hydroperoxide')
-		.inputFluids('gtceu:cumene 1000', 'gtceu:oxygen 2000')
-		.notConsumable('gtceu:cobalt_oxide_dust')
-		.outputFluids('gtceu:cumene_hydroperoxide 1000')
-		.duration(20*8)
-		.EUt((GTValues.VA[GTValues.LV]))
-	
-	event.recipes.gtceu.chemical_reactor('cumene_hydroperoxide_phenol_acetone')
-		.inputFluids('gtceu:cumene_hydroperoxide 1000')
-		.circuit(2)
-		.outputFluids('gtceu:phenol 1000', 'gtceu:acetone 1000')
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.LV]))
+
 
 	event.recipes.gtceu.dehydration_unit('dicumyl_peroxide_synthesis')
 		.inputFluids('gtceu:cumene_hydroperoxide 2000')
@@ -697,19 +343,9 @@ ServerEvents.recipes(event => {
 		.duration(20*5*20)
 		.EUt((GTValues.VA[GTValues.ZPM]))
 	
-	event.recipes.gtceu.mixer('pe_peroxide_mixing')
-		.inputFluids('gtceu:polyethylene 1000', 'gtceu:dicumyl_peroxide 150')
-		.outputFluids('gtceu:pe_peroxide_mixture 1150')
-		.duration(20*30)
-		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.autoclave('thermal_crosslinking')
-		.inputFluids('gtceu:pe_peroxide_mixture 500')
-		.notConsumable('gtceu:quantum_star')
-		.notConsumable('gtceu:plate_casting_mold')
-		.itemOutputs('3x gtceu:thermal_treated_xlpe_plate')
-		.duration(20*15)
-		.EUt((GTValues.VA[GTValues.UV]))
+
+
 	
 	event.recipes.gtceu.radiation_chamber('radiation_crosslinking')
 		.itemInputs('20x gtceu:thermal_treated_xlpe_plate')
@@ -742,12 +378,7 @@ ServerEvents.recipes(event => {
 		.duration(20*200)
 		.EUt((GTValues.VA[GTValues.UV]))
 		
-	event.recipes.gtceu.chemical_reactor('difluorobenzophenone_synthesis')
-		.inputFluids('gtceu:fluorobenzene 2000', 'gtceu:phosgene 1000')
-		.notConsumable('gtceu:aluminium_chloride_dust')
-		.outputFluids('gtceu:difluorobenzophenone 1000', 'gtceu:hydrochloric_acid 2000')
-		.duration(20*15)
-		.EUt((GTValues.VA[GTValues.UV]))
+
 
 	event.recipes.gtceu.dehydration_unit('difluorobenzophenone_purification')
 		.inputFluids('gtceu:difluorobenzophenone 10000', 'gtceu:oxygen 2000')
@@ -755,38 +386,9 @@ ServerEvents.recipes(event => {
 		.duration(20*25*6)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.chemical_reactor('thionyl_chloride_synthesis')
-		.inputFluids('gtceu:phosgene 1000',"gtceu:sulfur_dioxide 1000")
-		.outputFluids('gtceu:thionyl_chloride 1000', "gtceu:carbon_dioxide 1000", )
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.chemical_reactor('benzene_sulfonation')
-		.inputFluids('gtceu:benzene 1000', 'gtceu:sulfuric_acid 1000') 
-		.itemOutputs('6x gtceu:benzenesulfonic_acid_dust')
-		.duration(20*12)
-		.EUt((GTValues.VA[GTValues.EV]))
 
-	event.recipes.gtceu.large_chemical_reactor('benzenesulfonyl_chloride')
-		.itemInputs('3x gtceu:benzenesulfonic_acid_dust')
-		.inputFluids('gtceu:thionyl_chloride 1000') 
-		.outputFluids('gtceu:benzenesulfonyl_chloride 1000', "gtceu:hydrochloric_acid 1000")
-		.duration(20*8)
-		.EUt((GTValues.VA[GTValues.IV]))
 
-	event.recipes.gtceu.large_chemical_reactor('diphenyl_sulfone_synthesis')
-		.inputFluids('gtceu:benzenesulfonyl_chloride 1000', 'gtceu:benzene 2000')
-		.notConsumable('gtceu:aluminium_chloride_dust') 
-		.outputFluids('gtceu:diphenyl_sulfone 1000', 'gtceu:hydrochloric_acid 2000')
-		.duration(20*16)
-		.EUt((GTValues.VA[GTValues.UV]))
-	
-	event.recipes.gtceu.large_chemical_reactor('hydroquinone_synthesis')
-		.inputFluids('gtceu:phenol 1000', 'gtceu:hydrogen_peroxide 1000')
-		.notConsumable('gtceu:iron_sulfate_dust')
-		.outputFluids('gtceu:hydroquinone_solution 2000')
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.LuV]))
 
 	event.recipes.gtceu.electric_blast_furnace('hydroquinone_crystallization')
 		.inputFluids('gtceu:hydroquinone_solution 10000', 'gtceu:oxygen 2000')
@@ -796,22 +398,7 @@ ServerEvents.recipes(event => {
 		.duration(20*30)
 		.EUt((GTValues.VA[GTValues.LuV]))
 	
-	event.recipes.gtceu.chemical_reactor('butynediol_synthesis')
-		.inputFluids('gtceu:formaldehyde 2000', 'gtceu:acetylene 1000')
-		.notConsumable('gtceu:copper_dust') 
-		.notConsumable('gtceu:bismuth_dust')
-		.itemOutputs('12x gtceu:butynediol_dust')
-		.duration(20*12)
-		.EUt((GTValues.VA[GTValues.IV]))
-	
-	event.recipes.gtceu.chemical_reactor('butanediol_synthesis')
-		.inputFluids('gtceu:hydrogen 16000')
-		.notConsumable('gtceu:platinum_dust')
-		.itemInputs('6x gtceu:butynediol_dust')
-		.outputFluids('gtceu:butanediol 500')
-		.itemOutputs('7x gtceu:butenediol_dust')
-		.duration(20*20)
-		.EUt((GTValues.VA[GTValues.ZPM]))
+
 
 	event.recipes.gtceu.dehydration_unit('butyrolactone_synthesis')
 		.inputFluids('gtceu:butanediol 2000')
@@ -820,27 +407,7 @@ ServerEvents.recipes(event => {
 		.duration(20*20*5)
 		.EUt((GTValues.VA[GTValues.ZPM]))
 	
-	event.recipes.gtceu.large_chemical_reactor('pyrrolidone_synthesis')
-		.inputFluids('gtceu:butyrolactone 1000', 'gtceu:ammonia 1000')
-		.notConsumable('gtceu:talc_dust')
-		.outputFluids('gtceu:pyrrolidone 1000', 'minecraft:water 1000')
-		.duration(20*30)
-		.EUt((GTValues.VA[GTValues.ZPM]))
-	
-	event.recipes.gtceu.large_chemical_reactor('n_methyl_pyrrolidone_synthesis')
-		.inputFluids('gtceu:pyrrolidone 1000', 'gtceu:methanol 1000')
-		.notConsumable('gtceu:talc_dust')
-		.outputFluids('gtceu:n_methyl_pyrrolidone 1000', 'minecraft:water 1000')
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.large_chemical_reactor('peek_polycondensation')
-		.itemInputs('3x gtceu:purified_difluorobenzophenone_dust', '6x gtceu:hydroquinone_dust')
-		.inputFluids('gtceu:diphenyl_sulfone 2000')
-		.notConsumable('gtceu:potassium_carbonate_dust')
-		.outputFluids('gtceu:raw_peek_solution 1500')
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.UEV]))
 
 	event.recipes.gtceu.dehydration_unit('diphenyl_sulfone_recovery')
 		.inputFluids('gtceu:raw_peek_solution 1000', 'gtceu:methanol 2000')
@@ -855,12 +422,7 @@ ServerEvents.recipes(event => {
 		.duration(20*5)
 		.EUt((GTValues.VA[GTValues.EV]))
 		
-	event.recipes.gtceu.large_chemical_reactor('peek_purification')
-		.itemInputs('32x gtceu:raw_peek_dust')
-		.inputFluids('gtceu:n_methyl_pyrrolidone 10000')
-		.outputFluids('gtceu:peek 2304', 'gtceu:diluted_n_methyl_pyrrolidone 8000')
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.UHV]))
+
 	
 	event.recipes.gtceu.distillery('n_methyl_pyrrolidone_recovery')
 		.inputFluids('gtceu:diluted_n_methyl_pyrrolidone 1000')
@@ -955,13 +517,6 @@ ServerEvents.recipes(event => {
 		.EUt((GTValues.VA[GTValues.UV]))
 
 	// Carbon Nanotubes
-
-	event.recipes.gtceu.mixer('enriched_carbon_slurry')
-		.itemInputs('16x gtceu:exquisite_coke_gem','16x gtceu:exquisite_diamond_gem', '32x gtceu:graphene_dust', '64x gtceu:activated_carbon_dust')
-		.inputFluids('gtceu:carbon 10000', 'gtceu:fluoroantimonic_acid 5000')
-		.outputFluids('gtceu:enriched_carbon_slurry 20000')
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.UHV]))
 	
 	event.recipes.gtceu.extreme_cracking_unit('plasma_cracked_carbon_slurry')
 		.inputFluids('gtceu:enriched_carbon_slurry 10000', 'gtceu:thorium_plasma_plasma 5000')
@@ -972,19 +527,7 @@ ServerEvents.recipes(event => {
 		.duration(20*15)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
-	event.recipes.gtceu.large_chemical_reactor('enriched_carbon_solution')
-		.inputFluids('gtceu:plasmacracked_carbon_slurry 1000', 'gtceu:neutronium 2000')
-		.outputFluids('gtceu:enriched_carbon_solution 500')
-		.circuit(23)
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.large_chemical_reactor('carbon_nanotubes_doped_aluminium_chloride')
-		.itemInputs('8x gtceu:aluminium_chloride_dust')
-		.inputFluids('gtceu:enriched_carbon_solution 1000', 'gtceu:iron_ii_chloride 500', 'gtceu:ammonia 1000')
-		.itemOutputs('16x gtceu:carbon_nanotubes_doped_aluminium_chloride_dust')
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.UEV]))
 
 	event.recipes.gtceu.dehydration_unit('raw_carbon_nanotubes_solution')
 		.itemInputs('4x gtceu:carbon_nanotubes_doped_aluminium_chloride_dust')
@@ -994,20 +537,9 @@ ServerEvents.recipes(event => {
 		.duration(20*32*4)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.autoclave('wet_carbon_nanotubes')
-		.itemInputs('2x gtceu:carbon_fiber_mesh')
-		.inputFluids('gtceu:raw_carbon_nanotubes_solution 1000')
-		.itemOutputs('4x gtceu:wet_carbon_nanotubes_foil')
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.chemical_bath('carbon_nanotubes_doped_aluminium_chloride')
-		.itemInputs('32x gtceu:wet_carbon_nanotubes_foil')
-		.inputFluids('gtceu:sulfuric_acid 5000')
-		.itemOutputs('8x gtceu:carbon_nanotubes_dust')
-		.outputFluids("gtceu:diluted_sulfuric_acid 2500")
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.UV]))
+
+
 
 	event.recipes.gtceu.extruder('carbon_nanotubes_ingot')
 		.notConsumable('gtceu:ingot_extruder_mold')
@@ -1016,19 +548,7 @@ ServerEvents.recipes(event => {
 		.duration(10)
 		.EUt((GTValues.VA[GTValues.LV]))
 	
-	event.recipes.gtceu.assembler('filter_frame')
-		.itemInputs('4x gtceu:xlpe_rod')
-		.itemOutputs('2x kubejs:filter_frame')
-		.circuit(2)
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.HV]))
 
-	event.recipes.gtceu.assembler('carbon_nanotubes_filter')
-		.itemInputs('kubejs:filter_frame', '16x gtceu:fine_carbon_nanotubes_wire')
-		.itemOutputs('kubejs:carbon_nanotubes_filter')
-		.circuit(1)
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.HV]))
 
 	event.recipes.gtceu.chemical_plant('carbon_nanotubes_shortcut')
 		.circuit(22)
@@ -1041,19 +561,9 @@ ServerEvents.recipes(event => {
 	
 	//Deep Water Line
 
-	event.recipes.gtceu.chemical_reactor('sodium_hypochlorite')
-		.itemInputs("6x gtceu:sodium_hydroxide_dust")
-		.inputFluids('gtceu:chlorine 2000')
-		.itemOutputs("2x gtceu:salt_dust", "3x gtceu:sodium_hypochlorite_dust")
-		.outputFluids("minecraft:water 1000")
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.HV]))
 
-	event.recipes.gtceu.large_chemical_reactor('chlorocyclopentane')
-		.inputFluids('gtceu:chlorine 12000', 'gtceu:cyclopentadiene 1000')
-		.outputFluids("gtceu:chlorocyclopentane 1000", "gtceu:hydrochloric_acid 4000")
-		.duration(20*55)
-		.EUt((GTValues.VA[GTValues.UHV]))
+
+
 	
 	event.recipes.gtceu.dehydration_unit('hexachlorocyclopentadiene')
 		.itemInputs("1x gtceu:sodium_hypochlorite_dust")
@@ -1062,13 +572,7 @@ ServerEvents.recipes(event => {
 		.duration(20*50*5)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.large_chemical_reactor('endosulfate_synthesis')
-		.inputFluids("gtceu:hexachlorocyclopentadiene 1000", "gtceu:thionyl_chloride 1000")
-		.itemInputs('7x gtceu:butenediol_dust')
-		.itemOutputs('25x gtceu:endosulfate_dust')
-		.outputFluids('gtceu:hydrochloric_acid 2000')
-		.duration(20*75)
-		.EUt((GTValues.VA[GTValues.UHV]))
+
 
 	event.recipes.gtceu.chemical_plant('thionyl_chloride_shortcut')
 		.circuit(25)
@@ -1089,21 +593,9 @@ ServerEvents.recipes(event => {
 		.duration(20*120)
 		.EUt((GTValues.VA[GTValues.UIV]))
 
-	event.recipes.gtceu.chemical_bath('deep_water_filtration')
-		.itemInputs('16x kubejs:carbon_nanotubes_filter', '500x gtceu:endosulfate_dust')
-		.inputFluids('gtceu:deep_water 1000000000')
-		.itemOutputsRanged('kubejs:carbon_nanotubes_filter', 2, 8)
-		.itemOutputsRanged('kubejs:damaged_carbon_nanotubes_filter', 2, 8)
-		.outputFluids('gtceu:filtered_deep_water 800000000')
-		.duration(20*600)
-		.EUt((GTValues.VA[GTValues.UEV]))
 
-	event.recipes.gtceu.centrifuge('carbon_nanotubes_filter_recycle')
-		.itemInputs('kubejs:damaged_carbon_nanotubes_filter')
-		.chancedOutput('kubejs:filter_frame', 5000, 0)
-		.itemOutputsRanged('gtceu:fine_carbon_nanotubes_wire', 2, 8)
-		.duration(20*10)
-		.EUt((GTValues.VA[GTValues.LuV]))
+
+
 
 	event.recipes.gtceu.evaporation_pool('brine_concentration')
 		.inputFluids('gtceu:filtered_deep_water 8000000')
@@ -1117,33 +609,11 @@ ServerEvents.recipes(event => {
 		.duration(20*5)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.chemical_reactor('brine_acidification')
-		.inputFluids('gtceu:super_concentrated_heavy_brine 2000', 'gtceu:sulfuric_acid 1000')
-		.outputFluids('gtceu:acidified_heavy_brine 3000')
-		.duration(20*5)
-		.EUt((GTValues.VA[GTValues.LuV]))
 
-	event.recipes.gtceu.chemical_reactor('bromine_oxidation')
-		.inputFluids('gtceu:acidified_heavy_brine 2000', 'gtceu:chlorine 1000')
-		.outputFluids('gtceu:bromine 500', 'gtceu:depleted_heavy_brine 1500')
-		.duration(20*13)
-		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.chemical_bath('iodide_adsorption')
-		.inputFluids('gtceu:depleted_heavy_brine 1000')
-		.itemInputs('4x gtceu:epoxy_plate', '4x gtceu:silver_foil')
-		.itemOutputs('4x gtceu:iodide_loaded_resin_plate')
-		.outputFluids('gtceu:demineralized_heavy_brine 800')
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.chemical_reactor('iodide_elution')
-		.itemInputs('4x gtceu:iodide_loaded_resin_plate', '3x gtceu:sodium_hydroxide_dust')
-		.inputFluids("minecraft:water 1000")
-		.outputFluids('gtceu:sodium_iodide_solution 1200')
-		.itemOutputs('2x gtceu:epoxy_plate')
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.UHV]))
+
+
 
 	event.recipes.gtceu.dehydration_unit('iodine_oxidation')
 		.inputFluids('gtceu:sodium_iodide_solution 1000', 'gtceu:chlorine 500')
@@ -1163,32 +633,11 @@ ServerEvents.recipes(event => {
 		.duration(20*100)
 		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.centrifuge('demineralized_heavy_brine_proc')
-		.inputFluids('gtceu:heavy_salts_waste 100000')
-		.itemOutputsRanged('gtceu:lithium_chloride_dust', 500, 2000)
-		.itemOutputsRanged('gtceu:magnesium_chloride_dust', 500, 2000)
-		.itemOutputsRanged('gtceu:aluminium_chloride_dust', 500, 2000)
-		.itemOutputsRanged('gtceu:calcium_chloride_dust', 500, 2000)
-		.itemOutputsRanged('gtceu:rock_salt_dust', 500, 2000)
-		.itemOutputsRanged('gtceu:bauxite_slag_dust', 200, 500)
-		.duration(20*50)
-		.EUt((GTValues.VA[GTValues.UHV]))
+
 
 	// ZSM-5
 
-	event.recipes.gtceu.large_chemical_reactor('propylene_hydroformylation')
-		.inputFluids('gtceu:ethylene 1000', "gtceu:hydrogen 2000", "gtceu:carbon_monoxide 1000") 
-		.notConsumable('gtceu:activated_cobalt_alumina_catalyst_dust')
-		.outputFluids('gtceu:propionaldehyde 1500')
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.HV]))
 
-	event.recipes.gtceu.large_chemical_reactor('propionic_acid_synthesis')
-		.inputFluids('gtceu:propionaldehyde 1000', 'gtceu:oxygen 1000')
-		.notConsumable('gtceu:manganese_acetate_dust')
-		.outputFluids('gtceu:propionic_acid 1000')
-		.duration(20*32)
-		.EUt((GTValues.VA[GTValues.EV]))
 
 	event.recipes.gtceu.high_pressure_reactor('propylamine_synthesis')
 		.inputFluids('gtceu:propionic_acid 1000', 'gtceu:ammonia 2000', 'gtceu:hydrogen 2000')
@@ -1200,41 +649,11 @@ ServerEvents.recipes(event => {
 		.duration(20*16)
 		.EUt((GTValues.VA[GTValues.IV]))
 	
-	event.recipes.gtceu.chemical_reactor('tripropylamine_synthesis')
-		.inputFluids('gtceu:propylamine 1000', 'gtceu:propene 2000')
-		.notConsumable('gtceu:zeolite_dust')
-		.outputFluids('gtceu:tripropylamine 1500', 'gtceu:ammonia 500')
-		.duration(20*12)
-		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.large_chemical_reactor('bromopropane_synthesis')
-		.inputFluids('gtceu:propane 1000', 'gtceu:bromine 2000')
-		.notConsumable('gtceu:azo_isobutyronitrile_dust') 
-		.outputFluids('gtceu:bromopropane 1000', 'gtceu:hydrogen_bromide 1000')
-		.duration(20*24)
-		.EUt((GTValues.VA[GTValues.EV]))
-	
-	event.recipes.gtceu.large_chemical_reactor('tetrapropylammonium_bromide')
-		.inputFluids('gtceu:tripropylamine 1000', 'gtceu:bromopropane 1000')
-		.outputFluids('gtceu:tetrapropylammonium_bromide_solution 1500')
-		.duration(20*12)
-		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.chemical_bath('tpab_crystallization')
-		.inputFluids('gtceu:tetrapropylammonium_bromide_solution 1000')
-		.notConsumable('gtceu:blacklight')
-		.itemOutputs('3x gtceu:crude_tetrapropylammonium_bromide_dust')
-		.outputFluids('minecraft:water 250')
-		.duration(20*30)
-		.EUt((GTValues.VA[GTValues.ZPM]))
 
-	event.recipes.gtceu.chemical_bath('tpab_recrystallization')
-		.itemInputs('10x gtceu:crude_tetrapropylammonium_bromide_dust')
-		.inputFluids('gtceu:ethanol 1000')
-		.itemOutputs('10x gtceu:tetrapropylammonium_bromide_dust')
-		.outputFluids('gtceu:diluted_ethanol 500')
-		.duration(20*20)
-		.EUt((GTValues.VA[GTValues.ZPM]))
+
+
 
 	event.recipes.gtceu.distillation_tower('diluted_ethanol')
 		.inputFluids('gtceu:diluted_ethanol 1000')
@@ -1250,20 +669,9 @@ ServerEvents.recipes(event => {
 		.blastFurnaceTemp(1173)
 		.EUt((GTValues.VA[GTValues.HV]))
 
-	event.recipes.gtceu.mixer('zsm_5_solution')
-		.itemInputs('6x gtceu:silicon_dioxide_dust', '4x gtceu:sodium_aluminate_dust', '3x gtceu:sodium_hydroxide_dust', '5x gtceu:tetrapropylammonium_bromide_dust')
-		.inputFluids("minecraft:water 2000")
-		.outputFluids('gtceu:zsm_5_solution 5000')
-		.itemOutputs("4x gtceu:certus_quartz_dust")
-		.duration(20*40)
-		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.autoclave('zsm_5')
-		.itemInputs("16x gtceu:polytetrafluoroethylene_foil")
-		.inputFluids("gtceu:zsm_5_solution 2000")
-		.itemOutputs("4x gtceu:zsm_5_dust")
-		.duration(20*20)
-		.EUt((GTValues.VA[GTValues.UHV]))
+
+
 
 	event.recipes.gtceu.chemical_plant('zsm_5_shortcut')
 		.circuit(23)
@@ -1276,19 +684,9 @@ ServerEvents.recipes(event => {
 
 	// Kevlar
 
-  	event.recipes.gtceu.centrifuge('p_xylene_separation')
-		.inputFluids('gtceu:mixed_xylenes 10000')
-		.itemInputs('2x gtceu:zsm_5_dust')
-		.outputFluids('gtceu:p_xylene 8000', 'gtceu:o_xylene 1000', 'gtceu:m_xylene 1000')
-		.duration(20*50)
-		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.large_chemical_reactor('ta_synthesis')
-		.inputFluids('gtceu:p_xylene 1000', 'gtceu:oxygen 3000')
-		.notConsumable('gtceu:cobalt_permanganate_dust')
-		.outputFluids('gtceu:terephthalic_acid_slurry 1500')
-		.duration(20*20)
-		.EUt((GTValues.VA[GTValues.UEV]))
+
+
 
 	event.recipes.gtceu.dehydration_unit('ta_purification')
 		.inputFluids('gtceu:terephthalic_acid_slurry 1000')
@@ -1308,12 +706,7 @@ ServerEvents.recipes(event => {
 		.duration(20*5)
 		.EUt((GTValues.VA[GTValues.UIV]))
 	
-	event.recipes.gtceu.large_chemical_reactor('tcl_synthesis')
-		.itemInputs('3x gtceu:terephthalic_acid_dust')
-		.inputFluids('gtceu:thionyl_chloride 4000')
-		.outputFluids('gtceu:terephthaloyl_chloride 1000', 'gtceu:sulfur_dioxide 1000', 'gtceu:hydrochloric_acid 1000')
-		.duration(20*20)
-		.EUt((GTValues.VA[GTValues.UHV]))
+
 
 	event.recipes.gtceu.high_pressure_reactor('p_nitroaniline_synthesis')
 		.inputFluids("gtceu:nitrochlorobenzene 1000", 'gtceu:ammonia 2000')
@@ -1325,13 +718,7 @@ ServerEvents.recipes(event => {
 		.duration(20*15)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
-	event.recipes.gtceu.large_chemical_reactor('ppd_reduction')
-		.itemInputs('3x gtceu:p_nitroaniline_dust')
-		.inputFluids('gtceu:hydrogen 3000')
-		.notConsumable('gtceu:nickel_bromide_dust')
-		.outputFluids('gtceu:p_phenylenediamine_solution 1500')
-		.duration(20*60)
-		.EUt((GTValues.VA[GTValues.UIV]))
+
 
 	event.recipes.gtceu.distillation_tower('ppd_purification')
 		.inputFluids('gtceu:p_phenylenediamine_solution 1000')
@@ -1450,19 +837,7 @@ ServerEvents.recipes(event => {
 		.duration(20*40)
 		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.chemical_reactor('pyridine_acid_extraction')
-		.inputFluids('gtceu:pyridine_bases 1000', 'gtceu:sulfuric_acid 1000')
-		.outputFluids('gtceu:pyridine_sulfate_solution 1500')
-		.duration(20*28)
-		.EUt((GTValues.VA[GTValues.EV]))
 
-	event.recipes.gtceu.chemical_reactor('pyridine_liberation')
-		.itemInputs("3x gtceu:sodium_hydroxide_dust")
-		.inputFluids('gtceu:pyridine_sulfate_solution 1000', 'minecraft:water 500')
-		.itemOutputs("3x gtceu:sodium_bisulfate_dust")
-		.outputFluids('gtceu:crude_pyridine 800')
-		.duration(20*32)
-		.EUt((GTValues.VA[GTValues.LuV]))
 
 	event.recipes.gtceu.dehydration_unit('acetaldehyde_synthesis')
 		.inputFluids('gtceu:ethanol 1000', 'gtceu:oxygen 2000')
@@ -1471,13 +846,7 @@ ServerEvents.recipes(event => {
 		.duration(20*35*4)
 		.EUt((GTValues.VA[GTValues.ZPM]))
 
-	event.recipes.gtceu.large_chemical_reactor('pyridine_aldehyde_synthesis')
-		.inputFluids('gtceu:acetaldehyde 1500', 'gtceu:ammonia 1000', 'gtceu:formaldehyde 500')
-		.notConsumable("gtceu:alumina_dust")
-		.notConsumable("gtceu:silicon_dioxide_dust")
-		.outputFluids('gtceu:synthetic_pyridine_mixture 2000')
-		.duration(20*47)
-		.EUt((GTValues.VA[GTValues.UV]))
+
 
 	event.recipes.gtceu.distillation_tower('synthetic_pyridine_separation')
 		.inputFluids('gtceu:synthetic_pyridine_mixture 1000')
@@ -1485,11 +854,7 @@ ServerEvents.recipes(event => {
 		.duration(20*29)
 		.EUt((GTValues.VA[GTValues.ZPM]))
 
-	event.recipes.gtceu.mixer('technical_pyridine_mixing')
-		.inputFluids('gtceu:crude_pyridine 1000', 'gtceu:crude_synthetic_pyridine 1000')
-		.outputFluids('gtceu:technical_pyridine_mixture 2000')
-		.duration(20*20)
-		.EUt((GTValues.VA[GTValues.HV]))
+
 
 	event.recipes.gtceu.dehydration_unit('pyridine_drying_technical')
 		.inputFluids('gtceu:technical_pyridine_mixture 1000', 'gtceu:toluene 200')
@@ -1510,11 +875,7 @@ ServerEvents.recipes(event => {
 		.duration(20*15)
 		.EUt((GTValues.VA[GTValues.UIV]))
 
-	event.recipes.gtceu.chemical_reactor('chloropyridine_solution_synthesis')
-		.inputFluids('gtceu:pure_pyridine 2000', 'gtceu:chlorine 6000', "gtceu:steam 2000")
-		.outputFluids('gtceu:chloropyridine_solution 2000')
-		.duration(20*45)
-		.EUt((GTValues.VA[GTValues.UEV]))
+
 
 	event.recipes.gtceu.distillation_tower('chloropyridine_solution_distillation')
 		.inputFluids('gtceu:chloropyridine_solution 1000')
@@ -1523,12 +884,7 @@ ServerEvents.recipes(event => {
 		.duration(20*25)
 		.EUt((GTValues.VA[GTValues.UXV]))
 
-	event.recipes.gtceu.chemical_reactor('dichloropyridine_synthesis')
-		.inputFluids('gtceu:chloropyridine 1000', 'gtceu:chlorine 2000')
-		.itemOutputs('8x gtceu:dichloropyridine_dust')
-		.outputFluids('gtceu:hydrochloric_acid 1000')
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.UIV]))
+
 
 	event.recipes.gtceu.dehydration_unit('diethyl_ether_synthesis')
 		.inputFluids('gtceu:ethanol 2000')
@@ -1537,33 +893,7 @@ ServerEvents.recipes(event => {
 		.duration(20*35*3)
 		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.large_chemical_reactor('2-6_bischloromagnesiopyridine_synthesis')
-		.inputFluids('gtceu:diethyl_ether 250')
-		.itemInputs('32x gtceu:dichloropyridine_dust', '1x gtceu:small_iodine_dust', '4x gtceu:magnesium_dust')
-		.outputFluids('gtceu:2-6_bischloromagnesiopyridine 2000')
-		.duration(20*45)
-		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.large_chemical_reactor('magnesium_pyridine_2-6_dicarboxylate_synthesis')
-		.inputFluids('gtceu:2-6_bischloromagnesiopyridine 1000', "gtceu:carbon_dioxide 2000")
-		.itemOutputs("6x gtceu:magnesium_pyridine_2-6_dicarboxylate_dust", "3x gtceu:magnesium_chloride_dust")
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.UEV]))
-
-	event.recipes.gtceu.large_chemical_reactor('dipicolinic_acid_dus_from_magnesium_pyridine_2-6_dicarboxylate')
-		.inputFluids("gtceu:hydrochloric_acid 2000")
-		.itemInputs("6x gtceu:magnesium_pyridine_2-6_dicarboxylate_dust")
-		.itemOutputs("17x gtceu:dipicolinic_acid_dust", "3x gtceu:magnesium_chloride_dust")
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.UEV]))
-
-	event.recipes.gtceu.large_chemical_reactor('picolinic_acid_slurry')
-		.inputFluids('gtceu:oxygen 3000', 'gtceu:ammonia 1000')
-		.itemInputs('14x gtceu:picoline_dust')
-		.notConsumable('gtceu:cobalt_oxide_dust')
-		.outputFluids('gtceu:picolinic_acid_slurry 1000', 'minecraft:water 1000')
-		.duration(20*20)
-		.EUt((GTValues.VA[GTValues.UV]))
 
 	event.recipes.gtceu.electrolyzer('picolinic_acid_synthesis')
 		.inputFluids('gtceu:picolinic_acid_slurry 1000')
@@ -1582,48 +912,7 @@ ServerEvents.recipes(event => {
 		.duration(20*120)
 		.EUt((GTValues.VA[GTValues.UEV]))
 	
-	event.recipes.gtceu.large_chemical_reactor('potassium_permanganate')
-		.inputFluids("minecraft:water 2000")
-		.itemInputs("21x gtceu:potassium_manganate_dust")
-		.itemOutputs("12x gtceu:potassium_permanganate_dust", "3x gtceu:pyrolusite_dust", "12x gtceu:sodium_hydroxide_dust")
-		.duration(20*30)
-		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.large_chemical_reactor('potassium_dipicolinate')
-		.inputFluids("gtceu:lutidine 1000", "minecraft:water 2000")
-		.itemInputs("6x gtceu:potassium_permanganate_dust")
-		.itemOutputs("19x gtceu:potassium_dipicolinate_dust", "3x gtceu:pyrolusite_dust")
-		.outputFluids('gtceu:hydrogen 10000')
-		.duration(20*15)
-		.EUt((GTValues.VA[GTValues.UEV]))
-
-	event.recipes.gtceu.large_chemical_reactor('dipicolinic_acid_from_potassium_dipicolinate')
-		.inputFluids("gtceu:hydrochloric_acid 2000")
-		.itemInputs("19x gtceu:potassium_dipicolinate_dust")
-		.itemOutputs("17x gtceu:dipicolinic_acid_dust", "4x gtceu:rock_salt_dust")
-		.duration(20*55)
-		.EUt((GTValues.VA[GTValues.UHV]))
-
-	event.recipes.gtceu.chemical_reactor('phosphorus_trichloride')
-		.inputFluids('gtceu:chlorine 12000')
-		.circuit(3)
-		.itemInputs("4x gtceu:phosphorus_dust")
-		.outputFluids('gtceu:phosphorus_trichloride 4000')
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.EV]))
-
-	event.recipes.gtceu.chemical_reactor('phosphorus_pentachloride')
-		.inputFluids('gtceu:phosphorus_trichloride 1000', 'gtceu:chlorine 2000')
-		.itemOutputs('6x gtceu:phosphorus_pentachloride_dust')
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.UV]))
-
-	event.recipes.gtceu.large_chemical_reactor('dipicolinyl_dichloride_synthesis')
-		.itemInputs('34x gtceu:dipicolinic_acid_dust', '12x gtceu:phosphorus_pentachloride_dust')
-		.inputFluids('gtceu:thionyl_chloride 1000')
-		.outputFluids('gtceu:dipicolinyl_dichloride_solution 1500', 'gtceu:phosphorus_oxychloride 1000', 'gtceu:hydrochloric_acid 1000')
-		.duration(20*60)
-		.EUt((GTValues.VA[GTValues.UIV]))
 
 	event.recipes.gtceu.high_pressure_reactor('dipicolinyl_dichloride_recrystallization')
 		.inputFluids('gtceu:dipicolinyl_dichloride_solution 1000', 'gtceu:ethanol 500')
@@ -1633,13 +922,6 @@ ServerEvents.recipes(event => {
 		.itemOutputs('7x gtceu:dipicolinyl_dichloride_dust')
 		.duration(20*20)
 		.EUt((GTValues.VA[GTValues.UEV]))
-
-	event.recipes.gtceu.mixer('pentose_enriched_biomass')
-		.inputFluids("gtceu:biomass 3000", "gtceu:wood_vinegar 2000")
-		.itemInputs("64x gtceu:wheat_dust", "48x minecraft:sugar")
-		.outputFluids('gtceu:pentose_enriched_biomass 5000')
-		.duration(20*46)
-		.EUt((GTValues.VA[GTValues.ZPM]))
 
 	event.recipes.gtceu.distillation_tower('pentose_enriched_biomass_distillation')
 		.inputFluids("gtceu:pentose_enriched_biomass 1000")
@@ -1654,13 +936,7 @@ ServerEvents.recipes(event => {
 		.duration(20*45*3)
 		.EUt((GTValues.VA[GTValues.UEV]))
 
-	event.recipes.gtceu.chemical_reactor('fumaric_acid_synthesis')
-		.inputFluids('gtceu:furfural 1000', 'gtceu:oxygen 3000')
-		.notConsumable('gtceu:vanadium_dust')
-		.itemOutputs('12x gtceu:fumaric_acid_dust')
-		.outputFluids('gtceu:carbon_monoxide 1000')
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.UEV]))
+
 
 	event.recipes.gtceu.high_pressure_reactor('diiminosuccinonitrile')
 		.inputFluids('gtceu:ammonia 3000')
@@ -1680,20 +956,7 @@ ServerEvents.recipes(event => {
 		.duration(20*25*4)
 		.EUt((GTValues.VA[GTValues.UIV]))
 
-	event.recipes.gtceu.large_chemical_reactor('pyrazine_dicarboxylic_acid')
-		.inputFluids('gtceu:pyrazine 2000', 'gtceu:oxygen 5000')
-		.notConsumable('gtceu:platinum_dust')
-		.outputFluids("gtceu:hydrogen_cyanide 2000", "minecraft:water 1000")
-		.itemOutputs('16x gtceu:pyrazine_dicarboxylic_acid_dust')
-		.duration(20*35)
-		.EUt((GTValues.VA[GTValues.UEV]))
 
-	event.recipes.gtceu.large_chemical_reactor('pyrazine_dichloride')
-		.itemInputs('16x gtceu:pyrazine_dicarboxylic_acid_dust', '18x gtceu:phosphorus_pentachloride_dust')
-		.inputFluids("gtceu:distilled_water 500")
-		.outputFluids('gtceu:pyrazine_dicarbonyl_dichloride 1000', 'gtceu:phosphorus_oxychloride 2000')
-		.duration(20*15)
-		.EUt((GTValues.VA[GTValues.UXV]))
 
 	event.recipes.gtceu.dehydration_unit('pyrophosphoric_acid')
 		.inputFluids("gtceu:phosphoric_acid 2000")
@@ -1701,17 +964,7 @@ ServerEvents.recipes(event => {
 		.duration(20*15*3)
 		.EUt((GTValues.VA[GTValues.UV]))
 
-	event.recipes.gtceu.chemical_reactor('triphosphoric_acid')
-		.inputFluids("gtceu:phosphoric_acid 1000", "gtceu:pyrophosphoric_acid 1000")
-		.outputFluids('gtceu:triphosphoric_acid 1000', "minecraft:water 1000")
-		.duration(20*25)
-		.EUt((GTValues.VA[GTValues.UHV]))
 
-	event.recipes.gtceu.chemical_reactor('tetraphosphoric_acid')
-		.inputFluids("gtceu:phosphoric_acid 1000", "gtceu:triphosphoric_acid  1000")
-		.outputFluids('gtceu:tetraphosphoric_acid 1000', "minecraft:water 1000")
-		.duration(20*30)
-		.EUt((GTValues.VA[GTValues.UEV]))
 
 	event.recipes.gtceu.polymerization_chamber('zylon_polymerization')
 		.inputFluids('gtceu:pyrazine_dicarbonyl_dichloride 500')

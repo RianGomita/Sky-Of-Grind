@@ -26,12 +26,7 @@ ServerEvents.recipes(event => {
   )
   .duration(600)
   .EUt(GTValues.VA[GTValues.UIV])
-  event.recipes.gtceu.assembler('fluid_regulator_uev')
-  .itemInputs('gtceu:uev_electric_pump', '2x #gtceu:circuits/uev')
-  .circuit(1)
-  .itemOutputs('gtceu:uev_fluid_regulator')
-  .duration(50)
-  .EUt(GTValues.VA[GTValues.UIV])
+
   event.recipes.gtceu.component_assembly_line('uev_conveyor_module')
   .itemInputs('gtceu:uev_electric_motor', '8x gtceu:cosmic_neutronium_rod', '4x gtceu:draconium_bolt', '4x gtceu:double_cosmic_neutronium_plate', '4x gtceu:draconium_screw', '2x gtceu:draconium_single_cable', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
   .itemOutputs('gtceu:uev_conveyor_module')
@@ -63,24 +58,7 @@ ServerEvents.recipes(event => {
   )
   .duration(600)
   .EUt(GTValues.VA[GTValues.UIV])
-  event.recipes.gtceu.assembly_line('uev_energy_input_hatch')
-  .itemInputs('gtceu:uev_machine_hull', '4x gtceu:draconium_single_cable', '2x kubejs:highly_resonative_soc', '#gtceu:circuits/uev', '2x kubejs:uev_voltage_coil', 'avaritia:eternal_singularity')
-  .itemOutputs('gtceu:uev_energy_input_hatch')
-  .inputFluids(
-    Fluid.of('gtceu:sodium_potassium', 10000),
-    Fluid.of('gtceu:soldering_alloy', 2880)
-  )
-  .duration(600)
-  .EUt(GTValues.VA[GTValues.UEV])
-  event.recipes.gtceu.assembly_line('uev_energy_output_hatch')
-  .itemInputs('gtceu:uev_machine_casing', '4x gtceu:draconium_single_cable', '2x kubejs:highly_resonative_soc', '#gtceu:circuits/uev', '2x kubejs:uev_voltage_coil', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
-  .itemOutputs('gtceu:uev_energy_output_hatch')
-  .inputFluids(
-    Fluid.of('gtceu:sodium_potassium', 10000),
-    Fluid.of('gtceu:soldering_alloy', 2880)
-  )
-  .duration(600)
-  .EUt(GTValues.VA[GTValues.UIV])
+
   event.recipes.gtceu.component_assembly_line('uev_electric_emitter')
   .itemInputs('gtceu:awakened_draconium_frame', 'gtceu:uev_electric_motor', '4x gtceu:long_awakened_draconium_rod', 'gtceu:gravi_star', '2x #gtceu:circuits/uev', '64x gtceu:awakened_draconium_foil', '32x gtceu:awakened_draconium_foil', '4x gtceu:draconium_single_wire', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
   .itemOutputs('gtceu:uev_emitter')

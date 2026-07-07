@@ -12,11 +12,7 @@ event.recipes.gtceu.biolab('rawdna')
     .outputFluids('gtceu:overgrown_bacterial_dna 1500')
     .duration(800)
     .EUt(GTValues.VA[GTValues.UEV]);
-    event.recipes.gtceu.centrifuge('obdnacentrifuge')
-    .inputFluids('gtceu:overgrown_bacterial_dna 1000')
-    .outputFluids('gtceu:streptomyces_coelicolor 500', 'gtceu:panaeolus_cyanescens 500')
-    .duration(800)
-    .EUt(GTValues.VA[GTValues.UEV]);
+
     event.recipes.gtceu.biolab('bacterium')
     .inputFluids('gtceu:panaeolus_cyanescens 1000', 'gtceu:mutagen 1000')
     .outputFluids('gtceu:bacterium 750')
@@ -33,11 +29,7 @@ event.recipes.gtceu.biolab('rawdna')
     .outputFluids('gtceu:streptomyces_peucetius 750')
     .duration(790)
     .EUt(GTValues.VA[GTValues.UEV]);
-    event.recipes.gtceu.centrifuge('polymerase')
-    .inputFluids('gtceu:pcr_its1_its2 150')
-    .outputFluids('gtceu:taq_polymerase 75')
-    .duration(800)
-    .EUt(GTValues.VA[GTValues.UEV]);
+
     event.recipes.gtceu.biolab('doxorubicin')
     .inputFluids('gtceu:taq_polymerase 500', 'gtceu:streptomyces_peucetius 500')
     .outputFluids('gtceu:doxorubicin 750')

@@ -40,43 +40,7 @@ ServerEvents.recipes(event => {
         )
     })
 
-    event.recipes.gtceu.assembler("simulationcube")
-        .itemInputs(
-            "4x gtceu:iv_electric_simulation_chamber",
-            "16x #gtceu:circuits/luv",
-            "64x hostilenetworks:prediction_matrix",
-            Item.of(
-            "hostilenetworks:prediction",
-            '{data_model:{id:"hostilenetworks:spider"}}').strongNBT().withCount(16),
-            Item.of(
-            "hostilenetworks:prediction",
-            '{data_model:{id:"hostilenetworks:witch"}}').strongNBT().withCount(16),
-            Item.of(
-            "hostilenetworks:prediction",
-            '{data_model:{id:"hostilenetworks:squid"}}').strongNBT().withCount(16),
-            Item.of(
-            "hostilenetworks:prediction",
-            '{data_model:{id:"hostilenetworks:slime"}}').strongNBT().withCount(16),
-            Item.of(
-            "hostilenetworks:prediction",
-            '{data_model:{id:"hostilenetworks:blaze"}}').strongNBT().withCount(16),
-            Item.of(
-            "hostilenetworks:prediction",
-            '{data_model:{id:"hostilenetworks:sheep"}}').strongNBT().withCount(16)
-        )
-        .itemOutputs("gtceu:simulation_cube")
-        .duration(20*45)
-        .EUt(GTValues.VA[GTValues.IV]);
 
-    event.recipes.gtceu.assembler("soul_infused_casing")
-        .itemInputs(
-            "4x enderio:soularium_pressure_plate",
-            "4x minecraft:soul_sand"
-        )
-        .circuit(6)
-        .itemOutputs("kubejs:soul_infused_casing")
-        .duration(5*45)
-        .EUt(GTValues.VA[GTValues.IV]);
 
 // Recipe Type Recipes
 

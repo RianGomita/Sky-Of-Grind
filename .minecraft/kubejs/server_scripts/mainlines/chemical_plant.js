@@ -2,42 +2,7 @@
 ServerEvents.recipes(event => {
 
     // Chemical Tiered Recipes
-        event.recipes.gtceu.assembler('chem_i')
-            .itemInputs('gtceu:computer_casing', '8x gtceu:naquadah_alloy_gear', '16x gtceu:trinium_ingot', '8x #gtceu:circuits/zpm', 'gtceu:advanced_soc', 'gtceu:iv_field_generator')
-            .inputFluids(Fluid.of('gtceu:polybenzimidazole 16000'))
-            .itemOutputs('kubejs:chemical_tier_one')
-            .duration(500)
-            .EUt((GTValues.VA[GTValues.LuV]))
-        event.recipes.gtceu.assembler('chem_ii')
-            .itemInputs('gtceu:computer_casing', '8x gtceu:naquadria_gear', '16x gtceu:europium_ingot', '8x #gtceu:circuits/uv', 'gtceu:advanced_soc', 'gtceu:zpm_field_generator')
-            .inputFluids(Fluid.of('gtceu:polybenzimidazole 16000'))
-            .itemOutputs('kubejs:chemical_tier_two')
-            .duration(500)
-            .EUt((GTValues.VA[GTValues.ZPM]))
-        event.recipes.gtceu.assembler('chem_iii')
-            .itemInputs('gtceu:computer_casing', '8x gtceu:small_darmstadtium_gear', 'kubejs:condensed_star_matter', '8x #gtceu:circuits/uhv', 'gtceu:highly_advanced_soc', 'gtceu:zpm_field_generator', '16x gtceu:blacklight')
-            .inputFluids(Fluid.of('gtceu:condensed_star_matter 16000'))
-            .itemOutputs('kubejs:chemical_tier_three')
-            .duration(500)
-            .EUt((GTValues.VA[GTValues.UV]))
-        event.recipes.gtceu.assembler('chem_iv')
-            .itemInputs('gtceu:computer_casing', '8x gtceu:neutronium_gear', '16x kubejs:condensed_star_matter', '8x #gtceu:circuits/uev', 'kubejs:highly_resonative_soc', 'gtceu:uhv_field_generator', '16x kubejs:quantum_energy_capsule', '2x kubejs:gravitational_containment_cell')
-            .inputFluids(Fluid.of('gtceu:condensed_star_matter 16000'))
-            .itemOutputs('kubejs:chemical_tier_four')
-            .duration(500)
-            .EUt((GTValues.VA[GTValues.UHV]))
-        event.recipes.gtceu.assembler('chem_v')
-            .itemInputs('gtceu:computer_casing', '8x gtceu:cosmic_iridium_gear', '64x kubejs:condensed_star_matter', '8x #gtceu:circuits/uiv', 'kubejs:extremely_advanced_soc', 'gtceu:uhv_field_generator', '4x kubejs:draconium_heavy_plating', '2x kubejs:gravitational_containment_cell')
-            .inputFluids(Fluid.of('gtceu:condensed_star_matter 16000'))
-            .itemOutputs('kubejs:chemical_tier_five')
-            .duration(500)
-            .EUt((GTValues.VA[GTValues.UEV]))
-        event.recipes.gtceu.assembler('chem_vi')
-            .itemInputs('gtceu:computer_casing', '8x gtceu:pure_cosmic_matter_gear', '64x kubejs:reactive_chaos_pellet', '8x #gtceu:circuits/uxv', 'kubejs:extremely_advanced_soc', 'gtceu:uiv_field_generator', '4x kubejs:chaos_heavy_plating', '32x kubejs:energized_quantum_anomaly')
-            .inputFluids(Fluid.of('gtceu:eternity 100'))
-            .itemOutputs('kubejs:chemical_tier_six')
-            .duration(500)
-            .EUt((GTValues.VA[GTValues.UIV]))
+
 
 
     // Line Skips T1

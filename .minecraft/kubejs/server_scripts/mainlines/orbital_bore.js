@@ -1,89 +1,6 @@
 ServerEvents.recipes(event => {
     // Multiblock Casings & Controller
-    event.recipes.gtceu.assembler('orbital_bore')
-        .itemInputs(
-            '64x kubejs:orbital_solar_casing',
-            '32x gtceu:quantum_space_projector',
-            '64x kubejs:orbital_solar_casing',
-            '64x kubejs:pumping_projector_module',
-            '16x #gtceu:circuits/uiv',
-            '64x kubejs:pumping_projector_module',
-            '64x kubejs:orbital_solar_casing',
-            '32x gtceu:quantum_space_projector',
-            '64x kubejs:orbital_solar_casing',
-        )
-        .inputFluids('gtceu:antimatter 100000')
-        .itemOutputs('gtceu:orbital_bore')
-        .duration(20 * 960)
-        .EUt(GTValues.VA[GTValues.UEV])
 
-    event.recipes.gtceu.assembler('orbital_space_containment_casing')
-        .itemInputs(
-            'gtceu:dense_cosmic_neutronium_plate',
-            'gtceu:dense_solar_eclipse_alloy_plate',
-            'gtceu:dense_cosmic_neutronium_plate',
-            'gtceu:dense_solar_eclipse_alloy_plate',
-            'gtceu:solar_eclipse_alloy_frame',
-            'gtceu:dense_solar_eclipse_alloy_plate',
-            'gtceu:dense_cosmic_neutronium_plate',
-            'gtceu:dense_solar_eclipse_alloy_plate',
-            'gtceu:dense_cosmic_neutronium_plate'
-        )
-        .inputFluids('gtceu:antimatter 1440')
-        .itemOutputs('kubejs:orbital_space_containment_casing')
-        .duration(20 * 200)
-        .EUt(GTValues.VA[GTValues.UEV])
-
-    event.recipes.gtceu.assembler('orbital_solar_casing')
-        .itemInputs(
-            'gtceu:dense_solar_eclipse_alloy_plate',
-            'gtceu:awakened_draconium_plate',
-            'gtceu:dense_solar_eclipse_alloy_plate',
-            'gtceu:awakened_draconium_plate',
-            'kubejs:orbital_space_containment_casing',
-            'gtceu:awakened_draconium_plate',
-            'gtceu:dense_solar_eclipse_alloy_plate',
-            'gtceu:awakened_draconium_plate',
-            'gtceu:dense_solar_eclipse_alloy_plate'
-        )
-        .inputFluids('gtceu:awakened_draconium 288')
-        .itemOutputs('kubejs:orbital_solar_casing')
-        .duration(20 * 600)
-        .EUt(GTValues.VA[GTValues.UEV])
-
-    event.recipes.gtceu.assembler('orbital_pipe_casing')
-        .itemInputs(
-            '2x gtceu:dense_cosmic_neutronium_plate',
-            '64x kubejs:machine_casing_pipe_peek',
-            '2x gtceu:dense_cosmic_neutronium_plate',
-            '64x gtceu:ptfe_pipe_casing',
-            'avaritia:eternal_singularity',
-            '64x gtceu:ptfe_pipe_casing',
-            '2x gtceu:dense_cosmic_neutronium_plate',
-            '64x kubejs:machine_casing_pipe_peek',
-            '2x gtceu:dense_cosmic_neutronium_plate'
-        )
-        .inputFluids('gtceu:antimatter 1440')
-        .itemOutputs('kubejs:orbital_pipe_casing')
-        .duration(20 * 1000)
-        .EUt(GTValues.VA[GTValues.UEV])
-
-    event.recipes.gtceu.assembler('space_resistant_orbital_casing')
-        .itemInputs(
-            '64x gtceu:dense_naquadah_alloy_plate',
-            '1x gtceu:dense_cosmic_neutronium_plate',
-            '64x gtceu:dense_naquadah_alloy_plate',
-            '1x kubejs:cosmic_neutronium_heavy_plating',
-            '8x kubejs:quantum_casing',
-            '1x kubejs:cosmic_neutronium_heavy_plating',
-            '64x gtceu:dense_naquadah_alloy_plate',
-            '1x gtceu:dense_cosmic_neutronium_plate',
-            '64x gtceu:dense_naquadah_alloy_plate',
-        )
-        .inputFluids('gtceu:antimatter 1440')
-        .itemOutputs('kubejs:space_resistant_orbital_casing')
-        .duration(20 * 50)
-        .EUt(GTValues.VA[GTValues.UEV])
 
 
     // Modules
@@ -151,14 +68,7 @@ ServerEvents.recipes(event => {
 
 
     // Material Recipes
-    event.recipes.gtceu.mixer('solar_eclipse_alloy_dust')
-        .itemInputs(
-            "4x gtceu:cosmic_neutronium_dust"
-        )
-        .inputFluids('gtceu:awakened_draconium 576')
-        .itemOutputs('16x gtceu:solar_eclipse_alloy_dust')
-        .duration(20 * 20)
-        .EUt(GTValues.VA[GTValues.UIV])
+
 
 
     // Orbital Pumping

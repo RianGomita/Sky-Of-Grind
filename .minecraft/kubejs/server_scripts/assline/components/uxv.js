@@ -27,12 +27,7 @@ ServerEvents.recipes(event => {
   )
   .duration(600)
   .EUt(GTValues.VA[GTValues.UXV])
-  event.recipes.gtceu.assembler('fluid_regulator_uxv')
-  .itemInputs('gtceu:uxv_electric_pump', '2x #gtceu:circuits/uxv')
-  .circuit(1)
-  .itemOutputs('gtceu:uxv_fluid_regulator')
-  .duration(50)
-  .EUt(GTValues.VA[GTValues.UXV])
+
   event.recipes.gtceu.component_assembly_line('uxv_conveyor_module')
   .itemInputs('gtceu:uxv_electric_motor', '8x gtceu:pure_cosmic_matter_rod', '4x gtceu:pure_cosmic_matter_bolt', '4x gtceu:double_pure_cosmic_matter_plate', '4x gtceu:pure_cosmic_matter_screw', '2x gtceu:chaos_single_wire', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
   .itemOutputs('gtceu:uxv_conveyor_module')
@@ -63,24 +58,7 @@ ServerEvents.recipes(event => {
   )
   .duration(600)
   .EUt(GTValues.VA[GTValues.UXV])
-  event.recipes.gtceu.assembly_line('uxv_energy_input_hatch')
-  .itemInputs('gtceu:uxv_machine_hull', '4x gtceu:chaos_single_wire', '2x kubejs:extremely_advanced_soc', '2x #gtceu:circuits/uxv', '2x kubejs:uxv_voltage_coil', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
-  .itemOutputs('gtceu:uxv_energy_input_hatch')
-  .inputFluids(
-    Fluid.of('gtceu:sodium_potassium', 5760),
-    Fluid.of('gtceu:universium', 2880)
-  )
-  .duration(600)
-  .EUt(GTValues.VA[GTValues.UXV])
-  event.recipes.gtceu.assembly_line('uxv_energy_output_hatch')
-  .itemInputs('gtceu:uxv_machine_casing', '4x gtceu:chaos_single_wire', '2x kubejs:extremely_advanced_soc', '2x #gtceu:circuits/uxv', '2x kubejs:uxv_voltage_coil', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
-  .itemOutputs('gtceu:uxv_energy_output_hatch')
-  .inputFluids(
-    Fluid.of('gtceu:sodium_potassium', 5760),
-    Fluid.of('gtceu:universium', 2880)
-  )
-  .duration(600)
-  .EUt(GTValues.VA[GTValues.UXV])
+
  
  
  
@@ -127,11 +105,6 @@ ServerEvents.recipes(event => {
 
 
 
-  event.recipes.gtceu.assembler('uxv_voltage_coil')
-  .itemInputs('gtceu:magnetic_stabilized_iridium_rod', '64x gtceu:fine_pure_cosmic_matter_wire')
-  .circuit(1)
-  .itemOutputs('kubejs:uxv_voltage_coil')
-  .duration(400)
-  .EUt(GTValues.VA[GTValues.UXV]);
+
 
 })
