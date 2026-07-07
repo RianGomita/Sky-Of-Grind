@@ -21,23 +21,7 @@ ServerEvents.recipes(sog => {
 
     // C O I L   R E C I P E S
 
-    sog.recipes.gtceu.assembler('tesla_coil_mk1')
-    .itemInputs('1x gtceu:quantum_star', '4x gtceu:osmiridium_rotor', '24x #gtceu:inductors')
-    .itemOutputs('8x kubejs:tesla_coil_mk1')
-    .duration(1500)
-    .EUt(GTValues.VA[GTValues.IV]);
-    sog.recipes.gtceu.assembler('tesla_coil_mk2')
-    .itemInputs('8x gtceu:quantum_star', '4x gtceu:naquadah_alloy_rotor', '24x #gtceu:inductors')
-    .inputFluids('gtceu:naquadria 72')
-    .itemOutputs('8x kubejs:tesla_coil_mk2')
-    .duration(1500)
-    .EUt(GTValues.VA[GTValues.LuV]);
-    sog.recipes.gtceu.assembler('tesla_coil_mk3')
-    .itemInputs('8x gtceu:quantum_star', 'gtceu:teslarium_gear', '24x #gtceu:inductors')
-    .inputFluids('gtceu:naquadria 72')
-    .itemOutputs('1x kubejs:tesla_coil_mk3')
-    .duration(1500)
-    .EUt(GTValues.VA[GTValues.ZPM]);
+
 
     sog.shaped(
         '2x kubejs:osmiridium_pipe_casing',

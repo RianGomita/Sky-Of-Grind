@@ -2,28 +2,9 @@ ServerEvents.recipes(event => {
 
     //Multiblocks
 
-        event.recipes.gtceu.assembler('ultra_reflective_laser_cooling_casing')
-            .itemInputs("2x gtceu:laser_safe_engraving_casing", "12x kubejs:multispectral_monochrome_mirror")
-            .inputFluids("gtceu:meta_stable_molten_zylon 576")
-            .itemOutputs('2x kubejs:ultra_reflective_laser_cooling_casing')
-            .circuit(24)
-            .duration(20*10)
-            .cleanroom(BlazingCleanroom.BLAZING_CLEANROOM)
-            .EUt(GTValues.VA[GTValues.UXV])
 
-        event.recipes.gtceu.assembly_line('collosal_laser_beam_containment_chamber')
-            .itemInputs('8x kubejs:ultra_reflective_laser_cooling_casing', '4x gtceu:uiv_laser_engraver', '64x gtceu:active_transformer', '16x #gtceu:circuits/uxv', '6x gtceu:uxv_robot_arm', '6x gtceu:uxv_conveyor_module', '6x gtceu:uxv_field_generator', '7x gtceu:dense_zylon_plate', '64x gtceu:fine_stellar_matter_plasma_wire', '64x gtceu:fine_stellar_matter_plasma_wire', '32x gtceu:double_infinity_plate', '64x gtceu:space_time_screw', '6x kubejs:emitter_red', '6x kubejs:emitter_green', '6x kubejs:emitter_blue')
-            .inputFluids("gtceu:heavy_duty_alloy_t4 9216", "gtceu:universium 4608", "gtceu:eternity 6912", "gtceu:stabilized_spatial_flux 50000")
-            .itemOutputs('gtceu:collosal_laser_beam_containment_chamber')
-            .duration(20*300)
-            .EUt(GTValues.VA[GTValues.UXV])
 
-        event.recipes.gtceu.assembly_line('industrial_grade_laser_synchronizer_chiller')
-            .itemInputs('8x kubejs:ultra_reflective_laser_cooling_casing', '16x gtceu:quantum_cooling_chamber', '32x gtceu:quantum_space_projector', '16x #gtceu:circuits/uxv', "6x gtceu:uxv_emitter", "6x gtceu:uxv_fluid_regulator", '7x gtceu:dense_zylon_plate', '64x gtceu:fine_stellar_matter_plasma_wire', '64x gtceu:fine_stellar_matter_plasma_wire', '32x gtceu:double_infinity_plate', '64x gtceu:space_time_screw', 'kubejs:laser_containment_cell_red', 'kubejs:laser_containment_cell_green', 'kubejs:laser_containment_cell_blue')
-            .inputFluids("gtceu:heavy_duty_alloy_t4 9216", "gtceu:universium 4608", "gtceu:eternity 6912", "gtceu:stabilized_spatial_flux 50000")
-            .itemOutputs('gtceu:industrial_grade_laser_synchronizer_chiller')
-            .duration(20*300)
-            .EUt(GTValues.VA[GTValues.UXV])
+
 
 
     //Emmiters and Capsules
@@ -37,32 +18,11 @@ ServerEvents.recipes(event => {
             .duration(20*12)
             .EUt((GTValues.VA[GTValues.UIV]))
 
-        event.recipes.gtceu.large_chemical_reactor('excited_blaze_concentate')
-            .itemInputs("32x gtceu:carbon_nanotubes_dust", "64x kubejs:reactive_chaos_dust")
-            .inputFluids("gtceu:overheated_blaze 1000", "gtceu:sulfur_trioxide 3000", "gtceu:neutronium 1500")
-            .outputFluids('gtceu:excited_blaze_concentate 2000')
-            .duration(20*24)
-            .EUt(GTValues.VA[GTValues.UIV])
 
-        event.recipes.gtceu.autoclave('sapphire_boule')
-            .itemInputs("gtceu:sapphire_rod", "16x gtceu:exquisite_quartzite_gem")
-            .perTick(true)
-            .inputFluids('gtceu:excited_blaze_concentate 15')
-            .perTick(false)
-            .cleanroom(BlazingCleanroom.BLAZING_CLEANROOM)
-            .chancedOutput("kubejs:sapphire_boule", 1250, 0)
-            .chancedOutput("4x gtceu:exquisite_sapphire_gem", 8750, 0)
-            .chancedItemOutputLogic('xor')
-            .duration(20*60)
-            .EUt(GTValues.VA[GTValues.UXV])
 
-        event.recipes.gtceu.cutter('sapphire_wafer')
-            .itemInputs("kubejs:sapphire_boule")
-            .inputFluids('gtceu:lubricant 1000')
-            .cleanroom(CleanroomType.CLEANROOM)
-            .itemOutputs("64x kubejs:sapphire_wafer")
-            .duration(20*180)
-            .EUt(GTValues.VA[GTValues.UXV])
+
+
+
 
         event.recipes.gtceu.large_synchrotron_switcher('exquisite_synchronized_chronon_gem')
             .itemInputs('8x gtceu:exquisite_chronon_gem', '2x kubejs:entropic_cosmic_mesh', "2x ae2:quantum_entangled_singularity")
@@ -78,19 +38,7 @@ ServerEvents.recipes(event => {
             .duration(20*10)
             .EUt(GTValues.VA[GTValues.UXV])
 
-        event.recipes.gtceu.chemical_reactor('silver_nitrate_solution')
-            .itemInputs("gtceu:silver_dust")
-            .inputFluids("gtceu:nitric_acid 2000")
-            .outputFluids('gtceu:silver_nitrate_solution 1000', "gtceu:nitrogen_dioxide 1000")
-            .duration(20*30)
-            .EUt(GTValues.VA[GTValues.IV])
 
-        event.recipes.gtceu.chemical_bath('nanoreinforced_silver')
-            .itemInputs("4x gtceu:double_carbon_nanotubes_plate")
-            .inputFluids("gtceu:silver_nitrate_solution 4000")
-            .itemOutputs('4x gtceu:nanoreinforced_silver_dust')
-            .duration(20*10)
-            .EUt(GTValues.VA[GTValues.UEV])
 
         event.recipes.gtceu.high_pressure_reactor('silver_doped_sapphire_wafer')
             .inputFluids("gtceu:thorium_plasma_plasma 1000")
@@ -102,52 +50,15 @@ ServerEvents.recipes(event => {
             .duration(20*15)
             .EUt((GTValues.VA[GTValues.UIV]))
 
-        event.recipes.gtceu.forming_press('ultra_reflective_sapphire_wafer')
-            .itemInputs('2x kubejs:silver_doped_sapphire_wafer', "kubejs:antimatter_wafer")
-            .itemOutputs('kubejs:ultra_reflective_sapphire_wafer')
-            .duration(20*10)
-            .EUt(GTValues.VA[GTValues.UXV])
 
-        event.recipes.gtceu.chemical_reactor('silicon_tetrachloride')
-            .itemInputs("gtceu:silicon_dust")
-            .inputFluids('gtceu:chlorine 4000')
-            .outputFluids('gtceu:silicon_tetrachloride')
-            .duration(20*25)
-            .EUt(GTValues.VA[GTValues.EV])
 
-        event.recipes.gtceu.chemical_reactor('tetraethyl_orthosilicate')
-            .inputFluids('gtceu:silicon_tetrachloride 1000', 'gtceu:ethanol 4000')
-            .outputFluids('gtceu:tetraethyl_orthosilicate 1000', "gtceu:hydrochloric_acid 4000")
-            .duration(20*15)
-            .EUt(GTValues.VA[GTValues.LuV])
 
-        event.recipes.gtceu.assembler('multispectral_monochrome_mirror')
-            .itemInputs('2x kubejs:ultra_reflective_sapphire_wafer', "4x gtceu:chronon_dust")
-            .inputFluids('gtceu:tetraethyl_orthosilicate 1000')
-            .itemOutputs('4x kubejs:multispectral_monochrome_mirror')
-            .duration(20*30)
-            .cleanroom(BlazingCleanroom.BLAZING_CLEANROOM)
-            .EUt(GTValues.VA[GTValues.UXV])
-
-        event.recipes.gtceu.chemical_reactor('sodium_iodine')
-            .itemInputs("18x gtceu:sodium_hydroxide_dust", "6x gtceu:iodine_dust")
-            .outputFluids("minecraft:water 3000")
-            .itemOutputs('5x gtceu:sodium_iodate_dust', '10x gtceu:sodium_iodine_dust')
-            .duration(20*25)
-            .EUt(GTValues.VA[GTValues.ZPM])
 
         event.recipes.gtceu.eternity_fusion('thallium_fusion')
             .inputFluids('gtceu:cadmium 144', "gtceu:arsenic 144")
             .outputFluids('gtceu:thallium 144')
             .duration(20*5)
             .EUt(GTValues.VA[GTValues.UIV]);
-
-        event.recipes.gtceu.mixer('thallium_iodine')
-            .itemInputs("1x gtceu:thallium_dust", "1x gtceu:iodine_dust")
-            .circuit(24)
-            .itemOutputs('2x gtceu:thallium_iodine_dust')
-            .duration(20*35)
-            .EUt(GTValues.VA[GTValues.UHV])
 
         event.recipes.gtceu.electric_blast_furnace('thallium_doped_sodium_iodine')
             .itemInputs("28x gtceu:sodium_iodine_dust", "2x gtceu:thallium_iodine_dust")
@@ -157,26 +68,7 @@ ServerEvents.recipes(event => {
             .blastFurnaceTemp(6003)
             .EUt(GTValues.VA[GTValues.UHV])
 
-        event.recipes.gtceu.assembly_line('emitter_red')
-            .itemInputs('16x gtceu:double_pure_cosmic_matter_plate', '64x gtceu:fine_awakened_draconium_wire', '2x gtceu:max_battery', "4x gtceu:active_transformer", '16x gtceu:hv_emitter', '16x gtceu:exquisite_synchronized_chronon_gem', '8x gtceu:thallium_doped_sodium_iodine_lens', '8x gtceu:ruby_lens', '16x gtceu:normal_laser_pipe')
-            .inputFluids("gtceu:meta_stable_molten_zylon 1152", "gtceu:cosmic_iridium 1152", "gtceu:cosmic_osmium 1152", "gtceu:cosmic_titanium 1152")
-            .itemOutputs('16x kubejs:emitter_red')
-            .duration(20*60)
-            .EUt(GTValues.VA[GTValues.UIV])
 
-        event.recipes.gtceu.assembly_line('emitter_green')
-            .itemInputs('16x gtceu:double_pure_cosmic_matter_plate', '64x gtceu:fine_awakened_draconium_wire', '2x gtceu:max_battery', "4x gtceu:active_transformer", '16x gtceu:mv_emitter', '16x gtceu:exquisite_synchronized_chronon_gem', '8x gtceu:thallium_doped_sodium_iodine_lens', '8x gtceu:emerald_lens', '16x gtceu:normal_laser_pipe')
-            .inputFluids("gtceu:meta_stable_molten_zylon 1152", "gtceu:cosmic_iridium 1152", "gtceu:cosmic_osmium 1152", "gtceu:cosmic_titanium 1152")
-            .itemOutputs('16x kubejs:emitter_green')
-            .duration(20*60)
-            .EUt(GTValues.VA[GTValues.UIV])
-
-        event.recipes.gtceu.assembly_line('emitter_blue')
-            .itemInputs('16x gtceu:double_pure_cosmic_matter_plate', '64x gtceu:fine_awakened_draconium_wire', '2x gtceu:max_battery', "4x gtceu:active_transformer", '16x gtceu:lv_emitter', '16x gtceu:exquisite_synchronized_chronon_gem', '8x gtceu:thallium_doped_sodium_iodine_lens', '8x gtceu:sapphire_lens', '16x gtceu:normal_laser_pipe')
-            .inputFluids("gtceu:meta_stable_molten_zylon 1152", "gtceu:cosmic_iridium 1152", "gtceu:cosmic_osmium 1152", "gtceu:cosmic_titanium 1152")
-            .itemOutputs('16x kubejs:emitter_blue')
-            .duration(20*60)
-            .EUt(GTValues.VA[GTValues.UIV])
 
         event.recipes.gtceu.stasis_phase_shifter('tachyon_condensate')
             .itemInputs('64x kubejs:woven_space_time')
@@ -282,25 +174,12 @@ ServerEvents.recipes(event => {
             .CWUt(32)
             .EUt((GTValues.VA[GTValues.UEV]))
 
-        event.recipes.gtceu.mixer('unprocessed_nanothermal_fluid')
-            .inputFluids('gtceu:superfluid_helium 1000', 'gtceu:stabilized_naquadria_plasma_plasma 500')
-            .itemInputs('4x gtceu:activated_nano_diamond_dust')
-            .outputFluids('gtceu:unprocessed_nanothermal_fluid 1500')
-            .duration(20*30)
-            .EUt((GTValues.VA[GTValues.UIV]))
-
         event.recipes.gtceu.radiation_chamber('ion_implanted_nanothermal_fluid')
             .inputFluids('gtceu:unprocessed_nanothermal_fluid 2000', "gtceu:tritium 1000")
             .chancedInput('4x gtceu:draconium_bolt', 2500, 0)
             .outputFluids('gtceu:ion_implanted_nanothermal_fluid 2000')
             .duration(20*50)
             .EUt((GTValues.VA[GTValues.UEV]))
-
-        event.recipes.gtceu.mixer('pcb_coolant_mk2')
-            .inputFluids("gtceu:pcb_coolant 1000", 'gtceu:ion_implanted_nanothermal_fluid 500')
-            .outputFluids('gtceu:pcb_coolant_mk2 1500')
-            .duration(20*15)
-            .EUt((GTValues.VA[GTValues.UIV]))
 
     /// PCB MK3
 

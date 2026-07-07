@@ -27,12 +27,7 @@ ServerEvents.recipes(event => {
   )
   .duration(600)
   .EUt(GTValues.VA[GTValues.UIV])
-  event.recipes.gtceu.assembler('fluid_regulator_uiv')
-  .itemInputs('gtceu:uiv_electric_pump', '2x #gtceu:circuits/uiv')
-  .circuit(1)
-  .itemOutputs('gtceu:uiv_fluid_regulator')
-  .duration(50)
-  .EUt(GTValues.VA[GTValues.UIV])
+
   event.recipes.gtceu.component_assembly_line('uiv_conveyor_module')
   .itemInputs('gtceu:uiv_electric_motor', '8x gtceu:awakened_draconium_rod', '4x gtceu:awakened_draconium_bolt', '4x gtceu:double_awakened_draconium_plate', '4x gtceu:awakened_draconium_screw', '2x gtceu:awakened_draconium_single_cable', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
   .itemOutputs('gtceu:uiv_conveyor_module')
@@ -64,24 +59,7 @@ ServerEvents.recipes(event => {
   )
   .duration(600)
   .EUt(GTValues.VA[GTValues.UIV])
-  event.recipes.gtceu.assembly_line('uiv_energy_input_hatch')
-  .itemInputs('gtceu:uiv_machine_hull', '4x gtceu:awakened_draconium_single_cable', '2x kubejs:extremely_advanced_soc', '2x #gtceu:circuits/uiv', '2x kubejs:uiv_voltage_coil', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
-  .itemOutputs('gtceu:uiv_energy_input_hatch')
-  .inputFluids(
-    Fluid.of('gtceu:sodium_potassium', 5760),
-    Fluid.of('gtceu:antimatter', 2880)
-  )
-  .duration(600)
-  .EUt(GTValues.VA[GTValues.UIV])
-  event.recipes.gtceu.assembly_line('uiv_energy_output_hatch')
-  .itemInputs('gtceu:uiv_machine_casing', '4x gtceu:awakened_draconium_single_cable', '2x kubejs:extremely_advanced_soc', '2x #gtceu:circuits/uiv', '2x kubejs:uiv_voltage_coil', 'avaritia:eternal_singularity', 'kubejs:quantum_data_module')
-  .itemOutputs('gtceu:uiv_energy_output_hatch')
-  .inputFluids(
-    Fluid.of('gtceu:sodium_potassium', 5760),
-    Fluid.of('gtceu:antimatter', 2880)
-  )
-  .duration(600)
-  .EUt(GTValues.VA[GTValues.UXV])
+
  
  
  
@@ -128,18 +106,7 @@ ServerEvents.recipes(event => {
 
 
 
-  event.recipes.gtceu.assembler('uiv_voltage_coil')
-  .itemInputs('gtceu:magnetic_stabilized_iridium_rod', '64x gtceu:fine_awakened_draconium_wire')
-  .circuit(1)
-  .itemOutputs('kubejs:uiv_voltage_coil')
-  .duration(400)
-  .EUt(GTValues.VA[GTValues.UIV]);
-  event.recipes.gtceu.assembler('highly_superconducting_coil')
-  .itemInputs('32x gtceu:draconium_double_cable', '32x gtceu:crystal_matrix_foil')
-  .inputFluids(Fluid.of('gtceu:draconium', 3456))
-  .itemOutputs('kubejs:highly_superconducting_coil_block')
-  .duration(200)
-  .EUt(GTValues.VA[GTValues.UIV]);
+
   event.recipes.gtceu.polarizer('magnetic_iridium')
   .itemInputs('gtceu:stabilized_iridium_ingot')
   .itemOutputs('gtceu:magnetic_stabilized_iridium_ingot')

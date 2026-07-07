@@ -37,10 +37,5 @@ ServerEvents.recipes(sog => {
 
 
 
-    sog.recipes.gtceu.assembler('naquadria_turbine_casing')
-    .itemInputs('gtceu:tungstensteel_turbine_casing', '6x gtceu:naquadria_plate')
-    .itemOutputs('kubejs:naquadria_turbine_casing')
-    .circuit(6)
-    .duration(50)
-    .EUt(GTValues.VA[GTValues.LV]);
+
 })

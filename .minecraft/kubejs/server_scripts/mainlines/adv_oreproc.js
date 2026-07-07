@@ -236,30 +236,8 @@ ServerEvents.recipes(event => {
 //recipes components
 
 
-    event.recipes.gtceu.assembler('adv_high_power_crushing_wheels')
-        .itemInputs('kubejs:high_power_crushing_wheels','gtceu:uv_electric_motor','8x gtceu:darmstadtium_plate')
-        .circuit(4)
-        .itemOutputs('kubejs:adv_high_power_crushing_wheels')
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LuV]);
 
-    event.recipes.gtceu.assembly_line('adv_processing_plant')
-    .itemInputs(
-        '8x gtceu:neutronium_plate',
-        '4x gtceu:uhv_electric_motor',
-        'gtceu:uhv_machine_hull',
-        '8x #gtceu:circuits/uhv',
-        'gtceu:uhv_electric_piston',
-        'gtceu:processing_plant'
-    )
-    .inputFluids(
-        'gtceu:condensed_star_matter 1256',
-        'gtceu:neoprene 2152',
-        'gtceu:peek 2152',
-        'gtceu:soldering_alloy 2152'
-    )
-    .itemOutputs('gtceu:adv_processing_plant')
-    .duration(200)
-    .EUt(GTValues.VA[GTValues.UHV]);
+
+
 
 });

@@ -1,52 +1,6 @@
 ServerEvents.recipes(event => {
 	
-	event.recipes.gtceu.assembly_line('quantum_helmet')
-	.itemInputs('gtceu:quarktech_helmet', 'ae2:wireless_access_point', '12x advanced_ae:quantum_processor', '5x advanced_ae:quantum_storage_component', '4x #gtceu:circuits/uv', '32x gtceu:fine_americium_wire', '2x gtceu:nether_star_lens', '32x advanced_ae:quantum_alloy_plate', '32x advanced_ae:quantum_alloy_plate', '16x advanced_ae:quantum_alloy_plate')
-	.itemOutputs('advanced_ae:quantum_helmet')
-	.inputFluids(
-	Fluid.of('gtceu:soldering_alloy', 1440),
-	Fluid.of('gtceu:lubricant', 1250), 
-	Fluid.of('gtceu:polybenzimidazole', 11520),
-	Fluid.of('advanced_ae:quantum_infusion_source', 16000)
-	)
-	.duration(2000)
-	.EUt(GTValues.VA[GTValues.UV])       
-	
-	event.recipes.gtceu.assembly_line('quantum_chestplate')
-	.itemInputs('gtceu:advanced_quarktech_chestplate', 'ae2:wireless_access_point', '32x advanced_ae:quantum_processor', '8x advanced_ae:quantum_storage_component', '16x #gtceu:circuits/uv', '32x gtceu:fine_americium_wire', '32x gtceu:fine_americium_wire', '32x advanced_ae:quantum_alloy_plate', '32x advanced_ae:quantum_alloy_plate', '32x advanced_ae:quantum_alloy_plate', '32x advanced_ae:quantum_alloy_plate')
-	.itemOutputs('advanced_ae:quantum_chestplate')
-	.inputFluids(
-	Fluid.of('gtceu:soldering_alloy', 2304),
-	Fluid.of('gtceu:lubricant', 2000), 
-	Fluid.of('gtceu:polybenzimidazole', 18432),
-	Fluid.of('advanced_ae:quantum_infusion_source', 32000)
-	)
-	.duration(2000)
-	.EUt(GTValues.VA[GTValues.UV])   
-	
-	event.recipes.gtceu.assembly_line('quantum_leggings')
-	.itemInputs('gtceu:quarktech_leggings', 'ae2:wireless_access_point', '24x advanced_ae:quantum_processor', '6x advanced_ae:quantum_storage_component', '12x #gtceu:circuits/uv', '32x gtceu:fine_americium_wire', '32x gtceu:fine_americium_wire', '32x advanced_ae:quantum_alloy_plate', '32x advanced_ae:quantum_alloy_plate', '32x advanced_ae:quantum_alloy_plate', '16x advanced_ae:quantum_alloy_plate')
-	.itemOutputs('advanced_ae:quantum_leggings')
-	.inputFluids(
-	Fluid.of('gtceu:soldering_alloy', 2016),
-	Fluid.of('gtceu:lubricant', 1750), 
-	Fluid.of('gtceu:polybenzimidazole', 16128),
-	Fluid.of('advanced_ae:quantum_infusion_source', 24000)
-	)
-	.duration(2000)
-	.EUt(GTValues.VA[GTValues.UV])   
-	
-	event.recipes.gtceu.assembly_line('quantum_boots')
-	.itemInputs('gtceu:quarktech_boots', 'ae2:wireless_access_point', '16x advanced_ae:quantum_processor', '4x advanced_ae:quantum_storage_component', '4x #gtceu:circuits/uv', '32x gtceu:fine_americium_wire', '32x advanced_ae:quantum_alloy_plate', '32x advanced_ae:quantum_alloy_plate')
-	.itemOutputs('advanced_ae:quantum_boots')
-	.inputFluids(
-	Fluid.of('gtceu:soldering_alloy', 1152),
-	Fluid.of('gtceu:lubricant', 1000), 
-	Fluid.of('gtceu:polybenzimidazole', 9216),
-	Fluid.of('advanced_ae:quantum_infusion_source', 16000)
-	)
-	.duration(2000)
-	.EUt(GTValues.VA[GTValues.UV])   
+
 	
 	event.recipes.gtceu.assembler('uprade_base')
           .itemInputs('16x advanced_ae:quantum_alloy_plate', '8x advanced_ae:quantum_processor', '16x gtceu:fine_americium_wire')

@@ -1,49 +1,7 @@
 ServerEvents.recipes(sog => {
 
-    sog.recipes.gtceu.assembly_line('basic_fusion_injector')
-    .itemInputs('16x gtceu:cosmic_tungsten_plate', '16x gtceu:gravi_star', 'gtceu:uev_fusion_reactor', '4x #gtceu:circuits/uiv', '4x #gtceu:circuits/uhv', '4x gtceu:uev_robot_arm', '8x gtceu:uev_electric_piston', '4x gtceu:uhv_field_generator')
-    .itemOutputs('gtceu:basic_fusion_injector')
-    .inputFluids(
-    Fluid.of('gtceu:stropharic_hypoxylon', 9152),
-    Fluid.of('gtceu:antimatter', 1152),
-    Fluid.of('gtceu:crystal_matrix', 1152),
-    Fluid.of('gtceu:peek', 1152)
-    )
-    .duration(20*300)
-    .EUt(GTValues.VA[GTValues.UV])   
-    sog.recipes.gtceu.assembly_line('wyvern_fusion_injector')
-    .itemInputs('16x gtceu:double_draconium_plate', '8x draconicevolution:wyvern_core', 'gtceu:basic_fusion_injector', '4x #gtceu:circuits/uiv', '4x #gtceu:circuits/uev', '16x gtceu:uev_robot_arm', '8x gtceu:uev_electric_piston', '8x gtceu:uhv_field_generator')
-    .itemOutputs('gtceu:wyvern_fusion_injector')
-    .inputFluids(
-    Fluid.of('gtceu:stropharic_hypoxylon', 9152),
-    Fluid.of('gtceu:antimatter', 1152),
-    Fluid.of('gtceu:peek', 1152),
-    Fluid.of('gtceu:crystal_matrix', 1152)
-    )
-    .duration(20*300)
-    .EUt(GTValues.VA[GTValues.UIV])  
-    sog.recipes.gtceu.assembly_line('draconic_fusion_injector')
-    .itemInputs('16x gtceu:double_awakened_draconium_plate', '8x draconicevolution:awakened_core', 'gtceu:wyvern_fusion_injector', '16x #gtceu:circuits/uiv', '8x #gtceu:circuits/uev', '16x gtceu:uev_robot_arm', '8x gtceu:uev_electric_piston', '8x gtceu:uev_field_generator')
-    .itemOutputs('gtceu:draconic_fusion_injector')
-    .inputFluids(
-    Fluid.of('gtceu:stropharic_hypoxylon', 9152),
-    Fluid.of('gtceu:antimatter', 5000),
-    Fluid.of('gtceu:peek', 1152),
-    Fluid.of('gtceu:crystal_matrix', 5000)
-    )
-    .duration(20*300)
-    .EUt(GTValues.VA[GTValues.UXV])  
-    sog.recipes.gtceu.assembly_line('chaotic_fusion_injector')
-    .itemInputs('7x gtceu:dense_chaos_plate', '8x draconicevolution:chaotic_core', 'gtceu:draconic_fusion_injector', '8x #gtceu:circuits/uxv', '4x #gtceu:circuits/uiv', '16x gtceu:uiv_robot_arm', '8x gtceu:uiv_electric_piston', '8x gtceu:uiv_field_generator', '64x kubejs:space_time_heavy_plating')
-    .itemOutputs('gtceu:chaotic_fusion_injector')
-    .inputFluids(
-    Fluid.of('gtceu:stropharic_hypoxylon', 9152),
-    Fluid.of('gtceu:antimatter', 5000),
-    Fluid.of('gtceu:meta_stable_molten_kevlar', 5000),
-    Fluid.of('gtceu:crystal_matrix', 5000)
-    )
-    .duration(20*300)
-    .EUt(GTValues.VA[GTValues.OpV])  
+
+    
 
     const basic_injector = (id, output, input, voltage, durationInSeconds) => {
     

@@ -1,20 +1,6 @@
 ServerEvents.recipes(sog => {
 
-    sog.recipes.gtceu.assembler('conductive_casing')
-    .itemInputs('8x gtceu:californite_plate', '2x kubejs:highly_superconducting_coil_block', '2x gtceu:uv_field_generator', '8x gtceu:neutron_reflector', '4x #gtceu:circuits/uhv', '8x gtceu:plascrete', '4x gtceu:draconium_plate')
-    .inputFluids('gtceu:polybenzimidazole 1000')
-    .itemOutputs('2x kubejs:superconductive_casing')
-    .cleanroom(CleanroomType.STERILE_CLEANROOM)
-    .duration(100)
-    .EUt(GTValues.VA[GTValues.UIV]);
-    
-    sog.recipes.gtceu.assembler('conductive_glass')
-    .itemInputs('8x gtceu:californite_plate', '2x kubejs:highly_superconducting_coil_block', '2x gtceu:uv_field_generator', '8x gtceu:neutron_reflector', '4x #gtceu:circuits/uhv', '4x gtceu:cleanroom_glass', '4x gtceu:draconium_plate')
-    .inputFluids('gtceu:polybenzimidazole 1000')
-    .itemOutputs('2x kubejs:conductive_glass')
-    .cleanroom(CleanroomType.STERILE_CLEANROOM)
-    .duration(100)
-    .EUt(GTValues.VA[GTValues.UIV]);    
+ 
 
 sog.recipes.gtceu.dimensionalmatter('saturn_primary_rp')
 .notConsumable('kubejs:gravitational_fluctuation_module')

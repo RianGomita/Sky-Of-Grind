@@ -814,6 +814,7 @@ StartupEvents.registry('block', sog => {
         .soundType('metal')
         .tagBlock('forge:mineable/wrench')
     sog.create('chrono-infinity_alloy_coil_block', 'gtceu:coil')
+        .displayName("Chrono-Infinity Alloy Coil Block")
         .temperature(19590)
         .level(2048)
         .energyDiscount(2048) // 

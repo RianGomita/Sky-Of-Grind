@@ -2,22 +2,7 @@
 
 ServerEvents.recipes(event => {
     // Multiblock Controller
-    event.recipes.gtceu.assembler('solar_alloy_forge_controller')
-        .itemInputs(
-            '4x kubejs:orbital_solar_casing',
-            '64x gtceu:alloy_blast_smelter',
-            '4x kubejs:orbital_solar_casing',
-            '64x gtceu:alloy_blast_smelter',
-            '4x #gtceu:circuits/uiv',
-            '64x gtceu:alloy_blast_smelter',
-            '4x kubejs:orbital_solar_casing',
-            '64x gtceu:alloy_blast_smelter',
-            '4x kubejs:orbital_solar_casing'
-        )
-        .inputFluids('gtceu:antimatter 20000')
-        .itemOutputs('gtceu:solar_alloy_forge')
-        .duration(20 * 240)
-        .EUt(GTValues.VA[GTValues.UEV])
+
 
     // Solar Forging
     event.recipes.gtceu.solar_forging('liquid_solar_eclipse_alloy')
