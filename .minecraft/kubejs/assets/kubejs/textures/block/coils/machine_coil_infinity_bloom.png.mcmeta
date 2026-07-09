@@ -1,17 +1,21 @@
 {
     "ldlib": {
-        "connection": "kubejs:block/coils/machine_coil_infinity_bloom_ctm"
+        "connection": "kubejs:block/coils/machine_coil_infinity_bloom_ctm",
+        "emissive": true
+    },
+    "shimmer": {
+        "bloom": true
     },
     "animation": {
         "frametime": 1,
-    "frames": [
+        "frames": [
             0,
-        0,
-        0,
-        1,
-        1,
-        1,
-        2,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
             2,
             2,
             3,
@@ -32,9 +36,9 @@
             2,
             2,
             2,
-        1,
-        1,
-        1
+            1,
+            1,
+            1
         ]
     }
 }

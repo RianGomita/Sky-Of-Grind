@@ -1,9 +1,13 @@
 {
-	"ldlib": {
-		"connection": "kubejs:block/coils/machine_coil_chrono-infinity_alloy_bloom_ctm"
-	},
-	"animation": {
-		"interpolate": false,
-		"frametime": 2
-	}
+    "ldlib": {
+        "connection": "kubejs:block/coils/machine_coil_chrono-infinity_alloy_bloom_ctm",
+        "emissive": true
+    },
+    "shimmer": {
+        "bloom": true
+    },
+    "animation": {
+        "interpolate": false,
+        "frametime": 2
+    }
 }
